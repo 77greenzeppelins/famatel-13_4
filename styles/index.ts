@@ -1,5 +1,6 @@
 const styles = {
   headerHeight: 'h-[64px] lg:h-[78px]',
+  heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
   //   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   //   yPaddings: 'sm:py-16 xs:py-8 py-12',
   //   xPaddings: 'sm:px-16 px-6',

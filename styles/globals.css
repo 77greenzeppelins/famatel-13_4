@@ -106,7 +106,7 @@
   .word-spacing-025 {
     word-spacing: 0.25rem;
   }
-  .header-link-label {
+  .label-regular {
     @apply text-[0.625rem] lg:text-[0.75rem] xxxl:text-[0.825rem] tracking-[0.125rem] uppercase word-spacing-0125 lg:word-spacing-025;
   }
   .text-v-small {
@@ -124,11 +124,11 @@
   .text-large {
     @apply text-[3.25rem] xs3xx:text-[4.25rem] xs:text-[4.5rem] md:text-[4.75rem] xxl:text-[6.25rem] tracking-[2px] leading-tight;
   }
+  .text-u-large {
+    @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];
+  }
   .text-hero-h1 {
     @apply text-[2.5rem] xs3xx:text-[2.75rem] xs4xx:text-[3rem] xs:text-[3.5rem] sm:text-[3.75rem] md:text-[4.25rem] lg:text-[5rem] xl:text-[5.5rem] tracking-[2px] leading-tight;
-  }
-  .p-u-large {
-    @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];
   }
 
   .word-break-all {

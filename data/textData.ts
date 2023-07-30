@@ -10,3 +10,7 @@ export const HomePageText = {
     'Jeśli działasz na polu elektryki przemysłowej na pewno mamy rozwiązanie dla Ciebie!',
   ],
 };
+
+export const NowosciPageText = {
+  hero: { header: 'Wkrótce pojawi sie tutaj coś niezwykle elektryzującego...' },
+};

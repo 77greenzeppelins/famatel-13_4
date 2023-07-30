@@ -33,7 +33,7 @@ const HeaderLink: React.FC<Props> = ({ label, url }) => {
           aria-label={`Link do strony ${label}`}
           aria-current={isActive ? 'page' : undefined}
           // scroll={false}
-          className={`relative text-dark font-bold header-link-label disable h-[40px] fc  ${
+          className={`relative text-dark font-bold label-regular disable h-[40px] fc  ${
             isActive ? 'hover:text-dark' : 'hover:text-corpo'
           }  delay-100 duration-300 ease-linear`}
         >
