@@ -1,7 +1,7 @@
-import React from 'react';
-import SMFacebook from '../../../../SVG/icons/SMFacebook';
-import SMInstagram from '../../../../SVG/icons/SMInstagram';
-import SMLinkIn from '../../../../SVG/icons/SMLinkIn';
+/**Components**/
+import SMFacebook from '@/components/SVG/icons/socialM/SMFacebook';
+import SMInstagram from '@/components/SVG/icons/socialM/SMInstagram';
+import SMLinkIn from '@/components/SVG/icons/socialM/SMLinkIn';
 
 /**TS**/
 interface Props {
