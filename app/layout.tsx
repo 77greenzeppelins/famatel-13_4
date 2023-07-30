@@ -27,8 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${mySanSerif.variable}`}>
       <body className="font-sans">
-        <OverlayForResizing />
         <Header />
+        <OverlayForResizing />
         {/* <PageTransitionWrapper> */}
         {children}
         {/* </PageTransitionWrapper> */}

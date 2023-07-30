@@ -12,8 +12,8 @@ export default function OverlayForResizing() {
   const [makeVisible, setMakeVisible] = useState(false);
   const { width, height } = useWindowSize();
   const val = (width / height).toString();
-  const altVal = `val-${pathname}`;
-  const debouncedValue = useDebounce<string>(altVal, height * 1.9);
+  const altVal = `${val}-${pathname}`;
+  const debouncedValue = useDebounce<string>(altVal, 400);
   /*
   ___1. why such condition? If starting aR is close to 1 (device has square-like shape) and "resizing" is subtle don't trigger <OverlayForResizing> 
   */
@@ -25,24 +25,20 @@ export default function OverlayForResizing() {
   */
   useEffect(() => {
     setMakeVisible(true);
-    window.scrollTo(0, 0);
-    // if (condition) {
-    //   setMakeVisible(true);
-    //   window.scrollTo(0, 0);
-    // }
-  }, [altVal]);
+    // window.scrollTo(0, 0);
+    // console.log('.......overlay on');
+  }, [pathname]);
   /*
   ___1. let overlay be invisible!
   */
   useEffect(() => {
-    // window.scrollTo(0, 0);
     setMakeVisible(false);
-    // setCounter(val => val + 1);
+    // console.log('.......overlay off');
   }, [debouncedValue]);
 
   // useEffect(() => {
-  //   console.log('aR:', aR);
-  // }, [aR]);
+  //   console.log('altVal:', altVal);
+  // }, [altVal]);
 
   /**JSX**/
   return (

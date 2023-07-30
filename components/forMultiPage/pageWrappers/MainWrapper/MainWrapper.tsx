@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation';
 /**FramerMotion Staff*/
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -16,11 +17,14 @@ const variants = {
 const MainWrapper = ({ children }: Props) => {
   const pathname = usePathname();
   /*
-  ___1. scrollBar position coordinator
+  ___1. chould scrollBar position to [0,0] but doesn't...
   */
   // const scrollToTop = () => {
   //   window.scrollTo(0, 0);
   // };
+  // useEffect(() => {
+  //   scrollToTop();
+  // }, [pathname]);
 
   /**JSX**/
   return (

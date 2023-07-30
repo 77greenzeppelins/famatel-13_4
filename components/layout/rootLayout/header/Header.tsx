@@ -2,7 +2,7 @@ import React from 'react';
 /**Components**/
 import ButtonsPanel from './buttonsPanel/ButtonsPanel';
 /**Styles Data**/
-import styles from '@/styles';
+import { styles } from '@/styles';
 
 export default function Header() {
   /**JSX**/

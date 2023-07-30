@@ -9,17 +9,47 @@ export const layoutText = {
 
 export const HomePageText = {
   hero: { header: 'Elektryka przemysłowa' },
-  sectionsText: [
-    'Stworzyliśmy ten model, aby wspierać Twoje działania w szczególnie wymagających warunkach.',
-    'Od przeszło 30 lat dbamy o Twój komfort i bezpieczeństwo przy inwestycjach z zakresu elektryki przemysłowej.',
-    'Nasze rozwiązania z zakresu elektryki przemysłowej znane są Klientom w przeszło 80 krajach na całym świecie.',
-    // 'W celu zapewnienia naszym Klientom sprawnej obsługi oparliśmy sie na 8 firmach partnerskich.',
-    'Aby zoptymalizować realizację Twoich zamówień oparliśmy sie na 8 firmach partnerskich.',
-    'Stworzyliśmy 10 kategorii profesjonalnych produktów. To jest nasz wkład w rozwój Twójego biznesu .',
-    'Jeśli działasz na polu elektryki przemysłowej na pewno mamy rozwiązanie dla Ciebie!',
-  ],
+  sectionsText: {
+    s1: {
+      numb: '14307',
+      label: 'model',
+      text: 'Stworzyliśmy ten model, aby wspierać Twoje działania w szczególnie wymagających warunkach.',
+    },
+    s2: {
+      numb: '+30',
+      label: 'lat',
+      text: 'Od przeszło 30 lat dbamy o Twój komfort i bezpieczeństwo przy inwestycjach z zakresu elektryki przemysłowej.',
+    },
+    s3: {
+      numb: '+80',
+      label: 'państw',
+      text: 'Nasze rozwiązania z zakresu elektryki przemysłowej znane są Klientom w przeszło 80 krajach na całym świecie.',
+    },
+    s4: {
+      numb: '8',
+      label: 'business subsidies',
+      text: 'Aby zoptymalizować realizację Twoich zamówień oparliśmy sie na 8 firmach partnerskich.',
+    },
+  },
 };
 
 export const NowosciPageText = {
   hero: { header: 'Wkrótce pojawi sie tutaj coś niezwykle elektryzującego...' },
+};
+
+export const KontaktPageText = {
+  hero: {},
+  daneFirmy: [
+    'FAMATEL Polska Sp. z o.o.',
+    'Ul. Willowa 5',
+    '58-260 Bielawa',
+    'NIP 8822120823',
+    'KRS 0000525431',
+  ],
+  dojazd: ['ul. Strażacka', '58-260 Bielawa'],
+  dojazdNav: ['50.68051, 16.60300'],
+};
+
+export const footerText = {
+  dojazdPrompt: 'Dojazd od ul. Strażackiej',
 };

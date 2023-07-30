@@ -1,18 +1,35 @@
 import React from 'react';
+/**Components**/
+import NumberTextModule from './numberTextModule/NumberTextModule';
 /**BasicData**/
 import { HomePageText } from '@/data/textData';
 
 const PageSections = () => {
+  const {
+    sectionsText: { s1, s2, s3, s4 },
+  } = HomePageText;
   return (
     <div className="flex flex-col gap-y-20 wrapper-1">
-      {HomePageText.sectionsText.map((text, i) => (
-        <p
-          key={i}
-          className="text-left text-medium text-light md:w-[70%] m-auto"
-        >
-          {text}
-        </p>
-      ))}
+      <NumberTextModule
+        squareNumber={s1.numb}
+        squareLabel={s1.label}
+        animatedText={s1.text}
+      />
+      <NumberTextModule
+        squareNumber={s2.numb}
+        squareLabel={s2.label}
+        animatedText={s2.text}
+      />
+      <NumberTextModule
+        squareNumber={s3.numb}
+        squareLabel={s3.label}
+        animatedText={s3.text}
+      />
+      <NumberTextModule
+        squareNumber={s4.numb}
+        squareLabel={s4.label}
+        animatedText={s4.text}
+      />
     </div>
   );
 };
