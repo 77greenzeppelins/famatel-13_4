@@ -2,7 +2,7 @@ import React from 'react';
 /**Components**/
 import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
 /**Basic Data*/
-import styles from '@/styles';
+import { styles } from '@/styles';
 
 const HeroSection = () => {
   /**JSX**/
