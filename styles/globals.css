@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*__________________________________________________________base*/
+@layer base {
+  body,
+  hthl {
+    @apply general-styles;
+  }
+  body {
+    @apply w-full h-full bg-dark text-light text-regular scroll-bar-style;
+  }
+  :root {
+    /*
+    Tints of #e74124: #ee7a65  #f5b3a7
+    Monochromatic (darker):  #da3518
+    R231 G65 B56
+    */
+    --corpo-orange: #e74124;
+    /*
+    Tints: #9d9e9f #a6a7a8  #b0b1b2  #babbbb  #c4c4c5  #cececf  #d7d8d8  #e1e1e2  #ebebeb  #f5f5f5  #ffffff
+    Monochromatic: #676869
+    R157 G158 B159
+    */
+    --corpo-grey: #9d9e9f;
+    --corpo-grey-tint-1: #b0b1b2;
+    --corpo-grey-tint-2: #d7d8d8;
+    --corpo-grey-shade-1: #6d6e6f;
+    --corpo-grey-shade-2: #4e4f4f;
+    --corpo-grey50: lighter(#9d9e9f, 50);
+    /*
+    Tints: #1d1d1b #2d2d2c #4a4a48 #60605f #777776 #8e8e8d #a4a4a3 #bbbbba #d1d1d1 #e8e8e8 #ffffff
+    Shades: #1d1d1b #1a1a18 #171715 #141412 #111110 #0e0e0d #0b0b0a #080808 #050505 #020202 #000000
+    R0 G0 B0 | or rather: r:29, g:29, b:27
+    */
+    --corpo-dark: #1d1d1b;
+    --light: #ffffff;
+    --vYellow: #ceae0e;
+    --vTintYellow: #a48b0b;
+    --vBlue: #134976;
+    --vTintBlue: #217dca;
+    --vRed: #a01b29;
+    --vTintRed: #cc2234;
+    --vDark: #2c3038;
+    --vTintDark: #23262c;
+    --vViolet: #434592;
+    --vModViolet: #523799;
+    --vGreen: #32754c;
+    --vModGreen: #1f804b;
+    --vModLight: #fff8f7;
+  }
+}
+
+/*__________________________________________________________components*/
+/*for classes, that can be override within conmponent */
+/* @layer components{
+
+}; */
+
+/*__________________________________________________________utilities*/
+@layer utilities {
+  .glow {
+    box-shadow: 0 0 5px #e74124, 0 0 25px #e74124, 0 0 50px #e74124, 0 0 100px;
+  }
+  .fc {
+    @apply flex justify-center items-center;
+  }
+  .no-sparkling {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .disable {
+    @apply select-none touch-none no-sparkling;
+  }
+  .disable-soft {
+    @apply select-none no-sparkling;
+  }
+  /*
+  ___wrappers
+  */
+  .wrapper-1 {
+    @apply px-[2%] xxs:px-[6%] md:px-[60px] xl:px-[80px] xxl:px-[100px];
+  }
+  .wrapper-1-l {
+    @apply pl-[2%] xxs:pl-[6%] md:pl-[60px] xl:pl-[80px] xxl:pl-[100px];
+  }
+  .wrapper-1-r {
+    @apply pr-[2%] xxs:pr-[6%] md:pr-[60px] xl:pr-[80px] xxl:pr-[100px];
+  }
+
+  /**
+  * size-settings for link label; no color setting 
+  */
+  .word-spacing-01 {
+    word-spacing: 0.01rem;
+  }
+  .word-spacing-0125 {
+    word-spacing: 0.125rem;
+  }
+  .word-spacing-025 {
+    word-spacing: 0.25rem;
+  }
+  .header-link-label {
+    @apply text-[0.625rem] lg:text-[0.75rem] xxxl:text-[0.825rem] tracking-[0.125rem] uppercase word-spacing-0125 lg:word-spacing-025;
+  }
+  .text-v-small {
+    @apply text-[0.5rem] xxl:text-[0.625rem] xxxl:text-[0.75rem] tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
+  }
+  .text-small {
+    @apply text-[0.625rem] xxl:text-[0.75rem] xxxl:text-[0.825rem] tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
+  }
+  .text-regular {
+    @apply text-[0.75rem]  lg:text-[1rem] tracking-[2px] leading-tight;
+  }
+  .text-medium {
+    @apply text-[1.25rem] xs:text-[1.5rem]  md:text-[1.75rem] xxl:text-[2.25rem] tracking-[2px] leading-tight;
+  }
+  .text-large {
+    @apply text-[3.25rem] xs3xx:text-[4.25rem] xs:text-[4.5rem] md:text-[4.75rem] xxl:text-[6.25rem] tracking-[2px] leading-tight;
+  }
+  .text-hero-h1 {
+    @apply text-[2.5rem] xs3xx:text-[2.75rem] xs4xx:text-[3rem] xs:text-[3.5rem] sm:text-[3.75rem] md:text-[4.25rem] lg:text-[5rem] xl:text-[5.5rem] tracking-[2px] leading-tight;
+  }
+  .p-u-large {
+    @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];
+  }
+
+  .word-break-all {
+    word-wrap: break-all;
+    overflow-wrap: break-all;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+
+  /**
+  * Scrollbar style
+  * set here and add in: @layer base{ body{..., @apply scroll-bar-style;}, ...}
+  */
+  .scroll-bar-style {
+    /* IE and Edge */
+    -ms-overflow-style: auto;
+    /* Firefox */
+    scrollbar-width: auto;
+  }
+
+  /* Chrome, Safari and Opera */
+  .scroll-bar-style::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--corpo-grey-shade-2);
+  }
+  .scroll-bar-style::-webkit-scrollbar-thumb {
+    background-color: var(--corpo-grey-shade-1);
+  }
+  .scroll-bar-style::-webkit-scrollbar-thumb:hover {
+    background-color: var(--corpo-grey);
+  }
+
+  .general-styles {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    /* scroll-padding-top: var(--scroll-padding, 78); */
+  }
+}
