@@ -1,3 +1,12 @@
+export const layoutText = {
+  title: 'Famatel Polska',
+  description:
+    'Famatel to międzynarodowy producent rozwiązań z zakresu  elektryki przemysłowej z ponad 30-letnim doświadczeniem. Oferujemy wysokiej jakości produkty, takie jak rozdzielnice, gniazda i wtyczki, które spełniają najwyższe standardy bezpieczeństwa i jakości. Dołącz do grona naszych zadowolonych klientów już dziś!',
+  generator:
+    'elektryka przemysłowa, gniazda przemysłowe, wtyczki przemysłowe, rozdzielnice przemysłowe, rozdzielnice, ',
+  viewport: 'width=device-width, initial-scale=1',
+};
+
 export const HomePageText = {
   hero: { header: 'Elektryka przemysłowa' },
   sectionsText: [
