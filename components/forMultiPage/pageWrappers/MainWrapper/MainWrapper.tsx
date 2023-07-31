@@ -21,26 +21,25 @@ const MainWrapper = ({ children }: Props) => {
 
   /**JSX**/
   return (
-    <AnimatePresence
-      mode="wait"
-      initial={false}
-      onExitComplete={() => window.scrollTo(0, 0)}
+    // <AnimatePresence
+    //   mode="wait"
+    //   initial={false}
+    //   onExitComplete={() => window.scrollTo(0, 0)}
+    // >
+    <motion.div
+      key={pathname}
+      data-component={`MainWrapper-${pathname}`}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      // transition={{ duration: 0, delay: 0 }}
+      transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
     >
-      <motion.div
-        key={pathname}
-        data-component={`MainWrapper-${pathname}`}
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ duration: 0, delay: 0 }}
-        // transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
-        // className="flex flex-col items-center justify-center min-h-screen "
-      >
-        <main>{children}</main>
-        {/* <Footer /> */}
-      </motion.div>
-    </AnimatePresence>
+      <main>{children}</main>
+      <Footer />
+    </motion.div>
+    // </AnimatePresence>
   );
 };
 
