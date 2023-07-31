@@ -33,7 +33,7 @@ export default function RootLayout({
         {/* <PageTransitionWrapper> */}
         <MainWrapper>{children}</MainWrapper>
         {/* </PageTransitionWrapper> */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
