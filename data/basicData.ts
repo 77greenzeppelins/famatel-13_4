@@ -76,9 +76,18 @@ export const corpoColors = {
   vModLight: '#eaeaea',
 };
 
-/**Instant Contact Buttons**/
+/*
+___1. used in "InstantContactButtons"
+*/
 export const linksToInstantContactData = {
   mailB: 'mailto:biuro@famatel.pl',
   mailGK: 'mailto:grzegorz.kowcz@famatel.pl',
   mobileGK: 'tel:697-790-915',
+};
+
+/*
+___1. used in <SearchEngineButton> & <>
+*/
+export const buttonsConfig = {
+  isDisabledDuration: 1000,
 };

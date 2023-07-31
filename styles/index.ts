@@ -1,6 +1,7 @@
 export const styles = {
   headerHeight: 'h-[64px] lg:h-[78px]',
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
+  fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
   basicHeaderText: 'label-regular text-grey align-middle leading-none',
   basicHeaderBoxStyle: 'h-[10px] aspect-square bg-corpo',
   //   paddings: 'sm:p-16 xs:p-8 px-6 py-12',

@@ -55,3 +55,28 @@ export const footerText = {
   topSectionHeaders: ['Regulacje', 'Strony główne', 'Kategorie Produktów'],
   bottomSectionHeaders: ['Dane Firmowe', 'Kontakt'],
 };
+
+/*
+___1. used in <Header> | <SearchEngineButton> & <DropDownEngineButton>
+*/
+export const headerSpecButtons = {
+  searchEngine: 'searchEngine',
+  dropDownMenu: 'menu',
+};
+
+export const productSearchEngine = {
+  placeholder: 'np.: 13100',
+  header1: 'Wprowadź kod produktu:',
+  header2: 'Rezultat wyszukiwania:',
+  noResult: 'Brak',
+  noError: 'Sprawdźmy to!',
+  button: 'Szukaj',
+  valMin: 'Podany kod jest zbyt krótki.',
+  valMax: 'Podany kod jest zbyt długi.',
+  valRequired: 'Podaj kod szukanego produktu!',
+  valMatch: 'Podany kod nie odnosi się do żadnego produktu',
+  isProduct: 'Zobacz stronę produktu.',
+  noProduct: 'W naszej ofercie nie ma produktu o podanym kodzie.',
+  hasCard: 'Podierz kartę produktu (PDF)',
+  hasDeclaration: 'Podierz deklarację produktu (PDF)',
+};
