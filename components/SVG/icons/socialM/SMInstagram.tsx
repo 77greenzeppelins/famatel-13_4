@@ -1,3 +1,5 @@
+'use client';
+/**FramerMotion Staff*/
 import { motion } from 'framer-motion';
 import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 /**Basic Data**/
@@ -31,7 +33,7 @@ const SMInstagram = ({
       }}
       transition={{
         default: { ...svgTransition },
-        fill: { duration: 0.3, ease: [0, 0.71, 0.2, 1.01] },
+        // fill: { duration: 0.3, ease: [0, 0.71, 0.2, 1.01] },
       }}
     >
       <g fillRule="evenodd">

@@ -43,6 +43,11 @@ export const mainPagesData = [
   },
 ];
 
+export const regulacjeUrl = {
+  notaPrawna: { label: 'Nota prawna', url: '/nota-prawna' },
+  // cookies: { label: 'cookies', url: '/Polityka cookies' },
+};
+
 export const corpoColors = {
   //___basic
   light: '#ffffff',

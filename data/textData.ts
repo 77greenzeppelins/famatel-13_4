@@ -52,4 +52,6 @@ export const KontaktPageText = {
 
 export const footerText = {
   dojazdPrompt: 'Dojazd od ul. Strażackiej',
+  topSectionHeaders: ['Regulacje', 'Strony główne', 'Kategorie Produktów'],
+  bottomSectionHeaders: ['Dane Firmowe', 'Kontakt'],
 };

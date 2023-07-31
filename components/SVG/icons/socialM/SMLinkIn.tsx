@@ -1,3 +1,5 @@
+'use client';
+/**FramerMotion Staff*/
 import { motion } from 'framer-motion';
 import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 /**Basic Data**/
