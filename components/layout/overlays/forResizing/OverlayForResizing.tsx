@@ -13,7 +13,7 @@ export default function OverlayForResizing() {
   const { width, height } = useWindowSize();
   const val = (width / height).toString();
   const altVal = `${val}-${pathname}`;
-  const debouncedValue = useDebounce<string>(altVal, 400);
+  const debouncedValue = useDebounce<string>(altVal, 800);
   /*
   ___1. why such condition? If starting aR is close to 1 (device has square-like shape) and "resizing" is subtle don't trigger <OverlayForResizing> 
   */

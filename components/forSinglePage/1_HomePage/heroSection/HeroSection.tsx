@@ -1,16 +1,25 @@
+'use client';
 import React from 'react';
 /**Components**/
 import GraphicSection from './graphicSection/GraphicSection';
 import TextSection from './textSection/TextSection';
 /**Basic Data**/
 import { styles } from '@/styles';
+import { usePathname } from 'next/navigation';
+/**...**/
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
+  const pathname = usePathname();
+  const condition = pathname === '/';
   /**JSX**/
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: condition ? 1 : 0 }}
+      transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
       data-component="HeroSection"
-      className={`w-full h-screen md:min-h-[800px] ${styles.heroSectionOffset}  `}
+      className={`w-full h-screen md:min-h-[800px]  ${styles.heroSectionOffset}  `}
     >
       <div
         data-component="Section_1__container"
@@ -30,7 +39,7 @@ const HeroSection = () => {
         </div>
         {/* <ScrollPrompt /> */}
       </div>
-    </div>
+    </motion.div>
   );
   // return (
   //   <div
