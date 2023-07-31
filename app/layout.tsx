@@ -29,12 +29,12 @@ export default function RootLayout({
     <html lang="en" className={`${mySanSerif.variable}`}>
       <body className="font-sans">
         <Header />
-        {children}
+        {/* {children} */}
         {/* <OverlayForResizing /> */}
         {/* <PageTransitionWrapper> */}
-        {/* <MainWrapper>{children}</MainWrapper> */}
+        <MainWrapper>{children}</MainWrapper>
         {/* </PageTransitionWrapper> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
