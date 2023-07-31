@@ -37,7 +37,9 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 0,
     mainCategoryName: mainCategoriesNames[0],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
+
     // mainCategoryImage: imgMainCategories[0],
     // subCategoriesNames: [...wtyczkiGniazdaSubCategoryNames],
     // subCategoriesUrls: [...wtyczkiGniazdaSubCategoriesUrls],
@@ -49,7 +51,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 1,
     mainCategoryName: mainCategoriesNames[1],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[1],
     // subCategoriesNames: [...GniazdaZBlokadaSubCategoryNames],
     // subCategoriesUrls: [...GniazdaZBlokadaSubCategoryUrls],
@@ -61,7 +64,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 2,
     mainCategoryName: mainCategoriesNames[2],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[2],
     // subCategoriesNames: [...adapteryPrzemysloweSubCategoryNames],
     // subCategoriesUrls: [...adapteryPrzemysloweSubCategoryUrls],
@@ -73,7 +77,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 3,
     mainCategoryName: mainCategoriesNames[3],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[3],
     // subCategoriesNames: [...gniazdaPodwieszaneSubCategoryNames],
     // subCategoriesUrls: [...gniazdaPodwieszaneSubCategoryUrls],
@@ -85,7 +90,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 4,
     mainCategoryName: mainCategoriesNames[4],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[4],
     // subCategoriesNames: [...przedluzaczeBebnoweSubCategoryNames],
     // subCategoriesUrls: [...przedluzaczeBebnoweSubCategoryUrls],
@@ -97,7 +103,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 5,
     mainCategoryName: mainCategoriesNames[5],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[5],
     // subCategoriesNames: [...rozlacznikiBezpieczenstwaSubCategoryNames],
     // subCategoriesUrls: [...rozlacznikiBezpieczenstwaSubCategoryUrls],
@@ -109,7 +116,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 6,
     mainCategoryName: mainCategoriesNames[6],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[6],
     // subCategoriesNames: [...ladowarkiPojazdowSubCategoryNames],
     // subCategoriesUrls: [...ladowarkiPojazdowSubCategoryUrls],
@@ -121,7 +129,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 7,
     mainCategoryName: mainCategoriesNames[7],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[7],
     // subCategoriesNames: [...obudowyAndRozdzielniceSubCategoryNames],
     // subCategoriesUrls: [...obudowyAndRozdzielniceSubCategoryUrls],
@@ -133,7 +142,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 8,
     mainCategoryName: mainCategoriesNames[8],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[8],
     // subCategoriesNames: [...rozdzielniceModuloweSubCategoryNames],
     // subCategoriesUrls: [...rozdzielniceModuloweSubCategoryUrls],
@@ -145,7 +155,8 @@ export const catalogStructureData = [
   {
     mainCategoryIndex: 9,
     mainCategoryName: mainCategoriesNames[9],
-    mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
+    // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
+    mainCategoryUrl: `${mainPagesPaths.produkty}`,
     // mainCategoryImage: imgMainCategories[9],
     // subCategoriesNames: [...puszkiInstalacyjneSubCategoryNames],
     // subCategoriesUrls: [...puszkiInstalacyjneSubCategoryUrls],
