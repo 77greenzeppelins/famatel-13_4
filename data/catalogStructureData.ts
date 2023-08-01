@@ -1,36 +1,11 @@
-import { mainPagesPaths } from './basicData';
+import {
+  mainCategoriesNames,
+  mainPagesPaths,
+  mainCategoriesPath,
+} from './basicData';
 
-export const mainCategoriesPath: string[] = [
-  'wtyczki-gniazda',
-  'gniazda-z-blokada',
-  'adaptery-przemyslowe',
-  'gniazda-podwieszane',
-  'przedluzacze-bebnowe',
-  'rozlaczniki-bezpieczenstwa',
-  'ladowarki-samochodowe',
-  'obudowy-i-rozdzielnice',
-  'rozdzielnice-modulowe',
-  'puszki-instalacyjne',
-  'osprzet-domowy',
-];
-export const mainCategoriesNames: string[] = [
-  'Przemysłowe wtyczki i gniazda',
-  'Gniazda z rozłącznikiem i blokadą',
-  'Adaptery przemysłowe',
-  'Gniazda podwieszane',
-  'Przedłużacze bębnowe',
-  'Rozłączniki bezpieczeństwa',
-  'Ładowarki samochodowe',
-  'Obudowy i rozdzielnice',
-  'Rozdzielnice modułowe',
-  'Puszki instalacyjne',
-  // 'Osprzęt domowy',
-];
-
-/**
- * "name" is a name of main category /
- *  "subcategories" is an array of subcategories names
- * url is an array of subcategories urls
+/*
+...
  */
 export const catalogStructureData = [
   //_____category__1__wtyczki-gniazda
@@ -39,7 +14,6 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[0],
     // mainCategoryUrl: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
     mainCategoryUrl: `${mainPagesPaths.produkty}`,
-
     // mainCategoryImage: imgMainCategories[0],
     // subCategoriesNames: [...wtyczkiGniazdaSubCategoryNames],
     // subCategoriesUrls: [...wtyczkiGniazdaSubCategoriesUrls],

@@ -3,13 +3,14 @@ import React from 'react';
 import NumberTextModule from './numberTextModule/NumberTextModule';
 /**BasicData**/
 import { HomePageText } from '@/data/textData';
+import WorldMapSection from './worldMap/WorldMapSection';
 
 const PageSections = () => {
   const {
     sectionsText: { s1, s2, s3, s4 },
   } = HomePageText;
   return (
-    <div className="flex flex-col gap-y-20 wrapper-1">
+    <div className="flex flex-col gap-y-20 ">
       <NumberTextModule
         squareNumber={s1.numb}
         squareLabel={s1.label}
@@ -25,6 +26,7 @@ const PageSections = () => {
         squareLabel={s3.label}
         animatedText={s3.text}
       />
+      <WorldMapSection />
       <NumberTextModule
         squareNumber={s4.numb}
         squareLabel={s4.label}

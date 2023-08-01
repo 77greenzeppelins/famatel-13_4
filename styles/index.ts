@@ -1,18 +1,16 @@
 export const styles = {
+  /*
+  ___some general settings
+  */
   headerHeight: 'h-[64px] lg:h-[78px]',
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
   fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
   basicHeaderText: 'label-regular text-grey align-middle leading-none',
   basicHeaderBoxStyle: 'h-[10px] aspect-square bg-corpo',
-  //   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
-  //   yPaddings: 'sm:py-16 xs:py-8 py-12',
-  //   xPaddings: 'sm:px-16 px-6',
-  //   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
-  //   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
-  //   flexCenter: 'flex justify-center items-center',
-  //   flexStart: 'flex justify-start items-start',
-  //   flexEnd: 'flex justify-end',
-  //   navPadding: 'pt-[98px]',
+  basicAnimation: 'duration-300 delay-100 ease-in',
+  /*
+  ___footer settings
+  */
   footer: {
     dirContacts: {
       linkContainer: 'flex items-center gap-6 group no-sparkling w-fit',
@@ -26,8 +24,24 @@ export const styles = {
       icon: 'h-4 w-4 text-light', // animate-pulse glow
     },
   },
+  /*
+  ___Page ===> doPobrania 
+  */
+  doPobraniaPageStyles: {
+    svgMaxHeight: 'max-h-[540px]',
+  },
 };
 
 /*
 (!) add: ./styles/... in tailwind.config.js
 */
+
+//   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
+//   yPaddings: 'sm:py-16 xs:py-8 py-12',
+//   xPaddings: 'sm:px-16 px-6',
+//   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
+//   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
+//   flexCenter: 'flex justify-center items-center',
+//   flexStart: 'flex justify-start items-start',
+//   flexEnd: 'flex justify-end',
+//   navPadding: 'pt-[98px]',

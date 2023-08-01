@@ -1,3 +1,4 @@
+'use client';
 import React, { ReactNode } from 'react';
 /**FramerMotion Staff**/
 import { motion } from 'framer-motion';
@@ -28,7 +29,9 @@ const InViewAnimatedContent: React.FC<Props> = ({
   return (
     <motion.div
       data-component="InViewAnimatedContent__container"
-      className={containerStyle ? containerStyle : 'flex flex-col gap-y-10'}
+      className={
+        containerStyle ? containerStyle : 'flex flex-col gap-y-10 w-full'
+      }
       initial={{ opacity: 0 }}
       animate={{
         opacity: componentIsInView ? 1 : 0,
