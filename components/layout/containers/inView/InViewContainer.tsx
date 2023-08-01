@@ -76,3 +76,18 @@ const InViewContainer: React.FC<Props> = ({
 };
 
 export default InViewContainer;
+
+/*
+<InViewContainer
+      animationDelay={2}
+      outherContainerStyle="w-full"
+      measuredElementStyle="relative "
+      // topFactor={0.6}
+      topFactor={0.3}
+      bottomFactor={0.3}
+    >
+      <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+
+      </InViewAnimatedContent>
+</InViewContainer>
+*/
