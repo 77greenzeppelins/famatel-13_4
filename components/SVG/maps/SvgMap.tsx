@@ -1,5 +1,4 @@
-import React from 'react';
-import { corpoColors } from '../../../data/_data';
+import { corpoColors } from '@/data/basicData';
 
 const SvgMap = ({ containerStyle }: { containerStyle?: string }) => {
   return (
