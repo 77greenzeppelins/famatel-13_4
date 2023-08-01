@@ -1,30 +1,55 @@
 'use client';
 /**Components**/
+import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
+import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
+import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 import DownloadableLink from '@/components/basic/links/downloadableLink/DownloadableLink';
 /**Framer Motion Staff*/
 import { motion } from 'framer-motion';
 /**Basic Data**/
 import { doPobraniaPageData } from '@/data/basicData';
+import { doPobraniaPageText } from '@/data/textData';
+/**Tailwind Styles**/
+import { styles } from '@/styles';
 
 const DeclarationsList = () => {
   /**JSX**/
   return (
-    <ul
-      data-component="CatalogChapters"
-      className="flex flex-col w-full gap-y-2"
+    <InViewContainer
+      animationDelay={2}
+      outherContainerStyle="w-full"
+      measuredElementStyle="relative "
+      // topFactor={0.6}
+      topFactor={0.3}
+      bottomFactor={0.3}
     >
-      {doPobraniaPageData.declarationsData.map(
-        ({ id, label, path, size }, i) => (
-          <motion.li
-            //   onHoverStart={event => handleHoverStart(event)}
-            className="list-none"
-            key={i}
+      <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+        <div className="flex flex-col w-full gap-y-10 wrapper-1">
+          <BasicHeader
+            textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+            text={doPobraniaPageText.declarations}
+          />
+
+          <ul
+            data-component="CatalogChapters"
+            className="flex flex-col w-full gap-y-2"
           >
-            <DownloadableLink id={id} label={label} path={path} size={size} />
-          </motion.li>
-        )
-      )}
-    </ul>
+            {doPobraniaPageData.declarationsData.map(
+              ({ id, label, path, size }, i) => (
+                <motion.li className="list-none" key={i}>
+                  <DownloadableLink
+                    id={id}
+                    label={label}
+                    path={path}
+                    size={size}
+                  />
+                </motion.li>
+              )
+            )}
+          </ul>
+        </div>
+      </InViewAnimatedContent>
+    </InViewContainer>
   );
 };
 
