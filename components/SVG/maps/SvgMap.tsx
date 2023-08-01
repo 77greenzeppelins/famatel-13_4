@@ -10,17 +10,6 @@ const SvgMap = ({ containerStyle }: { containerStyle?: string }) => {
       viewBox="0 0 800 800"
       className={containerStyle}
     >
-      {/*
-      //___frame
-      <path
-        fill={corpoColors.dark}
-        stroke={corpoColors.greyShade2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2.182"
-        d="M1.091 1.091H798.9110000000001V798.9110000000001H1.091z"
-      ></path> */}
-
       <path
         //___roads_1
         fill={corpoColors.greyShade2}

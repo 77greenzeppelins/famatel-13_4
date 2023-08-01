@@ -64,6 +64,7 @@ const MainWrapper = ({ children }: Props) => {
       variants={variants}
       // transition={{ duration: 0, delay: 0 }}
       transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
+      className="flex flex-col w-full gap-y-20"
     >
       <main>{children}</main>
       <Footer />

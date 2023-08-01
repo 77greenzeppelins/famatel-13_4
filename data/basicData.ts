@@ -121,6 +121,12 @@ export const buttonsConfig = {
 ___used in: "do-pobrania" 
 */
 export const doPobraniaPageData = {
+  catalogData: {
+    path: '/pdf/catalog/Katalog 2023.pdf',
+    date: '2023',
+    linkLabel: 'Pełna wersja (53MB)',
+  },
+  /**Framer Motion Staff*/
   chaptersData: [
     {
       id: '01',

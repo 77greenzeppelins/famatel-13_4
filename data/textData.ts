@@ -37,8 +37,14 @@ export const NowosciPageText = {
   hero: { header: 'Wkrótce pojawi sie tutaj coś niezwykle elektryzującego...' },
 };
 
+export const doPobraniaPageText = {
+  chaptersHeader: 'Rozdziały katalogu',
+  declarations: 'Deklaracje zgodności',
+};
+
 export const KontaktPageText = {
   hero: {},
+  headers: ['Kontakt', 'Dane firmowe', 'Wskazówki dojazd'],
   daneFirmy: [
     'FAMATEL Polska Sp. z o.o.',
     'Ul. Willowa 5',

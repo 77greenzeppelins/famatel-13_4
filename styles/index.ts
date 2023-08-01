@@ -6,6 +6,7 @@ export const styles = {
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
   fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
   basicHeaderText: 'label-regular text-grey align-middle leading-none',
+  largeHeaderText: 'text-large text-light',
   basicHeaderBoxStyle: 'h-[10px] aspect-square bg-corpo',
   basicAnimation: 'duration-300 delay-100 ease-in',
   /*
@@ -29,6 +30,13 @@ export const styles = {
   */
   doPobraniaPageStyles: {
     svgMaxHeight: 'max-h-[540px]',
+  },
+  kontaktPageStyles: {
+    linkContainer: 'flex items-center gap-6 group no-sparkling w-fit',
+    label:
+      'text-medium text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
+    iconTrans:
+      'h-6 w-6 text-light group-hover:text-corpo group-hover:translate-x-1 ease-in duration-300  origin-center',
   },
 };
 

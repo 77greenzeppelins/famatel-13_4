@@ -14,7 +14,7 @@ interface Props {
 }
 /**-----------------------------------------------------**/
 const BasicHeader: React.FunctionComponent<Props> = ({
-  text,
+  text = 'Default',
   containerStyle,
   textStyle,
   inlineTextStyle,
