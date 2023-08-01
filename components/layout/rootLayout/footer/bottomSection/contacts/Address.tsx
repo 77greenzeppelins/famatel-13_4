@@ -1,19 +1,26 @@
 import React from 'react';
-/**ICOns**/
+/**Icons**/
 import { MapPinIcon } from '@heroicons/react/24/solid';
 
 /**Basic Data**/
-import { KontaktPageText, footerText } from '@/data/textData';
+import { kontaktPageText, footerText } from '@/data/textData';
 import { styles } from '@/styles';
 
 /**TS**/
 interface Props {
+  containerStyle?: string;
   labelStyle?: string;
   iconStyle?: string;
+  isFooter?: boolean;
 }
 
 /**-------------------------------------**/
-const Address = ({ labelStyle, iconStyle }: Props) => {
+const Address = ({
+  containerStyle,
+  labelStyle,
+  iconStyle,
+  isFooter = true,
+}: Props) => {
   const {
     footer: {
       address: { label: labelDefaultStyle, icon: iconDefaultStyle },
@@ -22,25 +29,29 @@ const Address = ({ labelStyle, iconStyle }: Props) => {
   /**JSX**/
   return (
     <address className="not-italic">
-      <ul className="flex flex-col gap-y-5 ">
-        {KontaktPageText.daneFirmy.map(label => (
+      <ul
+        className={containerStyle ? containerStyle : 'flex flex-col gap-y-5 '}
+      >
+        {kontaktPageText.daneFirmy.map(label => (
           <li key={label}>
             <p className={labelStyle ? labelStyle : labelDefaultStyle}>
               {label}
             </p>
           </li>
         ))}
-        <li className="flex items-end gap-2 ">
-          <div>
-            <MapPinIcon
-              className={iconStyle ? iconStyle : iconDefaultStyle}
-              //___animate-pulse glow
-            />
-          </div>
-          <p className={labelStyle ? labelStyle : labelDefaultStyle}>
-            {footerText.dojazdPrompt}
-          </p>
-        </li>
+        {isFooter ? (
+          <li className="flex items-center gap-2 ">
+            <div>
+              <MapPinIcon
+                className={iconStyle ? iconStyle : iconDefaultStyle}
+                //___animate-pulse glow
+              />
+            </div>
+            <p className={labelStyle ? labelStyle : labelDefaultStyle}>
+              {footerText.dojazdPrompt}
+            </p>
+          </li>
+        ) : null}
       </ul>
     </address>
   );

@@ -6,6 +6,8 @@ import SvgWordMap from './SvgWordMap';
 import useWindowSize from '@/lib/hooks/useWindowSize';
 /**Framer Motion Staff**/
 import { motion } from 'framer-motion';
+/**Basic Data**/
+import { worldMapConfig } from '@/data/basicData';
 
 /**TS**/
 interface Props {
@@ -16,7 +18,7 @@ interface Props {
 
 /**-----------------------------------------**/
 const WorldMapComponent: React.FC<Props> = ({
-  widthToDrag = 768,
+  widthToDrag = worldMapConfig.isDraggable_2,
   outherContainerStyle,
   innerContainerStyle,
 }) => {

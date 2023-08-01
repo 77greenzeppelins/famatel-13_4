@@ -110,6 +110,13 @@ export const linksToInstantContactData = {
   mailGK: 'mailto:grzegorz.kowcz@famatel.pl',
   mobileGK: 'tel:697-790-915',
 };
+/*
+___used in: as props to <WorldMapComponent> in HomePage & KontaktPage
+*/
+export const worldMapConfig = {
+  isDraggable_1: 1600, //when container is "w-1/2"
+  isDraggable_2: 768, //when container is "w-full"
+};
 
 /*
 ___1. used in <SearchEngineButton> & <>

@@ -8,6 +8,7 @@ interface Props {
   inlineTextStyle?: {};
   boxStyle?: string;
   hasVerticalOrnament?: boolean;
+  ornamentStyle?: string;
   ornamentColor?: string;
   hasHorizontalOrnament?: boolean;
   hasBox?: boolean;
@@ -20,6 +21,7 @@ const BasicHeader: React.FunctionComponent<Props> = ({
   inlineTextStyle,
   boxStyle,
   hasVerticalOrnament = true,
+  ornamentStyle,
   ornamentColor,
   hasBox = false,
 }) => {
@@ -37,7 +39,11 @@ const BasicHeader: React.FunctionComponent<Props> = ({
       )}
       <p
         className={`${textStyle ? textStyle : styles.basicHeaderText} ${
-          hasVerticalOrnament ? 'border-l-[2px]  pl-3' : ''
+          hasVerticalOrnament
+            ? ornamentStyle
+              ? ornamentStyle
+              : 'border-l-[2px] pl-3'
+            : ''
         } ${ornamentColor ? ornamentColor : 'border-corpo'} `}
         style={inlineTextStyle}
       >

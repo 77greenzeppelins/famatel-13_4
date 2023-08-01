@@ -42,7 +42,7 @@ export const doPobraniaPageText = {
   declarations: 'Deklaracje zgodności',
 };
 
-export const KontaktPageText = {
+export const kontaktPageText = {
   hero: {},
   headers: ['Kontakt', 'Dane firmowe', 'Wskazówki dojazd'],
   daneFirmy: [
