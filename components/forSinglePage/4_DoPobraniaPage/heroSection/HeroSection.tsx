@@ -6,6 +6,7 @@ import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/Do
 import { styles } from '@/styles';
 import { doPobraniaPageData } from '@/data/basicData';
 import SvgLogoF from '@/components/SVG/logo/SvgLogoF';
+import HeroBackground from './heroBackground/HeroBackground';
 
 const HeroSection = () => {
   /**JSX**/
@@ -21,13 +22,15 @@ const HeroSection = () => {
         //___via-dark
       />
       <div className="absolute h-full right-0 w-[5%] max-w-[40px] z-10 from-dark to-transparent bg-gradient-to-l" />
+      {/*
+        .
+        .....place for <HeroBackground>
+        .
+        */}
+      <HeroBackground />
       <div className="relative fc flex-col w-[90%] xs4xx:w-[360px] lg:w-[400px] xxl:w-[460px] h-[80vh] min-h-[460px] z-10 bg-dark ">
         <div
           className={`relative fc flex-col gap-10 w-[90%] xs4xx:w-[360px] lg:w-[400px] xxl:w-[460px] h-[80vh] min-h-[460px] z-10 bg-dark`}
-          //___max-w-[600px] max-h-[600px]
-          // variants={container}
-          // initial="initial"
-          // animate="animate"
         >
           <FadingFrame />
 
@@ -45,13 +48,6 @@ const HeroSection = () => {
               label={doPobraniaPageData.catalogData.linkLabel}
               path={doPobraniaPageData.catalogData.path}
             />
-            {/* <DownloadableLink
-              staffToDownload={catalogLink}
-              linkLabel={'PEŁNA WERSJA (53 MB)'}
-              textStyle={
-                'header-link-label text-grey group-hover:text-light ease-in duration-300 disable whitespace-normal'
-              }
-            /> */}
           </div>
         </div>
       </div>

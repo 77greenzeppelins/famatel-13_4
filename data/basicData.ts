@@ -239,4 +239,8 @@ export const doPobraniaPageData = {
       size: '0.6MB',
     },
   ],
+  heroBackground: {
+    heightValue: 668,
+    svgBasicSize: 220,
+  },
 };

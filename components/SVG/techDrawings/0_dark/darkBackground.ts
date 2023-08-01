@@ -13,14 +13,9 @@ import SVG_8_1_3959_d from './SVG_8.1_3959_d';
 import SVG_9_2_3926_T_d from './SVG_9.2_3926_T_d';
 import SVG_10_1_3061_d from './SVG_10.1_3061_d';
 import SvgLogoFgradient from '../../logo/SvgLogoFgradient';
-/**TS**/
-// import {
-//   IF_SvgTechTailwind,
-//   IF_SvgTechTailwindMod1,
-// } from '../../../../utils/TS/typeScriptStaff';
 /*
-___1. used in: doPobrania | ... | slider
-___2. "id" must mirr0r id's in basicData | doPobraniaPageData ==> hover event requirement
+___1. used in: doPobrania | ... | catalogChapters | slider
+___2. "id" must mirror id's in basicData | doPobraniaPageData ==> hover event requirement
 */
 export const doPobrania_chapters_svgDark = [
   //___
@@ -38,10 +33,11 @@ export const doPobrania_chapters_svgDark = [
 ];
 
 /*
-used in: 
+___1. used in: doPobrania | heroSection | background | ...
+___2. thera are "random" lists of svgImages; each set of svgImages is used to create row of images that animates during scrolling;
 */
 
-const svgTech_darkBackground = [
+export const svgTech_darkBackground = [
   //___
   { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '13377_d', Component: SVG_1_2_13377_d },
@@ -58,7 +54,7 @@ const svgTech_darkBackground = [
   { model: '3061_d', Component: SVG_10_1_3061_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
 ];
-const svgTech_darkBackground2 = [
+export const svgTech_darkBackground2 = [
   //___
   { model: '3061_d', Component: SVG_10_1_3061_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
@@ -74,7 +70,7 @@ const svgTech_darkBackground2 = [
   { model: '14353_d', Component: SVG_1_3_14353_d },
   { model: '14307_d', Component: SVG_1_1_14307_d },
 ];
-const svgTech_darkBackground3 = [
+export const svgTech_darkBackground3 = [
   //___
   { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
