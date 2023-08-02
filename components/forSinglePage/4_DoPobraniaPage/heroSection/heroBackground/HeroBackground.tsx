@@ -60,7 +60,7 @@ const HeroBackground = () => {
         bottomFactor={0.2}
       >
         <InViewAnimatedContent
-          containerStyle="relative flex flex-col  justify-around   w-full h-full"
+          containerStyle="relative flex flex-col justify-around w-full h-full"
           yFactor={'0'}
         >
           {/* <div>HeroBackground</div> */}

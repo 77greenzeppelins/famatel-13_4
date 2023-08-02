@@ -57,7 +57,7 @@ const WorldMapComponent: React.FC<Props> = ({
         dragElastic={0.9}
         dragMomentum={true}
       >
-        <div className="absolute inset-1 bg-greyShade2 z-5">
+        <div className="absolute inset-1 special-gradient z-5">
           {/* <SvgMapBackgroung /> */}
         </div>
         <SvgWordMap containerStyle="relative w-full z-10 " />
