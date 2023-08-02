@@ -5,10 +5,13 @@ const GraphicSection = (props: ImageType_C) => {
   return (
     <div
       data-component="GraphicSection_DropDownMenuCard"
-      className="hidden sm:flex justify-center items-end relative h-[60%] w-full "
+      className="relative items-end justify-center hidden w-full sm:flex"
     >
       <div
-        className="fc relative m-auto h-[90%] aspect-square bg-light p-2"
+        /*
+      ___1. why "max-h" ? because aspect-square depends on height and in some "proportions" image expands its space
+      */
+        className="fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] xl:max-h-[150px] aspect-square bg-light p-2"
         // variants={cardVariants}
         // initial="initial"
         // animate="animate"

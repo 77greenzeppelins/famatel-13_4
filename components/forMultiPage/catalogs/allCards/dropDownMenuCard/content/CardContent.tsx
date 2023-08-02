@@ -17,15 +17,16 @@ const CardContent = ({
 
   /**JSX**/
   return (
-    <div data-component="CardContent" className="flex flex-col w-full h-full">
+    <div
+      data-component="CardContent"
+      className="flex items-center w-full h-full sm:flex-col"
+    >
       {isGraphicSection ? null : <GraphicSection {...catImage} />}
       <div
         data-layout="BasicCardMainSection__textSection"
         className={`${
-          isGraphicSection
-            ? 'flex h-full items-start justify-center px-4 xs3xx:px-6'
-            : 'fc h-[45%]'
-        }  w-full p-1 `}
+          isGraphicSection ? 'fc h-full  px-4 xs3xx:px-6' : 'fc h-[45%]'
+        }  w-full p-1`}
       >
         <p
           className={`text-small uppercase text-center text-grey group-hover:text-light ${styles.basicAnimation}`}

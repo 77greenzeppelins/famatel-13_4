@@ -1,6 +1,8 @@
-import { catalogStructureData } from '@/data/catalogStructureData';
 import React from 'react';
+/**Components**/
 import DropDownMenuCard from '../allCards/dropDownMenuCard/DropDownMenuCard';
+/**Basic Data**/
+import { catalogStructureData } from '@/data/catalogStructureData';
 
 const DropDownMenu = () => {
   return (
@@ -11,7 +13,11 @@ const DropDownMenu = () => {
       <div className={`w-full h-[90%] xl:h-[90%] fc`}>
         <div
           data-layout="ProduktyDropDownMenu__griddedContainer"
-          className="flex flex-col xs3xx:grid xs3xx:grid-rows-4 xs3xx:grid-cols-3 xs:grid-rows-3 xs:grid-cols-4 w-[100vw] h-full  px-[1rem] gap-[0.75rem]"
+          /*
+          ___1. initial layout is col-flex
+          ___2. grid starts from w-358px
+          */
+          className="flex flex-col xs3xx:grid xs3xx:grid-rows-4 xs3xx:grid-cols-3 sm:grid-rows-3 sm:grid-cols-4 w-[100vw] h-full  px-[1rem] gap-[0.75rem]"
         >
           {catalogStructureData.map(
             ({
@@ -20,7 +26,6 @@ const DropDownMenu = () => {
               mainCategoryUrl,
               mainCategoryImage,
             }) => (
-              // <div key={mainCategoryIndex}> {mainCategoryIndex}</div>
               <DropDownMenuCard
                 key={mainCategoryIndex}
                 catIndex={mainCategoryIndex}
@@ -28,19 +33,10 @@ const DropDownMenu = () => {
                 catPath={mainCategoryUrl}
                 catImage={mainCategoryImage}
               />
-              // <Card_Basic
-              //   key={mainCategoryIndex}
-              //   url={mainCategoryUrl}
-              //   imageData={mainCategoryImage}
-              //   arrayIndex={mainCategoryIndex}
-              //   label={mainCategoryName}
-              //   heightMattersCondition={true}
-              //   textStyle={normalCardTextStyle}
-              // />
             )
           )}
 
-          <div className="col-start-2 xs:col-start-3 col-span-full ">
+          <div className="col-start-2 sm:col-start-3 col-span-full ">
             <div className="items-center justify-center hidden w-full h-full border xs3xx:flex border-greyShade2">
               77
             </div>
