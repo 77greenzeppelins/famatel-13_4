@@ -1,13 +1,13 @@
 import React from 'react';
 /**Components**/
 import NavPanel from './navPanel/NavPanel';
-import SpecialButtons from './specialButtons/SpecialButtons';
+import DropDownModule from './dropDownModule/DropDownModule';
 
 const ButtonsPanel = () => {
   /**JSX**/
   return (
     <div className="flex items-center justify-between w-full h-full">
-      <SpecialButtons />
+      <DropDownModule />
       <NavPanel />
     </div>
   );

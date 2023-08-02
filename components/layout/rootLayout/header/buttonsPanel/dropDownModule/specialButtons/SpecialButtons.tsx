@@ -41,7 +41,7 @@ const SpecialButtons = () => {
     ) : null;
   };
 
-  /**It allowes to close dropdownMenu when url changes**/
+  /**It allows to close dropdownMenu when url changes**/
   const pathname = usePathname();
   useEffect(() => {
     return () => {
