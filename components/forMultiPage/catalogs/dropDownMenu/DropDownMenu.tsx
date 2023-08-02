@@ -39,11 +39,6 @@ const DropDownMenu = () => {
 
           <div className="col-start-2 sm:col-start-3 col-span-full ">
             <SpecialCard />
-
-            {/* <SpecialCard
-              mediumTextStyle={specialCardTextStyle}
-              largeTextStyle={largeTextStyle}
-            /> */}
           </div>
         </div>
       </div>
