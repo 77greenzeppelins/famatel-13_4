@@ -4,7 +4,13 @@
 //   width: number;
 //   blurDataURL?: string;
 // };
-type ImageType = {
+/*
+___1. syntax: "_C" means "custome"; is used when type name sound as native TS name...
+*/
+/*
+___1. used in: various "index.ts" files that organizes images within images folders
+*/
+type ImageType_C = {
   path: string;
   // path: '/images/1_homePage/dirtyPlug_1200_1200.png'; // (!) is correct
   // path:"/public/images/1_homePage/dirtyPlug_1200_1200.png" // (!) is wrong
@@ -17,5 +23,5 @@ type DropDownMenuCardType = {
   catIndex: number;
   catName: string;
   catPath: string;
-  catImage: StaticImageData;
+  catImage: ImageType_C;
 };

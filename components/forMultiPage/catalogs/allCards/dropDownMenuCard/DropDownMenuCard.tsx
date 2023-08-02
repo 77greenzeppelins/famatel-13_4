@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation';
 import ArrowLongRightIcon from '@/components/SVG/icons/heroIcons/ArrowLongRightIcon';
 import TwoDigitsDisplayer from '@/components/forMultiPage/atomsLike/digitsDisplayer/twoDigitsDisplayer/TwoDigitsDisplayer';
 import CardContent from './content/CardContent';
+/**Tailwind Styles*/
+import { styles } from '@/styles';
 
 const DropDownMenuCard = ({
   catIndex,
@@ -16,16 +18,16 @@ const DropDownMenuCard = ({
   const isActive = pathname === catPath;
 
   const routDrivenTextStyle = `${
-    isActive ? 'text-corpo' : 'text-dark'
+    isActive ? 'text-corpo' : 'text-grey'
   }  text-center text-[0.5rem] xs3xx:text-[0.625rem] md:text-[0.75rem] xxxl:text-[1.125rem] tracking-[0.09rem] leading-normal ${
-    isActive ? '' : 'group-hover:text-light ease-in duration-300'
-  }  `;
+    isActive ? '' : `group-hover:text-light ${styles.basicAnimation}`
+  } `;
   /**JSX**/
   return (
     <div
       className={`relative w-full h-full cursor-pointer ${
         isActive ? '' : 'group'
-      }`}
+      } border border-greyShade2`}
     >
       <Link
         aria-label={`Karta kategorii: ${catName}`}
@@ -46,19 +48,26 @@ const DropDownMenuCard = ({
                 index={catIndex}
                 textStyle={routDrivenTextStyle}
                 containerStyle={`fc xs:border-r ${
-                  isActive ? 'border-corpo' : 'border-dark'
-                } w-full max-w-[30px] md:max-w-[50px] h-full p-[0.25rem]  group-hover:border-light ease-in duration-300`}
+                  isActive ? 'border-corpo' : 'border-greyShade2'
+                } w-full max-w-[30px] md:max-w-[50px] h-full p-[0.25rem]  group-hover:border-light ${
+                  styles.basicAnimation
+                }`}
               />
             </div>
-            <div className="flex items-center justify-end xs:hidden w-[50%] h-full ">
+            <div className="flex items-center justify-end xs:hidden w-[50%] h-full pr-2">
               <ArrowLongRightIcon
                 containerStyle={`fc h-6 w-6 aspect-square ${
-                  isActive ? 'stroke-corpo' : 'stroke-dark'
-                }  group-hover:stroke-light group-hover:translate-x-1 ease-in duration-[0.4s] delay-[0.1s] origin-center`}
+                  isActive ? 'stroke-corpo' : 'stroke-grey'
+                }  group-hover:stroke-light group-hover:translate-x-1 ${
+                  styles.basicAnimation
+                } origin-center`}
               />
             </div>
           </div>
-          <div className="w-full h-[60%] xs:w-[80%] xs:h-full ">
+          <div
+            className="w-full h-[60%] xs:w-[80%] xs:h-full"
+            // className="w-full h-full "
+          >
             <CardContent
               catIndex={catIndex}
               catName={catName}

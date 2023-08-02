@@ -32,7 +32,7 @@
 //   { image: category12 },
 // ];
 
-export const indexImgCat: ImageType[] = [
+export const indexImgCat: ImageType_C[] = [
   {
     path: '/images/for_dropDownMenu/1_gniazda_wtyczki.webp',
     width: 400,

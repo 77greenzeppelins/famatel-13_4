@@ -1,9 +1,9 @@
-import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import {
   mainCategoriesNames,
   mainPagesPaths,
   mainCategoriesPath,
 } from './basicData';
+import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 
 /*
 ...

@@ -1,14 +1,11 @@
 /**Hooks section**/
 import useWindowSize from '@/lib/hooks/useWindowSize';
+/**Components**/
+import GraphicSection from './graphicSection/GraphicSection';
 /**Basic Data**/
 import { dropDownMenuConfig } from '@/data/basicData';
-
-interface Props {
-  label: string;
-  //   imageData: StaticImageDat;
-  heightMattersCondition?: boolean;
-  textStyle?: string;
-}
+import { styles } from '@/styles';
+/**TS**/
 const CardContent = ({
   catIndex,
   catName,
@@ -20,17 +17,21 @@ const CardContent = ({
 
   /**JSX**/
   return (
-    <div data-component="CardContent" className="flex flex-col w-full h-full ">
-      {/* {condition ? null : <BasicCardGraphicSection imageData={imageData} />} */}
+    <div data-component="CardContent" className="flex flex-col w-full h-full">
+      {isGraphicSection ? null : <GraphicSection {...catImage} />}
       <div
         data-layout="BasicCardMainSection__textSection"
         className={`${
-          true
+          isGraphicSection
             ? 'flex h-full items-start justify-center px-4 xs3xx:px-6'
             : 'fc h-[45%]'
-        }  w-full p-1`}
+        }  w-full p-1 `}
       >
-        <p className="text-small text-light">{catName}</p>
+        <p
+          className={`text-small uppercase text-center text-grey group-hover:text-light ${styles.basicAnimation}`}
+        >
+          {catName}
+        </p>
       </div>
     </div>
   );
