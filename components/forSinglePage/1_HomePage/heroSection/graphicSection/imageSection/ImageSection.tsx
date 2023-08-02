@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { dirtyPlugImage } from '@/public/images/1_homePage/';
-// import dirtyPlugImg from '@/public/images/1_homePage/dirtyPlug_1200_1200.webp';
-import dirtyPlugImg from '@/public/images/1_homePage/dirtyPlug_1200_1200.png';
 
 const ImageSection = () => {
   /**JSX**/
@@ -11,7 +9,8 @@ const ImageSection = () => {
       <Image
         className="aspect-square"
         alt={dirtyPlugImage.alt}
-        src={dirtyPlugImg}
+        // src={dirtyPlugImg}
+        src={dirtyPlugImage.path}
         width={dirtyPlugImage.width}
         height={dirtyPlugImage.height}
         // fill

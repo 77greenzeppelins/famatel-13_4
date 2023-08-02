@@ -118,6 +118,10 @@ export const worldMapConfig = {
   isDraggable_2: 768, //when container is "w-full"
 };
 
+export const dropDownMenuConfig = {
+  minHeight: 500,
+};
+
 /*
 ___1. used in <SearchEngineButton> & <>
 */

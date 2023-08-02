@@ -1,5 +1,5 @@
-/**Coimponents**/
-import DropDownCategoriesCatalog from '@/components/forMultiPage/catalogs/dropDownCategorier/DropDownCategoriesCatalog';
+/**Components**/
+import DropDownMenu from '@/components/forMultiPage/catalogs/dropDownMenu/DropDownMenu';
 import ProductSearchEngine from '@/components/forMultiPage/searchEngines/productSearchEngine/ProductSearchEngine';
 /**Framer Motion**/
 import { motion } from 'framer-motion';
@@ -22,9 +22,9 @@ const DropDownPanel = ({ isOverlay, contentType }: Props) => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="w-full h-full bg-black fc"
+          className="w-full h-full"
         >
-          <DropDownCategoriesCatalog />
+          <DropDownMenu />
         </motion.div>
       ) : (
         <motion.div
@@ -40,30 +40,3 @@ const DropDownPanel = ({ isOverlay, contentType }: Props) => {
 };
 
 export default DropDownPanel;
-/*
-const createOverlay = () => {
-    return isOverlay ? (
-      <div
-        className={`fc left-0 right-0 ${styles.fixedOverlayOffset} bottom-0 fixed bg-dark opacity-100`}
-      >
-        {contentType === 'menu' ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="w-full h-full bg-black fc"
-          >
-            <DropDownCategoriesCatalog />
-          </motion.div>
-        ) : (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="w-full h-full fc "
-          >
-            <ProductSearchEngine />
-          </motion.div>
-        )}
-      </div>
-    ) : null;
-  };
-*/

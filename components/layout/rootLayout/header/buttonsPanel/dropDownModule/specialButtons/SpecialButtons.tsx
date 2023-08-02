@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 /**Components**/
 import SearchEngineButton from '@/components/basic/buttons/searchEngineButton/SearchEngineButton';
 import DropDownMenuButton from '@/components/basic/buttons/dropDownMenuButton/DropDownMenuButton';
-import DropDownCategoriesCatalog from '@/components/forMultiPage/catalogs/dropDownCategorier/DropDownCategoriesCatalog';
+import DropDownCategoriesCatalog from '@/components/forMultiPage/catalogs/dropDownMenu/DropDownMenu';
 import ProductSearchEngine from '@/components/forMultiPage/searchEngines/productSearchEngine/ProductSearchEngine';
 /**Framer Motion**/
 import { motion } from 'framer-motion';

@@ -10,7 +10,7 @@ const DropDownModule = () => {
   const [isOverlay, setIsOverlay] = useState<null | boolean>(false);
   const [contentType, setContentType] = useState<string>('');
 
-  /**It allows to close dropdownMenu when url changes**/
+  /**It allows to close dropDownMenu when url changes**/
   const pathname = usePathname();
   useEffect(() => {
     return () => {
