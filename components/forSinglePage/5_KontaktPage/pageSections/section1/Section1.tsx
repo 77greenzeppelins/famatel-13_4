@@ -10,6 +10,7 @@ import WorldMapComponent from '@/components/SVG/maps/WorldMapComponent';
 import { styles } from '@/styles';
 import { kontaktPageText } from '@/data/textData';
 import { worldMapConfig } from '@/data/basicData';
+import MapModule from './mapModule/MapModule';
 
 worldMapConfig;
 
@@ -23,45 +24,41 @@ interface Props {
 const Section1 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
   /**JSX**/
   return (
-    <InViewContainer
-      animationDelay={2}
-      outherContainerStyle="w-full"
-      measuredElementStyle="relative "
-      // topFactor={0.6}
-      topFactor={0.3}
-      bottomFactor={0.3}
-    >
-      <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
-        <div className="flex w-full wrapper-1-l ">
-          <div className="flex flex-col gap-y-20 w-full lg:w-1/2 min-h-[50vh]">
-            <div className="flex flex-col w-full gap-y-10">
-              <BasicHeader
-                ornamentStyle={styles.largeHeaderOrnamentStyle}
-                textStyle={`${styles.largeHeaderText} max-w-[10px]`}
-                text={kontaktPageText.headers[0]}
-              />
-              <ContactsLinks labelStyle={labelStyle} iconStyle={iconStyle} />
-            </div>
-            <div className="flex flex-col w-full gap-y-10">
-              <BasicHeader
-                ornamentStyle={styles.largeHeaderOrnamentStyle}
-                textStyle={`${styles.largeHeaderText} max-w-[10px]`}
-                text={kontaktPageText.headers[1]}
-              />
-              <Address
-                containerStyle={containerStyle}
-                labelStyle={labelStyle}
-                iconStyle={iconStyle}
-                isFooter={false}
-              />
-            </div>
+    <div className="flex items-center">
+      <InViewContainer
+        animationDelay={2}
+        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 min-h-[50vh] wrapper-1-l"
+        measuredElementStyle="relative "
+        // topFactor={0.6}
+        topFactor={0.3}
+        bottomFactor={0.3}
+      >
+        <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+          <div className="flex flex-col w-full gap-y-10">
+            <BasicHeader
+              ornamentStyle={styles.largeHeaderOrnamentStyle}
+              textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+              text={kontaktPageText.headers[0]}
+            />
+            <ContactsLinks labelStyle={labelStyle} iconStyle={iconStyle} />
           </div>
-          <div className="fc hidden w-0 lg:w-1/2 min-h-[50vh]">
-            <WorldMapComponent widthToDrag={worldMapConfig.isDraggable_1} />
+          <div className="flex flex-col w-full gap-y-10">
+            <BasicHeader
+              ornamentStyle={styles.largeHeaderOrnamentStyle}
+              textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+              text={kontaktPageText.headers[1]}
+            />
+            <Address
+              containerStyle={containerStyle}
+              labelStyle={labelStyle}
+              iconStyle={iconStyle}
+              isFooter={false}
+            />
           </div>
-        </div>
-      </InViewAnimatedContent>
-    </InViewContainer>
+        </InViewAnimatedContent>
+      </InViewContainer>
+      <MapModule />
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const WorldMapSection = () => {
   return (
     <div className="w-full">
       <InViewContainer animationDelay={2} topFactor={0.3} bottomFactor={0.3}>
-        <InViewAnimatedContent scaleFactor={1} xFactor={''} yFactor={''}>
+        <InViewAnimatedContent scaleFactor={0.95} xFactor={''} yFactor={''}>
           <WorldMapComponent />
         </InViewAnimatedContent>
       </InViewContainer>

@@ -2,6 +2,7 @@
 import { corpoColors } from '@/data/basicData';
 
 const SVG_1_1_14307_d_v2: React.FC<{ className: string }> = ({ className }) => {
+  /**JSX**/
   return (
     <svg
       role="img"

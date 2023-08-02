@@ -11,6 +11,7 @@ import { worldMapConfig } from '@/data/basicData';
 
 /**TS**/
 interface Props {
+  componentIsInView?: boolean;
   widthToDrag?: number;
   outherContainerStyle?: string;
   innerContainerStyle?: string;
@@ -18,6 +19,7 @@ interface Props {
 
 /**-----------------------------------------**/
 const WorldMapComponent: React.FC<Props> = ({
+  componentIsInView,
   widthToDrag = worldMapConfig.isDraggable_2,
   outherContainerStyle,
   innerContainerStyle,
@@ -57,9 +59,11 @@ const WorldMapComponent: React.FC<Props> = ({
         dragElastic={0.9}
         dragMomentum={true}
       >
-        <div className="absolute inset-1 special-gradient z-5">
-          {/* <SvgMapBackgroung /> */}
-        </div>
+        <motion.div
+          className="absolute right-0 overflow-hidden left-4 top-1 bottom-1 special-gradient z-5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 1 } }}
+        />
         <SvgWordMap containerStyle="relative w-full z-10 " />
       </motion.div>
     </motion.div>
