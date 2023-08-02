@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import { dirtyPlugImage } from '@/public/images/1_homePage/';
 
