@@ -4,6 +4,7 @@ import InViewAnimatedContent from '@/components/layout/containers/inView/InViewA
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 
 const WorldMapSection = () => {
+  /**JSX**/
   return (
     <div className="w-full">
       <InViewContainer animationDelay={2} topFactor={0.3} bottomFactor={0.3}>

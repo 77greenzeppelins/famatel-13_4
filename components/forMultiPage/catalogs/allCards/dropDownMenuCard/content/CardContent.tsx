@@ -6,12 +6,7 @@ import GraphicSection from './graphicSection/GraphicSection';
 import { dropDownMenuConfig } from '@/data/basicData';
 import { styles } from '@/styles';
 /**TS**/
-const CardContent = ({
-  catIndex,
-  catName,
-  catPath,
-  catImage,
-}: DropDownMenuCardType) => {
+const CardContent = ({ catName, catImage }: DropDownMenuCardType) => {
   const { height, width } = useWindowSize();
   const isGraphicSection = height < dropDownMenuConfig.minHeight;
 

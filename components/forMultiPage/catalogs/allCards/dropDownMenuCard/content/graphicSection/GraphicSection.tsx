@@ -1,4 +1,7 @@
 import Image from 'next/image';
+/**Framer Motion Staff*/
+import { motion } from 'framer-motion';
+import { imgOverlayVar } from '@/lib/fmConfigs/framerMotionConfigs';
 
 const GraphicSection = (props: ImageType_C) => {
   /**JSX**/
@@ -11,7 +14,7 @@ const GraphicSection = (props: ImageType_C) => {
         /*
       ___1. why "max-h" ? because aspect-square depends on height and in some "proportions" image expands its space
       */
-        className="fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] xl:max-h-[150px] aspect-square bg-light p-2"
+        className="relative fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] xl:max-h-[150px] aspect-square bg-light p-2 overflow-hidden rounded-sm"
         // variants={cardVariants}
         // initial="initial"
         // animate="animate"
@@ -24,6 +27,12 @@ const GraphicSection = (props: ImageType_C) => {
           height={props.height}
         />
       </div>
+      <motion.div
+        className="absolute inset-0 bg-dark"
+        variants={imgOverlayVar}
+        initial="initial"
+        animate="animate"
+      />
     </div>
   );
 };

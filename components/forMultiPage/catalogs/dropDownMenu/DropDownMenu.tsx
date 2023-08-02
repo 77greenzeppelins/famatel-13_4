@@ -3,6 +3,7 @@ import React from 'react';
 import DropDownMenuCard from '../allCards/dropDownMenuCard/DropDownMenuCard';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
+import SpecialCard from '../allCards/specialCard/SpecialCard';
 
 const DropDownMenu = () => {
   return (
@@ -37,9 +38,8 @@ const DropDownMenu = () => {
           )}
 
           <div className="col-start-2 sm:col-start-3 col-span-full ">
-            <div className="items-center justify-center hidden w-full h-full border xs3xx:flex border-greyShade2">
-              77
-            </div>
+            <SpecialCard />
+
             {/* <SpecialCard
               mediumTextStyle={specialCardTextStyle}
               largeTextStyle={largeTextStyle}
