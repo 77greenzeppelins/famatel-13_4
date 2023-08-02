@@ -5,15 +5,13 @@ import DropDownMenuCard from '../allCards/dropDownMenuCard/DropDownMenuCard';
 const DropDownMenu = () => {
   return (
     <div
-      className="w-full h-full fc bg-grey"
+      className="w-full h-full fc bg-dark"
       //___spec-grad-grey-to-dark
     >
-      <div className={`w-[98%] h-[80%] xl:h-[90%] fc border border-dark`}>
+      <div className={`w-full h-[90%] xl:h-[90%] fc`}>
         <div
           data-layout="ProduktyDropDownMenu__griddedContainer"
-          className="grid grid-rows-4 grid-cols-3 xs:grid-rows-3 xs:grid-cols-4 w-[100vw] h-full pt-[24px] pb-[4rem] px-[1rem] gap-[0.75rem]"
-          //___place-items-stretch
-          //className="grid grid-rows-4 grid-cols-3 xs:grid-rows-3 xs:grid-cols-4 w-full h-full pt-[24px] pb-[4rem] px-[1rem] gap-[0.75rem]"
+          className="flex flex-col xs3xx:grid xs3xx:grid-rows-4 xs3xx:grid-cols-3 xs:grid-rows-3 xs:grid-cols-4 w-[100vw] h-full  px-[1rem] gap-[0.75rem]"
         >
           {catalogStructureData.map(
             ({
@@ -43,7 +41,9 @@ const DropDownMenu = () => {
           )}
 
           <div className="col-start-2 xs:col-start-3 col-span-full ">
-            <div className="bg-dark">77</div>
+            <div className="items-center justify-center hidden w-full h-full border xs3xx:flex border-greyShade2">
+              77
+            </div>
             {/* <SpecialCard
               mediumTextStyle={specialCardTextStyle}
               largeTextStyle={largeTextStyle}
