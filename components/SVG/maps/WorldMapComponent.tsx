@@ -33,10 +33,11 @@ const WorldMapComponent: React.FC<Props> = ({
   /**JSX**/
   return (
     <motion.div
+      data-component="WorldMapComponent"
       className={
         outherContainerStyle
           ? outherContainerStyle
-          : 'fc w-full overflow-hidden'
+          : 'fc w-full overflow-hidden bg-dark'
       }
       // variants={cardVariants}
       initial={{ opacity: 0 }}
@@ -58,9 +59,10 @@ const WorldMapComponent: React.FC<Props> = ({
         dragSnapToOrigin={true}
         dragElastic={0.9}
         dragMomentum={true}
+        style={{ overflow: 'clip' }}
       >
         <motion.div
-          className="absolute right-0 overflow-hidden left-4 top-1 bottom-1 special-gradient z-5"
+          className="absolute overflow-hidden right-2 left-4 top-1 bottom-1 special-gradient z-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 1 } }}
         />
