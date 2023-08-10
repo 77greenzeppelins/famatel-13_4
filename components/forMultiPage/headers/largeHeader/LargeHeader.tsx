@@ -14,7 +14,7 @@ interface Props {
   hasBox?: boolean;
 }
 /**-----------------------------------------------------**/
-const BasicHeader: React.FunctionComponent<Props> = ({
+const LargeHeader: React.FunctionComponent<Props> = ({
   text = 'Default',
   containerStyle,
   textStyle,
@@ -40,7 +40,9 @@ const BasicHeader: React.FunctionComponent<Props> = ({
       )}
 
       <p
-        className={`${textStyle ? textStyle : styles.basicHeaderText} ${
+        className={`flex flex-col ${
+          textStyle ? textStyle : styles.basicHeaderText
+        } ${
           hasVerticalOrnament
             ? ornamentStyle
               ? ornamentStyle
@@ -49,10 +51,17 @@ const BasicHeader: React.FunctionComponent<Props> = ({
         } ${ornamentColor ? ornamentColor : 'border-corpo'} `}
         style={inlineTextStyle}
       >
-        {text}
+        {text.split(' ').map((word, i) => (
+          <span
+            key={i}
+            className={`${textStyle ? textStyle : styles.basicHeaderText}`}
+          >
+            {word}
+          </span>
+        ))}
       </p>
     </h2>
   );
 };
 
-export default BasicHeader;
+export default LargeHeader;

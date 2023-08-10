@@ -4,8 +4,8 @@ import { MapPinIcon } from '@heroicons/react/24/solid';
 /**Components**/
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
-import SvgMap from '@/components/SVG/maps/SvgMap';
+import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
+import SvgBielawaMap from '@/components/SVG/maps/SvgBielawaMap';
 
 /**Basic Data**/
 import { styles } from '@/styles';
@@ -18,7 +18,7 @@ interface Props {
   iconStyle: string;
 }
 
-const Section2 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
+const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
   /**JSX**/
   return (
     <InViewContainer
@@ -33,9 +33,9 @@ const Section2 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
         <div className="flex flex-col items-center w-full lg:flex-row wrapper-1-l ">
           <div className="flex flex-col gap-y-20 w-full lg:w-1/2 xl:w-[45%] min-h-[50vh]">
             <div className="flex flex-col w-full gap-y-10">
-              <BasicHeader
+              <LargeHeader
                 ornamentStyle={styles.largeHeaderOrnamentStyle}
-                textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+                textStyle={`${styles.largeHeaderText} `}
                 text={kontaktPageText.headers[2]}
               />
 
@@ -73,7 +73,7 @@ const Section2 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
               href="https://www.google.com/maps/search/Famatel+Polska+Sp.o.o+ul.+Willowa+5,+58+260+Bielawa+Polska"
               scroll={false}
             />
-            <SvgMap containerStyle="relative w-full z-5" />
+            <SvgBielawaMap containerStyle="relative w-full z-5" />
           </div>
         </div>
       </InViewAnimatedContent>
@@ -81,4 +81,4 @@ const Section2 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
   );
 };
 
-export default Section2;
+export default SectionDojazd;

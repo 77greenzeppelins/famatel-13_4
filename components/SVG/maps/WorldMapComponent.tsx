@@ -11,7 +11,7 @@ import { worldMapConfig } from '@/data/basicData';
 
 /**TS**/
 interface Props {
-  componentIsInView?: boolean;
+  // componentIsInView?: boolean;
   widthToDrag?: number;
   outherContainerStyle?: string;
   innerContainerStyle?: string;
@@ -19,7 +19,7 @@ interface Props {
 
 /**-----------------------------------------**/
 const WorldMapComponent: React.FC<Props> = ({
-  componentIsInView,
+  // componentIsInView,
   widthToDrag = worldMapConfig.isDraggable_2,
   outherContainerStyle,
   innerContainerStyle,

@@ -122,7 +122,7 @@
     @apply text-[1.25rem] xs:text-[1.5rem]  md:text-[1.75rem] xxl:text-[2.25rem] tracking-[2px] leading-tight;
   }
   .text-large {
-    @apply text-[3.25rem] xs3xx:text-[4.25rem] xs:text-[4.5rem] md:text-[4.75rem] xxl:text-[6.25rem] tracking-[2px] leading-tight;
+    @apply text-[2rem] xs3xx:text-[3.25rem] xs:text-[4.5rem] md:text-[4.75rem] xxl:text-[6.25rem] tracking-[2px] leading-tight;
   }
   .text-u-large {
     @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];
