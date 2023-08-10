@@ -27,7 +27,7 @@ const SectionAdres = ({ containerStyle, labelStyle, iconStyle }: Props) => {
     <div className="flex items-center">
       <InViewContainer
         animationDelay={2}
-        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 min-h-[50vh] wrapper-1-l"
+        outherContainerStyle=" w-full lg:w-1/2 wrapper-1-l"
         measuredElementStyle="relative "
         // topFactor={0.6}
         topFactor={0.3}
@@ -51,7 +51,9 @@ const SectionAdres = ({ containerStyle, labelStyle, iconStyle }: Props) => {
           </div>
         </InViewAnimatedContent>
       </InViewContainer>
-      <div className="hidden w-0 fc lg:w-1/2">
+      <div className="relative hidden w-0 fc lg:w-1/2">
+        <div className="absolute left-0 h-full w-[14px] bg-gradient-to-r from-dark  to-transparent  z-20" />
+        <div className="absolute right-0 h-full w-[14px] bg-gradient-to-l from-dark via-dark to-transparent  z-20" />
         <MapModule />
       </div>
     </div>

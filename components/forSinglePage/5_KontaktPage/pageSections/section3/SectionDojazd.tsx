@@ -1,11 +1,10 @@
-import Link from 'next/link';
 /**Icons**/
 import { MapPinIcon } from '@heroicons/react/24/solid';
 /**Components**/
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
 import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
-import SvgBielawaMap from '@/components/SVG/maps/SvgBielawaMap';
+import MapModule from './mapModule/MapModule';
 
 /**Basic Data**/
 import { styles } from '@/styles';
@@ -21,64 +20,95 @@ interface Props {
 const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
   /**JSX**/
   return (
-    <InViewContainer
-      animationDelay={2}
-      outherContainerStyle="w-full"
-      measuredElementStyle="relative "
-      // topFactor={0.6}
-      topFactor={0.3}
-      bottomFactor={0.3}
-    >
-      <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
-        <div className="flex flex-col items-center w-full lg:flex-row wrapper-1-l ">
-          <div className="flex flex-col gap-y-20 w-full lg:w-1/2 xl:w-[45%] min-h-[50vh]">
-            <div className="flex flex-col w-full gap-y-10">
-              <LargeHeader
-                ornamentStyle={styles.largeHeaderOrnamentStyle}
-                textStyle={`${styles.largeHeaderText} `}
-                text={kontaktPageText.headers[2]}
-              />
+    <div className="flex flex-col gap-y-14 lg:gap-y-0 lg:items-center lg:justify-start lg:flex-row">
+      <InViewContainer
+        animationDelay={2}
+        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 wrapper-1-l"
+        measuredElementStyle="relative "
+        // topFactor={0.6}
+        topFactor={0.3}
+        bottomFactor={0.3}
+      >
+        <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+          <LargeHeader
+            ornamentStyle={styles.largeHeaderOrnamentStyle}
+            textStyle={`${styles.largeHeaderText} `}
+            text={kontaktPageText.headers[2]}
+          />
 
-              <ul
-                className={
-                  containerStyle ? containerStyle : 'flex flex-col gap-y-5 '
-                }
-              >
-                {kontaktPageText.dojazd.map(label => (
-                  <li key={label}>
-                    <p className={labelStyle}>{label}</p>
-                  </li>
-                ))}
+          <ul
+            className={
+              containerStyle ? containerStyle : 'flex flex-col gap-y-5 '
+            }
+          >
+            {kontaktPageText.dojazd.map(label => (
+              <li key={label}>
+                <p className={labelStyle}>{label}</p>
+              </li>
+            ))}
 
-                <li className="flex items-center gap-2 ">
-                  <div>
-                    <MapPinIcon
-                      className={iconStyle}
-                      //___animate-pulse glow
-                    />
-                  </div>
-                  <p className={labelStyle}>{kontaktPageText.dojazdNav}</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="relative flex w-[96%] gap-x-6 min-h-[400px] xl:h-[80vh] lg:w-1/2 xl:w-[55%] md:justify-center pt-2">
-            <Link
-              aria-label={'Link do GoogleMap'}
-              role="link"
-              className="absolute z-10 w-full h-full"
-              target="_blank"
-              rel="noopener"
-              href="https://www.google.com/maps/search/Famatel+Polska+Sp.o.o+ul.+Willowa+5,+58+260+Bielawa+Polska"
-              scroll={false}
-            />
-            <SvgBielawaMap containerStyle="relative w-full z-5" />
-          </div>
-        </div>
-      </InViewAnimatedContent>
-    </InViewContainer>
+            <li className="flex items-center gap-2 ">
+              <div>
+                <MapPinIcon
+                  className={iconStyle}
+                  //___animate-pulse glow
+                />
+              </div>
+              <p className={labelStyle}>{kontaktPageText.dojazdNav}</p>
+            </li>
+          </ul>
+        </InViewAnimatedContent>
+      </InViewContainer>
+      <div className="relative flex w-full lg:w-1/2 wrapper-1-l">
+        <MapModule />
+      </div>
+    </div>
   );
 };
 
 export default SectionDojazd;
+
+//___________________________________________
+{
+  /* <div className="flex items-center">
+  <InViewContainer
+    animationDelay={2}
+    outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 min-h-[50vh] wrapper-1-l"
+    measuredElementStyle="relative "
+    // topFactor={0.6}
+    topFactor={0.3}
+    bottomFactor={0.3}
+  >
+    <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+      <LargeHeader
+        ornamentStyle={styles.largeHeaderOrnamentStyle}
+        textStyle={`${styles.largeHeaderText} `}
+        text={kontaktPageText.headers[2]}
+      />
+
+      <ul
+        className={containerStyle ? containerStyle : 'flex flex-col gap-y-5 '}
+      >
+        {kontaktPageText.dojazd.map(label => (
+          <li key={label}>
+            <p className={labelStyle}>{label}</p>
+          </li>
+        ))}
+
+        <li className="flex items-center gap-2 ">
+          <div>
+            <MapPinIcon
+              className={iconStyle}
+              //___animate-pulse glow
+            />
+          </div>
+          <p className={labelStyle}>{kontaktPageText.dojazdNav}</p>
+        </li>
+      </ul>
+    </InViewAnimatedContent>
+  </InViewContainer>
+  <div className="hidden w-0 fc lg:w-1/2">
+    <MapModule />
+  </div>
+</div>; */
+}

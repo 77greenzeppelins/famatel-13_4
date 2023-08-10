@@ -11,7 +11,6 @@ import { worldMapConfig } from '@/data/basicData';
 
 /**TS**/
 interface Props {
-  // componentIsInView?: boolean;
   widthToDrag?: number;
   outherContainerStyle?: string;
   innerContainerStyle?: string;
@@ -19,7 +18,6 @@ interface Props {
 
 /**-----------------------------------------**/
 const WorldMapComponent: React.FC<Props> = ({
-  // componentIsInView,
   widthToDrag = worldMapConfig.isDraggable_2,
   outherContainerStyle,
   innerContainerStyle,
@@ -32,19 +30,13 @@ const WorldMapComponent: React.FC<Props> = ({
 
   /**JSX**/
   return (
-    <motion.div
+    <div
       data-component="WorldMapComponent"
       className={
         outherContainerStyle
           ? outherContainerStyle
           : 'fc w-full overflow-hidden bg-dark'
       }
-      // variants={cardVariants}
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { duration: 0.4, delay: 1 },
-      }}
     >
       <motion.div
         aria-label="Element przesuwny / drag event"
@@ -68,7 +60,7 @@ const WorldMapComponent: React.FC<Props> = ({
         />
         <SvgWordMap containerStyle="relative w-full z-10 " />
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

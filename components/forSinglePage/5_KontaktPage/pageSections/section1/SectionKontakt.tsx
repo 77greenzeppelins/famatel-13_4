@@ -20,13 +20,13 @@ interface Props {
   iconStyle: string;
 }
 
-const Section1 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
+const SectionKontakt = ({ containerStyle, labelStyle, iconStyle }: Props) => {
   /**JSX**/
   return (
     <div className="flex items-center">
       <InViewContainer
         animationDelay={2}
-        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 min-h-[50vh] wrapper-1-l"
+        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 wrapper-1-l"
         measuredElementStyle="relative "
         // topFactor={0.6}
         topFactor={0.3}
@@ -41,24 +41,10 @@ const Section1 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
             />
             <ContactsLinks labelStyle={labelStyle} iconStyle={iconStyle} />
           </div>
-          <div className="flex flex-col w-full gap-y-10">
-            <LargeHeader
-              ornamentStyle={styles.largeHeaderOrnamentStyle}
-              textStyle={`${styles.largeHeaderText} max-w-[10px]`}
-              text={kontaktPageText.headers[1]}
-            />
-            <Address
-              containerStyle={containerStyle}
-              labelStyle={labelStyle}
-              iconStyle={iconStyle}
-              isFooter={false}
-            />
-          </div>
         </InViewAnimatedContent>
       </InViewContainer>
-      <MapModule />
     </div>
   );
 };
 
-export default Section1;
+export default SectionKontakt;
