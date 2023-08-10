@@ -17,606 +17,12 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       viewBox="0 0 800 800"
       className={containerStyle}
     >
-      <g
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        transform="translate(-268.22 143.22)"
-      >
-        <g transform="matrix(.49044 0 0 .49044 293.843 59.862)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-        <g transform="matrix(.49044 0 0 .49044 391.3 60.285)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-        <g transform="matrix(.49044 0 0 .49044 293.843 84.438)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-        <g transform="matrix(.49044 0 0 .49044 391.3 84.862)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-      </g>
       <text
-        x="550.778"
-        y="77.67"
+        x="539.991"
+        y="61.95"
         style={{
           lineHeight: '0.9',
+          // InkscapeFontSpecification: "'Arial, Normal'",
           fontVariantLigatures: 'normal',
           fontVariantCaps: 'normal',
           fontVariantNumeric: 'normal',
@@ -627,19 +33,23 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         fill="#13b5c7"
         fontFamily="Arial"
         fontSize="20"
-        letterSpacing="0"
+        fontStretch="normal"
+        fontStyle="normal"
+        fontVariant="normal"
+        fontWeight="normal"
+        letterSpacing="1.25"
         textAnchor="middle"
         xmlSpace="preserve"
       >
-        <tspan x="550.778" y="77.67">
-          Dawny Bielbaw
+        <tspan x="539.991" y="79.95">
+          BIELBAW
         </tspan>
       </text>
       <rect
         width="19.622"
         height="19.622"
-        x="641.026"
-        y="660.3"
+        x="608.667"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -653,8 +63,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="616.31"
-        y="660.3"
+        x="583.951"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -668,8 +78,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="690.46"
-        y="660.3"
+        x="658.101"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -683,8 +93,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="665.743"
-        y="660.3"
+        x="633.384"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -698,8 +108,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="740.176"
-        y="660.3"
+        x="707.817"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -713,8 +123,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="715.46"
-        y="660.3"
+        x="683.1"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -728,8 +138,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="591.593"
-        y="660.3"
+        x="559.234"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -743,8 +153,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="566.877"
-        y="660.3"
+        x="534.517"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -758,8 +168,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="443.01"
-        y="660.3"
+        x="410.651"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -773,8 +183,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="418.294"
-        y="660.3"
+        x="385.934"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -788,8 +198,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="492.443"
-        y="660.3"
+        x="460.084"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -803,8 +213,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="467.727"
-        y="660.3"
+        x="435.368"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -818,8 +228,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="542.16"
-        y="660.3"
+        x="509.801"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -833,8 +243,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="517.443"
-        y="660.3"
+        x="485.084"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -848,8 +258,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="393.577"
-        y="660.3"
+        x="361.218"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -863,8 +273,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="368.86"
-        y="660.3"
+        x="336.501"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -878,8 +288,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="244.994"
-        y="660.3"
+        x="212.635"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -893,8 +303,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="220.277"
-        y="660.3"
+        x="187.918"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -908,8 +318,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="269.711"
-        y="660.3"
+        x="237.351"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -923,8 +333,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="344.144"
-        y="660.3"
+        x="311.785"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -938,8 +348,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="195.561"
-        y="660.3"
+        x="163.202"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -953,8 +363,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="170.844"
-        y="660.3"
+        x="138.485"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -968,8 +378,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="46.978"
-        y="660.3"
+        x="14.619"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -983,22 +393,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="22.261"
-        y="660.3"
-        fill="#fff"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="22.261"
-        y="660.3"
+        x="64.052"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1012,8 +408,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="96.411"
-        y="660.3"
+        x="39.335"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1027,8 +423,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="71.694"
-        y="660.3"
+        x="113.768"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1042,8 +438,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="146.128"
-        y="660.3"
+        x="89.052"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1057,8 +453,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="121.411"
-        y="660.3"
+        x="732.817"
+        y="661.499"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1072,23 +468,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="765.176"
-        y="660.3"
-        fill="#ccc"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="616.098"
-        y="90.399"
+        x="583.739"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1102,8 +483,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="690.248"
-        y="90.399"
+        x="657.889"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1117,8 +498,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="665.531"
-        y="90.399"
+        x="633.172"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1132,8 +513,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="739.964"
-        y="90.399"
+        x="707.605"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1147,8 +528,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="715.248"
-        y="90.399"
+        x="682.889"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1162,8 +543,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="591.381"
-        y="90.399"
+        x="559.022"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1177,8 +558,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="566.665"
-        y="90.399"
+        x="534.306"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1192,8 +573,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="442.798"
-        y="90.399"
+        x="410.439"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1207,8 +588,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="418.082"
-        y="90.399"
+        x="385.723"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1222,8 +603,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="492.232"
-        y="90.399"
+        x="459.872"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1237,8 +618,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="467.515"
-        y="90.399"
+        x="435.156"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1252,8 +633,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="541.948"
-        y="90.399"
+        x="509.589"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1267,8 +648,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="517.232"
-        y="90.399"
+        x="484.872"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1282,8 +663,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="393.365"
-        y="90.399"
+        x="361.006"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1297,8 +678,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="368.649"
-        y="90.399"
+        x="336.289"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1312,8 +693,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="244.782"
-        y="90.399"
+        x="212.423"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1327,8 +708,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="220.065"
-        y="90.399"
+        x="187.706"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1342,8 +723,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="294.215"
-        y="90.399"
+        x="261.856"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1357,8 +738,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="269.499"
-        y="90.399"
+        x="237.14"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1372,8 +753,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="343.932"
-        y="90.399"
+        x="311.573"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1387,8 +768,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="319.215"
-        y="90.399"
+        x="286.856"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1402,8 +783,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="195.349"
-        y="90.399"
+        x="162.99"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1417,8 +798,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="170.632"
-        y="90.399"
+        x="138.273"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1432,8 +813,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="46.766"
-        y="90.399"
+        x="14.407"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1447,8 +828,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="22.049"
-        y="90.399"
+        x="63.84"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1462,8 +843,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="22.049"
-        y="90.399"
+        x="39.123"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1477,38 +858,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="96.199"
-        y="90.399"
-        fill="#ccc"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="71.482"
-        y="90.399"
-        fill="#ccc"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="145.916"
-        y="90.399"
+        x="113.557"
+        y="91.598"
         fill="#e74124"
         fillOpacity="1"
         stroke="none"
@@ -1522,8 +873,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="121.199"
-        y="90.399"
+        x="88.84"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1537,8 +888,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
       <rect
         width="19.622"
         height="19.622"
-        x="764.964"
-        y="90.399"
+        x="732.605"
+        y="91.598"
         fill="#ccc"
         fillOpacity="1"
         stroke="none"
@@ -1557,7 +908,7 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         strokeLinejoin="round"
         strokeOpacity="0.997"
         strokeWidth="0.378"
-        transform="matrix(0 1 1 0 494.822 -839.37)"
+        transform="matrix(0 1 1 0 462.463 -838.17)"
       >
         <rect
           width="19.622"
@@ -1823,7 +1174,7 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         y="-59.322"
         fontFamily="Jost*"
         fontSize="100"
-        letterSpacing="0"
+        letterSpacing="1.25"
       ></text>
       <text
         xmlSpace="preserve"
@@ -1835,8 +1186,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
           fontVariantNumeric: 'normal',
           fontVariantEastAsian: 'normal',
         }}
-        x="53.39"
-        y="77.966"
+        x="12.986"
+        y="715.035"
         fill="#ccc"
         fillOpacity="1"
         fontFamily="Arial"
@@ -1845,10 +1196,10 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         fontStyle="normal"
         fontVariant="normal"
         fontWeight="normal"
-        letterSpacing="0"
+        letterSpacing="1.25"
       >
-        <tspan x="53.39" y="77.966">
-          Strażacka
+        <tspan x="12.986" y="715.035">
+          WILLOWA
         </tspan>
       </text>
       <text
@@ -1861,8 +1212,8 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
           fontVariantNumeric: 'normal',
           fontVariantEastAsian: 'normal',
         }}
-        x="692.373"
-        y="77.966"
+        x="-456.647"
+        y="663.66"
         fill="#ccc"
         fillOpacity="1"
         fontFamily="Arial"
@@ -1871,252 +1222,15 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         fontStyle="normal"
         fontVariant="normal"
         fontWeight="normal"
-        letterSpacing="0"
-      >
-        <tspan x="692.373" y="77.966">
-          Strażacka
-        </tspan>
-      </text>
-      <text
-        xmlSpace="preserve"
-        style={{
-          lineHeight: '0.9',
-          // InkscapeFontSpecification: "'Arial, Normal'",
-          fontVariantLigatures: 'normal',
-          fontVariantCaps: 'normal',
-          fontVariantNumeric: 'normal',
-          fontVariantEastAsian: 'normal',
-        }}
-        x="53.39"
-        y="715.129"
-        fill="#ccc"
-        fillOpacity="1"
-        fontFamily="Arial"
-        fontSize="20"
-        fontStretch="normal"
-        fontStyle="normal"
-        fontVariant="normal"
-        fontWeight="normal"
-        letterSpacing="0"
-      >
-        <tspan x="53.39" y="715.129">
-          Willowa
-        </tspan>
-      </text>
-      <text
-        xmlSpace="preserve"
-        style={{
-          lineHeight: '0.9',
-          // InkscapeFontSpecification: "'Arial, Normal'",
-          fontVariantLigatures: 'normal',
-          fontVariantCaps: 'normal',
-          fontVariantNumeric: 'normal',
-          fontVariantEastAsian: 'normal',
-        }}
-        x="701.771"
-        y="719.366"
-        fill="#ccc"
-        fillOpacity="1"
-        fontFamily="Arial"
-        fontSize="20"
-        fontStretch="normal"
-        fontStyle="normal"
-        fontVariant="normal"
-        fontWeight="normal"
-        letterSpacing="0"
-      >
-        <tspan x="701.771" y="719.366">
-          Willowa
-        </tspan>
-      </text>
-      <text
-        xmlSpace="preserve"
-        style={{
-          lineHeight: '0.9',
-          // InkscapeFontSpecification: "'Arial, Normal'",
-          fontVariantLigatures: 'normal',
-          fontVariantCaps: 'normal',
-          fontVariantNumeric: 'normal',
-          fontVariantEastAsian: 'normal',
-        }}
-        x="-512.986"
-        y="626.999"
-        fill="#ccc"
-        fillOpacity="1"
-        fontFamily="Arial"
-        fontSize="20"
-        fontStretch="normal"
-        fontStyle="normal"
-        fontVariant="normal"
-        fontWeight="normal"
-        letterSpacing="0"
+        letterSpacing="1.25"
         transform="rotate(-90)"
       >
-        <tspan x="-512.986" y="626.999">
-          Władysława Grabskiego
+        <tspan x="-456.647" y="663.66">
+          {' '}
+          GRABSKIEGO
         </tspan>
       </text>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-159.798"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-184.514"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-135.081"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-209.231"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-233.947"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-357.814"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-308.381"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-333.097"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-258.664"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-283.381"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <g display="inline" transform="translate(345.188 -92.722) scale(.52467)">
+      <g display="inline" transform="translate(312.83 -91.524) scale(.52467)">
         <g fill="#13b5c7" transform="translate(533.63 266.23) scale(2.8895)">
           <path
             fill="#13b5c7"
@@ -2130,38 +1244,6 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
           d="M584.21 273.92l23.714 17.247v4.312h-4.312v23.714h4.312v4.311h-47.429v-4.311h4.312v-23.714h-4.312v-4.312zm15.091 17.247h-30.182v28.026h30.182zm-21.561 4.305l6.494 9.224 6.444-9.165v-.052h4.312v19.403h-4.312v-11.797l-6.444 10.298-6.496-10.242.004 11.74h-4.311V295.48h4.312z"
         ></path>
       </g>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-382.957"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-407.673"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
       <g
         fill="#e74124"
         fillOpacity="1"
@@ -2171,9 +1253,9 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         fontStyle="normal"
         fontVariant="normal"
         fontWeight="normal"
-        letterSpacing="0"
+        letterSpacing="1.25"
         textAnchor="middle"
-        transform="translate(156.436 77.186)"
+        transform="translate(-60.21 14.153)"
       >
         <text
           x="185.843"
@@ -2215,319 +1297,19 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         </text>
       </g>
       <g
-        fill="#ccc"
         fillOpacity="1"
         stroke="none"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.997"
-        strokeWidth="0.378"
-        transform="translate(0 4.45)"
+        transform="matrix(.9901 0 0 .9901 -18.814 7.066)"
       >
-        <g transform="matrix(.49044 0 0 .49044 123.08 148.975)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-        <g transform="matrix(.49044 0 0 .49044 123.08 173.55)">
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="762.172"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="195.561"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="170.844"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="46.978"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="22.261"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="96.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="71.694"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="146.128"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="19.622"
-            height="19.622"
-            x="121.411"
-            y="787.939"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-        </g>
-      </g>
-      <g
-        fill="#ccc"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        transform="translate(0 4.45)"
-      >
-        <g strokeWidth="0.378" transform="rotate(90 254.823 545.98)">
-          <g transform="matrix(.49044 0 0 .49044 220.538 148.55)">
+        <g
+          fill="#e74124"
+          strokeWidth="0.378"
+          transform="translate(-268.22 143.22)"
+        >
+          <g transform="matrix(.49044 0 0 .49044 293.843 59.862)">
             <rect
               width="19.622"
               height="19.622"
@@ -2673,7 +1455,299 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
               stopColor="#000"
             ></rect>
           </g>
-          <g transform="matrix(.49044 0 0 .49044 220.538 173.127)">
+          <g transform="matrix(.49044 0 0 .49044 391.3 60.285)">
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+          </g>
+          <g transform="matrix(.49044 0 0 .49044 293.843 84.438)">
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+          </g>
+          <g transform="matrix(.49044 0 0 .49044 391.3 84.862)">
             <rect
               width="19.622"
               height="19.622"
@@ -2820,136 +1894,745 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
             ></rect>
           </g>
         </g>
-        <g strokeWidth="0.186" transform="translate(0 185.765) rotate(90)">
-          <rect
-            width="9.623"
-            height="9.623"
-            x="457.495"
-            y="-278.453"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="445.373"
-            y="-278.453"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="433.251"
-            y="-278.453"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="457.495"
-            y="-265.816"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="445.373"
-            y="-265.816"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="433.251"
-            y="-265.816"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="457.495"
-            y="-253.877"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="445.373"
-            y="-253.877"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="433.251"
-            y="-253.877"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="457.495"
-            y="-241.239"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="445.373"
-            y="-241.239"
-            ry="0"
-            stopColor="#000"
-          ></rect>
-          <rect
-            width="9.623"
-            height="9.623"
-            x="433.251"
-            y="-241.239"
-            ry="0"
-            stopColor="#000"
-          ></rect>
+        <g fill="#ccc" strokeWidth="0.378" transform="translate(0 4.45)">
+          <g transform="matrix(.49044 0 0 .49044 123.08 148.975)">
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+          </g>
+          <g transform="matrix(.49044 0 0 .49044 123.08 173.55)">
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="762.172"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="195.561"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="170.844"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="46.978"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="22.261"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="96.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="71.694"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="146.128"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="19.622"
+              height="19.622"
+              x="121.411"
+              y="787.939"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+          </g>
+        </g>
+        <g fill="#ccc" transform="translate(0 4.45)">
+          <g strokeWidth="0.378" transform="rotate(90 254.823 545.98)">
+            <g transform="matrix(.49044 0 0 .49044 220.538 148.55)">
+              <rect
+                width="19.622"
+                height="19.622"
+                x="195.561"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="170.844"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="46.978"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="96.411"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="71.694"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="146.128"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="121.411"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="195.561"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="170.844"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="46.978"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="96.411"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="71.694"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="146.128"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="121.411"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+            </g>
+            <g transform="matrix(.49044 0 0 .49044 220.538 173.127)">
+              <rect
+                width="19.622"
+                height="19.622"
+                x="195.561"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="170.844"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="46.978"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="96.411"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="71.694"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="146.128"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="121.411"
+                y="762.172"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="195.561"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="170.844"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="46.978"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="22.261"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="96.411"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="71.694"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="146.128"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+              <rect
+                width="19.622"
+                height="19.622"
+                x="121.411"
+                y="787.939"
+                ry="0"
+                stopColor="#000"
+              ></rect>
+            </g>
+          </g>
+          <g strokeWidth="0.186" transform="translate(0 185.765) rotate(90)">
+            <rect
+              width="9.623"
+              height="9.623"
+              x="457.495"
+              y="-278.453"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="445.373"
+              y="-278.453"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="433.251"
+              y="-278.453"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="457.495"
+              y="-265.816"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="445.373"
+              y="-265.816"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="433.251"
+              y="-265.816"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="457.495"
+              y="-253.877"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="445.373"
+              y="-253.877"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="433.251"
+              y="-253.877"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="457.495"
+              y="-241.239"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="445.373"
+              y="-241.239"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+            <rect
+              width="9.623"
+              height="9.623"
+              x="433.251"
+              y="-241.239"
+              ry="0"
+              stopColor="#000"
+            ></rect>
+          </g>
         </g>
       </g>
-      <rect
-        width="19.622"
-        height="19.622"
-        x="-431.805"
-        y="145.632"
-        fill="#e74124"
-        fillOpacity="1"
-        stroke="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeOpacity="0.997"
-        strokeWidth="0.378"
-        ry="0"
-        stopColor="#000"
-        transform="rotate(-90)"
-      ></rect>
       <path
         fill="#e74124"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeOpacity="0.997"
         strokeWidth="0.378"
-        d="M155.429 506.381l-9.797-19.621h19.622z"
+        d="M123.07 168.967l-9.797-19.622h19.622z"
         stopColor="#000"
       ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 136.28l-9.797-19.622h19.622z"
+        stopColor="#000"
+      ></path>
+      <text
+        xmlSpace="preserve"
+        style={{
+          lineHeight: '0.9',
+          // InkscapeFontSpecification: "'Arial, Normal'",
+          fontVariantLigatures: 'normal',
+          fontVariantCaps: 'normal',
+          fontVariantNumeric: 'normal',
+          fontVariantEastAsian: 'normal',
+        }}
+        x="16.91"
+        y="72.379"
+        fill="#ccc"
+        fillOpacity="1"
+        fontFamily="Arial"
+        fontSize="20"
+        fontStretch="normal"
+        fontStyle="normal"
+        fontVariant="normal"
+        fontWeight="normal"
+        letterSpacing="1.25"
+      >
+        <tspan x="16.91" y="72.379">
+          STRAŻACKA
+        </tspan>
+      </text>
       <rect
         width="19.622"
         height="19.622"
-        x="-456.948"
-        y="145.632"
-        fill="#e74124"
+        x="757.499"
+        y="91.598"
+        fill="#ccc"
         fillOpacity="1"
         stroke="none"
         strokeLinecap="round"
@@ -2958,14 +2641,13 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         strokeWidth="0.378"
         ry="0"
         stopColor="#000"
-        transform="rotate(-90)"
       ></rect>
       <rect
         width="19.622"
         height="19.622"
-        x="-481.665"
-        y="145.632"
-        fill="#e74124"
+        x="758.664"
+        y="661.499"
+        fill="#ccc"
         fillOpacity="1"
         stroke="none"
         strokeLinecap="round"
@@ -2974,8 +2656,168 @@ function SvgBielawaMap({ containerStyle }: { containerStyle?: string }) {
         strokeWidth="0.378"
         ry="0"
         stopColor="#000"
-        transform="rotate(-90)"
       ></rect>
+      <text
+        xmlSpace="preserve"
+        style={{
+          lineHeight: '0.9',
+          // InkscapeFontSpecification: "'Arial, Normal'",
+          fontVariantLigatures: 'normal',
+          fontVariantCaps: 'normal',
+          fontVariantNumeric: 'normal',
+          fontVariantEastAsian: 'normal',
+        }}
+        x="678.24"
+        y="714.188"
+        fill="#ccc"
+        fillOpacity="1"
+        fontFamily="Arial"
+        fontSize="20"
+        fontStretch="normal"
+        fontStyle="normal"
+        fontVariant="normal"
+        fontWeight="normal"
+        letterSpacing="1.25"
+      >
+        <tspan x="678.24" y="714.188">
+          WILLOWA
+        </tspan>
+      </text>
+      <text
+        xmlSpace="preserve"
+        style={{
+          lineHeight: '0.9',
+          // InkscapeFontSpecification: "'Arial, Normal'",
+          fontVariantLigatures: 'normal',
+          fontVariantCaps: 'normal',
+          fontVariantNumeric: 'normal',
+          fontVariantEastAsian: 'normal',
+        }}
+        x="653.306"
+        y="72.379"
+        fill="#ccc"
+        fillOpacity="1"
+        fontFamily="Arial"
+        fontSize="20"
+        fontStretch="normal"
+        fontStyle="normal"
+        fontVariant="normal"
+        fontWeight="normal"
+        letterSpacing="1.25"
+      >
+        <tspan x="653.306" y="72.379">
+          STRAŻACKA
+        </tspan>
+      </text>
+      <text
+        x="539.991"
+        y="58.654"
+        style={{
+          lineHeight: '0.9',
+          // InkscapeFontSpecification: "'Arial, Normal'",
+          fontVariantLigatures: 'normal',
+          fontVariantCaps: 'normal',
+          fontVariantNumeric: 'normal',
+          fontVariantEastAsian: 'normal',
+          // WebkitTextAlign: 'center',
+          textAlign: 'center',
+        }}
+        fill="#13b5c7"
+        fontFamily="Arial"
+        fontSize="20"
+        fontStretch="normal"
+        fontStyle="normal"
+        fontVariant="normal"
+        fontWeight="normal"
+        letterSpacing="1.25"
+        textAnchor="middle"
+        xmlSpace="preserve"
+      >
+        <tspan x="539.991" y="58.654">
+          DAWNY
+        </tspan>
+      </text>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 235.068l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 202.381l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 296.933l-9.797-19.622h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 264.245l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 363.034l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 330.347l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 424.157l-9.797-19.621h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 391.47l-9.797-19.622h19.622z"
+        stopColor="#000"
+      ></path>
+      <path
+        fill="#e74124"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeOpacity="0.997"
+        strokeWidth="0.378"
+        d="M123.07 454.666l-9.797-19.622h19.622z"
+        stopColor="#000"
+      ></path>
     </svg>
   );
 }
