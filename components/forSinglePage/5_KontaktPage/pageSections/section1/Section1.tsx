@@ -1,10 +1,9 @@
 /**Components**/
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
 import Address from '@/components/layout/rootLayout/footer/bottomSection/contacts/Address';
 import ContactsLinks from '@/components/layout/rootLayout/footer/bottomSection/contacts/ContactsLinks';
-import WorldMapComponent from '@/components/SVG/maps/WorldMapComponent';
 
 /**Basic Data**/
 import { styles } from '@/styles';
@@ -35,7 +34,7 @@ const Section1 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
       >
         <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
           <div className="flex flex-col w-full gap-y-10">
-            <BasicHeader
+            <LargeHeader
               ornamentStyle={styles.largeHeaderOrnamentStyle}
               textStyle={`${styles.largeHeaderText} max-w-[10px]`}
               text={kontaktPageText.headers[0]}
@@ -43,7 +42,7 @@ const Section1 = ({ containerStyle, labelStyle, iconStyle }: Props) => {
             <ContactsLinks labelStyle={labelStyle} iconStyle={iconStyle} />
           </div>
           <div className="flex flex-col w-full gap-y-10">
-            <BasicHeader
+            <LargeHeader
               ornamentStyle={styles.largeHeaderOrnamentStyle}
               textStyle={`${styles.largeHeaderText} max-w-[10px]`}
               text={kontaktPageText.headers[1]}
