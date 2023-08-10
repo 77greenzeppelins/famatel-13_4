@@ -51,9 +51,9 @@ const SectionAdres = ({ containerStyle, labelStyle, iconStyle }: Props) => {
           </div>
         </InViewAnimatedContent>
       </InViewContainer>
-      <div className="relative hidden w-0 fc lg:w-1/2">
-        <div className="absolute left-0 h-full w-[14px] bg-gradient-to-r from-dark  to-transparent  z-20" />
-        <div className="absolute right-0 h-full w-[14px] bg-gradient-to-l from-dark via-dark to-transparent  z-20" />
+      <div className="relative hidden w-0 fc lg:w-1/2 ">
+        <div className="absolute left-0 h-full lg:w-[14px] bg-gradient-to-r from-dark  to-transparent  z-20" />
+        <div className="absolute right-0 h-full lg:w-[6px] bg-gradient-to-l from-dark via-dark to-transparent  z-20" />
         <MapModule />
       </div>
     </div>

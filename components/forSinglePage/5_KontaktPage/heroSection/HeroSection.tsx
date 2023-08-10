@@ -1,15 +1,18 @@
 'use client';
+/**Tailwind Styles**/
+import { styles } from '@/styles';
+/**Basic Data**/
 import { kontaktPageText } from '@/data/textData';
-/**Hardcoded Staff*/
+
+/**Hardcoded Staff**/
 const witajStyle =
   'text-light text-5xl xxs:text-[4.5rem] xs:text-9xl font-bold tracking-[1.5px] lg:tracking-[1.5px] word-spacing-0125 lg:word-spacing-025 disable-soft';
 const sentenceStyle =
   'text-base lg:text-xl lg:text-2xl text-grey text-center  tracking-[1.5px] lg:tracking-[2px] word-spacing-0125 lg:word-spacing-025 disable-soft';
 
-/**Framer Motion Staff*/
+/**Framer Motion Staff**/
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { opacityScaleYDynamicVariants } from '@/lib/fmConfigs/framerMotionConfigs';
-
 const springOptions = {
   // damping: 100,
   // mass: 10,
@@ -34,7 +37,9 @@ const HeroSection = () => {
 
   /**JSX**/
   return (
-    <section className="sticky top-[50px] inset-x-0 flex flex-col justify-center gap-y-4 h-[100vh] xl:flex-row xl:gap-x-14 xl:w-[90%] xl:mx-auto xxl:w-[80%] z-0 px-2 overflow-hidden">
+    <section
+      className={`sticky inset-x-0 flex flex-col justify-center gap-y-4 h-[100vh] xl:flex-row xl:gap-x-14 xl:w-[90%] xl:mx-auto xxl:w-[80%] z-0 px-2 overflow-hidden ${styles.heroSectionOffset} ${styles.fixedOverlayOffset}`}
+    >
       <motion.div className="flex justify-center transition-all xl:justify-start xl:items-center gap-x-6">
         <motion.div
           custom={1}

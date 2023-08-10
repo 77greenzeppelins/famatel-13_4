@@ -5,7 +5,7 @@ import PageSections from './pageSections/PageSections';
 const KontaktPageContent = () => {
   /**JSX**/
   return (
-    <div data-component="DoPobraniaPageContent" className="w-full">
+    <div data-component="DoPobraniaPageContent" className="relative w-full">
       <HeroSection />
       <PageSections />
     </div>
