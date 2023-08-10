@@ -2,14 +2,12 @@
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
 import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
-import Address from '@/components/layout/rootLayout/footer/bottomSection/contacts/Address';
 import ContactsLinks from '@/components/layout/rootLayout/footer/bottomSection/contacts/ContactsLinks';
 
 /**Basic Data**/
 import { styles } from '@/styles';
 import { kontaktPageText } from '@/data/textData';
 import { worldMapConfig } from '@/data/basicData';
-import MapModule from './mapModule/MapModule';
 
 worldMapConfig;
 

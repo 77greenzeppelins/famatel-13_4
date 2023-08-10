@@ -43,7 +43,10 @@ export const doPobraniaPageText = {
 };
 
 export const kontaktPageText = {
-  hero: {},
+  hero: {
+    h1: '',
+    tex1: 'Zespół Famatel Polska zaprasza do kontaktu od poniedziałku do piątku w godzinach 8ºº - 16ºº.',
+  },
   headers: ['Kontakt', 'Dane firmowe', 'Wskazówki dojazd'],
   daneFirmy: [
     'FAMATEL Polska Sp. z o.o.',
