@@ -4,7 +4,7 @@ const ComponentDelayed = dynamic(
 );
 /**Components**/
 import SvgLogoF from '@/components/SVG/logo/SvgLogoF';
-import HeroBackground from './heroBackground/HeroBackground';
+// import HeroBackground from './heroBackground/HeroBackground';
 import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
 import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/DownloadableLinkSimple';
 /**Tailwind Styles**/
