@@ -1,32 +1,21 @@
 import React from 'react';
 /**Components**/
-import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
-import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/DownloadableLinkSimple';
-/**Basic Data*/
-import { styles } from '@/styles';
-import { doPobraniaPageData } from '@/data/basicData';
 import SvgLogoF from '@/components/SVG/logo/SvgLogoF';
 import HeroBackground from './heroBackground/HeroBackground';
+import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
+import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/DownloadableLinkSimple';
+/**Tailwind Styles**/
+import { styles } from '@/styles';
+/**Basic Data**/
+import { doPobraniaPageData } from '@/data/basicData';
 
 const HeroSection = () => {
   /**JSX**/
   return (
     <div
-      role="presentation"
-      aria-hidden="true"
       data-component="HeroSection"
-      className={`relative flex items-center justify-center min-h-screen ${styles.heroSectionOffset}`}
+      className={`relative flex items-center justify-center min-h-screen ${styles.heroSectionOffset} before:block before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`}
     >
-      <div
-        className="absolute h-full left-0 w-[5%] max-w-[40px] z-10 from-dark  to-transparent bg-gradient-to-r"
-        //___via-dark
-      />
-      <div className="absolute h-full right-0 w-[5%] max-w-[40px] z-10 from-dark to-transparent bg-gradient-to-l" />
-      {/*
-        .
-        .....place for <HeroBackground>
-        .
-        */}
       <HeroBackground />
       <div className="relative fc flex-col w-[90%] xs4xx:w-[360px] lg:w-[400px] xxl:w-[460px] h-[80vh] min-h-[460px] z-10 bg-dark ">
         <div
