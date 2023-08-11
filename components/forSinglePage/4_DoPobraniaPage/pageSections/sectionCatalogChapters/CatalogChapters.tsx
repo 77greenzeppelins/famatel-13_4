@@ -3,7 +3,7 @@ import { useState } from 'react';
 /**Components**/
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
 import DownloadableLink from '@/components/basic/links/downloadableLink/DownloadableLink';
 import ComponentsBasicSlider from '@/components/forMultiPage/sliders/componentsBasicSlider/ComponentsBasicSlider';
 /**Framer Motion Staff**/
@@ -34,8 +34,9 @@ const CatalogChapters = () => {
     >
       <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
         <div className="flex flex-col w-full gap-y-10 wrapper-1">
-          <BasicHeader
-            textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+          <LargeHeader
+            ornamentStyle={styles.largeHeaderOrnamentStyle}
+            textStyle={`${styles.largeHeaderText} `}
             text={doPobraniaPageText.chaptersHeader}
           />
           <div className="flex gap-10 xxl:flex-row">

@@ -23,11 +23,13 @@ const HeroSection = () => {
           <FadingFrame />
 
           <div className="flex-col fc">
-            <p className="text-large special-gradient text-gradient">
-              {header[0]}
+            <p className="text-large text-grey">{header[0]}</p>
+            <p className="fc h-[2.75rem] leading-[4.25] text-center text-regular text-grey">
+              {header[1]}
             </p>
-            <p className="text-center text-regular li">{header[1]}</p>
-            <p className="text-center text-regular">{header[2]}</p>
+            <p className="fc h-[2.75rem] text-center text-regular special-gradient text-gradient">
+              {header[2]}
+            </p>
             {/* <p className="relative p-2 mt-10 text-regular before:block before:absolute before:inset-0 before:bg-corpo">
               <span className="relative">{header[2]}</span>
             </p> */}

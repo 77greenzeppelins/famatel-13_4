@@ -2,7 +2,7 @@
 /**Components**/
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import LargeHeader from '@/components/forMultiPage/headers/largeHeader/LargeHeader';
 import DownloadableLink from '@/components/basic/links/downloadableLink/DownloadableLink';
 /**Framer Motion Staff*/
 import { motion } from 'framer-motion';
@@ -25,8 +25,9 @@ const DeclarationsList = () => {
     >
       <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
         <div className="flex flex-col w-full gap-y-10 wrapper-1">
-          <BasicHeader
-            textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+          <LargeHeader
+            ornamentStyle={styles.largeHeaderOrnamentStyle}
+            textStyle={`${styles.largeHeaderText} `}
             text={doPobraniaPageText.declarations}
           />
 

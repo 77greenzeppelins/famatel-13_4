@@ -6,7 +6,7 @@ const NowosciPageContent = () => {
   return (
     <div data-component="HomePageContent" className="w-full">
       <HeroSection />
-      <PageSections />
+      {/* <PageSections /> */}
     </div>
   );
 };
