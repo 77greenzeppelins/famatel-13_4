@@ -39,13 +39,13 @@ ___2. thera are "random" lists of svgImages; each set of svgImages is used to cr
 
 export const svgTech_darkBackground = [
   //___
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '13377_d', Component: SVG_1_2_13377_d },
   { model: '25056_d', Component: SVG_2_1_25056_d },
   { model: '30013_d', Component: SVG_5_2_30013_d },
   { model: '3959_d', Component: SVG_8_1_3959_d },
   { model: '24395_d', Component: SVG_1_3_24395_d },
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '3061_d', Component: SVG_10_1_3061_d },
   { model: '24395_d', Component: SVG_1_3_24395_d },
   { model: '25056_d', Component: SVG_2_1_25056_d },
@@ -66,13 +66,13 @@ export const svgTech_darkBackground2 = [
   { model: '25056_d', Component: SVG_2_1_25056_d },
   { model: '13377_d', Component: SVG_1_2_13377_d },
   { model: '3959_d', Component: SVG_8_1_3959_d },
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
 ];
 export const svgTech_darkBackground3 = [
   //___
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
   { model: '3061_d', Component: SVG_10_1_3061_d },
   { model: '13377_d', Component: SVG_1_2_13377_d },
@@ -81,7 +81,7 @@ export const svgTech_darkBackground3 = [
   { model: '25056_d', Component: SVG_2_1_25056_d },
   { model: '13377_d', Component: SVG_1_2_13377_d },
   { model: '3959_d', Component: SVG_8_1_3959_d },
-  { model: '14307_d', Component: SVG_1_1_14307_d },
+  // { model: '14307_d', Component: SVG_1_1_14307_d },
   { model: '14353_d', Component: SVG_1_3_14353_d },
   { model: '3959_d', Component: SVG_8_1_3959_d },
 ];
