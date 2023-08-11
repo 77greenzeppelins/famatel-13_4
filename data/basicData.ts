@@ -136,7 +136,8 @@ export const doPobraniaPageData = {
   catalogData: {
     path: '/pdf/catalog/Katalog 2023.pdf',
     date: '2023',
-    linkLabel: 'Pełna wersja (53MB)',
+    linkLabel: 'Pełna wersja / 53MB',
+    // size: '53MB',
   },
   /**Framer Motion Staff*/
   chaptersData: [
@@ -246,6 +247,12 @@ export const doPobraniaPageData = {
   ],
   heroBackground: {
     heightValue: 668,
-    svgBasicSize: 220,
+    svgBasicSize: 220, //value associated with: index.doPobraniaPageStyles.svgContainerSizes
+  },
+};
+
+export const kontaktPageData = {
+  heroBackground: {
+    svgBasicSize: 140, //value associated with: index.kontaktPageStyles.svgContainerSizes
   },
 };

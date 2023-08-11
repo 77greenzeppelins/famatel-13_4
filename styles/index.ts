@@ -31,8 +31,10 @@ export const styles = {
   */
   doPobraniaPageStyles: {
     svgMaxHeight: 'max-h-[540px]',
+    svgContainerSizes: 'w-[220px] h-[220px]', //value associated with: basicData / doPobraniaPageData
   },
   kontaktPageStyles: {
+    svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
     container: 'flex flex-col justify-center gap-6 group no-sparkling w-fit',
     label:
       'text-medium text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',

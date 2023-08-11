@@ -46,7 +46,9 @@ export const doPobraniaPageText = {
 
 export const kontaktPageText = {
   hero: {
-    h1: '',
+    h1: 'Famatel Polska',
+    l1: 'poniedziałek - piątek',
+    l2: '8ºº - 16ºº',
     tex1: 'Zespół Famatel Polska zaprasza do kontaktu od poniedziałku do piątku w godzinach 8ºº - 16ºº.',
   },
   headers: ['Kontakt', 'Dane firmowe', 'Wskazówki dojazd'],

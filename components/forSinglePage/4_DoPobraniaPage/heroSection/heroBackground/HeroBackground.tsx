@@ -74,7 +74,7 @@ const HeroBackground = () => {
                 >
                   {svgTech_darkBackground3
                     .slice(0, NumberOfSvgCells)
-                    .map(({ model, Component }, index) => (
+                    .map(({ Component }, index) => (
                       <div
                         key={index}
                         className={`fc ${svgContainerSizes} aspect-square`}
@@ -95,7 +95,7 @@ const HeroBackground = () => {
             >
               {svgTech_darkBackground
                 .slice(0, NumberOfSvgCells)
-                .map(({ model, Component }, index) => (
+                .map(({ Component }, index) => (
                   <div
                     key={index}
                     className={`fc ${svgContainerSizes} aspect-square`}
@@ -107,16 +107,8 @@ const HeroBackground = () => {
                 ))}
             </motion.div>
           </div>
-          <div
-            //  className="flex justify-start w-full"
-            className="flex justify-start w-full"
-          >
-            <motion.div
-              className="flex gap-4 "
-              //___transition-all ease-in-out
-              style={{ x: xDividedNegative }}
-              transition={{ stiffness: 100, damping: 30, restDelta: 0.001 }}
-            >
+          <div className="flex justify-start w-full">
+            <motion.div className="flex gap-4 " style={{ x: xDividedNegative }}>
               {svgTech_darkBackground2
                 .slice(0, NumberOfSvgCells + 1)
                 .map(({ Component }, i) => (

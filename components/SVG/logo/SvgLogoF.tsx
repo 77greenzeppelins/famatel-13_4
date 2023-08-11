@@ -2,6 +2,7 @@
 /**BasicData*/
 corpoColors;
 import { corpoColors } from '@/data/basicData';
+import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 /**FramerMotion Staff*/
 import { motion } from 'framer-motion';
 
@@ -24,8 +25,8 @@ const SvgLogoF = ({
       className={svgStyle}
       viewBox="0 0 358 500"
       // animate={animationCondition ? 'strokeDark' : 'strokeLight'}
-      // whileHover={{ scale: 1.05 }}
-      // transition={svgTransition}
+      whileHover={{ scale: animationCondition ? 1.05 : 1.0 }}
+      transition={svgTransition}
     >
       <g fill="none" className={gStyle}>
         <path

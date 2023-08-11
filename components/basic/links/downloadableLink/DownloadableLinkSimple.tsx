@@ -13,11 +13,11 @@ styles;
 interface Props {
   label?: string;
   path?: string;
-  size?: string;
+  endText?: string;
 }
 
 /**-------------------------------**/
-const DownloadableLinkSimple = ({ label, path, size }: Props) => {
+const DownloadableLinkSimple = ({ label, path, endText }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   /**JSX**/
   return (
@@ -47,6 +47,13 @@ const DownloadableLinkSimple = ({ label, path, size }: Props) => {
             />
           </motion.span>
         </span>
+        {endText && (
+          <span
+            className={`pl-4 text-regular text-grey group-hover:text-light ${styles.basicAnimation}`}
+          >
+            {endText}
+          </span>
+        )}
       </span>
       {/* <span
         className={`absolute bottom-0 w-full h-[1px] border-b border-grey group-hover:border-greyTint2 ${styles.basicAnimation}`}

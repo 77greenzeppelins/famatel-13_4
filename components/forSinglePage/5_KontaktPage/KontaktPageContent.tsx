@@ -1,6 +1,7 @@
 import React from 'react';
-import HeroSection from './heroSection/HeroSection';
+// import HeroSection from './heroSection/HeroSection';
 import PageSections from './pageSections/PageSections';
+import HeroSection from './heroSection/HeroSection_2';
 
 const KontaktPageContent = () => {
   /**JSX**/
