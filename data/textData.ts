@@ -34,7 +34,9 @@ export const HomePageText = {
 };
 
 export const NowosciPageText = {
-  hero: { header: 'Wkrótce pojawi sie tutaj coś niezwykle elektryzującego...' },
+  hero: {
+    header: ['Wkrótce', 'pojawi sie tutaj coś niezwykle', 'elektryzującego...'],
+  },
 };
 
 export const doPobraniaPageText = {
