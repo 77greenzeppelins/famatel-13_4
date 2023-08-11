@@ -48,7 +48,11 @@ const HeroBackground = () => {
       .map((_, index) => (
         <div key={index} className={`fc ${svgContainerSizes} aspect-square`}>
           {(index + i) % 2 ? (
-            <SvgLogoF svgStyle={'h-[50%]'} gStyle={'fill-greyShade1'} />
+            <SvgLogoF
+              svgStyle={'h-[50%]'}
+              gStyle={'fill-dark stroke-corpo'}
+              strokeWidth={2}
+            />
           ) : (
             <Witamy svgStyle={''} gStyle={''} />
           )}

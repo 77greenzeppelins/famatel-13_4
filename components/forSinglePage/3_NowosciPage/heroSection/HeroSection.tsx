@@ -27,7 +27,10 @@ const HeroSection = () => {
             <p className="fc h-[2.75rem] leading-[4.25] text-center text-regular text-grey">
               {header[1]}
             </p>
-            <p className="fc h-[2.75rem] text-center text-regular special-gradient text-gradient">
+            <p
+              className="fc h-[2.75rem] text-center text-regular text-corpo"
+              //___special-gradient text-gradient
+            >
               {header[2]}
             </p>
             {/* <p className="relative p-2 mt-10 text-regular before:block before:absolute before:inset-0 before:bg-corpo">

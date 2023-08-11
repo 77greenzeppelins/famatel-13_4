@@ -11,10 +11,12 @@ const SvgLogoF = ({
   animationCondition = false,
   svgStyle,
   gStyle,
+  strokeWidth,
 }: {
   animationCondition?: boolean;
-  svgStyle: string;
-  gStyle: string;
+  svgStyle?: string;
+  gStyle?: string;
+  strokeWidth?: number;
 }) => {
   /**JSX**/
   return (
@@ -28,11 +30,12 @@ const SvgLogoF = ({
       whileHover={{ scale: animationCondition ? 1.05 : 1.0 }}
       transition={svgTransition}
     >
-      <g fill="none" className={gStyle}>
-        <path
-          strokeWidth="0"
-          d="M14 13.888v472.226h138.39V152.29H344V13.888z"
-        ></path>
+      <g
+        fill="none"
+        strokeWidth={strokeWidth ? strokeWidth : 1.5}
+        className={gStyle}
+      >
+        <path d="M14 13.888v472.226h138.39V152.29H344V13.888z"></path>
         <path d="M183.8 343.9H344V183.65H183.8z"></path>
       </g>
     </motion.svg>
