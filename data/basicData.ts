@@ -129,6 +129,14 @@ ___1. used in <SearchEngineButton> & <>
 export const buttonsConfig = {
   isDisabledDuration: 1000,
 };
+
+export const produktyPageData = {
+  heroBackground: {
+    heightValue: 668,
+    marqueeGap: 16, //clac: gap-8 / 2 = 16px
+    svgBasicSize: 50, //value associated with: index.produktyPageStyles.svgContainerSizes
+  },
+};
 /*
 ___used in: "do-pobrania" 
 */

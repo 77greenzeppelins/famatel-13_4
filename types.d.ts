@@ -25,3 +25,10 @@ type DropDownMenuCardType = {
   catPath: string;
   catImage: ImageType_C;
 };
+
+type svgCatalogIcon = {
+  svgStyle?: string;
+  colorFG?: string;
+  colorBG?: string;
+  colorBGOpacity?: string;
+};

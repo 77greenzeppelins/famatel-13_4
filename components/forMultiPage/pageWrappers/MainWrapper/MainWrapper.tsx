@@ -33,17 +33,17 @@ const MainWrapper = ({ children }: Props) => {
   useEffect(() => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
-      console.log('timeoutRef.current should be true');
+      // console.log('timeoutRef.current should be true');
     }
     timeoutRef.current = setTimeout(() => {
       window.scrollTo(0, 0);
-      console.log('timeoutRef.current / setTimeout()');
+      // console.log('timeoutRef.current / setTimeout()');
     }, 0);
 
     return () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
-        console.log('timeoutRef.current / clearTimeout()');
+        // console.log('timeoutRef.current / clearTimeout()');
       }
     };
   }, [pathname]);

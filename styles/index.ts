@@ -27,12 +27,22 @@ export const styles = {
     },
   },
   /*
+  ___Page ===> produkty
+  */
+  produktyPageStyles: {
+    marqueeContainer: 'gap-8', // 8 = 32px
+    svgContainerSizes: 'w-[50px] h-[50px]', //value associated with: basicData / doPobraniaPageData
+  },
+  /*
   ___Page ===> doPobrania 
   */
   doPobraniaPageStyles: {
     svgMaxHeight: 'max-h-[540px]',
     svgContainerSizes: 'w-[220px] h-[220px]', //value associated with: basicData / doPobraniaPageData
   },
+  /*
+  ___Page ===> kontak 
+  */
   kontaktPageStyles: {
     svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
     container: 'flex flex-col justify-center gap-6 group no-sparkling w-fit',

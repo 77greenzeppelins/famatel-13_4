@@ -33,6 +33,13 @@ export const HomePageText = {
   },
 };
 
+export const ProduktyPageText = {
+  hero: {
+    l1: 'Oddajemy do Twojej dyspozycji',
+    l2: 'kategorii profesjonalnych produktów',
+  },
+};
+
 export const NowosciPageText = {
   hero: {
     header: ['Wkrótce', 'pojawi sie tutaj coś niezwykle', 'elektryzującego...'],
