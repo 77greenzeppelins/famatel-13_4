@@ -61,6 +61,7 @@ const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
       </InViewContainer>
       <div className="relative flex w-full lg:w-1/2 wrapper-1-l">
         <MapModule />
+        <div />
       </div>
     </div>
   );
