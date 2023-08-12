@@ -1,5 +1,5 @@
 /**Components**/
-import SvgBielawaMap from '@/components/SVG/maps/SvgBielawaMap';
+import SvgBielawaMap from '@/components/SVG/maps/SvgBielawaMap_3';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import Link from 'next/link';
@@ -24,7 +24,14 @@ const MapModule = () => {
         bottomFactor={0.1}
       >
         <InViewAnimatedContent scaleFactor={0.95} xFactor={''} yFactor={''}>
-          <SvgBielawaMap containerStyle="relative w-full min-h-[400px] max-h-[700px]" />
+          <div className="grid justify-items-center">
+            <div
+              className="abs-cell aspect-square min-h-[400px] max-h-[700px] special-gradient -z-1 scale-95 rotate-180"
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1, transition: { delay: 1 } }}
+            />
+            <SvgBielawaMap containerStyle="abs-cell w-full min-h-[400px] max-h-[700px] z-1 scale-100" />
+          </div>
         </InViewAnimatedContent>
       </InViewContainer>
     </>

@@ -302,4 +302,9 @@
       ),
       linear-gradient(0deg, rgb(78, 79, 79), rgb(157, 158, 159));
   }
+
+  .abs-cell {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
 }
