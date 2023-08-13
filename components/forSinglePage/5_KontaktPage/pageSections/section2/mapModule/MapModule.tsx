@@ -1,8 +1,7 @@
-import WorldMapComponent from '@/components/SVG/maps/WorldMapComponent';
+/**Components**/
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
-import { worldMapConfig } from '@/data/basicData';
-import React from 'react';
+import SvgPolandMap from '@/components/SVG/maps/SvgPolandMap';
 
 const MapModule = () => {
   return (
@@ -13,7 +12,10 @@ const MapModule = () => {
       bottomFactor={0.3}
     >
       <InViewAnimatedContent scaleFactor={0.95} xFactor={''} yFactor={''}>
-        <WorldMapComponent widthToDrag={worldMapConfig.isDraggable_1} />
+        <div className="grid justify-items-center">
+          <div className="abs-cell aspect-square min-h-[400px] max-h-[700px] special-gradient -z-1 scale-95 rotate-180" />
+          <SvgPolandMap containerStyle=" abs-cell w-full min-h-[400px] max-h-[700px] z-1 scale-100" />
+        </div>
       </InViewAnimatedContent>
     </InViewContainer>
   );

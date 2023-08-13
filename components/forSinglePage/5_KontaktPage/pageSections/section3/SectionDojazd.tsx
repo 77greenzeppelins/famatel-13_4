@@ -24,7 +24,7 @@ const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
       <InViewContainer
         animationDelay={2}
         outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 wrapper-1-l"
-        measuredElementStyle="relative "
+        measuredElementStyle="relative"
         // topFactor={0.6}
         topFactor={0.3}
         bottomFactor={0.3}
@@ -61,7 +61,7 @@ const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
       </InViewContainer>
       <div className="relative flex w-full lg:w-1/2 wrapper-1-l">
         <MapModule />
-        <div />
+        {/* <div /> */}
       </div>
     </div>
   );
