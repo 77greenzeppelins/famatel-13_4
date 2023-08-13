@@ -115,14 +115,17 @@
   .text-small {
     @apply text-[0.625rem] xxl:text-[0.75rem] xxxl:text-[0.825rem] tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
   }
+  .text-basic {
+    @apply text-base lg:text-lg xl:text-xl xxl:text-2xl tracking-[2px] word-spacing-01 lg:word-spacing-0125;
+  }
   .text-regular {
     @apply text-[0.75rem]  lg:text-[1rem] tracking-[2px] leading-tight;
   }
   .text-medium {
-    @apply text-[1.25rem] xs:text-[1.5rem]  md:text-[1.75rem] xxl:text-[2.25rem] tracking-[2px] leading-tight;
+    @apply text-xl xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
   }
   .text-large {
-    @apply text-[2rem] xs3xx:text-[3.25rem] xs:text-[4.5rem] md:text-[4.75rem] xxl:text-[6.25rem] tracking-[2px] leading-tight;
+    @apply text-3xl xs3xx:text-4xl xs:text-5xl md:text-6xl xl:text-7xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
   }
   .text-u-large {
     @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];

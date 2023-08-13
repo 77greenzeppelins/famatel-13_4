@@ -1,6 +1,5 @@
 import React from 'react';
 /**Components**/
-import Section1 from './section1/SectionKontakt';
 import SectionDojazd from './section3/SectionDojazd';
 /**Basic Data**/
 import { styles } from '@/styles';
