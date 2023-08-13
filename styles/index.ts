@@ -47,7 +47,7 @@ export const styles = {
     svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
     container: 'flex flex-col justify-center gap-6 group no-sparkling w-fit',
     label:
-      'text-medium text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
+      'text-basic text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
     iconTrans:
       'h-6 w-6 text-light group-hover:text-corpo group-hover:translate-x-1 ease-in duration-300  origin-center',
   },

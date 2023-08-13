@@ -42,7 +42,7 @@ const SectionAdres = ({ containerStyle, labelStyle, iconStyle }: Props) => {
           {/* <div className="flex flex-col w-full gap-y-10"> */}
           <LargeHeader
             ornamentStyle={styles.largeHeaderOrnamentStyle}
-            textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+            textStyle={`${styles.largeHeaderText}`}
             text={kontaktPageText.headers[1]}
           />
           <Address
