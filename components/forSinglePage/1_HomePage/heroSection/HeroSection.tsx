@@ -11,8 +11,17 @@ import { styles } from '@/styles';
 // import { motion } from 'framer-motion';
 
 const HeroSection = () => {
-  // const pathname = usePathname();
-  // const condition = pathname === '/';
+  /**Data De...**/
+  const {
+    mainHeroSection: {
+      containerAsFlex,
+      containerAsGrid,
+      graphicAsFlex,
+      graphicAsGrid,
+      textAsFlex,
+      textAsGrid,
+    },
+  } = styles;
   /**JSX**/
   return (
     // <div
@@ -26,13 +35,13 @@ const HeroSection = () => {
     <div
       data-component="Section_1__container"
       // className={`relative flex flex-col-reverse items-end justify-center h-full xl:flex-row-reverse xl:items-center`}
-      className={`flex flex-col-reverse md:grid w-full min-h-screen h-full bg-yellow-600 ${styles.heroSectionOffset}`}
+      className={`w-full min-h-screen h-full ${containerAsFlex} ${containerAsGrid}  ${styles.heroSectionOffset}`}
     >
-      <div className="w-full pl-8 min-h-[50vh] md:col-span-full md:row-span-full md:justify-self-end md:self-end xl:self-center -z-1  md:max-w-[600px] lg:max-w-[850px] xl:max-w-[780px] xxxl:max-w-[900px] bg-black">
+      <div className={`${graphicAsFlex} ${graphicAsGrid} -z-1 `}>
         <GraphicSection />
       </div>
-      <div className="flex justify-end items-end min-h-[50vh] md:min-h-[50vh]  w-full md:col-span-full md:row-span-full z-1  bg-slate-700 ">
-        <div className="w-full wrapper-2-l bg-slate-900">
+      <div className={`${textAsFlex} ${textAsGrid} w-full z-1`}>
+        <div className="w-full wrapper-1-l">
           <TextSection />
         </div>
       </div>

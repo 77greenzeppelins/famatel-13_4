@@ -27,6 +27,19 @@ export const styles = {
     },
   },
   /*
+  used in: oFirmiePage | HeroSection ==> as concept of hero with image and text that strts as flex and ends as grid (to avoid absolute position)
+  */
+  mainHeroSection: {
+    containerAsFlex: 'flex flex-col-reverse',
+    containerAsGrid: 'md:grid',
+    graphicAsFlex: 'flex items-center w-full pl-2 xs:pl-8 min-h-[60vh]',
+    graphicAsGrid:
+      'md:col-span-full md:row-span-full md:justify-self-end md:self-end xl:self-center  md:max-w-[550px] lg:max-w-[650px] xl:max-w-[780px] xxxl:max-w-[900px]',
+    textAsFlex: 'flex justify-end items-end min-h-[40vh]',
+    textAsGrid:
+      'md:h-[50vh] min-h-[450px] xl:min-h-[550px] md:col-span-full md:row-span-full md:self-start   ',
+  },
+  /*
   ___kontaktPage | mapModules
   */
   mapModule: {
