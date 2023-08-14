@@ -13,35 +13,46 @@ worldMapConfig;
 
 /**TS**/
 interface Props {
+  textBlock: string;
   containerStyle: string;
   labelStyle: string;
   iconStyle: string;
 }
 
-const SectionKontakt = ({ containerStyle, labelStyle, iconStyle }: Props) => {
+const SectionKontakt = ({
+  textBlock,
+  containerStyle,
+  labelStyle,
+  iconStyle,
+}: Props) => {
   /**JSX**/
   return (
-    <div className="flex items-center">
-      <InViewContainer
-        animationDelay={2}
-        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 wrapper-1-l"
-        measuredElementStyle="relative "
-        // topFactor={0.6}
-        topFactor={0.3}
-        bottomFactor={0.3}
+    <InViewContainer
+      animationDelay={2}
+      outherContainerStyle="w-full wrapper-2"
+      measuredElementStyle="relative "
+      // topFactor={0.6}
+      topFactor={0.3}
+      bottomFactor={0.3}
+    >
+      <InViewAnimatedContent
+        yFactor=""
+        xFactor=""
+        scaleFactor={0.95}
+        containerStyle={textBlock}
       >
-        <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
-          <div className="flex flex-col w-full gap-y-10">
-            <LargeHeader
-              ornamentStyle={styles.largeHeaderOrnamentStyle}
-              textStyle={`${styles.largeHeaderText} max-w-[10px]`}
-              text={kontaktPageText.headers[0]}
-            />
-            <ContactsLinks labelStyle={labelStyle} iconStyle={iconStyle} />
-          </div>
-        </InViewAnimatedContent>
-      </InViewContainer>
-    </div>
+        <LargeHeader
+          ornamentStyle={styles.largeHeaderOrnamentStyle}
+          textStyle={`${styles.largeHeaderText} max-w-[10px]`}
+          text={kontaktPageText.headers[0]}
+        />
+        <ContactsLinks
+          containerStyle={containerStyle}
+          labelStyle={labelStyle}
+          iconStyle={iconStyle}
+        />
+      </InViewAnimatedContent>
+    </InViewContainer>
   );
 };
 

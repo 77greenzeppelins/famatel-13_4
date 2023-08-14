@@ -27,6 +27,16 @@ export const styles = {
     },
   },
   /*
+  ___kontaktPage | mapModules
+  */
+  mapModule: {
+    container: 'grid justify-items-center',
+    background:
+      'abs-cell aspect-square min-h-[300px] xs:min-h-[400px] max-h-[600px] special-gradient -z-1 scale-[0.99] rotate-180',
+    foreground:
+      'abs-cell w-full min-h-[300px] xs:min-h-[400px] max-h-[600px] z-1 scale-100',
+  },
+  /*
   ___Page ===> produkty
   */
   produktyPageStyles: {
@@ -45,7 +55,10 @@ export const styles = {
   */
   kontaktPageStyles: {
     svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
-    container: 'flex flex-col justify-center gap-6 group no-sparkling w-fit',
+    sectionContainerStyle:
+      'flex flex-col w-full gap-y-14 lg:gap-y-0 lg:items-center lg:justify-start lg:flex-row wrapper-2 ',
+    textBlock: 'flex flex-col w-full gap-y-10 lg:gap-y-16',
+    container: 'flex flex-col justify-center gap-y-4 no-sparkling w-fit',
     label:
       'text-basic text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
     iconTrans:

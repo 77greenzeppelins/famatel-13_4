@@ -12,24 +12,36 @@ import { kontaktPageText } from '@/data/textData';
 
 /**TS**/
 interface Props {
+  sectionContainerStyle: string;
+  textBlock: string;
   containerStyle: string;
   labelStyle: string;
   iconStyle: string;
 }
 
-const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
+const SectionDojazd = ({
+  sectionContainerStyle,
+  textBlock,
+  containerStyle,
+  labelStyle,
+  iconStyle,
+}: Props) => {
   /**JSX**/
   return (
-    <div className="flex flex-col gap-y-14 lg:gap-y-0 lg:items-center lg:justify-start lg:flex-row">
+    <div className={sectionContainerStyle}>
       <InViewContainer
         animationDelay={2}
-        outherContainerStyle="flex flex-col gap-y-20 w-full lg:w-1/2 wrapper-1-l"
+        outherContainerStyle=" w-full lg:w-1/2"
         measuredElementStyle="relative"
-        // topFactor={0.6}
         topFactor={0.3}
         bottomFactor={0.3}
       >
-        <InViewAnimatedContent yFactor="" xFactor="" scaleFactor={0.95}>
+        <InViewAnimatedContent
+          yFactor=""
+          xFactor=""
+          scaleFactor={0.95}
+          containerStyle={textBlock}
+        >
           <LargeHeader
             ornamentStyle={styles.largeHeaderOrnamentStyle}
             textStyle={`${styles.largeHeaderText} `}
@@ -59,7 +71,7 @@ const SectionDojazd = ({ containerStyle, labelStyle, iconStyle }: Props) => {
           </ul>
         </InViewAnimatedContent>
       </InViewContainer>
-      <div className="relative flex w-full lg:w-1/2 wrapper-1-l">
+      <div className="relative flex w-full lg:w-1/2">
         <MapModule />
         {/* <div /> */}
       </div>

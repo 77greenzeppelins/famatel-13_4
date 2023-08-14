@@ -7,12 +7,18 @@ import { styles } from '@/styles';
 
 /**TS**/
 interface Props {
+  containerStyle?: string;
   aStyle?: string;
   iconStyle?: string;
   labelStyle?: string;
 }
 /**---------------------------**/
-const ContactsLinks = ({ aStyle, iconStyle, labelStyle }: Props) => {
+const ContactsLinks = ({
+  labelStyle,
+  containerStyle,
+  aStyle,
+  iconStyle,
+}: Props) => {
   const {
     footer: {
       dirContacts: {
@@ -25,7 +31,7 @@ const ContactsLinks = ({ aStyle, iconStyle, labelStyle }: Props) => {
   /**JSX**/
   return (
     <address className="not-italic">
-      <ul className="flex flex-col gap-y-5 ">
+      <ul className={containerStyle}>
         <li>
           <DirectPhoneGK
             aStyle={aStyle ? aStyle : linkContainer}
