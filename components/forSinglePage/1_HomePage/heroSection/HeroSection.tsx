@@ -15,32 +15,30 @@ const HeroSection = () => {
   // const condition = pathname === '/';
   /**JSX**/
   return (
+    // <div
+    //   // initial={{ opacity: 0 }}
+    //   // animate={{ opacity: condition ? 1 : 0 }}
+    //   // transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
+    //   data-component="HeroSection"
+    //   className={`w-full min-h-screen bg-slate-900`}
+    //   //___${styles.heroSectionOffset}
+    // >
     <div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: condition ? 1 : 0 }}
-      // transition={{ type: 'linear', duration: 0.4, delay: 0.2 }}
-      data-component="HeroSection"
-      className={`w-full h-screen md:min-h-[800px]  ${styles.heroSectionOffset}  `}
+      data-component="Section_1__container"
+      // className={`relative flex flex-col-reverse items-end justify-center h-full xl:flex-row-reverse xl:items-center`}
+      className={`flex flex-col-reverse md:grid w-full min-h-screen h-full bg-yellow-600 ${styles.heroSectionOffset}`}
     >
-      <div
-        data-component="Section_1__container"
-        className={`relative flex flex-col-reverse items-end justify-center h-full xl:flex-row-reverse xl:items-center`}
-      >
-        <div
-          className="absolute right-0 bottom-0 flex items-start justify-end w-[98%] sm:w-[95%] md:w-[90%] lg:w-[84%] xl:w-[55%] xxl:w-[60%] xl:h-auto"
-          //___xs:-mt-20 lg:-mt-[80px] xl:mt-0
-        >
-          <GraphicSection />
-        </div>
-        <div
-          className="flex w-full h-full xl:items-center pt-[10vh] xl:pt-0 wrapper-1-l "
-          //___pt-[62px] xs:pt-[120px] md:pt-[120px] lg:pt-[160px] xl:flex-col xl:justify-center xl:gap-y-4 xl:pt-30 xl:w-[45%] xxl:w-[40%] h-auto
-        >
+      <div className="w-full pl-8 min-h-[50vh] md:col-span-full md:row-span-full md:justify-self-end md:self-end xl:self-center -z-1  md:max-w-[600px] lg:max-w-[850px] xl:max-w-[780px] xxxl:max-w-[900px] bg-black">
+        <GraphicSection />
+      </div>
+      <div className="flex justify-end items-end min-h-[50vh] md:min-h-[50vh]  w-full md:col-span-full md:row-span-full z-1  bg-slate-700 ">
+        <div className="w-full wrapper-2-l bg-slate-900">
           <TextSection />
         </div>
-        {/* <ScrollPrompt /> */}
       </div>
+      {/* <ScrollPrompt /> */}
     </div>
+    // </div>
   );
 };
 

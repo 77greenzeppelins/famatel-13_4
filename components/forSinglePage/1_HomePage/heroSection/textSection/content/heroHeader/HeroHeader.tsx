@@ -7,7 +7,7 @@ const HeroHeader = () => {
   return (
     <h1 className="flex flex-col">
       {HomePageText.hero.header.split(' ').map(word => (
-        <span key={word} className="font-bold text-hero-h1 text-light">
+        <span key={word} className="text-large text-light">
           {word}
         </span>
       ))}

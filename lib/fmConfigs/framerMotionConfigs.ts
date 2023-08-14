@@ -31,3 +31,48 @@ export const opacityScaleYDynamicVariants = {
     },
   }),
 };
+/*
+used in: <LinkLabelWithIcon /> ==> only one????
+*/
+export const opacityScaleYVariants = {
+  from: {
+    opacity: 0,
+    scaleY: 0,
+  },
+  to: {
+    opacity: 1,
+    scaleY: 1,
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  },
+  exit: {
+    opacity: 0,
+    scaleY: 0,
+    transition: { duration: 0.6, ease: 'easeInOut' },
+  },
+};
+
+/*
+used in: <BasicLink /> ==> only one time ?
+*/
+export const simpleOpacityVariants = {
+  from: {
+    opacity: 0,
+    scale: 0.95,
+  },
+  to: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.8,
+    transition: { duration: 0.6, ease: 'easeInOut' },
+  },
+};
