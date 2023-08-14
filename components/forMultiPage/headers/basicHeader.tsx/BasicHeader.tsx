@@ -44,7 +44,7 @@ const BasicHeader: React.FunctionComponent<Props> = ({
           hasVerticalOrnament
             ? ornamentStyle
               ? ornamentStyle
-              : 'border-l-[2px]  '
+              : 'border-l-[2px]'
             : ''
         } ${ornamentColor ? ornamentColor : 'border-corpo'} `}
         style={inlineTextStyle}
