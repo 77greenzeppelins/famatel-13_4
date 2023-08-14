@@ -27,7 +27,7 @@ export const styles = {
     },
   },
   /*
-  used in: oFirmiePage | HeroSection ==> as concept of hero with image and text that strts as flex and ends as grid (to avoid absolute position)
+  used in: oFirmiePage | HeroSection ==> as concept of hero with image and text that starts as flex and ends as grid (to avoid absolute position)
   */
   mainHeroSection: {
     containerAsFlex: 'flex flex-col-reverse',

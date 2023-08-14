@@ -1,13 +1,23 @@
-import React from 'react';
-/**Components**/
-import ImageSection from './imageSection/ImageSection';
+import Image from 'next/image';
+import { dirtyPlugImage } from '@/public/images/1_homePage/';
+import ScrollPrompt from '../scrollPrompt/ScrollPrompt';
 
 const GraphicSection = () => {
+  /**JSX**/
   return (
-    <div
-    //  className="relative flex justify-end items-center w-full xs3xx:max-w-[350px] xs4xx:max-w-[390px] lg:max-w-[850px] xl:max-w-[780px] xxxl:max-w-[900px]"
-    >
-      <ImageSection />
+    <div className="relative flex justify-end w-full h-full">
+      <Image
+        className="aspect-square"
+        alt={dirtyPlugImage.alt}
+        // src={dirtyPlugImg}
+        src={dirtyPlugImage.path}
+        width={dirtyPlugImage.width}
+        height={dirtyPlugImage.height}
+        // fill
+        // sizes="1200"
+        // fill // intrinsic|fixed|responsive|fill allowed;  fill your parent
+      />
+      <ScrollPrompt />
     </div>
   );
 };

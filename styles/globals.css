@@ -131,13 +131,13 @@
     @apply text-xl xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
   }
   .text-large {
-    @apply text-3xl xs3xx:text-4xl xs:text-5xl md:text-6xl xl:text-7xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
+    @apply text-3xl xs3xx:text-4xl xs:text-5xl md:text-6xl xl:text-7xl tracking-[2px] xl:tracking-[4px] word-spacing-0125 lg:word-spacing-025;
   }
   .text-u-large {
     @apply text-[5rem] xs3xx:text-[6rem] xs:text-[7.5rem] md:text-[7.5rem] xxl:text-[7.5rem] tracking-[2px] leading-[1];
   }
   .text-hero-h1 {
-    @apply text-[2.5rem] xs3xx:text-[2.75rem] xs4xx:text-[3rem] xs:text-[3.5rem] sm:text-[3.75rem] md:text-[4.25rem] lg:text-[5rem] xl:text-[5.5rem] tracking-[2px] leading-tight;
+    @apply text-4xl xs3xx:text-5xl xs4xx:text-6xl md:text-7xl lg:text-[5rem] xl:text-8xl tracking-[2px] xl:tracking-[4px] word-spacing-0125 lg:word-spacing-025;
   }
 
   .word-break-all {
