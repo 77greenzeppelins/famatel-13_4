@@ -128,7 +128,7 @@
     @apply text-xs lg:text-base tracking-[2px];
   }
   .text-medium {
-    @apply text-xl xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
+    @apply text-base xs3xx:text-lg xs4xx:text-xl  xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
   }
   .text-large {
     @apply text-3xl xs3xx:text-4xl xs:text-5xl md:text-6xl xl:text-7xl tracking-[2px] xl:tracking-[4px] word-spacing-0125 lg:word-spacing-025;

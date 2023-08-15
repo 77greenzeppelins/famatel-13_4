@@ -8,7 +8,7 @@ const CatalogSection = () => {
       <InViewContainer
         topFactor={0.7}
         bottomFactor={0.3}
-        measuredElementStyle="w-full h-full flex items-center"
+        measuredElementStyle="w-full h-full flex items-center xl:justify-center"
       >
         <CatalogContnet />
       </InViewContainer>
