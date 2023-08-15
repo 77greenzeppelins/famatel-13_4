@@ -1,15 +1,17 @@
 /**Basic Data**/
 import { corpoColors } from '@/data/basicData';
 
-const SVG_1_1_14307_d_v2: React.FC<{ className: string }> = ({ className }) => {
+const SVG_1_1_14307_d_v2: React.FC<{ containerStyle?: string }> = ({
+  containerStyle,
+}) => {
   /**JSX**/
   return (
     <svg
       role="img"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      viewBox="0 0 800 400"
+      className={containerStyle ? containerStyle : 'w-full'}
+      viewBox="0 0 800 500"
     >
       <g stroke={corpoColors.grey}>
         <path

@@ -20,12 +20,12 @@ export const HomePageText = {
       label: 'lat',
       text: 'Od przeszło 30 lat dbamy o Twój komfort i bezpieczeństwo przy inwestycjach z zakresu elektryki przemysłowej.',
     },
-    s3: {
+    s4: {
       numb: '+80',
       label: 'państw',
       text: 'Nasze rozwiązania z zakresu elektryki przemysłowej znane są Klientom w przeszło 80 krajach na całym świecie.',
     },
-    s4: {
+    s3: {
       numb: '8',
       label: 'business subsidies',
       text: 'Aby zoptymalizować realizację Twoich zamówień oparliśmy sie na 8 firmach partnerskich.',

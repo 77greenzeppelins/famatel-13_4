@@ -6,11 +6,13 @@ export const styles = {
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
   heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:block before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
   fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
-  basicHeaderText: 'label-regular text-grey align-middle leading-none',
+  basicHeaderText: 'label-regular text-grey', //___align-middle leading-none
   largeHeaderText: 'text-large text-light',
   largeHeaderOrnamentStyle: 'border-l-[2px] pl-6',
   basicHeaderBoxStyle: 'h-[10px] aspect-square bg-corpo',
   basicAnimation: 'duration-300 delay-100 ease-in',
+  lazyAnimation: 'duration-[0.6s] delay-100 ease-in',
+
   /*
   ___footer settings
   */
@@ -49,6 +51,32 @@ export const styles = {
       'abs-cell aspect-square min-h-[300px] xs:min-h-[400px] max-h-[600px] special-gradient -z-1 scale-[0.99] rotate-180',
     foreground:
       'abs-cell w-full min-h-[300px] xs:min-h-[400px] max-h-[600px] z-1 scale-100',
+  },
+  /*
+  used as: default settings in each instance of InViewCSSAnimatedContent if not custom settings available
+  */
+  inViewContentContainer: {
+    visible: 'translate-x-0  scale-100 opacity-1',
+    invisible: 'translate-x-4  scale-50 opacity-0',
+    containerStyle: 'fc duration-[0.9s] delay-[0.6] disable',
+  },
+
+  inViewContentSubtleSide: {
+    visible: 'translate-x-0 translate-y-0 opacity-1',
+    invisibleFromRightBottom: 'translate-x-4 translate-y-4 opacity-0',
+    invisibleFromLeftBottom: '-translate-x-4 translate-y-4 opacity-0',
+    containerStyle: 'duration-[0.9s] delay-[0.6] disable',
+  },
+
+  /*
+  used as: params for <InVievCssAnimatedContent>
+  used in: homePage | NumberTextModule 
+  */
+  numberTextModule: {
+    visible: 'translate-x-0 rotate-0 scale-100 opacity-1',
+    invisible: 'translate-x-4 rotate-12 scale-50 opacity-0',
+    containerStyle:
+      'fc flex-col duration-[0.9s] delay-[0.6] p-2 disable-soft w-[80px] h-[80px] md:w-[120px] md:h-[120px] aspect-square origin-bottom-left',
   },
   /*
   ___Page ===> produkty

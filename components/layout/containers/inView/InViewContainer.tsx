@@ -1,5 +1,5 @@
 'use client';
-import React, { ReactElement, useRef, cloneElement } from 'react';
+import React, { ReactElement, useRef } from 'react';
 /**Hook Staff**/
 import useMeasure from 'react-use-measure';
 /**FramerMotion Staff**/
@@ -14,6 +14,7 @@ interface Props {
   measuredElementStyle?: string;
   topFactor?: number;
   bottomFactor?: number;
+  //__irrelevant if InViewCSSAnimatedContent is used...
   animationDelay?: number;
   animationDuration?: number;
 }
@@ -50,7 +51,7 @@ const InViewContainer: React.FC<Props> = ({
       >
         <div
           ref={ref}
-          data-layout="MeasuredElementContainer"
+          data-layout="InViewContainer_MeasuredDiv"
           className={
             measuredElementStyle ? measuredElementStyle : 'w-full h-full'
           }

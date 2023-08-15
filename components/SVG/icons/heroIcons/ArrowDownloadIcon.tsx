@@ -1,14 +1,12 @@
-import React from 'react';
+'use client';
 /**FramerMotion Staff*/
 import { motion } from 'framer-motion';
-/** */
-// import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 /**Basic Data**/
 import { corpoColors } from '@/data/basicData';
 
 /***********************************************************************************/
-const ChevronRightIcon = ({
-  className,
+const ArrowDownloadIcon = ({
+  containerStyle,
   strokeWidth = 1,
   strokeColor,
 }: // strokeColorWhileHover = corpoColors.orange,
@@ -17,7 +15,7 @@ const ChevronRightIcon = ({
   strokeWidth?: number;
   strokeColor?: string;
   // strokeColorWhileHover?: string;
-  className: string;
+  containerStyle?: string;
   // scale?: number;
 }) => {
   return (
@@ -29,7 +27,9 @@ const ChevronRightIcon = ({
       viewBox="0 0 24 24"
       strokeWidth={strokeWidth}
       stroke={strokeColor ? strokeColor : corpoColors.light}
-      className={className ? className : 'w-6 h-6'}
+      className={
+        containerStyle ? containerStyle : 'w-6 h-6 aspect-square flex-shrink-0'
+      }
       // whileHover={{
       //   scale: scale ? scale : 1.05,
       //   stroke: strokeColorWhileHover,
@@ -48,4 +48,4 @@ const ChevronRightIcon = ({
   );
 };
 
-export default ChevronRightIcon;
+export default ArrowDownloadIcon;

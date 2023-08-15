@@ -113,10 +113,10 @@
     word-spacing: 0.25rem;
   }
   .label-regular {
-    @apply text-[0.625rem] lg:text-[0.75rem] xxxl:text-[0.825rem] tracking-[0.125rem] uppercase word-spacing-0125 lg:word-spacing-025;
+    @apply text-[0.625rem] lg:text-xs xxxl:text-sm tracking-[0.125rem] uppercase word-spacing-0125 lg:word-spacing-025;
   }
   .text-v-small {
-    @apply text-[0.5rem] xxl:text-[0.625rem] xxxl:text-[0.75rem] tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
+    @apply text-[0.5rem] xxl:text-[0.625rem] xxxl:text-xs tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
   }
   .text-small {
     @apply text-[0.625rem] xxl:text-[0.75rem] xxxl:text-[0.825rem] tracking-[1px] lg:tracking-[0.125rem] word-spacing-01 lg:word-spacing-0125;
@@ -125,7 +125,7 @@
     @apply text-base lg:text-lg xl:text-xl xxl:text-2xl tracking-[2px] word-spacing-01 lg:word-spacing-0125;
   }
   .text-regular {
-    @apply text-[0.75rem]  lg:text-[1rem] tracking-[2px] leading-tight;
+    @apply text-xs lg:text-base tracking-[2px];
   }
   .text-medium {
     @apply text-xl xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;

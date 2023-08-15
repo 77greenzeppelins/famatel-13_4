@@ -1,9 +1,10 @@
 import React from 'react';
 /**Components**/
 import NumberTextModule from './numberTextModule/NumberTextModule';
+import ProductDescription from './productDescription/ProductDescription';
+import WorldMapSection from './worldMap/WorldMapSection';
 /**BasicData**/
 import { HomePageText } from '@/data/textData';
-import WorldMapSection from './worldMap/WorldMapSection';
 
 const PageSections = () => {
   const {
@@ -16,6 +17,7 @@ const PageSections = () => {
         squareLabel={s1.label}
         animatedText={s1.text}
       />
+      <ProductDescription />
       <NumberTextModule
         squareNumber={s2.numb}
         squareLabel={s2.label}
