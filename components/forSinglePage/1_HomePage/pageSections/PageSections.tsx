@@ -11,7 +11,7 @@ const PageSections = () => {
     sectionsText: { s1, s2, s3, s4 },
   } = HomePageText;
   return (
-    <div className="flex flex-col gap-y-20 ">
+    <div className="flex flex-col gap-y-28 ">
       <NumberTextModule
         squareNumber={s1.numb}
         squareLabel={s1.label}
