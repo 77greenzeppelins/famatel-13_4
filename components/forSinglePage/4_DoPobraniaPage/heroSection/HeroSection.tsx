@@ -4,8 +4,7 @@ const ComponentDelayed = dynamic(
 );
 /**Components**/
 import SvgLogoF from '@/components/SVG/logo/SvgLogoF';
-// import HeroBackground from './heroBackground/HeroBackground';
-import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
+import FadingFrame from '@/components/forMultiPage/atomsLike/lines/fadingLine/FadingFrame';
 import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/DownloadableLinkSimple';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
@@ -18,11 +17,7 @@ const HeroSection = () => {
   } = doPobraniaPageData;
   /**JSX**/
   return (
-    <div
-      data-component="HeroSection"
-      className={`relative flex items-center justify-center min-h-screen ${styles.heroSectionOffset} before:block before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`}
-    >
-      {/* <HeroBackground /> */}
+    <div data-component="HeroSection" className={styles.heroSectionContainer}>
       <ComponentDelayed />
       <div className="relative fc flex-col w-[90%] xs4xx:w-[360px] lg:w-[400px] xxl:w-[460px] h-[80vh] min-h-[460px] z-10 bg-dark ">
         <div

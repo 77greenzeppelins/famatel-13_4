@@ -4,6 +4,7 @@ export const styles = {
   */
   headerHeight: 'h-[64px] lg:h-[78px]',
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
+  heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:block before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
   fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
   basicHeaderText: 'label-regular text-grey align-middle leading-none',
   largeHeaderText: 'text-large text-light',

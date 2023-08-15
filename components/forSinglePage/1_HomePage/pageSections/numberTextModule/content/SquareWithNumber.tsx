@@ -1,7 +1,8 @@
 'use client';
+
 /**Components**/
-import FadingFrame from '@/components/forMultiPage/lines/fadingLine/FadingFrame';
-import FadingLine from '@/components/forMultiPage/lines/fadingLine/FadingLine';
+import FadingFrame from '@/components/forMultiPage/atomsLike/lines/fadingLine/FadingFrame';
+import FadingLine from '@/components/forMultiPage/atomsLike/lines/fadingLine/FadingLine';
 
 /**TS**/
 type Props = {
