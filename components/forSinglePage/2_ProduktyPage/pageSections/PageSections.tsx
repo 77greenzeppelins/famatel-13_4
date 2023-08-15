@@ -1,15 +1,15 @@
-import React from 'react';
+/**Components**/
+import CatalogHandler from './catalogHandler/CatalogHandler';
 
 const PageSections = () => {
+  /**JSX**/
   return (
-    <div className="flex-col justify-between min-h-screen fc ">
+    <div className="w-full min-h-screen wrapper-1">
       {' '}
-      <p className="text-medium text-grey min-h-[300px]">
-        Product Page Section top
-      </p>
-      <p className="text-medium text-grey min-h-[300px]">
+      <CatalogHandler />
+      {/* <p className="text-medium text-grey min-h-[300px]">
         Product Page Section bottom
-      </p>
+      </p> */}
     </div>
   );
 };

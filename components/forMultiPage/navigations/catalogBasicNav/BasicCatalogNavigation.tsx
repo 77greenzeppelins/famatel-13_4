@@ -27,9 +27,6 @@ const BasicCatalogNavigation = () => {
         />
         <NavigationRow label1="podkategoria" label2="Gniazda przenośne" />
         <NavigationRow label1="model" label2="14307" />
-        {/* {createLinks()}
-        {createBottomLevel()}
-        {createOptionalHeader()} */}
       </nav>
     </div>
   );
