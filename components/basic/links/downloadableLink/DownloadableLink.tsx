@@ -49,7 +49,7 @@ const DownloadableLink = ({ id, label, path, size }: Props) => {
             transition={svgTransition}
           >
             <ArrowDownloadIcon
-              className={`w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light ${styles.basicAnimation}`}
+              containerStyle={`w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light ${styles.basicAnimation}`}
             />
           </motion.span>
           <span
