@@ -50,7 +50,7 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
               {productSearchEngine.hasDeclaration}
 
               <ArrowDownloadIcon
-                className={
+                containerStyle={
                   'w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light ease-in duration-300 delay-100'
                   //___animate-bounce animate-ping group-hover:translate-y-1 group-hover:translate-x-1 group-hover:scale-[1.1]
                   //___group-hover:translate-y-1 ease-in duration-300 delay-300
