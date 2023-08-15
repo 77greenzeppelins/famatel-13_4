@@ -33,7 +33,7 @@ const BasicHeader: React.FunctionComponent<Props> = ({
         containerStyle
           ? containerStyle
           : 'relative flex items-center disable-soft w-fit'
-      }  ${hasBox ? 'gap-4' : 'gap-0'} `}
+      }  ${hasBox ? 'gap-2' : 'gap-0'} `}
     >
       {hasBox && (
         <div className={boxStyle ? boxStyle : styles.basicHeaderBoxStyle} />
