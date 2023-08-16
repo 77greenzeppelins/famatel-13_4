@@ -4,12 +4,11 @@ import CatalogHandler from './catalogHandler/CatalogHandler';
 const PageSections = () => {
   /**JSX**/
   return (
-    <div className="w-full min-h-screen wrapper-1">
-      {' '}
+    <div
+      className="w-full wrapper-1"
+      //___min-h-screen
+    >
       <CatalogHandler />
-      {/* <p className="text-medium text-grey min-h-[300px]">
-        Product Page Section bottom
-      </p> */}
     </div>
   );
 };
