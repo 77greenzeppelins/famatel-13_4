@@ -5,6 +5,7 @@ import ProductsCategoryCard from './productsCategoryCard/ProductsCategoryCard';
 import { styles } from '@/styles';
 /**Basic Data*/
 import { mainCategoriesNames } from '@/data/basicData';
+import GraphicSection from '../graphicSection/GraphicSection';
 
 const CatalogDisplayer = ({
   componentIsInView,
@@ -32,17 +33,24 @@ const CatalogDisplayer = ({
       inViewFalse={invisibleFromLeftBottom}
       containerStyle={containerStyle}
     >
-      <ul className="flex flex-col w-full">
-        {mainCategoriesNames.map((label, i) => (
-          <ProductsCategoryCard
-            key={i}
-            i={i}
-            label={label}
-            expanded={expanded}
-            setExpanded={setExpanded}
-          />
-        ))}
-      </ul>
+      <div className="flex w-full">
+        <div className="w-full lg:w-8/12">
+          <ul className="flex flex-col w-full">
+            {mainCategoriesNames.map((label, i) => (
+              <ProductsCategoryCard
+                key={i}
+                i={i}
+                label={label}
+                expanded={expanded}
+                setExpanded={setExpanded}
+              />
+            ))}
+          </ul>
+        </div>
+        <div className="hidden lg:block lg:w-4/12">
+          <GraphicSection />
+        </div>
+      </div>
     </InViewCSSAnimatedContent>
   );
 };

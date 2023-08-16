@@ -40,7 +40,7 @@ const DescriptionSection = ({ i }: { i: number }) => {
           <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon
               //   strokeWidth={1.5}
-              containerStyle={`fc h-4 w-4  aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
             />
           </span>
           <p

@@ -43,7 +43,7 @@ export const styles = {
       'md:h-[50vh] min-h-[450px] xl:min-h-[550px] md:col-span-full md:row-span-full md:self-start   ',
   },
   /*
-  ___kontaktPage | mapModules
+  ___used in: kontaktPage | mapModules
   */
   mapModule: {
     container: 'grid justify-items-center',
@@ -77,6 +77,22 @@ export const styles = {
     invisible: 'translate-x-4 rotate-12 scale-50 opacity-0',
     containerStyle:
       'fc flex-col duration-[0.9s] delay-[0.6] p-2 disable-soft w-[80px] h-[80px] md:w-[120px] md:h-[120px] aspect-square origin-bottom-left',
+  },
+  /*
+  ___used in: 
+  */
+  cardFrameStyle: {
+    outerContainerStyle:
+      'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black group-hover:blur-[10px] duration-300 delay-100 ease-in',
+    innerContainerStyle:
+      'relative fc w-full h-full rounded-md pointer-events-none bg-dark',
+  },
+  cardFrameGridStyle: {
+    outerContainerStyle:
+      'relative col-span-full row-span-full -z-1 duration-[0.6s] delay-100 ease-in',
+    // 'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black group-hover:blur-[10px] duration-300 delay-100 ease-in',
+    innerContainerStyle:
+      'relative col-span-full row-span-full fc w-full h-full rounded-md bg-dark z-1',
   },
   /*
   ___Page ===> produkty

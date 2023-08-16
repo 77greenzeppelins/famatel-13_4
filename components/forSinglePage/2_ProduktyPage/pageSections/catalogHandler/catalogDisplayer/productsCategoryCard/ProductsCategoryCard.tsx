@@ -1,10 +1,11 @@
 'use client';
-
-/**Framer Motion Staff**/
-import { AnimatePresence, motion } from 'framer-motion';
-/**Tailwind Styles**/
-import { styles } from '@/styles';
+/**Components**/
+import CardFrame from '@/components/forMultiPage/catalogs/allCards/cardFrame/CardFrame';
+import CardHeader from './header/CardHeader';
 import DescriptionSection from './description/DescriptionSection';
+/**Framer Motion Staff**/
+import { AnimatePresence } from 'framer-motion';
+import CardFrameGrid from '@/components/forMultiPage/catalogs/allCards/cardFrame/CardFrameGrid';
 
 const ProductsCategoryCard = ({
   label,
@@ -17,36 +18,55 @@ const ProductsCategoryCard = ({
   expanded: number | false;
   setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
 }) => {
+  /**...*/
   const isOpen = i === expanded;
+  const categoryNumber = i + 1 < 10 ? `0${i + 1}` : `${i + 1}`;
+  /**JSX**/
   return (
-    <>
-      <motion.li
-        initial={false}
-        onClick={() => setExpanded(isOpen ? false : i)}
-        className={`flex w-full items-end h-[80px] x3xx:h-[60px] py-1 cursor-pointer border-b hover:border-light ${
-          styles.basicAnimation
-        }  ${isOpen ? 'border-corpo' : 'border-greyShade2'} lg:border-none`}
+    <li className="grid py-2 w-[96%]">
+      <div className="relative col-span-full row-span-full -z-1 group ">
+        <CardFrameGrid isActive={isOpen} />
+      </div>
+      <div
+        //    className="relative flex w-full h-full px-4 pointer-events-auto"
+        className="relative flex w-full h-full px-4 col-span-full row-span-full z-1"
       >
-        <p
-          className={`flex items-center w-full gap-x-4 text-medium hover:text-light  ${
-            styles.basicAnimation
-          }  ${isOpen ? 'text-corpo' : 'text-grey'}`}
-        >
-          <span className="w-[50px] lg:hidden">{i + 1}</span>
-          <span
-            className={`w-full lg:border-b hover:border-light ${
-              styles.basicAnimation
-            }  ${isOpen ? 'border-corpo' : 'border-greyShade2'}`}
-          >
-            {label}
-          </span>
-        </p>
-      </motion.li>
-      <AnimatePresence initial={false}>
-        {isOpen && <DescriptionSection i={i} />}
-      </AnimatePresence>
-    </>
+        <div className="w-full">
+          <CardHeader
+            label={label}
+            categoryNumber={categoryNumber}
+            i={i}
+            setExpanded={setExpanded}
+            isOpen={isOpen}
+          />
+          <AnimatePresence initial={false}>
+            {isOpen && <DescriptionSection i={i} />}
+          </AnimatePresence>
+        </div>
+      </div>
+    </li>
   );
 };
 
 export default ProductsCategoryCard;
+
+/*
+ <li className=" py-2 w-[96%]">
+      <CardFrameGrid>
+        <div className="relative flex w-full h-full px-4 pointer-events-auto">
+          <div className="w-full">
+            <CardHeader
+              label={label}
+              categoryNumber={categoryNumber}
+              i={i}
+              setExpanded={setExpanded}
+              isOpen={isOpen}
+            />
+            <AnimatePresence initial={false}>
+              {isOpen && <DescriptionSection i={i} />}
+            </AnimatePresence>
+          </div>
+        </div>
+      </CardFrameGrid>
+    </li>
+*/
