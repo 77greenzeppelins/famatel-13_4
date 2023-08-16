@@ -32,24 +32,25 @@ const DescriptionSection = ({ i }: { i: number }) => {
       className="overflow-hidden "
     >
       <motion.div
-        variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
+        variants={{ collapsed: { scale: 0.9 }, open: { scale: 1 } }}
         transition={{ duration: 0.8 }}
         className="flex flex-col w-full gap-6 pt-6 origin-top-center"
       >
         <Link href="/" className="flex items-center py-1 group w-fit">
-          <span className="w-10 h-full shrink-0 fc">
+          <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon
-              containerStyle={`fc h-6 w-6 min-w-6 min-h-6 aspect-square stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              //   strokeWidth={1.5}
+              containerStyle={`fc h-4 w-4  aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
             />
           </span>
           <p
-            className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation}`}
+            className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation} pl-3`}
           >
             Zobacz kategorię
           </p>
         </Link>
         <div className="flex flex-col gap-y-2">
-          <BasicHeader text="opis" />
+          <BasicHeader text="opis" hasBox={true} hasVerticalOrnament={false} />
           <p className="text-regular text-grey">{categoriesDescritpions[i]}</p>
         </div>
       </motion.div>

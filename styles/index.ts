@@ -9,7 +9,7 @@ export const styles = {
   basicHeaderText: 'label-regular text-grey', //___align-middle leading-none
   largeHeaderText: 'text-large text-light',
   largeHeaderOrnamentStyle: 'border-l-[2px] pl-6',
-  basicHeaderBoxStyle: 'h-[10px] aspect-square bg-corpo',
+  basicHeaderBoxStyle: 'w-[10px] h-[10px] aspect-square bg-corpo',
   basicAnimation: 'duration-300 delay-100 ease-in',
   lazyAnimation: 'duration-[0.6s] delay-100 ease-in',
 

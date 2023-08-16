@@ -23,17 +23,23 @@ const ProductsCategoryCard = ({
       <motion.li
         initial={false}
         onClick={() => setExpanded(isOpen ? false : i)}
-        className={`flex items-end h-[80px] x3xx:h-[60px] py-1 cursor-pointer border-b hover:border-light ${
+        className={`flex w-full items-end h-[80px] x3xx:h-[60px] py-1 cursor-pointer border-b hover:border-light ${
           styles.basicAnimation
-        }  ${isOpen ? 'border-corpo' : 'border-greyShade2'}`}
+        }  ${isOpen ? 'border-corpo' : 'border-greyShade2'} lg:border-none`}
       >
         <p
-          className={`flex gap-x-4 text-medium hover:text-light  ${
+          className={`flex items-center w-full gap-x-4 text-medium hover:text-light  ${
             styles.basicAnimation
           }  ${isOpen ? 'text-corpo' : 'text-grey'}`}
         >
-          <span className="w-[50px]">{i + 1}</span>
-          <span>{label}</span>
+          <span className="w-[50px] lg:hidden">{i + 1}</span>
+          <span
+            className={`w-full lg:border-b hover:border-light ${
+              styles.basicAnimation
+            }  ${isOpen ? 'border-corpo' : 'border-greyShade2'}`}
+          >
+            {label}
+          </span>
         </p>
       </motion.li>
       <AnimatePresence initial={false}>

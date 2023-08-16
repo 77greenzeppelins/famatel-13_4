@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 /***********************************************************************************/
 const ArrowForLinkIcon = ({
   containerStyle,
-  strokeWidth = 1,
+  strokeWidth,
   pathStyle = '',
 }: {
   strokeWidth?: number;
@@ -22,7 +22,7 @@ const ArrowForLinkIcon = ({
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={strokeWidth ? strokeWidth : 1.5}
+      // strokeWidth={strokeWidth ? strokeWidth : 1.5}
       // stroke={corpoColors.light}
       className={containerStyle ? containerStyle : 'w-6 h-6 flex-shrink-0'}
       // onHoverStart={e => { fill:'#9b59b6'}}
