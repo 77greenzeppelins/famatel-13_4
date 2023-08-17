@@ -1,19 +1,48 @@
-import { mainPagesPaths } from './basicData';
+// import { mainPagesPaths } from './basicData';
 /*
 ___1.
 */
+export const mainPagesPaths = {
+  home: '/',
+  produkty: '/produkty',
+  nowosci: '/nowosci',
+  doPobrania: '/do-pobrania',
+  kontakt: '/kontakt',
+};
+
+export const mainPagesLabels = [
+  'O firmie',
+  'Produkty',
+  'Nowości',
+  'Realizacje',
+  'Do pobrania',
+  'Kontakt',
+];
+
+export const mainCategoriesNames = [
+  'Przemysłowe wtyczki i gniazda',
+  'Gniazda z rozłącznikiem i blokadą',
+  'Adaptery przemysłowe',
+  'Gniazda podwieszane',
+  'Przedłużacze bębnowe',
+  'Rozłączniki bezpieczeństwa',
+  'Ładowarki samochodowe',
+  'Obudowy i rozdzielnice',
+  'Rozdzielnice modułowe',
+  'Puszki instalacyjne',
+];
 
 export const mainCategoriesPath = [
-  'c1-wtyczki-gniazda',
-  'c2-gniazda-z-blokada',
-  'c3-adaptery-przemyslowe',
-  'c4-gniazda-podwieszane',
-  'c5-przedluzacze-bebnowe',
-  'c6-rozlaczniki-bezpieczenstwa',
-  'c7-ladowarki-samochodowe',
-  'c8-obudowy-i-rozdzielnice',
-  'c9-rozdzielnice-modulowe',
-  'c10-puszki-instalacyjne',
+  'przemyslowe-wtyczki-gniazda',
+  'gniazda-z-rozlacznikiem-i-blokada',
+  'adaptery-przemyslowe',
+  'gniazda-podwieszane',
+  'przedluzacze-bebnowe',
+  'rozlaczniki-bezpieczenstwa',
+  'ladowarki-samochodowe',
+  'obudowy-i-rozdzielnice',
+  'rozdzielnice-modulowe',
+  'puszki-instalacyjne',
 ];
 
 const x = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;

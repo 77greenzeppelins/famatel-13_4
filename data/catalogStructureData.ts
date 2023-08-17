@@ -1,5 +1,8 @@
-import { mainCategoriesPath } from './routingData';
-import { mainPagesPaths, mainCategoriesNames } from './basicData';
+import {
+  mainCategoriesPath,
+  mainPagesPaths,
+  mainCategoriesNames,
+} from './routingData';
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 
 /*

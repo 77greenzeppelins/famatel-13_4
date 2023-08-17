@@ -1,5 +1,5 @@
 'use client';
-import { mainCategoriesNames } from '@/data/basicData';
+import { mainCategoriesNames } from '@/data/routingData';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 

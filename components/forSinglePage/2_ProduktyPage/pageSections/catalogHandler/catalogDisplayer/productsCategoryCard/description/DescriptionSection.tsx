@@ -1,15 +1,20 @@
 import Link from 'next/link';
 /**FramerMotion Staff*/
 import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon';
+import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
 /**Framer Motion Staff**/
 import { motion } from 'framer-motion';
 /**Basic Data**/
 import { ProduktyPageText } from '@/data/textData';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+/**TS**/
+interface Props {
+  i: number;
+  href: string;
+}
 
-const DescriptionSection = ({ i }: { i: number }) => {
+const DescriptionSection = ({ i, href }: Props) => {
   /** */
   const { categoriesDescritpions } = ProduktyPageText;
   /**JSX**/
@@ -36,7 +41,7 @@ const DescriptionSection = ({ i }: { i: number }) => {
         transition={{ duration: 0.8 }}
         className="flex flex-col w-full gap-6 py-6 origin-top-center"
       >
-        <Link href="/" className="flex items-center py-1 group w-fit">
+        <Link href={href} className="flex items-center py-1 group w-fit">
           <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon
               containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}

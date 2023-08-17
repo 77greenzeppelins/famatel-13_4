@@ -5,18 +5,22 @@ import DescriptionSection from './description/DescriptionSection';
 /**Framer Motion Staff**/
 import { AnimatePresence } from 'framer-motion';
 import CardFrameGrid from '@/components/forMultiPage/catalogs/allCards/cardFrame/CardFrameGrid';
-
-const ProductsCategoryCard = ({
-  label,
-  i,
-  expanded,
-  setExpanded,
-}: {
+/**TS**/
+interface Props {
   label: string;
+  href: string;
   i: number;
   expanded: number | false;
   setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
-}) => {
+}
+
+const ProductsCategoryCard = ({
+  label,
+  href,
+  i,
+  expanded,
+  setExpanded,
+}: Props) => {
   /**...*/
   const isOpen = i === expanded;
   const categoryNumber = i + 1 < 10 ? `0${i + 1}` : `${i + 1}`;
@@ -32,13 +36,14 @@ const ProductsCategoryCard = ({
           <div className="w-full">
             <CardHeader
               label={label}
+              href={href}
               categoryNumber={categoryNumber}
               i={i}
               setExpanded={setExpanded}
               isOpen={isOpen}
             />
             <AnimatePresence initial={false}>
-              {isOpen && <DescriptionSection i={i} />}
+              {isOpen && <DescriptionSection i={i} href={href} />}
             </AnimatePresence>
           </div>
         </div>

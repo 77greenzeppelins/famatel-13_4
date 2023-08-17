@@ -1,10 +1,18 @@
 'use client';
+import Link from 'next/link';
+/**Components**/
 import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
-/**Framer Motion Staff**/
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+/**TS**/
+interface Props {
+  label: string;
+  href: string;
+  i: number;
+  setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
+  isOpen: boolean;
+  categoryNumber: string;
+}
 
 const CardHeader = ({
   label,
@@ -12,13 +20,8 @@ const CardHeader = ({
   setExpanded,
   isOpen,
   categoryNumber,
-}: {
-  label: string;
-  i: number;
-  setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
-  isOpen: boolean;
-  categoryNumber: string;
-}) => {
+  href,
+}: Props) => {
   /**JSX**/
   return (
     <div className="flex w-full">
@@ -49,7 +52,7 @@ const CardHeader = ({
       </div>
       <div className="flex justify-end w-1/12 h-full pt-3 overflow-hidden">
         <Link
-          href="/"
+          href={href}
           className={`flex items-center py-1 group w-fit overflow-hidden  ${
             isOpen ? '-translate-x-32 opacity-0' : 'translate-x-0 opacity-100'
           } ${styles.lazyAnimation}`}
