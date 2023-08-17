@@ -6,9 +6,9 @@ const KategorieProduktow = () => {
   ___1. I need a new array that includes only two properties in each item of original array
   */
   const newArray = catalogStructureData.map(
-    ({ mainCategoryName, mainCategoryUrl }) => ({
+    ({ mainCategoryName, mainCategoryPath }) => ({
       label: mainCategoryName,
-      url: mainCategoryUrl,
+      url: mainCategoryPath,
     })
   );
   /**JSX**/

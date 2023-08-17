@@ -24,14 +24,14 @@ const DropDownMenu = () => {
             ({
               mainCategoryIndex,
               mainCategoryName,
-              mainCategoryUrl,
+              mainCategoryPath,
               mainCategoryImage,
             }) => (
               <DropDownMenuCard
                 key={mainCategoryIndex}
                 catIndex={mainCategoryIndex}
                 catName={mainCategoryName}
-                catPath={mainCategoryUrl}
+                catPath={mainCategoryPath}
                 catImage={mainCategoryImage}
               />
             )
