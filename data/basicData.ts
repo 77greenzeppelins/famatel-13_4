@@ -5,19 +5,6 @@ export const mainPagesPaths = {
   doPobrania: '/do-pobrania',
   kontakt: '/kontakt',
 };
-export const mainCategoriesPath = [
-  'wtyczki-gniazda',
-  'gniazda-z-blokada',
-  'adaptery-przemyslowe',
-  'gniazda-podwieszane',
-  'przedluzacze-bebnowe',
-  'rozlaczniki-bezpieczenstwa',
-  'ladowarki-samochodowe',
-  'obudowy-i-rozdzielnice',
-  'rozdzielnice-modulowe',
-  'puszki-instalacyjne',
-  'osprzet-domowy',
-];
 
 export const mainPagesLabels = [
   'O firmie',
