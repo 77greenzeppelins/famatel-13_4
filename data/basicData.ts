@@ -1,32 +1,36 @@
-export const mainPagesPaths = {
-  home: '/',
-  produkty: '/produkty',
-  nowosci: '/nowosci',
-  doPobrania: '/do-pobrania',
-  kontakt: '/kontakt',
+import {
+  mainPagesPaths,
+  mainPagesLabels,
+  mainCategoriesNames,
+} from './routingData';
+
+export const corpoColors = {
+  //___basic
+  light: '#ffffff',
+  orange: '#e74124',
+  grey: '#9d9e9f',
+  dark: '#1d1d1b',
+  //___grey modifications
+  greyShade1: '#6d6e6f',
+  greyShade2: '#2f2f2f',
+  greyTint1: '#b0b1b2',
+  greyTint2: '#d7d8d8',
+  //___vat collors
+  vYellow: '#ceae0e',
+  vBlue: '#134976',
+  vRed: '#a01b29',
+  vDark: '#2c3038',
+  green: '#32754c',
+  violet: '#434592',
+  //___vat collors mod
+  vModYellow: '#a48b0b',
+  vModBlue: '#217dca',
+  vModRed: '#cc2234',
+  vModDark: '#23262c',
+  vModViolet: '#2A1764',
+  vModGreen: '#02681d',
+  vModLight: '#eaeaea',
 };
-
-export const mainPagesLabels = [
-  'O firmie',
-  'Produkty',
-  'Nowości',
-  'Realizacje',
-  'Do pobrania',
-  'Kontakt',
-];
-
-export const mainCategoriesNames = [
-  'Przemysłowe wtyczki i gniazda',
-  'Gniazda z rozłącznikiem i blokadą',
-  'Adaptery przemysłowe',
-  'Gniazda podwieszane',
-  'Przedłużacze bębnowe',
-  'Rozłączniki bezpieczeństwa',
-  'Ładowarki samochodowe',
-  'Obudowy i rozdzielnice',
-  'Rozdzielnice modułowe',
-  'Puszki instalacyjne',
-];
 
 export const mainPagesData = [
   {
@@ -59,34 +63,6 @@ export const mainPagesData = [
 export const regulacjeUrl = {
   notaPrawna: { label: 'Nota prawna', url: '/nota-prawna' },
   // cookies: { label: 'cookies', url: '/Polityka cookies' },
-};
-
-export const corpoColors = {
-  //___basic
-  light: '#ffffff',
-  orange: '#e74124',
-  grey: '#9d9e9f',
-  dark: '#1d1d1b',
-  //___grey modifications
-  greyShade1: '#6d6e6f',
-  greyShade2: '#2f2f2f',
-  greyTint1: '#b0b1b2',
-  greyTint2: '#d7d8d8',
-  //___vat collors
-  vYellow: '#ceae0e',
-  vBlue: '#134976',
-  vRed: '#a01b29',
-  vDark: '#2c3038',
-  green: '#32754c',
-  violet: '#434592',
-  //___vat collors mod
-  vModYellow: '#a48b0b',
-  vModBlue: '#217dca',
-  vModRed: '#cc2234',
-  vModDark: '#23262c',
-  vModViolet: '#2A1764',
-  vModGreen: '#02681d',
-  vModLight: '#eaeaea',
 };
 
 /*
@@ -251,3 +227,33 @@ export const kontaktPageData = {
     svgBasicSize: 140, //value associated with: index.kontaktPageStyles.svgContainerSizes
   },
 };
+
+// export const mainPagesPaths = {
+//   home: '/',
+//   produkty: '/produkty',
+//   nowosci: '/nowosci',
+//   doPobrania: '/do-pobrania',
+//   kontakt: '/kontakt',
+// };
+
+// export const mainPagesLabels = [
+//   'O firmie',
+//   'Produkty',
+//   'Nowości',
+//   'Realizacje',
+//   'Do pobrania',
+//   'Kontakt',
+// ];
+
+// export const mainCategoriesNames = [
+//   'Przemysłowe wtyczki i gniazda',
+//   'Gniazda z rozłącznikiem i blokadą',
+//   'Adaptery przemysłowe',
+//   'Gniazda podwieszane',
+//   'Przedłużacze bębnowe',
+//   'Rozłączniki bezpieczeństwa',
+//   'Ładowarki samochodowe',
+//   'Obudowy i rozdzielnice',
+//   'Rozdzielnice modułowe',
+//   'Puszki instalacyjne',
+// ];
