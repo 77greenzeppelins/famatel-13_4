@@ -4,8 +4,9 @@ import ProductsCategoryCard from './productsCategoryCard/ProductsCategoryCard';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
 /**Basic Data*/
-import { mainCategoriesNames } from '@/data/basicData';
+import { mainCategoriesNames, mainPagesPaths } from '@/data/routingData';
 import GraphicSection from '../graphicSection/GraphicSection';
+import { createPath } from '@/lib/handlers/functions';
 
 const CatalogDisplayer = ({
   componentIsInView,
@@ -25,6 +26,24 @@ const CatalogDisplayer = ({
     },
   } = styles;
 
+  /*
+  ___1. is used in map() to creat card for each category
+  */
+  const createProductsCategoryCard = mainCategoriesNames.map((label, i) => {
+    const categoryPath = createPath(label);
+
+    return (
+      <ProductsCategoryCard
+        href={`${mainPagesPaths.produkty}/${categoryPath}`}
+        key={i}
+        i={i}
+        label={label}
+        expanded={expanded}
+        setExpanded={setExpanded}
+      />
+    );
+  });
+
   /**JSX**/
   return (
     <InViewCSSAnimatedContent
@@ -35,17 +54,7 @@ const CatalogDisplayer = ({
     >
       <div className="flex w-full">
         <div className="w-full lg:w-8/12">
-          <ul className="flex flex-col w-full">
-            {mainCategoriesNames.map((label, i) => (
-              <ProductsCategoryCard
-                key={i}
-                i={i}
-                label={label}
-                expanded={expanded}
-                setExpanded={setExpanded}
-              />
-            ))}
-          </ul>
+          <ul className="flex flex-col w-full">{createProductsCategoryCard}</ul>
         </div>
         <div className="hidden lg:block lg:w-4/12">
           <GraphicSection />
