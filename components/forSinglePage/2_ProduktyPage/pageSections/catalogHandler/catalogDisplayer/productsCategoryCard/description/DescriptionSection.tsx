@@ -34,12 +34,11 @@ const DescriptionSection = ({ i }: { i: number }) => {
       <motion.div
         variants={{ collapsed: { scale: 0.9 }, open: { scale: 1 } }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col w-full gap-6 pt-6 origin-top-center"
+        className="flex flex-col w-full gap-6 py-6 origin-top-center"
       >
         <Link href="/" className="flex items-center py-1 group w-fit">
           <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon
-              //   strokeWidth={1.5}
               containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
             />
           </span>

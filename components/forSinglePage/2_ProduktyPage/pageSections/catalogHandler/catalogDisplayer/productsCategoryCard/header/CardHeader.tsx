@@ -47,8 +47,13 @@ const CardHeader = ({
           </span>
         </p>
       </div>
-      <div className="flex justify-end w-1/12 h-full pt-3 ">
-        <Link href="/" className="flex items-center py-1 group w-fit">
+      <div className="flex justify-end w-1/12 h-full pt-3 overflow-hidden">
+        <Link
+          href="/"
+          className={`flex items-center py-1 group w-fit overflow-hidden  ${
+            isOpen ? '-translate-x-32 opacity-0' : 'translate-x-0 opacity-100'
+          } ${styles.lazyAnimation}`}
+        >
           <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon
               //   strokeWidth={1.5}

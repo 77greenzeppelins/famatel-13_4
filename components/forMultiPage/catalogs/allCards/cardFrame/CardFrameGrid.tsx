@@ -1,13 +1,16 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 /**Tailwind Styles*/
 import { styles } from '@/styles';
-
-/**--------------------------------------------------------------------------**/
-const CardFrameGrid: React.FunctionComponent<{
+/**TS**/
+interface Props {
+  children: ReactNode;
   isActive?: boolean;
   mainContainerStyle?: string;
   innerContainerStyle?: string;
-}> = ({ isActive, innerContainerStyle }) => {
+}
+
+/**--------------------------------------------------------------------------**/
+const CardFrameGrid = ({ children, isActive, innerContainerStyle }: Props) => {
   /**Data Destr...**/
   const { cardFrameGridStyle } = styles;
 
@@ -16,12 +19,10 @@ const CardFrameGrid: React.FunctionComponent<{
     /*
     ___1. should have a parent with className='... group'
     */
-    <div className="relative grid w-full h-full">
+    <div className="relative grid w-full h-full group/frame">
       <div
         data-component="CardFrame__bluredBackgroundContainer"
-        className={`${cardFrameGridStyle.outerContainerStyle} ${
-          isActive ? 'bg-[#000010] blur-[6px] ' : 'bg-[#010010] blur-[4px] '
-        }`}
+        className={`${cardFrameGridStyle.outerContainerStyle}`}
       />
       <div
         className={
@@ -29,7 +30,9 @@ const CardFrameGrid: React.FunctionComponent<{
             ? innerContainerStyle
             : cardFrameGridStyle.innerContainerStyle
         }
-      />
+      >
+        {children}
+      </div>
     </div>
   );
 };

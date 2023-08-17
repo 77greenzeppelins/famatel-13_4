@@ -83,14 +83,16 @@ export const styles = {
   */
   cardFrameStyle: {
     outerContainerStyle:
-      'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black group-hover:blur-[10px] duration-300 delay-100 ease-in',
+      'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black  duration-300 delay-100 ease-in',
     innerContainerStyle:
       'relative fc w-full h-full rounded-md pointer-events-none bg-dark',
   },
+  /*
+  ___used in: CardFrameGrid; the idea is to use grid as general layout + give the frame its individual group name ==> this allows to nest groups...
+  */
   cardFrameGridStyle: {
     outerContainerStyle:
-      'relative col-span-full row-span-full -z-1 duration-[0.6s] delay-100 ease-in',
-    // 'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black group-hover:blur-[10px] duration-300 delay-100 ease-in',
+      'relative col-span-full row-span-full -z-1 bg-[#111110] blur-[4px] group-hover/frame:bg-black duration-300 delay-100 ease-in',
     innerContainerStyle:
       'relative col-span-full row-span-full fc w-full h-full rounded-md bg-dark z-1',
   },
