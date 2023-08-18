@@ -27,7 +27,6 @@ export async function generateStaticParams() {
   const paths = mainCategoriesNames.map(category => {
     return createPath(category);
   });
-  // console.log('generateStaticParams / paths', paths);
 
   return paths.map(path => ({
     cat: path,
