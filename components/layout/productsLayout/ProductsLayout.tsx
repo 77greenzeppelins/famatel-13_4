@@ -1,17 +1,20 @@
 'use client';
+// import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+/**Components**/
+import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
 
 const ProductsLayout = () => {
-  const [state, setState] = useState(0);
-  useEffect(() => {
-    setState(prev => prev + 1);
-  }, []);
-
+  // const [state, setState] = useState(0);
+  // useEffect(() => {
+  //   setState(prev => prev + 1);
+  // }, []);
+  // console.log('state:', state);
   /*
   ___1. get current path
-  ___2. split path and check how many item the array has ==> firs two items refers to space before initial "/" and "produkty" ==> we are actually interested in items with index 2 & 3 that are categotyName and subCategoryName respectivelly;  
+  ___2. split path and count how many item the array has ==> first two items refers to space before initial "/" and "produkty" and we can ommit them ==> we are actually interested in items with index 2 & 3 that are categoryName and subCategoryName respectivelly; 
+  ___3. value of of array.length allows to mount or dismount the whole component  
   */
   const pathname = usePathname();
   const pathSegments = pathname.split('/'); // exemple: ['', 'produkty', 'przemyslowe-wtyczki-i-gniazda', 'some-subCategory' , 'some-model']
@@ -20,14 +23,11 @@ const ProductsLayout = () => {
   const catalogLevel = pathSegments.slice(2); // strats from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
   /**JSX**/
   return mountingCondition ? (
-    <div className="fc flex-col w-full h-[200px] border-b border-b-greyShade2">
-      <p className="text-regular">
-        {' '}
-        ProductsLayout - Katalog - {state.toString()}
-      </p>
-      <p className="text-regular">{pathname}</p>
-      <p className="text-regular">{pathSegments.length}</p>
-
+    <div className="flex flex-col w-full h-[300px] py-6 border-b border-b-greyShade2 wrapper-1">
+      <AdvancedCatalogNavigation
+        pathSegments={pathSegments}
+        catalogLevel={catalogLevel}
+      />
       <Link href={`${pathname}/x`}>LINK</Link>
     </div>
   ) : null;

@@ -32,6 +32,9 @@ export const corpoColors = {
   vModLight: '#eaeaea',
 };
 
+/*
+used in: links that follow to main pages
+*/
 export const mainPagesData = [
   {
     arrayIndex: 0,
@@ -59,6 +62,13 @@ export const mainPagesData = [
     url: mainPagesPaths.kontakt,
   },
 ];
+/*
+used in: <AdvancedCatalogNavigation> & its child <NavigationRow>
+*/
+export const advCatNav = {
+  mainHeader: 'katalog',
+  headers: ['katagoria', 'podkategoria', 'model'],
+};
 
 export const regulacjeUrl = {
   notaPrawna: { label: 'Nota prawna', url: '/nota-prawna' },

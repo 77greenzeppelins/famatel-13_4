@@ -44,5 +44,72 @@ export const mainCategoriesPath = [
   'rozdzielnice-modulowe',
   'puszki-instalacyjne',
 ];
+/*
+---------subcategories
+*/
+//_____subcategories of category_1
+export const wtyczkiGniazdaSubCatNames: string[] = [
+  'Wtyczki i gniazda przenośne',
+  'Wtyczki i gniazda tablicowe',
+  'Wtyczki i gniazda ścienne',
+  'Wtyczki i gniazda tablicowe jednofazowe',
+  'Wtyczki i gniazda jednofazowe',
+  'Wtyczki i gniazda na bardzo niskie napięcia',
+  'Wtyczki i gniazda do kontenerów',
+  'Wtyczki i gniazda do sprzętu estradowego',
+  'Wtyczki i gniazda campingowe',
+];
+//_____subcategories of category_2
+export const GniazdaZBlokadaSubCatNames: string[] = [
+  'Gniazda tablicowe ',
+  'Gniazda stałe ',
+  'Gniazda z opcjonalnymi komponentami',
+  'Akcesoria do gniazd z rozłącznikiem i blokadą',
+];
+//_____subcategories of category_3
+export const adapteryPrzemysloweSubCatNames: string[] = [
+  'Adaptery przemysłowe Schuko',
+  'Adaptery wielokrotne przemysłowe',
+  'Adaptery wielokrotne przemysłowe z przewodem',
+];
+//_____subcategories of category_4
+export const gniazdaPodwieszaneSubCatNames: string[] = ['Gniazda podwieszane'];
+//_____category___5
+export const przedluzaczeBebnoweSubCatNames: string[] = [
+  'Przedłużacze bębnowe IP55 z gniazdami Schuko IP67',
+  'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
+  'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
+];
+//_____subcategories of category_6
+export const rozlacznikiBezpieczenstwaSubCatNames: string[] = [
+  'Rozłączniki bezpieczeństwa',
+];
+//_____subcategories of category_7
+export const ladowarkiPojazdowSubCatNames: string[] = ['Ładowarki samochodowe'];
+//_____subcategories of category_8
+export const obudowyAndRozdzielniceSubCatNames: string[] = [
+  'Obudowy puste',
+  'Rozdzielnice przemysłowe',
+  'Obudowy gumowe',
+  'Akcesoria do obudów i rozdzielnic',
+];
+//_____subcategories of category_9
+export const rozdzielniceModuloweSubCatNames: string[] = [
+  'Rozdzielnice ścienne IP65',
+  'Rozdzielnice modułowe IP65',
+  'Rozdzielnice modułowe Nuova IP40',
+  'Rozdzielnice modułowe Nuova+ IP40',
+  'Rozdzielnice modułowe Vita IP40',
+  'Rozdzielnice modułowe ścienne ICP',
+  'Rozdzielnice modułowe metalowe IP40',
+  'Rozdzielnice modułowe metalowe ICT',
+  'Akcesoria do rozdzielnic modułowych',
+];
+//_____subcategories of category_10
+export const puszkiInstalacyjneSubCatNames: string[] = [
+  'Puszki instalacyjne zamykane IP55/IP65',
+  'Puszki instalacyjne drywall',
+  'Puszki instalacyjne osadzone',
+];
 
-const x = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;
+// const x = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;

@@ -2,8 +2,35 @@ import {
   mainCategoriesPath,
   mainPagesPaths,
   mainCategoriesNames,
+  //___all subCategoies
+  wtyczkiGniazdaSubCatNames,
+  GniazdaZBlokadaSubCatNames,
+  adapteryPrzemysloweSubCatNames,
+  gniazdaPodwieszaneSubCatNames,
+  przedluzaczeBebnoweSubCatNames,
+  rozlacznikiBezpieczenstwaSubCatNames,
+  ladowarkiPojazdowSubCatNames,
+  obudowyAndRozdzielniceSubCatNames,
+  rozdzielniceModuloweSubCatNames,
+  puszkiInstalacyjneSubCatNames,
 } from './routingData';
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
+
+/*
+used in: [subCat] | page.tsx
+*/
+export const allSubCatNames = [
+  ...wtyczkiGniazdaSubCatNames,
+  ...GniazdaZBlokadaSubCatNames,
+  ...adapteryPrzemysloweSubCatNames,
+  ...gniazdaPodwieszaneSubCatNames,
+  ...przedluzaczeBebnoweSubCatNames,
+  ...rozlacznikiBezpieczenstwaSubCatNames,
+  ...ladowarkiPojazdowSubCatNames,
+  ...obudowyAndRozdzielniceSubCatNames,
+  ...rozdzielniceModuloweSubCatNames,
+  ...puszkiInstalacyjneSubCatNames,
+];
 
 /*
 ...
@@ -16,7 +43,7 @@ export const catalogStructureData = [
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
     // mainCategoryPath: `${mainPagesPaths.produkty}`,
     mainCategoryImage: indexImgCat[0],
-    // subCategoriesNames: [...wtyczkiGniazdaSubCategoryNames],
+    subCategoriesNames: [...wtyczkiGniazdaSubCatNames],
     // subCategoriesUrls: [...wtyczkiGniazdaSubCategoriesUrls],
     // imageData: imgSubCategoryCatalogs[0],
     svgIcons: ['IP54', 'IP67', 'ENEC'],
@@ -28,7 +55,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[1],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}`,
     mainCategoryImage: indexImgCat[1],
-    // subCategoriesNames: [...GniazdaZBlokadaSubCategoryNames],
+    subCategoriesNames: [...GniazdaZBlokadaSubCatNames],
     // subCategoriesUrls: [...GniazdaZBlokadaSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[1],
     svgIcons: ['IP54', 'IP67', 'IK08', 'ENEC'],
@@ -40,7 +67,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[2],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}`,
     mainCategoryImage: indexImgCat[2],
-    // subCategoriesNames: [...adapteryPrzemysloweSubCategoryNames],
+    subCategoriesNames: [...adapteryPrzemysloweSubCatNames],
     // subCategoriesUrls: [...adapteryPrzemysloweSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[2],
     svgIcons: ['IP20', 'IP54', 'IP67'],
@@ -52,7 +79,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[3],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}`,
     mainCategoryImage: indexImgCat[3],
-    // subCategoriesNames: [...gniazdaPodwieszaneSubCategoryNames],
+    subCategoriesNames: [...gniazdaPodwieszaneSubCatNames],
     // subCategoriesUrls: [...gniazdaPodwieszaneSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[3], //___fake
     // svgIcons: ['IP65', 'IK07'],
@@ -64,7 +91,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[4],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}`,
     mainCategoryImage: indexImgCat[4],
-    // subCategoriesNames: [...przedluzaczeBebnoweSubCategoryNames],
+    subCategoriesNames: [...przedluzaczeBebnoweSubCatNames],
     // subCategoriesUrls: [...przedluzaczeBebnoweSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[4],
     svgIcons: ['IP55', 'IP67', 'IK06'],
@@ -76,7 +103,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[5],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}`,
     mainCategoryImage: indexImgCat[5],
-    // subCategoriesNames: [...rozlacznikiBezpieczenstwaSubCategoryNames],
+    subCategoriesNames: [...rozlacznikiBezpieczenstwaSubCatNames],
     // subCategoriesUrls: [...rozlacznikiBezpieczenstwaSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[5], //___fake
     svgIcons: ['IP67', 'IK08'],
@@ -88,7 +115,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[6],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}`,
     mainCategoryImage: indexImgCat[6],
-    // subCategoriesNames: [...ladowarkiPojazdowSubCategoryNames],
+    subCategoriesNames: [...ladowarkiPojazdowSubCatNames],
     // subCategoriesUrls: [...ladowarkiPojazdowSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[6], //___fake
     svgIcons: ['IP54', 'IK08'],
@@ -100,7 +127,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[7],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}`,
     mainCategoryImage: indexImgCat[7],
-    // subCategoriesNames: [...obudowyAndRozdzielniceSubCategoryNames],
+    subCategoriesNames: [...obudowyAndRozdzielniceSubCatNames],
     // subCategoriesUrls: [...obudowyAndRozdzielniceSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[7],
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
@@ -112,7 +139,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[8],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}`,
     mainCategoryImage: indexImgCat[8],
-    // subCategoriesNames: [...rozdzielniceModuloweSubCategoryNames],
+    subCategoriesNames: [...rozdzielniceModuloweSubCatNames],
     // subCategoriesUrls: [...rozdzielniceModuloweSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[8],
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
@@ -124,7 +151,7 @@ export const catalogStructureData = [
     mainCategoryName: mainCategoriesNames[9],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
     mainCategoryImage: indexImgCat[9],
-    // subCategoriesNames: [...puszkiInstalacyjneSubCategoryNames],
+    subCategoriesNames: [...puszkiInstalacyjneSubCatNames],
     // subCategoriesUrls: [...puszkiInstalacyjneSubCategoryUrls],
     // imageData: imgSubCategoryCatalogs[9],
     svgIcons: ['IP20', 'IP44', 'IP55', 'IP65', 'IK07', 'FREE', 'UV', 'IZO'],

@@ -1,8 +1,17 @@
+'use client';
+
 /**Components**/
 import BasicHeader from '../../headers/basicHeader.tsx/BasicHeader';
 import NavigationRow from './row/NavigationRow';
+/**Basic Data**/
+import { advCatNav } from '@/data/basicData';
+/**TS**/
+interface Props {
+  catalogLevel: string[];
+  pathSegments: string[];
+}
 
-const AdvancedCatalogNavigation = () => {
+const AdvancedCatalogNavigation = ({ pathSegments, catalogLevel }: Props) => {
   return (
     <div
       data-component="BasicCatalogNavigation"
@@ -11,7 +20,7 @@ const AdvancedCatalogNavigation = () => {
     >
       <div className="w-[10px]">
         <BasicHeader
-          text="Katalog"
+          text={advCatNav.mainHeader}
           hasBox={false}
           hasVerticalOrnament={false}
           containerStyle="flex disable-soft"
@@ -21,12 +30,14 @@ const AdvancedCatalogNavigation = () => {
       </div>
       <div className="w-[10px] border-r border-greyShade2"></div>
       <nav className="flex flex-col w-full gap-y-6 xl:gap-y-8 ">
-        <NavigationRow
-          label1="kategoria"
-          label2="Przemysłowe wtyczki i gniazda"
-        />
-        <NavigationRow label1="podkategoria" label2="Gniazda przenośne" />
-        <NavigationRow label1="model" label2="14307" />
+        {Array.from({ length: 3 }).map((_, index) => (
+          <NavigationRow
+            key={index}
+            rowIndex={index}
+            pathSegments={pathSegments}
+            catalogLevel={catalogLevel}
+          />
+        ))}
       </nav>
     </div>
   );
