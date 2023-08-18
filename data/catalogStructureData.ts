@@ -41,7 +41,6 @@ export const catalogStructureData = [
     mainCategoryIndex: 0,
     mainCategoryName: mainCategoriesNames[0],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
-    // mainCategoryPath: `${mainPagesPaths.produkty}`,
     mainCategoryImage: indexImgCat[0],
     subCategoriesNames: [...wtyczkiGniazdaSubCatNames],
     // subCategoriesUrls: [...wtyczkiGniazdaSubCategoriesUrls],

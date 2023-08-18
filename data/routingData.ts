@@ -55,10 +55,25 @@ export const wtyczkiGniazdaSubCatNames: string[] = [
   'Wtyczki i gniazda tablicowe jednofazowe',
   'Wtyczki i gniazda jednofazowe',
   'Wtyczki i gniazda na bardzo niskie napięcia',
-  'Wtyczki i gniazda do kontenerów',
-  'Wtyczki i gniazda do sprzętu estradowego',
+  'Wtyczki i gniazda kontenerowe',
+  'Wtyczki i gniazda estradowe',
   'Wtyczki i gniazda campingowe',
 ];
+export const wtyczkiGniazdaSubCatPaths: string[] = [
+  `wtyczki-i-gniazda-przenosne`,
+  `wtyczki-i-gniazda-tablicowe`,
+  `wtyczki-i-gniazda-scienne`,
+  `wtyczki-i-gniazda-tablicowe-jednofazowe`,
+  `wtyczki-i-gniazda-jednofazowe`,
+  `wtyczki-i-gniazda-na-bardzo-niskie-napiecia`,
+  `wtyczki-i-gniazda-kontenerowe`,
+  `wtyczki-i-gniazda-estradowe`,
+  `wtyczki-i-gniazda-campingowe`,
+];
+export const wtyczkiGniazdaSubCatFullPaths = wtyczkiGniazdaSubCatPaths.map(
+  (path, i) =>
+    `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}/${wtyczkiGniazdaSubCatPaths[i]}`
+);
 //_____subcategories of category_2
 export const GniazdaZBlokadaSubCatNames: string[] = [
   'Gniazda tablicowe ',
@@ -112,4 +127,4 @@ export const puszkiInstalacyjneSubCatNames: string[] = [
   'Puszki instalacyjne osadzone',
 ];
 
-// const x = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;
+export const someFakePath = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;

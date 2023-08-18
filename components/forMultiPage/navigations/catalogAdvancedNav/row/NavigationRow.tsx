@@ -5,26 +5,61 @@ import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon'
 import { styles } from '@/styles';
 /**Basic Data**/
 import { advCatNav } from '@/data/basicData';
+import { catalogStructureData } from '@/data/catalogStructureData';
+// import { wtyczkiGniazdaSubCatFullPaths } from '@/data/routingData';
+
 /**TS**/
 interface Props {
   rowIndex: number;
-  path?: string;
   catalogLevel: string[];
   pathSegments: string[];
 }
 
-const NavigationRow = ({
-  rowIndex,
-  catalogLevel,
-  pathSegments,
-  path = '/',
-}: Props) => {
+const NavigationRow = ({ rowIndex, catalogLevel, pathSegments }: Props) => {
+  /*
+  ___1. there are three <NR>; each has index from range [0,2] --> (0,1,2)
+  */
   // console.log('rowIndex', rowIndex);
   // console.log('catalogLevel.length', catalogLevel.length);
   // console.log('pathSegments', pathSegments);
-  // console.log('catalogLevel', catalogLevel);
+  // console.log('wtyczkiGniazdaSubCatFullPaths', wtyczkiGniazdaSubCatFullPaths);
 
   const linkCondition = rowIndex < catalogLevel.length - 1;
+
+  const creatHref = (level: number) => {
+    switch (level) {
+      case 0:
+        return `/produkty/${catalogLevel[rowIndex]}`;
+
+      case 1:
+        return `/produkty/${catalogLevel[rowIndex - 1]}/${
+          catalogLevel[rowIndex]
+        }`;
+      case 2:
+        return `/produkty/${catalogLevel[rowIndex - 2]}/${
+          catalogLevel[rowIndex - 1]
+        }/${catalogLevel[rowIndex]}`;
+
+      default:
+        return `/produkty`;
+    }
+  };
+  // const createLabel = () => {
+  //   return catalogStructureData.map(
+  //     ({ mainCategoryPath, mainCategoryName }) => {
+  //       const catName = mainCategoryPath.split('/').reverse()[0];
+  //       return catName === catalogLevel[rowIndex] ? mainCategoryName : null;
+  //     }
+  //   );
+  // };
+  const createLabel = catalogStructureData.map(
+    ({ mainCategoryPath, mainCategoryName }) => {
+      const catName = mainCategoryPath.split('/').reverse()[0];
+      return catName === catalogLevel[rowIndex] ? mainCategoryName : null;
+    }
+  );
+
+  console.log('catalogStructureData:', catalogStructureData);
 
   /**JSX**/
   return (
@@ -36,10 +71,12 @@ const NavigationRow = ({
         </p>
       </div>
       <Link
-        href={path}
+        // href={creatHref(catalogLevel.length)}
+        href={creatHref(rowIndex)}
         className={`flex items-center py-1 group w-fit ${
           linkCondition ? 'pointer-events-auto' : 'pointer-events-none'
         }`}
+        // className={`flex items-center py-1 group w-fit`}
       >
         <span className="w-10 h-full shrink-0 fc">
           <ArrowForLinkIcon
@@ -50,11 +87,19 @@ const NavigationRow = ({
             }   origin-center flex-shrink-0 ${styles.lazyAnimation}`}
           />
         </span>
-        <p
+        {catalogLevel[rowIndex] ? (
+          <p
+            className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation}`}
+          >
+            {/* {`${catalogLevel[rowIndex]}-${rowIndex}`} */}
+            {createLabel}
+          </p>
+        ) : null}
+        {/* <p
           className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation}`}
         >
-          defaultName
-        </p>
+          {`${catalogLevel[rowIndex]}-${rowIndex}`}
+        </p> */}
       </Link>
     </div>
   );
