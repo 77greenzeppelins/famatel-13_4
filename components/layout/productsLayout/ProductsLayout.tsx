@@ -4,9 +4,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 /**Components**/
 import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
-import { someFakePath } from '@/data/routingData';
-
-someFakePath;
 
 const ProductsLayout = () => {
   // const [state, setState] = useState(0);
@@ -26,16 +23,28 @@ const ProductsLayout = () => {
   const catalogLevel = pathSegments.slice(2); // strats from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
   /**JSX**/
   return mountingCondition ? (
-    <div className="flex flex-col gap-y-6 w-full h-[400px] py-6 border-b border-b-greyShade2 wrapper-1">
+    <div
+      className="flex flex-col w-full pt-6 pb-2 gap-y-6 wrapper-1"
+      //___border-b border-b-greyShade2
+    >
       <AdvancedCatalogNavigation
         pathSegments={pathSegments}
         catalogLevel={catalogLevel}
       />
-      <Link href={`${pathname}/wtyczki-i-gniazda-przenosne`}>
-        go to subCat{' '}
-      </Link>
-      <Link href={`${pathname}/666`}>go to model </Link>
-      <p>{someFakePath}</p>
+      <div className="flex gap-x-5">
+        <Link
+          className="px-[4px] border border-greyShade2 text-small text-greyShade2"
+          href={`${pathname}/wtyczki-i-gniazda-przenosne`}
+        >
+          go to subCat{' '}
+        </Link>
+        <Link
+          className="px-[4px] border border-greyShade2 text-small text-greyShade2"
+          href={`${pathname}/666`}
+        >
+          go to model{' '}
+        </Link>
+      </div>
     </div>
   ) : null;
 };
