@@ -4,13 +4,14 @@ import { mySanSerif } from '@/nextFeatures/fonts/fonts';
 /**NextFeatures**/
 import type { Metadata } from 'next';
 /**Components**/
+import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
 import Header from '@/components/layout/rootLayout/header/Header';
-import Footer from '@/components/layout/rootLayout/footer/Footer';
+import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
+// import Footer from '@/components/layout/rootLayout/footer/Footer';
 // import OverlayForResizing from '@/components/layout/overlays/forResizing/OverlayForResizing';
-import PageTransitionWrapper from '@/components/forMultiPage/pageWrappers/pageTransitionWrapper/PageTransitionWrapper';
+// import PageTransitionWrapper from '@/components/forMultiPage/pageWrappers/pageTransitionWrapper/PageTransitionWrapper';
 /**Basic Data**/
 import { layoutText } from '@/data/textData';
-import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
 
 /**...**/
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${mySanSerif.variable}`}>
       <body className="font-sans">
         <Header />
+        <ProductsLayout />
         {/* {children} */}
         {/* <OverlayForResizing /> */}
         {/* <PageTransitionWrapper> */}

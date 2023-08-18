@@ -33,7 +33,7 @@ export const mainCategoriesNames = [
 ];
 
 export const mainCategoriesPath = [
-  'przemyslowe-wtyczki-gniazda',
+  'przemyslowe-wtyczki-i-gniazda',
   'gniazda-z-rozlacznikiem-i-blokada',
   'adaptery-przemyslowe',
   'gniazda-podwieszane',

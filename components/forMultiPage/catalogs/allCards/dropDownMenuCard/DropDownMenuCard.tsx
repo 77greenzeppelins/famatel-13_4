@@ -2,12 +2,12 @@ import Link from 'next/link';
 /**Hooks Staff*/
 import { usePathname } from 'next/navigation';
 /**Components**/
+import CardFrame from '../cardFrame/CardFrame';
 import ArrowLongRightIcon from '@/components/SVG/icons/heroIcons/ArrowLongRightIcon';
 import TwoDigitsDisplayer from '@/components/forMultiPage/atomsLike/digitsDisplayer/twoDigitsDisplayer/TwoDigitsDisplayer';
 import CardContent from './content/CardContent';
 /**Tailwind Styles*/
 import { styles } from '@/styles';
-import CardFrame from '../cardFrame/CardFrame';
 
 const DropDownMenuCard = ({
   catIndex,
@@ -34,7 +34,7 @@ const DropDownMenuCard = ({
         <Link
           aria-label={`Karta kategorii: ${catName}`}
           role="link"
-          className="relative z-10 block w-full h-full"
+          className="relative z-10 block w-full h-full pointer-events-auto"
           href={catPath}
           // scroll={false}
         />

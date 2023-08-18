@@ -28,10 +28,10 @@ const CatalogDisplayer = ({
 
   /*
   ___1. is used in map() to creat card for each category
+  ___2. createPath(label) takes category name and convert it into dashed path
   */
   const createProductsCategoryCard = mainCategoriesNames.map((label, i) => {
     const categoryPath = createPath(label);
-
     return (
       <ProductsCategoryCard
         href={`${mainPagesPaths.produkty}/${categoryPath}`}
