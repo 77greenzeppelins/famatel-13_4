@@ -6,6 +6,7 @@ import { catalogStructureData } from '@/data/catalogStructureData';
 import SpecialCard from '../allCards/specialCard/SpecialCard';
 
 const DropDownMenu = () => {
+  /**JSX**/
   return (
     <div
       className="w-full h-full fc bg-dark"

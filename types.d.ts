@@ -40,3 +40,7 @@ type IF_ImgStaticData = {
   image: StaticImageData;
   model?: string;
 };
+
+type DynamicCatIndex = {
+  categoryIndex: number | false | undefined;
+};

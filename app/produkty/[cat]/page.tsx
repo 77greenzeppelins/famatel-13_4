@@ -3,14 +3,17 @@ import { notFound } from 'next/navigation';
 /**Components**/
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
 /**Handlers**/
-import { createPath } from '@/lib/handlers/functions';
+// import { createPath } from '@/lib/handlers/functions';
 /**Basic Data**/
-import { mainCategoriesNames } from '@/data/routingData';
+import { mainCategoriesPath } from '@/data/routingData'; //___mainCategoriesNames,
 
 // export const dynamicParams = false;
 export async function generateStaticParams() {
-  const paths = mainCategoriesNames.map(category => {
-    return createPath(category);
+  // const paths = mainCategoriesNames.map(category => {
+  //   return createPath(category);
+  // });
+  const paths = mainCategoriesPath.map(category => {
+    return category;
   });
   return paths.map((path, categoryIndex) => ({
     cat: path,
@@ -23,16 +26,19 @@ interface Props {
 }
 
 export default async function CategoryPage({ params }: Props) {
-  /** */
-  const paths = mainCategoriesNames.map(category => {
-    return createPath(category);
+  /*
+  ___1.
+  */
+  const paths = mainCategoriesPath.map(category => {
+    return category;
   });
-
+  /*
+  ___1.
+  */
   const getIndex = () => {
     const index = paths.map((category, i) => {
       return category === params.cat && i;
     });
-
     return index.find(element => typeof element === 'number');
   };
 
@@ -40,9 +46,7 @@ export default async function CategoryPage({ params }: Props) {
   ___1. to trigger not-found.tsx we have to know if path segment (params.cat) is equal to any of predefined paths in mainCategoriesNames
   */
   const isCorrect = paths.find(element => element === params.cat);
-
   if (isCorrect === undefined) {
-    // console.log('isCorrect === undefined');
     notFound();
   }
 
