@@ -28,7 +28,7 @@ const ProductsCategoryCard = ({
   return (
     <li className="grid py-2 w-[96%]">
       <CardFrameGrid>
-        <div className="relative col-span-full row-span-full -z-1 group "></div>
+        {/* <div className="relative col-span-full row-span-full -z-1 group " /> */}
         <div
           //    className="relative flex w-full h-full px-4 pointer-events-auto"
           className="relative flex w-full h-full px-4 col-span-full row-span-full z-1"

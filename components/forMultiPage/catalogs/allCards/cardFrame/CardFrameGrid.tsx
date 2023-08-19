@@ -4,33 +4,38 @@ import { styles } from '@/styles';
 /**TS**/
 interface Props {
   children: ReactNode;
-  isActive?: boolean;
   mainContainerStyle?: string;
   innerContainerStyle?: string;
 }
 
 /**--------------------------------------------------------------------------**/
-const CardFrameGrid = ({ children, isActive, innerContainerStyle }: Props) => {
+const CardFrameGrid = ({
+  children,
+  mainContainerStyle,
+  innerContainerStyle,
+}: Props) => {
   /**Data Destr...**/
-  const { cardFrameGridStyle } = styles;
+  const {
+    cardFrameGridStyle: {
+      innerContainerStyle: inner,
+      outerContainerStyle: outher,
+    },
+  } = styles;
 
   /**JSX**/
   return (
-    /*
-    ___1. should have a parent with className='... group'
-    */
-    <div className="relative grid w-full h-full group/frame">
+    <div
+      className={
+        mainContainerStyle
+          ? mainContainerStyle
+          : 'relative grid w-full h-full group/frame'
+      }
+    >
       <div
         data-component="CardFrame__bluredBackgroundContainer"
-        className={`${cardFrameGridStyle.outerContainerStyle}`}
+        className={`${outher}`}
       />
-      <div
-        className={
-          innerContainerStyle
-            ? innerContainerStyle
-            : cardFrameGridStyle.innerContainerStyle
-        }
-      >
+      <div className={innerContainerStyle ? innerContainerStyle : inner}>
         {children}
       </div>
     </div>

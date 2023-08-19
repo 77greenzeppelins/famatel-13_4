@@ -100,6 +100,10 @@
     @apply pl-[2%] xxs:pl-[6%] md:pl-[60px] xl:pl-[80px] xxxl:px-0 max-w-[1536px];
   }
 
+  .abs-cell {
+    @apply relative col-span-full row-span-full;
+  }
+
   /**
   * size-settings for link label; no color setting 
   */
@@ -316,9 +320,11 @@
       ),
       linear-gradient(0deg, rgb(78, 79, 79), rgb(157, 158, 159));
   }
+}
 
+/*
   .abs-cell {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
   }
-}
+*/

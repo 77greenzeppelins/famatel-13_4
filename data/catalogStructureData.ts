@@ -1,3 +1,4 @@
+import { indexImgCat1_subCat_forCatalog } from '@/public/images/all_products/c1_wtyczki-gniazda/imgWtyczkiGniazda';
 import {
   mainCategoriesPath,
   mainPagesPaths,
@@ -44,6 +45,7 @@ export const allSubCatNames = [
 ];
 
 /*
+indexImgCat1_subCat_forCatalog
 ...
  */
 export const catalogStructureData = [
@@ -55,7 +57,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[0],
     subCategoriesNames: [...wtyczkiGniazdaSubCatNames],
     subCategoriesPaths: [...wtyczkiGniazdaSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[0],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP54', 'IP67', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
   },
@@ -67,7 +69,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[1],
     subCategoriesNames: [...gniazdaZBlokadaSubCatNames],
     subCategoriesPaths: [...gniazdaZBlokadaSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[1],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP54', 'IP67', 'IK08', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
   },
@@ -79,7 +81,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[2],
     subCategoriesNames: [...adapteryPrzemysloweSubCatNames],
     subCategoriesPaths: [...adapteryPrzemysloweSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[2],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP20', 'IP54', 'IP67'],
     labeledIcons: ['16A', '32A'],
   },
@@ -91,7 +93,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[3],
     subCategoriesNames: [...gniazdaPodwieszaneSubCatNames],
     subCategoriesPaths: [...gniazdaPodwieszaneSubCatPaths],
-    // imageData: imgSubCategoryCatalogs[3], //___fake
+    subCategoriesImages: indexImgCat1_subCat_forCatalog, //___fake
     // svgIcons: ['IP65', 'IK07'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
   },
@@ -103,7 +105,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[4],
     subCategoriesNames: [...przedluzaczeBebnoweSubCatNames],
     subCategoriesPaths: [...przedluzaczeBebnoweSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[4],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP55', 'IP67', 'IK06'],
     labeledIcons: ['16A'],
   },
@@ -115,7 +117,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[5],
     subCategoriesNames: [...rozlacznikiBezpieczenstwaSubCatNames],
     subCategoriesPaths: [...rozlacznikiBezpieczenstwaSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[5], //___fake
+    subCategoriesImages: indexImgCat1_subCat_forCatalog, //___fake
     svgIcons: ['IP67', 'IK08'],
     labeledIcons: ['16A', '20A', '25A', '32A', '40A'],
   },
@@ -127,7 +129,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[6],
     subCategoriesNames: [...ladowarkiPojazdowSubCatNames],
     subCategoriesPaths: [...ladowarkiPojazdowSubCatPaths],
-    // imageData: imgSubCategoryCatalogs[6], //___fake
+    subCategoriesImages: indexImgCat1_subCat_forCatalog, //___fake
     svgIcons: ['IP54', 'IK08'],
     labeledIcons: ['16A', '32A'],
   },
@@ -139,7 +141,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[7],
     subCategoriesNames: [...obudowyAndRozdzielniceSubCatNames],
     subCategoriesPaths: [...obudowyAndRozdzielniceSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[7],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
     labeledIcons: ['16A', '32A'],
   },
@@ -151,7 +153,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[8],
     subCategoriesNames: [...rozdzielniceModuloweSubCatNames],
     subCategoriesPaths: [...rozdzielniceModuloweSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[8],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
     labeledIcons: ['16A', '32A'],
   },
@@ -163,7 +165,7 @@ export const catalogStructureData = [
     mainCategoryImage: indexImgCat[9],
     subCategoriesNames: [...puszkiInstalacyjneSubCatNames],
     subCategoriesPaths: [...puszkiInstalacyjneSubCatFullPaths],
-    // imageData: imgSubCategoryCatalogs[9],
+    subCategoriesImages: indexImgCat1_subCat_forCatalog,
     svgIcons: ['IP20', 'IP44', 'IP55', 'IP65', 'IK07', 'FREE', 'UV', 'IZO'],
   },
 ];

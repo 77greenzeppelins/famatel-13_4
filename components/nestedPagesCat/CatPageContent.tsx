@@ -1,4 +1,6 @@
+/**Components**/
 import CategorySchema1 from './schema1/CategorySchema1';
+import CategorySchema2 from './schema2/CategorySchema2';
 
 /**TS**/
 interface Props extends DynamicCatIndex {
@@ -19,7 +21,7 @@ const CatPageContent = ({ categoryIndex, path }: Props) => {
       case 9:
         return <CategorySchema1 index={index} />;
       case 1:
-        return <div className="w-full h-full fc bg-grey">schema2</div>;
+        return <CategorySchema2 index={index} />;
       case 3:
       case 5:
       case 6:
