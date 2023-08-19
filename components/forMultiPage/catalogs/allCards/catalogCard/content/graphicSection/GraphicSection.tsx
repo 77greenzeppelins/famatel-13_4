@@ -8,17 +8,9 @@ const GraphicSection = (props: ImageType_C) => {
   return (
     <div
       data-component="GraphicSection_DropDownMenuCard"
-      className="relative items-end justify-center hidden w-full sm:flex"
+      className="relative flex items-end justify-center w-full"
     >
-      <div
-        /*
-      ___1. why "max-h" ? because aspect-square depends on height and in some "proportions" image expands its space
-      */
-        className="relative fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] xl:max-h-[150px] aspect-square bg-light p-2 overflow-hidden rounded-sm"
-        // variants={cardVariants}
-        // initial="initial"
-        // animate="animate"
-      >
+      <div className="relative fc h-[80%] md:h-[90%]  aspect-square bg-light p-2">
         <Image
           className="object-contain w-full h-full aspect-square "
           alt={props.alt}
@@ -27,12 +19,12 @@ const GraphicSection = (props: ImageType_C) => {
           height={props.height}
         />
       </div>
-      <motion.div
+      {/* <motion.div
         className="absolute inset-0 bg-dark"
         variants={imgOverlayVar}
         initial="initial"
         animate="animate"
-      />
+      /> */}
     </div>
   );
 };
