@@ -9,12 +9,6 @@ import img5 from './9.9_SPTC-4.webp';
 import img6 from './9.9_SPTD_12.webp';
 import img7 from './9.9_SPTD_18.webp';
 import img8 from './9.9_SPT18_36.webp';
-//
-//
-//
-
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
 
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts

@@ -31,7 +31,9 @@
 //   { image: category11 },
 //   { image: category12 },
 // ];
-
+/*
+___1. "ImageType_C" ==> "C" jak custome;
+*/
 export const indexImgCat: ImageType_C[] = [
   {
     path: '/images/for_dropDownMenu/1_gniazda_wtyczki.webp',

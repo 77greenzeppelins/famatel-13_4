@@ -21,9 +21,6 @@ import img16 from './1.3_16_24396.webp';
 import img17 from './1.3_17_23000.webp';
 import img18 from './1.3_18_23001.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/

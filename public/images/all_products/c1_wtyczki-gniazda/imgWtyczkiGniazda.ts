@@ -9,9 +9,6 @@ import img7 from './7_chlodnicze/1.7_04_24398.webp';
 import img8 from './8_estradowe/1.8_08_17122.webp';
 import img9 from './9_camping/1.9_05_13011.webp';
 
-/*TS*/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /*
 used in <ImageContnent>... deep in slider / graphicSection / ...
 */

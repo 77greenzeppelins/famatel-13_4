@@ -49,9 +49,6 @@ import img1_d from './10.1_d_01_3934-3944.webp';
 import img2_d from './10.1_d_02_3057.webp';
 import img3_d from './10.1_d_03_3054.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/

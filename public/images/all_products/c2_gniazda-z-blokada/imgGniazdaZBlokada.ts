@@ -11,9 +11,6 @@ import img6 from './2_stale/2.2_04_25110.webp';
 import img7 from './3_z-komponentami/2.3_05_26503FH.webp';
 import img8 from './4_akcesoria/2.4_02_23022.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**For slider on "KategorieProduktowPage"**/
 const imgGniazdaZBlokadaSlides: IF_ImgStaticData[] = [
   { image: img1 },

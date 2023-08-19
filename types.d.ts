@@ -32,3 +32,11 @@ type svgCatalogIcon = {
   colorBG?: string;
   colorBGOpacity?: string;
 };
+
+/*
+used in files with images ==> should by delayed ?
+*/
+type IF_ImgStaticData = {
+  image: StaticImageData;
+  model?: string;
+};

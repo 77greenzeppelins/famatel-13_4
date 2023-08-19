@@ -15,9 +15,6 @@ import img11 from './wielokrotne-z-kablem/3.3_31040.webp';
 import img12 from './wielokrotne-z-kablem/3.3_31020.webp';
 import img13 from './wielokrotne-z-kablem/3.3_31071.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: pagesComponents / kategorie-prosduktow / ... / <ImageContent>
  **/

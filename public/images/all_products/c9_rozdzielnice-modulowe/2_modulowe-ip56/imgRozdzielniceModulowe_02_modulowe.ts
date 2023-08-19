@@ -15,9 +15,6 @@ import img12 from './9.2_07_39018.webp';
 import img13 from './9.2_08_39036.webp';
 import img14 from './9.2_09_39054.webp';
 import img15 from './9.2_10_39072.webp';
-
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
 /*
 used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
 */

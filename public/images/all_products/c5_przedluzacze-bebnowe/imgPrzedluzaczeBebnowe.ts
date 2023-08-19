@@ -17,9 +17,6 @@ import img11 from './ip67-metalowe/5.3_30051.webp';
 import img12 from './ip67-metalowe/5.3_30052.webp';
 import img13 from './ip67-metalowe/5.3_30053.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: pagesComponents / kategorie-prosduktow / ... / <ImageContent>
  **/

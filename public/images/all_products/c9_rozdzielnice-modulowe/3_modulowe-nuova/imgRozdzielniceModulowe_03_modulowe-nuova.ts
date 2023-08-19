@@ -41,9 +41,6 @@ import img37 from './9.3.4.double-wall_06_3862.webp';
 import img38 from './9.3.4.double-wall_07_3668.webp';
 import img39 from './9.3.4.double-wall_08_3868.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/

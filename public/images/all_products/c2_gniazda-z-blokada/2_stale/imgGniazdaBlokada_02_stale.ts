@@ -6,9 +6,6 @@ import img3 from './2.2_03_25116.webp';
 import img4 from './2.2_04_25110.webp';
 import img5 from './2.2_05_25159.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/

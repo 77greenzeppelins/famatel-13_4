@@ -4,9 +4,6 @@ import img1 from './m1.webp';
 import img2 from './m2.webp';
 import img3 from './m3.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**...**/
 const imgLadowarki: IF_ImgStaticData[] = [
   //___img1 for 3 products

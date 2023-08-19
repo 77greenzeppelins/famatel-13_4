@@ -25,9 +25,6 @@ import img22 from './8.1_22_3979.webp';
 import img23 from './8.1_23_3973.webp';
 import img24 from './8.1_24_3964.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/

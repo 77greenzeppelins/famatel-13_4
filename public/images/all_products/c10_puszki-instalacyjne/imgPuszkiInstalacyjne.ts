@@ -10,11 +10,6 @@ import img6 from './1_zamykane/10.1_c_05_3067.webp';
 import img7 from './1_zamykane/10.1_05_3025.webp';
 import img8 from './2_drywall/10.2_08_3260.webp';
 
-//10.2_08_3260
-
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**For slider on "KategorieProduktowPage"**/
 const imgPuszkiInstalacyjneSlider: IF_ImgStaticData[] = [
   { image: img1 },

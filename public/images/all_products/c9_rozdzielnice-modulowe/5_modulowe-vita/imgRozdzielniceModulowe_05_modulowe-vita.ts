@@ -44,8 +44,6 @@ import img40 from './9.6_16_3338-F.webp';
 import img41 from './9.6_17_3338-FT.webp';
 import img42 from './9.6_18_3360-F.webp';
 import img43 from './9.6_19_3360-FT.webp';
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
 
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts

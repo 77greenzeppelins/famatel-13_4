@@ -29,9 +29,6 @@ import img26 from './8.4_27_RG-12.webp';
 import img27 from './8.4_28_SPTA-12.webp';
 import img28 from './8.4_29_SPTC-4.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: data / kategoriesData / ... / _subCat_4_akcesoria.ts
  **/

@@ -8,9 +8,6 @@ import img5 from './2_przemyslowe/8.2_11_3980.webp';
 import img6 from './1_puste/8.1_21_3970.webp';
 import img7 from './4_akcesoria/8.4_43_SPTA-12.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**...**/
 
 const imgObudowyRozdzielniceSlide: IF_ImgStaticData[] = [

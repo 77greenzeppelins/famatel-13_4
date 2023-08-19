@@ -14,9 +14,6 @@ import imageC7 from './7_metalowe-ip40/9.8_01_3114.webp';
 import imageC8 from './8_metalowe-ict/9.9_04_3235.webp';
 import imageC9 from './9_akcesoria//9.9_SPTA-12.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**For slider on "KategorieProduktowPage"**/
 const imgRozdzielniceModuloweSlider: IF_ImgStaticData[] = [
   { image: img1 },

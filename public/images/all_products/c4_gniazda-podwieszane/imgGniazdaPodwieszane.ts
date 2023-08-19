@@ -4,9 +4,6 @@ import img2 from './27008.webp';
 import img3 from './28000.webp';
 import img4 from './28000_MA.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../utils/TS/typeScriptStaff';
-
 /**...should be small????**/
 const imgGniazdaPodwieszane: IF_ImgStaticData[] = [
   { image: img3, model: '28000' },

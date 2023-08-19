@@ -3,9 +3,6 @@
 import img1 from './3.1_16010.webp';
 import img2 from './3.1_16002.webp';
 
-/**TS**/
-import { IF_ImgStaticData } from '../../../../utils/TS/typeScriptStaff';
-
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/
