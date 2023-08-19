@@ -1,6 +1,4 @@
-'use client';
-/**components**/
-import CatalogCardsSection from './catalogCardsSection/CatalogCardsSection';
+import CategorySchema1 from './schema1/CategorySchema1';
 
 /**TS**/
 interface Props extends DynamicCatIndex {
@@ -19,7 +17,7 @@ const CatPageContent = ({ categoryIndex, path }: Props) => {
       case 7:
       case 8:
       case 9:
-        return <div className="w-full h-full fc bg-corpo">schema1</div>;
+        return <CategorySchema1 index={index} />;
       case 1:
         return <div className="w-full h-full fc bg-grey">schema2</div>;
       case 3:
@@ -36,10 +34,7 @@ const CatPageContent = ({ categoryIndex, path }: Props) => {
   if (typeof categoryIndex === 'number') {
     return (
       <div className="flex flex-col text-greyShade2 text-medium wrapper-1">
-        <CatalogCardsSection categoryIndex={categoryIndex} />
         {schemaSwitcher(categoryIndex)}
-        <div className="">current path: {path}</div>
-        <div className="">categoryIndex: {categoryIndex}</div>
       </div>
     );
   }
