@@ -1,5 +1,5 @@
 /*
-used in: 
+used in: ... to create array with images of all subCats from all 10's cat; then in catalogStructureData.js as static data for 
 */
 
 export const indexImgCat1_subCat_forCatalog: ImageType_C[] = [

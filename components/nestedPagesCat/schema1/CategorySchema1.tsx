@@ -1,7 +1,7 @@
-'use client';
-import CatalogCard from '@/components/forMultiPage/catalogs/allCards/catalogCard/CatalogCard';
+// 'use client';
 /**Components**/
 import CatalogGrid from '@/components/forMultiPage/catalogs/catalogGrid/CatalogGrid';
+import CatalogCardWithSubCat from '@/components/forMultiPage/catalogs/allCards/cardWithSubCat/CatalogCardWithSubCat';
 /**BasicData**/
 import { catalogStructureData } from '@/data/catalogStructureData';
 
@@ -10,10 +10,12 @@ const CategorySchema1 = ({ index }: { index: number }) => {
   const { subCategoriesNames, subCategoriesPaths, subCategoriesImages } =
     catalogStructureData[index];
 
+  // console.log('CategorySchema1 / subCategoriesImages:', subCategoriesImages);
+
   /**Data Mapper**/
-  const createCard = (index: number) => {
+  const createCard = () => {
     return subCategoriesNames.map((name, i) => (
-      <CatalogCard
+      <CatalogCardWithSubCat
         key={i}
         catIndex={i}
         catName={name}
@@ -26,7 +28,7 @@ const CategorySchema1 = ({ index }: { index: number }) => {
   /**JSX**/
   return (
     <div data-component="CategorySchema1" className="pt-20">
-      <CatalogGrid>{createCard(index)}</CatalogGrid>
+      <CatalogGrid>{createCard()}</CatalogGrid>
     </div>
   );
 };
