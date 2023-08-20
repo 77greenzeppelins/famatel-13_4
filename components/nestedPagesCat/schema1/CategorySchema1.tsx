@@ -10,8 +10,6 @@ const CategorySchema1 = ({ index }: { index: number }) => {
   const { subCategoriesNames, subCategoriesPaths, subCategoriesImages } =
     catalogStructureData[index];
 
-  // console.log('CategorySchema1 / subCategoriesImages:', subCategoriesImages);
-
   /**Data Mapper**/
   const createCard = () => {
     return subCategoriesNames.map((name, i) => (
