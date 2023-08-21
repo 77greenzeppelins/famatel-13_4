@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--mySanSerif-haas)'],
+        sans: ['var(--mySansSerif-haas)', 'sans-serif'],
         // mono: ['var(--font-roboto-mono)'],
       },
       colors: {

@@ -11,19 +11,65 @@ import img8 from './1.4_08_24960.webp';
 import img9 from './1.4_09_13955.webp';
 import img10 from './1.4_10_3905.webp';
 
-/**
- * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
- **/
-const imgWtyczkiGniazda_04_tablicowe_schuko: IF_ImgStaticData[] = [
-  { image: img1, model: '13953' },
-  { image: img2, model: '13950' },
-  { image: img3, model: '13957' },
-  { image: img4, model: '13956' },
-  { image: img5, model: '13960' },
-  { image: img6, model: '13960F' },
-  { image: img7, model: '23960' },
-  { image: img8, model: '24960' },
-  { image: img9, model: '13955' },
-  { image: img10, model: '3905' },
+export const indexImgCat1_subCat_4: ImageType_C[] = [
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_01_13953_d2.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_02_13950_d2.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_03_13957_d2.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_04_13956_d2.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_05_13960_d.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_06_13960F_d.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_07_23960.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_08_24960.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_09_13955.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c1_wtyczki-gniazda/4_tablicowe-jednofazowe/1.4_10_3905.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
 ];
-export { imgWtyczkiGniazda_04_tablicowe_schuko };

@@ -37,6 +37,7 @@ const CatPageContent = ({ categoryIndex, path }: Props) => {
     return (
       <div className="flex flex-col text-greyShade2 text-medium wrapper-1">
         {schemaSwitcher(categoryIndex)}
+        <p className="text-medium">{categoryIndex}</p>
       </div>
     );
   }

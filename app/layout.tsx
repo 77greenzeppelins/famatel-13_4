@@ -1,6 +1,6 @@
 /**CSS / Fonts Staff**/
 import '@/styles/globals.css';
-import { mySanSerif } from '@/nextFeatures/fonts/fonts';
+import { mySansSerif } from '@/nextFeatures/fonts/fonts';
 /**NextFeatures**/
 import type { Metadata } from 'next';
 /**Components**/
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mySanSerif.variable}`}>
+    <html lang="en" className={`${mySansSerif.variable}`}>
       <body className="font-sans">
         <Header />
         <ProductsLayout />

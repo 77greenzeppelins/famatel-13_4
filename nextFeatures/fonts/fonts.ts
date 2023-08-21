@@ -1,9 +1,9 @@
 import localFont from 'next/font/local';
 
-export const mySanSerif = localFont({
+export const mySansSerif = localFont({
   src: '../../public/fonts/HaasGrotDisp-55Roman.woff2',
   display: 'swap',
-  variable: '--mySanSerif-haas',
+  variable: '--mySansSerif-haas',
 });
 
 /*

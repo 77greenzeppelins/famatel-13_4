@@ -1,4 +1,7 @@
 // import { mainPagesPaths } from './basicData';
+
+import { createPath } from '@/lib/handlers/functions';
+
 /*
 ___1.
 */
@@ -31,19 +34,10 @@ export const mainCategoriesNames = [
   'Rozdzielnice modułowe',
   'Puszki instalacyjne',
 ];
+export const mainCategoriesPath = mainCategoriesNames.map(mainCatName =>
+  createPath(mainCatName)
+);
 
-export const mainCategoriesPath = [
-  'przemyslowe-wtyczki-i-gniazda',
-  'gniazda-z-rozlacznikiem-i-blokada',
-  'adaptery-przemyslowe',
-  'gniazda-podwieszane',
-  'przedluzacze-bebnowe',
-  'rozlaczniki-bezpieczenstwa',
-  'ladowarki-samochodowe',
-  'obudowy-i-rozdzielnice',
-  'rozdzielnice-modulowe',
-  'puszki-instalacyjne',
-];
 /*
 ---------subcategories
 */
@@ -59,19 +53,12 @@ export const wtyczkiGniazdaSubCatNames: string[] = [
   'Wtyczki i gniazda estradowe',
   'Wtyczki i gniazda campingowe',
 ];
-export const wtyczkiGniazdaSubCatPaths: string[] = [
-  `wtyczki-i-gniazda-przenosne`,
-  `wtyczki-i-gniazda-tablicowe`,
-  `wtyczki-i-gniazda-scienne`,
-  `wtyczki-i-gniazda-tablicowe-jednofazowe`,
-  `wtyczki-i-gniazda-jednofazowe`,
-  `wtyczki-i-gniazda-na-bardzo-niskie-napiecia`,
-  `wtyczki-i-gniazda-kontenerowe`,
-  `wtyczki-i-gniazda-estradowe`,
-  `wtyczki-i-gniazda-campingowe`,
-];
+export const wtyczkiGniazdaSubCatPaths = wtyczkiGniazdaSubCatNames.map(
+  subCatName => createPath(subCatName)
+);
+
 export const wtyczkiGniazdaSubCatFullPaths = wtyczkiGniazdaSubCatPaths.map(
-  (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}/${path}`
+  path => `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}/${path}`
 );
 
 //_____subcategories of category_2
@@ -81,12 +68,10 @@ export const gniazdaZBlokadaSubCatNames: string[] = [
   'Gniazda z opcjonalnymi komponentami',
   'Akcesoria do gniazd z rozłącznikiem i blokadą',
 ];
-const gniazdaZBlokadaSubCatPaths: string[] = [
-  `gniazda-tablicowe`,
-  `gniazda-stale`,
-  `gniazda-z-opcjonalnymi-komponentami`,
-  'akcesoria-do-gniazd-z-rozłącznikiem-i-blokadą',
-];
+const gniazdaZBlokadaSubCatPaths = gniazdaZBlokadaSubCatNames.map(subCatName =>
+  createPath(subCatName)
+);
+
 export const gniazdaZBlokadaSubCatFullPaths = gniazdaZBlokadaSubCatPaths.map(
   (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}/${path}`
 );
@@ -97,11 +82,9 @@ export const adapteryPrzemysloweSubCatNames: string[] = [
   'Adaptery wielokrotne przemysłowe',
   'Adaptery wielokrotne przemysłowe z przewodem',
 ];
-export const adapteryPrzemysloweSubCatPaths: string[] = [
-  'adaptery-przemyslowe-schuko',
-  'adaptery-wielokrotne-przemyslowe',
-  'adaptery-wielokrotne-przemyslowe-z-przewodem',
-];
+export const adapteryPrzemysloweSubCatPaths =
+  adapteryPrzemysloweSubCatNames.map(subCatName => createPath(subCatName));
+
 export const adapteryPrzemysloweSubCatFullPaths =
   adapteryPrzemysloweSubCatPaths.map(
     (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}/${path}`
@@ -121,11 +104,9 @@ export const przedluzaczeBebnoweSubCatNames: string[] = [
   'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
   'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
 ];
-export const przedluzaczeBebnoweSubCatPaths: string[] = [
-  'przedluzacze-bebnowe-IP55-z-gniazdami-Schuko-IP67',
-  'przemyslowe-przedluzacze-bebnowe-z-gniazdami-IP67',
-  'metalowe-przemyslowe-przedluzacze-bebnowe-z-gniazdami-IP67',
-];
+export const przedluzaczeBebnoweSubCatPaths =
+  przedluzaczeBebnoweSubCatNames.map(subCatName => createPath(subCatName));
+
 export const przedluzaczeBebnoweSubCatFullPaths =
   przedluzaczeBebnoweSubCatPaths.map(
     (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}/${path}`
@@ -157,12 +138,9 @@ export const obudowyAndRozdzielniceSubCatNames: string[] = [
   'Obudowy gumowe',
   'Akcesoria do obudów i rozdzielnic',
 ];
-export const obudowyAndRozdzielniceSubCatPathss: string[] = [
-  'obudowy-puste',
-  'rozdzielnice-przemyslowe',
-  'obudowy-gumowe',
-  'akcesoria-do-obudow-i-rozdzielnic',
-];
+export const obudowyAndRozdzielniceSubCatPathss =
+  obudowyAndRozdzielniceSubCatNames.map(subCatName => createPath(subCatName));
+
 export const obudowyAndRozdzielniceSubCatFullPaths =
   obudowyAndRozdzielniceSubCatPathss.map(
     (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}/${path}`
@@ -179,17 +157,9 @@ export const rozdzielniceModuloweSubCatNames: string[] = [
   'Rozdzielnice modułowe metalowe ICT',
   'Akcesoria do rozdzielnic modułowych',
 ];
-export const rozdzielniceModuloweSubCatPaths: string[] = [
-  'rozdzielnice-scienne-ip65',
-  'rozdzielnice-modulowe-ip65',
-  'rozdzielnice-modulowe-nuova-ip40',
-  'rozdzielnice-modulowe-nuova+-ip40',
-  'rozdzielnice-modulowe-vita-ip40',
-  'rozdzielnice-modulowe-scienne-icp',
-  'rozdzielnice-modulowe-metalowe-ip40',
-  'rozdzielnice-modulowe-metalowe-ict',
-  'akcesoria-do-rozdzielnic-modulowych',
-];
+export const rozdzielniceModuloweSubCatPaths =
+  rozdzielniceModuloweSubCatNames.map(subCatName => createPath(subCatName));
+
 export const rozdzielniceModuloweSubCatFullPaths =
   rozdzielniceModuloweSubCatPaths.map(
     path => `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}/${path}`
@@ -200,14 +170,82 @@ export const puszkiInstalacyjneSubCatNames: string[] = [
   'Puszki instalacyjne drywall',
   'Puszki instalacyjne osadzone',
 ];
-export const puszkiInstalacyjneSubCatPaths: string[] = [
-  'puszki-instalacyjne-zamykane-ip55-ip65',
-  'puszki-instalacyjne-drywall',
-  'puszki-instalacyjne-osadzone',
-];
+export const puszkiInstalacyjneSubCatPaths = puszkiInstalacyjneSubCatNames.map(
+  subCatName => createPath(subCatName)
+);
+
 export const puszkiInstalacyjneSubCatFullPaths =
   puszkiInstalacyjneSubCatPaths.map(
     path => `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}/${path}`
   );
 
-export const someFakePath = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;
+// export const someFakePath = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;
+
+// export const mainCategoriesPath = [
+//   'przemyslowe-wtyczki-i-gniazda',
+//   'gniazda-z-rozlacznikiem-i-blokada',
+//   'adaptery-przemyslowe',
+//   'gniazda-podwieszane',
+//   'przedluzacze-bebnowe',
+//   'rozlaczniki-bezpieczenstwa',
+//   'ladowarki-samochodowe',
+//   'obudowy-i-rozdzielnice',
+//   'rozdzielnice-modulowe',
+//   'puszki-instalacyjne',
+// ];
+
+// export const wtyczkiGniazdaSubCatPaths: string[] = [
+//   `wtyczki-i-gniazda-przenosne`,
+//   `wtyczki-i-gniazda-tablicowe`,
+//   `wtyczki-i-gniazda-scienne`,
+//   `wtyczki-i-gniazda-tablicowe-jednofazowe`,
+//   `wtyczki-i-gniazda-jednofazowe`,
+//   `wtyczki-i-gniazda-na-bardzo-niskie-napiecia`,
+//   `wtyczki-i-gniazda-kontenerowe`,
+//   `wtyczki-i-gniazda-estradowe`,
+//   `wtyczki-i-gniazda-campingowe`,
+// ];
+
+// const gniazdaZBlokadaSubCatPaths: string[] = [
+//   `gniazda-tablicowe`,
+//   `gniazda-stale`,
+//   `gniazda-z-opcjonalnymi-komponentami`,
+//   'akcesoria-do-gniazd-z-rozłącznikiem-i-blokadą',
+// ];
+
+// export const adapteryPrzemysloweSubCatPaths: string[] = [
+//   'adaptery-przemyslowe-schuko',
+//   'adaptery-wielokrotne-przemyslowe',
+//   'adaptery-wielokrotne-przemyslowe-z-przewodem',
+// ];
+
+// export const przedluzaczeBebnoweSubCatPaths: string[] = [
+//   'przedluzacze-bebnowe-IP55-z-gniazdami-Schuko-IP67',
+//   'przemyslowe-przedluzacze-bebnowe-z-gniazdami-IP67',
+//   'metalowe-przemyslowe-przedluzacze-bebnowe-z-gniazdami-IP67',
+// ];
+
+// export const obudowyAndRozdzielniceSubCatPathss: string[] = [
+//   'obudowy-puste',
+//   'rozdzielnice-przemyslowe',
+//   'obudowy-gumowe',
+//   'akcesoria-do-obudow-i-rozdzielnic',
+// ];
+
+// export const rozdzielniceModuloweSubCatPaths: string[] = [
+//   'rozdzielnice-scienne-ip65',
+//   'rozdzielnice-modulowe-ip65',
+//   'rozdzielnice-modulowe-nuova-ip40',
+//   'rozdzielnice-modulowe-nuova+-ip40',
+//   'rozdzielnice-modulowe-vita-ip40',
+//   'rozdzielnice-modulowe-scienne-icp',
+//   'rozdzielnice-modulowe-metalowe-ip40',
+//   'rozdzielnice-modulowe-metalowe-ict',
+//   'akcesoria-do-rozdzielnic-modulowych',
+// ];
+
+// export const puszkiInstalacyjneSubCatPaths: string[] = [
+//   'puszki-instalacyjne-zamykane-ip55-ip65',
+//   'puszki-instalacyjne-drywall',
+//   'puszki-instalacyjne-osadzone',
+// ];
