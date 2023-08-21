@@ -11,7 +11,7 @@ const CatalogCardWithModel = ({
   catName,
   catPath,
   catImage,
-}: CatalogCardType) => {
+}: CardWithModelType) => {
   /**...**/
   const pathname = usePathname();
   const isActive = pathname === catPath;
@@ -29,7 +29,7 @@ const CatalogCardWithModel = ({
           aria-label={`Karta kategorii: ${catName}`}
           role="link"
           className="z-10 w-full h-full pointer-events-auto abs-cell"
-          href={catPath}
+          href="/"
           // scroll={false}
         />
         <div
