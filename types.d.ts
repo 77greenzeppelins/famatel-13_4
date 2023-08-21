@@ -68,7 +68,7 @@ type CatalogStructureData = {
 };
 
 type CardWithModelType = {
-  catIndex?: number;
+  modelIndex?: number;
   catName?: string;
   catPath?: string; //temporaily... till I define them all...
   catImage: ImageType_C;

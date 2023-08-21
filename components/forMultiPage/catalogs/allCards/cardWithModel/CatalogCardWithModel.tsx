@@ -7,7 +7,7 @@ import CardFrameGrid from '../cardFrame/CardFrameGrid';
 import CardContent from './content/CardContent';
 
 const CatalogCardWithModel = ({
-  catIndex,
+  modelIndex,
   catName,
   catPath,
   catImage,
@@ -15,6 +15,8 @@ const CatalogCardWithModel = ({
   /**...**/
   const pathname = usePathname();
   const isActive = pathname === catPath;
+  /** */
+  console.log('CatalogCardWithModel / modelIndex:', modelIndex);
 
   /**JSX**/
   return (
@@ -39,7 +41,7 @@ const CatalogCardWithModel = ({
           aria-label={`Tekstowo-graficzna zawartość karty kategorii: ${catName}`}
         >
           <CardContent
-            catIndex={catIndex}
+            modelIndex={modelIndex}
             catName={catName}
             catPath={catPath}
             catImage={catImage}

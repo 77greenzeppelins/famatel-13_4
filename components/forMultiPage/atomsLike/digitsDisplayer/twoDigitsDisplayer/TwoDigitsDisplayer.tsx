@@ -5,7 +5,7 @@ const containerDefaultStyle =
 
 /**TS**/
 interface Props {
-  index: number;
+  index: number | undefined;
   textStyle?: string;
   containerStyle?: string;
 }
@@ -18,7 +18,9 @@ const TwoDigitsDisplayer = ({ index, containerStyle, textStyle }: Props) => {
       className={containerStyle ? containerStyle : containerDefaultStyle}
     >
       <p className={textStyle}>
-        {index + 1 < 10 ? `0${index + 1}` : `${index + 1}`}
+        {typeof index !== 'undefined' && index + 1 < 10
+          ? `0${index + 1}`
+          : `${typeof index !== 'undefined' && index + 1}`}
       </p>
     </div>
   );

@@ -30,6 +30,8 @@ import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgA
 
 //__________________________________________
 import { indexImgCat1_ProductsAll } from '@/public/images/all_products/c1_wtyczki-gniazda/imgWtyczkiGniazda';
+import { indexImgCat2_ProductsAll } from '@/public/images/all_products/c2_gniazda-z-blokada/imgGniazdaZBlokada';
+import { indexImgCat3_ProductsAll } from '@/public/images/all_products/c3_adaptery-przemyslowe/imgAdapteryPrzemyslowe';
 import { indexImgCat5_ProductsAll } from '@/public/images/all_products/c5_przedluzacze-bebnowe/imgPrzedluzaczeBebnowe';
 import { indexImgCat8_ProductsAll } from '@/public/images/all_products/c8_obudowy-rozdzielnice/imgObudowyRozdzielnice';
 import { indexImgCat9_ProductsAll } from '@/public/images/all_products/c9_rozdzielnice-modulowe/imgRozdzielniceModulowe';
@@ -96,7 +98,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[1],
     svgIcons: ['IP54', 'IP67', 'IK08', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
-    allProductsImages: indexImgCat1_ProductsAll,
+    allProductsImages: indexImgCat2_ProductsAll,
   },
   //_____category__3__adaptery-przemyslowe
   {
@@ -109,7 +111,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[2],
     svgIcons: ['IP20', 'IP54', 'IP67'],
     labeledIcons: ['16A', '32A'],
-    allProductsImages: indexImgCat1_ProductsAll,
+    allProductsImages: indexImgCat3_ProductsAll,
   },
   //_____category__4__noSubCategory__gniazda-podwieszane
   {

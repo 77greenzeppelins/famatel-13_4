@@ -1,3 +1,13 @@
+import { indexImgCat3_subCat_1 } from './schuko/imgAdapteryPrzemyslowe_01_schuko';
+import { indexImgCat3_subCat_3 } from './wielokrotne-z-kablem/imgAdapteryPrzemyslowe_03_wielokrotne-z-kablem';
+import { indexImgCat3_subCat_2 } from './wielokrotne/imgAdapteryPrzemyslowe_02_wielokrotne';
+
+export const indexImgCat3_ProductsAll: ImageType_C[][] = [
+  indexImgCat3_subCat_1,
+  indexImgCat3_subCat_2,
+  indexImgCat3_subCat_3,
+];
+
 export const indexImgCat3_subCat_forCatalog: ImageType_C[] = [
   {
     path: '/images/all_products/c3_adaptery-przemyslowe/schuko/3.1_16010.webp',

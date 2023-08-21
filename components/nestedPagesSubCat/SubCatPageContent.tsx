@@ -18,6 +18,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
     //   {i}
     // </div>
     <CatalogCardWithModel
+      modelIndex={i}
       key={i}
       catImage={{
         path: item.path,
@@ -27,15 +28,8 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
       }}
     />
   ));
-  //   // return categoryStaff.allProductsImages[props.subCatIndex].map((item, i) => (
-  //   //   <div className="w-[200px] h-[200px] border" key={i}>
-  //   //     {i}
-  //   //   </div>
-  //   // ));
-  // }
 
   /**JSX*/
-  // return null;
   return (
     <div className="w-full wrapper-1">
       <CatalogGrid>{createCards}</CatalogGrid>

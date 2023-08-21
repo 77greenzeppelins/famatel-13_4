@@ -1,7 +1,18 @@
+import { indexImgCat2_subCat_1 } from './1_tablicowe/imgGniazdaBlokada_01_tablicowe';
+import { indexImgCat2_subCat_2 } from './2_stale/imgGniazdaBlokada_02_stale';
+import { indexImgCat2_subCat_3 } from './3_z-komponentami/imgGniazdaBlokada_03_z-komponentami';
+import { indexImgCat2_subCat_4 } from './4_akcesoria/imgGniazdaBlokada_04_akcesoria';
+
+export const indexImgCat2_ProductsAll: ImageType_C[][] = [
+  indexImgCat2_subCat_1,
+  indexImgCat2_subCat_2,
+  indexImgCat2_subCat_3,
+  indexImgCat2_subCat_4,
+];
+
 /*
 used in: images | allProducts |  indexImgAllSubCategories.js to create array with images of all subCats from all 10's cat; then in catalogStructureData.js as static data for 
 */
-
 export const indexImgCat2_subCat_forCatalog: ImageType_C[] = [
   {
     path: '/images/all_products/c2_gniazda-z-blokada/1_tablicowe/2.1_03_25056.webp',
