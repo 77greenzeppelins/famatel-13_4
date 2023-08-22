@@ -1,4 +1,4 @@
-export const cat1_subCat1_modelCardsData = [
+export const cat1_subCat1_modelCardsData: modelCardsDataType[] = [
   //__1
   {
     arrayIndex: 0,

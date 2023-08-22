@@ -7,7 +7,6 @@ import {
   catalogStructureData,
 } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
-import { cat1_allModels_pathSegments } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 // export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -68,7 +67,7 @@ export default async function ModelPage({ params }: Props) {
   // const isPathCorrect = allSubCatPaths.find(
   //   element => element === params.subCat
   // );
-  const isPathCorrect = allModelsPathSegment[0].map(item =>
+  const isPathCorrect = allModelsPathSegment[mainCatIndex].map(item =>
     item.find(element => element === params.model)
   );
 

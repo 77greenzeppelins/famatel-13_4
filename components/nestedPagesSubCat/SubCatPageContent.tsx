@@ -46,7 +46,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
   });
 
   // console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
-  console.log('cat1_allModels_pathSegments:', cat1_allModels_pathSegments);
+  // console.log('cat1_allModels_pathSegments:', cat1_allModels_pathSegments);
 
   /**JSX*/
   return (
