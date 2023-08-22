@@ -67,12 +67,29 @@ type CatalogStructureData = {
   allProductsImages: ImageType_C[][];
 };
 
+/*
+is used in: 
+idea: data for model card in catalog rendered on [subCat] page.tsx; this data are passed to relevant model card & CardWithModelType
+*/
+type modelCardsDataType = {
+  arrayIndex: number;
+  modelPathSegmant: string;
+  textIcons?: string[];
+  // imageData: imgWtyczkiGniazda_02_tablicowe[1],
+  type?: string;
+  collection?: string[];
+  altName?: string;
+  model?: string; // rarely
+};
+
 type CardWithModelType = {
   modelIndex?: number;
   catName?: string;
   catPath?: string; //temporaily... till I define them all...
   catImage: ImageType_C;
 };
+
+type modelCardsDataType = {};
 
 /*
 used in files with images ==> should by delayed ?

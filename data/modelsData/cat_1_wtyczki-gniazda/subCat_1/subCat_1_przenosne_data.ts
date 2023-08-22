@@ -1,0 +1,145 @@
+export const cat1_subCat1_modelCardsData = [
+  //__1
+  {
+    arrayIndex: 0,
+    modelPathSegmant: 'wtyczki-ip54-16A-32A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip54-16A-32A`,
+    textIcons: ['IP54', '16A', '32A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[0],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Wtyczka przenośna SpeedPRO',
+  },
+  //__2
+  {
+    arrayIndex: 1,
+    modelPathSegmant: 'wtyczki-ip67-16A-32A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip67-16A-32A`,
+    textIcons: ['IP67', '16A', '32A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[1],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Wtyczka przenośna SpeedPRO',
+  },
+  //__3
+  {
+    arrayIndex: 2,
+    modelPathSegmant: 'wtyczki-ip67-63A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip67-63A`,
+    textIcons: ['IP67', '63A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[2],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Wtyczka przenośna SpeedPRO',
+  },
+  //__4
+  {
+    arrayIndex: 3,
+    modelPathSegmant: 'wtyczki-ip67-125A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip67-125A`,
+    textIcons: ['IP67', '125A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[3],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Wtyczka przenośna SpeedPRO',
+  },
+  //__4
+  {
+    arrayIndex: 4,
+    modelPathSegmant: 'gniazda-ip54-16A-32A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip54-16A-32A`,
+    textIcons: ['IP54', '16A', '32A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[4],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Gniazdo przenośne SpeedPRO',
+  },
+  //__6
+  {
+    arrayIndex: 5,
+    modelPathSegmant: 'gniazda-ip67-16A-32A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip67-16A-32A`,
+    textIcons: ['IP67', '16A', '32A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[5],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Gniazdo przenośne SpeedPRO',
+  },
+  //__7
+  {
+    arrayIndex: 6,
+    modelPathSegmant: 'gniazda-ip67-63A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip67-63A`,
+    textIcons: ['IP67', '63A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[6],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Gniazdo przenośne SpeedPRO',
+  },
+  //__8
+  {
+    arrayIndex: 7,
+    modelPathSegmant: 'gniazda-ip67-125A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip67-125A`,
+    textIcons: ['IP67', '125A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[7],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Gniazdo przenośne SpeedPRO',
+  },
+  //__9
+  {
+    arrayIndex: 8,
+    modelPathSegmant: 'wtyczki-ip54-16A-top',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip54-16A-top`,
+    textIcons: ['IP54', '16A', 'ENEC 03', 'Montaż bezśrubowy'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[8],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: TOP SpeedPRO',
+    altName: 'Wtyczka przenośna TOP SpeedPRO',
+  },
+  //__10
+  {
+    arrayIndex: 9,
+    modelPathSegmant: 'wtyczki-ip67-16A-top',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip67-16A-top`,
+    textIcons: ['IP67', '16A', 'ENEC 03', 'Montaż bezśrubowy'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[9],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: TOP SpeedPRO',
+    altName: 'Wtyczka przenośna TOP SpeedPRO',
+  },
+  //__11
+  {
+    arrayIndex: 10,
+    modelPathSegmant: 'gniazda-ip54-16A-top',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip54-16A-top`,
+    textIcons: ['IP54', '16A', 'ENEC 03', 'Montaż bezśrubowy'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[10],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: TOP SpeedPRO',
+    altName: 'Gniazdo przenośne TOP SpeedPRO',
+  },
+  //__12
+  {
+    arrayIndex: 11,
+    modelPathSegmant: 'gniazda-ip67-16A-top',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/gniazda-ip67-16A-top`,
+    textIcons: ['IP67', '16A', 'ENEC 03', 'Montaż bezśrubowy'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[11],
+    type: 'Typ: Gniazdo przenośne',
+    collection: 'Kolekcja: TOP SpeedPRO',
+    altName: 'Gniazdo przenośne TOP SpeedPRO',
+  },
+  //__13
+  {
+    arrayIndex: 12,
+    modelPathSegmant: 'wtyczki-ip44-16A-32A',
+    // path: `${catalogStructureData[0].subCategoriesUrls[0]}/wtyczki-ip44-16A-32A`,
+    textIcons: ['IP44', '16A', '32A', 'ENEC 03'],
+    // imageData: imgWtyczkiGniazda_01_przenosne[12],
+    type: 'Typ: Wtyczki przenośne',
+    collection: 'Kolekcja: SpeedPRO',
+    altName: 'Wtyczka przenośna SpeedPRO',
+  },
+];
