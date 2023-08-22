@@ -28,7 +28,9 @@ import {
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgAllProducts';
 
-//__________________________________________
+/*
+___1. for property: allProductsImages
+*/
 import { indexImgCat1_ProductsAll } from '@/public/images/all_products/c1_wtyczki-gniazda/imgWtyczkiGniazda';
 import { indexImgCat2_ProductsAll } from '@/public/images/all_products/c2_gniazda-z-blokada/imgGniazdaZBlokada';
 import { indexImgCat3_ProductsAll } from '@/public/images/all_products/c3_adaptery-przemyslowe/imgAdapteryPrzemyslowe';
@@ -53,23 +55,6 @@ export const allSubCatNames = [
   ...puszkiInstalacyjneSubCatNames,
 ];
 /*
-___1. for AllProducts images
- */
-
-// export const allProductsImages = [
-//   indexImgCat1_ProductsAll,
-//   indexImgCat10_ProductsAll,
-//   indexImgCat10_ProductsAll,
-//   indexImgCat10_ProductsAll,
-//   indexImgCat5_ProductsAll,
-//   indexImgCat10_ProductsAll,
-//   indexImgCat10_ProductsAll,
-//   indexImgCat8_ProductsAll,
-//   indexImgCat9_ProductsAll,
-//   indexImgCat10_ProductsAll,
-// ];
-
-/*
 indexImgCat1_subCat_forCatalog
 ...
  */
@@ -83,9 +68,9 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesNames: [...wtyczkiGniazdaSubCatNames],
     subCategoriesPaths: [...wtyczkiGniazdaSubCatFullPaths],
     subCategoriesImages: indexImgAllSubCategories[0],
+    allProductsImages: indexImgCat1_ProductsAll,
     svgIcons: ['IP54', 'IP67', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
-    allProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__2__gniazda-z-blokada
   {
