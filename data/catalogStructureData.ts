@@ -24,6 +24,8 @@ import {
   obudowyAndRozdzielniceSubCatFullPaths,
   rozdzielniceModuloweSubCatFullPaths,
   puszkiInstalacyjneSubCatFullPaths,
+  //___
+  // cat1_sub1_models,
 } from './routingData';
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgAllProducts';
@@ -43,7 +45,12 @@ import { indexImgCat10_ProductsAll } from '@/public/images/all_products/c10_pusz
 /*
 ___1. for property 
 */
-import { cat1_allModelsCard_data } from './modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
+import {
+  //__all models pathSegments to call notFound() in ModelPage.tsx
+  cat1_allModels_pathSegments,
+  //___
+  cat1_allModelsCard_data,
+} from './modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 /*
 used in: [subCat] | page.tsx
 */
@@ -59,6 +66,10 @@ export const allSubCatNames = [
   ...rozdzielniceModuloweSubCatNames,
   ...puszkiInstalacyjneSubCatNames,
 ];
+/*
+for all models
+*/
+export const allModelsPathSegment = [cat1_allModels_pathSegments];
 /*
 indexImgCat1_subCat_forCatalog
 ...

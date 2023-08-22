@@ -1,4 +1,6 @@
 import { notFound } from 'next/navigation';
+/**Components**/
+import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**Handlers**/
 import { createPath } from '@/lib/handlers/functions';
 /**Basic Data**/
@@ -7,7 +9,6 @@ import {
   catalogStructureData,
 } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
-import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 
 // export const dynamicParams = false;
 

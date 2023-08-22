@@ -54,6 +54,10 @@ type DynamicSubCatContent = {
   subCatIndex: number;
 };
 
+type DynamicModelContent = DynamicSubCatContent & {
+  modelPath: string;
+};
+
 type CatalogStructureData = {
   mainCategoryIndex: number;
   mainCategoryName: string;
@@ -84,15 +88,17 @@ type modelCardsDataType = {
   model?: string; // rarely
 };
 
+/*
+___used in: <CatalogCardWithModel>
+*/
 type CardWithModelType = {
   modelIndex?: number;
   catName?: string;
-  catPath?: string; //temporaily... till I define them all...
   catImage: ImageType_C;
-  // modelPathSegmant: string
+  modelPath: string;
 };
 
-type modelCardsDataType = {};
+type CardContentProps = Omit<CardWithModelType, 'modelPath'>;
 
 /*
 used in files with images ==> should by delayed ?

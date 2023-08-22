@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 /**Hooks Staff*/
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 /**Components**/
 import CardFrameGrid from '../cardFrame/CardFrameGrid';
 import CardContent from './content/CardContent';
@@ -9,30 +9,31 @@ import CardContent from './content/CardContent';
 const CatalogCardWithModel = ({
   modelIndex,
   catName,
-  catPath,
+  // catPath,
   catImage,
-}: // modelPathSegmant,
+  modelPath,
+}: // ,
 CardWithModelType) => {
   /**...**/
-  const pathname = usePathname();
-  const isActive = pathname === catPath;
+  // const pathname = usePathname();
+  // const isActive = pathname === catPath;
   /** */
-  console.log('CatalogCardWithModel / modelIndex:', modelIndex);
+  // console.log('CatalogCardWithModel / pathname:', pathname);
 
   /**JSX**/
   return (
     <li
       //___className="grid py-2 w-[96%]"
-      className={`relative h-[220px] sm:h-[240px] cursor-pointer group select-none no-sparkling ${
-        isActive ? '' : 'group'
-      }`}
+      className={`relative h-[220px] sm:h-[240px] cursor-pointer group select-none no-sparkling 
+      `}
+      //___${isActive ? '' : 'group'}
     >
       <CardFrameGrid innerContainerStyle="grid relative col-span-full row-span-full w-full h-full rounded-md bg-dark z-10">
         <Link
           aria-label={`Karta kategorii: ${catName}`}
           role="link"
           className="z-10 w-full h-full pointer-events-auto abs-cell"
-          href="/"
+          href={modelPath}
           // scroll={false}
         />
         <div
@@ -44,7 +45,7 @@ CardWithModelType) => {
           <CardContent
             modelIndex={modelIndex}
             catName={catName}
-            catPath={catPath}
+            // catPath={catPath}
             catImage={catImage}
             // modelPathSegmant={modelPathSegmant}
           />

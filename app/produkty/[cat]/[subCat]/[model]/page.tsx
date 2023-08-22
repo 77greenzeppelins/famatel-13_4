@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
-/**Handlers**/
-import { createPath } from '@/lib/handlers/functions';
+/**Comoponenst**/
+import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import {
-  allSubCatNames,
+  allModelsPathSegment,
   catalogStructureData,
 } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
+import { cat1_allModels_pathSegments } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 // export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -50,7 +51,7 @@ export default async function ModelPage({ params }: Props) {
   const subCatPaths = catalogStructureData[mainCatIndex].subCategoriesPaths
     .map(path => path.split('/').slice(3))
     .map(subArr => subArr[0]);
-  // console.log('subCatPaths:', subCatPaths);
+
   const subCatIndex = subCatPaths.findIndex(el => el === params.subCat);
 
   // console.log('subCatIndex:', subCatIndex);
@@ -60,28 +61,31 @@ export default async function ModelPage({ params }: Props) {
    ___2. we"predefine" path-segments for models in ... ; this is different approach then in <SubCategoryPage>
    ___3. path written by user is "correct" if mathes any of the predefined path; 
   */
-  const allSubCatPaths = allSubCatNames.map(category => {
-    return createPath(category);
-  });
+  // const allSubCatPaths = allSubCatNames.map(category => {
+  //   return createPath(category);
+  // });
 
-  const isPathCorrect = allSubCatPaths.find(
-    element => element === params.subCat
+  // const isPathCorrect = allSubCatPaths.find(
+  //   element => element === params.subCat
+  // );
+  const isPathCorrect = allModelsPathSegment[0].map(item =>
+    item.find(element => element === params.model)
   );
 
-  if (isPathCorrect === undefined) {
+  if (isPathCorrect[0] === undefined) {
     notFound();
   }
 
   /**JSX**/
   return (
     <div className="flex flex-col w-full min-h-screen fc">
-      <div className="">current path: {params.cat}</div>
-      <div className="">current path: {params.subCat}</div>
-      <div className="">current path: {params.model}</div>
-      {/* <div className="">typeof isCorrect: {typeof isCorrect}</div>
-      <div className="">
-        isCorrect: {isCorrect === undefined ? 'undefined' : 'exists'}
-      </div> */}
+      <ModelPageContent
+        mainCatPath={params.cat}
+        mainCatIndex={mainCatIndex}
+        subCatPath={params.subCat}
+        subCatIndex={subCatIndex}
+        modelPath={params.model}
+      />
     </div>
   );
 }

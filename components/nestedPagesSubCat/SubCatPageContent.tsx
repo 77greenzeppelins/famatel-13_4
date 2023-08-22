@@ -3,6 +3,8 @@
 import { catalogStructureData } from '@/data/catalogStructureData';
 import CatalogGrid from '../forMultiPage/catalogs/catalogGrid/CatalogGrid';
 import CatalogCardWithModel from '../forMultiPage/catalogs/allCards/cardWithModel/CatalogCardWithModel';
+import { mainPagesPaths } from '@/data/routingData';
+import { cat1_allModels_pathSegments } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 // import { mainCategoriesPath } from "@/data/routingData";
 
@@ -17,7 +19,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
 
   */
   const createModelsCardData = catAllModels[props.subCatIndex].map(item => ({
-    modelPathSegmant: item.modelPathSegmant,
+    modelPath: `${mainPagesPaths.produkty}/${props.mainCatPath}/${props.subCatPath}/${item.modelPathSegmant}`,
     textIcons: item.textIcons,
     type: item.type,
     collection: item.collection,
@@ -38,12 +40,13 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
         }}
         // catImage={createImageData[i]}
         // modelPathSegmant={createModelsCardData.modelPathSegmant[i]}
-        // modelPathSegmant="/kkkak"
+        modelPath={createModelsCardData[i].modelPath}
       />
     );
   });
 
-  console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
+  // console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
+  console.log('cat1_allModels_pathSegments:', cat1_allModels_pathSegments);
 
   /**JSX*/
   return (

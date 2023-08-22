@@ -179,6 +179,26 @@ export const puszkiInstalacyjneSubCatFullPaths =
     path => `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}/${path}`
   );
 
+/*
+---------------------------------------------------------------------M O D E L S
+*/
+//___
+// export const cat1_sub1_models = [
+//   'wtyczki-ip54-16A-32A',
+//   'wtyczki-ip67-16A-32A',
+//   'wtyczki-ip67-63A',
+//   'gniazda-ip54-16A-32A',
+//   'gniazda-ip67-16A-32A',
+//   'gniazda-ip67-63A',
+//   'gniazda-ip67-125A',
+//   'wtyczki-ip54-16A-top',
+//   'wtyczki-ip67-16A-top',
+//   'gniazda-ip54-16A-top',
+//   'gniazda-ip67-16A-top',
+//   'wtyczki-ip44-16A-32A',
+// ];
+// export const cat1_allModels = [...cat1_sub1_models];
+// export const allModels = [];
 // export const someFakePath = `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`;
 
 // export const mainCategoriesPath = [
