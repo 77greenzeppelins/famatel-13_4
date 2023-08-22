@@ -11,18 +11,21 @@ import CatalogCardWithModel from '../forMultiPage/catalogs/allCards/cardWithMode
 const SubCatPageContent = (props: DynamicSubCatContent) => {
   /**...*/
   const categorySpecification = catalogStructureData[props.mainCatIndex];
-  const { allProductsImages } = categorySpecification; //__all product images of this cat
+  const { catAllProductsImages, catAllModels } = categorySpecification; //__all product images of this cat
 
-  // const createImageData = allProductsImages[props.subCatIndex].map(
-  //   (item, i) => ({
-  //     path: item.path,
-  //     width: item.width,
-  //     height: item.height,
-  //     alt: item.alt,
-  //   })
-  // );
+  /*
 
-  const createCards = allProductsImages[props.subCatIndex].map((item, i) => {
+  */
+  const createModelsCardData = catAllModels[props.subCatIndex].map(item => ({
+    modelPathSegmant: item.modelPathSegmant,
+    textIcons: item.textIcons,
+    type: item.type,
+    collection: item.collection,
+    altName: item.altName,
+    model: item.model,
+  }));
+
+  const createCards = catAllProductsImages[props.subCatIndex].map((item, i) => {
     return (
       <CatalogCardWithModel
         modelIndex={i}
@@ -34,9 +37,13 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
           alt: item.alt,
         }}
         // catImage={createImageData[i]}
+        // modelPathSegmant={createModelsCardData.modelPathSegmant[i]}
+        // modelPathSegmant="/kkkak"
       />
     );
   });
+
+  console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
 
   /**JSX*/
   return (

@@ -64,7 +64,9 @@ type CatalogStructureData = {
   subCategoriesImages: ImageType_C[];
   svgIcons?: string[];
   labeledIcons?: string[];
-  allProductsImages: ImageType_C[][];
+  // allProductsImages: ImageType_C[][];
+  catAllProductsImages: ImageType_C[][];
+  catAllModels: modelCardsDataType[][];
 };
 
 /*
@@ -77,7 +79,7 @@ type modelCardsDataType = {
   textIcons?: string[];
   // imageData: imgWtyczkiGniazda_02_tablicowe[1],
   type?: string;
-  collection?: string[];
+  collection?: string[] | string;
   altName?: string;
   model?: string; // rarely
 };
@@ -87,6 +89,7 @@ type CardWithModelType = {
   catName?: string;
   catPath?: string; //temporaily... till I define them all...
   catImage: ImageType_C;
+  // modelPathSegmant: string
 };
 
 type modelCardsDataType = {};

@@ -6,7 +6,9 @@ import { styles } from '@/styles';
 import { imgOverlayVar } from '@/lib/fmConfigs/framerMotionConfigs';
 import TwoDigitsDisplayer from '@/components/forMultiPage/atomsLike/digitsDisplayer/twoDigitsDisplayer/TwoDigitsDisplayer';
 /**TS**/
-const CardContent = ({ catName, catImage, modelIndex }: CardWithModelType) => {
+type CardContentProps = Omit<CardWithModelType, 'modelPathSegment'>;
+
+const CardContent = ({ catName, catImage, modelIndex }: CardContentProps) => {
   /**JSX**/
   return (
     <div

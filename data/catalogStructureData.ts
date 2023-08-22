@@ -29,7 +29,8 @@ import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgAllProducts';
 
 /*
-___1. for property: allProductsImages
+catAllModels: cat1_allModelsCard_data,___1. for property: 
+catAllProductsImages
 */
 import { indexImgCat1_ProductsAll } from '@/public/images/all_products/c1_wtyczki-gniazda/imgWtyczkiGniazda';
 import { indexImgCat2_ProductsAll } from '@/public/images/all_products/c2_gniazda-z-blokada/imgGniazdaZBlokada';
@@ -39,6 +40,10 @@ import { indexImgCat8_ProductsAll } from '@/public/images/all_products/c8_obudow
 import { indexImgCat9_ProductsAll } from '@/public/images/all_products/c9_rozdzielnice-modulowe/imgRozdzielniceModulowe';
 import { indexImgCat10_ProductsAll } from '@/public/images/all_products/c10_puszki-instalacyjne/imgPuszkiInstalacyjne';
 
+/*
+___1. for property 
+*/
+import { cat1_allModelsCard_data } from './modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 /*
 used in: [subCat] | page.tsx
 */
@@ -68,9 +73,10 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesNames: [...wtyczkiGniazdaSubCatNames],
     subCategoriesPaths: [...wtyczkiGniazdaSubCatFullPaths],
     subCategoriesImages: indexImgAllSubCategories[0],
-    allProductsImages: indexImgCat1_ProductsAll,
     svgIcons: ['IP54', 'IP67', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__2__gniazda-z-blokada
   {
@@ -83,7 +89,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[1],
     svgIcons: ['IP54', 'IP67', 'IK08', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
-    allProductsImages: indexImgCat2_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat2_ProductsAll,
   },
   //_____category__3__adaptery-przemyslowe
   {
@@ -96,7 +103,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[2],
     svgIcons: ['IP20', 'IP54', 'IP67'],
     labeledIcons: ['16A', '32A'],
-    allProductsImages: indexImgCat3_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat3_ProductsAll,
   },
   //_____category__4__noSubCategory__gniazda-podwieszane
   {
@@ -109,7 +117,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[3], //___fake
     // svgIcons: [''],
     labeledIcons: ['16A', '32A', '63A', '125A'],
-    allProductsImages: indexImgCat1_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__5__przedlużacze-będnowe
   {
@@ -122,7 +131,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[4],
     svgIcons: ['IP55', 'IP67', 'IK06'],
     labeledIcons: ['16A'],
-    allProductsImages: indexImgCat5_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat5_ProductsAll,
   },
   //_____category__6__noSubcategory__rozlaczniki-bezpieczenstwa
   {
@@ -135,7 +145,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[5], //___fake
     svgIcons: ['IP67', 'IK08'],
     labeledIcons: ['16A', '20A', '25A', '32A', '40A'],
-    allProductsImages: indexImgCat1_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__7__noSubcategory__ladowarki-samochodowe
   {
@@ -148,7 +159,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[6], //___fake
     svgIcons: ['IP54', 'IK08'],
     labeledIcons: ['16A', '32A'],
-    allProductsImages: indexImgCat1_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__8__obudowy-i-rozdzielnice
   {
@@ -161,7 +173,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[7],
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
     labeledIcons: ['16A', '32A'],
-    allProductsImages: indexImgCat8_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat8_ProductsAll,
   },
   //_____category__9__rozdzielnice-modulowe
   {
@@ -174,7 +187,8 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[8],
     svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
     labeledIcons: ['16A', '32A'],
-    allProductsImages: indexImgCat9_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat9_ProductsAll,
   },
   //_____category__10__puszki-instalacyjne
   {
@@ -187,6 +201,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[9],
     svgIcons: ['IP20', 'IP44', 'IP55', 'IP65', 'IK07', 'FREE', 'UV', 'IZO'],
     // labeledIcons: [''],
-    allProductsImages: indexImgCat10_ProductsAll,
+    catAllModels: cat1_allModelsCard_data,
+    catAllProductsImages: indexImgCat10_ProductsAll,
   },
 ];

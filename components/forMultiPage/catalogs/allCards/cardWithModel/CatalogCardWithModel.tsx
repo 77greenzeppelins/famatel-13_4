@@ -11,7 +11,8 @@ const CatalogCardWithModel = ({
   catName,
   catPath,
   catImage,
-}: CardWithModelType) => {
+}: // modelPathSegmant,
+CardWithModelType) => {
   /**...**/
   const pathname = usePathname();
   const isActive = pathname === catPath;
@@ -45,6 +46,7 @@ const CatalogCardWithModel = ({
             catName={catName}
             catPath={catPath}
             catImage={catImage}
+            // modelPathSegmant={modelPathSegmant}
           />
         </div>
       </CardFrameGrid>
