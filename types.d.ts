@@ -101,6 +101,17 @@ type CardWithModelType = {
 type CardContentProps = Omit<CardWithModelType, 'modelPath'>;
 
 /*
+___for tables
+*/
+type BasicTableRowType = string[];
+type BasicTableDataType = {
+  headerData: BasicTableRowType;
+  bodyData: BasicTableRowType[];
+};
+
+type DataAsTuble = [string, string];
+type TransparentTableDataType = DataAsTuble[];
+/*
 used in files with images ==> should by delayed ?
 */
 // type IF_ImgStaticData = {

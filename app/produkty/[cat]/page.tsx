@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 import { notFound } from 'next/navigation';
 /**Components**/
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
@@ -17,7 +17,7 @@ interface Props {
   params: { cat: string; categoryIndex: number };
 }
 
-export default async function CategoryPage({ params }: Props) {
+export default function CategoryPage({ params }: Props) {
   /*
   ___1.
   */
@@ -25,12 +25,14 @@ export default async function CategoryPage({ params }: Props) {
     element => element === params.cat
   );
   /*
-  ___1. to trigger not-found.tsx we have to know if path segment (params.cat) is equal to any of predefined paths in mainCategoriesNames
+  ___1. to trigger notFound() and render not-found.tsx we have to know if path segment (params.cat) is equal to any of predefined paths in mainCategoriesPath
   */
   const isCorrect = mainCategoriesPath.find(element => element === params.cat);
   if (isCorrect === undefined) {
     notFound();
   }
+
+  console.log('catIndex', typeof catIndex);
 
   /**JSX**/
   return <CatPageContent categoryIndex={catIndex} path={params.cat} />;

@@ -124,6 +124,10 @@ export const styles = {
     iconTrans:
       'h-6 w-6 text-light group-hover:text-corpo group-hover:translate-x-1 ease-in duration-300  origin-center',
   },
+
+  tableStyles: {
+    cellPaddings: 'px-6 py-3',
+  },
 };
 
 /*

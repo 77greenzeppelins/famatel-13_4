@@ -158,9 +158,9 @@
     hyphens: auto;
   }
 
-  /**
-  * Scrollbar style
-  * set here and add in: @layer base{ body{..., @apply scroll-bar-style;}, ...}
+  /*
+  ***1. Scrollbar style
+  ***2. set here and add in: @layer base{ body{..., @apply scroll-bar-style;}, ...}
   */
   .scroll-bar-style {
     /* IE and Edge */
@@ -180,7 +180,25 @@
   .scroll-bar-style::-webkit-scrollbar-thumb:hover {
     background-color: var(--corpo-grey);
   }
+  /*
+   *** 1. special scrollbar styles for tables
+  */
+  .table-scrollbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .table-scrollbar::-webkit-scrollbar-track {
+    @apply bg-greyShade2;
+  }
+  .table-scrollbar::-webkit-scrollbar-thumb {
+    @apply special-gradient rounded-sm;
+  }
+  .table-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-grey transition-all duration-500;
+  }
 
+  /*
+   *** 1.
+  */
   .general-styles {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

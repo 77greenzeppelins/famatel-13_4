@@ -124,3 +124,12 @@ export const productSearchEngine = {
   hasCard: 'Podierz kartę produktu (PDF)',
   hasDeclaration: 'Podierz deklarację produktu (PDF)',
 };
+
+export const allHeaders = {
+  catPages: ['charakterystyka ogólna', 'normy', 'materiał'],
+  tableHeaders: ['karta katalogowa', 'specyfikacja techniczna'],
+  gniazdaPodwieszanePage: [
+    'Karta katalogowa (warianty 28000)',
+    'Karta katalogowa (warianty 27000)',
+  ],
+};

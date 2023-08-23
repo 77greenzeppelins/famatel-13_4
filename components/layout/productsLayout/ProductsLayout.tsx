@@ -1,6 +1,6 @@
 'use client';
 // import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 /**Components**/
 import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
@@ -31,7 +31,7 @@ const ProductsLayout = () => {
         pathSegments={pathSegments}
         catalogLevel={catalogLevel}
       />
-      <div className="flex gap-x-5">
+      {/* <div className="flex gap-x-5">
         <Link
           className="px-[4px] border border-greyShade2 text-small text-greyShade2"
           href={`${pathname}/wtyczki-i-gniazda-przenosne`}
@@ -44,7 +44,7 @@ const ProductsLayout = () => {
         >
           go to model{' '}
         </Link>
-      </div>
+      </div> */}
     </div>
   ) : null;
 };
