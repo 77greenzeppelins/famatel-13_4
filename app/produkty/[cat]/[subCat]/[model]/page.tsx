@@ -54,7 +54,11 @@ export default async function ModelPage({ params }: Props) {
   const subCatIndex = subCatPaths.findIndex(el => el === params.subCat);
 
   // console.log('subCatIndex:', subCatIndex);
+  const modelPathSegmants = catalogStructureData[mainCatIndex].catAllModels[
+    subCatIndex
+  ].map(({ modelPathSegmant }, i) => modelPathSegmant);
 
+  const modelIndex = modelPathSegmants.findIndex(el => el === params.model);
   /*
    ___1. to trigger not-found.tsx we have to know if path segment (params.model) is equal to any of predefined model's path-segments. 
    ___2. we"predefine" path-segments for models in ... ; this is different approach then in <SubCategoryPage>
@@ -67,9 +71,19 @@ export default async function ModelPage({ params }: Props) {
   // const isPathCorrect = allSubCatPaths.find(
   //   element => element === params.subCat
   // );
-  const isPathCorrect = allModelsPathSegment[mainCatIndex].map(item =>
-    item.find(element => element === params.model)
-  );
+  // const isPathCorrect = allModelsPathSegment[mainCatIndex].map(item =>
+  //   item.find(element => element === params.model)
+  // );
+
+  const isPathCorrect = catalogStructureData[mainCatIndex].catAllModels[
+    subCatIndex
+  ].map(({ modelPathSegmant }) => {
+    // if (modelPathSegmant === params.model) {
+    //   console.log('modelPathSegmant', modelPathSegmant);
+    //   console.log('params.model', params.model);
+    // }
+    return modelPathSegmant === params.model;
+  });
 
   if (isPathCorrect[0] === undefined) {
     notFound();
@@ -84,6 +98,7 @@ export default async function ModelPage({ params }: Props) {
         subCatPath={params.subCat}
         subCatIndex={subCatIndex}
         modelPath={params.model}
+        modelIndex={modelIndex}
       />
     </div>
   );

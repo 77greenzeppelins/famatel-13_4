@@ -53,9 +53,13 @@ type DynamicSubCatContent = {
   subCatPath: string;
   subCatIndex: number;
 };
-
+/*
+___1 used in <ModelPageContent>
+___2 it "expands" some existing type...
+*/
 type DynamicModelContent = DynamicSubCatContent & {
   modelPath: string;
+  modelIndex: number;
 };
 
 type CatalogStructureData = {
@@ -116,9 +120,13 @@ type BasicTableDataType = {
 type DataAsTuble = [string, string];
 type TransparentTableDataType = DataAsTuble[];
 /*
-used in files with images ==> should by delayed ?
+___1.
 */
-// type IF_ImgStaticData = {
-//   image: StaticImageData;
-//   model?: string;
-// };
+type catSchemaType = {
+  catIndex: number;
+  subCatIndex: number;
+  modelIndexd: number;
+};
+
+type subCatSchemaType = Omit<CardWithModelType, 'catIndex'>;
+type modelSchemaType = Omit<subCatSchemaType, 'subCatIndex'>;

@@ -1,6 +1,7 @@
 'use client';
 /**Components**/
 import Cat1Schemas from './cat1/Cat1Schemas';
+import Cat2Schemas from './cat2/Cat2Schemas';
 /**Basic Data**/
 import {
   allModelsPathSegment,
@@ -15,11 +16,22 @@ const ModelPageContent = (props: DynamicModelContent) => {
   /*
   ___1.
   */
-  const schemaSwitcher = (index: number) => {
+  const schemaSwitcher = (
+    index: number,
+    subCatIndex: number,
+    modelIndexd: number
+  ) => {
     switch (index) {
       case 0:
-        return <Cat1Schemas catIndex={index} />;
-      // case 2:
+        return (
+          <Cat1Schemas
+            catIndex={index}
+            subCatIndex={subCatIndex}
+            modelIndexd={modelIndexd}
+          />
+        );
+      // case 1:
+      //   return <Cat2Schemas catIndex={index} />;
       // case 4:
       // case 7:
       // case 8:
@@ -38,34 +50,43 @@ const ModelPageContent = (props: DynamicModelContent) => {
     }
   };
 
-  // console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
-  // console.log(
-  //   'cat1_allModels_pathSegments:',
-  //   typeof cat1_allModels_pathSegments
-  // );
-  const isPathCorrect = allModelsPathSegment[0].map(item =>
-    item.find(element => element === props.modelPath)
-  );
-
-  // const isPathCorrect = cat1_allModels_pathSegments.find(
-  //   element => element === props.modelPath
-  // );
-  // const x = cat1_allModels_pathSegments.map(item =>
-  //   item.find(element => element === props.modelPath)
-  // );
-  // console.log('...isPathCorrect:', isPathCorrect[0]);
-
   /**JSX*/
   return (
-    <div className="w-full wrapper-1">
+    <div className="flex flex-col text-greyShade2 text-medium wrapper-1">
       <div className="">current path: {props.mainCatPath}</div>
       <div className="">current path: {props.subCatPath}</div>
       <div className="">current path: {props.modelPath}</div>
+      {schemaSwitcher(props.mainCatIndex, props.subCatIndex, props.modelIndex)}
+      {/* <p className="text-medium">{categoryIndex}</p> */}
     </div>
   );
+  // return (
+  //   <div className="w-full wrapper-1">
+  //     <div className="">current path: {props.mainCatPath}</div>
+  //     <div className="">current path: {props.subCatPath}</div>
+  //     <div className="">current path: {props.modelPath}</div>
+  //   </div>
+  // );
 };
 
 export default ModelPageContent;
+
+// console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
+// console.log(
+//   'cat1_allModels_pathSegments:',
+//   typeof cat1_allModels_pathSegments
+// );
+// const isPathCorrect = allModelsPathSegment[0].map(item =>
+//   item.find(element => element === props.modelPath)
+// );
+
+// const isPathCorrect = cat1_allModels_pathSegments.find(
+//   element => element === props.modelPath
+// );
+// const x = cat1_allModels_pathSegments.map(item =>
+//   item.find(element => element === props.modelPath)
+// );
+// console.log('...isPathCorrect:', isPathCorrect[0]);
 
 {
   /* <CatalogGrid>
