@@ -1,22 +1,42 @@
 'use client';
-
+/**Components**/
+import Cat1Schemas from './cat1/Cat1Schemas';
+/**Basic Data**/
 import {
   allModelsPathSegment,
   catalogStructureData,
 } from '@/data/catalogStructureData';
-import CatalogGrid from '../forMultiPage/catalogs/catalogGrid/CatalogGrid';
-import CatalogCardWithModel from '../forMultiPage/catalogs/allCards/cardWithModel/CatalogCardWithModel';
-import { mainPagesPaths } from '@/data/routingData';
-import { cat1_allModels_pathSegments } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
-
-// import { mainCategoriesPath } from "@/data/routingData";
-
-// mainCategoriesPath
 
 const ModelPageContent = (props: DynamicModelContent) => {
   /**...*/
   const categorySpecification = catalogStructureData[props.mainCatIndex];
   const { catAllProductsImages, catAllModels } = categorySpecification; //__all product images of this cat
+
+  /*
+  ___1.
+  */
+  const schemaSwitcher = (index: number) => {
+    switch (index) {
+      case 0:
+        return <Cat1Schemas catIndex={index} />;
+      // case 2:
+      // case 4:
+      // case 7:
+      // case 8:
+      // case 9:
+      //   return <CategorySchema1 index={index} />;
+      // case 1:
+      //   return <CategorySchema2 index={index} />;
+      // case 3:
+      //   return <GniazdaPodwieszane index={index} />;
+      // case 5:
+      //   return <RozlacznikiBezpieczenstwa index={index} />;
+      // case 6:
+      //   return <LadowarkiSamochodowe index={index} />;
+      default:
+        return <div className="w-full h-full bg-dark fc">...</div>;
+    }
+  };
 
   // console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
   // console.log(
@@ -33,8 +53,7 @@ const ModelPageContent = (props: DynamicModelContent) => {
   // const x = cat1_allModels_pathSegments.map(item =>
   //   item.find(element => element === props.modelPath)
   // );
-
-  console.log('...isPathCorrect:', isPathCorrect[0]);
+  // console.log('...isPathCorrect:', isPathCorrect[0]);
 
   /**JSX*/
   return (
