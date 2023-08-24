@@ -133,6 +133,9 @@
   .text-regular {
     @apply text-xs lg:text-base tracking-[2px];
   }
+  .text-card {
+    @apply text-xs xl:text-base tracking-[2px];
+  }
   .text-medium {
     @apply text-base xs3xx:text-lg xs4xx:text-xl  xs:text-2xl lg:text-3xl xxl:text-4xl tracking-[2px] word-spacing-0125 lg:word-spacing-025;
   }

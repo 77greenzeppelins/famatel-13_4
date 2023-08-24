@@ -93,9 +93,13 @@ ___used in: <CatalogCardWithModel>
 */
 type CardWithModelType = {
   modelIndex?: number;
-  catName?: string;
-  catImage: ImageType_C;
+  modelImage: ImageType_C;
   modelPath: string;
+  textIcons?: string[];
+  type?: string;
+  collection?: string | string[];
+  altName?: string;
+  model?: string;
 };
 
 type CardContentProps = Omit<CardWithModelType, 'modelPath'>;

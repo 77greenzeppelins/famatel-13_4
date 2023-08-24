@@ -119,7 +119,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     subCategoriesImages: indexImgAllSubCategories[0],
     svgIcons: ['IP54', 'IP67', 'ENEC'],
     labeledIcons: ['16A', '32A', '63A', '125A'],
-    catAllModels: cat1_allModelsCard_data,
+    catAllModels: cat1_allModelsCard_data, //___for <CatalogCardWithModel>
     catAllProductsImages: indexImgCat1_ProductsAll,
   },
   //_____category__2__gniazda-z-blokada

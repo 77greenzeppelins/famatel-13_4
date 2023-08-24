@@ -1,30 +1,20 @@
 import Image from 'next/image';
-/**Framer Motion Staff*/
-import { motion } from 'framer-motion';
-import { imgOverlayVar } from '@/lib/fmConfigs/framerMotionConfigs';
 
 const GraphicSection = (props: ImageType_C) => {
   /**JSX**/
   return (
     <div
       data-component="GraphicSection_DropDownMenuCard"
-      className="relative flex items-end justify-center w-full"
+      className="relative p-4 overflow-hidden fc aspect-square bg-light max-h-[200px] md:max-h-[220px] lg:max-h-[260px]"
+      //___ p-2 max-h-[200px] md:max-h-[220px] lg:max-h-[260px]
     >
-      <div className="relative fc h-[80%] md:h-[90%]  aspect-square bg-light p-2">
-        <Image
-          className="object-contain w-full h-full aspect-square "
-          alt={props.alt}
-          src={props.path}
-          width={props.width}
-          height={props.height}
-        />
-      </div>
-      {/* <motion.div
-        className="absolute inset-0 bg-dark"
-        variants={imgOverlayVar}
-        initial="initial"
-        animate="animate"
-      /> */}
+      <Image
+        className="object-contain "
+        alt={props.alt}
+        src={props.path}
+        width={props.width}
+        height={props.height}
+      />
     </div>
   );
 };

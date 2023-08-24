@@ -20,9 +20,7 @@ const CatalogCardWithSubCat = ({
   return (
     <li
       //___className="grid py-2 w-[96%]"
-      className={`relative h-[220px] sm:h-[240px] cursor-pointer group select-none no-sparkling ${
-        isActive ? '' : 'group'
-      }`}
+      className={`relative h-[220px] md:h-[240px] lg:h-[280px] cursor-pointer group select-none no-sparkling`}
     >
       <CardFrameGrid innerContainerStyle="grid relative col-span-full row-span-full w-full h-full rounded-md bg-dark z-10">
         <Link

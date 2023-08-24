@@ -4,7 +4,6 @@ import { catalogStructureData } from '@/data/catalogStructureData';
 import CatalogGrid from '../forMultiPage/catalogs/catalogGrid/CatalogGrid';
 import CatalogCardWithModel from '../forMultiPage/catalogs/allCards/cardWithModel/CatalogCardWithModel';
 import { mainPagesPaths } from '@/data/routingData';
-import { cat1_allModels_pathSegments } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 // import { mainCategoriesPath } from "@/data/routingData";
 
@@ -16,7 +15,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
   const { catAllProductsImages, catAllModels } = categorySpecification; //__all product images of this cat
 
   /*
-
+  ___1. catAllModels[props.subCatIndex] ==> cat1_allModelsCard_data
   */
   const createModelsCardData = catAllModels[props.subCatIndex].map(item => ({
     modelPath: `${mainPagesPaths.produkty}/${props.mainCatPath}/${props.subCatPath}/${item.modelPathSegmant}`,
@@ -30,9 +29,9 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
   const createCards = catAllProductsImages[props.subCatIndex].map((item, i) => {
     return (
       <CatalogCardWithModel
-        modelIndex={i}
         key={i}
-        catImage={{
+        modelIndex={i}
+        modelImage={{
           path: item.path,
           width: item.width,
           height: item.height,
@@ -41,17 +40,21 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
         // catImage={createImageData[i]}
         // modelPathSegmant={createModelsCardData.modelPathSegmant[i]}
         modelPath={createModelsCardData[i].modelPath}
+        type={createModelsCardData[i].type}
+        collection={createModelsCardData[i].collection}
+        textIcons={createModelsCardData[i].textIcons}
+        // altName={createModelsCardData[i].altName}
+        // model={createModelsCardData[i].model}
       />
     );
   });
 
-  // console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
-  // console.log('cat1_allModels_pathSegments:', cat1_allModels_pathSegments);
-
   /**JSX*/
   return (
-    <div className="w-full wrapper-1">
-      <CatalogGrid>{createCards}</CatalogGrid>
+    <div className="w-full pt-10 wrapper-1">
+      <CatalogGrid containerStyle="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] xxl:grid-cols-[1fr_1fr_1fr] gap-6 xl:gap-10 w-full">
+        {createCards}
+      </CatalogGrid>
     </div>
   );
 };

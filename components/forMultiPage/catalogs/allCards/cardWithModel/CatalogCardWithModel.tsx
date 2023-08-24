@@ -8,29 +8,24 @@ import CardContent from './content/CardContent';
 
 const CatalogCardWithModel = ({
   modelIndex,
-  catName,
-  // catPath,
-  catImage,
+  modelImage,
   modelPath,
+  type,
+  collection,
+  textIcons,
 }: // ,
 CardWithModelType) => {
-  /**...**/
-  // const pathname = usePathname();
-  // const isActive = pathname === catPath;
-  /** */
-  // console.log('CatalogCardWithModel / pathname:', pathname);
-
   /**JSX**/
   return (
     <li
       //___className="grid py-2 w-[96%]"
-      className={`relative h-[220px] sm:h-[240px] cursor-pointer group select-none no-sparkling 
-      `}
+      className={`relative h-[220px] md:h-[240px] lg:h-[300px] xl:h-[320px] cursor-pointer group select-none no-sparkling`}
+      //___h-[220px] sm:h-[240px]
       //___${isActive ? '' : 'group'}
     >
       <CardFrameGrid innerContainerStyle="grid relative col-span-full row-span-full w-full h-full rounded-md bg-dark z-10">
         <Link
-          aria-label={`Karta kategorii: ${catName}`}
+          aria-label={`Karta modelu: ${type}`}
           role="link"
           className="z-10 w-full h-full pointer-events-auto abs-cell"
           href={modelPath}
@@ -38,16 +33,16 @@ CardWithModelType) => {
         />
         <div
           // className="absolute inset-0 z-5"
-          className="z-0 w-full h-full abs-cell"
+          className="z-0 w-full abs-cell"
           role="region"
-          aria-label={`Tekstowo-graficzna zawartość karty kategorii: ${catName}`}
+          aria-label={`Tekstowo-graficzna zawartość karty kategorii: ${type}`}
         >
           <CardContent
             modelIndex={modelIndex}
-            catName={catName}
-            // catPath={catPath}
-            catImage={catImage}
-            // modelPathSegmant={modelPathSegmant}
+            modelImage={modelImage}
+            type={type}
+            collection={collection}
+            textIcons={textIcons}
           />
         </div>
       </CardFrameGrid>
