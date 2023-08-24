@@ -14,7 +14,7 @@ const BodyCell = ({
   return (
     <th
       className={`
-        ${tailwindStyle} ${styles.tableStyles.cellPaddings} text-center text-xs text-dark  bg-greyTint2 hover:bg-greyShade1 hover:text-light ${styles.basicAnimation}`}
+        ${tailwindStyle} ${styles.tableStyles.cellPaddings} text-center text-xs text-dark  bg-greyTint2 hover:bg-greyShade1 hover:text-light hover:border-dark border ${styles.basicAnimation}`}
       rowSpan={rowSpan}
       colSpan={colSpan}
     >

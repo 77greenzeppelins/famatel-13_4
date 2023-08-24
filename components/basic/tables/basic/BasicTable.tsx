@@ -1,32 +1,25 @@
-import React from 'react';
+/**Components**/
+import TableWrapper from '../_atoms/tableWrapper/TableWrapper';
 import HeaderCell from './headerStaff/HeaderCell';
 import RowWithSideHeafer from './bodyStaff/bodyRows/RowWithSideHeafer';
 
 const BasicTable = ({ headerData, bodyData }: BasicTableDataType) => {
+  /**JSX**/
   return (
-    <div
-      className="relative pb-10 overflow-x-auto table-scrollbar"
-      //___sm:rounded-lg
-    >
-      <table
-        className="border-collapse table-fixed "
-        //___border-separate border-spacing-[1px]
-        //___border-collapse
-      >
-        <thead className="text-xs uppercase text-light bg-greyShade2">
-          <tr>
-            {headerData.map((cell, i) => (
-              <HeaderCell key={i} label={cell} />
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {bodyData.map((bodyRowData, i) => (
-            <RowWithSideHeafer key={i} bodyRowData={bodyRowData} />
+    <TableWrapper>
+      <thead className="text-xs uppercase text-light bg-greyShade2">
+        <tr>
+          {headerData.map((cell, i) => (
+            <HeaderCell key={i} label={cell} />
           ))}
-        </tbody>
-      </table>
-    </div>
+        </tr>
+      </thead>
+      <tbody>
+        {bodyData.map((bodyRowData, i) => (
+          <RowWithSideHeafer key={i} bodyRowData={bodyRowData} />
+        ))}
+      </tbody>
+    </TableWrapper>
   );
 };
 

@@ -1,3 +1,4 @@
+/**Tailwind Styles**/
 import { styles } from '@/styles';
 
 const HeaderCell = ({
@@ -5,16 +6,25 @@ const HeaderCell = ({
   tailwindStyle,
   rowSpan,
   colSpan,
+  textStyles,
+  isTopHeader = true,
 }: {
   label: string;
   tailwindStyle?: string;
   rowSpan?: number;
   colSpan?: number;
+  textStyles?: string;
+  isTopHeader?: boolean;
 }) => {
+  /**JSX**/
   return (
     <th
       className={`
-        ${tailwindStyle} ${styles.tableStyles.cellPaddings} text-center text-xs text-light uppercase bg-greyShade2 group-hover:bg-corpo ${styles.basicAnimation}`}
+        ${tailwindStyle} ${styles.tableStyles.cellPaddings}   ${
+        textStyles ? textStyles : 'uppercase text-center text-xs text-light'
+      } bg-greyShade2 ${isTopHeader ? '' : 'hover:bg-corpo'}  ${
+        styles.basicAnimation
+      }`}
       rowSpan={rowSpan}
       colSpan={colSpan}
     >

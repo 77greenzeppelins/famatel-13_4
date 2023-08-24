@@ -12,7 +12,7 @@ const HeaderCell = ({
   return (
     <th
       scope={scope ? scope : 'col'}
-      className={`px-6 py-3 text-xs uppercase border text-light bg-greyShade2 border-dark group-hover:bg-corpo ${customeStyle} ${styles.basicAnimation} min-w-[100px]`}
+      className={`px-6 py-3 text-xs uppercase  text-light bg-greyShade2  group-hover:bg-corpo ${customeStyle} ${styles.basicAnimation} min-w-[100px]`}
     >
       {label}
     </th>

@@ -6,11 +6,12 @@ import BodyCell from '../../_atoms/bodyStaff/BodyCell';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
 /**Basic Data**/
-import { catalogTable_1_data } from '@/data/modelsData/cat_6_rozlacznikiBezpieczenstwa/cat6_rozlacznikBezpieczenstwa_data';
+import { ladowarkiSamochodowe_feat_2_data } from '@/data/modelsData/cat_7_ladowarki-samochodowe/cat7_ladowarkiSamochodowe_data';
 
 const Table1 = () => {
   /**Data Destr...**/
-  const { header, sections } = catalogTable_1_data;
+
+  const { header, bodyRows } = ladowarkiSamochodowe_feat_2_data;
 
   const {
     tableStyles: { cellPaddings },
@@ -23,23 +24,26 @@ const Table1 = () => {
     });
   };
 
-  const createTableBlocks = sections.map(
-    ({ sideHeaderSpan, bodyRow, bodyRows }, i) => {
-      return (
-        <React.Fragment key={i}>
-          <tr>
-            <HeaderCell label={sideHeaderSpan} colSpan={1} rowSpan={6} />
-            {bodyRow.map((cellData, i) => (
-              <BodyCell key={i} label={cellData} colSpan={1} />
-            ))}
-          </tr>
-          {bodyRows.map((rowData, i) => (
-            <tr key={i}>{createRow(rowData)}</tr>
-          ))}
-        </React.Fragment>
-      );
-    }
-  );
+  const createTableBody = bodyRows.map((rowData, i) => {
+    return (
+      <tr key={i}>
+        {rowData.map((cellData, i) => {
+          if (i === 0) {
+            return (
+              <HeaderCell
+                key={i}
+                label={cellData}
+                colSpan={2}
+                rowSpan={1}
+                textStyles={'text-left text-xs text-light'}
+              />
+            );
+          }
+          return <BodyCell key={i} label={cellData} colSpan={1} />;
+        })}
+      </tr>
+    );
+  });
 
   /**JSX**/
   return (
@@ -50,16 +54,18 @@ const Table1 = () => {
           {header.map((label, i) => (
             <HeaderCell
               key={i}
-              tailwindStyle={`w-1/4 ${cellPaddings} text-center bg-greyShade2 w-[300px]`}
+              tailwindStyle={`w-1/4 ${cellPaddings} text-center bg-greyShade2 ${
+                i === 0 ? 'w-[600px]' : 'w-[300px]'
+              }`}
               label={label}
-              colSpan={1}
+              colSpan={i === 0 ? 2 : 1}
               rowSpan={1}
             />
           ))}
         </tr>
       </thead>
       {/****************************************************************Body*/}
-      <tbody>{createTableBlocks}</tbody>
+      <tbody>{createTableBody}</tbody>
     </TableWrapper>
   );
 };
