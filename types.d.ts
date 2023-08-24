@@ -122,11 +122,11 @@ type TransparentTableDataType = DataAsTuble[];
 /*
 ___1.
 */
-type catSchemaType = {
+type CatSchemaType = {
   catIndex: number;
   subCatIndex: number;
-  modelIndexd: number;
+  modelIndex: number;
 };
 
-type subCatSchemaType = Omit<CardWithModelType, 'catIndex'>;
-type modelSchemaType = Omit<subCatSchemaType, 'subCatIndex'>;
+type SubCatSchemaType = Omit<CatSchemaType, 'catIndex'>;
+type ModelSchemaType = Omit<SubCatSchemaType, 'subCatIndex'>;

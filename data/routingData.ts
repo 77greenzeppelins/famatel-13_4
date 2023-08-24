@@ -150,7 +150,7 @@ export const rozdzielniceModuloweSubCatNames: string[] = [
   'Rozdzielnice ścienne IP65',
   'Rozdzielnice modułowe IP65',
   'Rozdzielnice modułowe Nuova IP40',
-  'Rozdzielnice modułowe Nuova+ IP40',
+  'Rozdzielnice modułowe Nuova + IP40',
   'Rozdzielnice modułowe Vita IP40',
   'Rozdzielnice modułowe ścienne ICP',
   'Rozdzielnice modułowe metalowe IP40',

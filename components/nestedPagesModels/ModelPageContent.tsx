@@ -27,7 +27,7 @@ const ModelPageContent = (props: DynamicModelContent) => {
           <Cat1Schemas
             catIndex={index}
             subCatIndex={subCatIndex}
-            modelIndexd={modelIndexd}
+            modelIndex={modelIndexd}
           />
         );
       // case 1:
