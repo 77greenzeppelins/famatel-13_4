@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 /**Components**/
 import ListIcon from '@/components/SVG/icons/heroIcons/ListIcon';
 /**FramerMotion Staff*/
@@ -21,7 +22,10 @@ const DropDownMenuButton = ({
   contentType,
   isOverlay,
 }: Props) => {
-  /**GlobalState Section**/
+  /**...**/
+  const pathname = usePathname();
+  const styleCondition = pathname.split('/').length > 2;
+
   /**LocalState**/
   const [isDisabled, setIsDisabled] = useState(false);
   /**onClick Handler*/
@@ -51,8 +55,13 @@ const DropDownMenuButton = ({
   return (
     <div
       className={`w-10 h-10 ${
-        condition ? 'border fc border-corpo' : 'border fc border-grey'
-      } transition-all duration-[300] delay-100 ease-in`}
+        condition
+          ? 'border fc border-corpo duration-300 ease-linear'
+          : styleCondition
+          ? 'border fc border-dark duration-300 ease-linear'
+          : 'border fc border-grey duration-300 ease-linear'
+      } `}
+      //___transition-all duration-[300] delay-100 ease-in
     >
       <motion.button
         disabled={isDisabled}
@@ -61,7 +70,7 @@ const DropDownMenuButton = ({
         onClick={onClickHandler}
         className={`w-6 h-6 ${
           conditionDisable ? 'pointer-events-none ' : 'pointer-events-auto'
-        } origin-center  fc focus:outline-none disable focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark focus-visible:ring-corpo`}
+        } origin-center fc focus:outline-none disable focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark focus-visible:ring-corpo`}
         //___focus-visible:ring-2 focus-visible:ring-blue-500
         //___focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark
         animate={{
@@ -73,7 +82,11 @@ const DropDownMenuButton = ({
           //   pathStyle={`${
           //     condition ? 'stroke-corpo ' : 'stroke-dark'
           //   } transition-all duration-[400] delay-100 ease-in`}
-          pathStyle="stroke-dark"
+          pathStyle={
+            styleCondition
+              ? 'stroke-grey duration-300 ease-linear'
+              : 'stroke-dark duration-300 ease-linear'
+          }
           strokeWidth={1.5}
         />
       </motion.button>

@@ -12,6 +12,7 @@ export const styles = {
   basicHeaderBoxStyle: 'w-[10px] h-[10px] aspect-square bg-corpo',
   basicAnimation: 'duration-300 delay-100 ease-in',
   lazyAnimation: 'duration-[0.6s] delay-100 ease-in',
+  nestedAnimation: 'duration-300 ease-linear', //__used when pathName is at least on products cat level
 
   /*
   ___footer settings

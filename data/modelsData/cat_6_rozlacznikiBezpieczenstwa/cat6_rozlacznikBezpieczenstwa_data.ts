@@ -38,7 +38,6 @@ const catalogTable_1_data = {
       sideHeaderSpan: '32A',
       bodyRow: ['2+E', '-', '25504'],
       bodyRows: [
-        // ['2+E', '-', '25504'],
         ['2+NP+E', 'N nierozłączany', '25525'],
         ['3+E', '-', '25505'],
         ['3+NP+E', 'N nierozłączany', '25526'],
@@ -50,7 +49,6 @@ const catalogTable_1_data = {
       sideHeaderSpan: '40A',
       bodyRow: ['2+E', '-', '25507'],
       bodyRows: [
-        // ['2+E', '-', '25507'],
         ['2+NP+E', 'N nierozłączany', '25528'],
         ['3+E', '-', '25508'],
         ['3+NP+E', 'N nierozłączany', '25529'],

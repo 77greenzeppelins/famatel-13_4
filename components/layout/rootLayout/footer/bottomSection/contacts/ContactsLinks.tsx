@@ -31,7 +31,9 @@ const ContactsLinks = ({
   /**JSX**/
   return (
     <address className="not-italic">
-      <ul className={containerStyle}>
+      <ul
+        className={containerStyle ? containerStyle : 'flex flex-col gap-y-5 '}
+      >
         <li>
           <DirectPhoneGK
             aStyle={aStyle ? aStyle : linkContainer}

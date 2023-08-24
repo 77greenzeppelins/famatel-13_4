@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import { notFound } from 'next/navigation';
 /**Components**/
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
@@ -31,8 +31,6 @@ export default function CategoryPage({ params }: Props) {
   if (isCorrect === undefined) {
     notFound();
   }
-
-  console.log('catIndex', typeof catIndex);
 
   /**JSX**/
   return <CatPageContent categoryIndex={catIndex} path={params.cat} />;

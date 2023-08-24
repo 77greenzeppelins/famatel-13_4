@@ -1,7 +1,7 @@
-import React from 'react';
+/**Components**/
+import HeaderLink from '@/components/basic/links/headerLink/HeaderLink';
 /**BasicData**/
 import { mainPagesData } from '@/data/basicData';
-import HeaderLink from '@/components/basic/links/headerLink/HeaderLink';
 
 const NavPanel = () => {
   /**JSX**/

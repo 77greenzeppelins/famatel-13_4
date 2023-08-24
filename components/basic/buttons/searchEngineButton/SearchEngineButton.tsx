@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 /**Components**/
 import MagGlassIcon from '@/components/SVG/icons/heroIcons/MagGlassIcon';
 /**FramerMotion Staff*/
@@ -20,7 +21,9 @@ const SearchEngineButton = ({
   contentType,
   isOverlay,
 }: Props) => {
-  /**GlobalState Section**/
+  /**...**/
+  const pathname = usePathname();
+  const styleCondition = pathname.split('/').length > 2;
   /**LocalState**/
   const [isDisabled, setIsDisabled] = useState(false);
   /**onClick Handler*/
@@ -50,8 +53,12 @@ const SearchEngineButton = ({
   return (
     <div
       className={`w-10 h-10 ${
-        condition ? 'border fc border-corpo' : 'border fc border-grey'
-      } transition-all duration-[300] delay-100 ease-in`}
+        condition
+          ? 'border fc border-corpo duration-300 ease-linear'
+          : styleCondition
+          ? 'border fc border-dark duration-300 ease-linear'
+          : 'border fc border-grey duration-300 ease-linear'
+      }`}
     >
       <motion.button
         disabled={isDisabled}
@@ -72,7 +79,11 @@ const SearchEngineButton = ({
           //   pathStyle={`${
           //     condition ? 'stroke-corpo ' : 'stroke-dark'
           //   } transition-all duration-[400] delay-100 ease-in`}
-          pathStyle="stroke-dark"
+          pathStyle={
+            styleCondition
+              ? 'stroke-grey duration-300 ease-linear'
+              : 'stroke-dark duration-300 ease-linear'
+          }
           strokeWidth={1.5}
         />
       </motion.button>

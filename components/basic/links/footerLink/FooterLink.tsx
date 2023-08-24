@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 /**...**/
 import { createLinkStyle } from '@/lib/handlers/styleCreators';
+import { styles } from '@/styles';
 
 createLinkStyle;
 
@@ -19,6 +20,7 @@ const FooterLink = ({ url, label, labelStyle }: Props) => {
   */
   const pathname = usePathname();
   const isActive = pathname === url;
+  const styleCondition = pathname.split('/').length > 2;
   /**JSX**/
   return (
     <Link
@@ -28,8 +30,14 @@ const FooterLink = ({ url, label, labelStyle }: Props) => {
       scroll={false}
       className={'relative flex flex-col gap-y-[3px] w-full group'}
     >
-      <span className={createLinkStyle(isActive)}>{label}</span>
-      <span className=" w-full h-[1px] border-b border-dark group-hover:border-greyTint2 duration-300 delay-100 ease-in" />
+      <span className={createLinkStyle(isActive, styleCondition)}>{label}</span>
+      <span
+        className={`w-full h-[1px] border-b ${
+          styleCondition
+            ? `border-grey group-hover:border-light ${styles.nestedAnimation}`
+            : `border-dark group-hover:border-greyTint2 ${styles.nestedAnimation}`
+        }`}
+      />
     </Link>
   );
 };
