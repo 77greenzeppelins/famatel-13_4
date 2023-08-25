@@ -24,15 +24,15 @@ import {
   obudowyAndRozdzielniceSubCatFullPaths,
   rozdzielniceModuloweSubCatFullPaths,
   puszkiInstalacyjneSubCatFullPaths,
-  //___
-  // cat1_sub1_models,
 } from './routingData';
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgAllProducts';
 
 /*
-catAllModels: cat1_allModelsCard_data,___1. for property: 
-catAllProductsImages
+catAllModels: cat1_alModelsCard_data,___1. for property: 
+
+catAllCatalogData: allCatalogData[0],catAllProductsImage
+s
 */
 import { indexImgCat1_ProductsAll } from '@/public/images/all_products/c1_wtyczki-gniazda/imgWtyczkiGniazda';
 import { indexImgCat2_ProductsAll } from '@/public/images/all_products/c2_gniazda-z-blokada/imgGniazdaZBlokada';
@@ -71,6 +71,7 @@ import {
   cat10_allModels_pathSegments,
   cat10_allModelsCard_data,
 } from './modelsData/cat_10_puszki-instalacyjne/cat10_allModelsCard_data';
+import { allCatalogData } from './modelsData/indexAllCatalog_data';
 
 /*
 used in: [subCat] | page.tsx
@@ -107,7 +108,7 @@ export const allModelsPathSegment = [
 indexImgCat1_subCat_forCatalog
 ...
  */
-export const catalogStructureData: CatalogStructureData[] = [
+export const catalogStructureData: CatalogStructureData = [
   //_____category__1__wtyczki-gniazda
   {
     mainCategoryIndex: 0,
@@ -121,6 +122,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A', '63A', '125A'],
     catAllModels: cat1_allModelsCard_data, //___for <CatalogCardWithModel>
     catAllProductsImages: indexImgCat1_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__2__gniazda-z-blokada
   {
@@ -135,6 +137,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A', '63A', '125A'],
     catAllModels: cat2_allModelsCard_data,
     catAllProductsImages: indexImgCat2_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__3__adaptery-przemyslowe
   {
@@ -149,6 +152,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A'],
     catAllModels: cat3_allModelsCard_data,
     catAllProductsImages: indexImgCat3_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__4__noSubCategory__gniazda-podwieszane
   {
@@ -163,6 +167,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A', '63A', '125A'],
     catAllModels: cat1_allModelsCard_data, //___fake
     catAllProductsImages: indexImgCat1_ProductsAll, //___fake
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__5__przedlużacze-będnowe
   {
@@ -177,6 +182,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A'],
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: indexImgCat5_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__6__noSubcategory__rozlaczniki-bezpieczenstwa
   {
@@ -191,6 +197,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '20A', '25A', '32A', '40A'],
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: indexImgCat1_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__7__noSubcategory__ladowarki-samochodowe
   {
@@ -205,6 +212,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A'],
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: indexImgCat1_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__8__obudowy-i-rozdzielnice
   {
@@ -219,6 +227,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A'],
     catAllModels: cat8_allModelsCard_data,
     catAllProductsImages: indexImgCat8_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__9__rozdzielnice-modulowe
   {
@@ -233,6 +242,7 @@ export const catalogStructureData: CatalogStructureData[] = [
     labeledIcons: ['16A', '32A'],
     catAllModels: cat9_allModelsCard_data,
     catAllProductsImages: indexImgCat9_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
   //_____category__10__puszki-instalacyjne
   {
@@ -247,5 +257,6 @@ export const catalogStructureData: CatalogStructureData[] = [
     // labeledIcons: [''],
     catAllModels: cat10_allModelsCard_data,
     catAllProductsImages: indexImgCat10_ProductsAll,
+    catAllCatalogData: allCatalogData[0],
   },
 ];

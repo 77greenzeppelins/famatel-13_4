@@ -238,6 +238,17 @@ export const kontaktPageData = {
   },
 };
 
+export const AdvancedCatalogNavigationData = {
+  toBeMounted: 2,
+  navLevels: 3,
+};
+
+export const tablesTypes = [
+  'tableType1', //for wtyczkiGniazdaPrzenosne_catalogData
+  'tableType2', //for wtyczkiGniazdaSchukoTablicowe_catalogData
+  'tableType3', //for.....
+];
+
 // export const mainPagesPaths = {
 //   home: '/',
 //   produkty: '/produkty',

@@ -7,6 +7,7 @@ import { styles } from '@/styles';
 import { advCatNav } from '@/data/basicData';
 import { catalogStructureData } from '@/data/catalogStructureData';
 import { wtyczkiGniazdaSubCatFullPaths } from '@/data/routingData';
+import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 
 /**TS**/
 interface Props {
@@ -25,10 +26,6 @@ const NavigationRow = ({ rowIndex, catalogLevel, pathSegments }: Props) => {
   // console.log('wtyczkiGniazdaSubCatFullPaths', wtyczkiGniazdaSubCatFullPaths);
 
   const linkCondition = rowIndex < catalogLevel.length - 1;
-
-  const fakeF = (level: number) => {
-    return `/produkty/${catalogLevel[level]}`;
-  };
 
   const creatHref = (level: number) => {
     switch (level) {
@@ -106,10 +103,18 @@ const NavigationRow = ({ rowIndex, catalogLevel, pathSegments }: Props) => {
   return (
     <div className={`${catalogLevel[rowIndex] ? 'flex flex-col' : 'hidden'} `}>
       <div className="flex items-center py-1 group">
-        <div className="w-10 h-full shrink-0 fc"></div>
-        <p className="text-greyShade1 label-regular">
+        {/* <div className="w-10 h-full shrink-0 fc"></div> */}
+        {/* <p className="text-greyShade1 label-regular">
           {advCatNav.headers[rowIndex]}
-        </p>
+        </p> */}
+        <BasicHeader
+          text={advCatNav.headers[rowIndex]}
+          hasBox={true}
+          hasVerticalOrnament={false}
+          // containerStyle="flex disable-soft"
+          // inlineTextStyle={{ writingMode: 'vertical-rl' }}
+          textStyle="label-regular text-greyShade1"
+        />
       </div>
       <Link
         href={creatHref(rowIndex)}

@@ -4,6 +4,7 @@ import { styles } from '@/styles';
 const HeaderCell = ({
   label,
   tailwindStyle,
+  paddingStyle,
   rowSpan,
   colSpan,
   textStyles,
@@ -11,6 +12,7 @@ const HeaderCell = ({
 }: {
   label: string;
   tailwindStyle?: string;
+  paddingStyle?: string;
   rowSpan?: number;
   colSpan?: number;
   textStyles?: string;
@@ -20,7 +22,9 @@ const HeaderCell = ({
   return (
     <th
       className={`
-        ${tailwindStyle} ${styles.tableStyles.cellPaddings}   ${
+        ${tailwindStyle} ${
+        paddingStyle ? paddingStyle : styles.tableStyles.cellPaddings
+      }   ${
         textStyles ? textStyles : 'uppercase text-center text-xs text-light'
       } bg-greyShade2 ${isTopHeader ? '' : 'hover:bg-corpo'}  ${
         styles.basicAnimation

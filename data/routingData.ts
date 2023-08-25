@@ -13,7 +13,7 @@ export const mainPagesPaths = {
   kontakt: '/kontakt',
 };
 
-export const mainPagesLabels = [
+export const mainPagesLabels: string[] = [
   'O firmie',
   'Produkty',
   'Nowości',
@@ -22,7 +22,7 @@ export const mainPagesLabels = [
   'Kontakt',
 ];
 
-export const mainCategoriesNames = [
+export const mainCategoriesNames: string[] = [
   'Przemysłowe wtyczki i gniazda',
   'Gniazda z rozłącznikiem i blokadą',
   'Adaptery przemysłowe',

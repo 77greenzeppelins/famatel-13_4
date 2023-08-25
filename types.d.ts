@@ -62,7 +62,11 @@ type DynamicModelContent = DynamicSubCatContent & {
   modelIndex: number;
 };
 
-type CatalogStructureData = {
+/*
+used in file: catalogStructureData.ts
+*/
+type CatalogStructureData = CategoryStructureData[];
+type CategoryStructureData = {
   mainCategoryIndex: number;
   mainCategoryName: string;
   mainCategoryPath: string;
@@ -72,25 +76,71 @@ type CatalogStructureData = {
   subCategoriesImages: ImageType_C[];
   svgIcons?: string[];
   labeledIcons?: string[];
-  // allProductsImages: ImageType_C[][];
+  //nested arrays for selecting model data
   catAllProductsImages: ImageType_C[][];
   catAllModels: modelCardsDataType[][];
+  //___
+  catAllCatalogData: CategoryCatalogDataType;
 };
 
+// type CatalogItemVar1Type = {
+//   tablesData: (
+//     | { tableType: string}
+//     | { headerTopData?: string[][]; headerBottomData?: string[][] }
+//     | {
+//         amper: string;
+//         rowsData: string[][];
+//       }
+//     | {
+//         amper: string;
+//         rowsData: string[][];
+//       }
+//   )[];
+// }; // for cat1_subCat1_przenosne
+type CatalogItemVar1Type = {
+  tableType: string;
+  headerTopData: string[][];
+  headerBottomData: string[][];
+  rowsData: string[][][];
+};
+type CatalogDataVar1Type = CatalogItemVar1Type[];
+type KeyValueLineType = { label: string; value: string };
+type CatalogItemVar2Type = {
+  tableType: string;
+  line1?: KeyValueLineType;
+  line2?: KeyValueLineType;
+  line3?: KeyValueLineType;
+  line4?: KeyValueLineType;
+  line5?: KeyValueLineType;
+  line6?: KeyValueLineType;
+}; // for cat1_subCat4_jednofazoweScienne
+type CatalogDataVar2Type = CatalogItemVar2Type[];
+
+type CategoryCatalogDataType = (CatalogDataVar1Type | CatalogDataVar2Type)[];
+type allCatalogDataType = CategoryCatalogDataType[];
+
 /*
-is used in: 
-idea: data for model card in catalog rendered on [subCat] page.tsx; this data are passed to relevant model card & CardWithModelType
+idea: all data for each model
+is used in: card in catalog rendered on [subCat] page.tsx; this data are passed to relevant model card & CardWithModelType
+is used in: schemas on [model] page.tsx | <ModelPageContent>
 */
 type modelCardsDataType = {
   arrayIndex: number;
   modelPathSegmant: string;
   textIcons?: string[];
-  // imageData: imgWtyczkiGniazda_02_tablicowe[1],
   type?: string;
   collection?: string[] | string;
   altName?: string;
   model?: string; // rarely
+  //___
 };
+// type modelDetailedDataType = {
+//   catalogCardType1?: string;
+//   techspecType1?: string;
+// };
+// type catalogCardType1Type = {
+//   header: string[][];
+// };
 
 /*
 ___used in: <CatalogCardWithModel>
@@ -109,18 +159,18 @@ type CardWithModelType = {
 type CardContentProps = Omit<CardWithModelType, 'modelPath'>;
 
 /*
-___for tables
+___types for tables 
 */
 type BasicTableRowType = string[];
 type BasicTableDataType = {
   headerData: BasicTableRowType;
   bodyData: BasicTableRowType[];
 };
-
 type DataAsTuble = [string, string];
 type TransparentTableDataType = DataAsTuble[];
+
 /*
-___1.
+___used in: 
 */
 type CatSchemaType = {
   catIndex: number;

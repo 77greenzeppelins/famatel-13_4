@@ -2,10 +2,7 @@ import { notFound } from 'next/navigation';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
-import {
-  allModelsPathSegment,
-  catalogStructureData,
-} from '@/data/catalogStructureData';
+import { catalogStructureData } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
 
 // export const dynamicParams = false;

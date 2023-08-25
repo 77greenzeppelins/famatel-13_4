@@ -4,8 +4,12 @@
 import { usePathname } from 'next/navigation';
 /**Components**/
 import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
+/**Basic Data**/
+import { AdvancedCatalogNavigationData } from '@/data/basicData';
 
 const ProductsLayout = () => {
+  /**Data destr...**/
+  const { toBeMounted } = AdvancedCatalogNavigationData;
   // const [state, setState] = useState(0);
   // useEffect(() => {
   //   setState(prev => prev + 1);
@@ -18,9 +22,9 @@ const ProductsLayout = () => {
   */
   const pathname = usePathname();
   const pathSegments = pathname.split('/'); // exemple: ['', 'produkty', 'przemyslowe-wtyczki-i-gniazda', 'some-subCategory' , 'some-model']
-  const mountingCondition = pathSegments.length > 2;
+  const mountingCondition = pathSegments.length > toBeMounted;
   //   console.log('pathSegments', pathSegments);
-  const catalogLevel = pathSegments.slice(2); // strats from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
+  const catalogLevel = pathSegments.slice(toBeMounted); // strats from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
   /**JSX**/
   return mountingCondition ? (
     <div

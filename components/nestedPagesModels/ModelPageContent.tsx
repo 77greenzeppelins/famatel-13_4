@@ -1,137 +1,84 @@
 'use client';
 /**Components**/
-import Cat1Schemas from './cat1/Cat1Schemas';
-import Cat2Schemas from './cat2/Cat2Schemas';
+import TableSection from './tableSection/TableSection';
+// import Cat1Schemas from './cat1/Cat1Schemas';
+// import Cat2Schemas from './cat2/Cat2Schemas';
 /**Basic Data**/
-import {
-  allModelsPathSegment,
-  catalogStructureData,
-} from '@/data/catalogStructureData';
+// import { catalogStructureData } from '@/data/catalogStructureData';
 
 const ModelPageContent = (props: DynamicModelContent) => {
-  /**...*/
-  const categorySpecification = catalogStructureData[props.mainCatIndex];
-  const { catAllProductsImages, catAllModels } = categorySpecification; //__all product images of this cat
+  /*
+  ___ step 1 ==> select category data and destructure it
+  */
+  // const categoryAllData = catalogStructureData[props.mainCatIndex]; //__step
+  // const { catAllProductsImages, catAllModels, catAllCatalogData } =
+  //   categoryAllData;
+  /*
+  ___ step 2 ==> select subCategory data
+  */
+  // const subCategoryAllData = catAllModels[props.subCatIndex];
+  /*
+  ___ step 3 ==> last selection ==> as a result we have modelCard; then destr it...
+  */
+  // const modelCard = subCategoryAllData[props.modelIndex];
+  // const { modelPathSegmant } = modelCard;
+  /*
+  ___1. 
+  */
+  // const modelImage = catAllProductsImages[props.subCatIndex][props.modelIndex];
+  // const modelCatalogData =
+  //   catAllCatalogData[props.subCatIndex][props.modelIndex];
+  // // console.log('modelImage:', modelImage);
+  // console.log('modelCatalogData:', modelCatalogData);
 
   /*
   ___1.
   */
-  const schemaSwitcher = (
-    index: number,
-    subCatIndex: number,
-    modelIndexd: number
-  ) => {
-    switch (index) {
-      case 0:
-        return (
-          <Cat1Schemas
-            catIndex={index}
-            subCatIndex={subCatIndex}
-            modelIndex={modelIndexd}
-          />
-        );
-      // case 1:
-      //   return <Cat2Schemas catIndex={index} />;
-      // case 4:
-      // case 7:
-      // case 8:
-      // case 9:
-      //   return <CategorySchema1 index={index} />;
-      // case 1:
-      //   return <CategorySchema2 index={index} />;
-      // case 3:
-      //   return <GniazdaPodwieszane index={index} />;
-      // case 5:
-      //   return <RozlacznikiBezpieczenstwa index={index} />;
-      // case 6:
-      //   return <LadowarkiSamochodowe index={index} />;
-      default:
-        return <div className="w-full h-full bg-dark fc">...</div>;
-    }
-  };
+  // const schemaSwitcher = (
+  //   index: number,
+  //   subCatIndex: number,
+  //   modelIndexd: number
+  // ) => {
+  //   switch (index) {
+  //     case 0:
+  //       return (
+  //         <Cat1Schemas
+  //           catIndex={index}
+  //           subCatIndex={subCatIndex}
+  //           modelIndex={modelIndexd}
+  //         />
+  //       );
+  //     // case 1:
+  //     //   return <Cat2Schemas catIndex={index} />;
+  //     // case 4:
+  //     // case 7:
+  //     // case 8:
+  //     // case 9:
+  //     //   return <CategorySchema1 index={index} />;
+  //     // case 1:
+  //     //   return <CategorySchema2 index={index} />;
+  //     // case 3:
+  //     //   return <GniazdaPodwieszane index={index} />;
+  //     // case 5:
+  //     //   return <RozlacznikiBezpieczenstwa index={index} />;
+  //     // case 6:
+  //     //   return <LadowarkiSamochodowe index={index} />;
+  //     default:
+  //       return <div className="w-full h-full bg-dark fc">...</div>;
+  //   }
+  // };
 
   /**JSX*/
   return (
-    <div className="flex flex-col text-greyShade2 text-medium wrapper-1">
-      <div className="">current path: {props.mainCatPath}</div>
-      <div className="">current path: {props.subCatPath}</div>
-      <div className="">current path: {props.modelPath}</div>
-      {schemaSwitcher(props.mainCatIndex, props.subCatIndex, props.modelIndex)}
-      {/* <p className="text-medium">{categoryIndex}</p> */}
+    <div className="flex flex-col-reverse w-full gap-x-2 xxl:flex-row text-greyShade2 text-medium wrapper-1">
+      <div className="fc w-full xxl:w-[50%] min-h-[25vh]">
+        <TableSection {...props} />
+      </div>
+      <div className="fc w-full xxl:w-[50%] min-h-[25vh] bg-black">
+        Graphic section
+      </div>
     </div>
   );
-  // return (
-  //   <div className="w-full wrapper-1">
-  //     <div className="">current path: {props.mainCatPath}</div>
-  //     <div className="">current path: {props.subCatPath}</div>
-  //     <div className="">current path: {props.modelPath}</div>
-  //   </div>
-  // );
 };
 
 export default ModelPageContent;
-
-// console.log('.....', `${props.mainCatPath}/${props.subCatPath}`);
-// console.log(
-//   'cat1_allModels_pathSegments:',
-//   typeof cat1_allModels_pathSegments
-// );
-// const isPathCorrect = allModelsPathSegment[0].map(item =>
-//   item.find(element => element === props.modelPath)
-// );
-
-// const isPathCorrect = cat1_allModels_pathSegments.find(
-//   element => element === props.modelPath
-// );
-// const x = cat1_allModels_pathSegments.map(item =>
-//   item.find(element => element === props.modelPath)
-// );
-// console.log('...isPathCorrect:', isPathCorrect[0]);
-
-{
-  /* <CatalogGrid>
-        <CatalogCardWithModel
-          modelIndex={createImageData}
-          catImage={{
-            path: item.path,
-            width: item.width,
-            height: item.height,
-            alt: item.alt,
-          }}
-        />
-      </CatalogGrid> */
-}
-
-{
-  /* <div className="text-corpo">{props.mainCatPath}</div>
-      <div className="text-corpo">{props.mainCatIndex}</div>
-      <div className="text-corpo">{props.subCatPath}</div>
-      <div className="text-corpo">{props.subCatIndex}</div> */
-}
-
-//  const createModelsCardData = catAllModels[props.subCatIndex].map(item => ({
-//    modelPath: `${mainPagesPaths.produkty}/${props.mainCatPath}/${props.subCatPath}/${item.modelPathSegmant}`,
-//    textIcons: item.textIcons,
-//    type: item.type,
-//    collection: item.collection,
-//    altName: item.altName,
-//    model: item.model,
-//  }));
-
-// const createCards = catAllProductsImages[props.subCatIndex].map((item, i) => {
-//   return (
-//     <CatalogCardWithModel
-//       modelIndex={i}
-//       key={i}
-//       catImage={{
-//         path: item.path,
-//         width: item.width,
-//         height: item.height,
-//         alt: item.alt,
-//       }}
-//       // catImage={createImageData[i]}
-//       // modelPathSegmant={createModelsCardData.modelPathSegmant[i]}
-//       modelPath={createModelsCardData[i].modelPath}
-//     />
-//   );
-// });
