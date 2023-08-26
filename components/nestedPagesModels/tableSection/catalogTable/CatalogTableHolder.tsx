@@ -57,21 +57,16 @@ const CatalogTableHolder = (props: DynamicModelContent) => {
   };
 
   /*
-  ___1. 
+  ___1. each "catalogData" must have "tableType" property;
   */
   const modelCatalogData =
     catAllCatalogData[props.subCatIndex][props.modelIndex];
   const tableType: string = modelCatalogData.tableType;
 
+  console.log('CatalogTableHolder / modelCatalogData:', modelCatalogData);
+
   /**JSX**/
-  return (
-    <div>
-      {/* <div className="text-regular">current path: {props.mainCatPath}</div>
-      <div className="text-regular">current path: {props.subCatPath}</div>
-      <div className="text-regular">current path: {props.modelPath}</div> */}
-      {schemaSwitcher(tableType)}
-    </div>
-  );
+  return <div>{schemaSwitcher(tableType)}</div>;
 };
 
 export default CatalogTableHolder;

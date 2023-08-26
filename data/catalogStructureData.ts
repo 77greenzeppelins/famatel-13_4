@@ -137,7 +137,7 @@ export const catalogStructureData: CatalogStructureData = [
     labeledIcons: ['16A', '32A', '63A', '125A'],
     catAllModels: cat2_allModelsCard_data,
     catAllProductsImages: indexImgCat2_ProductsAll,
-    catAllCatalogData: allCatalogData[0],
+    catAllCatalogData: allCatalogData[1],
   },
   //_____category__3__adaptery-przemyslowe
   {

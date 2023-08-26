@@ -11,9 +11,9 @@ const headerTopData_1: string[][] = [
 const headerBottomData_1: string[][] = [
   ['Ampery', 'Bieguny', 'Opakowanie'],
   ['Bieguny: 3P 4P 5P', 'Godz.P: 6h 9h 9h'],
-  // ['Bieguny: 3P 4P 5P', 'Godz.P: 6h 9h 9h'],
+  ['Bieguny: 3P 4P 5P', 'Godz.P: 6h 9h 9h'],
   ['Bieguny: 3P 4P 5P', 'Godz.P: 9h 6h 6h'],
-  // ['Bieguny: 3P 4P 5P', 'Godz.P: 7h 7h 7h'],
+  ['Bieguny: 3P 4P 5P', 'Godz.P: 7h 7h 7h'],
 ];
 
 const headerTopData_2: string[][] = [
@@ -38,15 +38,6 @@ const headerBottomData_3: string[][] = [
 
 /*
 Data for Components
-*/
-
-/*
-type CatalogItemVar1Type = {
-    tableType: string;
-    headerTopData: string[][];
-    headerBottomData: string[][];
-    rowsData: string[][][];
-}
 */
 export const wtyczkiGniazdaPrzenosne_catalogData: CatalogDataVar1Type = [
   //__1
@@ -246,70 +237,3 @@ export const wtyczkiGniazdaPrzenosne_catalogData: CatalogDataVar1Type = [
     ],
   },
 ];
-
-// const headerTopData = [
-//   'A',
-//   'B',
-//   'O',
-//   '110V',
-//   '230V',
-//   '400V',
-//   '500V',
-//   // {
-//   //   v: '110V',
-//   //   hz: '50/60Hz',
-//   //   color: '#d9bb1e',
-//   //   pLabel: 'Poles:',
-//   //   pNumbs: ['3P', '4P', '5P'],
-//   //   hLabel: 'Hour P:',
-//   //   hNumbs: ['4h', '4h', '4h'],
-//   // },
-//   // {
-//   //   v: '230V',
-//   //   hz: '50/60Hz',
-//   //   color: '#134976',
-//   //   pLabel: 'Poles:',
-//   //   pNumbs: ['3P', '4P', '5P'],
-//   //   hLabel: 'Hour P:',
-//   //   hNumbs: ['6h', '9h', '9h'],
-//   // },
-//   // {
-//   //   v: '400V',
-//   //   hz: '50/60Hz',
-//   //   color: '#a01b29',
-//   //   pLabel: 'Poles:',
-//   //   pNumbs: ['3P', '4P', '5P'],
-//   //   hLabel: 'Hour P:',
-//   //   hNumbs: ['9h', '6h', '6h'],
-//   // },
-//   // {
-//   //   v: '500V',
-//   //   hz: '50/60Hz',
-//   //   color: '#2c3038',
-//   //   pLabel: 'Poles:',
-//   //   pNumbs: ['3P', '4P', '5P'],
-//   //   hLabel: 'Hour P:',
-//   //   hNumbs: ['7h', '7h', '7h'],
-//   // },
-// ];
-
-// const headerTopDataforTopSpeedPro = [
-//   {
-//     v: '230V',
-//     hz: '50/60Hz',
-//     color: '#134976',
-//     pLabel: 'Poles:',
-//     pNumbs: ['3P', '4P', '5P'],
-//     hLabel: 'Hour P:',
-//     hNumbs: ['6h', '9h', '9h'],
-//   },
-//   {
-//     v: '400V',
-//     hz: '50/60Hz',
-//     color: '#a01b29',
-//     pLabel: 'Poles:',
-//     pNumbs: ['3P', '4P', '5P'],
-//     hLabel: 'Hour P:',
-//     hNumbs: ['9h', '6h', '6h'],
-//   },
-// ];
