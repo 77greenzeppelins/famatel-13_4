@@ -247,7 +247,8 @@ export const tablesTypes = [
   'tableType1', //for wtyczkiGniazdaPrzenosne_catalogData
   'tableType2', //for wtyczkiGniazdaSchukoTablicowe_catalogData
   'tableType3', //for.....
-];
+]; //___should be catalogTablesTypes...
+export const techSpecTables = ['techSpecTableVer1_basic', 'techSpecTableVer1'];
 
 // export const mainPagesPaths = {
 //   home: '/',

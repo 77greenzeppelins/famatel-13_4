@@ -30,9 +30,7 @@ const CatalogTableVer1 = ({ data }: Props) => {
   const firstThreeCols = headerBottomData[0].map(i => i);
   const bottomHeader = [
     ...firstThreeCols,
-    ...headerBottomData
-      .slice(1)
-      .map(item => item.join('\u00A0\u00A0\u00A0\u00A0')),
+    ...headerBottomData.slice(1).map(item => item.join('\u00A0\u00A0\u00A0')),
   ];
 
   /*
@@ -66,11 +64,20 @@ const CatalogTableVer1 = ({ data }: Props) => {
                   : 'bg-dark'
               }
               ${
-                i > 0 && firstHeaderRow.length === 5
-                  ? 'w-[200px]'
-                  : i > 0 && firstHeaderRow.length < 5
+                // i > 0 && firstHeaderRow.length === 5
+                //   ? 'w-[200px]'
+                //   : i > 0 && firstHeaderRow.length < 5
+                //   ? 'w-[360px]'
+                //   : 'w-[300px]'
+                i === 0
                   ? 'w-[360px]'
-                  : 'w-[300px]'
+                  : i > 0 && firstHeaderRowRestCells.length === 4
+                  ? 'w-[220px]'
+                  : i > 0 && firstHeaderRowRestCells.length === 3
+                  ? 'w-[200px]'
+                  : i > 0 && firstHeaderRowRestCells.length < 3
+                  ? 'w-[200px]'
+                  : 'w-[200px]'
               }`}
               label={cellData}
               colSpan={

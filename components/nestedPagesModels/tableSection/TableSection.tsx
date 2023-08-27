@@ -1,5 +1,6 @@
 /**Components**/
 import CatalogTableHolder from './catalogTable/CatalogTableHolder';
+import TechSpecTableHolder from './techSpecTable/TechSpecTableHolder';
 
 const TableSection = (props: DynamicModelContent) => {
   /**JSX**/
@@ -8,7 +9,9 @@ const TableSection = (props: DynamicModelContent) => {
       <div className="w-full py-6">
         <CatalogTableHolder {...props} />
       </div>
-      <div className="w-full py-6 bg-yellow-600">TechSpec Table</div>
+      <div className="w-full py-6">
+        <TechSpecTableHolder {...props} />
+      </div>
     </div>
   );
 };

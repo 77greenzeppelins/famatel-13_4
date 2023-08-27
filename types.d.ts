@@ -80,23 +80,10 @@ type CategoryStructureData = {
   catAllProductsImages: ImageType_C[][];
   catAllModels: modelCardsDataType[][];
   //___
-  catAllCatalogData: CategoryCatalogDataType;
+  catAllCatalogData: CategoryCatalogDataType | undefined;
+  catAllTechData: CategoryTechDataType;
 };
 
-// type CatalogItemVar1Type = {
-//   tablesData: (
-//     | { tableType: string}
-//     | { headerTopData?: string[][]; headerBottomData?: string[][] }
-//     | {
-//         amper: string;
-//         rowsData: string[][];
-//       }
-//     | {
-//         amper: string;
-//         rowsData: string[][];
-//       }
-//   )[];
-// }; // for cat1_subCat1_przenosne
 type CatalogItemVar1Type = {
   tableType: string;
   headerTopData: string[][];
@@ -134,14 +121,6 @@ type modelCardsDataType = {
   model?: string; // rarely
   //___
 };
-// type modelDetailedDataType = {
-//   catalogCardType1?: string;
-//   techspecType1?: string;
-// };
-// type catalogCardType1Type = {
-//   header: string[][];
-// };
-
 /*
 ___used in: <CatalogCardWithModel>
 */
@@ -165,12 +144,14 @@ type BasicTableRowType = string[];
 type BasicTableDataType = {
   headerData: BasicTableRowType;
   bodyData: BasicTableRowType[];
+  headerColSpan?: number | number[];
+  sideHeaderStyle?: string;
 };
-type DataAsTuble = [string, string];
-type TransparentTableDataType = DataAsTuble[];
+type DataAsTuple = [string, string];
+type TransparentTableDataType = DataAsTuple[];
 
 /*
-___used in: 
+___used in: S
 */
 type CatSchemaType = {
   catIndex: number;
@@ -180,3 +161,28 @@ type CatSchemaType = {
 
 type SubCatSchemaType = Omit<CatSchemaType, 'catIndex'>;
 type ModelSchemaType = Omit<SubCatSchemaType, 'subCatIndex'>;
+
+/*
+___for model techSpecData ==> including "indxFiles" that stores individual files in arrays 
+*/
+type ObudowaPustaTechDataType = {
+  tableType: string;
+  header: string[][];
+  tablesData: { label: string; value: string }[][];
+  norma: string[];
+  description: TransparentTableDataType;
+  iconHolderData: { svgLabel: string[] };
+};
+type ObudowyPusteTechDataType = ObudowaPustaTechDataType[];
+/*
+then:
+type ObudowaXXXTechDataType = {
+  tableType: string;
+};
+type ObudowyXXXTechDataType = ObudowaPustaTechDataType[];
+
+type CategoryTechDataType = (ObudowyPusteTechDataType | ObudowyXXXTechDataType)[];
+*/
+
+type CategoryTechDataType = ObudowyPusteTechDataType[];
+type allTechDataType = CategoryTechDataType[];
