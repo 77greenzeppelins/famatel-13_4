@@ -3,7 +3,7 @@ import { styles } from '@/styles';
 const BodyCell = ({ label }: { label: string }) => {
   return (
     <td
-      className={`px-6 py-3 text-xs font-bold text-center   bg-greyTint2 group-hover:bg-light ${styles.basicAnimation}`}
+      className={`px-6 py-3 text-xs font-bold text-center bg-greyTint2 group-hover:bg-light ${styles.basicAnimation}`}
     >
       {label}
     </td>
