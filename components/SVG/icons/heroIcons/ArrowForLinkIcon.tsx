@@ -2,8 +2,10 @@
 import React from 'react';
 /**FramerMotion Staff*/
 import { motion } from 'framer-motion';
-/**Basic Data*/
-// import { corpoColors } from '../../../data/_data';
+/*
+style:
+containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+*/
 
 /***********************************************************************************/
 const ArrowForLinkIcon = ({
