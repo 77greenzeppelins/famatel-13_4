@@ -6,6 +6,12 @@ export const energatabText = {
     line2: 'zaprasza na targi',
   },
   pageNews: {
+    intro: 'Zapraszamy',
+    title: 'Międzynarodowe Energetyczne Targi Bielskie ENERGETAB 2023',
+    title2: ['Międzynarodowe Energetyczne Targi Bielskie', 'ENERGETAB 2023'],
+    data: '2023.09.12-14 Bielsko - Biała',
+    text1:
+      'Ponownie gościmy na największych w Polsce miedzynarodowych targach urządzeń i technologii dla energetyki',
     // where: 'Znajdziesz nas w pawilonie XX na stoisku 66',
     where: 'Nasza lokalizacja na terenie targów:',
     pawilon: ['P', 'pawilon'],

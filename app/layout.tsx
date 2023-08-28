@@ -4,7 +4,6 @@ import { mySansSerif } from '@/nextFeatures/fonts/fonts';
 /**NextFeatures**/
 import type { Metadata } from 'next';
 /**Components**/
-import EnergetabOverlay from '@/components/layout/overlays/forEnergetab/EnergetabOverlay';
 import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
 import Header from '@/components/layout/rootLayout/header/Header';
 import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
@@ -30,7 +29,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${mySansSerif.variable}`}>
       <body className="font-sans">
-        {/* <EnergetabOverlay /> */}
         <Header />
         <ProductsLayout />
         {/* {children} */}

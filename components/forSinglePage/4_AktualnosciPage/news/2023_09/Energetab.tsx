@@ -7,14 +7,26 @@ import InViewContainer from '@/components/layout/containers/inView/InViewContain
 const Energetab = () => {
   /**Data Destr...**/
   const {
-    pageNews: { where, pawilon, stoisko },
+    pageNews: { intro, data, title2, where, pawilon, stoisko },
   } = energatabText;
   /**JSX**/
   return (
     <NewsWrapper date={'2023-08-28'}>
-      <div className="w-full bg-grey h-[300px]"> </div>
-      <div className="flex-col w-full gap-12 fc wrapper-1">
-        <h3 className="text-medium">{where}</h3>
+      <div className="w-full pt-12 fc ">
+        <div className="w-full min-h-[50vh] lg:w-1/2 wrapper-1-l">
+          <h1 className="flex flex-col pl-8 border-l border-corpo gap-y-1">
+            {/* <span className="text-large">{intro}</span> <br />{' '} */}
+            <span className="text-medium">{title2[0]}</span> <br />
+            <span className="text-large">{title2[1]}</span> <br />
+            <span className="text-medium">{data}</span>
+          </h1>
+        </div>
+        <div className="w-full min-h-[50vh] lg:w-1/2 bg-greyShade2"></div>
+
+        {/* <h3 className="text-center text-medium">{title}</h3> */}
+      </div>
+      <div className="flex-col w-full gap-12 pt-24 fc wrapper-1">
+        <h3 className="text-medium text-grey">{where}</h3>
         <div>
           <InViewContainer
             animationDelay={2}
