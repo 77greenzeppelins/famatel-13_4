@@ -1,5 +1,4 @@
 import { techSpecTables } from '@/data/basicData';
-tableType: techSpecTables[0];
 /*
 Basic Data
 */
@@ -49,7 +48,6 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
       ],
     ],
     norma: ['Norma', 'EN 62208'],
-
     description: [...arrOfDescriptions],
     iconHolderData: {
       svgLabel: ['IP65', 'IK08', 'FREE', 'IZO', 'UV', 'MOD8', 'DRUT650'],

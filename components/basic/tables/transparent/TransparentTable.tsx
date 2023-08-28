@@ -4,7 +4,7 @@ import TransparentCell from './cell/TransparentCell';
 const TransparentTable = ({
   rowsData,
 }: {
-  rowsData: TransparentTableDataType;
+  rowsData: TransparentTableDataType | TransparentTableSimpleDataType;
 }) => {
   /**JSX**/
   return (

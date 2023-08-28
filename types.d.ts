@@ -149,6 +149,7 @@ type BasicTableDataType = {
 };
 type DataAsTuple = [string, string];
 type TransparentTableDataType = DataAsTuple[];
+type TransparentTableSimpleDataType = string[][];
 
 /*
 ___used in: S
@@ -169,11 +170,41 @@ type ObudowaPustaTechDataType = {
   tableType: string;
   header: string[][];
   tablesData: { label: string; value: string }[][];
-  norma: string[];
-  description: TransparentTableDataType;
+  header3col?: string[];
+  tablesData3col?: {
+    label: string;
+    value1: string;
+    value2: string;
+  }[];
+  norma: DataAsTuple;
+  description: TransparentTableDataType | TransparentTableSimpleDataType;
   iconHolderData: { svgLabel: string[] };
+  opis?: string[];
+  packageDetails?: DataAsTuple[];
 };
 type ObudowyPusteTechDataType = ObudowaPustaTechDataType[];
+/*
+____(!) should replace ObudowaPustaTechDataType...
+*/
+type ObudowaType1TechDataType = {
+  tableType: string;
+  header: string[][];
+  tablesData: { label: string; value: string }[][];
+  norma: DataAsTuple;
+  description: TransparentTableDataType;
+  iconHolderData: { svgLabel: string[] };
+  opis?: string[];
+};
+type ObudowyType1TechDataType = ObudowaType1TechDataType[];
+
+// type ObudowaGumowaTechDataType = {
+//   tableType: string;
+//   header: string[];
+//   tablesData: string[][];
+//   iconHolderData: { svgLabel: string[] };
+//   opis?: string[];
+// };
+// type ObudowyGumoweTechDataType = ObudowaGumowaTechDataType[];
 /*
 then:
 type ObudowaXXXTechDataType = {

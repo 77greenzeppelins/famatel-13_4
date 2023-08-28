@@ -1,13 +1,20 @@
 /**TS**/
 interface Props {
   children: React.ReactNode;
+  wrapperStyle?: string;
   tableStyle?: string;
 }
 
-const TableWrapper = ({ children, tableStyle }: Props) => {
+const TableWrapper = ({ children, tableStyle, wrapperStyle }: Props) => {
   /**JSX**/
   return (
-    <div className="relative w-full pb-10 overflow-x-auto table-scrollbar">
+    <div
+      className={
+        wrapperStyle
+          ? wrapperStyle
+          : 'relative w-full overflow-x-auto table-scrollbar'
+      }
+    >
       <table
         className={
           tableStyle

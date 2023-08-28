@@ -88,7 +88,7 @@ export default async function ModelPage({ params }: Props) {
 
   /**JSX**/
   return (
-    <div className="flex flex-col w-full min-h-screen fc">
+    <div className="flex flex-col w-full fc">
       <ModelPageContent
         mainCatPath={params.cat}
         mainCatIndex={mainCatIndex}

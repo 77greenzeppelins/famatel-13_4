@@ -13,7 +13,14 @@ const Cat8Schema = ({ data }: Props) => {
   console.log('Cat8Schema / data:', data);
   const { description, header, tablesData, iconHolderData, norma, opis } = data;
 
-  console.log('...opis', opis);
+  const tablesDataMod = (i: number) => {
+    return tablesData[i].map(item => {
+      if (typeof item === 'string') {
+        return [...item];
+      }
+      return [item.label, item.value];
+    });
+  };
 
   /**JSX**/
   return (
@@ -29,7 +36,8 @@ const Cat8Schema = ({ data }: Props) => {
             <BasicTable
               key={i}
               headerData={header}
-              bodyData={tablesData[i].map(item => [item.label, item.value])}
+              // bodyData={tablesData[i].map(item => [item.label, item.value])}
+              bodyData={tablesDataMod(i)}
               headerColSpan={2}
               sideHeaderStyle="text-xs text-light"
             />
@@ -45,7 +53,6 @@ const Cat8Schema = ({ data }: Props) => {
         />
         <TransparentTable rowsData={description} />
       </div>
-
       <div className="flex flex-col w-full">
         <BasicHeader
           hasVerticalOrnament={false}
@@ -54,15 +61,15 @@ const Cat8Schema = ({ data }: Props) => {
         />
         <TransparentTable rowsData={[norma]} />
       </div>
-      {opis ? (
+      {/* {opis ? (
         <div className="flex flex-col w-full">
           <BasicHeader
             hasVerticalOrnament={false}
             hasBox={true}
-            text={allHeaders.tableHeaders[3]}
+            text={'oooooooooooooo'}
           />
         </div>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };

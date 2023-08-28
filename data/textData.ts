@@ -127,7 +127,12 @@ export const productSearchEngine = {
 
 export const allHeaders = {
   catPages: ['charakterystyka ogólna', 'normy', 'materiał'],
-  tableHeaders: ['karta katalogowa', 'specyfikacja techniczna'],
+  tableHeaders: [
+    'karta katalogowa',
+    'specyfikacja techniczna',
+    'charakterystyka ogólna',
+    'opis',
+  ],
   gniazdaPodwieszanePage: [
     'Karta katalogowa (warianty 28000)',
     'Karta katalogowa (warianty 27000)',
