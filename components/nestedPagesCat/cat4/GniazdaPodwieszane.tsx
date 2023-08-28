@@ -74,9 +74,7 @@ const GniazdaPodwieszane = ({ index }: { index: number }) => {
       </div>
       <Link
         className="w-[100px] h-[100px] bg-corpo"
-        href={
-          'produkty/przemyslowe-wtyczki-i-gniazda/wtyczki-i-gniazda-przenosne'
-        }
+        href={'przemyslowe-wtyczki-i-gniazda/wtyczki-i-gniazda-przenosne'}
       />
     </div>
   );
