@@ -26,6 +26,14 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
     model: item.model,
   }));
 
+  /*
+  ____as catAllProductsImages can be undefined this if statement is necessary
+  */
+
+  if (!catAllProductsImages) {
+    return null;
+  }
+
   const createCards = catAllProductsImages[props.subCatIndex].map((item, i) => {
     return (
       <CatalogCardWithModel
