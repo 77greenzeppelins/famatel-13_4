@@ -30,6 +30,7 @@ CardWithModelType) => {
           className="z-10 w-full h-full pointer-events-auto abs-cell"
           href={modelPath}
           // scroll={false}
+          prefetch={false}
         />
         <div
           // className="absolute inset-0 z-5"
