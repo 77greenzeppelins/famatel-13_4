@@ -49,7 +49,7 @@ export const mainPagesData = [
   {
     arrayIndex: 2,
     label: mainPagesLabels[2],
-    url: mainPagesPaths.nowosci,
+    url: mainPagesPaths.aktualnosci,
   },
   {
     arrayIndex: 4,

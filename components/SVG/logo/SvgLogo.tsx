@@ -7,6 +7,7 @@ import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 
 /**TS**/
 interface Props {
+  svgStyle?: string;
   fStyle?: string;
   lettersStyle?: string;
   fillColorF?: string;
@@ -16,6 +17,7 @@ interface Props {
 }
 /**------------------------------------------------------------------------------*/
 const SvgLogo = ({
+  svgStyle,
   fStyle,
   lettersStyle,
   fillColorF,
@@ -30,8 +32,8 @@ const SvgLogo = ({
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 164.042 37.999"
-      className="w-full h-full pointer-events-auto"
-      whileHover={{ scale: isHovered ? 1.05 : 1.0 }}
+      className={svgStyle ? svgStyle : 'w-full h-full pointer-events-auto'}
+      // whileHover={{ scale: isHovered ? 1.05 : 1.0 }}
       transition={svgTransition}
     >
       {hasSygnet ? (

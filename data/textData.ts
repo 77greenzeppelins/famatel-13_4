@@ -1,3 +1,17 @@
+export const energatabText = {
+  overlay: {
+    // line1: 'Widzimy się',
+    // line2: 'na targach',
+    line1: 'Famatel Polska',
+    line2: 'zaprasza na targi',
+  },
+  pageNews: {
+    // where: 'Znajdziesz nas w pawilonie XX na stoisku 66',
+    where: 'Nasza lokalizacja na terenie targów:',
+    pawilon: ['P', 'pawilon'],
+    stoisko: ['66', 'stoisko'],
+  },
+};
 export const layoutText = {
   title: 'Famatel Polska',
   description:

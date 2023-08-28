@@ -8,7 +8,7 @@ ___1.
 export const mainPagesPaths = {
   home: '/',
   produkty: '/produkty',
-  nowosci: '/nowosci',
+  aktualnosci: '/aktualnosci',
   doPobrania: '/do-pobrania',
   kontakt: '/kontakt',
 };
@@ -16,7 +16,7 @@ export const mainPagesPaths = {
 export const mainPagesLabels: string[] = [
   'O firmie',
   'Produkty',
-  'Nowości',
+  'Aktualności',
   'Realizacje',
   'Do pobrania',
   'Kontakt',

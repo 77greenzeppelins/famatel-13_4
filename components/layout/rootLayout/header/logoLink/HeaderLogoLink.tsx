@@ -22,7 +22,7 @@ const HeaderLogoLink = ({ styleCondition }: { styleCondition: boolean }) => {
         styleCondition
           ? 'scale-75 duration-300 ease-linear'
           : 'scale-100 duration-300 ease-linear '
-      } h-full pointer-events-auto fc origin-left`}
+      }  pointer-events-auto fc origin-left h-[52px]`}
     >
       <SvgLogo
         fStyle="fill-corpo"

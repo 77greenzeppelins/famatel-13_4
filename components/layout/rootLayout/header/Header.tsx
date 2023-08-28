@@ -6,8 +6,6 @@ import ButtonsPanel from './buttonsPanel/ButtonsPanel';
 /**Styles Data**/
 import { styles } from '@/styles';
 
-/** */
-usePathname;
 export default function Header() {
   /*
   ___1. condition that allows to change "corporate style" into "my style" 
