@@ -30,7 +30,7 @@ interface Props {
   };
 }
 
-export default function SubCategoryPage({ params }: Props) {
+export default async function SubCategoryPage({ params }: Props) {
   /*
   ___1. get index of main category
   ___2. we need it for the underlying actions...
