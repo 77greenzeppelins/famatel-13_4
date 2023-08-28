@@ -17,7 +17,7 @@ interface Props {
   params: { cat: string; categoryIndex: number };
 }
 
-export default async function CategoryPage({ params }: Props) {
+export default function CategoryPage({ params }: Props) {
   /*
   ___1.
   */

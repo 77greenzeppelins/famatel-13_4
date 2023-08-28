@@ -25,7 +25,7 @@ interface Props {
   };
 }
 
-export default async function ModelPage({ params }: Props) {
+export default function ModelPage({ params }: Props) {
   /** */
   /*
   ___1. get index of main category
