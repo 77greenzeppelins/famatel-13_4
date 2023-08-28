@@ -1,9 +1,11 @@
 'use client';
 import { usePathname } from 'next/navigation';
 /**Components**/
+import HeaderLogoLink from './logoLink/HeaderLogoLink';
 import ButtonsPanel from './buttonsPanel/ButtonsPanel';
 /**Styles Data**/
 import { styles } from '@/styles';
+
 /** */
 usePathname;
 export default function Header() {
@@ -27,7 +29,9 @@ export default function Header() {
           styleCondition ? 'border-b border-greyShade2' : ''
         }`}
       >
-        <div>LOGO</div>
+        <div>
+          <HeaderLogoLink styleCondition={styleCondition} />
+        </div>
         <div>
           <ButtonsPanel />
         </div>

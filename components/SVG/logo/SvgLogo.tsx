@@ -7,6 +7,8 @@ import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 
 /**TS**/
 interface Props {
+  fStyle?: string;
+  lettersStyle?: string;
   fillColorF?: string;
   fillColorText?: string;
   hasSygnet?: boolean;
@@ -14,6 +16,8 @@ interface Props {
 }
 /**------------------------------------------------------------------------------*/
 const SvgLogo = ({
+  fStyle,
+  lettersStyle,
   fillColorF,
   fillColorText,
   hasSygnet = true,
@@ -33,7 +37,8 @@ const SvgLogo = ({
       {hasSygnet ? (
         <g
           data-path="sygnet__twoParts"
-          fill={fillColorF ? fillColorF : corpoColors.orange}
+          className={fStyle}
+          // fill={fillColorF ? fillColorF : corpoColors.orange}
           fillOpacity={1}
           fillRule="nonzero"
           stroke="none"
@@ -45,7 +50,8 @@ const SvgLogo = ({
       ) : null}
 
       <g
-        fill={fillColorText ? fillColorText : corpoColors.light}
+        className={lettersStyle}
+        // fill={fillColorText ? fillColorText : corpoColors.light}
         fillOpacity={1}
         fillRule="nonzero"
         stroke="none"
@@ -77,7 +83,8 @@ const SvgLogo = ({
 
       <g
         data-path="Famatel"
-        fill={fillColorText ? fillColorText : corpoColors.light}
+        className={lettersStyle}
+        // fill={fillColorText ? fillColorText : corpoColors.light}
         fillOpacity={1}
         fillRule="nonzero"
         stroke="none"
