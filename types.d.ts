@@ -17,6 +17,7 @@ type ImageType_C = {
   width?: number;
   height?: number;
   alt: string;
+  model?: string;
 };
 
 type DropDownMenuCardType = {
@@ -77,7 +78,7 @@ type CategoryStructureData = {
   svgIcons?: string[];
   labeledIcons?: string[];
   //nested arrays for selecting model data
-  catAllProductsImages: ImageType_C[][];
+  catAllProductsImages: ImageType_C[][] | undefined;
   catAllModels: modelCardsDataType[][];
   //___
   catAllCatalogData: CategoryCatalogDataType | undefined;

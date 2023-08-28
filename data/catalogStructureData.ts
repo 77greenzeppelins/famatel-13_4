@@ -177,7 +177,7 @@ export const catalogStructureData: CatalogStructureData = [
     // svgIcons: [''],
     labeledIcons: ['16A', '32A', '63A', '125A'],
     catAllModels: cat1_allModelsCard_data, //___fake
-    catAllProductsImages: indexImgCat1_ProductsAll, //___fake
+    catAllProductsImages: undefined, //___fake
     catAllCatalogData: undefined,
     catAllTechData: allTechSpecData[0], //then update index !
   },
@@ -209,7 +209,7 @@ export const catalogStructureData: CatalogStructureData = [
     svgIcons: ['IP67', 'IK08'],
     labeledIcons: ['16A', '20A', '25A', '32A', '40A'],
     catAllModels: cat1_allModelsCard_data,
-    catAllProductsImages: indexImgCat1_ProductsAll,
+    catAllProductsImages: undefined,
     catAllCatalogData: undefined,
     catAllTechData: allTechSpecData[0], //then update index !
   },
@@ -225,7 +225,7 @@ export const catalogStructureData: CatalogStructureData = [
     svgIcons: ['IP54', 'IK08'],
     labeledIcons: ['16A', '32A'],
     catAllModels: cat1_allModelsCard_data,
-    catAllProductsImages: indexImgCat1_ProductsAll,
+    catAllProductsImages: undefined,
     catAllCatalogData: undefined,
     catAllTechData: allTechSpecData[0], //then update index !
   },

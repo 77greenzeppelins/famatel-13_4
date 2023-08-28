@@ -12,7 +12,7 @@ const TableWrapper = ({ children, tableStyle, wrapperStyle }: Props) => {
       className={
         wrapperStyle
           ? wrapperStyle
-          : 'relative w-full overflow-x-auto table-scrollbar'
+          : 'relative w-full overflow-x-auto table-scrollbar pb-6'
       }
     >
       <table

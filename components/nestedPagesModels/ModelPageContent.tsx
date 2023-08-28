@@ -1,4 +1,5 @@
 'use client';
+import GraphicSection from './graphicSection/GraphicSection';
 /**Components**/
 import TableSection from './tableSection/TableSection';
 // import Cat1Schemas from './cat1/Cat1Schemas';
@@ -74,8 +75,8 @@ const ModelPageContent = (props: DynamicModelContent) => {
       <div className="fc w-full xxl:w-[50%] min-h-[25vh]">
         <TableSection {...props} />
       </div>
-      <div className="fc w-full xxl:w-[50%] min-h-[25vh] bg-black">
-        Graphic section
+      <div className="fc w-full xxl:w-[50%] max-h-[800px]">
+        <GraphicSection {...props} />
       </div>
     </div>
   );

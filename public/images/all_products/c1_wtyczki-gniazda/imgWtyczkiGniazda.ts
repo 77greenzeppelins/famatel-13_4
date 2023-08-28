@@ -8,6 +8,9 @@ import { indexImgCat1_subCat_7 } from './7_chlodnicze/imgWtyczkiGniazda_07_chlod
 import { indexImgCat1_subCat_8 } from './8_estradowe/imgWtyczkiGniazda_08_estradowe';
 import { indexImgCat1_subCat_9 } from './9_camping/imgWtyczkiGniazda_09_campingowe';
 
+/*
+___used in: catalogStructureData 
+*/
 export const indexImgCat1_ProductsAll: ImageType_C[][] = [
   indexImgCat1_subCat_1,
   indexImgCat1_subCat_2,
@@ -19,10 +22,10 @@ export const indexImgCat1_ProductsAll: ImageType_C[][] = [
   indexImgCat1_subCat_8,
   indexImgCat1_subCat_9,
 ];
+
 /*
 used in: ... to create array with images of all subCats from all 10's cat; then in catalogStructureData.js as static data for 
 */
-
 export const indexImgCat1_subCat_forCatalog: ImageType_C[] = [
   {
     path: '/images/all_products/c1_wtyczki-gniazda/1_przenosne/1.1_04_14307.webp',

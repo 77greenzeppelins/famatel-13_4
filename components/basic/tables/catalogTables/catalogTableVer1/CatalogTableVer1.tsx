@@ -1,9 +1,11 @@
 /**Components**/
+import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 import TableWrapper from '../../_atoms/tableWrapper/TableWrapper';
 import HeaderCellMulticolor from '../../mixed/_atoms/headerStaff/HeaderCellMulticolor';
 import AmperSection from './bodyStaff/AmperSection';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
+import { allHeaders } from '@/data/textData';
 
 interface Props {
   data: CatalogItemVar1Type;
@@ -43,13 +45,19 @@ const CatalogTableVer1 = ({ data }: Props) => {
 
   /**JSX**/
   return (
-    <TableWrapper>
-      <thead className="text-xs uppercase text-light">
-        <tr className="">
-          {firstHeaderRow.map((cellData, i) => (
-            <HeaderCellMulticolor
-              key={i}
-              tailwindStyle={`${cellPaddings} text-center 
+    <div className="flex flex-col w-full gap-y-6">
+      <BasicHeader
+        hasVerticalOrnament={false}
+        hasBox={true}
+        text={allHeaders.tableHeaders[0]}
+      />
+      <TableWrapper>
+        <thead className="text-xs uppercase text-light">
+          <tr className="">
+            {firstHeaderRow.map((cellData, i) => (
+              <HeaderCellMulticolor
+                key={i}
+                tailwindStyle={`${cellPaddings} text-center 
               ${
                 i === 0
                   ? `bg-dark`
@@ -79,23 +87,23 @@ const CatalogTableVer1 = ({ data }: Props) => {
                   ? 'w-[200px]'
                   : 'w-[200px]'
               }`}
-              label={cellData}
-              colSpan={
-                i > 0 && firstHeaderRow.length === 5
-                  ? 2
-                  : i > 0 && firstHeaderRow.length < 5
-                  ? 4
-                  : 3
-              }
-              rowSpan={i === 0 ? 2 : 1}
-            />
-          ))}
-        </tr>
-        <tr>
-          {secondHeaderRow.map((cellData, i) => (
-            <HeaderCellMulticolor
-              key={i}
-              tailwindStyle={`w-1/4 ${cellPaddings} text-center 
+                label={cellData}
+                colSpan={
+                  i > 0 && firstHeaderRow.length === 5
+                    ? 2
+                    : i > 0 && firstHeaderRow.length < 5
+                    ? 4
+                    : 3
+                }
+                rowSpan={i === 0 ? 2 : 1}
+              />
+            ))}
+          </tr>
+          <tr>
+            {secondHeaderRow.map((cellData, i) => (
+              <HeaderCellMulticolor
+                key={i}
+                tailwindStyle={`w-1/4 ${cellPaddings} text-center 
               ${
                 firstHeaderRowRestCells[i] === '110V'
                   ? 'bg-vY'
@@ -108,51 +116,52 @@ const CatalogTableVer1 = ({ data }: Props) => {
                   : 'bg-dark'
               }
               `}
-              label={cellData}
-              colSpan={secondHeaderRow.length === 4 ? 2 : 4}
-              rowSpan={1}
-            />
-          ))}
-        </tr>
-        <tr>
-          {bottomHeader.map((item, i) => {
-            return (
-              <HeaderCellMulticolor
-                key={i}
-                label={item}
-                tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-grey'} `}
-                paddingStyle="py-4 px-2"
-                textStyle="text-[10px] text-center"
-                colSpan={
-                  i > 2 && bottomHeader.length === 7
-                    ? 2
-                    : i > 2 && bottomHeader.length < 7
-                    ? 4
-                    : 1
-                }
+                label={cellData}
+                colSpan={secondHeaderRow.length === 4 ? 2 : 4}
                 rowSpan={1}
               />
-            );
-          })}
-        </tr>
-      </thead>
-      {/*********************************************************B O D Y****/}
-      <tbody>
-        {rowsData.map((amperRowsData, i) => (
-          <AmperSection
-            key={i}
-            data={amperRowsData}
-            headerColors={firstHeaderRowRestCells}
-          />
-        ))}
-      </tbody>
-      {/* <tr>
+            ))}
+          </tr>
+          <tr>
+            {bottomHeader.map((item, i) => {
+              return (
+                <HeaderCellMulticolor
+                  key={i}
+                  label={item}
+                  tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-grey'} `}
+                  paddingStyle="py-4 px-2"
+                  textStyle="text-[10px] text-center"
+                  colSpan={
+                    i > 2 && bottomHeader.length === 7
+                      ? 2
+                      : i > 2 && bottomHeader.length < 7
+                      ? 4
+                      : 1
+                  }
+                  rowSpan={1}
+                />
+              );
+            })}
+          </tr>
+        </thead>
+        {/*********************************************************B O D Y****/}
+        <tbody>
+          {rowsData.map((amperRowsData, i) => (
+            <AmperSection
+              key={i}
+              data={amperRowsData}
+              headerColors={firstHeaderRowRestCells}
+            />
+          ))}
+        </tbody>
+        {/* <tr>
         <td>firstHeaderRow:{firstHeaderRow.length}</td>
       </tr>
       <tr>
         <td>amperHeader:{bottomHeader.length}</td>
       </tr> */}
-    </TableWrapper>
+      </TableWrapper>
+    </div>
   );
 };
 

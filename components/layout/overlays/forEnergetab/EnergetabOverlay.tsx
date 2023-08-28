@@ -1,11 +1,5 @@
-import Image from 'next/image';
 /**Components*/
 import EnergatabLogo from '@/components/SVG/other/energetab/EnergetabLogo';
-/**Assets**/
-import { indexImgEnergetab } from '@/public/images/for_energetab/indexImgEnergatab';
-/**Basic Data**/
-import { energatabText } from '@/data/textData';
-import SvgLogo from '@/components/SVG/logo/SvgLogo';
 
 const EnergetabOverlay = () => {
   /**JSX* */
@@ -19,20 +13,6 @@ const EnergetabOverlay = () => {
           containerStyle="max-w-[50vw] lg:max-w-[300px]  flex-shrink-0"
           //___w-[600px] h-[360px]
         />
-        {/* <SvgLogo
-          svgStyle="max-w-[50vw] lg:max-w-[440px]"
-          lettersStyle="fill-light"
-          fStyle="fill-corpo"
-        /> */}
-        {/* <p className="text-corpo text-large">{energatabText.overlay.line1}</p> */}
-        {/* <p className="text-light text-medium">{energatabText.overlay.line2}</p> */}
-        {/* <Image
-          alt={indexImgEnergetab.alt}
-          src={indexImgEnergetab.path}
-          width={indexImgEnergetab.width}
-          height={indexImgEnergetab.height}
-          className="w-[400px] max-w-[50vw]"
-        /> */}
       </div>
     </div>
   );
