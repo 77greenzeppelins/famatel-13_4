@@ -8,7 +8,7 @@ containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stro
 */
 
 /***********************************************************************************/
-const ArrowForLinkIcon = ({
+const XMarkIcon = ({
   containerStyle,
   strokeWidth,
   pathStyle = '',
@@ -34,7 +34,8 @@ const ArrowForLinkIcon = ({
         className={pathStyle}
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+        d="M6 18L18 6M6 6l12 12"
+        // d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
         // d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
         // d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
       />
@@ -42,7 +43,7 @@ const ArrowForLinkIcon = ({
   );
 };
 
-export default ArrowForLinkIcon;
+export default XMarkIcon;
 
 /* 
 //___
