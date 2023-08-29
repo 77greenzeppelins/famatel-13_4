@@ -49,7 +49,7 @@ const EnergetabOverlay = () => {
         exit={{ opacity: 0 }}
       >
         <div className="flex flex-col items-center justify-center w-[80%] max-w-[400px] h-full border border-corpo bg-dark pointer-events-auto p-4">
-          <p> Spootkajmy się na </p>
+          <p> Spotkajmy się na </p>
           <p>ENERGETAB 2023</p>
           <div className="flex w-[120px] justify-between pt-6">
             <Link
