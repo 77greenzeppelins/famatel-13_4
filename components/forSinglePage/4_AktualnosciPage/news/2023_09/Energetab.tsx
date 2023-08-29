@@ -19,6 +19,7 @@ const Energetab = () => {
             <span className="text-medium">{title2[0]}</span> <br />
             <span className="text-large">{title2[1]}</span> <br />
             <span className="text-medium">{data}</span>
+            <span className="text-medium">{city}</span>
           </h1>
         </div>
         {/* <div className="w-full min-h-[50vh] lg:w-1/2 bg-greyShade2"></div> */}
