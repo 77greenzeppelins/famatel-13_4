@@ -23,7 +23,7 @@ const EnergetabOverlay = () => {
     timerRef.current = setTimeout(() => {
       setState(true);
       window.scrollTo(0, 0); //________________________?
-    }, 4000);
+    }, 2000);
     return () => {
       clearTimeout(timerRef.current as NodeJS.Timeout);
     };
