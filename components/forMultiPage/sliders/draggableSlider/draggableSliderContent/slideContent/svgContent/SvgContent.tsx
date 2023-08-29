@@ -1,10 +1,10 @@
 /**Framer Motion Staff**/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data*/
-// import { categoriesForSlider } from '../../../../../../../../SVG/techDrawings/allSvgTech';
+import { categoriesForSlider } from '@/components/SVG/techDrawings/allSvgTech';
 
 //_______________________
-import { svgTech_1_1 } from '@/components/SVG/techDrawings/1_wtyczki-gniazda/1.1_przenosne/svgTech_1.1';
+// import { svgTech_1_1 } from '@/components/SVG/techDrawings/1_wtyczki-gniazda/1.1_przenosne/svgTech_1.1';
 
 /**TS**/
 interface Props {
@@ -18,7 +18,7 @@ const SvgContent: React.FC<Props> = ({
   slideSize,
   slideIndex,
 }) => {
-  // const arrayToMap = categoriesForSlider[categoryIndex];
+  const arrayToMap = categoriesForSlider[categoryIndex];
 
   /**JSX**/
   return (
@@ -34,16 +34,7 @@ const SvgContent: React.FC<Props> = ({
         exit={{ opacity: 0 }}
         className="relative w-full h-full p-5 overflow-hidden rounded-md pointer-events-none fc bg-light"
       >
-        {/* {arrayToMap.map(({ Component }, i) => {
-          if (i === slideIndex) {
-            return (
-              <div className="w-full h-full fc" key={i}>
-                <Component basicSize={slideSize * 0.99} />
-              </div>
-            );
-          }
-        })} */}
-        {svgTech_1_1.map(({ Component }, i) => {
+        {arrayToMap.map(({ Component }, i) => {
           if (i === slideIndex) {
             return (
               <div className="w-full h-full fc" key={i}>
@@ -52,6 +43,15 @@ const SvgContent: React.FC<Props> = ({
             );
           }
         })}
+        {/* {svgTech_1_1.map(({ Component }, i) => {
+          if (i === slideIndex) {
+            return (
+              <div className="w-full h-full fc" key={i}>
+                <Component basicSize={slideSize * 0.99} />
+              </div>
+            );
+          }
+        })} */}
       </motion.div>
     </AnimatePresence>
   );
