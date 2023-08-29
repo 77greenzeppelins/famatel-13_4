@@ -8,7 +8,7 @@ const CatalogHandler = () => {
   /**Local State**/
   const [expanded, setExpanded] = useState<false | number>(0);
 
-  console.log('CatalogHandler / expanded:', expanded);
+  // console.log('CatalogHandler / expanded:', expanded);
 
   /**JSX**/
   return (

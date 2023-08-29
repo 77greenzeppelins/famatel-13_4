@@ -37,7 +37,7 @@ const SlideContent: React.FC<{
       // <div className="w-full h-full bg-light" />
     );
   };
-  console.log('currentCategory', currentCategory);
+  // console.log('currentCategory', currentCategory);
   /**JSX**/
   return (
     <div className="w-full h-full disabled">

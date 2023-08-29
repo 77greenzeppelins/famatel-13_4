@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data*/
 import { categoriesForSlider } from '@/components/SVG/techDrawings/allSvgTech';
-
+import { slidesWithF } from '@/components/SVG/logo/indexLogo';
 /**TS**/
 interface Props {
   categoryIndex: number;
@@ -18,8 +18,34 @@ const SvgContent: React.FC<Props> = ({
   if (typeof categoryIndex !== 'number') {
     return null;
   }
-
   const arrayToMap = categoriesForSlider[categoryIndex];
+
+  // const createSlide = (categoryIndex: number) => {
+  //   if (typeof categoryIndex === 'boolean') {
+  //     console.log('................');
+  //     return slidesWithF.map(({ Component }, i) => {
+  //       if (i === slideIndex) {
+  //         return (
+  //           <div className="w-full h-full fc" key={i}>
+  //             <Component />
+  //           </div>
+  //         );
+  //       }
+  //     });
+  //   }
+  //   const arrayToMap = categoriesForSlider[categoryIndex];
+  //   return arrayToMap.map(({ Component }, i) => {
+  //     if (i === slideIndex) {
+  //       return (
+  //         <div className="w-full h-full fc" key={i}>
+  //           <Component basicSize={slideSize * 0.99} />
+  //         </div>
+  //       );
+  //     }
+  //   });
+  // };
+
+  // console.log('.......categoryIndex', categoryIndex);
 
   /**JSX**/
   return (
@@ -44,6 +70,7 @@ const SvgContent: React.FC<Props> = ({
             );
           }
         })}
+        {/* {createSlide(categoryIndex)} */}
       </motion.div>
     </AnimatePresence>
   );

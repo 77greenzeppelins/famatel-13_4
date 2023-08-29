@@ -6,11 +6,16 @@ import { simpleOpacityVariants } from '@/lib/fmConfigs/framerMotionConfigs';
 /**Tailwind styles**/
 import { styles } from '@/styles';
 
-const BasicLink = () => {
+/**TS**/
+interface Props {
+  href?: string;
+}
+
+const BasicLink = ({ href = '/' }: Props) => {
   /**JSX**/
   return (
     <LinkAsContainer
-      linkHref={'/'}
+      linkHref={href}
       ariaLabel="Link do strony: Kategorie Produktów"
       linkStyle={`flex items-center w-fit px-4 py-2 rounded-sm border border-corpo hover:bg-corpo group ${styles.basicAnimation}`}
     >

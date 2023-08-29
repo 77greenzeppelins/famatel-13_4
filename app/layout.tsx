@@ -12,6 +12,7 @@ import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
 // import PageTransitionWrapper from '@/components/forMultiPage/pageWrappers/pageTransitionWrapper/PageTransitionWrapper';
 /**Basic Data**/
 import { layoutText } from '@/data/textData';
+import EnergetabOverlay from '@/components/layout/overlays/forEnergetab/EnergetabOverlay';
 
 /**...**/
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${mySansSerif.variable}`}>
       <body className="font-sans">
         <Header />
+        <EnergetabOverlay />
         {/* <ProductsLayout /> */}
         {/* {children} */}
         {/* <OverlayForResizing /> */}
