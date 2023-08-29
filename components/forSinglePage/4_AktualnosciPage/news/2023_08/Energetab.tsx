@@ -4,6 +4,7 @@ import SquareWithNumber from '@/components/forMultiPage/squareWithNumber/SquareW
 import { energatabText } from '@/data/textData';
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import SectionText1 from './content/SectionText1';
+import HeroBackground from './heroBackground/HeroBackground';
 
 const Energetab = () => {
   /**Data Destr...**/
@@ -13,14 +14,19 @@ const Energetab = () => {
   /**JSX**/
   return (
     <NewsWrapper date={'2023-08-28'}>
-      <div className="w-full pt-12 ">
-        <div className="w-full min-h-[25vh] lg:w-1/2 wrapper-1-l">
-          <h1 className="flex flex-col pl-8 border-l border-corpo gap-y-1">
-            <span className="text-medium">{title2[0]}</span> <br />
-            <span className="text-large">{title2[1]}</span> <br />
-            <span className="text-medium">{data}</span>
-            <span className="text-medium">{city}</span>
-          </h1>
+      <div className="grid  w-full min-h-[50vh]">
+        <div className="z-10 flex items-center w-full h-full abs-cell bg-gradient-to-r from-dark via-dark to-transparent ">
+          <div className="wrapper-1-l">
+            <h1 className="flex flex-col pl-8 border-l border-corpo gap-y-1 ">
+              <span className="text-medium">{title2[0]}</span> <br />
+              <span className="text-large">{title2[1]}</span> <br />
+              <span className="text-medium">{data}</span>
+              <span className="text-medium">{city}</span>
+            </h1>
+          </div>
+        </div>
+        <div className="grid abs-cell z-1">
+          <HeroBackground />
         </div>
         {/* <div className="w-full min-h-[50vh] lg:w-1/2 bg-greyShade2"></div> */}
       </div>

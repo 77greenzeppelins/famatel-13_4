@@ -6,8 +6,11 @@ import HeroSection from './heroSection/HeroSection';
 const KontaktPageContent = () => {
   /**JSX**/
   return (
-    <div data-component="DoPobraniaPageContent" className="relative w-full">
-      <HeroSection />
+    <div
+      data-component="DoPobraniaPageContent"
+      className="relative w-full pt-24"
+    >
+      {/* <HeroSection /> */}
       <PageSections />
     </div>
   );

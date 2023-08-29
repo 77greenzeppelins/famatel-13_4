@@ -42,7 +42,7 @@ const DraggableSlider = memo(function DraggableSlider({
     <div
       data-component="DraggableSlider__container"
       ref={constraintsRef}
-      className="relative w-full h-full overflow-hidden fc "
+      className="relative h-full overflow-hidden rounded-lg fc w-fit"
       /*
      before:absolute before:h-[2%] before:top-0 before:w-full before:max-h-[40px] before:bg-gradient-to-b before:from-dark via-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent
       

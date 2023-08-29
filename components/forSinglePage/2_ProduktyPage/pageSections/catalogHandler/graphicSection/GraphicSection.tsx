@@ -13,7 +13,7 @@ const GraphicSection = ({ expanded, height, axis }: Props) => {
   /**JSX**/
   return (
     <CardFrame>
-      <div className="relative w-full h-full p-1">
+      <div className="relative w-full h-full p-4 overflow-hidden fc">
         {/* <div className="w-full h-full border border-greyShade2"> */}
         <DraggableSlider
           axis={axis}
