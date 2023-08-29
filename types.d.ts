@@ -218,3 +218,18 @@ type CategoryTechDataType = (ObudowyPusteTechDataType | ObudowyXXXTechDataType)[
 
 type CategoryTechDataType = ObudowyPusteTechDataType[];
 type allTechDataType = CategoryTechDataType[];
+
+/*
+___1. SvgTechComponent ==> for each svg component
+___2. SvgTechItemType ==> for "index.ts" files to specify type of array items;
+*/
+type SvgTechComponent = {
+  basicSize?: number;
+  className?: string;
+};
+type SvgTechItemType = {
+  model: string;
+  Component: React.FC<SvgTechComponent>;
+};
+
+type IndexFileOfSvgTechItemsType = SvgTechItemType[];
