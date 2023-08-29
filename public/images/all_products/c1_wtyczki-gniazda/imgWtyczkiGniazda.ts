@@ -82,3 +82,8 @@ export const indexImgCat1_subCat_forCatalog: ImageType_C[] = [
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
 ];
+
+/*
+used in: produktPage in slider
+*/
+export const cat1_sliderImages = [...indexImgCat1_subCat_forCatalog];

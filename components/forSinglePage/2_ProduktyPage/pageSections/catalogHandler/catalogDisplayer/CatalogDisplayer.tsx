@@ -7,6 +7,7 @@ import { styles } from '@/styles';
 import { mainCategoriesNames, mainPagesPaths } from '@/data/routingData';
 import GraphicSection from '../graphicSection/GraphicSection';
 import { createPath } from '@/lib/handlers/functions';
+import useMeasure from 'react-use-measure';
 
 const CatalogDisplayer = ({
   componentIsInView,
@@ -25,6 +26,12 @@ const CatalogDisplayer = ({
       containerStyle,
     },
   } = styles;
+
+  /*
+  ___1. graphic section should has height of <ul> 
+  */
+  const [ref, bounds] = useMeasure(); //{ scroll: true,}
+  // console.log('bounds', bounds);
 
   /*
   ___1. is used in map() to creat card for each category
@@ -54,10 +61,19 @@ const CatalogDisplayer = ({
     >
       <div className="flex w-full">
         <div className="w-full lg:w-8/12">
-          <ul className="flex flex-col w-full">{createProductsCategoryCard}</ul>
+          <ul ref={ref} className="flex flex-col w-full">
+            {createProductsCategoryCard}
+          </ul>
         </div>
-        <div className="hidden lg:block lg:w-4/12">
-          <GraphicSection />
+        <div
+          className="flex-col hidden lg:flex lg:w-4/12"
+          style={{ height: bounds.height }}
+        >
+          <GraphicSection
+            expanded={expanded}
+            height={bounds.height}
+            axis={'y'}
+          />
         </div>
       </div>
     </InViewCSSAnimatedContent>

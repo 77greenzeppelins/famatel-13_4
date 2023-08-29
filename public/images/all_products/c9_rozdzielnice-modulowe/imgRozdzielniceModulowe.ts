@@ -79,6 +79,11 @@ export const indexImgCat9_subCat_forCatalog: ImageType_C[] = [
   },
 ];
 
+/*
+used in: produktPage in slider
+*/
+export const cat9_sliderImages = [...indexImgCat9_subCat_forCatalog];
+
 //___one for 3 products
 // import img1 from './2_modulowe-ip56/9.2_01_3902-T.webp';
 // import img2 from './2_modulowe-ip56/9.2_02_3904-T.webp';

@@ -11,32 +11,52 @@ export const indexImgCat2_ProductsAll: ImageType_C[][] = [
 ];
 
 /*
-used in: images | allProducts |  indexImgAllSubCategories.js to create array with images of all subCats from all 10's cat; then in catalogStructureData.js as static data for 
+used in: subCategorie cards component
+used in: images | allProducts |  indexImgAllSubCategories.js to create array with images of all subCats from all 10 categories; then in catalogStructureData.js as static data for 
 */
 export const indexImgCat2_subCat_forCatalog: ImageType_C[] = [
   {
     path: '/images/all_products/c2_gniazda-z-blokada/1_tablicowe/2.1_03_25056.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie gniazda z blokadą',
   },
   {
     path: '/images/all_products/c2_gniazda-z-blokada/2_stale/2.2_04_25110.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie gniazda z blokadą',
   },
   {
     path: '/images/all_products/c2_gniazda-z-blokada/3_z-komponentami/2.3_03_26303.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie gniazda z blokadą',
   },
   {
     path: '/images/all_products/c2_gniazda-z-blokada/4_akcesoria/2.4_02_23022.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie gniazda z blokadą',
+  },
+];
+
+/*
+used in: produktPage in slider
+*/
+export const cat2_sliderImages = [
+  ...indexImgCat2_subCat_forCatalog,
+  {
+    path: '/images/all_products/c2_gniazda-z-blokada/3_z-komponentami/2.3_03_26303.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie gniazda z blokadą',
+  },
+  {
+    path: '/images/all_products/c2_gniazda-z-blokada//2_stale/2.2_05_25159.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie gniazda z blokadą',
   },
 ];
 

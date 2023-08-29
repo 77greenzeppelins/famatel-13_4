@@ -60,7 +60,7 @@ const SquareWithNumber: React.FC<Props> = ({
         className={
           labelStyle
             ? labelStyle
-            : 'label-regular text-center text-grey  duration-[0.9s] delay-[0.6] pt-[2px]'
+            : 'label-regular text-center text-grey duration-[0.9s] delay-[0.6] pt-[2px]'
         }
       >
         {label}

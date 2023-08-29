@@ -15,26 +15,39 @@ export const indexImgCat8_subCat_forCatalog: ImageType_C[] = [
     path: '/images/all_products/c8_obudowy-rozdzielnice/1_puste/8.1_12_3975.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie obudowy przemysłowej',
   },
   {
     path: '/images/all_products/c8_obudowy-rozdzielnice/2_przemyslowe/8.2_03_6602.webp',
     width: 1200,
     height: 1200,
 
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie obudowy przemysłowej',
   },
   {
     path: '/images/all_products/c8_obudowy-rozdzielnice/3_gumowe/8.3_02_23311_full.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie obudowy przemysłowej',
   },
   {
     path: '/images/all_products/c8_obudowy-rozdzielnice/4_akcesoria/8.4_43_SPTA-12.webp',
     width: 800,
     height: 800,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie obudowy przemysłowej',
+  },
+];
+
+/*
+used in: produktPage in slider
+*/
+export const cat8_sliderImages = [
+  ...indexImgCat8_subCat_forCatalog,
+  {
+    path: '/images/all_products/c8_obudowy-rozdzielnice/2_przemyslowe/8.2_04_3957_1.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie obudowy przemysłowej',
   },
 ];
 

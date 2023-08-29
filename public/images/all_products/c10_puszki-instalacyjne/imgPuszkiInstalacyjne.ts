@@ -29,3 +29,23 @@ export const indexImgCat10_subCat_forCatalog: ImageType_C[] = [
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
 ];
+
+/*
+used in: produktPage in slider
+*/
+export const cat10_sliderImages = [
+  ...indexImgCat10_subCat_forCatalog,
+  {
+    path: '/images/all_products/c10_puszki-instalacyjne/1_zamykane/10.1_b_05_3072.webp',
+    width: 800,
+    height: 800,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c10_puszki-instalacyjne/2_drywall/10.2_06_3261.webp',
+    width: 800,
+    height: 800,
+
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+];

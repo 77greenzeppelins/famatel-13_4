@@ -13,19 +13,38 @@ export const indexImgCat3_subCat_forCatalog: ImageType_C[] = [
     path: '/images/all_products/c3_adaptery-przemyslowe/schuko/3.1_16010.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie adaptera przemysłowego',
   },
   {
     path: '/images/all_products/c3_adaptery-przemyslowe/wielokrotne/3.2_15001.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie adaptera przemysłowego',
   },
   {
     path: '/images/all_products/c3_adaptery-przemyslowe/wielokrotne-z-kablem/3.3_31040.webp',
     width: 1200,
     height: 1200,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    alt: 'Zdjęcie adaptera przemysłowego',
+  },
+];
+
+/*
+used in: produktPage in slider
+*/
+export const cat3_sliderImages = [
+  ...indexImgCat3_subCat_forCatalog,
+  {
+    path: '/images/all_products/c3_adaptery-przemyslowe/wielokrotne-z-kablem/3.3_31012.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie adaptera przemysłowego',
+  },
+  {
+    path: '/images/all_products/c3_adaptery-przemyslowe/wielokrotne/3.2_15003.webp',
+    width: 1200,
+    height: 1200,
+    alt: 'Zdjęcie adaptera przemysłowego',
   },
 ];
 

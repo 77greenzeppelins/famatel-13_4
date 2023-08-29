@@ -4,7 +4,7 @@ export const styles = {
   */
   headerHeight: 'h-[64px] lg:h-[78px]',
   heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
-  heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:block before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
+  heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
   fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
   basicHeaderText: 'label-regular text-grey', //___align-middle leading-none
   largeHeaderText: 'text-large text-light',
@@ -85,8 +85,8 @@ export const styles = {
   cardFrameStyle: {
     outerContainerStyle:
       'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black  duration-300 delay-100 ease-in',
-    innerContainerStyle:
-      'relative fc w-full h-full rounded-md pointer-events-none bg-dark',
+    innerContainerStyle: 'relative fc w-full h-full rounded-md  bg-dark',
+    //___pointer-events-none
   },
   /*
   ___used in: CardFrameGrid; the idea is to use grid as general layout + give the frame its individual group name ==> this allows to nest groups...

@@ -1,12 +1,34 @@
+'use client';
 /**Components**/
 import CardFrame from '@/components/forMultiPage/catalogs/allCards/cardFrame/CardFrame';
+import DraggableSlider from '@/components/forMultiPage/sliders/draggableSlider/DraggableSlider';
 
-const GraphicSection = () => {
+/*TS**/
+interface Props {
+  expanded: number | false;
+  height: number;
+  axis: 'x' | 'y';
+}
+const GraphicSection = ({ expanded, height, axis }: Props) => {
+  /**JSX**/
   return (
     <CardFrame>
-      <div></div>
+      <div className="relative w-full h-full p-1">
+        {/* <div className="w-full h-full border border-greyShade2"> */}
+        <DraggableSlider
+          axis={axis}
+          axisSize={height}
+          currentCategory={expanded as number}
+        />
+        {/* </div> */}
+      </div>
     </CardFrame>
   );
 };
 
 export default GraphicSection;
+{
+  /* <p className="text-small">
+        {typeof expanded === 'number' ? expanded.toString() : 'all are close'}
+      </p> */
+}

@@ -8,6 +8,8 @@ const CatalogHandler = () => {
   /**Local State**/
   const [expanded, setExpanded] = useState<false | number>(0);
 
+  console.log('CatalogHandler / expanded:', expanded);
+
   /**JSX**/
   return (
     <div data-component="CatalogHandler" className="w-full h-full">

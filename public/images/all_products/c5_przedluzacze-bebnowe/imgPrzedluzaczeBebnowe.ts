@@ -33,6 +33,25 @@ export const indexImgCat5_subCat_forCatalog: ImageType_C[] = [
   },
 ];
 
+export const cat5_sliderImages = [
+  ...indexImgCat5_subCat_forCatalog,
+  {
+    path: '/images/all_products/c5_przedluzacze-bebnowe/ip67/5.2_06_30004.webp',
+    width: 800,
+    height: 800,
+    // width: 600,
+    // height: 600,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+  {
+    path: '/images/all_products/c5_przedluzacze-bebnowe/ip67-metalowe/5.3_30050.webp',
+    width: 800,
+    height: 800,
+    // width: 600,
+    // height: 600,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+  },
+];
 // import img2 from './ip67/5.2_01_30013.webp';
 // import img3 from './ip67/5.2_02_30014.webp';
 // import img4 from './ip67/5.2_03_30015.webp';
