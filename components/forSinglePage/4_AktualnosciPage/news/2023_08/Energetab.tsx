@@ -1,10 +1,11 @@
-import React from 'react';
+/**Compoonents**/
 import NewsWrapper from '../_atoms/newsWrapper/NewsWrapper';
-import SquareWithNumber from '@/components/forMultiPage/squareWithNumber/SquareWithNumber';
-import { energatabText } from '@/data/textData';
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
+import SquareWithNumber from '@/components/forMultiPage/squareWithNumber/SquareWithNumber';
 import SectionText1 from './content/SectionText1';
 import HeroBackground from './heroBackground/HeroBackground';
+/**Basic Data**/
+import { energatabText } from '@/data/textData';
 
 const Energetab = () => {
   /**Data Destr...**/
@@ -28,24 +29,7 @@ const Energetab = () => {
         <div className="grid abs-cell z-1">
           <HeroBackground />
         </div>
-        {/* <div className="w-full min-h-[50vh] lg:w-1/2 bg-greyShade2"></div> */}
       </div>
-      {/* <div className="grid min-h-[600px] py-6 border-y border-black">
-        <div className="z-10 abs-cell ">
-          <div className="fc flex-col gap-y-4 max-w-[600px] m-auto">
-            <h1 className="text-center text-medium">
-              <span className="text-center ">
-                {title2[0]} {title2[1]}
-              </span>
-            </h1>
-            <p className="flex flex-col">
-              <span className="text-regular">{data}</span>
-              <span className="text-regular">{city}</span>
-            </p>
-          </div>
-        </div>
-        <div className="grid abs-cell z-1"></div>
-      </div> */}
       <div className="flex-col w-full pt-24 wrapper-1">
         <div>
           <InViewContainer

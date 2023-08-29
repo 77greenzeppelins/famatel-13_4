@@ -2,8 +2,6 @@
 /**Components**/
 import InViewContainer from '@/components/layout/containers/inView/InViewContainer';
 import InViewAnimatedContent from '@/components/layout/containers/inView/InViewAnimatedContent';
-import SvgLogoF from '@/components/SVG/logo/SvgLogoF';
-import Witamy from '@/components/SVG/other/Witamy';
 /**Hook Staff**/
 import useMeasure from 'react-use-measure';
 /**FramerMotion Staff**/
@@ -87,12 +85,6 @@ const HeroBackground = () => {
                 </motion.div>
               </div>
             ))}
-
-          {/* <div className="flex justify-start w-full">
-            <motion.div className="flex gap-4" style={{ x: xDividedNegative }}>
-              {createMarquee()}
-            </motion.div>
-          </div> */}
         </InViewAnimatedContent>
       </InViewContainer>
     </div>
