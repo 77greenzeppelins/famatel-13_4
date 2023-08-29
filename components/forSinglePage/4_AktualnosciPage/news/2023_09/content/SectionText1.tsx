@@ -28,7 +28,7 @@ const SectionText1 = ({ text, componentIsInView, containerStyle }: Props) => {
       inViewFalse={invisible}
       containerStyle={containerStyle ? containerStyle : inViewContainerStyle}
     >
-      <p className="text-center text-medium text-grey">{text}</p>
+      <p className="text-medium text-grey max-w-[800px]">{text}</p>
     </InViewCSSAnimatedContent>
   );
 };
