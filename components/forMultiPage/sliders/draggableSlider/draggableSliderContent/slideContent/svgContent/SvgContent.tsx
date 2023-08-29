@@ -3,9 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data*/
 import { categoriesForSlider } from '@/components/SVG/techDrawings/allSvgTech';
 
-//_______________________
-// import { svgTech_1_1 } from '@/components/SVG/techDrawings/1_wtyczki-gniazda/1.1_przenosne/svgTech_1.1';
-
 /**TS**/
 interface Props {
   categoryIndex: number;
@@ -18,6 +15,10 @@ const SvgContent: React.FC<Props> = ({
   slideSize,
   slideIndex,
 }) => {
+  if (typeof categoryIndex !== 'number') {
+    return null;
+  }
+
   const arrayToMap = categoriesForSlider[categoryIndex];
 
   /**JSX**/
@@ -43,43 +44,9 @@ const SvgContent: React.FC<Props> = ({
             );
           }
         })}
-        {/* {svgTech_1_1.map(({ Component }, i) => {
-          if (i === slideIndex) {
-            return (
-              <div className="w-full h-full fc" key={i}>
-                <Component basicSize={slideSize * 0.99} />
-              </div>
-            );
-          }
-        })} */}
       </motion.div>
     </AnimatePresence>
   );
 };
 
 export default SvgContent;
-
-// <p className="flex-col w-full h-full fc text-corpo">
-//   <span>{`slidesLineIndex: ${slidesLineIndex}`}</span>
-//   <span>{`index: ${slideIndex}`}</span>
-//   <span>{`categoryIndex: ${categoryIndex}`}</span>
-// </p>
-
-/**Switcher**/
-//   const renderContent = useCallback(
-//     ({ iconID, colorFG }: { iconID?: string; colorFG?: string }) => {
-//       switch (iconID) {
-//         case 'IP50':
-//           return <SvgIconIP ID={'50'} colorFG={colorFG} size={50} />;
-//         case 'two':
-//           return 'TWO';
-//         case 'three':
-//           return 'THREE';
-//         case 'four':
-//           return 'FOUR';
-//         default:
-//           return 'ONE';
-//       }
-//     },
-//     []
-//   );

@@ -32,6 +32,10 @@ const ImageContnent: React.FunctionComponent<{
   slideIndex: number;
 }> = ({ categoryIndex, slideIndex }) => {
   /**Basic Data**/
+  if (typeof categoryIndex !== 'number') {
+    return null;
+  }
+
   const categoryImages = arrOfImages[categoryIndex];
 
   /**JSX**/
