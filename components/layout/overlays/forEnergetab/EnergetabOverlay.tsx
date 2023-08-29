@@ -1,5 +1,6 @@
 'use client';
 import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon';
+import XMarkIcon from '@/components/SVG/icons/heroIcons/XMarkIcon';
 /**Components*/
 import EnergatabLogo from '@/components/SVG/other/energetab/EnergetabLogo';
 import LinkAsContainer from '@/components/basic/links/linksWithIcon/basicLink/linkAsContainer/LinkAsContainer';
@@ -62,7 +63,15 @@ const EnergetabOverlay = () => {
                 />
               </span>
             </Link>
-            <button>{state}</button>
+            <button
+              aria-label={'przycisk'}
+              className={`group w-6 h-6 origin-center fc focus:outline-none disable focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark focus-visible:ring-corpo`}
+              onClick={() => setState(false)}
+            >
+              <XMarkIcon
+                containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-90 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              />
+            </button>
           </div>
         </div>
       </motion.div>
