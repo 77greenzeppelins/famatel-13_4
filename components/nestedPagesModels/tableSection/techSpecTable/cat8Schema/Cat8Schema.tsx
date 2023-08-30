@@ -6,10 +6,10 @@ import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/Basic
 import { allHeaders } from '@/data/textData';
 
 interface Props {
-  data: ObudowaPustaTechDataType;
+  data: ObudowaType1TechDataType;
 }
 
-const Cat8Schema = ({ data }: Props) => {
+const Cat8Schema = (data: ObudowaType1TechDataType) => {
   console.log('Cat8Schema / data:', data);
   const { description, header, tablesData, iconHolderData, norma, opis } = data;
 
