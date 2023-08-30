@@ -2,7 +2,7 @@ import { tablesTypes } from '@/data/basicData';
 
 /**Data f data**/
 const headerTopData_1: string[][] = [
-  ['3P = 2P + T', '4P = 3P + T', '5P = 3P + T + N'],
+  ['3P=2P+T', '4P=3P+T', '5P=3P+T+N'],
   ['110V', '50/60Hz'],
   ['230V', '50/60Hz'],
   ['400V', '50/60Hz'],

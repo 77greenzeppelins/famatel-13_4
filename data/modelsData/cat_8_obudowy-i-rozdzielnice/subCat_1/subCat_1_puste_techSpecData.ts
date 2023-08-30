@@ -1,4 +1,3 @@
-import { techSpecTables } from '@/data/basicData';
 /*
 Basic Data
 */
@@ -14,10 +13,10 @@ const arrOfDescriptions: TransparentTableDataType = [
 .....
 */
 
-export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
+export const obudowyPuste_techSpecData: ObudowyType1TechDataType = [
   //___1
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -34,7 +33,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__2
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -55,7 +54,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__3
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -79,7 +78,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__4
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -103,7 +102,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__5
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -126,7 +125,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__6
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -149,7 +148,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__7
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -167,7 +166,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__8
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -185,7 +184,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__9
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -203,7 +202,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__10
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -221,7 +220,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__11
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -243,7 +242,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__12
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -266,7 +265,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__13
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -289,7 +288,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__14
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -312,7 +311,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__15
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -335,7 +334,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__16
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -358,7 +357,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__17
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -387,7 +386,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__18
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -416,7 +415,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__19
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -445,7 +444,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__20
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -474,7 +473,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__21
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -503,7 +502,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__22
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -532,7 +531,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__23
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -562,7 +561,7 @@ export const obudowyPuste_techSpecData: ObudowyPusteTechDataType = [
   },
   //__24
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [

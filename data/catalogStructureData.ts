@@ -139,7 +139,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat1_allModelsCard_data, //___for <CatalogCardWithModel>
     catAllProductsImages: indexImgCat1_ProductsAll,
     catAllCatalogData: allCategoriesCatalogsData[0],
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[0], //
   },
   //_____category__2__gniazda-z-blokada
   {

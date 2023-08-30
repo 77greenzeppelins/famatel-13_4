@@ -80,7 +80,7 @@ type CategoryStructureData = {
   catAllModels: modelCardsDataType[][];
   //___
   catAllCatalogData: CategoryCatalogDataType | undefined;
-  catAllTechData: CategoryTechDataType;
+  catAllTechData: Cat1AllTechDataType | cat8AllTechDataType;
 };
 
 type CatalogItemVar1Type = {
@@ -137,7 +137,7 @@ type CardWithModelType = {
 type CardContentProps = Omit<CardWithModelType, 'modelPath'>;
 
 /*
-___types for tables 
+___types for tables ==> naither catalog nor techSpec
 */
 type BasicTableRowType = string[];
 type BasicTableDataType = {
@@ -163,30 +163,40 @@ type SubCatSchemaType = Omit<CatSchemaType, 'catIndex'>;
 type ModelSchemaType = Omit<SubCatSchemaType, 'subCatIndex'>;
 
 /*
+___section with types for techspecTables
 ___for model techSpecData ==> including "indxFiles" that stores individual files in arrays 
 */
-type ObudowaPustaTechDataType = {
-  tableType: string;
-  header: string[][];
-  tablesData: { label: string; value: string }[][];
-  header3col?: string[];
-  tablesData3col?: {
-    label: string;
-    value1: string;
-    value2: string;
-  }[];
-  norma: DataAsTuple;
-  description: TransparentTableDataType | TransparentTableSimpleDataType;
-  iconHolderData: { svgLabel: string[] };
-  opis?: string[];
-  packageDetails?: DataAsTuple[];
-};
-type ObudowyPusteTechDataType = ObudowaPustaTechDataType[];
+
+//__cat 8,9,10
+// type ObudowaPustaTechDataType = {
+//   tableType: string;
+//   header: string[][];
+//   tablesData: { label: string; value: string }[][];
+//   header3col?: string[];
+//   tablesData3col?: {
+//     label: string;
+//     value1: string;
+//     value2: string;
+//   }[];
+//   norma: DataAsTuple;
+//   description: TransparentTableDataType | TransparentTableSimpleDataType;
+//   iconHolderData: { svgLabel: string[] };
+//   opis?: string[];
+//   packageDetails?: DataAsTuple[];
+// };
+// type ObudowaVer2TechDataType = {
+//   tableType: string;
+// };
+// type ObudowyVer2TechDataType = ObudowaVer2TechDataType[]
+// type ObudowyPusteTechDataType = (
+//   | ObudowaPustaTechDataType
+//   | ObudowaVer2TechDataType
+// )[];
 /*
 ____(!) should replace ObudowaPustaTechDataType...
 */
 type ObudowaType1TechDataType = {
-  tableType: string;
+  tableType: 'techSpecTableVer1';
   header: string[][];
   tablesData: { label: string; value: string }[][];
   norma: DataAsTuple;
@@ -196,27 +206,48 @@ type ObudowaType1TechDataType = {
 };
 type ObudowyType1TechDataType = ObudowaType1TechDataType[];
 
-// type ObudowaGumowaTechDataType = {
-//   tableType: string;
-//   header: string[];
-//   tablesData: string[][];
-//   iconHolderData: { svgLabel: string[] };
-//   opis?: string[];
-// };
-// type ObudowyGumoweTechDataType = ObudowaGumowaTechDataType[];
-/*
-then:
-type ObudowaXXXTechDataType = {
-  tableType: string;
+type cat8AllTechDataType = ObudowyType1TechDataType[];
+
+//___cat1 / wtyczki gniazda przenośne /
+type WtyczkaGniazdoType1TechDataType = {
+  tableType: 'techTableWtyczkiVer1'; //___not just a string...
+  ampers: string[];
+  poles: string[];
+  bodyData: string[][];
+  connectionType: string[];
+  mm: string[];
+  weight: string[];
 };
-type ObudowyXXXTechDataType = ObudowaPustaTechDataType[];
+type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
 
-type CategoryTechDataType = (ObudowyPusteTechDataType | ObudowyXXXTechDataType)[];
-*/
+type Cat1AllTechDataType = WtyczkiGniazdaType1TechDataType[];
 
-type CategoryTechDataType = ObudowyPusteTechDataType[];
-type allTechDataType = CategoryTechDataType[];
+type AllTechSpecData = (Cat1AllTechDataType | cat8AllTechDataType)[];
 
+type ModelTechData = WtyczkaGniazdoType1TechDataType | ObudowaType1TechDataType;
+
+// type WtyczkiGniazdaType2TechDataType = {
+//   tableType: string;
+//   ampers: string[];
+// }[]; // <===temp / fake
+// type Cat1AllTechDataType = (
+//   | WtyczkiGniazdaType1TechDataType
+//   | WtyczkiGniazdaType2TechDataType
+// )[];
+
+// type ObudowaXXXTechDataType = {
+//   tableType: string;
+// };
+// type CategoryTechDataType = (
+//   | ObudowyPusteTechDataType
+//   | ObudowaXXXTechDataType
+// )[];
+
+// type modelTechSpecDataType =
+//   | ObudowyPusteTechDataType
+//   | ObudowaXXXTechDataType
+//   | WtyczkiGniazdaType1TechDataType
+//   | WtyczkiGniazdaType2TechDataType;
 /*
 ___1. SvgTechComponent ==> for each svg component
 ___2. SvgTechItemType ==> for "index.ts" files to specify type of array items;

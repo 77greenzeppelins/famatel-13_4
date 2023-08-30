@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 
 /**Components**/
 import TableSection from './tableSection/TableSection';
-// import GraphicSection from './graphicSection/GraphicSection';
+import GraphicSection from './graphicSection/GraphicSection';
 // import Cat1Schemas from './cat1/Cat1Schemas';
 // import Cat2Schemas from './cat2/Cat2Schemas';
 /**Basic Data**/
@@ -33,15 +33,19 @@ const ModelPageContent = () => {
   /**JSX*/
   return (
     <div className="flex flex-col-reverse w-full gap-x-2 xxl:flex-row text-greyShade2 text-medium wrapper-1">
-      <div className="fc w-full xxl:w-[50%] min-h-[25vh]">
+      <div className="fc w-full xxl:w-[55%] min-h-[25vh]">
         <TableSection
           mainCatIndex={categoryIndex}
           subCatIndex={subCatIndex}
           modelIndex={modelIndex}
         />
       </div>
-      <div className="fc w-full xxl:w-[50%] max-h-[800px]">
-        {/* <GraphicSection {...props} /> */}
+      <div className="fc w-full xxl:w-[45%] max-h-[800px]">
+        <GraphicSection
+          mainCatIndex={categoryIndex}
+          subCatIndex={subCatIndex}
+          modelIndex={modelIndex}
+        />
       </div>
     </div>
   );

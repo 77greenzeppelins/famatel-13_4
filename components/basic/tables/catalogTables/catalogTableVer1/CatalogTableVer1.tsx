@@ -22,9 +22,7 @@ const CatalogTableVer1 = ({ data }: Props) => {
 
   /**Data Manipulations**/
   const firstHeaderRowRestCells = headerTopData.slice(1).map(item => item[0]);
-  const firstHeaderRowFirstCell = headerTopData[0].join(
-    '\u00A0\u00A0\u00A0\u00A0'
-  );
+  const firstHeaderRowFirstCell = headerTopData[0].join('\u00A0\u00A0\u00A0');
   const firstHeaderRow = [firstHeaderRowFirstCell, ...firstHeaderRowRestCells];
 
   const secondHeaderRow = [...headerTopData.slice(1).map(item => item[1])];
@@ -32,8 +30,9 @@ const CatalogTableVer1 = ({ data }: Props) => {
   const firstThreeCols = headerBottomData[0].map(i => i);
   const bottomHeader = [
     ...firstThreeCols,
-    ...headerBottomData.slice(1).map(item => item.join('\u00A0\u00A0\u00A0')),
+    ...headerBottomData.slice(1).map(item => item.join(' ')),
   ];
+  //___\u00A0\u00A0\u00A0
 
   /*
   ___some basic numbers
@@ -41,7 +40,7 @@ const CatalogTableVer1 = ({ data }: Props) => {
   // const headerColMax = firstHeaderRow.length;
   // const amperHeaderColNumber = secondHeaderRow.length;
   // const bodyColNumber = secondHeaderRow.length;
-  // console.log('firstHeaderRowRestCells:', firstHeaderRowRestCells);
+  console.log('firstHeaderRow:', firstHeaderRow);
 
   /**JSX**/
   return (
@@ -51,13 +50,20 @@ const CatalogTableVer1 = ({ data }: Props) => {
         hasBox={true}
         text={allHeaders.tableHeaders[0]}
       />
-      <TableWrapper>
-        <thead className="text-xs uppercase text-light">
+      <TableWrapper
+      // tableStyle={`border-separate border-spacing-[2px] table-fixed
+      // w-[900px]
+      // `}
+      >
+        <thead className={`text-xs uppercase text-light `}>
           <tr className="">
             {firstHeaderRow.map((cellData, i) => (
               <HeaderCellMulticolor
                 key={i}
-                tailwindStyle={`${cellPaddings} text-center 
+                textStyle={`${i === 0 ? 'text-grey' : 'text-light'}`}
+                //___px-[50px]
+                tailwindStyle={`${i === 0 ? 'px-2' : cellPaddings} 
+                
               ${
                 i === 0
                   ? `bg-dark`
@@ -72,20 +78,16 @@ const CatalogTableVer1 = ({ data }: Props) => {
                   : 'bg-dark'
               }
               ${
-                // i > 0 && firstHeaderRow.length === 5
+                // i === 0
+                //   ? 'w-[300px]'
+                //   : i > 0 && firstHeaderRowRestCells.length === 4
+                //   ? 'w-[150px]'
+                //   : i > 0 && firstHeaderRowRestCells.length === 3
                 //   ? 'w-[200px]'
-                //   : i > 0 && firstHeaderRow.length < 5
-                //   ? 'w-[360px]'
-                //   : 'w-[300px]'
-                i === 0
-                  ? 'w-[360px]'
-                  : i > 0 && firstHeaderRowRestCells.length === 4
-                  ? 'w-[220px]'
-                  : i > 0 && firstHeaderRowRestCells.length === 3
-                  ? 'w-[200px]'
-                  : i > 0 && firstHeaderRowRestCells.length < 3
-                  ? 'w-[200px]'
-                  : 'w-[200px]'
+                //   : i > 0 && firstHeaderRowRestCells.length < 3
+                //   ? 'w-[200px]'
+                //   : 'w-[200px]'
+                i === 0 ? 'w-[300px] max-w-[300px]' : 'w-[150px] max-w-[150px]'
               }`}
                 label={cellData}
                 colSpan={
@@ -128,9 +130,11 @@ const CatalogTableVer1 = ({ data }: Props) => {
                 <HeaderCellMulticolor
                   key={i}
                   label={item}
-                  tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-grey'} `}
+                  tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-greyShade2'} `}
                   paddingStyle="py-4 px-2"
-                  textStyle="text-[10px] text-center"
+                  textStyle={`text-[10px] text-center ${
+                    i > 2 ? 'text-[10px] text-grey' : 'text-[10px]'
+                  } `}
                   colSpan={
                     i > 2 && bottomHeader.length === 7
                       ? 2
@@ -154,15 +158,18 @@ const CatalogTableVer1 = ({ data }: Props) => {
             />
           ))}
         </tbody>
-        {/* <tr>
-        <td>firstHeaderRow:{firstHeaderRow.length}</td>
-      </tr>
-      <tr>
-        <td>amperHeader:{bottomHeader.length}</td>
-      </tr> */}
       </TableWrapper>
     </div>
   );
 };
 
 export default CatalogTableVer1;
+
+{
+  /* <tr>
+        <td>firstHeaderRow:{firstHeaderRow.length}</td>
+      </tr>
+      <tr>
+        <td>amperHeader:{bottomHeader.length}</td>
+      </tr> */
+}

@@ -128,6 +128,7 @@ export const styles = {
 
   tableStyles: {
     cellPaddings: 'px-6 py-3',
+    cellMinWidth1: 'w-[109px]',
   },
 };
 
