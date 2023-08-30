@@ -68,8 +68,8 @@ export const gniazdaZBlokadaSubCatNames: string[] = [
   'Gniazda z opcjonalnymi komponentami',
   'Akcesoria do gniazd z rozłącznikiem i blokadą',
 ];
-const gniazdaZBlokadaSubCatPaths = gniazdaZBlokadaSubCatNames.map(subCatName =>
-  createPath(subCatName)
+export const gniazdaZBlokadaSubCatPaths = gniazdaZBlokadaSubCatNames.map(
+  subCatName => createPath(subCatName)
 );
 
 export const gniazdaZBlokadaSubCatFullPaths = gniazdaZBlokadaSubCatPaths.map(
@@ -138,11 +138,11 @@ export const obudowyAndRozdzielniceSubCatNames: string[] = [
   'Obudowy gumowe',
   'Akcesoria do obudów i rozdzielnic',
 ];
-export const obudowyAndRozdzielniceSubCatPathss =
+export const obudowyAndRozdzielniceSubCatPaths =
   obudowyAndRozdzielniceSubCatNames.map(subCatName => createPath(subCatName));
 
 export const obudowyAndRozdzielniceSubCatFullPaths =
-  obudowyAndRozdzielniceSubCatPathss.map(
+  obudowyAndRozdzielniceSubCatPaths.map(
     (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}/${path}`
   );
 //_____subcategories of category_9

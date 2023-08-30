@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${mySansSerif.variable}`}>
       <body className="font-sans">
         <Header />
-        <EnergetabOverlay />
+        {/* <EnergetabOverlay /> */}
         {/* <ProductsLayout /> */}
         {/* {children} */}
         {/* <OverlayForResizing /> */}

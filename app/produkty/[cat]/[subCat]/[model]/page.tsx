@@ -90,12 +90,12 @@ export default function ModelPage({ params }: Props) {
   return (
     <div className="flex flex-col w-full fc">
       <ModelPageContent
-        mainCatPath={params.cat}
-        mainCatIndex={mainCatIndex}
-        subCatPath={params.subCat}
-        subCatIndex={subCatIndex}
-        modelPath={params.model}
-        modelIndex={modelIndex}
+      // mainCatPath={params.cat}
+      // mainCatIndex={mainCatIndex}
+      // subCatPath={params.subCat}
+      // subCatIndex={subCatIndex}
+      // modelPath={params.model}
+      // modelIndex={modelIndex}
       />
     </div>
   );

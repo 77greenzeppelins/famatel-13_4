@@ -1,61 +1,52 @@
 'use client';
-
-import { catalogStructureData } from '@/data/catalogStructureData';
+/**Components**/
 import CatalogGrid from '../forMultiPage/catalogs/catalogGrid/CatalogGrid';
 import CatalogCardWithModel from '../forMultiPage/catalogs/allCards/cardWithModel/CatalogCardWithModel';
-import { mainPagesPaths } from '@/data/routingData';
-
-// import { mainCategoriesPath } from "@/data/routingData";
-
-// mainCategoriesPath
+/**Basic Data**/
+import { catalogStructureData } from '@/data/catalogStructureData';
 
 const SubCatPageContent = (props: DynamicSubCatContent) => {
   /**...*/
-  const categorySpecification = catalogStructureData[props.mainCatIndex];
-  const { catAllProductsImages, catAllModels } = categorySpecification; //__all product images of this cat
+  const modelCardData =
+    catalogStructureData[props.mainCatIndex].catAllModels[props.subCatIndex];
 
+  const categoryAllProductsImages =
+    catalogStructureData[props.mainCatIndex].catAllProductsImages;
+
+  const basicPath = `${
+    catalogStructureData[props.mainCatIndex].subCategoriesPaths[
+      props.subCatIndex
+    ]
+  }`;
+
+  // console.log('basicPath', basicPath);
   /*
-  ___1. catAllModels[props.subCatIndex] ==> cat1_allModelsCard_data
+  ____const categoryAllProductsImages can be undefined ==> it refers to property in catalogStructureData whose type implies being "undefined"
   */
-  const createModelsCardData = catAllModels[props.subCatIndex].map(item => ({
-    modelPath: `${mainPagesPaths.produkty}/${props.mainCatPath}/${props.subCatPath}/${item.modelPathSegmant}`,
-    textIcons: item.textIcons,
-    type: item.type,
-    collection: item.collection,
-    altName: item.altName,
-    model: item.model,
-  }));
-
-  /*
-  ____as catAllProductsImages can be undefined this if statement is necessary
-  */
-
-  if (!catAllProductsImages) {
+  if (!categoryAllProductsImages) {
     return null;
   }
 
-  const createCards = catAllProductsImages[props.subCatIndex].map((item, i) => {
-    return (
-      <CatalogCardWithModel
-        key={i}
-        modelIndex={i}
-        modelImage={{
-          path: item.path,
-          width: item.width,
-          height: item.height,
-          alt: item.alt,
-        }}
-        // catImage={createImageData[i]}
-        // modelPathSegmant={createModelsCardData.modelPathSegmant[i]}
-        modelPath={createModelsCardData[i].modelPath}
-        type={createModelsCardData[i].type}
-        collection={createModelsCardData[i].collection}
-        textIcons={createModelsCardData[i].textIcons}
-        // altName={createModelsCardData[i].altName}
-        // model={createModelsCardData[i].model}
-      />
-    );
-  });
+  const createCards = categoryAllProductsImages[props.subCatIndex].map(
+    (item, i) => {
+      return (
+        <CatalogCardWithModel
+          key={i}
+          modelIndex={i}
+          modelImage={{
+            path: item.path,
+            width: item.width,
+            height: item.height,
+            alt: item.alt,
+          }}
+          modelPath={`${basicPath}/${modelCardData[i].modelPathSegmant}`}
+          type={modelCardData[i].type}
+          collection={modelCardData[i].collection}
+          textIcons={modelCardData[i].textIcons}
+        />
+      );
+    }
+  );
 
   /**JSX*/
   return (
@@ -68,24 +59,3 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
 };
 
 export default SubCatPageContent;
-
-{
-  /* <CatalogGrid>
-        <CatalogCardWithModel
-          modelIndex={createImageData}
-          catImage={{
-            path: item.path,
-            width: item.width,
-            height: item.height,
-            alt: item.alt,
-          }}
-        />
-      </CatalogGrid> */
-}
-
-{
-  /* <div className="text-corpo">{props.mainCatPath}</div>
-      <div className="text-corpo">{props.mainCatIndex}</div>
-      <div className="text-corpo">{props.subCatPath}</div>
-      <div className="text-corpo">{props.subCatIndex}</div> */
-}

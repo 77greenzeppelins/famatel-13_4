@@ -75,9 +75,9 @@ export default function SubCategoryPage({ params }: Props) {
   return (
     <div className="flex flex-col w-full fc">
       <SubCatPageContent
-        mainCatPath={params.cat}
+        // mainCatPath={params.cat}
         mainCatIndex={mainCatIndex}
-        subCatPath={params.subCat}
+        // subCatPath={params.subCat}
         subCatIndex={subCatIndex}
       />
     </div>

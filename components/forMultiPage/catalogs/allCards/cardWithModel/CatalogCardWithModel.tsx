@@ -1,7 +1,5 @@
 'use client';
 import Link from 'next/link';
-/**Hooks Staff*/
-// import { usePathname } from 'next/navigation';
 /**Components**/
 import CardFrameGrid from '../cardFrame/CardFrameGrid';
 import CardContent from './content/CardContent';

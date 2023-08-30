@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
 /**Basic Data**/
 import { mainCategoriesPath } from '@/data/routingData';
-
+import { catalogStructureData } from '@/data/catalogStructureData';
 // export const dynamicParams = false;
 // export async function generateStaticParams() {
 //   return mainCategoriesPath.map((path, categoryIndex) => ({
@@ -35,7 +35,11 @@ export default function WtyczkiGniazdaPage() {
   /*
   ___
   */
-  console.log('mainCategoriesPath[0]:', mainCategoriesPath[0]);
   /**JSX**/
-  return <CatPageContent categoryIndex={0} path={mainCategoriesPath[0]} />;
+  return (
+    <CatPageContent
+      categoryIndex={catalogStructureData[0].mainCategoryIndex}
+      path={catalogStructureData[0].mainCategoryPath}
+    />
+  );
 }
