@@ -1,4 +1,3 @@
-// 'use client';
 /**Components**/
 import CatalogGrid from '@/components/forMultiPage/catalogs/catalogGrid/CatalogGrid';
 import CatalogCardWithSubCat from '@/components/forMultiPage/catalogs/allCards/cardWithSubCat/CatalogCardWithSubCat';

@@ -49,9 +49,7 @@ type DynamicCatIndex = {
 ___1. used in: <SubCatPageContent>
 */
 type DynamicSubCatContent = {
-  mainCatPath: string;
   mainCatIndex: number;
-  subCatPath: string;
   subCatIndex: number;
 };
 /*
@@ -59,7 +57,6 @@ ___1 used in <ModelPageContent>
 ___2 it "expands" some existing type...
 */
 type DynamicModelContent = DynamicSubCatContent & {
-  modelPath: string;
   modelIndex: number;
 };
 
@@ -73,6 +70,7 @@ type CategoryStructureData = {
   mainCategoryPath: string;
   mainCategoryImage: indexImgCat;
   subCategoriesNames: string[];
+  subCategoriesSegments: string[];
   subCategoriesPaths: string[];
   subCategoriesImages: ImageType_C[];
   svgIcons?: string[];
