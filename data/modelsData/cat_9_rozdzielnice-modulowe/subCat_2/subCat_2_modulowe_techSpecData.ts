@@ -1,4 +1,3 @@
-import { techSpecTables } from '@/data/basicData';
 /*
 Basic Data
 */
@@ -11,10 +10,10 @@ const arrOfDescriptions: TransparentTableDataType = [
 /*
 .....
 */
-export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
+export const obudowyModulowe_techSpecData = [
   //___1
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Konfiguracja']],
     tablesData: [
       [
@@ -36,7 +35,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__2
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -62,7 +61,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__3
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia'], ['Konfiguracja']],
     tablesData: [
       [
@@ -87,7 +86,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__4
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -113,7 +112,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__5
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia'], ['Konfiguracja']],
     tablesData: [
       [
@@ -140,7 +139,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__6
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -166,7 +165,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__7
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia'], ['Konfiguracja']],
     tablesData: [
       [
@@ -192,7 +191,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__8
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -220,7 +219,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__9
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia'], ['Konfiguracja']],
     tablesData: [
       [
@@ -254,7 +253,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   // //__10
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -286,7 +285,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__11
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia'], ['Konfiguracja']],
     tablesData: [
       [
@@ -324,7 +323,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__12
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -352,7 +351,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__13
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -379,7 +378,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__14
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [
@@ -407,7 +406,7 @@ export const obudowyModulowe_techSpecData: ObudowyPusteTechDataType = [
   },
   //__15
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary'], ['Wejścia']],
     tablesData: [
       [

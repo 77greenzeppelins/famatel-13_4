@@ -19,5 +19,5 @@ import { mainCategoriesPath } from '@/data/routingData';
 
 export default function PrzedluzaczeBebnowePage() {
   /**JSX**/
-  return <CatPageContent categoryIndex={4} path={mainCategoriesPath[4]} />;
+  return <CatPageContent categoryIndex={4} />;
 }

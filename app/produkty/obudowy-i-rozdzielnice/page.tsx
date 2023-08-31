@@ -5,5 +5,5 @@ import { mainCategoriesPath } from '@/data/routingData';
 
 export default function ObudowyIRozdzielnicePage() {
   /**JSX**/
-  return <CatPageContent categoryIndex={7} path={mainCategoriesPath[7]} />;
+  return <CatPageContent categoryIndex={7} />;
 }

@@ -1,7 +1,3 @@
-/*
-catIndes = 0
-subCat = 0
-*/
 /**Components**/
 import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**BasicData**/

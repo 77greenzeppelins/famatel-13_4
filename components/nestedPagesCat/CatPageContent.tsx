@@ -6,16 +6,11 @@ import CategorySchema1 from './schema1/CategorySchema1';
 import CategorySchema2 from './schema2/CategorySchema2';
 
 /**TS**/
-// interface Props extends DynamicCatIndex {
-//   path: string;
-// }
-
 interface Props {
-  path: string;
   categoryIndex: number;
 }
 
-const CatPageContent = ({ categoryIndex, path }: Props) => {
+const CatPageContent = ({ categoryIndex }: Props) => {
   /*
   ___1.
   */
@@ -53,11 +48,9 @@ const CatPageContent = ({ categoryIndex, path }: Props) => {
   // }
 
   /**JSX**/
-  // return null;
   return (
     <div className="flex flex-col text-greyShade2 text-medium wrapper-1">
       {schemaSwitcher(categoryIndex)}
-      {/* <p className="text-medium">{categoryIndex}</p> */}
     </div>
   );
 };

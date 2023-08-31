@@ -210,13 +210,14 @@ type cat8AllTechDataType = ObudowyType1TechDataType[];
 
 //___cat1 / wtyczki gniazda przenośne /
 type WtyczkaGniazdoType1TechDataType = {
-  tableType: 'techTableWtyczkiVer1'; //___not just a string...
+  tableType: 'techTableWtyczkiGniazdaVer1' | 'onlyUnderlinedTable'; //___not just a string...
   ampers: string[];
   poles: string[];
   bodyData: string[][];
   connectionType: string[];
   mm: string[];
   weight: string[];
+  features?: string[][];
 };
 type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
 

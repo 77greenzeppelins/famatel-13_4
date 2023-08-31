@@ -5,5 +5,5 @@ import { mainCategoriesPath } from '@/data/routingData';
 
 export default function PuszkiInstalacyjnePage() {
   /**JSX**/
-  return <CatPageContent categoryIndex={9} path={mainCategoriesPath[9]} />;
+  return <CatPageContent categoryIndex={9} />;
 }

@@ -63,8 +63,8 @@ export const wtyczkiGniazdaSubCatFullPaths = wtyczkiGniazdaSubCatPaths.map(
 
 //_____subcategories of category_2
 export const gniazdaZBlokadaSubCatNames: string[] = [
-  'Gniazda tablicowe ',
-  'Gniazda stałe ',
+  'Gniazda tablicowe',
+  'Gniazda stałe',
   'Gniazda z opcjonalnymi komponentami',
   'Akcesoria do gniazd z rozłącznikiem i blokadą',
 ];

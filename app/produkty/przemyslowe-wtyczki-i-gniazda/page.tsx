@@ -37,9 +37,6 @@ export default function WtyczkiGniazdaPage() {
   */
   /**JSX**/
   return (
-    <CatPageContent
-      categoryIndex={catalogStructureData[0].mainCategoryIndex}
-      path={catalogStructureData[0].mainCategoryPath}
-    />
+    <CatPageContent categoryIndex={catalogStructureData[0].mainCategoryIndex} />
   );
 }

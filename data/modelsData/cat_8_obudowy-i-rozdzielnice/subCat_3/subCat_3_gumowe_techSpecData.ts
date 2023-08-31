@@ -1,6 +1,3 @@
-import { techSpecTables } from '@/data/basicData';
-tableType: techSpecTables[0];
-
 const arrOfDescriptions: TransparentTableDataType = [
   ['Stabilność wymiarów', '-20°C  +80°C'],
   ['Opakowanie podstawowe', '1'],
@@ -9,7 +6,7 @@ const arrOfDescriptions: TransparentTableDataType = [
 export const obudowyGumowe_techSpecData = [
   //___1__23310
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -28,7 +25,7 @@ export const obudowyGumowe_techSpecData = [
   },
   //__2__23311
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [
@@ -47,7 +44,7 @@ export const obudowyGumowe_techSpecData = [
   },
   //__3__23312
   {
-    tableType: techSpecTables[0],
+    tableType: 'techSpecTableVer1',
     header: [['Wymiary']],
     tablesData: [
       [

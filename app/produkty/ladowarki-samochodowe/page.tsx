@@ -5,5 +5,5 @@ import { mainCategoriesPath } from '@/data/routingData';
 
 export default function LadowarkiSamochodowePage() {
   /**JSX**/
-  return <CatPageContent categoryIndex={6} path={mainCategoriesPath[6]} />;
+  return <CatPageContent categoryIndex={6} />;
 }

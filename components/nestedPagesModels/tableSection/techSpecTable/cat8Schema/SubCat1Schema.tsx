@@ -5,22 +5,22 @@ import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/Basic
 /**Basic data**/
 import { allHeaders } from '@/data/textData';
 
-interface Props {
-  data: ObudowaPustaTechDataType;
-}
+// interface Props {
+//   data: ObudowaPustaTechDataType;
+// }
+//___{ data }: Props
+const Cat8Schema = () => {
+  // console.log('Cat8Schema / data:', data);
+  // const { description, header, tablesData, iconHolderData, norma, opis } = data;
 
-const Cat8Schema = ({ data }: Props) => {
-  console.log('Cat8Schema / data:', data);
-  const { description, header, tablesData, iconHolderData, norma, opis } = data;
-
-  const tablesDataMod = (i: number) => {
-    return tablesData[i].map(item => {
-      if (typeof item === 'string') {
-        return [...item];
-      }
-      return [item.label, item.value];
-    });
-  };
+  // const tablesDataMod = (i: number) => {
+  //   return tablesData[i].map(item => {
+  //     if (typeof item === 'string') {
+  //       return [...item];
+  //     }
+  //     return [item.label, item.value];
+  //   });
+  // };
 
   /**JSX**/
   return (
@@ -32,7 +32,7 @@ const Cat8Schema = ({ data }: Props) => {
           text={allHeaders.tableHeaders[1]}
         />
         <div className="flex flex-col w-full gap-y-4">
-          {header.map((header, i) => (
+          {/* {header.map((header, i) => (
             <BasicTable
               key={i}
               headerData={header}
@@ -41,7 +41,7 @@ const Cat8Schema = ({ data }: Props) => {
               headerColSpan={2}
               sideHeaderStyle="text-xs text-light"
             />
-          ))}
+          ))} */}
         </div>
       </div>
 
@@ -51,7 +51,7 @@ const Cat8Schema = ({ data }: Props) => {
           hasBox={true}
           text={allHeaders.tableHeaders[2]}
         />
-        <TransparentTable rowsData={description} />
+        {/* <TransparentTable rowsData={description} /> */}
       </div>
       <div className="flex flex-col w-full">
         <BasicHeader
@@ -59,7 +59,7 @@ const Cat8Schema = ({ data }: Props) => {
           hasBox={true}
           text={allHeaders.tableHeaders[2]}
         />
-        <TransparentTable rowsData={[norma]} />
+        {/* <TransparentTable rowsData={[norma]} /> */}
       </div>
       {/* {opis ? (
         <div className="flex flex-col w-full">

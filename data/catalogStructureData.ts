@@ -56,7 +56,6 @@ ___1. for property
 import {
   //__all models pathSegments to call notFound() in ModelPage.tsx
   cat1_allModels_pathSegments,
-  //___
   cat1_allModelsCard_data,
 } from './modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 import {
@@ -110,11 +109,10 @@ export const allModelsPathSegment = [
   cat1_allModels_pathSegments,
   cat2_allModels_pathSegments,
   cat3_allModels_pathSegments,
-  //___
   cat1_allModels_pathSegments, //___fake
   cat1_allModels_pathSegments, //___fake
-  cat1_allModels_pathSegments,
-  cat2_allModels_pathSegments,
+  cat1_allModels_pathSegments, //___fake
+  cat2_allModels_pathSegments, //___fake
   cat8_allModels_pathSegments,
   cat9_allModels_pathSegments,
   cat10_allModels_pathSegments,

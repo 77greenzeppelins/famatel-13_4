@@ -1,26 +1,32 @@
 /**Components**/
 import TechTableType1 from './techTableType1.tsx/TechTableType1';
 import Cat8Schema from './cat8Schema/Cat8Schema';
+import OnlyUnderlinedTable from './onlyUnderlinedTable/OnlyUnderlinedTable';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
 
 const TechSpecTableHolder = (props: DynamicModelContent) => {
-  const categoryAllTechData =
-    catalogStructureData[props.mainCatIndex].catAllTechData;
-
+  /*
+  ___1. catalogStructureData is an absolute resource of data;
+  ___2. received props offers full set of indices;
+  */
   const modelTechData =
-    categoryAllTechData[props.subCatIndex][props.modelIndex];
+    catalogStructureData[props.mainCatIndex].catAllTechData[props.subCatIndex][
+      props.modelIndex
+    ];
 
   /*
-  ___1. this switcher is based on propert tabletype that is in every "modelTechData"
+  ___1. this switcher is based on propert tableType that is in every "modelTechData"
   wtyczki1: 'techTableWtyczkiVer1',
   obudowy1: 'techSpecTableVer1',
   */
 
   function createTable(data: ModelTechData) {
     switch (data.tableType) {
-      case 'techTableWtyczkiVer1':
+      case 'techTableWtyczkiGniazdaVer1':
         return <TechTableType1 {...data} />;
+      case 'onlyUnderlinedTable':
+        return <OnlyUnderlinedTable {...data} />;
       case 'techSpecTableVer1':
         return <Cat8Schema {...data} />;
     }
@@ -31,3 +37,9 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
 };
 
 export default TechSpecTableHolder;
+
+// const categoryAllTechData =
+//   catalogStructureData[props.mainCatIndex].catAllTechData;
+
+// const modelTechData =
+//   categoryAllTechData[props.subCatIndex][props.modelIndex];

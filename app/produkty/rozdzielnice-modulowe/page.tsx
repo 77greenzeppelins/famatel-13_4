@@ -5,5 +5,5 @@ import { mainCategoriesPath } from '@/data/routingData';
 
 export default function RozdzielniceModulowePage() {
   /**JSX**/
-  return <CatPageContent categoryIndex={8} path={mainCategoriesPath[8]} />;
+  return <CatPageContent categoryIndex={8} />;
 }

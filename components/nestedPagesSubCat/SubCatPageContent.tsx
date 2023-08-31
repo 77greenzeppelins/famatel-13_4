@@ -19,7 +19,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
     ]
   }`;
 
-  // console.log('basicPath', basicPath);
+  console.log('modelCardData', modelCardData);
   /*
   ____const categoryAllProductsImages can be undefined ==> it refers to property in catalogStructureData whose type implies being "undefined"
   */
