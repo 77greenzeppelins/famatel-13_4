@@ -1,6 +1,7 @@
 /**Components**/
 import TechTableType1 from './techTableType1.tsx/TechTableType1';
 import TechTableType3 from './techTableType3/TechTableType3';
+import TechTableType5 from './techTableType5/TechTableType5';
 import Cat8Schema from './cat8Schema/Cat8Schema';
 import OnlyUnderlinedTable from './onlyUnderlinedTable/OnlyUnderlinedTable';
 /**Basic Data**/
@@ -29,6 +30,8 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
         return <TechTableType1 {...data} />;
       case 'techTableWtyczkiGniazdaVer2':
         return <TechTableType3 {...data} />;
+      case 'techTableWtyczkiGniazdaVer5':
+        return <TechTableType5 {...data} />;
       case 'onlyUnderlinedTable':
         return <OnlyUnderlinedTable {...data} />;
       case 'techTableWithRegularColumns':

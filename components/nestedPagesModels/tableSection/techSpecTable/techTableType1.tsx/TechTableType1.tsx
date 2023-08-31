@@ -79,7 +79,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
             <tbody>
               {bodyData.map((rowData: string[], i: number) => {
                 return (
-                  <tr key={i}>
+                  <tr className="group" key={i}>
                     {rowData.map((cellData, i) => {
                       if (i === 0) {
                         return (
@@ -87,7 +87,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                             key={i}
                             label={cellData}
                             colSpan={2}
-                            tailwindStyle="bg-greyShade2"
+                            tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
                           />
                         );
                       }
@@ -99,14 +99,15 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                           colSpan={
                             ampers.length === 3 && rowData.length === 3 ? 3 : 1
                           }
-                          tailwindStyle="bg-grey"
+                          tailwindStyle="bg-greyTint2 group-hover:bg-light"
+                          textStyle="text-center text-dark text-xs"
                         />
                       );
                     })}
                   </tr>
                 );
               })}
-              <tr>
+              <tr className="group">
                 {connectionType.map((cellData: string, i: number) => {
                   if (i === 0) {
                     return (
@@ -114,7 +115,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         key={i}
                         label={cellData}
                         colSpan={2}
-                        tailwindStyle="bg-greyShade2"
+                        tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
                       />
                     );
                   }
@@ -126,12 +127,13 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         ampers.length === 2 ? 3 : poles.length === 5 ? 4 : 6
                       }
                       // colSpan={poles.length === 5 ? 2 : 3}
-                      tailwindStyle="bg-grey"
+                      tailwindStyle="bg-greyTint2 group-hover:bg-light"
+                      textStyle="text-center text-dark text-xs"
                     />
                   );
                 })}
               </tr>
-              <tr>
+              <tr className="group">
                 {mm.map((cellData: string, i: number) => {
                   if (i === 0) {
                     return (
@@ -139,7 +141,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         key={i}
                         label={cellData}
                         colSpan={2}
-                        tailwindStyle="bg-greyShade2"
+                        tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
                       />
                     );
                   }
@@ -152,12 +154,13 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         ampers.length === 2 ? 3 : poles.length === 5 ? 2 : 3
                       }
                       //colSpan={poles.length === 5 ? 2 : 3}
-                      tailwindStyle="bg-grey"
+                      tailwindStyle="bg-greyTint2 group-hover:bg-light"
+                      textStyle="text-center text-dark text-xs"
                     />
                   );
                 })}
               </tr>
-              <tr>
+              <tr className="group">
                 {weight.map((cellData: string, i: number) => {
                   if (i === 0) {
                     return (
@@ -165,7 +168,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         key={i}
                         label={cellData}
                         colSpan={2}
-                        tailwindStyle="bg-greyShade2"
+                        tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
                       />
                     );
                   }
@@ -177,7 +180,8 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                       colSpan={
                         ampers.length === 3 && weight.length === 3 ? 3 : 1
                       }
-                      tailwindStyle="bg-grey"
+                      tailwindStyle="bg-greyTint2 group-hover:bg-light"
+                      textStyle="text-center text-dark text-xs"
                     />
                   );
                 })}

@@ -1,12 +1,3 @@
-/*TS*/
-/*
-Data for data
-*/
-
-/*
-Data for component
-*/
-
 export const wtyczkiGniazdaKontenerowe_techData: WtyczkiGniazdaType2TechDataType =
   [
     //___1 / IP54

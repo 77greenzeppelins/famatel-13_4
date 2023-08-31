@@ -26,11 +26,14 @@ interface Props {
   };
 }
 
-export default function WtyczkiGniazdaścienneModelPage({ params }: Props) {
+export default function WtyczkiGniazdaEstradoweModelPage({ params }: Props) {
   /**JSX**/
   return (
     <ModelPageWrapper>
       <ModelPageContent />
+      {/* <div className="h-[50vh] fc">
+        <p>{params.model}</p>
+      </div> */}
     </ModelPageWrapper>
   );
 }

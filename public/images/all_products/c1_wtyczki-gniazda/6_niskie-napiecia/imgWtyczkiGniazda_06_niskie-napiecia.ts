@@ -14,49 +14,49 @@
  **/
 export const indexImgCat1_subCat_6: ImageType_C[] = [
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_01_13800.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_01_13800.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_02_14800.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_02_14800.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_03_23800.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_03_23800.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_04_24800.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_04_24800.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_05_25540.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_05_25540.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_06_25556.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_06_25556.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_07_23072.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_07_23072.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
   {
-    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napięcia/1.6_08_24991.webp',
+    path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_08_24991.webp',
     width: 1200,
     height: 1200,
     alt: 'Zdjęcie wtyczki przemysłowej',

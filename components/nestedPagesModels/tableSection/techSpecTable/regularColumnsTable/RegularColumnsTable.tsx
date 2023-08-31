@@ -14,7 +14,7 @@ const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
         <BasicHeader
           hasVerticalOrnament={false}
           hasBox={true}
-          text={allHeaders.tableHeaders[2]}
+          text={allHeaders.tableHeaders[1]}
         />
         <TableWrapper>
           <thead>
@@ -36,7 +36,7 @@ const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
                   if (j === 0) {
                     return (
                       <HeaderCellMulticolor
-                        key={i}
+                        key={j}
                         label={cellData}
                         colSpan={1}
                         tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
@@ -45,7 +45,7 @@ const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
                   }
                   return (
                     <HeaderCellMulticolor
-                      key={i}
+                      key={j}
                       label={cellData}
                       colSpan={1}
                       tailwindStyle="bg-greyTint2 group-hover:bg-light"
