@@ -219,13 +219,35 @@ type WtyczkaGniazdoType1TechDataType = {
   weight: string[];
   features?: string[][];
 };
-type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
+type WtyczkaGniazdoType2TechDataType = {
+  tableType: 'techTableWithRegularColumns';
+  header: string[];
+  tableBody: string[][];
+};
+type WtyczkaGniazdoType3TechDataType = {
+  tableType: 'techTableWtyczkiGniazdaVer2' | 'noTechTable';
+  header?: string[][];
+  tableBody?: string[][];
+  features?: string[][];
+};
 
-type Cat1AllTechDataType = WtyczkiGniazdaType1TechDataType[];
+type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
+type WtyczkiGniazdaType2TechDataType = WtyczkaGniazdoType2TechDataType[];
+type WtyczkiGniazdaType3TechDataType = WtyczkaGniazdoType3TechDataType[];
+
+type Cat1AllTechDataType = (
+  | WtyczkiGniazdaType1TechDataType
+  | WtyczkiGniazdaType2TechDataType
+  | WtyczkiGniazdaType3TechDataType
+)[];
 
 type AllTechSpecData = (Cat1AllTechDataType | cat8AllTechDataType)[];
 
-type ModelTechData = WtyczkaGniazdoType1TechDataType | ObudowaType1TechDataType;
+type ModelTechData =
+  | WtyczkaGniazdoType1TechDataType
+  | WtyczkaGniazdoType2TechDataType
+  | WtyczkaGniazdoType3TechDataType
+  | ObudowaType1TechDataType;
 
 // type WtyczkiGniazdaType2TechDataType = {
 //   tableType: string;

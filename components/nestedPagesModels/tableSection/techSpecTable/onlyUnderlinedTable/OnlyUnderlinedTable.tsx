@@ -10,7 +10,7 @@ const OnlyUnderlinedTable = (data: WtyczkaGniazdoType1TechDataType) => {
         <BasicHeader
           hasVerticalOrnament={false}
           hasBox={true}
-          text={allHeaders.tableHeaders[0]}
+          text={allHeaders.tableHeaders[2]}
         />
         <p> OnlyUnderlinedTable</p>
       </div>{' '}
