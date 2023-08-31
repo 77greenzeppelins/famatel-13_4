@@ -31,7 +31,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
           >
             <thead className={`text-xs uppercase text-light `}>
               <tr>
-                {ampers.map((cellData: string, i: number) => {
+                {ampers.map((cellData, i) => {
                   if (i === 0) {
                     return (
                       <HeaderCellMulticolor

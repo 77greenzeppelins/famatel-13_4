@@ -1,6 +1,5 @@
 'use client';
 import { usePathname } from 'next/navigation';
-
 /**Components**/
 import TableSection from './tableSection/TableSection';
 import GraphicSection from './graphicSection/GraphicSection';
