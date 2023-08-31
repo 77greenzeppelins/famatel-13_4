@@ -45,7 +45,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                     <HeaderCellMulticolor
                       key={i}
                       label={cellData}
-                      colSpan={3}
+                      colSpan={poles.length === 5 ? 2 : 3}
                       tailwindStyle="bg-greyShade2"
                     />
                   );
@@ -122,7 +122,10 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                     <HeaderCellMulticolor
                       key={i}
                       label={cellData}
-                      colSpan={ampers.length === 2 ? 3 : 6}
+                      colSpan={
+                        ampers.length === 2 ? 3 : poles.length === 5 ? 4 : 6
+                      }
+                      // colSpan={poles.length === 5 ? 2 : 3}
                       tailwindStyle="bg-grey"
                     />
                   );
@@ -144,7 +147,11 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                     <HeaderCellMulticolor
                       key={i}
                       label={cellData}
-                      colSpan={ampers.length === 2 ? 3 : 3}
+                      // colSpan={ampers.length === 2 ? 3 : 3}
+                      colSpan={
+                        ampers.length === 2 ? 3 : poles.length === 5 ? 2 : 3
+                      }
+                      //colSpan={poles.length === 5 ? 2 : 3}
                       tailwindStyle="bg-grey"
                     />
                   );
