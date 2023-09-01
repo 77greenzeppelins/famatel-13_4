@@ -1,5 +1,3 @@
-import { tablesTypes } from '@/data/basicData';
-
 /**Data for data**/
 const headerTopData_1 = [
   ['3P = 2P + T', '4P = 3P + T', '5P = 3P + T + N'],
