@@ -1,18 +1,16 @@
 'use client';
+/**Components**/
 import TableWrapper from '@/components/basic/tables/_atoms/tableWrapper/TableWrapper';
 import HeaderCellMulticolor from '@/components/basic/tables/mixed/_atoms/headerStaff/HeaderCellMulticolor';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+/**Basic Data**/
 import { allHeaders } from '@/data/textData';
 import { styles } from '@/styles';
 
-interface Props {
-  data: WtyczkaGniazdoType1TechDataType;
-}
-
-//___: WtyczkiGniazdaType1TechDataType
 const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
+  /**Data destr...**/
   const { ampers, poles, bodyData, connectionType, mm, weight } = data;
-  console.log('data', data);
+
   /**JSX**/
   return (
     <div className="flex flex-col w-full gap-y-16">
@@ -21,14 +19,9 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
           hasVerticalOrnament={false}
           hasBox={true}
           text={allHeaders.tableHeaders[1]}
-          // text={data.tableType}
         />
         <div className="flex flex-col w-full gap-y-4">
-          <TableWrapper
-          // tableStyle={`border-separate border-spacing-[2px] table-fixed
-          // w-[900px]
-          // `}
-          >
+          <TableWrapper>
             <thead className={`text-xs uppercase text-light `}>
               <tr>
                 {ampers.map((cellData, i) => {

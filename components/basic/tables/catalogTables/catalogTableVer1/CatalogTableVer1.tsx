@@ -5,12 +5,10 @@ import HeaderCellMulticolor from '../../mixed/_atoms/headerStaff/HeaderCellMulti
 import AmperSection from './bodyStaff/AmperSection';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
+/**Basic Data**/
 import { allHeaders } from '@/data/textData';
 
-interface Props {
-  data: CatalogItemVar1Type;
-}
-const CatalogTableVer1 = ({ data }: Props) => {
+const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   /**Data Destr...**/
   const { headerTopData, headerBottomData, rowsData } = data;
   const {
@@ -40,7 +38,7 @@ const CatalogTableVer1 = ({ data }: Props) => {
   // const headerColMax = firstHeaderRow.length;
   // const amperHeaderColNumber = secondHeaderRow.length;
   // const bodyColNumber = secondHeaderRow.length;
-  console.log('firstHeaderRow:', firstHeaderRow);
+  // console.log('firstHeaderRow:', firstHeaderRow);
 
   /**JSX**/
   return (

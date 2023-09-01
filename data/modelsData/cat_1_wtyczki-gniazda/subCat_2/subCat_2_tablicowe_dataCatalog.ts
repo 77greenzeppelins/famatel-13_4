@@ -23,7 +23,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   //__1 = [
   //______________
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -41,7 +41,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //__2
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -53,7 +53,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //__3
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -66,7 +66,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //__4
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -84,7 +84,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //__5
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -102,7 +102,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //___6__for 63A / s.39
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -115,7 +115,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //___7__for 125A / s.39
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -129,7 +129,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
 
   //__8 / s.41
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -147,7 +147,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   // __9
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -166,7 +166,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
 
   //___10__for 63A / s.41
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -179,7 +179,7 @@ export const wtyczkiGniazdaTablicowe_catalogData: CatalogDataVar1Type = [
   },
   //___11__for 125A / s.41
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [

@@ -297,7 +297,6 @@ export const wtyczkiGniazdaScienne_techData: WtyczkiGniazdaType1TechDataType = [
     connectionType: ['Rodzaj połączenia', 'Zaciski śrubowe'],
     mm: ['Przewód giętki (mm²)', '6 - 16'],
     weight: ['Waga', '1745', '1752', '1852'],
-    features: [['']],
   },
   //___19__akcesoria
   {

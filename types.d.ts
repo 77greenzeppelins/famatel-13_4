@@ -1,9 +1,3 @@
-// type StaticImageData = {
-//   src: string;
-//   height: number;
-//   width: number;
-//   blurDataURL?: string;
-// };
 /*
 ___1. syntax: "_C" means "custome"; is used when type name sound as native TS name...
 */
@@ -61,7 +55,7 @@ type DynamicModelContent = DynamicSubCatContent & {
 };
 
 /*
-used in file: catalogStructureData.ts
+___1. used in file: catalogStructureData.ts
 */
 type CatalogStructureData = CategoryStructureData[];
 type CategoryStructureData = {
@@ -83,16 +77,20 @@ type CategoryStructureData = {
   catAllTechData: Cat1AllTechDataType | cat8AllTechDataType;
 };
 
+/*
+___1. types for catalogTables...
+*/
 type CatalogItemVar1Type = {
-  tableType: string;
+  tableType: 'catalogTableCat1_1';
   headerTopData: string[][];
   headerBottomData: string[][];
   rowsData: string[][][];
 };
 type CatalogDataVar1Type = CatalogItemVar1Type[];
+
 type KeyValueLineType = { label: string; value: string };
 type CatalogItemVar2Type = {
-  tableType: string;
+  tableType: 'noCatalogData' | 'catalogTableCat1_4';
   line1?: KeyValueLineType;
   line2?: KeyValueLineType;
   line3?: KeyValueLineType;
@@ -103,7 +101,9 @@ type CatalogItemVar2Type = {
 type CatalogDataVar2Type = CatalogItemVar2Type[];
 
 type CategoryCatalogDataType = (CatalogDataVar1Type | CatalogDataVar2Type)[];
-type allCatalogDataType = CategoryCatalogDataType[];
+type llCatalogDataType = CategoryCatalogDataType[];
+
+type ModelCatalogsTypes = CatalogItemVar1Type | CatalogItemVar2Type;
 
 /*
 idea: all data for each model
@@ -147,8 +147,8 @@ type BasicTableDataType = {
   sideHeaderStyle?: string;
 };
 type DataAsTuple = [string, string];
-type TransparentTableDataType = DataAsTuple[];
 type TransparentTableSimpleDataType = string[][];
+type TransparentTableDataType = DataAsTuple[];
 
 /*
 ___used in: S
@@ -166,32 +166,6 @@ type ModelSchemaType = Omit<SubCatSchemaType, 'subCatIndex'>;
 ___section with types for techspecTables
 ___for model techSpecData ==> including "indxFiles" that stores individual files in arrays 
 */
-
-//__cat 8,9,10
-// type ObudowaPustaTechDataType = {
-//   tableType: string;
-//   header: string[][];
-//   tablesData: { label: string; value: string }[][];
-//   header3col?: string[];
-//   tablesData3col?: {
-//     label: string;
-//     value1: string;
-//     value2: string;
-//   }[];
-//   norma: DataAsTuple;
-//   description: TransparentTableDataType | TransparentTableSimpleDataType;
-//   iconHolderData: { svgLabel: string[] };
-//   opis?: string[];
-//   packageDetails?: DataAsTuple[];
-// };
-// type ObudowaVer2TechDataType = {
-//   tableType: string;
-// };
-// type ObudowyVer2TechDataType = ObudowaVer2TechDataType[]
-// type ObudowyPusteTechDataType = (
-//   | ObudowaPustaTechDataType
-//   | ObudowaVer2TechDataType
-// )[];
 /*
 ____(!) should replace ObudowaPustaTechDataType...
 */
@@ -217,7 +191,7 @@ type WtyczkaGniazdoType1TechDataType = {
   connectionType: string[];
   mm: string[];
   weight: string[];
-  features?: string[][];
+  features?: TransparentTableDataType;
 };
 type WtyczkaGniazdoType2TechDataType = {
   tableType: 'techTableWithRegularColumns';
@@ -275,13 +249,56 @@ type Cat1AllTechDataType = (
 
 type AllTechSpecData = (Cat1AllTechDataType | cat8AllTechDataType)[];
 
-type ModelTechData =
+type ModelTechDataTypes =
   | WtyczkaGniazdoType1TechDataType
   | WtyczkaGniazdoType2TechDataType
   | WtyczkaGniazdoType3TechDataType
   | WtyczkaGniazdoType5TechDataType
   | WtyczkaGniazdoType6TechDataType
   | ObudowaType1TechDataType;
+
+/*
+___1. SvgTechComponent ==> for each svg component
+___2. SvgTechItemType ==> for "index.ts" files to specify type of array items;
+*/
+type SvgTechComponent = {
+  basicSize?: number;
+  className?: string;
+};
+type SvgTechItemType = {
+  model: string;
+  Component: React.FC<SvgTechComponent>;
+};
+
+type IndexFileOfSvgTechItemsType = SvgTechItemType[];
+
+//________________________________________________________________________________________
+
+//__cat 8,9,10
+// type ObudowaPustaTechDataType = {
+//   tableType: string;
+//   header: string[][];
+//   tablesData: { label: string; value: string }[][];
+//   header3col?: string[];
+//   tablesData3col?: {
+//     label: string;
+//     value1: string;
+//     value2: string;
+//   }[];
+//   norma: DataAsTuple;
+//   description: TransparentTableDataType | TransparentTableSimpleDataType;
+//   iconHolderData: { svgLabel: string[] };
+//   opis?: string[];
+//   packageDetails?: DataAsTuple[];
+// };
+// type ObudowaVer2TechDataType = {
+//   tableType: string;
+// };
+// type ObudowyVer2TechDataType = ObudowaVer2TechDataType[]
+// type ObudowyPusteTechDataType = (
+//   | ObudowaPustaTechDataType
+//   | ObudowaVer2TechDataType
+// )[];
 
 // type WtyczkiGniazdaType2TechDataType = {
 //   tableType: string;
@@ -305,17 +322,3 @@ type ModelTechData =
 //   | ObudowaXXXTechDataType
 //   | WtyczkiGniazdaType1TechDataType
 //   | WtyczkiGniazdaType2TechDataType;
-/*
-___1. SvgTechComponent ==> for each svg component
-___2. SvgTechItemType ==> for "index.ts" files to specify type of array items;
-*/
-type SvgTechComponent = {
-  basicSize?: number;
-  className?: string;
-};
-type SvgTechItemType = {
-  model: string;
-  Component: React.FC<SvgTechComponent>;
-};
-
-type IndexFileOfSvgTechItemsType = SvgTechItemType[];

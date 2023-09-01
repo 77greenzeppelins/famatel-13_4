@@ -1,4 +1,3 @@
-import { tablesTypes } from '@/data/basicData';
 /**Data for data**/
 const headerTopData_1 = [
   ['3P = 2P + T', '4P = 3P + T', '5P = 3P + T + N'],
@@ -18,7 +17,7 @@ Data for Components
 */
 const gniazdaBlokadaTablicowe_tablesData: CatalogDataVar1Type = [
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -36,7 +35,7 @@ const gniazdaBlokadaTablicowe_tablesData: CatalogDataVar1Type = [
   },
   //__2
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -54,7 +53,7 @@ const gniazdaBlokadaTablicowe_tablesData: CatalogDataVar1Type = [
   },
   //__3
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -72,7 +71,7 @@ const gniazdaBlokadaTablicowe_tablesData: CatalogDataVar1Type = [
   },
   //__4
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [

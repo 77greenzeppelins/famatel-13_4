@@ -27,7 +27,7 @@ const GraphicSection = (props: DynamicModelContent) => {
   /*
   ___ step 3 ==> last selection ==> as a result we have modelCard; then destr it...
   */
-  console.log('modelImage:', modelImage);
+  // console.log('modelImage:', modelImage);
 
   /**JSX**/
   return (

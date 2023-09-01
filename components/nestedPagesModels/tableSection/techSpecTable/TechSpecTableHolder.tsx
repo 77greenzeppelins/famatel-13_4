@@ -25,7 +25,7 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
   obudowy1: 'techSpecTableVer1',
   */
 
-  function createTable(data: ModelTechData) {
+  function createTable(data: ModelTechDataTypes) {
     switch (data.tableType) {
       case 'techTableWtyczkiGniazdaVer1':
         return <TechTableType1 {...data} />;

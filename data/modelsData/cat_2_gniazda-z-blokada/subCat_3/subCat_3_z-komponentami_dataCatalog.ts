@@ -1,4 +1,3 @@
-import { tablesTypes } from '@/data/basicData';
 /**Data for data**/
 const headerTopData_6 = [
   ['3P = 2P + T', '4P = 3P + T', '5P = 3P + T + N'],
@@ -33,7 +32,7 @@ const headerBottomData_1 = [
 const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   //__1
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_6,
     headerBottomData: headerBottomData_6,
     rowsData: [
@@ -51,7 +50,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__2
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_6,
     headerBottomData: headerBottomData_6,
     rowsData: [
@@ -69,7 +68,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__3
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_6,
     headerBottomData: headerBottomData_6,
     rowsData: [
@@ -87,7 +86,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__4
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_6,
     headerBottomData: headerBottomData_6,
     rowsData: [
@@ -105,7 +104,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__5
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -123,7 +122,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__6
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -136,7 +135,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__7
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -149,7 +148,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__8
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -162,7 +161,7 @@ const gniazdaBlokadaKomponenty_tablesData: CatalogDataVar1Type = [
   },
   //__9
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [

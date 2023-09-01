@@ -1,5 +1,3 @@
-import { tablesTypes } from '@/data/basicData';
-
 const headerTopData_1 = [
   ['3P = 2P + T', '4P = 3P + T', '5P = 3P + T + N'],
   ['110V', '50/60Hz'],
@@ -21,7 +19,7 @@ Data for Components
 export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
   //____1__s.43
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -40,7 +38,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__2
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -59,7 +57,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__3
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -73,7 +71,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___4
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -87,7 +85,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__5__s.45
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -106,7 +104,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___6
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -120,7 +118,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___7
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -134,7 +132,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__8__s.47
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -153,7 +151,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__9__s.47
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -171,7 +169,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
   },
   //__10__s.49
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -190,7 +188,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__11__s.49
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -208,7 +206,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
   },
   //___12
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -222,7 +220,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___13
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -236,7 +234,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //__14__s.51
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -254,7 +252,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
   },
   //___15
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -268,7 +266,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___16
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -282,7 +280,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___17__s.53
   {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [
@@ -296,62 +294,7 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
 
   //___18
   {
-    tableType: tablesTypes[0],
-    headerTopData: headerTopData_1,
-    headerBottomData: headerBottomData_1,
-    rowsData: [
-      [
-        ['125', '3', '1', '24196', '24261', '24489', '24487'],
-        ['4', '1', '24197', '24258', '24396', '24498'],
-        ['5', '1', '24213', '24297', '24397', '24499'],
-      ],
-    ],
-  },
-
-  //___19_s.55
-  {
-    tableType: tablesTypes[0],
-    headerTopData: headerTopData_1,
-    headerBottomData: headerBottomData_1,
-    rowsData: [
-      [
-        ['125', '3', '1', '24196', '24261', '24489', '24487'],
-        ['4', '1', '24197', '24258', '24396', '24498'],
-        ['5', '1', '24213', '24297', '24397', '24499'],
-      ],
-    ],
-  },
-
-  //___19_s.55
-  {
-    tableType: tablesTypes[0],
-    headerTopData: headerTopData_1,
-    headerBottomData: headerBottomData_1,
-    rowsData: [
-      [
-        ['125', '3', '1', '24196', '24261', '24489', '24487'],
-        ['4', '1', '24197', '24258', '24396', '24498'],
-        ['5', '1', '24213', '24297', '24397', '24499'],
-      ],
-    ],
-  },
-
-  //______________fake
-  {
-    tableType: tablesTypes[0],
-    headerTopData: headerTopData_1,
-    headerBottomData: headerBottomData_1,
-    rowsData: [
-      [
-        ['125', '3', '1', '24196', '24261', '24489', '24487'],
-        ['4', '1', '24197', '24258', '24396', '24498'],
-        ['5', '1', '24213', '24297', '24397', '24499'],
-      ],
-    ],
-  },
-
-  {
-    tableType: tablesTypes[0],
+    tableType: 'catalogTableCat1_1',
     headerTopData: headerTopData_1,
     headerBottomData: headerBottomData_1,
     rowsData: [

@@ -1,7 +1,3 @@
-import { techSpecTablesNames } from '@/data/basicData';
-
-techSpecTablesNames.wtyczki1;
-
 export const wtyczkiGniazdaPrzenosne_techData: WtyczkiGniazdaType1TechDataType =
   [
     //___1 / IP54

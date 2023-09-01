@@ -3,7 +3,6 @@ import CatalogTableVer1 from '@/components/basic/tables/catalogTables/catalogTab
 import CatalogTableVer2 from '@/components/basic/tables/catalogTables/catalogTableVer2/CatalogTableVer2';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
-import { tablesTypes } from '@/data/basicData';
 
 const CatalogTableHolder = (props: DynamicModelContent) => {
   /*
@@ -11,33 +10,6 @@ const CatalogTableHolder = (props: DynamicModelContent) => {
   */
   const categoryAllData = catalogStructureData[props.mainCatIndex]; //__step
   const { catAllCatalogData } = categoryAllData;
-  /*
-  ___ step 2 ==> select subCategory data
-  */
-  // const subCategoryAllData = catAllModels[props.subCatIndex];
-  /*
-  ___ step 3 ==> last selection ==> as a result we have modelCard; then destr it...
-  */
-
-  const schemaSwitcher = (tableName: string) => {
-    switch (tableName) {
-      case tablesTypes[0]:
-        return (
-          <CatalogTableVer1 data={modelCatalogData as CatalogItemVar1Type} />
-        );
-      case tablesTypes[1]:
-        return (
-          <CatalogTableVer2 data={modelCatalogData as CatalogItemVar2Type} />
-        );
-      default:
-        return (
-          <div className="w-full h-full bg-dark fc text-small ">
-            This Catalog Table is null or under construction - disable this
-            message in CatalogTableHolder...
-          </div>
-        );
-    }
-  };
 
   /*
   ___1. not each model has catalogTable ==> there are actually the whole subCategories without catalogTables ==> example: cat8 | sunCat1 i.e. "obudowy puste"
@@ -46,17 +18,33 @@ const CatalogTableHolder = (props: DynamicModelContent) => {
   if (!catAllCatalogData) {
     return null;
   }
-
   const modelCatalogData =
     catAllCatalogData[props.subCatIndex][props.modelIndex];
-  const tableType: string | null = modelCatalogData
-    ? modelCatalogData.tableType
-    : null;
-
   // console.log('CatalogTableHolder / modelCatalogData:', modelCatalogData);
 
+  /*
+  ___1.
+  */
+  function createTable(data: ModelCatalogsTypes) {
+    switch (data.tableType) {
+      case 'catalogTableCat1_1':
+        return <CatalogTableVer1 {...data} />;
+      case 'catalogTableCat1_4':
+        return <CatalogTableVer2 {...data} />;
+      case 'noCatalogData':
+        return null;
+      // default:
+      //   return (
+      //     <div className="w-full h-full bg-dark fc text-small ">
+      //       This Catalog Table is null or under construction - disable this
+      //       message in CatalogTableHolder...{data.tableType}
+      //     </div>
+      //   );
+    }
+  }
+
   /**JSX**/
-  return <div>{schemaSwitcher(tableType as string)}</div>;
+  return <div>{createTable(modelCatalogData)}</div>;
 };
 
 export default CatalogTableHolder;
@@ -77,4 +65,24 @@ ___1
 //   tableType1: CatalogTableVer1,
 //   tableType2: CatalogTableVer2,
 //   // Add more entries for other types and their corresponding table components
+// };
+
+// const schemaSwitcher = (tableName: string) => {
+//   switch (tableName) {
+//     case catalogTablesTypes[0]:
+//       return (
+//         <CatalogTableVer1 data={modelCatalogData as CatalogItemVar1Type} />
+//       );
+//     case tablesTypes[1]:
+//       return (
+//         <CatalogTableVer2 data={modelCatalogData as CatalogItemVar2Type} />
+//       );
+//     default:
+//       return (
+//         <div className="w-full h-full bg-dark fc text-small ">
+//           This Catalog Table is null or under construction - disable this
+//           message in CatalogTableHolder...
+//         </div>
+//       );
+//   }
 // };
