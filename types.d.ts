@@ -81,7 +81,7 @@ type CategoryStructureData = {
 ___1. types for catalogTables...
 */
 type CatalogItemVar1Type = {
-  tableType: 'catalogTableCat1_1';
+  tableType: 'catalogTableCat1_1' | 'catalogTableCat1_6';
   headerTopData: string[][];
   headerBottomData: string[][];
   rowsData: string[][][];
@@ -100,10 +100,19 @@ type CatalogItemVar2Type = {
 }; // for cat1_subCat4_jednofazoweScienne
 type CatalogDataVar2Type = CatalogItemVar2Type[];
 
-type CategoryCatalogDataType = (CatalogDataVar1Type | CatalogDataVar2Type)[];
+type CatalogItemEmptyType = {
+  tableType: 'noCatalogData';
+}; // for cat1_subCat4_jednofazoweScienne
+type CatalogDataEmptyType = CatalogItemEmptyType[];
+
+type CategoryCatalogDataType =
+  | (CatalogDataVar1Type | CatalogDataVar2Type | CatalogDataEmptyType)[]; //  | null
 type AllCatalogDataType = CategoryCatalogDataType[];
 
-type ModelCatalogsTypes = CatalogItemVar1Type | CatalogItemVar2Type;
+type ModelCatalogsTypes =
+  | CatalogItemVar1Type
+  | CatalogItemVar2Type
+  | CatalogItemEmptyType;
 
 /*
 idea: all data for each model

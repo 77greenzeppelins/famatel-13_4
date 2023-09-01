@@ -7,8 +7,9 @@ import { allHeaders } from '@/data/textData';
 interface Props {
   tableHeader: string[];
   tableBody: string[][];
+  tableBodySpecialRows: string[][];
 }
-const SpecialTechTable = (props: Props) => {
+const SpecialTechTable3 = (props: Props) => {
   /**JSX**/
   return (
     <div className="flex flex-col w-full gap-y-16">
@@ -25,8 +26,7 @@ const SpecialTechTable = (props: Props) => {
                 <HeaderCellMulticolor
                   key={i}
                   label={cellData}
-                  // colSpan={2}
-                  colSpan={i === 0 ? 2 : props.tableHeader.length === 3 ? 3 : 2}
+                  colSpan={2}
                   tailwindStyle={`${i > 0 ? 'bg-greyShade2' : 'bg-dark'}`}
                 />
               ))}
@@ -36,8 +36,7 @@ const SpecialTechTable = (props: Props) => {
                 <HeaderCellMulticolor
                   key={i}
                   label={cellData}
-                  colSpan={i === 0 ? 2 : props.tableHeader.length === 3 ? 3 : 2}
-                  // colSpan={2}
+                  colSpan={i === 0 ? 2 : 6}
                   tailwindStyle={`${
                     i === 0
                       ? `bg-greyShade2 group-hover:bg-corpo`
@@ -74,6 +73,46 @@ const SpecialTechTable = (props: Props) => {
                 ))}
               </tr>
             ))}
+            {/* {props.tableBodySpecialRows.map((rowData, i)=> <tr key={i}></tr>)} */}
+            {
+              <tr className="group">
+                {props.tableBodySpecialRows[0].map((cellData, i) => {
+                  return (
+                    <HeaderCellMulticolor
+                      key={i}
+                      label={cellData}
+                      colSpan={2}
+                      rowSpan={i === 0 ? 2 : 1}
+                      tailwindStyle={`${
+                        i === 0
+                          ? `bg-greyShade2 group-hover:bg-corpo`
+                          : `bg-greyTint2 group-hover:bg-light`
+                      }`}
+                      textStyle={`${
+                        i === 0
+                          ? 'text-xs text-light text-center'
+                          : 'text-xs text-dark text-center'
+                      }`}
+                    />
+                  );
+                })}
+              </tr>
+            }
+            {
+              <tr>
+                {props.tableBodySpecialRows[1].map((cellData, i) => {
+                  return (
+                    <HeaderCellMulticolor
+                      key={i}
+                      label={cellData}
+                      colSpan={2}
+                      tailwindStyle="bg-greyTint2 hover:bg-light"
+                      textStyle="text-xs text-dark text-center"
+                    />
+                  );
+                })}
+              </tr>
+            }
           </tbody>
         </TableWrapper>
       </div>
@@ -81,4 +120,4 @@ const SpecialTechTable = (props: Props) => {
   );
 };
 
-export default SpecialTechTable;
+export default SpecialTechTable3;

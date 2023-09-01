@@ -116,8 +116,8 @@ export const wtyczkiGniazdaEstradowe_techData: WtyczkiGniazdaType5TechDataType =
     {
       tableType: 'techTableWtyczkiGniazdaVer5',
       catalogLike: {
-        line1: [' ', '230V', '50/60Hz'],
-        line2: ['Ampery', 'Gniazdo', 'Bieguny: 3P', 'Godzina P: 6h'],
+        line1: [' ', '230V 50/60Hz'],
+        line2: ['Ampery', 'Gniazdo', 'Bieguny: 3P Godzina P: 6h'],
         line3: ['16', '3P (2x)', '17020'],
       },
       underlinedRow: [
@@ -143,7 +143,6 @@ export const wtyczkiGniazdaEstradowe_techData: WtyczkiGniazdaType5TechDataType =
       description:
         '* Możliwość montażu urządzeń na panelu przednim i tylnym. Śruby montażowe do panelu przedniego i tylnego wkręcane w metalowe gwinty co umożliwia wielokrotne odkręcanie',
     },
-
     //___12_____data for stojak
     {
       tableType: 'techTableWtyczkiGniazdaVer5',

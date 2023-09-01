@@ -2,13 +2,13 @@
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 import TableWrapper from '../../_atoms/tableWrapper/TableWrapper';
 import HeaderCellMulticolor from '../../mixed/_atoms/headerStaff/HeaderCellMulticolor';
-import AmperSection from './bodyStaff/AmperSection';
+import AmperSection1_1 from './bodyStaff/AmperSection1_1';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
 /**Basic Data**/
 import { allHeaders } from '@/data/textData';
 
-const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
+const CatalogTableVer1_1 = (data: CatalogItemVar1Type) => {
   /**Data Destr...**/
   const { headerTopData, headerBottomData, rowsData } = data;
   const {
@@ -38,7 +38,7 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   // const headerColMax = firstHeaderRow.length;
   // const amperHeaderColNumber = secondHeaderRow.length;
   // const bodyColNumber = secondHeaderRow.length;
-  console.log('CatalogTableVer1 / data:', data);
+  console.log('CatalogTableVer1_1 / data:', data);
 
   /**JSX**/
   return (
@@ -58,43 +58,34 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
             {firstHeaderRow.map((cellData, i) => (
               <HeaderCellMulticolor
                 key={i}
-                textStyle={`${i === 0 ? 'text-grey' : 'text-light'}`}
+                textStyle={`${
+                  i === 1
+                    ? 'text-light text-center text-xs'
+                    : i === 2
+                    ? 'text-dark text-center text-xs'
+                    : i === 3
+                    ? 'text-light text-center text-xs'
+                    : i === 4
+                    ? 'text-dark text-center text-xs'
+                    : 'bg-dark'
+                }`}
                 //___px-[50px]
-                tailwindStyle={`${i === 0 ? 'px-2' : cellPaddings} 
-                
+                tailwindStyle={`${i === 0 ? 'px-2 py-3' : 'px-0 py-3'} 
               ${
-                i === 0
-                  ? `bg-dark`
-                  : cellData === '110V'
-                  ? 'bg-vY'
-                  : cellData === '230V'
-                  ? 'bg-vB'
-                  : cellData === '400V'
-                  ? 'bg-vR'
-                  : cellData === '500V'
-                  ? 'bg-vD'
+                i === 1
+                  ? 'bg-vV'
+                  : i === 2
+                  ? 'bg-vmL'
+                  : i === 3
+                  ? 'bg-vG'
+                  : i === 4
+                  ? 'bg-vmL'
                   : 'bg-dark'
               }
-              ${
-                // i === 0
-                //   ? 'w-[300px]'
-                //   : i > 0 && firstHeaderRowRestCells.length === 4
-                //   ? 'w-[150px]'
-                //   : i > 0 && firstHeaderRowRestCells.length === 3
-                //   ? 'w-[200px]'
-                //   : i > 0 && firstHeaderRowRestCells.length < 3
-                //   ? 'w-[200px]'
-                //   : 'w-[200px]'
                 i === 0 ? 'w-[300px] max-w-[300px]' : 'w-[150px] max-w-[150px]'
               }`}
                 label={cellData}
-                colSpan={
-                  i > 0 && firstHeaderRow.length === 5
-                    ? 2
-                    : i > 0 && firstHeaderRow.length < 5
-                    ? 4
-                    : 3
-                }
+                colSpan={i == 0 ? 6 : 2}
                 rowSpan={i === 0 ? 2 : 1}
               />
             ))}
@@ -103,19 +94,30 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
             {secondHeaderRow.map((cellData, i) => (
               <HeaderCellMulticolor
                 key={i}
-                tailwindStyle={`w-1/4 ${cellPaddings} text-center 
-              ${
-                firstHeaderRowRestCells[i] === '110V'
-                  ? 'bg-vY'
-                  : firstHeaderRowRestCells[i] === '230V'
-                  ? 'bg-vB'
-                  : firstHeaderRowRestCells[i] === '400V'
-                  ? 'bg-vR'
-                  : firstHeaderRowRestCells[i] === '500V'
-                  ? 'bg-vD'
-                  : 'bg-dark'
-              }
+                tailwindStyle={` ${cellPaddings}  
+             ${
+               i === 0
+                 ? 'bg-vV'
+                 : i === 1
+                 ? 'bg-vmL'
+                 : i === 2
+                 ? 'bg-vG'
+                 : i === 3
+                 ? 'bg-vmL'
+                 : 'bg-dark'
+             }
               `}
+                textStyle={`${
+                  i === 0
+                    ? 'text-light text-center text-xs'
+                    : i === 1
+                    ? 'text-dark text-center text-xs'
+                    : i === 2
+                    ? 'text-light text-center text-xs'
+                    : i === 3
+                    ? 'text-dark text-center text-xs'
+                    : 'bg-dark'
+                }`}
                 label={cellData}
                 colSpan={secondHeaderRow.length === 4 ? 2 : 4}
                 rowSpan={1}
@@ -133,13 +135,14 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
                   textStyle={`text-[10px] text-center ${
                     i > 2 ? 'text-[10px] text-grey' : 'text-[10px]'
                   } `}
-                  colSpan={
-                    i > 2 && bottomHeader.length === 7
-                      ? 2
-                      : i > 2 && bottomHeader.length < 7
-                      ? 4
-                      : 1
-                  }
+                  // colSpan={
+                  //   i > 2 && bottomHeader.length === 7
+                  //     ? 2
+                  //     : i > 2 && bottomHeader.length < 7
+                  //     ? 4
+                  //     : 1
+                  // }
+                  colSpan={2}
                   rowSpan={1}
                 />
               );
@@ -149,7 +152,7 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
         {/*********************************************************B O D Y****/}
         <tbody>
           {rowsData.map((amperRowsData, i) => (
-            <AmperSection
+            <AmperSection1_1
               key={i}
               data={amperRowsData}
               headerColors={firstHeaderRowRestCells}
@@ -161,13 +164,4 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   );
 };
 
-export default CatalogTableVer1;
-
-{
-  /* <tr>
-        <td>firstHeaderRow:{firstHeaderRow.length}</td>
-      </tr>
-      <tr>
-        <td>amperHeader:{bottomHeader.length}</td>
-      </tr> */
-}
+export default CatalogTableVer1_1;

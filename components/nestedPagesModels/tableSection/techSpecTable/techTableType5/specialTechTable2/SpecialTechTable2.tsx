@@ -11,6 +11,7 @@ interface Props {
   tableBody: string[][];
 }
 const SpecialTechTable2 = ({ headeLine1, headeLine2, tableBody }: Props) => {
+  console.log('....SpecialTechTable2');
   /**JSX**/
   return (
     <div className="flex flex-col w-full gap-y-6">

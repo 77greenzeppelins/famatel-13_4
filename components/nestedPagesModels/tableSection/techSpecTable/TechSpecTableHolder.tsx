@@ -32,9 +32,9 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
       case 'techTableWtyczkiGniazdaVer2':
         return <TechTableType3 {...data} />;
       case 'techTableWtyczkiGniazdaVer5':
-        return <TechTableType5 {...data} />;
+        return <TechTableType5 {...data} />; // estradowe
       case 'techTableWtyczkiGniazdaVer6':
-        return <TechTableType6 {...data} />;
+        return <TechTableType6 {...data} />; //campingowe
       case 'onlyUnderlinedTable':
         return <OnlyUnderlinedTable {...data} />;
       case 'techTableWithRegularColumns':
