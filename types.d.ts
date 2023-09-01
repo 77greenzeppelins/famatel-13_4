@@ -246,17 +246,31 @@ type WtyczkaGniazdoType5TechDataType = {
   tableBody2?: string[][];
   description?: string;
 };
+//___campingowe
+type WtyczkaGniazdoType6TechDataType = {
+  tableType: 'techTableWtyczkiGniazdaVer6' | 'noTechTable';
+  tableHeader?: string[];
+  tableBody?: string[][];
+  underlinedRows?: string[][];
+  tableBodySpecialRows?: string[][];
+  twoTables?: {
+    tableHeader: string[];
+    tableBody: string[][];
+  }[];
+};
 
 type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
 type WtyczkiGniazdaType2TechDataType = WtyczkaGniazdoType2TechDataType[];
 type WtyczkiGniazdaType3TechDataType = WtyczkaGniazdoType3TechDataType[];
 type WtyczkiGniazdaType5TechDataType = WtyczkaGniazdoType5TechDataType[];
+type WtyczkiGniazdaType6TechDataType = WtyczkaGniazdoType6TechDataType[];
 
 type Cat1AllTechDataType = (
   | WtyczkiGniazdaType1TechDataType
   | WtyczkiGniazdaType2TechDataType
   | WtyczkiGniazdaType3TechDataType
   | WtyczkiGniazdaType5TechDataType
+  | WtyczkiGniazdaType6TechDataType
 )[];
 
 type AllTechSpecData = (Cat1AllTechDataType | cat8AllTechDataType)[];
@@ -266,6 +280,7 @@ type ModelTechData =
   | WtyczkaGniazdoType2TechDataType
   | WtyczkaGniazdoType3TechDataType
   | WtyczkaGniazdoType5TechDataType
+  | WtyczkaGniazdoType6TechDataType
   | ObudowaType1TechDataType;
 
 // type WtyczkiGniazdaType2TechDataType = {
