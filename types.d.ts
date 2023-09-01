@@ -101,7 +101,7 @@ type CatalogItemVar2Type = {
 type CatalogDataVar2Type = CatalogItemVar2Type[];
 
 type CategoryCatalogDataType = (CatalogDataVar1Type | CatalogDataVar2Type)[];
-type llCatalogDataType = CategoryCatalogDataType[];
+type AllCatalogDataType = CategoryCatalogDataType[];
 
 type ModelCatalogsTypes = CatalogItemVar1Type | CatalogItemVar2Type;
 
