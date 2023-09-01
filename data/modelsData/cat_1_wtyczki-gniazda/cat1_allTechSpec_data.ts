@@ -5,6 +5,7 @@ import { wtyczkiGniazdaSchukoTablicowe_techData } from './subCat_4/subCat_4_tabl
 import { wtyczkiGniazdaNiskieNapiecia_techData } from './subCat_6/subCat_6_niskie-napiecia_dataTechspec';
 import { wtyczkiGniazdaKontenerowe_techData } from './subCat_7/subCat_7_kontenerowe_dataTechspec';
 import { wtyczkiGniazdaEstradowe_techData } from './subCat_8/subCat_8_estradowe_dataTechSpec';
+import { wtyczkiGniazdaCampingowe_techData } from './subCat_9/subCat_9_campingowe_dataTechSpec';
 
 //___: Cat1AllTechDataType
 export const cat1_allTechSpecData: Cat1AllTechDataType = [
@@ -12,9 +13,9 @@ export const cat1_allTechSpecData: Cat1AllTechDataType = [
   wtyczkiGniazdaTablicowe_techData,
   wtyczkiGniazdaScienne_techData,
   wtyczkiGniazdaSchukoTablicowe_techData,
-  wtyczkiGniazdaPrzenosne_techData, //fake
-  wtyczkiGniazdaNiskieNapiecia_techData, //fake
+  wtyczkiGniazdaPrzenosne_techData,
+  wtyczkiGniazdaNiskieNapiecia_techData,
   wtyczkiGniazdaKontenerowe_techData,
-  wtyczkiGniazdaEstradowe_techData, //fake
-  wtyczkiGniazdaScienne_techData, //fake
+  wtyczkiGniazdaEstradowe_techData,
+  wtyczkiGniazdaCampingowe_techData,
 ];

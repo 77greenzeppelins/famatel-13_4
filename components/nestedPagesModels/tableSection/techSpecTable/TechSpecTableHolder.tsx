@@ -7,6 +7,7 @@ import OnlyUnderlinedTable from './onlyUnderlinedTable/OnlyUnderlinedTable';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
 import RegularColumnsTable from './regularColumnsTable/RegularColumnsTable';
+import TechTableType6 from './techTableType6/TechTableType6';
 
 const TechSpecTableHolder = (props: DynamicModelContent) => {
   /*
@@ -32,6 +33,8 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
         return <TechTableType3 {...data} />;
       case 'techTableWtyczkiGniazdaVer5':
         return <TechTableType5 {...data} />;
+      case 'techTableWtyczkiGniazdaVer6':
+        return <TechTableType6 {...data} />;
       case 'onlyUnderlinedTable':
         return <OnlyUnderlinedTable {...data} />;
       case 'techTableWithRegularColumns':
