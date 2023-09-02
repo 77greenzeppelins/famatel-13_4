@@ -41,6 +41,8 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
         return <RegularColumnsTable {...data} />;
       case 'techSpecTableVer1':
         return <Cat8Schema {...data} />;
+      case 'noTechDate':
+        return null;
     }
   }
 

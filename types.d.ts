@@ -105,13 +105,40 @@ type CatalogItemEmptyType = {
 }; // for cat1_subCat4_jednofazoweScienne
 type CatalogDataEmptyType = CatalogItemEmptyType[];
 
+type CatalogItemVer3Type = {
+  tableType: 'catalogTableCat1_5';
+  line1: {
+    label: string;
+    value: string;
+  };
+  lines: Array<Array<string>>; //string[][]
+};
+
+type CatalogItemVer4Type = {
+  tableType: 'catalogTableCat1_5';
+  header: {
+    label: string;
+    value: string;
+  };
+  tableBody: Array<Array<string>>;
+};
+type CatalogDataVar3And4Type = (CatalogItemVer3Type | CatalogItemVar4Type)[];
+
 type CategoryCatalogDataType =
-  | (CatalogDataVar1Type | CatalogDataVar2Type | CatalogDataEmptyType)[]; //  | null
+  | (
+      | CatalogDataVar1Type
+      | CatalogDataVar2Type
+      | CatalogDataEmptyType
+      | CatalogDataVar3And4Type
+    )[];
+
 type AllCatalogDataType = CategoryCatalogDataType[];
 
 type ModelCatalogsTypes =
   | CatalogItemVar1Type
   | CatalogItemVar2Type
+  | CatalogItemVer3Type
+  | CatalogItemVer4Type
   | CatalogItemEmptyType;
 
 /*
@@ -242,11 +269,16 @@ type WtyczkaGniazdoType6TechDataType = {
   }[];
 };
 
+type TechTableItemEmptyType = {
+  tableType: 'noTechDate';
+}; // for cat1_subCat4_jednofazoweScienne
+
 type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
 type WtyczkiGniazdaType2TechDataType = WtyczkaGniazdoType2TechDataType[];
 type WtyczkiGniazdaType3TechDataType = WtyczkaGniazdoType3TechDataType[];
 type WtyczkiGniazdaType5TechDataType = WtyczkaGniazdoType5TechDataType[];
 type WtyczkiGniazdaType6TechDataType = WtyczkaGniazdoType6TechDataType[];
+type TechTableEmptyType = TechTableItemEmptyType[];
 
 type Cat1AllTechDataType = (
   | WtyczkiGniazdaType1TechDataType
@@ -254,9 +286,14 @@ type Cat1AllTechDataType = (
   | WtyczkiGniazdaType3TechDataType
   | WtyczkiGniazdaType5TechDataType
   | WtyczkiGniazdaType6TechDataType
+  | TechTableEmptyType
 )[];
 
-type AllTechSpecData = (Cat1AllTechDataType | cat8AllTechDataType)[];
+type AllTechSpecData = (
+  | Cat1AllTechDataType
+  | cat8AllTechDataType
+  | TechTableEmptyType
+)[];
 
 type ModelTechDataTypes =
   | WtyczkaGniazdoType1TechDataType
@@ -264,6 +301,7 @@ type ModelTechDataTypes =
   | WtyczkaGniazdoType3TechDataType
   | WtyczkaGniazdoType5TechDataType
   | WtyczkaGniazdoType6TechDataType
+  | TechTableItemEmptyType
   | ObudowaType1TechDataType;
 
 /*
