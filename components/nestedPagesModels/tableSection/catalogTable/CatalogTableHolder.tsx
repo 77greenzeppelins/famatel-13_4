@@ -1,7 +1,9 @@
 /**Components**/
 import CatalogTableVer1 from '@/components/basic/tables/catalogTables/catalogTableVer1/CatalogTableVer1';
 import CatalogTableVer1_1 from '@/components/basic/tables/catalogTables/catalogTableVer1/CatalogTableVer1_1';
+import CatalogTableVer1_5 from '@/components/basic/tables/catalogTables/catalogTableVer1_5/CatalogTableVer1_5';
 import CatalogTableVer2 from '@/components/basic/tables/catalogTables/catalogTableVer2/CatalogTableVer2';
+import CatalogTableVer3_1 from '@/components/basic/tables/catalogTables/catalogTableVer3_1/CatalogTableVer3_1';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
 
@@ -40,10 +42,13 @@ const CatalogTableHolder = (props: DynamicModelContent) => {
       case 'catalogTableCat1_4':
         return <CatalogTableVer2 {...data} />;
       case 'catalogTableCat1_5':
-        return <div>catalogTableCat1_5</div>;
+        return <CatalogTableVer1_5 />;
       case 'catalogTableCat1_6':
         return <CatalogTableVer1_1 {...data} />;
       // return <div>catalogTableCat1_6</div>;
+      case 'catalogTableCat3_1':
+        // return <CatalogTableVer3_1 {...data} />;
+        return <CatalogTableVer3_1 {...data} />;
       case 'noCatalogData':
         return null;
       // default:

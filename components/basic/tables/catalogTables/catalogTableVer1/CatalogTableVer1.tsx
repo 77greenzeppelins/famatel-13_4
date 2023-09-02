@@ -10,7 +10,7 @@ import { allHeaders } from '@/data/textData';
 
 const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   /**Data Destr...**/
-  const { headerTopData, headerBottomData, rowsData } = data;
+  const { headerTopData, headerBottomData, rowsData, features } = data;
   const {
     tableStyles: { cellPaddings },
   } = styles;
@@ -38,7 +38,7 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   // const headerColMax = firstHeaderRow.length;
   // const amperHeaderColNumber = secondHeaderRow.length;
   // const bodyColNumber = secondHeaderRow.length;
-  console.log('CatalogTableVer1 / data:', data);
+  // console.log('CatalogTableVer1 / data:', data);
 
   /**JSX**/
   return (

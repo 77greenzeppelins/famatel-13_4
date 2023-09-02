@@ -9,10 +9,11 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
   /**...*/
   const modelCardData =
     catalogStructureData[props.mainCatIndex].catAllModels[props.subCatIndex];
-  // const x =
+  // const catAllTechData =
   //   catalogStructureData[props.mainCatIndex].catAllTechData[props.subCatIndex];
-
-  //___catAllTechData
+  /**review...**/
+  // console.log('SubCatPageContent / catAllTechData', catAllTechData);
+  // console.log('SubCatPageContent / modelCardData', modelCardData);
 
   const categoryAllProductsImages =
     catalogStructureData[props.mainCatIndex].catAllProductsImages;
@@ -22,8 +23,6 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
       props.subCatIndex
     ]
   }`;
-
-  // console.log('SubCatPageContent / x', x);
   /*
   ____const categoryAllProductsImages can be undefined ==> it refers to property in catalogStructureData whose type implies being "undefined"
   */

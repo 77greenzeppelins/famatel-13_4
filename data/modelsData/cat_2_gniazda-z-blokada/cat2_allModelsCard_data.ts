@@ -10,8 +10,13 @@ export const cat2_allModelsCard_data: modelCardsDataType[][] = [
   cat2_subCat4_modelCardsData,
 ];
 
+/*
+___1. import all models cardData
+___2. create array and apply map() ==> the aim is to grab "modelPathSegmant" from card; 
+___3. what it returns? ==> all "modelPathSegmant" of category 2;
+*/
 export const cat2_allModels_pathSegments = cat2_allModelsCard_data.map(
-  (subCat, i) => {
+  subCat => {
     return subCat.map(({ modelPathSegmant }) => modelPathSegmant);
   }
 );

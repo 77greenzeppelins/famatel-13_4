@@ -11,7 +11,8 @@ export const cat1_allCatalogData: CategoryCatalogDataType = [
   wtyczkiGniazdaTablicowe_catalogData,
   wtyczkiGniazdaScienne_catalogData,
   wtyczkiGniazdaSchukoTablicowe_catalogData,
-  wtyczkiGniazdaSchuko_catalogData, //fake
+  // wtyczkiGniazdaSchukoTablicowe_catalogData,
+  wtyczkiGniazdaSchuko_catalogData,
   wtyczkiGniazdaNiskieNapiecia_catalogData,
   wtyczkiGniazdaKontenerowe_catalogData,
   wtyczkiGniazdaKontenerowe_catalogData,

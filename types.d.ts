@@ -85,9 +85,11 @@ type CatalogItemVar1Type = {
   headerTopData: string[][];
   headerBottomData: string[][];
   rowsData: string[][][];
+  features?: TransparentTableDataType;
 };
 type CatalogDataVar1Type = CatalogItemVar1Type[];
 
+//___used in: cat1_subCat4_jednofazoweScienne
 type KeyValueLineType = { label: string; value: string };
 type CatalogItemVar2Type = {
   tableType: 'noCatalogData' | 'catalogTableCat1_4';
@@ -97,15 +99,11 @@ type CatalogItemVar2Type = {
   line4?: KeyValueLineType;
   line5?: KeyValueLineType;
   line6?: KeyValueLineType;
-}; // for cat1_subCat4_jednofazoweScienne
+};
 type CatalogDataVar2Type = CatalogItemVar2Type[];
 
-type CatalogItemEmptyType = {
-  tableType: 'noCatalogData';
-}; // for cat1_subCat4_jednofazoweScienne
-type CatalogDataEmptyType = CatalogItemEmptyType[];
-
-type CatalogItemVer3Type = {
+//___used in: cat1_subCat5
+type CatalogItemVer1_5aType = {
   tableType: 'catalogTableCat1_5';
   line1: {
     label: string;
@@ -113,8 +111,7 @@ type CatalogItemVer3Type = {
   };
   lines: Array<Array<string>>; //string[][]
 };
-
-type CatalogItemVer4Type = {
+type CatalogItemVer1_5bType = {
   tableType: 'catalogTableCat1_5';
   header: {
     label: string;
@@ -122,24 +119,57 @@ type CatalogItemVer4Type = {
   };
   tableBody: Array<Array<string>>;
 };
-type CatalogDataVar3And4Type = (CatalogItemVer3Type | CatalogItemVar4Type)[];
+type CatalogDataVar1_5Type = (
+  | CatalogItemVer1_5aType
+  | CatalogItemVer1_5bType
+)[];
 
+//___used in: cat3_subCat1
+type CatalogItemVer3_1 = {
+  tableType: 'catalogTableCat3_1';
+  line1: { label: string; value: string };
+  line2: { label: string; value: string };
+  line3: string[];
+};
+type CatalogDataVar3_1 = CatalogItemVer3_1[];
+
+//___used in: cat3_subCat2
+// type CatalogItemVar1_3_2Type = {
+//   tableType: 'catalogTableCat3_2';
+//   tablesData: string[][];
+// };
+// type CatalogDataVar1_3_2Type = (
+//   | CatalogItemVar1Type
+//   | CatalogItemVar1_3_2Type
+// )[];
+
+//___used in: whenever there is no catalog data...
+type CatalogItemEmptyType = {
+  tableType: 'noCatalogData';
+}; // for cat1_subCat4_jednofazoweScienne
+type CatalogDataEmptyType = CatalogItemEmptyType[];
+
+//___
 type CategoryCatalogDataType =
   | (
       | CatalogDataVar1Type
       | CatalogDataVar2Type
+      | CatalogDataVar1_5Type
       | CatalogDataEmptyType
-      | CatalogDataVar3And4Type
+      // | CatalogDataVar1_3_2Type
+      | CatalogDataVar3_1
     )[];
-
 type AllCatalogDataType = CategoryCatalogDataType[];
 
+//___
 type ModelCatalogsTypes =
   | CatalogItemVar1Type
   | CatalogItemVar2Type
-  | CatalogItemVer3Type
-  | CatalogItemVer4Type
-  | CatalogItemEmptyType;
+  | CatalogItemVer1_5aType
+  | CatalogItemVer1_5bType
+  | CatalogItemEmptyType
+  // | CatalogItemVar1_3_2Type
+  | CatalogItemVer3_1;
 
 /*
 idea: all data for each model

@@ -1,7 +1,7 @@
 export const cat3_subCat2_modelCardsData: modelCardsDataType[] = [
   {
     arrayIndex: 0,
-    modelPathSegmant: '/potrojny-ip54-16A-32A',
+    modelPathSegmant: 'potrojny-ip54-16A-32A',
     textIcons: ['IP54', '16A', '32A'],
     type: 'Typ: Potrójne adaptery przemysłowy',
     collection: ['Kolekcja:', 'SpeedPRO'],

@@ -1,5 +1,5 @@
 'use client';
-import { usePathname } from 'next/navigation';
+import { notFound, usePathname } from 'next/navigation';
 /**Components**/
 import TableSection from './tableSection/TableSection';
 import GraphicSection from './graphicSection/GraphicSection';
@@ -18,16 +18,21 @@ const ModelPageContent = () => {
   const categoryIndex: number = mainCategoriesPath.findIndex(
     item => item === relevantPathSegments[0]
   );
+  console.log('categoryIndex', categoryIndex);
   const subCatIndex: number = catalogStructureData[
     categoryIndex
   ].subCategoriesSegments.findIndex(item => item === relevantPathSegments[1]);
-  // console.log('subCatIndex', subCatIndex);
+  console.log('subCatIndex', subCatIndex);
   const modelIndex = catalogStructureData[categoryIndex].catAllModels[
     subCatIndex
   ].findIndex(
     ({ modelPathSegmant }) => modelPathSegmant === relevantPathSegments[2]
   );
-  // console.log('modelIndex', modelIndex);
+  console.log('modelIndex', modelIndex);
+
+  if (modelIndex === -1) {
+    notFound();
+  }
 
   /**JSX*/
   return (

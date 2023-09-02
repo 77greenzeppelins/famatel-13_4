@@ -1,4 +1,4 @@
-export const wtyczkiGniazdaSchuko_catalogData = [
+export const wtyczkiGniazdaSchuko_catalogData: CatalogDataVar1_5Type = [
   //___1
   {
     tableType: 'catalogTableCat1_5',

@@ -154,7 +154,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat2_allModelsCard_data,
     catAllProductsImages: indexImgCat2_ProductsAll,
     catAllCatalogData: allCategoriesCatalogsData[1],
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[1], //then update index !
   },
   //_____category__3__adaptery-przemyslowe
   {
@@ -170,7 +170,7 @@ export const catalogStructureData: CatalogStructureData = [
     labeledIcons: ['16A', '32A'],
     catAllModels: cat3_allModelsCard_data,
     catAllProductsImages: indexImgCat3_ProductsAll,
-    catAllCatalogData: allCategoriesCatalogsData[0],
+    catAllCatalogData: allCategoriesCatalogsData[2],
     catAllTechData: allTechSpecData[0], //then update index !
   },
   //_____category__4__noSubCategory__gniazda-podwieszane
