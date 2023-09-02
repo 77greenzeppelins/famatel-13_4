@@ -134,14 +134,11 @@ type CatalogItemVer3_1 = {
 type CatalogDataVar3_1 = CatalogItemVer3_1[];
 
 //___used in: cat3_subCat2
-// type CatalogItemVar1_3_2Type = {
-//   tableType: 'catalogTableCat3_2';
-//   tablesData: string[][];
-// };
-// type CatalogDataVar1_3_2Type = (
-//   | CatalogItemVar1Type
-//   | CatalogItemVar1_3_2Type
-// )[];
+type CatalogItemVar3_2Type = {
+  tableType: 'catalogTableCat3_2';
+  tablesData: string[][];
+};
+type CatalogDataVar3_2Type = (CatalogItemVar1Type | CatalogItemVar3_2Type)[];
 
 //___used in: whenever there is no catalog data...
 type CatalogItemEmptyType = {
@@ -156,7 +153,7 @@ type CategoryCatalogDataType =
       | CatalogDataVar2Type
       | CatalogDataVar1_5Type
       | CatalogDataEmptyType
-      // | CatalogDataVar1_3_2Type
+      | CatalogDataVar3_2Type
       | CatalogDataVar3_1
     )[];
 type AllCatalogDataType = CategoryCatalogDataType[];
@@ -168,7 +165,7 @@ type ModelCatalogsTypes =
   | CatalogItemVer1_5aType
   | CatalogItemVer1_5bType
   | CatalogItemEmptyType
-  // | CatalogItemVar1_3_2Type
+  | CatalogItemVar3_2Type
   | CatalogItemVer3_1;
 
 /*

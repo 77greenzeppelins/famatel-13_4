@@ -18,7 +18,7 @@ const headerBottomData_1 = [
 Data for Components
 //___ CatalogDataVar1_3_2Type
 */
-export const adapteryPrzemysloweWielokrotne_tablesData: CatalogDataVar1_3_2Type =
+export const adapteryPrzemysloweWielokrotne_tablesData: CatalogDataVar3_2Type =
   [
     //___1
     {
