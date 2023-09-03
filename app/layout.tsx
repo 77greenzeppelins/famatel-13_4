@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className="font-sans">
         <Header />
         {/* <EnergetabOverlay /> */}
-        {/* <ProductsLayout /> */}
+        <ProductsLayout />
         {/* {children} */}
         {/* <OverlayForResizing /> */}
         {/* <PageTransitionWrapper> */}

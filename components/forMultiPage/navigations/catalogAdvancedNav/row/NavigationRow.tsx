@@ -102,7 +102,7 @@ const NavigationRow = ({ rowIndex, catalogLevel, pathSegments }: Props) => {
   /**JSX**/
   return (
     <div className={`${catalogLevel[rowIndex] ? 'flex flex-col' : 'hidden'} `}>
-      <div className="flex items-center py-1 group">
+      <div className="flex items-center py-1 pl-[40px] group">
         {/* <div className="w-10 h-full shrink-0 fc"></div> */}
         {/* <p className="text-greyShade1 label-regular">
           {advCatNav.headers[rowIndex]}

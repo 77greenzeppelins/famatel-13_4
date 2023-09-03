@@ -6,25 +6,37 @@ import { usePathname } from 'next/navigation';
 import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
 /**Basic Data**/
 import { AdvancedCatalogNavigationData } from '@/data/basicData';
+import { mainCategoriesNames, mainCategoriesPath } from '@/data/routingData';
+import { catalogStructureData } from '@/data/catalogStructureData';
+import { createModelData, createSubCategoryData } from './handlers/handlers';
 
 const ProductsLayout = () => {
   /**Data destr...**/
   const { toBeMounted } = AdvancedCatalogNavigationData;
-  // const [state, setState] = useState(0);
-  // useEffect(() => {
-  //   setState(prev => prev + 1);
-  // }, []);
-  // console.log('state:', state);
   /*
   ___1. get current path
-  ___2. split path and count how many item the array has ==> first two items refers to space before initial "/" and "produkty" and we can ommit them ==> we are actually interested in items with index 2 & 3 that are categoryName and subCategoryName respectivelly; 
+  ___2. split path and count how many item the array has
   ___3. value of of array.length allows to mount or dismount the whole component  
   */
   const pathname = usePathname();
   const pathSegments = pathname.split('/'); // exemple: ['', 'produkty', 'przemyslowe-wtyczki-i-gniazda', 'some-subCategory' , 'some-model']
-  const mountingCondition = pathSegments.length > toBeMounted;
   //   console.log('pathSegments', pathSegments);
-  const catalogLevel = pathSegments.slice(toBeMounted); // strats from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
+  const mountingCondition = pathSegments.length > toBeMounted;
+
+  /*
+  ___1. slice array after the secon items ==> first two items refers to empty string and "produkty" ==>they are irelavant and we can ommit them ==> we are actually interested in items with index 2 & 3 & 4 that are categoryName,  subCategoryName and model name respectivelly; 
+   */
+  const catalogLevels = pathSegments.slice(toBeMounted); // starts from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
+
+  const mainCategoryIndex: number = mainCategoriesPath.findIndex(
+    item => item === catalogLevels[0]
+  );
+  const mainCategoryName: string = mainCategoriesNames[mainCategoryIndex];
+  // console.log(
+  //   'subCatData:',
+  //   createSubCategoryData(mainCategoryIndex, catalogLevels)
+  // );
+  // console.log('modelData:', createModelData(mainCategoryIndex, catalogLevels));
   /**JSX**/
   return mountingCondition ? (
     <div
@@ -33,9 +45,38 @@ const ProductsLayout = () => {
     >
       <AdvancedCatalogNavigation
         pathSegments={pathSegments}
-        catalogLevel={catalogLevel}
+        catalogLevel={catalogLevels}
+        subCategoryData={createSubCategoryData(
+          mainCategoryIndex,
+          catalogLevels
+        )}
+        modelData={createModelData(mainCategoryIndex, catalogLevels)}
       />
-      {/* <div className="flex gap-x-5">
+    </div>
+  ) : null;
+};
+
+export default ProductsLayout;
+/*
+
+  const categoryIndex: number = mainCategoriesPath.findIndex(
+    item => item === relevantPathSegments[0]
+  );
+  // console.log('categoryIndex', categoryIndex);
+  const subCatIndex: number = catalogStructureData[
+    categoryIndex
+  ].subCategoriesSegments.findIndex(item => item === relevantPathSegments[1]);
+  // console.log('subCatIndex', subCatIndex);
+  const modelIndex = catalogStructureData[categoryIndex].catAllModels[
+    subCatIndex
+  ].findIndex(
+    ({ modelPathSegmant }) => modelPathSegmant === relevantPathSegments[2]
+  );
+
+*/
+
+{
+  /* <div className="flex gap-x-5">
         <Link
           className="px-[4px] border border-greyShade2 text-small text-greyShade2"
           href={`${pathname}/wtyczki-i-gniazda-przenosne`}
@@ -48,9 +89,5 @@ const ProductsLayout = () => {
         >
           go to model{' '}
         </Link>
-      </div> */}
-    </div>
-  ) : null;
-};
-
-export default ProductsLayout;
+      </div> */
+}
