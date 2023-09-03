@@ -10,6 +10,14 @@ import { AdvancedCatalogNavigationData, advCatNav } from '@/data/basicData';
 interface Props {
   catalogLevel: string[];
   pathSegments: string[];
+  subCategoryData: {
+    subCatIndex: number;
+    subCategoryName: string;
+  } | null;
+  modelData: {
+    modelIndex: number;
+    modelLabel: string | false | undefined;
+  } | null;
 }
 
 const AdvancedCatalogNavigation = ({ pathSegments, catalogLevel }: Props) => {
