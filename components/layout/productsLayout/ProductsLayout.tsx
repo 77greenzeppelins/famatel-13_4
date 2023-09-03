@@ -32,11 +32,7 @@ const ProductsLayout = () => {
     item => item === catalogLevels[0]
   );
   const mainCategoryName: string = mainCategoriesNames[mainCategoryIndex];
-  // console.log(
-  //   'subCatData:',
-  //   createSubCategoryData(mainCategoryIndex, catalogLevels)
-  // );
-  // console.log('modelData:', createModelData(mainCategoryIndex, catalogLevels));
+
   /**JSX**/
   return mountingCondition ? (
     <div
@@ -44,14 +40,15 @@ const ProductsLayout = () => {
       //___border-b border-b-greyShade2
     >
       <AdvancedCatalogNavigation
-        pathSegments={pathSegments}
         catalogLevel={catalogLevels}
+        mainCategoryName={mainCategoryName}
         subCategoryData={createSubCategoryData(
           mainCategoryIndex,
           catalogLevels
         )}
         modelData={createModelData(mainCategoryIndex, catalogLevels)}
       />
+      <div className="h-[20px] md:h-[40px] lg:h-[60px] wrapper-1 border-t border-greyShade2" />
     </div>
   ) : null;
 };
