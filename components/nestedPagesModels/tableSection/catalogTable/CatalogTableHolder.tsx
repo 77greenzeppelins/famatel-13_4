@@ -47,7 +47,6 @@ const CatalogTableHolder = (props: DynamicModelContent) => {
         return <CatalogTableVer1_1 {...data} />;
       // return <div>catalogTableCat1_6</div>;
       case 'catalogTableCat3_1':
-        // return <CatalogTableVer3_1 {...data} />;
         return <CatalogTableVer3_1 {...data} />;
       case 'noCatalogData':
         return null;
