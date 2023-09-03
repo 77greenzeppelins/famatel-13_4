@@ -24,13 +24,14 @@ import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 //     model: string;
 //   };
 // }
-
-//___{ params }: Props
-export default function WtyczkiGniazdaTablicoweModelPage() {
+export default function ObudowyPustePage() {
   /**JSX**/
   return (
     <div className="flex flex-col w-full fc">
       <ModelPageContent />
+      {/* <div className="h-[50vh] fc">
+        <p>{params.model}</p>
+      </div> */}
     </div>
   );
 }

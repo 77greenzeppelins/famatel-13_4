@@ -3,7 +3,7 @@ const arrOfDescriptions: TransparentTableDataType = [
   ['Opakowanie podstawowe', '1'],
 ];
 
-export const obudowyGumowe_techSpecData = [
+export const obudowyGumowe_techSpecData: ObudowyType1TechDataType = [
   //___1__23310
   {
     tableType: 'techSpecTableVer1',

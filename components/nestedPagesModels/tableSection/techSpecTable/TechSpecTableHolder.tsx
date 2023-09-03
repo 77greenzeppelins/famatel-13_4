@@ -8,6 +8,8 @@ import OnlyUnderlinedTable from './onlyUnderlinedTable/OnlyUnderlinedTable';
 import { catalogStructureData } from '@/data/catalogStructureData';
 import RegularColumnsTable from './regularColumnsTable/RegularColumnsTable';
 import TechTableType6 from './techTableType6/TechTableType6';
+import TechTable3_2 from './techTable3_2/TechTable3_2';
+import TechTable3_1 from './techTable3_1/TechTable3_1';
 
 const TechSpecTableHolder = (props: DynamicModelContent) => {
   /*
@@ -41,6 +43,14 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
         return <RegularColumnsTable {...data} />;
       case 'techSpecTableVer1':
         return <Cat8Schema {...data} />;
+      case 'techTable3_2':
+        return <TechTable3_2 {...data} />;
+      case 'techTable3_1':
+        return <TechTable3_1 {...data} />;
+      case 'tableType8_2a':
+        return <div>tableType8_2a</div>;
+      case 'tableType8_2b':
+        return <div>tableType8_2b</div>;
       case 'noTechDate':
         return null;
     }

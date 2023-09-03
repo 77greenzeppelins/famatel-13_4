@@ -28,13 +28,13 @@ const NavigationRow = ({
   /*
   ___1. there are three <NR>; each has index from range [0,2] --> (0,1,2)
   */
-  console.log('rowIndex', rowIndex);
-  console.log('catalogLevel.length - 1', catalogLevel.length - 1);
+  // console.log('rowIndex', rowIndex);
+  // console.log('catalogLevel.length - 1', catalogLevel.length - 1);
   // console.log('pathSegments', pathSegments);
   // console.log('wtyczkiGniazdaSubCatFullPaths', wtyczkiGniazdaSubCatFullPaths);
   const isActive = rowIndex === catalogLevel.length - 1;
   const linkCondition = rowIndex < catalogLevel.length - 1;
-  console.log('isActive', isActive);
+  // console.log('isActive', isActive);
 
   /*
   ___1. allows to create 
@@ -52,21 +52,8 @@ const NavigationRow = ({
         return `/produkty`;
     }
   };
-  const createLabel1 = (level: number) => {
-    return catalogStructureData.map(
-      ({ mainCategoryPath, mainCategoryName }) => {
-        // console.log('......createLabel1');
-        const catName = mainCategoryPath.split('/').reverse()[0];
-        return catName === catalogLevel[level] ? mainCategoryName : null;
-      }
-    );
-  };
 
-  // const createSubCatLabel = () =>{
-  //   if(){return null}
-  // }
-
-  const cL = (level: number) => {
+  const createLabel = (level: number) => {
     switch (level) {
       case 0:
         return mainCategoryName;
@@ -118,7 +105,7 @@ const NavigationRow = ({
                 : 'text-grey text-xs md:text-base group-hover:text-light'
             }  ${styles.lazyAnimation}`}
           >
-            {cL(rowIndex)}
+            {createLabel(rowIndex)}
           </p>
         ) : null}
       </Link>

@@ -171,7 +171,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat3_allModelsCard_data,
     catAllProductsImages: indexImgCat3_ProductsAll,
     catAllCatalogData: allCategoriesCatalogsData[2],
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[2], //then update index !
   },
   //_____category__4__noSubCategory__gniazda-podwieszane
   {
@@ -188,7 +188,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat1_allModelsCard_data, //___fake
     catAllProductsImages: undefined, //___fake
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[3], //then update index !
   },
   //_____category__5__przedlużacze-będnowe
   {
@@ -205,7 +205,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: indexImgCat5_ProductsAll,
     catAllCatalogData: allCategoriesCatalogsData[0],
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[4], //then update index !
   },
   //_____category__6__noSubcategory__rozlaczniki-bezpieczenstwa
   {
@@ -222,7 +222,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: undefined,
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[5], //then update index !
   },
   //_____category__7__noSubcategory__ladowarki-samochodowe
   {
@@ -239,7 +239,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat1_allModelsCard_data,
     catAllProductsImages: undefined,
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[6], //then update index !
   },
   //_____category__8__obudowy-i-rozdzielnice
   {
@@ -256,7 +256,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat8_allModelsCard_data,
     catAllProductsImages: indexImgCat8_ProductsAll,
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[0], //then update index !
+    catAllTechData: allTechSpecData[7], //then update index !
   },
   //_____category__9__rozdzielnice-modulowe
   {

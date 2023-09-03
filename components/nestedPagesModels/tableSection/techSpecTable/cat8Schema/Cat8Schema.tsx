@@ -2,6 +2,8 @@
 import BasicTable from '@/components/basic/tables/basic/BasicTable';
 import TransparentTable from '@/components/basic/tables/transparent/TransparentTable';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import MultiTablesWrapper from '@/components/nestedPagesModels/_atoms/TableSectionWrapper/MultiTablesWrapper';
+import TableSectionWrapper from '@/components/nestedPagesModels/_atoms/TableSectionWrapper/TableSectionWrapper';
 /**Basic data**/
 import { allHeaders } from '@/data/textData';
 
@@ -17,8 +19,8 @@ const Cat8Schema = (data: ObudowaType1TechDataType) => {
 
   /**JSX**/
   return (
-    <div className="flex flex-col w-full gap-y-16">
-      <div className="flex flex-col w-full gap-y-6">
+    <MultiTablesWrapper>
+      <TableSectionWrapper>
         <BasicHeader
           hasVerticalOrnament={false}
           hasBox={true}
@@ -35,35 +37,36 @@ const Cat8Schema = (data: ObudowaType1TechDataType) => {
             />
           ))}
         </div>
-      </div>
+      </TableSectionWrapper>
 
-      <div className="flex flex-col w-full">
+      <TableSectionWrapper divStyle="flex flex-col w-full">
         <BasicHeader
           hasVerticalOrnament={false}
           hasBox={true}
           text={allHeaders.tableHeaders[2]}
         />
         <TransparentTable rowsData={description} />
-      </div>
+      </TableSectionWrapper>
 
-      <div className="flex flex-col w-full">
+      <TableSectionWrapper divStyle="flex flex-col w-full">
         <BasicHeader
           hasVerticalOrnament={false}
           hasBox={true}
           text={allHeaders.tableHeaders[2]}
         />
         <TransparentTable rowsData={[norma]} />
-      </div>
+      </TableSectionWrapper>
       {opis ? (
-        <div className="flex flex-col w-full">
+        <TableSectionWrapper>
           <BasicHeader
             hasVerticalOrnament={false}
             hasBox={true}
             text={allHeaders.tableHeaders[3]}
           />
-        </div>
+          <p className="text-xs text-grey">{opis}</p>
+        </TableSectionWrapper>
       ) : null}
-    </div>
+    </MultiTablesWrapper>
   );
 };
 

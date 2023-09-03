@@ -1,10 +1,10 @@
 /**Components**/
-import TableWrapper from '@/components/basic/tables/_atoms/tableWrapper/TableWrapper';
-import HeaderCellMulticolor from '@/components/basic/tables/mixed/_atoms/headerStaff/HeaderCellMulticolor';
-import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
-/**Basic Data**/
-import { allHeaders } from '@/data/textData';
 import SpecialTechTable from '../specialTechTable/SpecialTechTable';
+// import TableWrapper from '@/components/basic/tables/_atoms/tableWrapper/TableWrapper';
+// import HeaderCellMulticolor from '@/components/basic/tables/mixed/_atoms/headerStaff/HeaderCellMulticolor';
+// import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+/**Basic Data**/
+// import { allHeaders } from '@/data/textData';
 
 interface Props {
   twoTables: {

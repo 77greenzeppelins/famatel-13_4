@@ -31,7 +31,7 @@ const CatalogTableVer3_1 = (data: CatalogItemVer3_1) => {
               textStyle="text-center text-xs text-dark font-medium"
             />
           </tr>
-          <tr>
+          <tr className="group">
             <HeaderCellMulticolor
               label={line2.label}
               colSpan={2}

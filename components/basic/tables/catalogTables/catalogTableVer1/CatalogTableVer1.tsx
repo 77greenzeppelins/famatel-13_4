@@ -1,4 +1,5 @@
 /**Components**/
+import TableSectionWrapper from '@/components/nestedPagesModels/_atoms/TableSectionWrapper/TableSectionWrapper';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 import TableWrapper from '../../_atoms/tableWrapper/TableWrapper';
 import HeaderCellMulticolor from '../../mixed/_atoms/headerStaff/HeaderCellMulticolor';
@@ -7,6 +8,8 @@ import AmperSection from './bodyStaff/AmperSection';
 import { styles } from '@/styles';
 /**Basic Data**/
 import { allHeaders } from '@/data/textData';
+import TransparentTable from '../../transparent/TransparentTable';
+import MultiTablesWrapper from '@/components/nestedPagesModels/_atoms/TableSectionWrapper/MultiTablesWrapper';
 
 const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   /**Data Destr...**/
@@ -40,27 +43,43 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
   // const bodyColNumber = secondHeaderRow.length;
   // console.log('CatalogTableVer1 / data:', data);
 
+  const createTransparentTable = () => {
+    if (features === undefined) {
+      return null;
+    }
+    return (
+      <TableSectionWrapper divStyle="flex flex-col w-full">
+        <BasicHeader
+          hasVerticalOrnament={false}
+          hasBox={true}
+          text={allHeaders.tableHeaders[0]}
+        />
+        <TableWrapper>
+          <TransparentTable rowsData={features} />
+        </TableWrapper>
+      </TableSectionWrapper>
+    );
+  };
+
   /**JSX**/
   return (
-    <div className="flex flex-col w-full gap-y-6">
-      <BasicHeader
-        hasVerticalOrnament={false}
-        hasBox={true}
-        text={allHeaders.tableHeaders[0]}
-      />
-      <TableWrapper
-      // tableStyle={`border-separate border-spacing-[2px] table-fixed
-      // w-[900px]
-      // `}
-      >
-        <thead className={`text-xs uppercase text-light `}>
-          <tr className="">
-            {firstHeaderRow.map((cellData, i) => (
-              <HeaderCellMulticolor
-                key={i}
-                textStyle={`${i === 0 ? 'text-grey' : 'text-light'}`}
-                //___px-[50px]
-                tailwindStyle={`${i === 0 ? 'px-2' : cellPaddings} 
+    <>
+      <MultiTablesWrapper>
+        <TableSectionWrapper>
+          <BasicHeader
+            hasVerticalOrnament={false}
+            hasBox={true}
+            text={allHeaders.tableHeaders[0]}
+          />
+          <TableWrapper>
+            <thead className={`text-xs uppercase text-light `}>
+              <tr className="">
+                {firstHeaderRow.map((cellData, i) => (
+                  <HeaderCellMulticolor
+                    key={i}
+                    textStyle={`${i === 0 ? 'text-grey' : 'text-light'}`}
+                    //___px-[50px]
+                    tailwindStyle={`${i === 0 ? 'px-2' : cellPaddings} 
                 
               ${
                 i === 0
@@ -87,23 +106,23 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
                 //   : 'w-[200px]'
                 i === 0 ? 'w-[300px] max-w-[300px]' : 'w-[150px] max-w-[150px]'
               }`}
-                label={cellData}
-                colSpan={
-                  i > 0 && firstHeaderRow.length === 5
-                    ? 2
-                    : i > 0 && firstHeaderRow.length < 5
-                    ? 4
-                    : 3
-                }
-                rowSpan={i === 0 ? 2 : 1}
-              />
-            ))}
-          </tr>
-          <tr>
-            {secondHeaderRow.map((cellData, i) => (
-              <HeaderCellMulticolor
-                key={i}
-                tailwindStyle={`w-1/4 ${cellPaddings} text-center 
+                    label={cellData}
+                    colSpan={
+                      i > 0 && firstHeaderRow.length === 5
+                        ? 2
+                        : i > 0 && firstHeaderRow.length < 5
+                        ? 4
+                        : 3
+                    }
+                    rowSpan={i === 0 ? 2 : 1}
+                  />
+                ))}
+              </tr>
+              <tr>
+                {secondHeaderRow.map((cellData, i) => (
+                  <HeaderCellMulticolor
+                    key={i}
+                    tailwindStyle={`w-1/4 ${cellPaddings} text-center 
               ${
                 firstHeaderRowRestCells[i] === '110V'
                   ? 'bg-vY'
@@ -116,58 +135,52 @@ const CatalogTableVer1 = (data: CatalogItemVar1Type) => {
                   : 'bg-dark'
               }
               `}
-                label={cellData}
-                colSpan={secondHeaderRow.length === 4 ? 2 : 4}
-                rowSpan={1}
-              />
-            ))}
-          </tr>
-          <tr>
-            {bottomHeader.map((item, i) => {
-              return (
-                <HeaderCellMulticolor
+                    label={cellData}
+                    colSpan={secondHeaderRow.length === 4 ? 2 : 4}
+                    rowSpan={1}
+                  />
+                ))}
+              </tr>
+              <tr>
+                {bottomHeader.map((item, i) => {
+                  return (
+                    <HeaderCellMulticolor
+                      key={i}
+                      label={item}
+                      tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-greyShade2'} `}
+                      paddingStyle="py-4 px-2"
+                      textStyle={`text-[10px] text-center ${
+                        i > 2 ? 'text-[10px] text-grey' : 'text-[10px]'
+                      } `}
+                      colSpan={
+                        i > 2 && bottomHeader.length === 7
+                          ? 2
+                          : i > 2 && bottomHeader.length < 7
+                          ? 4
+                          : 1
+                      }
+                      rowSpan={1}
+                    />
+                  );
+                })}
+              </tr>
+            </thead>
+            {/*********************************************************B O D Y****/}
+            <tbody>
+              {rowsData.map((amperRowsData, i) => (
+                <AmperSection
                   key={i}
-                  label={item}
-                  tailwindStyle={`${i > 2 ? 'bg-dark' : 'bg-greyShade2'} `}
-                  paddingStyle="py-4 px-2"
-                  textStyle={`text-[10px] text-center ${
-                    i > 2 ? 'text-[10px] text-grey' : 'text-[10px]'
-                  } `}
-                  colSpan={
-                    i > 2 && bottomHeader.length === 7
-                      ? 2
-                      : i > 2 && bottomHeader.length < 7
-                      ? 4
-                      : 1
-                  }
-                  rowSpan={1}
+                  data={amperRowsData}
+                  headerColors={firstHeaderRowRestCells}
                 />
-              );
-            })}
-          </tr>
-        </thead>
-        {/*********************************************************B O D Y****/}
-        <tbody>
-          {rowsData.map((amperRowsData, i) => (
-            <AmperSection
-              key={i}
-              data={amperRowsData}
-              headerColors={firstHeaderRowRestCells}
-            />
-          ))}
-        </tbody>
-      </TableWrapper>
-    </div>
+              ))}
+            </tbody>
+          </TableWrapper>
+        </TableSectionWrapper>
+        {createTransparentTable()}
+      </MultiTablesWrapper>
+    </>
   );
 };
 
 export default CatalogTableVer1;
-
-{
-  /* <tr>
-        <td>firstHeaderRow:{firstHeaderRow.length}</td>
-      </tr>
-      <tr>
-        <td>amperHeader:{bottomHeader.length}</td>
-      </tr> */
-}

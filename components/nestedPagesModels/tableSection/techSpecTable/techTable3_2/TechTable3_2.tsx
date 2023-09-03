@@ -6,9 +6,13 @@ import TableSectionWrapper from '@/components/nestedPagesModels/_atoms/TableSect
 /**Basic Data**/
 import { allHeaders } from '@/data/textData';
 
-const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
+const TechTable3_2 = (data: TechTable3_2ItemType) => {
   /**Data destr...**/
-  const { header, tableBody } = data;
+  const {
+    header: { line1, line2 },
+    tableBody,
+  } = data;
+
   /**JSX**/
   return (
     <TableSectionWrapper>
@@ -20,36 +24,38 @@ const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
       <TableWrapper>
         <thead>
           <tr>
-            {header.map((cellData, i) => (
+            {line1.map((cellData, i) => (
+              <HeaderCellMulticolor
+                key={i}
+                label={cellData}
+                colSpan={i === 0 ? 2 : 1}
+                rowSpan={i === 0 ? 1 : 2}
+                tailwindStyle="bg-greyShade2"
+              />
+            ))}
+          </tr>
+          <tr>
+            {line2.map((cellData, i) => (
               <HeaderCellMulticolor
                 key={i}
                 label={cellData}
                 colSpan={1}
-                tailwindStyle={`${i > 0 ? 'bg-greyShade2' : 'bg-dark'}`}
+                rowSpan={1}
+                tailwindStyle="bg-greyShade2"
               />
             ))}
           </tr>
         </thead>
         <tbody>
           {tableBody.map((rowData, i) => (
-            <tr className="group" key={i}>
+            <tr key={i}>
               {rowData.map((cellData, j) => {
-                if (j === 0) {
-                  return (
-                    <HeaderCellMulticolor
-                      key={j}
-                      label={cellData}
-                      colSpan={1}
-                      tailwindStyle="bg-greyShade2 group-hover:bg-corpo"
-                    />
-                  );
-                }
                 return (
                   <HeaderCellMulticolor
                     key={j}
                     label={cellData}
                     colSpan={1}
-                    tailwindStyle="bg-greyTint2 group-hover:bg-light"
+                    tailwindStyle="bg-greyTint2 hover:bg-light"
                     textStyle="text-center text-xs text-dark"
                   />
                 );
@@ -62,4 +68,4 @@ const RegularColumnsTable = (data: WtyczkaGniazdoType2TechDataType) => {
   );
 };
 
-export default RegularColumnsTable;
+export default TechTable3_2;

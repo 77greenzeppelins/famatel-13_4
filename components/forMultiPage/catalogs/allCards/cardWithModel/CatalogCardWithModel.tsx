@@ -11,6 +11,7 @@ const CatalogCardWithModel = ({
   type,
   collection,
   textIcons,
+  model,
 }: // ,
 CardWithModelType) => {
   /**JSX**/
@@ -41,6 +42,7 @@ CardWithModelType) => {
             modelImage={modelImage}
             type={type}
             collection={collection}
+            model={model}
             textIcons={textIcons}
           />
         </div>

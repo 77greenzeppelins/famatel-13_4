@@ -74,7 +74,10 @@ type CategoryStructureData = {
   catAllModels: modelCardsDataType[][];
   //___
   catAllCatalogData: CategoryCatalogDataType | undefined;
-  catAllTechData: Cat1AllTechDataType | cat8AllTechDataType;
+  catAllTechData:
+    | Cat1AllTechDataType
+    | cat8AllTechDataType
+    | TechTableEmptyType[]; //some sort of fake item...
 };
 
 /*
@@ -229,21 +232,6 @@ type ModelSchemaType = Omit<SubCatSchemaType, 'subCatIndex'>;
 ___section with types for techspecTables
 ___for model techSpecData ==> including "indxFiles" that stores individual files in arrays 
 */
-/*
-____(!) should replace ObudowaPustaTechDataType...
-*/
-type ObudowaType1TechDataType = {
-  tableType: 'techSpecTableVer1';
-  header: string[][];
-  tablesData: { label: string; value: string }[][];
-  norma: DataAsTuple;
-  description: TransparentTableDataType;
-  iconHolderData: { svgLabel: string[] };
-  opis?: string[];
-};
-type ObudowyType1TechDataType = ObudowaType1TechDataType[];
-
-type cat8AllTechDataType = ObudowyType1TechDataType[];
 
 //___cat1 / wtyczki gniazda przenośne /
 type WtyczkaGniazdoType1TechDataType = {
@@ -296,16 +284,101 @@ type WtyczkaGniazdoType6TechDataType = {
   }[];
 };
 
+type TechTable3_2ItemType = {
+  tableType: 'techTable3_2';
+  header: { line1: string[]; line2: string[] };
+  tableBody: string[][];
+};
+type TechTable3_1ItemType = {
+  tableType: 'techTable3_1';
+  header: string[];
+  sizes: string[];
+  l1: string[];
+  l2: string[];
+  l3: string[];
+};
+
 type TechTableItemEmptyType = {
   tableType: 'noTechDate';
 }; // for cat1_subCat4_jednofazoweScienne
 
+//___ used in: obudowy puste / obudowy gumowe
+type ObudowaType1TechDataType = {
+  tableType: 'techSpecTableVer1';
+  header: string[][];
+  tablesData: { label: string; value: string }[][];
+  norma: DataAsTuple;
+  description: TransparentTableDataType;
+  iconHolderData: { svgLabel: string[] };
+  opis?: string[];
+};
+
+type TechTableItem8_2aType = {
+  tableType: 'tableType8_2a';
+  columnsNumber: number;
+  ampers: string[];
+  dataLines: {
+    model: string;
+    labels16A: string[];
+    labels32A: string[];
+    labels63A?: string[];
+  }[];
+  norma: string[][];
+  packageDetails: string[][];
+  iconHolderData: {
+    svgLabel: any[];
+    textLabel: { label: string; textStyle: any }[];
+    iconColorBG: string;
+    iconColorFG: string;
+    iconSize: number;
+  };
+};
+
+type TechTableItem8_2bType = {
+  tableType: 'tableType8_2b';
+  columnsNumber: number;
+  header: string;
+  packageDetails: string[][];
+  norma: string[][];
+  iconHolderData: {
+    svgLabel: string[];
+    textLabel: { label: string; textStyle: any }[];
+    iconColorBG: string;
+    iconColorFG: string;
+    iconSize: number;
+  };
+  table1Header: string[];
+  table1Data: any[][];
+  table2Header: string;
+  table2Data: { label: string; value: string }[];
+};
+//___ for wtyczki...
 type WtyczkiGniazdaType1TechDataType = WtyczkaGniazdoType1TechDataType[];
 type WtyczkiGniazdaType2TechDataType = WtyczkaGniazdoType2TechDataType[];
 type WtyczkiGniazdaType3TechDataType = WtyczkaGniazdoType3TechDataType[];
 type WtyczkiGniazdaType5TechDataType = WtyczkaGniazdoType5TechDataType[];
 type WtyczkiGniazdaType6TechDataType = WtyczkaGniazdoType6TechDataType[];
+type TechTable3_2Type = TechTable3_2ItemType[];
+type TechTable3_1Type = TechTable3_1ItemType[];
+//___for obudowy
+type ObudowyType1TechDataType = ObudowaType1TechDataType[];
+type TechTable8_2Type = (TechTableItem8_2aType | TechTableItem8_2bType)[];
+//___special empty type
 type TechTableEmptyType = TechTableItemEmptyType[];
+
+//___ i t e m s !!!
+type ModelTechDataTypes =
+  | WtyczkaGniazdoType1TechDataType
+  | WtyczkaGniazdoType2TechDataType
+  | WtyczkaGniazdoType3TechDataType
+  | WtyczkaGniazdoType5TechDataType
+  | WtyczkaGniazdoType6TechDataType
+  | TechTableItemEmptyType
+  | ObudowaType1TechDataType
+  | TechTable3_2ItemType
+  | TechTable3_1ItemType
+  | TechTableItem8_2aType
+  | TechTableItem8_2bType;
 
 type Cat1AllTechDataType = (
   | WtyczkiGniazdaType1TechDataType
@@ -314,22 +387,17 @@ type Cat1AllTechDataType = (
   | WtyczkiGniazdaType5TechDataType
   | WtyczkiGniazdaType6TechDataType
   | TechTableEmptyType
+  | TechTable3_2Type
+  | TechTable3_1Type
 )[];
+
+type cat8AllTechDataType = (ObudowyType1TechDataType | TechTable8_2Type)[];
 
 type AllTechSpecData = (
   | Cat1AllTechDataType
   | cat8AllTechDataType
-  | TechTableEmptyType
-)[];
-
-type ModelTechDataTypes =
-  | WtyczkaGniazdoType1TechDataType
-  | WtyczkaGniazdoType2TechDataType
-  | WtyczkaGniazdoType3TechDataType
-  | WtyczkaGniazdoType5TechDataType
-  | WtyczkaGniazdoType6TechDataType
-  | TechTableItemEmptyType
-  | ObudowaType1TechDataType;
+  | TechTableEmptyType[]
+)[]; //___TechTableEmptyType[] ???????????????
 
 /*
 ___1. SvgTechComponent ==> for each svg component

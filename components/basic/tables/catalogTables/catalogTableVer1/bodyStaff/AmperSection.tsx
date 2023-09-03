@@ -36,13 +36,13 @@ const AmperSection = ({
             key={i}
             tailwindStyle={`${
               headerColors[i - 2] === '110V'
-                ? 'bg-vY'
+                ? 'bg-vY hover:bg-vtY'
                 : headerColors[i - 2] === '230V'
-                ? 'bg-vB'
+                ? 'bg-vB hover:bg-vtB'
                 : headerColors[i - 2] === '400V'
-                ? 'bg-vR'
+                ? 'bg-vR hover:bg-vtR'
                 : headerColors[i - 2] === '500V'
-                ? 'bg-vD'
+                ? 'bg-vD hover:bg-vtD'
                 : 'bg-grey'
             } `}
             paddingStyle="py-4 px-2"
@@ -68,13 +68,13 @@ const AmperSection = ({
               key={i}
               tailwindStyle={`${
                 headerColors[i - 2] === '110V'
-                  ? 'bg-vY'
+                  ? 'bg-vY hover:bg-vtY'
                   : headerColors[i - 2] === '230V'
-                  ? 'bg-vB'
+                  ? 'bg-vB hover:bg-vtB'
                   : headerColors[i - 2] === '400V'
-                  ? 'bg-vR'
+                  ? 'bg-vR hover:bg-vtR'
                   : headerColors[i - 2] === '500V'
-                  ? 'bg-vD'
+                  ? 'bg-vD hover:bg-vtD'
                   : 'bg-grey'
               } `}
               paddingStyle="py-4 px-2"

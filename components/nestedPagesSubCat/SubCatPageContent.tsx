@@ -30,6 +30,9 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
     return null;
   }
 
+  /*
+  ___(!) Keep in mind correctness of rekevant indexImages.ts file; numbers of records/items in this fille must correspond with data in other props of catalogStructureData
+  */
   const createCards = categoryAllProductsImages[props.subCatIndex].map(
     (item, i) => {
       return (
@@ -44,6 +47,7 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
           }}
           modelPath={`${basicPath}/${modelCardData[i].modelPathSegmant}`}
           type={modelCardData[i].type}
+          model={modelCardData[i].model}
           collection={modelCardData[i].collection}
           textIcons={modelCardData[i].textIcons}
         />

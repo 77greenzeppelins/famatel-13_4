@@ -11,6 +11,7 @@ const CardContent = ({
   modelImage,
   modelIndex,
   type,
+  model,
   collection,
   textIcons,
 }: CardContentProps) => {
@@ -41,27 +42,33 @@ const CardContent = ({
       </div>
       <div
         data-layout="BasicCardMainSection__textSection"
-        className="relative flex items-center flex-col gap-y-2 h-full w-[50%] px-4  xs3xx:px-6 py-6 bg-dark"
-        //___bg-gradient-to-r from-light to-grey
+        className="relative flex items-center flex-col gap-y-4 h-full w-[50%] py-6 bg-dark"
+        //___bg-gradient-to-r from-light to-grey px-4  xs3xx:px-6
       >
         <TwoDigitsDisplayer
           index={modelIndex}
-          textStyle={`text-2xl xs3xx:text-3xl text-grey group-hover:text-light ${styles.basicAnimation}`}
+          textStyle={`lg:text-2xl text-xl text-grey group-hover:text-light ${styles.basicAnimation}`}
           containerStyle={`fc border-r border-greyShade2  p-[0.25rem]  group-hover:border-light ${styles.basicAnimation}`}
         />
-        <p
-          className={`text-card text-center text-grey`}
-          //___ //  group-hover:scale-[1.05] ${styles.lazyAnimation}
-        >
-          {type}
-        </p>
-        <p
-          className={`text-card text-center text-grey`}
-          //___ //  group-hover:scale-[1.05] ${styles.lazyAnimation}
-        >
-          {collection}
-        </p>
+        <div className="flex flex-col justify-center w-full pl-4 pr-2 gap-y-2">
+          <p
+            className={`border-l border-corpo pl-2 text-card text-grey group-hover:text-light text-left w-full ${styles.basicAnimation}`}
+            //___ //  group-hover:scale-[1.05] ${styles.lazyAnimation}
+          >
+            {model}
+          </p>
+          <p
+            className={`border-l border-corpo pl-2 text-card text-grey group-hover:text-light ${styles.basicAnimation}`}
+          >
+            {type}
+          </p>
 
+          <p
+            className={`border-l border-corpo pl-2 text-card text-grey group-hover:text-light ${styles.basicAnimation}`}
+          >
+            {collection}
+          </p>
+        </div>
         <div
           className="absolute bottom-2 md:bottom-4"
           //___flex-wrap
@@ -71,7 +78,7 @@ const CardContent = ({
               textIcons.map((textIcon, i) => (
                 <div
                   key={i}
-                  className="relative items-center justify-center hidden xxs:flex "
+                  className="relative items-center justify-center hidden md:flex "
                 >
                   {/* <div className="absolute w-full h-full duration-300 ease-in border rounded-sm border-light opacity-60 group-hover:opacity-100" />
                 <p
