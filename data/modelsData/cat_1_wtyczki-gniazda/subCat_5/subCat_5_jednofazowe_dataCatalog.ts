@@ -2,7 +2,7 @@ export const wtyczkiGniazdaSchuko_catalogData: CatalogDataVar1_5Type = [
   //___1
   {
     tableType: 'catalogTableCat1_5',
-    line1: { label: '', value: '' },
+    line1: { label: 'Standard', value: 'PL' },
     lines: [
       ['Ampery', 'Bieguny', 'Opakowanie', '250V 50/60Hz'],
       ['16', '2P + TTL', '30', '1167'],
@@ -29,7 +29,7 @@ export const wtyczkiGniazdaSchuko_catalogData: CatalogDataVar1_5Type = [
   //___4
   {
     tableType: 'catalogTableCat1_5',
-    line1: { label: '', value: '' }, //PL
+    line1: { label: 'Standard', value: 'PL' },
     lines: [
       ['Ampery', 'Bieguny', 'Opakowanie', '250V 50/60Hz'],
       ['16', '2P + TTL', '14', '1165'],

@@ -1,4 +1,3 @@
-import React from 'react';
 import { CreateTable1, CreateTable2 } from './handlers/createUI';
 
 /*
@@ -19,6 +18,9 @@ function isCatalogItemVer1_5bType(
 const CatalogTableVer1_5 = (
   data: CatalogItemVer1_5aType | CatalogItemVer1_5bType
 ) => {
+  /*
+  ___1. this function returns JSX according to data type   
+  */
   const createUI = () => {
     if (isCatalogItemVer1_5aType(data)) {
       return CreateTable1(data);

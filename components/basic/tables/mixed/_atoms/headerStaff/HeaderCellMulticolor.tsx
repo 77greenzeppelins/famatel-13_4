@@ -10,7 +10,7 @@ const HeaderCellMulticolor = ({
   backgroundColor,
   paddingStyle,
 }: {
-  label: string;
+  label: string | string[];
   tailwindStyle?: string;
   rowSpan?: number;
   colSpan?: number;

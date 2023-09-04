@@ -159,6 +159,8 @@ export const wtyczkiGniazdaEstradowe_techData: WtyczkiGniazdaType5TechDataType =
         ['Koła z hamulcem ', '2 szt.'],
       ],
     },
+
+    //___________________
   ];
 
 //__________________________
@@ -174,7 +176,7 @@ export const wtyczkiGniazdaEstradowe_techData: WtyczkiGniazdaType5TechDataType =
 //   ['Materiał Obudowy: ', 'PA6/ABS'],
 //   ['Styki: ', 'Mosiądz'],
 //   ['Opakowanie: ', '10 szt.'],
-// ];
+// ];s
 // const wtyczkiGniazdaEstradowe_l1_feat2_data = [
 //   ['Bieguny: ', '2P+T(2P+E)'],
 //   ['Stopień ochrony: ', 'IP54'],

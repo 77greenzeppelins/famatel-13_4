@@ -84,13 +84,15 @@ type CategoryStructureData = {
 ___1. types for catalogTables...
 */
 type CatalogItemVar1Type = {
-  tableType: 'catalogTableCat1_1' | 'catalogTableCat1_6';
+  tableType: 'catalogTableCat1_1' | 'catalogTableCat1_6' | 'noCatalogData';
   headerTopData: string[][];
   headerBottomData: string[][];
   rowsData: string[][][];
   features?: TransparentTableDataType;
 };
 type CatalogDataVar1Type = CatalogItemVar1Type[];
+
+type CatalogDataVar1_3Type = (CatalogItemVar1Type | CatalogItemEmptyType)[];
 
 //___used in: cat1_subCat4_jednofazoweScienne
 type KeyValueLineType = { label: string; value: string };
@@ -153,6 +155,7 @@ type CatalogDataEmptyType = CatalogItemEmptyType[];
 type CategoryCatalogDataType =
   | (
       | CatalogDataVar1Type
+      | CatalogDataVar1_3Type
       | CatalogDataVar2Type
       | CatalogDataVar1_5Type
       | CatalogDataEmptyType
@@ -213,6 +216,7 @@ type BasicTableDataType = {
   headerColSpan?: number | number[];
   sideHeaderStyle?: string;
   bodyColSpans?: number[];
+  hasHeader?: boolean;
 };
 type DataAsTuple = [string, string];
 type TransparentTableSimpleDataType = string[][];

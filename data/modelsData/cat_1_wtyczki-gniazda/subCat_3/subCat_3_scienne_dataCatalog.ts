@@ -16,7 +16,7 @@ const headerBottomData_1 = [
 /*
 Data for Components
 */
-export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
+export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1_3Type = [
   //____1__s.43
   {
     tableType: 'catalogTableCat1_1',
@@ -304,5 +304,13 @@ export const wtyczkiGniazdaScienne_catalogData: CatalogDataVar1Type = [
         ['5', '1', '24213', '24297', '24397', '24499'],
       ],
     ],
+  },
+  //___19
+  {
+    tableType: 'noCatalogData',
+  },
+  //___19
+  {
+    tableType: 'noCatalogData',
   },
 ];

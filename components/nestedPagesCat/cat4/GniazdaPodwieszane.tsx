@@ -11,7 +11,6 @@ import {
   gniazdaPodwieszane_material_data,
 } from '@/data/modelsData/cat_4_gniazda-podwieszane/cat4_gniazdaPodwieszane_data';
 import { allHeaders } from '@/data/textData';
-import Link from 'next/link';
 
 const GniazdaPodwieszane = ({ index }: { index: number }) => {
   /**Data Destr...**/
@@ -72,10 +71,6 @@ const GniazdaPodwieszane = ({ index }: { index: number }) => {
           bodyData={catalogTable_2_data.bodyData}
         />
       </div>
-      <Link
-        className="w-[100px] h-[100px] bg-corpo"
-        href={'przemyslowe-wtyczki-i-gniazda/wtyczki-i-gniazda-przenosne'}
-      />
     </div>
   );
 };

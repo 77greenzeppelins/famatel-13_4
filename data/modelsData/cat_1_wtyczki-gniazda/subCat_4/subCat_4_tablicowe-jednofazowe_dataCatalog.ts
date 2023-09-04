@@ -2,8 +2,8 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___1
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13953 / Standard', value: 'EU' },
-    line2: { label: 'Model: 13953F / Standard', value: 'PL' },
+    line1: { label: 'Model: 13953', value: 'Standard EU' },
+    line2: { label: 'Model: 13953F', value: 'Standard PL' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
     line5: { label: 'Ochrona', value: 'IP54' },
@@ -12,8 +12,8 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___2
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13950 / Standard', value: 'EU' },
-    line2: { label: 'Model: 13950F / Standard', value: 'PL' },
+    line1: { label: 'Model: 13950', value: 'Standard EU' },
+    line2: { label: 'Model: 13950F', value: 'Standard PL' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
     line5: { label: 'Ochrona', value: 'IP54' },
@@ -22,8 +22,8 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___3
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13957 / Standard', value: 'EU' },
-    line2: { label: 'Model: 13957F / Standard', value: 'PL' },
+    line1: { label: 'Model: 13957', value: 'Standard EU' },
+    line2: { label: 'Model: 13957F', value: 'Standard PL' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
     line5: { label: 'Ochrona', value: 'IP54' },
@@ -32,8 +32,8 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___4
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13956 / Standard', value: 'EU' },
-    line2: { label: 'Model: 13956F / Standard', value: 'PL' },
+    line1: { label: 'Model: 13956', value: 'Standard EU' },
+    line2: { label: 'Model: 13956F', value: 'Standard PL' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
     line5: { label: 'Ochrona', value: 'IP54' },
@@ -42,7 +42,7 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___5__ip67
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13960', value: 'EU' },
+    line1: { label: 'Model: 13960', value: 'Standard EU' },
     // line2: { label: '', value: '' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
@@ -52,7 +52,7 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___6__ip67
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Standard', value: 'PL' },
+    line1: { label: 'Model: 13960F', value: 'Standard PL' },
     // line2: { label: '', value: '' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + E' },
@@ -62,7 +62,7 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___7__plug__ip67
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Standard', value: 'PL' },
+    line1: { label: 'Model: 23960', value: 'Standard PL' },
     // line2: { label: '', value: '' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + TTL' },
@@ -72,8 +72,8 @@ export const wtyczkiGniazdaSchukoTablicowe_catalogData: CatalogDataVar2Type = [
   //___8__socket__ip67
   {
     tableType: 'catalogTableCat1_4',
-    line1: { label: 'Model: 13960 / Standard', value: 'EU' },
-    line2: { label: 'Model: 13960F / Standard', value: 'PL' },
+    line1: { label: 'Model: 24960', value: 'Standard EU' },
+    line2: { label: 'Model: 24960F', value: 'Standard PL' },
     line3: { label: 'Ampery', value: '16A' },
     line4: { label: 'Bieguny', value: '2P + TTL' },
     line5: { label: 'Ochrona', value: 'IP67' },

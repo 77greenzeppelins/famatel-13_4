@@ -100,7 +100,7 @@ export const gniazdaPodwieszaneSubCatFullPaths =
 
 //_____category___5
 export const przedluzaczeBebnoweSubCatNames: string[] = [
-  'Pprzedłużacze bębnowe IP55 z gniazdami Schuko IP67',
+  'Przedłużacze bębnowe IP55 z gniazdami Schuko IP67',
   'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
   'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
 ];

@@ -30,6 +30,15 @@ const SubCatPageContent = (props: DynamicSubCatContent) => {
     return null;
   }
 
+  // const allSubCatModels =
+  //   catalogStructureData[props.mainCatIndex].catAllModels[props.subCatIndex];
+  // const allSubCatImages =
+  //   catalogStructureData[props.mainCatIndex].catAllProductsImages[
+  //     props.subCatIndex
+  //   ];
+  // console.log('SubCatPageContent / allSubCatModels', allSubCatModels);
+  // console.log('SubCatPageContent / allSubCatImages', allSubCatImages);
+
   /*
   ___(!) Keep in mind correctness of rekevant indexImages.ts file; numbers of records/items in this fille must correspond with data in other props of catalogStructureData
   */

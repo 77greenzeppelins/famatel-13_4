@@ -31,11 +31,18 @@ export const createModelData = (
     mainCatregoryIndex
   ].subCategoriesSegments.findIndex(item => item === catalogLevels[1]);
 
+  if (subCatIndex === -1) {
+    return;
+  }
   const modelIndex: number = catalogStructureData[
     mainCatregoryIndex
   ].catAllModels[subCatIndex].findIndex(
     ({ modelPathSegmant }) => modelPathSegmant === catalogLevels[2]
   );
+
+  if (modelIndex === -1) {
+    return;
+  }
 
   const modelLabel = catalogStructureData[mainCatregoryIndex].catAllModels[
     subCatIndex

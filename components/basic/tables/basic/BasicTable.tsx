@@ -10,35 +10,26 @@ const BasicTable = ({
   headerColSpan,
   sideHeaderStyle,
   bodyColSpans,
+  hasHeader = true,
 }: BasicTableDataType) => {
   /**JSX**/
   return (
     <TableWrapper>
       {children}
-      {headerData[0] !== 'noData' && (
-        <thead className="text-xs uppercase text-light bg-greyShade2">
-          <tr>
-            {headerData.map((cell, i) => (
-              <HeaderCell
-                key={i}
-                label={cell}
-                colSpan={headerColSpan as number}
-              />
-            ))}
-          </tr>
-        </thead>
-      )}
-      {/* <thead className="text-xs uppercase text-light bg-greyShade2">
-        <tr>
-          {headerData.map((cell, i) => (
-            <HeaderCell
-              key={i}
-              label={cell}
-              colSpan={headerColSpan as number}
-            />
-          ))}
-        </tr>
-      </thead> */}
+      {headerData[0] !== 'noData' ||
+        (hasHeader === false && (
+          <thead className="text-xs uppercase text-light bg-greyShade2">
+            <tr>
+              {headerData.map((cell, i) => (
+                <HeaderCell
+                  key={i}
+                  label={cell}
+                  colSpan={headerColSpan as number}
+                />
+              ))}
+            </tr>
+          </thead>
+        ))}
       <tbody>
         {bodyData.map((bodyRowData, i) => (
           <RowWithSideHeader
