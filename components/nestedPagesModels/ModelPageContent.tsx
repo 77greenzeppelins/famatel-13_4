@@ -22,14 +22,16 @@ const ModelPageContent = () => {
   const subCatIndex: number = catalogStructureData[
     categoryIndex
   ].subCategoriesSegments.findIndex(item => item === relevantPathSegments[1]);
-  // console.log('subCatIndex', subCatIndex);
+  console.log('ModelPageContent / subCatIndex', subCatIndex);
   const modelIndex = catalogStructureData[categoryIndex].catAllModels[
     subCatIndex
   ].findIndex(
     ({ modelPathSegmant }) => modelPathSegmant === relevantPathSegments[2]
   );
-  // console.log('modelIndex', modelIndex);
-
+  console.log('ModelPageContent / modelIndex', modelIndex);
+  // if (subCatIndex === -1) {
+  //   notFound();
+  // }
   if (modelIndex === -1) {
     notFound();
   }

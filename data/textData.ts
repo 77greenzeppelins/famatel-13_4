@@ -153,6 +153,7 @@ export const allHeaders = {
     'specyfikacja techniczna',
     'charakterystyka ogólna',
     'opis',
+    'normy',
   ],
   gniazdaPodwieszanePage: [
     'Karta katalogowa (warianty 28000)',

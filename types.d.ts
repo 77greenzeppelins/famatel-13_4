@@ -207,14 +207,16 @@ ___types for tables ==> naither catalog nor techSpec
 */
 type BasicTableRowType = string[];
 type BasicTableDataType = {
+  children?: React.ReactNode;
   headerData: BasicTableRowType;
   bodyData: BasicTableRowType[];
   headerColSpan?: number | number[];
   sideHeaderStyle?: string;
+  bodyColSpans?: number[];
 };
 type DataAsTuple = [string, string];
 type TransparentTableSimpleDataType = string[][];
-type TransparentTableDataType = DataAsTuple[];
+type TransparentTableDataType = DataAsTuple[] | TransparentTableSimpleDataType;
 
 /*
 ___used in: S
@@ -311,12 +313,18 @@ type ObudowaType1TechDataType = {
   description: TransparentTableDataType;
   iconHolderData: { svgLabel: string[] };
   opis?: string[];
+  packageDetails?: string[][]; //cat9_subCat1
+  header3col?: string[]; //cat9_subCat1
+  tablesData3col?: { label: string; value1: string; value2: string }[]; //cat9_subCat1
 };
 
 type TechTableItem8_2aType = {
   tableType: 'tableType8_2a';
   columnsNumber: number;
+  tableHeader1: string[];
   ampers: string[];
+  tableHeader2: string[];
+  voltage: string[];
   dataLines: {
     model: string;
     labels16A: string[];

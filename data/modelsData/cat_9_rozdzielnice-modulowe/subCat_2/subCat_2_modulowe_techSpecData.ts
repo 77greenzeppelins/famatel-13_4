@@ -10,7 +10,7 @@ const arrOfDescriptions: TransparentTableDataType = [
 /*
 .....
 */
-export const obudowyModulowe_techSpecData = [
+export const obudowyModulowe_techSpecData: ObudowyType1TechDataType = [
   //___1
   {
     tableType: 'techSpecTableVer1',

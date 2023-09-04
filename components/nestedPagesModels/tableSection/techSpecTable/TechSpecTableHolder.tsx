@@ -10,6 +10,8 @@ import RegularColumnsTable from './regularColumnsTable/RegularColumnsTable';
 import TechTableType6 from './techTableType6/TechTableType6';
 import TechTable3_2 from './techTable3_2/TechTable3_2';
 import TechTable3_1 from './techTable3_1/TechTable3_1';
+import TechTableType8_2b from './techTableType8_2b/TechTableType8_2b';
+import TechTableType8_2a from './techTableType8_2a/TechTableType8_2a';
 
 const TechSpecTableHolder = (props: DynamicModelContent) => {
   /*
@@ -48,9 +50,9 @@ const TechSpecTableHolder = (props: DynamicModelContent) => {
       case 'techTable3_1':
         return <TechTable3_1 {...data} />;
       case 'tableType8_2a':
-        return <div>tableType8_2a</div>;
+        return <TechTableType8_2a {...data} />;
       case 'tableType8_2b':
-        return <div>tableType8_2b</div>;
+        return <TechTableType8_2b {...data} />;
       case 'noTechDate':
         return null;
     }

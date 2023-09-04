@@ -273,7 +273,7 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat9_allModelsCard_data,
     catAllProductsImages: indexImgCat9_ProductsAll,
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[1], //then update index !
+    catAllTechData: allTechSpecData[8], //then update index !
   },
   //_____category__10__puszki-instalacyjne
   {
@@ -289,6 +289,6 @@ export const catalogStructureData: CatalogStructureData = [
     catAllModels: cat10_allModelsCard_data,
     catAllProductsImages: indexImgCat10_ProductsAll,
     catAllCatalogData: undefined,
-    catAllTechData: allTechSpecData[2], //then update index !
+    catAllTechData: allTechSpecData[9], //then update index !
   },
 ];

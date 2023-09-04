@@ -32,43 +32,14 @@ The TypeScript type of the data you provided is:
 TypeScript
 Ten kod został wygenerowany przez sztuczną inteligencję. Przejrzyj i używaj uważnie. Aby uzyskać więcej informacji, Odwiedź często zadawane pytania.
 
-{
-  columnsNumber: number,
-  ampers: string[],
-  dataLines: {
-    model: string,
-    labels16A: string[],
-    labels32A: string[]
-  }[],
-  norma: string[][],
-  packageDetails: string[][],
-  iconHolderData: {
-    svgLabel: any[],
-    textLabel: { label: string, textStyle: any }[],
-    iconColorBG: string,
-    iconColorFG: string,
-    iconSize: number[]
-  }
-}
 
-{
-  tableType: string,
-  columnsNumber: number,
-  header: string,
-  packageDetails: string[][],
-  norma: string[][],
-  iconHolderData: {
-    svgLabel: string[],
-    textLabel: { label: string, textStyle: any }[],
-    iconColorBG: string,
-    iconColorFG: string,
-    iconSize: number[]
-  },
-  table1Header: string[],
-  table1Data: any[][],
-  table2Header: string,
-  table2Data: { label: string, value: string }[]
-}
+voltage : ['220V','400V','400V','220V','220V','400V','400V'],
+tableHeader2: ['3P+T', '3P+T', '3P+T+N', '2P+TTL', '2P+T', '3P+T', '3P+T+N']
+voltage : ['220V','400V','400V','220V','220V','400V','400V'],
+tableHeader2: ['3P+T',  '3P+T+N', '2P+TTL', '3P+T', '3P+T+n', '3P+T+N']
+
+voltage = ['220V','400V','400V','220V','220V','400V','400V']
+voltage = ['400V','400V','220V','400V','400V','400V']
 
 
 
@@ -78,7 +49,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6401',
@@ -148,7 +130,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6501',
@@ -230,7 +223,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6601',
@@ -281,7 +285,10 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 7,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A', '63A'],
+    voltage: ['400V', '400V', '220V', '400V', '400V', '400V'],
+    tableHeader2: ['3P+T', '3P+T+N', '2P+TTL', '3P+T', '3P+T+n', '3P+T+N'],
     dataLines: [
       {
         model: '3957.1',
@@ -350,7 +357,10 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 7,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A', '63A'],
+    voltage: ['400V', '400V', '220V', '400V', '400V', '400V'],
+    tableHeader2: ['3P+T', '3P+T+N', '2P+TTL', '3P+T', '3P+T+n', '3P+T+N'],
     dataLines: [
       {
         model: '3958.1',
@@ -407,7 +417,10 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 7,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A', '63A'],
+    voltage: ['400V', '400V', '220V', '400V', '400V', '400V'],
+    tableHeader2: ['3P+T', '3P+T+N', '2P+TTL', '3P+T', '3P+T+n', '3P+T+N'],
     dataLines: [
       {
         model: '3958.1',
@@ -464,7 +477,10 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['400V', '400V', '220V', '400V', '400V', '400V'],
+    tableHeader2: ['3P+T', '3P+T+N', '2P+TTL', '3P+T', '3P+T+n', '3P+T+N'],
     dataLines: [
       {
         model: '6201',
@@ -500,7 +516,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6301',
@@ -551,7 +578,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6901',
@@ -597,7 +635,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6051',
@@ -628,7 +677,18 @@ export const rozdzielnicePrzemyslowe_techSpecData: TechTable8_2Type = [
   {
     tableType: 'tableType8_2a',
     columnsNumber: 8,
+    tableHeader1: ['Model', 'Gniazda IP44'],
     ampers: ['16A', '32A'],
+    voltage: ['220V', '400V', '400V', '220V', '220V', '400V', '400V'],
+    tableHeader2: [
+      '3P+T',
+      '3P+T',
+      '3P+T+N',
+      '2P+TTL',
+      '2P+T',
+      '3P+T',
+      '3P+T+N',
+    ],
     dataLines: [
       {
         model: '6053',

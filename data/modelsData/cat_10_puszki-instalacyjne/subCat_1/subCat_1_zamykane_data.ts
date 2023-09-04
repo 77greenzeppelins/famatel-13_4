@@ -1,7 +1,8 @@
 export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   {
     arrayIndex: 0,
-    modelPathSegmant: `model-3050`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3050',
     textIcons: ['IP55', 'Wymiary: 43 × 90 × 39 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[0],
     type: 'Typ: Puszki instalacyjne',
@@ -10,7 +11,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 1,
-    modelPathSegmant: `model-3051`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3051',
     textIcons: ['IP55', 'Wymiary: 75 × 75 × 39 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[1],
     type: 'Typ: Puszki instalacyjne',
@@ -19,7 +21,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 2,
-    modelPathSegmant: `model-3052`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3052',
     textIcons: ['IP55', 'Wymiary: 85 × 85 × 39 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[2],
     type: 'Typ: Puszki instalacyjne',
@@ -28,7 +31,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 3,
-    modelPathSegmant: `model-3056-3059`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3056-3059',
     textIcons: ['IP55', 'Wymiary: 75 × 75 × 39 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[3],
     type: 'Typ: Puszki instalacyjne',
@@ -38,7 +42,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___
   {
     arrayIndex: 4,
-    modelPathSegmant: `model-3025`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3025',
     textIcons: ['IP65', 'Wymiary: 45 x Ø 60'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[4],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -47,7 +52,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 5,
-    modelPathSegmant: `model-3027`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3027',
     textIcons: ['IP65', 'Wymiary: 45 × Ø 70'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[5],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -56,7 +62,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 6,
-    modelPathSegmant: `model-3026`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3026',
     textIcons: ['IP55', 'Wymiary: 65 × 65 × 45 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[6],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -65,7 +72,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 7,
-    modelPathSegmant: `model-3028`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3028',
     textIcons: ['IP55', 'Wymiary: 65 × 65 × 45 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[7],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -74,7 +82,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 8,
-    modelPathSegmant: `model-3002-gl`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3002-gl',
     textIcons: ['IP55', 'Żel izolujący', 'Wymiary: 80 × 80 × 36 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[8],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -83,7 +92,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 9,
-    modelPathSegmant: `model-3003`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3003',
     textIcons: ['IP55', 'Wymiary: 100 × 100 × 45 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[9],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -92,7 +102,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 10,
-    modelPathSegmant: `model-3011`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3011',
     textIcons: ['IP55', 'Wymiary: 103 × 103 × 55 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[10],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -101,7 +112,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 11,
-    modelPathSegmant: `model-3012`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3012',
     textIcons: ['IP55', 'Wymiary: 110 × 152 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[11],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -110,7 +122,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 12,
-    modelPathSegmant: `model-3013`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3013',
     textIcons: ['IP55', 'Wymiary: 135 × 161 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[12],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -119,7 +132,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 13,
-    modelPathSegmant: `model-3014`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3014',
     textIcons: ['IP55', 'Wymiary: 175 × 225 × 85 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[13],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -128,7 +142,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 14,
-    modelPathSegmant: `model-3015`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3015',
     textIcons: ['IP55', 'Wymiary: 240 × 310 × 125 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[14],
     type: 'Typ: Puszki instalacyjne z dławicami',
@@ -138,7 +153,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___start
   {
     arrayIndex: 15,
-    modelPathSegmant: `model-3062`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3062',
     textIcons: ['IP55', 'Wymiary: 80 × 80 × 36 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[15],
     type: 'Typ: Puszki instalacyjne',
@@ -147,7 +163,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 16,
-    modelPathSegmant: `model-3063`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3063',
     textIcons: ['IP55', 'Wymiary: 100 × 100 × 45 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[16],
     type: 'Typ: Puszki instalacyjne',
@@ -156,7 +173,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 17,
-    modelPathSegmant: `model-3071`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3071',
     textIcons: ['IP55', 'Wymiary: 103 × 103 × 55 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[17],
     type: 'Typ: Puszki instalacyjne',
@@ -165,7 +183,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 18,
-    modelPathSegmant: `model-3042`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3042',
     textIcons: ['IP55', 'Wymiary: 110 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[18],
     type: 'Typ: Puszki instalacyjne',
@@ -174,7 +193,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 19,
-    modelPathSegmant: `model-3072`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3072',
     textIcons: ['IP55', 'Wymiary: 110 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[19],
     type: 'Typ: Puszki instalacyjne',
@@ -183,7 +203,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 20,
-    modelPathSegmant: `model-3043`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3043',
     textIcons: ['IP55', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[20],
     type: 'Typ: Puszki instalacyjne',
@@ -192,7 +213,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 21,
-    modelPathSegmant: `model-3073`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3073',
     textIcons: ['IP55', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[21],
     type: 'Typ: Puszki instalacyjne',
@@ -201,7 +223,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 22,
-    modelPathSegmant: `model-3044`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3044',
     textIcons: ['IP55', 'Wymiary: 175 × 225 × 85 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[22],
     type: 'Typ: Puszki instalacyjne',
@@ -210,7 +233,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 23,
-    modelPathSegmant: `model-3074`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3074',
     textIcons: ['IP55', 'Wymiary: 175 × 225 × 85 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[23],
     type: 'Typ: Puszki instalacyjne',
@@ -219,7 +243,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 24,
-    modelPathSegmant: `model-3045`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3045',
     textIcons: ['IP55', 'Wymiary: 240 × 310 × 125 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[24],
     type: 'Typ: Puszki instalacyjne',
@@ -228,7 +253,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 25,
-    modelPathSegmant: `model-3075`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3075',
     textIcons: ['IP55', 'Wymiary: 240 × 310 × 125 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[25],
     type: 'Typ: Puszki instalacyjne',
@@ -238,7 +264,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___one strange...
   {
     arrayIndex: 26,
-    modelPathSegmant: `model-3005`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3005',
     textIcons: ['IP20', 'Wymiary: 240 × 310 × 125 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[26],
     type: 'Typ: Puszki instalacyjne with lamp-holder IP20',
@@ -248,7 +275,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___some new type
   {
     arrayIndex: 27,
-    modelPathSegmant: `model-3955`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3955',
     textIcons: ['IP55', 'Wymiary: 175 × 330 × 135 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[27],
     type: 'Typ: Puszki instalacyjne',
@@ -257,7 +285,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 28,
-    modelPathSegmant: `model-3956`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3956',
     textIcons: ['IP55', 'Wymiary: 330 × 330 × 135 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[28],
     type: 'Typ: Puszki instalacyjne',
@@ -266,7 +295,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 29,
-    modelPathSegmant: `model-3953`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3953',
     textIcons: ['IP55', 'Wymiary: 500 × 225 × 135 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[29],
     type: 'Typ: Puszki instalacyjne',
@@ -275,7 +305,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 30,
-    modelPathSegmant: `model-3954`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3954',
     textIcons: ['IP20', 'Wymiary: 500 × 330 × 135 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[30],
     type: 'Typ: Puszki instalacyjne',
@@ -285,7 +316,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___some new type = zamykane
   {
     arrayIndex: 31,
-    modelPathSegmant: `model-3092`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3092',
     textIcons: ['IP55', 'Wymiary: 160 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[31],
     type: 'Typ: Puszki instalacyjne',
@@ -294,7 +326,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 32,
-    modelPathSegmant: `model-3084`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3084',
     textIcons: ['IP55', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[32],
     type: 'Typ: Puszki instalacyjne',
@@ -303,7 +336,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 33,
-    modelPathSegmant: `model-3085`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3085',
     textIcons: ['IP55', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[33],
     type: 'Typ: Puszki instalacyjne',
@@ -312,7 +346,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 34,
-    modelPathSegmant: `model-3086`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3086',
     textIcons: ['IP55', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[34],
     type: 'Typ: Puszki instalacyjne',
@@ -323,7 +358,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___last type...
   {
     arrayIndex: 35,
-    modelPathSegmant: `model-3061`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3061',
     textIcons: ['IP54', 'Wymiary: 103 × 103 × 55 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[35],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -332,7 +368,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 36,
-    modelPathSegmant: `model-3064`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3064',
     textIcons: ['IP54', 'Wymiary: 110 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[36],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -341,7 +378,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 37,
-    modelPathSegmant: `model-3065`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3065',
     textIcons: ['IP54', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[37],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -350,7 +388,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 38,
-    modelPathSegmant: `model-3066`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3066',
     textIcons: ['IP54', 'Wymiary: 175 × 225 × 85 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[38],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -359,7 +398,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 39,
-    modelPathSegmant: `model-3067-1`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3067-1',
     textIcons: ['IP54', 'Wymiary: 110 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[39],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -368,7 +408,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 40,
-    modelPathSegmant: `model-3069-1`,
+    modelPathSegmant: '',
+    // modelPathSegmant: 'model-3069-1',
     textIcons: ['IP54', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[40],
     type: 'Typ: Puszki instalacyjne Pre-wired',
@@ -378,7 +419,7 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   //___akcespria
   {
     arrayIndex: 41,
-    // modelPathSegmant: `model-3934-3944`,
+    // modelPathSegmant:"model-3934-3944",
     modelPathSegmant: '',
     textIcons: ['IP54', 'Wymiary: 175 × 225 × 85 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[41],
@@ -388,7 +429,7 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 42,
-    // modelPathSegmant: `model-3057`,
+    // modelPathSegmant:"model-3057",
     modelPathSegmant: '',
     textIcons: ['IP54', 'Wymiary: 110 × 150 × 63 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[42],
@@ -398,9 +439,8 @@ export const cat10_subCat1_modelCardsData: modelCardsDataType[] = [
   },
   {
     arrayIndex: 43,
-    // modelPathSegmant: `model-3054`,
+    // modelPathSegmant:"model-3054",
     modelPathSegmant: '',
-
     textIcons: ['IP54', 'Wymiary: 135 × 160 × 83 (w/s/g)'],
     // imageData: imgPuszkiInstalacyjne_01_zamykane[43],
     type: 'Typ: Płyta stalowa ocynkowana',

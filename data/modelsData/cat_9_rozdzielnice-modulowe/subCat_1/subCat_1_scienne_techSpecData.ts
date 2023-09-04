@@ -20,7 +20,7 @@ const arrOfDescriptions: TransparentTableDataType = [
 .....
 */
 
-export const obudowyModulowePuste_techSpecData = [
+export const obudowyModuloweScienne_techSpecData: ObudowyType1TechDataType = [
   {
     tableType: 'techSpecTableVer1',
     header: [['Wymiary zewnętrzne'], ['Wymiary wewnętrzne']],
