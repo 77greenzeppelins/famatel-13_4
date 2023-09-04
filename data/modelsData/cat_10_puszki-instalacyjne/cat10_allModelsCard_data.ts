@@ -7,6 +7,7 @@ export const cat10_allModelsCard_data: modelCardsDataType[][] = [
   cat10_subCat2_modelCardsData,
   cat10_subCat3_modelCardsData,
 ];
+
 export const cat10_allModels_pathSegments = cat10_allModelsCard_data.map(
   (subCat, i) => {
     return subCat.map(({ modelPathSegmant }) => modelPathSegmant);
