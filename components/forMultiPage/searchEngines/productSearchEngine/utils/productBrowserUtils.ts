@@ -1,4 +1,3 @@
-// import { wtyczkiGniazdaPrzenosne_tablesData } from '../../../../data/categoriesData/cat_1_wtyczki-gniazda/subCategories/_subCat_1_przenosne_prodCat';
 /**TS**/
 interface DataTemplate {
   models: string[];
@@ -17,12 +16,16 @@ function findUrlByModel(
   staticData: DataTemplate[], // array with all products
   setProductUrl: React.Dispatch<React.SetStateAction<string | null>>
 ) {
-  console.log('...............findUrlByModel');
+  //----
+  // console.log('typedModel', typedModel);
+  // console.log('staticData', staticData);
+
+  //----
   const foundData = staticData.find(item => item.models.includes(typedModel));
-  console.log(
-    'findUrlByModel / foundData ? foundData.url : null:',
-    foundData ? foundData.url : null
-  );
+  // console.log(
+  //   'findUrlByModel / foundData ? foundData.url : null ==>',
+  //   foundData ? foundData.url : null
+  // );
   setProductUrl(foundData ? foundData.url : null);
 }
 

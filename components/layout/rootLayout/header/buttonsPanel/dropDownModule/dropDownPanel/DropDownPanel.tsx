@@ -11,12 +11,19 @@ interface Props {
   isOverlay: null | boolean;
   contentType: string;
 }
+/*
+___1. this panel handles DropDownMenu and ProductSearchEngine in mode "either or" ==> only one can be visible at a time ==> both share the same boolean state 
+*/
 
 const DropDownPanel = ({ isOverlay, contentType }: Props) => {
   /**JSX**/
   return isOverlay ? (
     <div
-      className={`fc left-0 right-0 ${styles.fixedOverlayOffset} bottom-0 fixed bg-dark opacity-100`}
+      className={`fc left-0 right-0 ${
+        styles.fixedOverlayOffset
+      } bottom-0 fixed ${
+        contentType === 'menu' ? 'bg-dark' : 'bg-transparent'
+      } opacity-100`}
     >
       {contentType === 'menu' ? (
         <motion.div

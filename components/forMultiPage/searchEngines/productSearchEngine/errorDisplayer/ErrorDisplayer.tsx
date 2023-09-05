@@ -2,7 +2,7 @@ import React from 'react';
 /**Framer Motion Staff*/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
-import { productSearchEngine } from '@/data/textData';
+import { productSearchEngineText as labels } from '@/data/textData';
 
 /**TS**/
 interface Props {
@@ -39,9 +39,7 @@ const ErrorDisplayer = ({
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.2, delay: 0 }}
         >
-          <p className="text-left p-regular text-corpo">
-            {productSearchEngine.noError}
-          </p>
+          <p className="text-left p-regular text-corpo">{labels.noError}</p>
         </motion.div>
       ) : null}
     </AnimatePresence>

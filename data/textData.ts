@@ -129,7 +129,7 @@ export const headerSpecButtons = {
   dropDownMenu: 'menu',
 };
 
-export const productSearchEngine = {
+export const productSearchEngineText = {
   placeholder: 'np.: 13100',
   header1: 'Wprowadź kod produktu:',
   header2: 'Rezultat wyszukiwania:',
