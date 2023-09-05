@@ -31,6 +31,7 @@ import {
   rozlacznikiBezpieczenstwaSubCatPaths,
   obudowyAndRozdzielniceSubCatPaths,
   rozdzielniceModuloweSubCatPaths,
+  puszkiInstalacyjneSubCatPaths,
 } from './routingData';
 import { indexImgCat } from '@/public/images/for_dropDownMenu/indexImgCat';
 import { indexImgAllSubCategories } from '@/public/images/all_products/indexImgAllProducts';
@@ -275,31 +276,13 @@ export const catalogStructureData: CatalogStructureData = [
     catAllCatalogData: undefined,
     catAllTechData: allTechSpecData[8], //then update index !
   },
-  //_____category__10__puszki-instalacyjne
-  // {
-  //   mainCategoryIndex: 9,
-  //   mainCategoryName: mainCategoriesNames[9],
-  //   mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
-  //   mainCategoryImage: indexImgCat[9],
-  //   subCategoriesNames: [...rozdzielniceModuloweSubCatNames],
-  //   subCategoriesSegments: [...rozdzielniceModuloweSubCatPaths],
-  //   subCategoriesPaths: [...rozdzielniceModuloweSubCatFullPaths],
-  //   subCategoriesImages: indexImgAllSubCategories[9],
-  //   svgIcons: ['IP65', 'IK08', 'FREE', 'UV', 'IZO', 'MODR'],
-  //   labeledIcons: ['16A', '32A'],
-  //   catAllModels: cat9_allModelsCard_data,
-  //   catAllProductsImages: indexImgCat9_ProductsAll,
-  //   catAllCatalogData: undefined,
-  //   catAllTechData: allTechSpecData[9], //then update index !
-  // },
-
   {
     mainCategoryIndex: 9,
     mainCategoryName: mainCategoriesNames[9],
     mainCategoryPath: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
     mainCategoryImage: indexImgCat[9],
     subCategoriesNames: [...puszkiInstalacyjneSubCatNames],
-    subCategoriesSegments: [...puszkiInstalacyjneSubCatFullPaths],
+    subCategoriesSegments: [...puszkiInstalacyjneSubCatPaths],
     subCategoriesPaths: [...puszkiInstalacyjneSubCatFullPaths],
     subCategoriesImages: indexImgAllSubCategories[9],
     svgIcons: ['IP20', 'IP44', 'IP55', 'IP65', 'IK07', 'FREE', 'UV', 'IZO'],
