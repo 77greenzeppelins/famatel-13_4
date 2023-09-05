@@ -1,4 +1,5 @@
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { notFound } from 'next/navigation';
 
 export const createSubCategoryData = (
   mainCatregoryIndex: number,
@@ -13,9 +14,9 @@ export const createSubCategoryData = (
     mainCatregoryIndex
   ].subCategoriesSegments.findIndex(item => item === catalogLevels[1]);
 
-  if (subCatIndex === -1) {
-    return;
-  }
+  // if (subCatIndex === -1) {
+  //   return;
+  // }
 
   const subCategoryName: string =
     catalogStructureData[mainCatregoryIndex].subCategoriesNames[subCatIndex];
@@ -39,13 +40,14 @@ export const createModelData = (
   ].subCategoriesSegments.findIndex(item => item === catalogLevels[1]);
 
   //---------------------------
-  if (subCatIndex === -1) {
-    // console.log(
-    //   'subCategoriesSegments',
-    //   catalogStructureData[mainCatregoryIndex].subCategoriesSegments
-    // );
-    return;
-  }
+  // if (subCatIndex === -1) {
+  //   // console.log(
+  //   //   'subCategoriesSegments',
+  //   //   catalogStructureData[mainCatregoryIndex].subCategoriesSegments
+  //   // );
+  //   // return;
+  //   notFound();
+  // }
   // else {
   //   console.log(
   //     'subCategoriesSegments',
@@ -61,13 +63,14 @@ export const createModelData = (
     ({ modelPathSegmant }) => modelPathSegmant === catalogLevels[2]
   );
 
-  if (modelIndex === -1) {
-    // console.log(
-    //   'catAllModels',
-    //   catalogStructureData[mainCatregoryIndex].catAllModels[subCatIndex]
-    // );
-    return;
-  }
+  // if (modelIndex === -1) {
+  //   // console.log(
+  //   //   'catAllModels',
+  //   //   catalogStructureData[mainCatregoryIndex].catAllModels[subCatIndex]
+  //   // );
+  //   // return;
+  //   notFound();
+  // }
   // else {
   //   console.log(
   //     'catAllModels',
