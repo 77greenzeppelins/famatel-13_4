@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 /**FramerMotion Staff*/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
-import { productSearchEngine } from '@/data/textData';
+import { productSearchEngineText as labels } from '@/data/textData';
+import Link from 'next/link';
 
 /**TS**/
 interface Props {
@@ -13,6 +14,12 @@ interface Props {
 /**-------------------------------------**/
 const ProductPageDisplayer = ({ wantedModel }: Props) => {
   const [isHovered, SetIsHovered] = useState(false);
+
+  console.log(
+    'ProductPageDisplayer / wantedModel ==>',
+    wantedModel === '' ? 'empty' : wantedModel
+  );
+
   /**JSX**/
   return (
     <AnimatePresence mode="wait">
@@ -45,7 +52,7 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
           {/* <LinkWithSpanAndIcon
             uniqueKeyToAnimate={''} //___empty means no animation in <span>
             linkHref={wantedModel}
-            linkLabel={story.productBrowser.isProduct}
+            linkLabel={labels.isProduct}
             ariaLabel={`Link do strony z wyszukiwanym produktem`}
             linkStyle="fc gap-4"
             spanStyle={`p-regular ${
@@ -55,6 +62,7 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
               isHovered ? 'stroke-light ' : 'stroke-grey '
             }    ease-in duration-[0.4s] delay-[0.1s] origin-center flex-shrink-0`}
           /> */}
+          <Link href={wantedModel}>{wantedModel}</Link>
         </motion.div>
       )}
     </AnimatePresence>
