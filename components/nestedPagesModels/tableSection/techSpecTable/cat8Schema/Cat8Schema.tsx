@@ -1,5 +1,7 @@
 /**Components**/
+import TableWrapper from '@/components/basic/tables/_atoms/tableWrapper/TableWrapper';
 import BasicTable from '@/components/basic/tables/basic/BasicTable';
+import HeaderCellMulticolor from '@/components/basic/tables/mixed/_atoms/headerStaff/HeaderCellMulticolor';
 import TransparentTable from '@/components/basic/tables/transparent/TransparentTable';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
 import MultiTablesWrapper from '@/components/nestedPagesModels/_atoms/TableSectionWrapper/MultiTablesWrapper';
@@ -13,7 +15,16 @@ interface Props {
 
 const Cat8Schema = (data: ObudowaType1TechDataType) => {
   console.log('Cat8Schema / data:', data);
-  const { description, header, tablesData, iconHolderData, norma, opis } = data;
+  const {
+    description,
+    header,
+    tablesData,
+    iconHolderData,
+    norma,
+    opis,
+    header3col,
+    tablesData3col,
+  } = data;
 
   console.log('...opis', opis);
 
@@ -37,6 +48,39 @@ const Cat8Schema = (data: ObudowaType1TechDataType) => {
             />
           ))}
         </div>
+        {header3col ? (
+          <TableWrapper>
+            <thead>
+              {header3col.map((cellData, i) => (
+                <HeaderCellMulticolor
+                  key={i}
+                  label={cellData}
+                  colSpan={i == 0 ? 1 : 2}
+                  tailwindStyle="bg-greyShade2"
+                />
+              ))}
+            </thead>
+            <tbody>
+              {tablesData3col?.map((rowData, i) => (
+                <tr key={i}>
+                  {rowData.map((cellData, j) => (
+                    <HeaderCellMulticolor
+                      key={j}
+                      label={cellData}
+                      colSpan={j == 0 ? 1 : 2}
+                      tailwindStyle={j == 0 ? 'bg-greyShade2' : 'bg-greyTint2'}
+                      textStyle={
+                        j == 0
+                          ? 'text-xs text-center text-light'
+                          : 'text-xs text-center text-dark'
+                      }
+                    />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </TableWrapper>
+        ) : null}
       </TableSectionWrapper>
 
       <TableSectionWrapper divStyle="flex flex-col w-full">

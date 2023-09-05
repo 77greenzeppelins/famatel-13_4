@@ -319,7 +319,9 @@ type ObudowaType1TechDataType = {
   opis?: string[];
   packageDetails?: string[][]; //cat9_subCat1
   header3col?: string[]; //cat9_subCat1
-  tablesData3col?: { label: string; value1: string; value2: string }[]; //cat9_subCat1
+  tablesData3col?: string[][]; //cat9_subCat1
+
+  // tablesData3col?: { label: string; value1: string; value2: string }[]; //cat9_subCat1
 };
 
 type TechTableItem8_2aType = {

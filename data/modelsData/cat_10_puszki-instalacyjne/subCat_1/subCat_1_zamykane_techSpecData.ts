@@ -91,13 +91,9 @@ export const puszkiInstalacyjneZamykane_techSpecData: ObudowyType1TechDataType =
       ],
       header3col: ['Wejścia', '3056', '3059'],
       tablesData3col: [
-        { label: 'Góra', value1: '---', value2: '---' },
-        { label: 'Dół', value1: '1 × Ø 16/20', value2: '1 × Ø 20/25' },
-        {
-          label: 'Bok',
-          value1: '2 × (1 × Ø 16/20)',
-          value2: '2 × (1 × Ø 20/25)',
-        },
+        ['Góra', '---', '---'],
+        ['Dół', '1 × Ø 16/20', '1 × Ø 20/25'],
+        ['Bok', '2 × (1 × Ø 16/20)', '2 × (1 × Ø 20/25)'],
       ],
       norma: ['Norma', 'EN 60670-22'],
       packageDetails: [
@@ -149,13 +145,9 @@ export const puszkiInstalacyjneZamykane_techSpecData: ObudowyType1TechDataType =
       ],
       header3col: ['Wejścia', '3056', '3059'],
       tablesData3col: [
-        { label: 'Góra', value1: '--', value2: '--' },
-        { label: 'Dół', value1: '1 × Ø 16/20', value2: '1 × Ø 20/25' },
-        {
-          label: 'Bok',
-          value1: '2 × (1 × Ø 16/20)',
-          value2: '2 × (1 × Ø 20/25)',
-        },
+        ['Góra', '--', '--'],
+        ['Dół', '1 × Ø 16/20', '1 × Ø 20/25'],
+        ['Bok', '2 × (1 × Ø 16/20)', '2 × (1 × Ø 20/25)'],
       ],
       norma: ['Norma', 'EN 60670-22'],
       packageDetails: [
