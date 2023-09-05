@@ -4,7 +4,7 @@ import ArrowDownloadIcon from '@/components/SVG/icons/heroIcons/ArrowDownloadIco
 /**FramerMotion Staff*/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
-import { productSearchEngine } from '@/data/textData';
+import { productSearchEngineText as labels } from '@/data/textData';
 
 /**TS**/
 interface Props {
@@ -47,7 +47,7 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
                 isHovered ? 'text-light' : 'text-grey'
               } ease-in duration-[0.4s] delay-[0.1s] group`}
             >
-              {productSearchEngine.hasDeclaration}
+              {labels.hasDeclaration}
 
               <ArrowDownloadIcon
                 containerStyle={
