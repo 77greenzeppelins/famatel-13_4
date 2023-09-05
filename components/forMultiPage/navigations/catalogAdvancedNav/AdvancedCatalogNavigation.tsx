@@ -1,5 +1,4 @@
 'use client';
-
 /**Components**/
 import BasicHeader from '../../headers/basicHeader.tsx/BasicHeader';
 import NavigationRow from './row/NavigationRow';
