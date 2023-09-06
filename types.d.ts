@@ -426,8 +426,21 @@ type SvgTechItemType = {
   model: string;
   Component: React.FC<SvgTechComponent>;
 };
+type SvgTechItemVar2Type = {
+  model: string;
+  Component: FC<{
+    basicSize: number;
+  }>;
+};
 
 type IndexFileOfSvgTechItemsType = SvgTechItemType[];
+
+type IndexFileOfSvgTechItemsVar2Type = SvgTechItemVar2Type[];
+
+type AllSvgTechArrayType = (
+  | IndexFileOfSvgTechItemsType[]
+  | IndexFileOfSvgTechItemsVar2Type[]
+)[];
 
 //________________________________________________________________________________________
 

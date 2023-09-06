@@ -12,7 +12,7 @@
 /**
  * used in: images / kategorieProduktowPage / imgKategorieProduktowPage.ts
  **/
-export const indexImgCat1_subCat_6: ImageType_C[] = [
+export const indexImgCat1_subCat_6_temp: ImageType_C[] = [
   {
     path: '/images/all_products/c1_wtyczki-gniazda/6_niskie-napiecia/1.6_01_13800.webp',
     width: 1200,
@@ -62,3 +62,21 @@ export const indexImgCat1_subCat_6: ImageType_C[] = [
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
 ];
+
+const models_1_6: { model: string }[] = [
+  { model: '13800' },
+  { model: '14800' },
+  { model: '23800' },
+  { model: '24800' },
+  { model: '25540' },
+  { model: '25556' },
+  { model: '23072' },
+  { model: '24991' },
+];
+
+export const indexImgCat1_subCat_6 = indexImgCat1_subCat_6_temp.map(
+  (item, i) => ({
+    ...item,
+    model: models_1_6[i].model,
+  })
+);

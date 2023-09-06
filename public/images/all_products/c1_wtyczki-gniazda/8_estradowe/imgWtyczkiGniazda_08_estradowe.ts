@@ -14,7 +14,7 @@
 // import img12 from './1.8_12_1830-1832.webp';
 // import img13 from './1.8_13_1831.webp';
 
-export const indexImgCat1_subCat_8: ImageType_C[] = [
+export const indexImgCat1_subCat_8_temp: ImageType_C[] = [
   {
     path: '/images/all_products/c1_wtyczki-gniazda/8_estradowe/1.8_01_21400.webp',
     width: 1000,
@@ -94,3 +94,26 @@ export const indexImgCat1_subCat_8: ImageType_C[] = [
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
 ];
+
+const models_1_8: { model: string }[] = [
+  { model: '21400' },
+  { model: '23410' },
+  { model: '23480' },
+  { model: '1107' },
+  { model: '2108' },
+  { model: '17220' },
+  { model: '17120' },
+  { model: '17122' },
+  { model: '17023' },
+  { model: '17020' },
+  { model: '39103' },
+  { model: '1830-1832' },
+  { model: '1831' },
+];
+
+export const indexImgCat1_subCat_8 = indexImgCat1_subCat_8_temp.map(
+  (item, i) => ({
+    ...item,
+    model: models_1_8[i].model,
+  })
+);

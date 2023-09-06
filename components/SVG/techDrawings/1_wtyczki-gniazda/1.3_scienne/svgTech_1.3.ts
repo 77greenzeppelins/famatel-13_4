@@ -39,7 +39,7 @@ const svgTech_1_3: IndexFileOfSvgTechItemsType = [
   { model: '24395', Component: SVG_1_3_24395 },
   { model: '24396', Component: SVG_1_3_24396 },
   { model: '23000', Component: SVG_1_3_23000 },
-  { model: '23001 / 23002', Component: SVG_1_3_23001 },
+  // { model: '23001 / 23002', Component: SVG_1_3_23001 },
 ];
 
 export { svgTech_1_3 };

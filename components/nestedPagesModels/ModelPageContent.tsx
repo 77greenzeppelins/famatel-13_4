@@ -36,7 +36,7 @@ const ModelPageContent = () => {
 
   /**JSX*/
   return (
-    <div className="flex flex-col-reverse w-full gap-x-2 xxl:flex-row text-greyShade2 text-medium wrapper-1 pt-14">
+    <div className="flex flex-col-reverse w-full gap-x-2 gap-y-24 xxl:flex-row text-greyShade2 text-medium wrapper-1 pt-14">
       <div className="fc w-full xxl:w-[55%] min-h-[25vh] ">
         <TableSection
           mainCatIndex={categoryIndex}

@@ -12,6 +12,7 @@ interface Props {
   basicState: number;
   setBasicState: React.Dispatch<React.SetStateAction<number>>;
   modelName?: string;
+  showArrows: boolean;
 }
 /*
 Comments:
@@ -22,9 +23,10 @@ const NavSection: React.FunctionComponent<Props> = ({
   basicState,
   setBasicState,
   modelName,
+  showArrows,
 }) => {
   /**Basic Data**/
-  const modelsNames = [modelName, `${modelName} / tech`];
+  const modelsNames = [`Model: ${modelName}`, `Model: ${modelName} / tech`];
   const min = 0;
   const max = modelsNames.length - 1;
   /**OnClick Handlers*/
@@ -39,16 +41,20 @@ const NavSection: React.FunctionComponent<Props> = ({
   */
   return (
     <div className="relative flex items-center justify-between w-full h-full ">
-      <ButtonWithIcon onClickHandler={prevCategory}>
-        <ChevronLeftIcon
-          className={`w-6 h-6`}
-          strokeColor={corpoColors.grey}
-          scale={basicState !== min ? 1.2 : 1}
-          strokeColorWhileHover={
-            basicState !== min ? corpoColors.orange : corpoColors.grey
-          }
-        />
-      </ButtonWithIcon>
+      {showArrows ? (
+        <ButtonWithIcon onClickHandler={prevCategory}>
+          <ChevronLeftIcon
+            className={`w-6 h-6`}
+            strokeColor={corpoColors.grey}
+            scale={basicState !== min ? 1.2 : 1}
+            strokeColorWhileHover={
+              basicState !== min ? corpoColors.orange : corpoColors.grey
+            }
+          />
+        </ButtonWithIcon>
+      ) : (
+        <div className="w-6 h-6" />
+      )}
 
       <div className="flex-col fc gap-y-2">
         <NamesDisplayer
@@ -66,21 +72,24 @@ const NavSection: React.FunctionComponent<Props> = ({
           countedStaff={max + 1}
         />
       </div>
-
-      <ButtonWithIcon
-        // buttonStyle="flex items-center justify-start focus:outline-none disable"
-        //___border border-greyShade2
-        onClickHandler={nextCategory}
-      >
-        <ChevronRightIcon
-          className={`w-6 h-6`}
-          strokeColor={corpoColors.grey}
-          scale={basicState !== min ? 1.2 : 1}
-          strokeColorWhileHover={
-            basicState !== min ? corpoColors.orange : corpoColors.grey
-          }
-        />
-      </ButtonWithIcon>
+      {showArrows ? (
+        <ButtonWithIcon
+          // buttonStyle="flex items-center justify-start focus:outline-none disable"
+          //___border border-greyShade2
+          onClickHandler={nextCategory}
+        >
+          <ChevronRightIcon
+            className={`w-6 h-6`}
+            strokeColor={corpoColors.grey}
+            scale={basicState !== min ? 1.2 : 1}
+            strokeColorWhileHover={
+              basicState !== min ? corpoColors.orange : corpoColors.grey
+            }
+          />
+        </ButtonWithIcon>
+      ) : (
+        <div className="w-6 h-6" />
+      )}
     </div>
   );
 };

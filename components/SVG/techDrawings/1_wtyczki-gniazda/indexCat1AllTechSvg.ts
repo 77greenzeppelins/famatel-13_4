@@ -8,7 +8,7 @@ import { svgTech_1_7 } from './1.7_kontenerowe/svgTech_1.7';
 import { svgTech_1_8 } from './1.8_estradowe/svgTech_1.8';
 import { svgTech_1_9 } from './1.9_campingowe/svgTech_1.9';
 
-export const cat1AllTechSvg = [
+export const cat1AllTechSvg: IndexFileOfSvgTechItemsType[] = [
   svgTech_1_1,
   svgTech_1_2,
   svgTech_1_3,

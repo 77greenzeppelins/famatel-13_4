@@ -17,13 +17,13 @@ const NamesDisplayer: React.FC<{
         containerStyle ? containerStyle : 'flex justify-between w-[100px]'
       }
     >
-      {labelName ? (
+      {/* {labelName ? (
         <div>
           <p className={textStyle ? textStyle : 'text-xs text-grey'}>
             {labelName}
           </p>
         </div>
-      ) : null}
+      ) : null} */}
       <AnimatePresence mode="wait">
         <motion.p
           key={index}

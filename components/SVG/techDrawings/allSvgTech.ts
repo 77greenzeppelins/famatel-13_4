@@ -43,31 +43,65 @@ import { svgTech_10_1 } from './10_puszki/10.1_zamykane/svgTech_10.1';
 /*
 used in: 
 */
-const allSvgTech = [
-  ...svgTech_1_1,
-  ...svgTech_1_2,
-  ...svgTech_1_3,
-  ...svgTech_1_4,
-  ...svgTech_1_5,
-  ...svgTech_1_6,
-  ...svgTech_1_7,
-  ...svgTech_1_8,
-  ...svgTech_1_9,
-  //___
-  ...svgTech_2_1,
-  ...svgTech_2_2,
-  ...svgTech_2_3,
-  //___
-  ...svgTech_3_1_2_3,
-  //___
-  ...svgTech_8_1,
-  ...svgTech_8_2,
-  ...svgTech_8_3,
-  //___
-  ...svgTech_9_1,
-  ...svgTech_9_2,
-  //___
-  ...svgTech_10_1,
+export const allSvgTech: AllSvgTechArrayType = [
+  [
+    svgTech_1_1,
+    svgTech_1_2,
+    svgTech_1_3,
+    svgTech_1_4,
+    svgTech_1_5,
+    svgTech_1_6,
+    svgTech_1_7,
+    svgTech_1_8,
+    svgTech_1_9,
+  ],
+  [svgTech_2_1, svgTech_2_2, svgTech_2_3],
+  [svgTech_3_1_2_3],
+  [
+    [
+      { model: '28000', Component: SVG_28000_size },
+      { model: '28000-F', Component: SVG_28000_front },
+      { model: '28000-S', Component: SVG_28000_side },
+      { model: '28000', Component: SVG_28000_size },
+      { model: '28000-F', Component: SVG_28000_front },
+      { model: '28000-S', Component: SVG_28000_side },
+      { model: '28000', Component: SVG_28000_size },
+    ],
+  ],
+  [
+    [
+      { model: '30017', Component: SvgTechSchuko },
+      { model: '30013', Component: SvgTechPrzemyslowe },
+      { model: '30017', Component: SvgTechSchuko },
+      { model: '30013', Component: SvgTechPrzemyslowe },
+      { model: '30017', Component: SvgTechSchuko },
+      { model: '30013', Component: SvgTechPrzemyslowe },
+      { model: '30017', Component: SvgTechSchuko },
+    ],
+  ],
+  [
+    [
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+      { model: '25501', Component: SvgTechWylacznikBezpieczenstwa },
+    ],
+  ],
+  [
+    [
+      { model: '96000', Component: SVG_7_1_96000_size },
+      { model: '96000', Component: SVG_7_1_96000_size },
+      { model: '96000', Component: SVG_7_1_96000_size },
+      { model: '96000', Component: SVG_7_1_96000_size },
+      { model: '96000', Component: SVG_7_1_96000_size },
+      { model: '96000', Component: SVG_7_1_96000_size },
+    ],
+  ],
+  [svgTech_8_1, svgTech_8_2, svgTech_8_3],
+  [svgTech_9_1, svgTech_9_2],
+  [svgTech_10_1],
 ];
 
 /*
@@ -172,7 +206,7 @@ const category10 = [
   svgTech_10_1[7],
 ];
 
-const categoriesForSlider = [
+export const categoriesForSlider = [
   category1,
   category2,
   category3,
@@ -184,5 +218,3 @@ const categoriesForSlider = [
   category9,
   category10,
 ];
-
-export { allSvgTech, categoriesForSlider };
