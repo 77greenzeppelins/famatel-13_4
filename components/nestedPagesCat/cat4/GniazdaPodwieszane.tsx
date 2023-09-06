@@ -2,7 +2,9 @@
 import BasicTable from '@/components/basic/tables/basic/BasicTable';
 import TransparentTable from '@/components/basic/tables/transparent/TransparentTable';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import ImageSlider from '@/components/forMultiPage/sliders/imagesSlider/ImagesSlider';
 /**BasicData**/
+import { cat4_sliderImages } from '@/public/images/all_products/c4_gniazda-podwieszane/imgGniazdaPodwieszane';
 import {
   gniazdaPodwieszane_feat_1_data,
   catalogTable_1_data,
@@ -46,7 +48,9 @@ const GniazdaPodwieszane = ({ index }: { index: number }) => {
           </div>
         </div>
 
-        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 bg-greyShade2"></div>
+        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2">
+          <ImageSlider imageData={cat4_sliderImages} />
+        </div>
       </div>
       <div className="flex flex-col gap-y-6">
         <BasicHeader

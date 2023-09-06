@@ -1,5 +1,4 @@
 import { catalogStructureData } from '@/data/catalogStructureData';
-import { notFound } from 'next/navigation';
 
 export const createSubCategoryData = (
   mainCatregoryIndex: number,
@@ -10,12 +9,22 @@ export const createSubCategoryData = (
     return null;
   }
 
-  const subCatIndex: number = catalogStructureData[
-    mainCatregoryIndex
-  ].subCategoriesSegments.findIndex(item => item === catalogLevels[1]);
+  const categoryData = catalogStructureData[mainCatregoryIndex];
+  /*
+  ___1. case: produkty/shit ==> if shit appears notFound() is triggered
+  */
+  if (categoryData === undefined) {
+    return;
+  }
+
+  // console.log('createSubCategoryData / categoryData', categoryData);
+
+  const subCatIndex: number = categoryData.subCategoriesSegments.findIndex(
+    item => item === catalogLevels[1]
+  );
 
   // if (subCatIndex === -1) {
-  //   return;
+  //   return notFound();
   // }
 
   const subCategoryName: string =
@@ -35,50 +44,38 @@ export const createModelData = (
     // console.log('catalogLevels.length < 2 ==> false');
     return null;
   }
-  const subCatIndex: number = catalogStructureData[
-    mainCatregoryIndex
-  ].subCategoriesSegments.findIndex(item => item === catalogLevels[1]);
 
-  //---------------------------
-  // if (subCatIndex === -1) {
-  //   // console.log(
-  //   //   'subCategoriesSegments',
-  //   //   catalogStructureData[mainCatregoryIndex].subCategoriesSegments
-  //   // );
-  //   // return;
-  //   notFound();
-  // }
-  // else {
-  //   console.log(
-  //     'subCategoriesSegments',
-  //     catalogStructureData[mainCatregoryIndex].subCategoriesSegments
-  //   );
-  // }
+  const categoryData = catalogStructureData[mainCatregoryIndex];
+  /*
+  ___1. case: produkty/shit ==> if shit appears notFound() is triggered
+  */
+  if (categoryData === undefined) {
+    return;
+  }
+  // console.log('createModelData / categoryData', categoryData);
 
-  //-----------------------------
+  const subCatSegments = categoryData.subCategoriesSegments;
+
+  if (subCatSegments === undefined) {
+    return;
+  }
+
+  const subCatIndex: number = subCatSegments.findIndex(
+    item => item === catalogLevels[1]
+  );
+
+  const modelsData =
+    catalogStructureData[mainCatregoryIndex].catAllModels[subCatIndex];
+
+  if (modelsData === undefined) {
+    return;
+  }
 
   const modelIndex: number = catalogStructureData[
     mainCatregoryIndex
   ].catAllModels[subCatIndex].findIndex(
     ({ modelPathSegmant }) => modelPathSegmant === catalogLevels[2]
   );
-
-  // if (modelIndex === -1) {
-  //   // console.log(
-  //   //   'catAllModels',
-  //   //   catalogStructureData[mainCatregoryIndex].catAllModels[subCatIndex]
-  //   // );
-  //   // return;
-  //   notFound();
-  // }
-  // else {
-  //   console.log(
-  //     'catAllModels',
-  //     catalogStructureData[mainCatregoryIndex].catAllModels[subCatIndex]
-  //   );
-  // }
-
-  //-----------------------------
 
   /*
   ___1. "catAllModels" stores cardData ==> primary 
@@ -98,3 +95,21 @@ export const createModelData = (
     modelLabel: modelLabel,
   };
 };
+
+//---------------------------
+// if (subCatIndex === -1) {
+//   // console.log(
+//   //   'subCategoriesSegments',
+//   //   catalogStructureData[mainCatregoryIndex].subCategoriesSegments
+//   // );
+//   // return;
+//   notFound();
+// }
+// else {
+//   console.log(
+//     'subCategoriesSegments',
+//     catalogStructureData[mainCatregoryIndex].subCategoriesSegments
+//   );
+// }
+
+//-----------------------------

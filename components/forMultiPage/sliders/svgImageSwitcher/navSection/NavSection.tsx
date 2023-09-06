@@ -11,7 +11,9 @@ import { corpoColors } from '@/data/basicData';
 interface Props {
   basicState: number;
   setBasicState: React.Dispatch<React.SetStateAction<number>>;
-  modelName?: string;
+  // modelName?: string;
+  modelsLabels: (string | undefined)[];
+  // modelsNames?: string[]
   showArrows: boolean;
 }
 /*
@@ -22,13 +24,15 @@ Comments:
 const NavSection: React.FunctionComponent<Props> = ({
   basicState,
   setBasicState,
-  modelName,
+  // modelName,
+  // modelsNames,
+  modelsLabels,
   showArrows,
 }) => {
   /**Basic Data**/
-  const modelsNames = [`Model: ${modelName}`, `Model: ${modelName} / tech`];
+  // const modelsLabels = [`Model: ${modelName}`, `Model: ${modelName} / tech`];
   const min = 0;
-  const max = modelsNames.length - 1;
+  const max = modelsLabels.length - 1;
   /**OnClick Handlers*/
   const nextCategory = () => {
     setBasicState(Math.min(basicState + 1, max));
@@ -58,7 +62,7 @@ const NavSection: React.FunctionComponent<Props> = ({
 
       <div className="flex-col fc gap-y-2">
         <NamesDisplayer
-          names={modelsNames}
+          names={modelsLabels}
           index={basicState}
           containerStyle={'flex justify-center'}
           // labelName={'Model: '}

@@ -38,6 +38,11 @@ const SvgImageSwitcher = ({ imageContent, subCatSvg }: Props) => {
   // console.log('svgStaff', svgStaff);
   // console.log('subCatSvg', subCatSvg);
 
+  const modelsLabels = [
+    `Model: ${imageContent.model}`,
+    `Model: ${imageContent.model} / tech`,
+  ];
+
   /**JSX**/
   return (
     <div
@@ -48,7 +53,8 @@ const SvgImageSwitcher = ({ imageContent, subCatSvg }: Props) => {
         <NavSection
           basicState={basicState}
           setBasicState={setBasicState}
-          modelName={imageContent.model}
+          // modelName={imageContent.model}
+          modelsLabels={modelsLabels}
           showArrows={!!svgStaff}
         />
       </div>
