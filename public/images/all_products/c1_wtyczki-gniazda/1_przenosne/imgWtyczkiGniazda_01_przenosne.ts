@@ -98,9 +98,8 @@ const models_1_1: { model: string }[] = [
   { model: '13311' },
 ];
 
-export const indexImgCat1_subCat_1 = indexImgCat1_subCat_1_temp.map(
-  (item, i) => ({
+export const indexImgCat1_subCat_1: ImageType_C[] =
+  indexImgCat1_subCat_1_temp.map((item, i) => ({
     ...item,
     model: models_1_1[i].model,
-  })
-);
+  }));

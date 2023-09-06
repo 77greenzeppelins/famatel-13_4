@@ -15,10 +15,17 @@ interface Props {
   label?: string;
   path?: string;
   size?: string;
+  isUnderlined?: boolean;
 }
 
 /**-------------------------------**/
-const DownloadableLink = ({ id, label, path, size }: Props) => {
+const DownloadableLink = ({
+  id,
+  label,
+  path,
+  size,
+  isUnderlined = true,
+}: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   /**JSX**/
   return (
@@ -60,9 +67,11 @@ const DownloadableLink = ({ id, label, path, size }: Props) => {
           </span>
         </span>
       </span>
-      <span
-        className={`absolute bottom-0 w-full h-[1px] border-b border-grey group-hover:border-greyTint2 ${styles.basicAnimation}`}
-      />
+      {isUnderlined ? (
+        <span
+          className={`absolute bottom-0 w-full h-[1px] border-b border-grey group-hover:border-greyTint2 ${styles.basicAnimation}`}
+        />
+      ) : null}
     </motion.a>
   );
 };

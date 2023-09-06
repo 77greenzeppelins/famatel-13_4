@@ -5,10 +5,11 @@ interface DataTemplate {
 }
 
 interface DeclarationsDataTemplate {
+  id: string;
   models: string[];
-  url: string;
+  path: string;
   size: string;
-  title: string;
+  label: string;
 }
 
 function findUrlByModel(
@@ -34,14 +35,16 @@ function findDeclarationByModel(
   staticData: DeclarationsDataTemplate[], // array with all products
   setDeclarationUrl: React.Dispatch<React.SetStateAction<string | null>>
 ) {
-  console.log('...............findUrlByModel');
+  // console.log('...............findUrlByModel');
   const foundData = staticData.find(item => item.models.includes(typedModel));
   // console.log(
   //   'findUrlByModel / foundData ? foundData.url : null:',
   //   foundData ? foundData.url : null
   // );
-  setDeclarationUrl(foundData ? foundData.url : null);
+  setDeclarationUrl(foundData ? foundData.path : null);
 }
+
+//-----------------------------------------------------------------------
 
 // function findUrl(
 //   typedModel: string,

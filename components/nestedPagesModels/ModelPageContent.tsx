@@ -38,15 +38,15 @@ const ModelPageContent = () => {
 
   /**JSX*/
   return (
-    <div className="flex flex-col-reverse w-full gap-x-2 xxl:flex-row text-greyShade2 text-medium wrapper-1">
-      <div className="fc w-full xxl:w-[55%] min-h-[25vh]">
+    <div className="flex flex-col-reverse w-full gap-x-2 xxl:flex-row text-greyShade2 text-medium wrapper-1 pt-14">
+      <div className="fc w-full xxl:w-[55%] min-h-[25vh] ">
         <TableSection
           mainCatIndex={categoryIndex}
           subCatIndex={subCatIndex}
           modelIndex={modelIndex}
         />
       </div>
-      <div className="fc w-full xxl:w-[45%] max-h-[800px]">
+      <div className=" w-full xxl:w-[45%] max-h-[800px]">
         <GraphicSection
           mainCatIndex={categoryIndex}
           subCatIndex={subCatIndex}

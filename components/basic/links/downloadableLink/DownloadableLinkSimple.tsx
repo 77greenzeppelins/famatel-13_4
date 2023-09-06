@@ -14,10 +14,11 @@ interface Props {
   label?: string;
   path?: string;
   endText?: string;
+  iconStyle?: string;
 }
 
 /**-------------------------------**/
-const DownloadableLinkSimple = ({ label, path, endText }: Props) => {
+const DownloadableLinkSimple = ({ label, path, endText, iconStyle }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   /**JSX**/
   return (
@@ -43,7 +44,11 @@ const DownloadableLinkSimple = ({ label, path, endText }: Props) => {
             transition={svgTransition}
           >
             <ArrowDownloadIcon
-              containerStyle={`w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light ${styles.basicAnimation}`}
+              containerStyle={`${
+                iconStyle
+                  ? iconStyle
+                  : 'w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light'
+              } ${styles.basicAnimation}`}
             />
           </motion.span>
         </span>
@@ -55,9 +60,6 @@ const DownloadableLinkSimple = ({ label, path, endText }: Props) => {
           </span>
         )}
       </span>
-      {/* <span
-        className={`absolute bottom-0 w-full h-[1px] border-b border-grey group-hover:border-greyTint2 ${styles.basicAnimation}`}
-      /> */}
     </motion.a>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 /**Components**/
-import ArrowDownloadIcon from '@/components/SVG/icons/heroIcons/ArrowDownloadIcon';
+import DownloadableLinkSimple from '@/components/basic/links/downloadableLink/DownloadableLinkSimple';
 /**FramerMotion Staff*/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
@@ -18,23 +18,22 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
   return (
     <AnimatePresence mode="wait">
       {wantedModelDeclaration && (
-        <motion.div
-          key={wantedModelDeclaration}
-          // className=" bg-vB"
-          onHoverStart={e => {
-            // console.log('onHoverStart');
-            SetIsHovered(true);
-          }}
-          onHoverEnd={e => {
-            // console.log('onHoverEnd');
-            SetIsHovered(false);
-          }}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <motion.a
+        <div key={wantedModelDeclaration}>
+          <DownloadableLinkSimple
+            label={labels.hasDeclaration}
+            path={wantedModelDeclaration}
+            iconStyle=" sm:w-6 sm:h-6 stroke-corpo group-hover:stroke-light"
+          />
+        </div>
+      )}
+    </AnimatePresence>
+  );
+};
+
+export default DeclarationDisplayer;
+
+{
+  /* <motion.a
             // className="flex items-center justify-between min-w-[92px] gap-3"s
             href={wantedModelDeclaration}
             target="_blank"
@@ -48,7 +47,6 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
               } ease-in duration-[0.4s] delay-[0.1s] group`}
             >
               {labels.hasDeclaration}
-
               <ArrowDownloadIcon
                 containerStyle={
                   'w-4 h-4 sm:w-6 sm:h-6 stroke-grey group-hover:stroke-light ease-in duration-300 delay-100'
@@ -57,11 +55,5 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
                 }
               />
             </span>
-          </motion.a>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-};
-
-export default DeclarationDisplayer;
+          </motion.a> */
+}

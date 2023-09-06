@@ -8,6 +8,7 @@ import { styles } from '@/styles';
 import { motion } from 'framer-motion';
 /**Basic Data**/
 import { ProduktyPageText } from '@/data/textData';
+import BasicLink from '@/components/basic/links/linksWithIcon/basicLink/BasicLink';
 /**TS**/
 interface Props {
   i: number;
@@ -41,6 +42,7 @@ const DescriptionSection = ({ i, href }: Props) => {
         transition={{ duration: 0.8 }}
         className="flex flex-col w-full gap-6 py-6 origin-top-center"
       >
+        {/* <BasicLink href={href} /> */}
         <Link href={href} className="flex items-center py-1 group w-fit">
           <span className="w-4 h-full shrink-0 fc">
             <ArrowForLinkIcon

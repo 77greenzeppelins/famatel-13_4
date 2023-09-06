@@ -1,9 +1,9 @@
+import SvgImageSwitcher from '@/components/forMultiPage/sliders/svgImageSwitcher/SvgImageSwitcher';
 import { catalogStructureData } from '@/data/catalogStructureData';
-import Image from 'next/image';
 
 const GraphicSection = (props: DynamicModelContent) => {
   /*
-  ___ step 1 ==> select category data and destructure it
+  ___ step 1 ==> select category using "props.mainCatIndex" ===> it gives access to data of choosen category; then destructure it
   */
   const categoryAllData = catalogStructureData[props.mainCatIndex]; //__step
   const { catAllProductsImages } = categoryAllData;
@@ -20,7 +20,7 @@ const GraphicSection = (props: DynamicModelContent) => {
   }
 
   const modelImage = catAllProductsImages[props.subCatIndex][props.modelIndex];
-  const { path, alt, width, height } = modelImage;
+  // const { path, alt, width, height, model } = modelImage;
   //   const tableType: string | null = modelCatalogData
   //     ? modelCatalogData.tableType
   //     : null;
@@ -31,19 +31,8 @@ const GraphicSection = (props: DynamicModelContent) => {
 
   /**JSX**/
   return (
-    <div className="flex flex-col gap-y-1">
-      <div className="fc h-[50px] w-full bg-greyShade1 rounded-md">
-        buttons section
-      </div>
-      <div className="w-full p-1 rounded-md fc bg-light">
-        <Image
-          src={path}
-          alt={alt}
-          width={width}
-          height={height}
-          className="container max-w-[500px]"
-        />
-      </div>
+    <div className="w-full h-full">
+      <SvgImageSwitcher {...modelImage} />
     </div>
   );
 };

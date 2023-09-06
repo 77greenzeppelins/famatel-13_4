@@ -23,10 +23,6 @@ const ComponentsBasicSlider = ({ stateId, componentstyle }: Props) => {
                 scale: 1,
                 transition: { delay: 0.2, duration: 0.4 },
               }}
-              //   exit={{
-              //     opacity: 0,
-              //     scale: 1,
-              //   }}
             >
               <Component
                 className={

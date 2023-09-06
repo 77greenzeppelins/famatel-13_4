@@ -6,6 +6,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
 import { productSearchEngineText as labels } from '@/data/textData';
 import Link from 'next/link';
+import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon';
+import { styles } from '@/styles';
 
 /**TS**/
 interface Props {
@@ -49,20 +51,27 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {/* <LinkWithSpanAndIcon
-            uniqueKeyToAnimate={''} //___empty means no animation in <span>
-            linkHref={wantedModel}
-            linkLabel={labels.isProduct}
-            ariaLabel={`Link do strony z wyszukiwanym produktem`}
-            linkStyle="fc gap-4"
-            spanStyle={`p-regular ${
-              isHovered ? 'text-light' : 'text-grey'
-            } ease-in duration-[0.4s] delay-[0.1s] `}
-            iconStyle={`fc h-4 w-4 aspect-square  ${
-              isHovered ? 'stroke-light ' : 'stroke-grey '
-            }    ease-in duration-[0.4s] delay-[0.1s] origin-center flex-shrink-0`}
-          /> */}
-          <Link href={wantedModel}>{wantedModel}</Link>
+          <Link
+            href={wantedModel}
+            className="flex items-center py-1 group w-fit"
+          >
+            {/* <span className="w-4 h-full shrink-0 fc">
+              <ArrowForLinkIcon
+                containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              />
+            </span> */}
+            <p
+              className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation} pr-3`}
+            >
+              Zobacz kategorię
+            </p>
+            <span className="w-4 h-full shrink-0 fc">
+              <ArrowForLinkIcon
+                containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              />
+            </span>
+          </Link>
+          {/* <Link href={wantedModel}>{wantedModel}</Link> */}
         </motion.div>
       )}
     </AnimatePresence>

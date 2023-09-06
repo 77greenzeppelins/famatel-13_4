@@ -196,6 +196,7 @@ export const doPobraniaPageData = {
         'Deklaracja zgodności wyrobów o numerach katalogowych 3952.XXXX (IP44, IP65 stacjonarne i przenośne)',
       path: '/pdf/declarations/D3952.XXXX zbiorcza.pdf',
       size: '0.6MB',
+      models: ['3952'],
     },
     {
       id: '02',
@@ -203,6 +204,7 @@ export const doPobraniaPageData = {
         'Deklaracja zgodności wyrobów o numerach katalogowych 3957.XXXX (IP44, IP65 stacjonarne i przenośne)',
       path: '/pdf/declarations/D3957.XXXX zbiorcza.pdf',
       size: '0.6MB',
+      models: ['3957'],
     },
     {
       id: '03',
@@ -210,6 +212,7 @@ export const doPobraniaPageData = {
         'Deklaracja zgodności wyrobów o numerach katalogowych 3958.XXXX (IP44, IP65 stacjonarne i przenośne)',
       path: '/pdf/declarations/D3958.XXXX zbiorcza.pdf',
       size: '0.2MB',
+      models: ['3958'],
     },
     {
       id: '04',
@@ -217,6 +220,7 @@ export const doPobraniaPageData = {
         'Deklaracja zgodności wyrobów o numerach katalogowych 3959.XXXX (IP44, IP65 stacjonarne i przenośne)',
       path: '/pdf/declarations/D3959.XXXX zbiorcza.pdf',
       size: '0.6MB',
+      models: ['3959'],
     },
     {
       id: '05',
@@ -224,6 +228,7 @@ export const doPobraniaPageData = {
         'Deklaracja zgodności wyrobów o numerach katalogowych 3977.XXXX (IP44, IP65 stacjonarne i przenośne)',
       path: '/pdf/declarations/D3977.XXXX zbiorcza.pdf',
       size: '0.6MB',
+      models: ['3977'],
     },
   ],
   heroBackground: {

@@ -15,8 +15,8 @@ import {
 /**Basic Data**/
 import { productSearchEngineText as labels } from '@/data/textData';
 import { allProductsForSearchEngine } from './productSearchEngine_data';
+import { doPobraniaPageData } from '@/data/basicData';
 // import { allDeclarations } from '../../../pagesComponents/doPobrania/sectionDeclarations/declarations/declarationList_data';
-
 /**HardCoded Staff**/
 const numMinLength = 4;
 const numMaxLength = 11;
@@ -46,18 +46,9 @@ const ProductSearchEngine = () => {
   /**Validation Section**/
   const validationSchema = Yup.object({
     model: Yup.string()
-      // .matches(/^(1|2|3|9|6|RG|SPT)[cfgpst/]\w*/i, {
-      //   message: story.productBrowser.valMatch,
-      // })
-      // .matches(/^(1|2|3|6|9|RG|SPT)[cfgpst/0-9]*$/i, {
-      //   message: story.productBrowser.valMatch,
-      // })
       .min(numMinLength, labels.valMin)
       .max(numMaxLength, labels.valMax)
       .required(labels.valRequired),
-    // .matches(/^(1|2|3|6|9|RG|SPT)[cfgpst/0-9]*$/i, {
-    //   message: story.productBrowser.valMatch,
-    // }),
   });
 
   const handleSubmit = (
@@ -66,11 +57,11 @@ const ProductSearchEngine = () => {
   ) => {
     //___external function to find model specified by user and display link to its page;
     findUrlByModel(values.model, allProductsForSearchEngine, setWantedModel);
-    // findDeclarationByModel(
-    //   values.model,
-    //   allDeclarations,
-    //   setWantedModelDeclaration
-    // );
+    findDeclarationByModel(
+      values.model,
+      doPobraniaPageData.declarationsData,
+      setWantedModelDeclaration
+    );
     //___external function that checks if model has card and displays link to its PDF resource;
     //___external function that checks if model has declaration and display link to its PDF resource;
     //___
@@ -191,3 +182,19 @@ const ProductSearchEngine = () => {
 };
 
 export default ProductSearchEngine;
+
+// const validationSchema = Yup.object({
+//     model: Yup.string()
+//       // .matches(/^(1|2|3|9|6|RG|SPT)[cfgpst/]\w*/i, {
+//       //   message: story.productBrowser.valMatch,
+//       // })
+//       // .matches(/^(1|2|3|6|9|RG|SPT)[cfgpst/0-9]*$/i, {
+//       //   message: story.productBrowser.valMatch,
+//       // })
+//       .min(numMinLength, labels.valMin)
+//       .max(numMaxLength, labels.valMax)
+//       .required(labels.valRequired),
+//     // .matches(/^(1|2|3|6|9|RG|SPT)[cfgpst/0-9]*$/i, {
+//     //   message: story.productBrowser.valMatch,
+//     // }),
+//   });
