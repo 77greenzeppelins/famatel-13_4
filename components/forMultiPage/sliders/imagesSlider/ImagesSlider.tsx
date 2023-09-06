@@ -29,7 +29,7 @@ const ImageSlider: React.FunctionComponent<{
         <NavSection
           basicState={basicState}
           setBasicState={setBasicState}
-          showArrows={true}
+          showArrows={modelsNames.length > 1}
           modelsLabels={modelsNames}
           //   modelsNames={modelsNames}
         />

@@ -3,8 +3,10 @@ import Table1 from '@/components/basic/tables/mixed/rozlacznikiBezpieczenstwa/ta
 import Table2 from '@/components/basic/tables/mixed/rozlacznikiBezpieczenstwa/table2/Table2';
 import TransparentTable from '@/components/basic/tables/transparent/TransparentTable';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import ImageSlider from '@/components/forMultiPage/sliders/imagesSlider/ImagesSlider';
 
 /**BasicData**/
+import { cat6_oneImage } from '@/public/images/all_products/c6_rozlacznik-bezpieczenstwa/imgRozlacznikBezpieczenstwa';
 import {
   rozlacznikiBezpieczenstwa_feat_data,
   rozlacznikiBezpieczenstwa_norma_data,
@@ -13,7 +15,7 @@ import { allHeaders } from '@/data/textData';
 
 const RozlacznikiBezpieczenstwa = ({ index }: { index: number }) => {
   /**Data Destr...**/
-  const { catPages, gniazdaPodwieszanePage } = allHeaders;
+  const { catPages } = allHeaders;
   /**JSX**/
   return (
     <div className="flex flex-col pt-20 gap-y-10">
@@ -37,7 +39,9 @@ const RozlacznikiBezpieczenstwa = ({ index }: { index: number }) => {
           </div>
         </div>
 
-        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 bg-greyShade2"></div>
+        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 ">
+          <ImageSlider imageData={cat6_oneImage} />
+        </div>
       </div>
 
       <div className="flex flex-col w-full gap-y-6">

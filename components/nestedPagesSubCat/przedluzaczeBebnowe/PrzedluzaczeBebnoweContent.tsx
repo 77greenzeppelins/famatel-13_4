@@ -11,6 +11,9 @@ import {
 } from '@/data/modelsData/cat_5_przedluzacze-bebnowe/przedluzaczeBebnoweTables_data';
 import TableWrapper from '@/components/basic/tables/_atoms/tableWrapper/TableWrapper';
 import HeaderCellMulticolor from '@/components/basic/tables/mixed/_atoms/headerStaff/HeaderCellMulticolor';
+import ImageSlider from '@/components/forMultiPage/sliders/imagesSlider/ImagesSlider';
+import { cat7_threeModels } from '@/public/images/all_products/c7_ladowarki/imgLadowarki';
+import { indexImgCat5_subCat_forCatalog } from '@/public/images/all_products/c5_przedluzacze-bebnowe/imgPrzedluzaczeBebnowe';
 
 /**TS**/
 interface Props {
@@ -30,8 +33,8 @@ const PrzedluzaczeBebnoweContent = ({ mainCatIndex, subCatIndex }: Props) => {
       data-component="PrzedluzaczeBebnoweContent"
       className="w-full pt-10 wrapper-1"
     >
-      <div className="flex flex-col pt-20 gap-y-10 ">
-        <div className="flex-col-reverse h-full gap-4 fc xl:flex-row ">
+      <div className="flex flex-col gap-y-10 ">
+        <div className="flex-col-reverse h-full gap-x-4 gap-y-24 fc xl:flex-row ">
           <div className="flex flex-col w-full h-full gap-y-4 xl:w-1/2">
             <div className="flex flex-col w-full h-full gap-y-0">
               <BasicHeader
@@ -55,7 +58,11 @@ const PrzedluzaczeBebnoweContent = ({ mainCatIndex, subCatIndex }: Props) => {
             </div>
           </div>
 
-          <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 bg-greyShade2"></div>
+          <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 ">
+            <ImageSlider
+              imageData={[indexImgCat5_subCat_forCatalog[subCatIndex]]}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-y-6">
           <BasicHeader

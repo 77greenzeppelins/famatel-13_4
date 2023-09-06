@@ -4,8 +4,10 @@ import Table2 from '@/components/basic/tables/mixed/ladowarkiSamochodowe/table2/
 import Table3 from '@/components/basic/tables/mixed/ladowarkiSamochodowe/table3/Table3';
 import TransparentTable from '@/components/basic/tables/transparent/TransparentTable';
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
+import ImageSlider from '@/components/forMultiPage/sliders/imagesSlider/ImagesSlider';
 
 /**BasicData**/
+import { cat7_threeModels } from '@/public/images/all_products/c7_ladowarki/imgLadowarki';
 import {
   ladowarkiSamochodowe_feat_1_data,
   ladowarkiSamochodowe_norma_data,
@@ -48,7 +50,9 @@ const LadowarkiSamochodowe = ({ index }: { index: number }) => {
           </div>
         </div>
 
-        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 bg-greyShade2"></div>
+        <div className="flex min-w-[200px] min-h-[200px] w-full h-full xl:w-1/2 ">
+          <ImageSlider imageData={cat7_threeModels} />
+        </div>
       </div>
 
       <div className="flex flex-col w-full gap-y-6">

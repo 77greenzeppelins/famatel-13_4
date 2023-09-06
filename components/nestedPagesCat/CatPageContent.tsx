@@ -17,14 +17,15 @@ const CatPageContent = ({ categoryIndex }: Props) => {
   const schemaSwitcher = (index: number) => {
     switch (index) {
       case 0:
+      case 1:
       case 2:
       case 4:
       case 7:
       case 8:
       case 9:
         return <CategorySchema1 index={index} />;
-      case 1:
-        return <CategorySchema2 index={index} />;
+      // case 1:
+      //   return <CategorySchema2 index={index} />;
       case 3:
         return <GniazdaPodwieszane index={index} />;
       case 5:

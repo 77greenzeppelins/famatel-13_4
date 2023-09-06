@@ -10,12 +10,20 @@ export const indexImgCat5_ProductsAll: ImageType_C[][] = [
 
 export const indexImgCat5_subCat_forCatalog: ImageType_C[] = [
   {
+    path: '/images/all_products/c5_przedluzacze-bebnowe/schuko/5.1_30017_18_19.webp',
+    width: 600,
+    height: 600,
+    alt: 'Zdjęcie wtyczki przemysłowej',
+    model: '30017',
+  },
+  {
     path: '/images/all_products/c5_przedluzacze-bebnowe/ip67/5.2_03_30015.webp',
     width: 800,
     height: 800,
     // width: 600,
     // height: 600,
     alt: 'Zdjęcie wtyczki przemysłowej',
+    model: '30015',
   },
   {
     path: '/images/all_products/c5_przedluzacze-bebnowe/ip67-metalowe/5.3_30052.webp',
@@ -24,12 +32,7 @@ export const indexImgCat5_subCat_forCatalog: ImageType_C[] = [
     // width: 600,
     // height: 600,
     alt: 'Zdjęcie wtyczki przemysłowej',
-  },
-  {
-    path: '/images/all_products/c5_przedluzacze-bebnowe/schuko/5.1_30017_18_19.webp',
-    width: 600,
-    height: 600,
-    alt: 'Zdjęcie wtyczki przemysłowej',
+    model: '30052',
   },
 ];
 
