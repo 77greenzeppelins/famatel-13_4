@@ -18,7 +18,12 @@ import { svgTech_2_1 } from './2_gniazda-z-blokada/2.1_tablicowe/svgTech_2.1';
 import { svgTech_2_2 } from './2_gniazda-z-blokada/2.2_stale/svgTech_2.2';
 import { svgTech_2_3 } from './2_gniazda-z-blokada/2.3_z-opcjami/svgTech_2.3';
 //___category_3
-import { svgTech_3_1_2_3 } from './3_adaptery-przemyslowe/svgTech_3.1_2_3';
+import {
+  svgTech_3_1,
+  svgTech_3_1_2_3,
+  svgTech_3_2,
+  svgTech_3_3,
+} from './3_adaptery-przemyslowe/svgTech_3.1_2_3';
 //___category_4
 import SVG_28000_size from './4_gniazda-podwieszane/SVG_28000_size';
 import SVG_28000_front from './4_gniazda-podwieszane/SVG_28000_front';
@@ -56,7 +61,7 @@ export const allSvgTech: AllSvgTechArrayType = [
     svgTech_1_9,
   ],
   [svgTech_2_1, svgTech_2_2, svgTech_2_3],
-  [svgTech_3_1_2_3],
+  [svgTech_3_1, svgTech_3_2, svgTech_3_3],
   [
     [
       { model: '28000', Component: SVG_28000_size },

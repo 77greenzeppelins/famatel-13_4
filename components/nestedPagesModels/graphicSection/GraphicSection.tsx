@@ -1,6 +1,7 @@
+/**Componets**/
 import SvgImageSwitcher from '@/components/forMultiPage/sliders/svgImageSwitcher/SvgImageSwitcher';
+/**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
-import { cat1AllTechSvg } from '@/components/SVG/techDrawings/1_wtyczki-gniazda/indexCat1AllTechSvg';
 import { allSvgTech } from '@/components/SVG/techDrawings/allSvgTech';
 
 const GraphicSection = (props: DynamicModelContent) => {
@@ -22,7 +23,7 @@ const GraphicSection = (props: DynamicModelContent) => {
   // const subCatSvg = cat1AllTechSvg[props.subCatIndex];
 
   const subCatSvg = allSvgTech[props.mainCatIndex][props.subCatIndex];
-  console.log('subCatSvg', subCatSvg);
+  // console.log('subCatSvg', subCatSvg);
 
   /**JSX**/
   return (

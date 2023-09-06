@@ -1,4 +1,4 @@
-export const indexImgCat2_subCat_2: ImageType_C[] = [
+export const indexImgCat2_subCat_2_temp: ImageType_C[] = [
   {
     path: '/images/all_products/c2_gniazda-z-blokada/2_stale/2.2_01_26008.webp',
     width: 1200,
@@ -30,9 +30,16 @@ export const indexImgCat2_subCat_2: ImageType_C[] = [
   //   alt: 'Zdjęcie gniazda z blokadą',
   // },
 ];
-/**Images**/
-// import img1 from './2.2_01_212008.webp';
-// import img2 from './2.2_02_212002.webp';
-// import img3 from './2.2_03_25116.webp';
-// import img4 from './2.2_04_25110.webp';
-// import img5 from './2.2_05_25159.webp';
+const models_2_2: { model: string }[] = [
+  { model: '26008' },
+  { model: '26002' },
+  { model: '25116' },
+  { model: '25110' },
+];
+
+export const indexImgCat2_subCat_2 = indexImgCat2_subCat_2_temp.map(
+  (item, i) => ({
+    ...item,
+    model: models_2_2[i].model,
+  })
+);

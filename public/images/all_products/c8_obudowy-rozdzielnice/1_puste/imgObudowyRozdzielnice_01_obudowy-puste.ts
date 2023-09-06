@@ -1,4 +1,4 @@
-export const indexImgCat8_subCat_1: ImageType_C[] = [
+export const indexImgCat8_subCat_1_temp: ImageType_C[] = [
   {
     path: '/images/all_products/c8_obudowy-rozdzielnice/1_puste/8.1_01_3927.webp',
     width: 800,
@@ -147,6 +147,40 @@ export const indexImgCat8_subCat_1: ImageType_C[] = [
     alt: 'Zdjęcie wtyczki przemysłowej',
   },
 ];
+const models_8_1: { model: string }[] = [
+  { model: '3927' },
+  { model: '3950' },
+  { model: '3951' },
+  { model: '3974' },
+  { model: '3952' },
+  { model: '3977' },
+  { model: '3957' },
+  { model: '3958' },
+  { model: '3959' },
+  { model: '3928' },
+  { model: '3960' },
+  { model: '3975' },
+  { model: '3961' },
+  { model: '3962' },
+  { model: '3978' },
+  { model: '3963' },
+  { model: '3966' },
+  { model: '3967' },
+  { model: '3968' },
+  { model: '3969' },
+  { model: '3970' },
+  { model: '3979' },
+  { model: '3973' },
+  { model: '3964' },
+];
+
+export const indexImgCat8_subCat_1 = indexImgCat8_subCat_1_temp.map(
+  (item, i) => ({
+    ...item,
+    model: models_8_1[i].model,
+  })
+);
+
 /**Images**/
 // import img1 from './8.1_01_3927.webp';
 // import img2 from './8.1_02_3950.webp';
