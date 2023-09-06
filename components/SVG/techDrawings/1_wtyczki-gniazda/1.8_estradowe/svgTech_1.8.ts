@@ -13,7 +13,7 @@ import SVG_1_8_23480 from './SVG_1.8_23480';
 import SVG_1_8_39103 from './SVG_1.8_39103';
 
 /**---------------------------------------------**/
-const svgTech_1_8 = [
+const svgTech_1_8: IndexFileOfSvgTechItemsType = [
   { model: '13410', Component: SVG_1_8_13410 },
   { model: '23410', Component: SVG_1_8_23410 },
   { model: '23480', Component: SVG_1_8_23480 },

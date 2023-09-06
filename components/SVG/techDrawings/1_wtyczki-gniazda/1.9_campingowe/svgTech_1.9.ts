@@ -10,7 +10,7 @@ import SVG_1_9_13918 from './SVG_1.9_13918';
 import SVG_1_9_13361 from './SVG_1.9_13361';
 
 /**---------------------------------------------**/
-const svgTech_1_9 = [
+export const svgTech_1_9: IndexFileOfSvgTechItemsType = [
   { model: '13912', Component: SVG_1_9_13912 },
   { model: '13913', Component: SVG_1_9_13913 },
   { model: '13000', Component: SVG_1_9_13000 },
@@ -22,5 +22,3 @@ const svgTech_1_9 = [
   { model: '13361', Component: SVG_1_9_13361 },
   { model: '13364', Component: SVG_1_9_13361 },
 ];
-
-export { svgTech_1_9 };

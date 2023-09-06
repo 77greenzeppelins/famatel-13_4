@@ -1,4 +1,3 @@
-import React from 'react';
 /**SVG Components**/
 import SVG_1_1_13200 from './SVG_1.1_13200';
 import SVG_1_1_14200 from './SVG_1.1_14200';
@@ -13,9 +12,6 @@ import SVG_1_1_14200CR from './SVG_1.1_14200CR';
 import SVG_1_1_23200CR from './SVG_1.1_23200CR';
 import SVG_1_1_24200CR from './SVG_1.1_24200CR';
 import SVG_1_1_13311 from './SVG_1.1_13311';
-
-/**TS**/
-// import { IF_SvgTech } from '../../../../../utils/TS/typeScriptStaff';
 
 /**---------------------------------------------**/
 export const svgTech_1_1: IndexFileOfSvgTechItemsType = [

@@ -1,4 +1,3 @@
-import React from 'react';
 /**SVG Components**/
 import SVG_1_2_13631 from './SVG_1.2_13631';
 import SVG_1_2_13634 from './SVG_1.2_13634';
@@ -13,7 +12,7 @@ import SVG_1_2_24336 from './SVG_1.2_24336';
 import SVG_1_2_24337 from './SVG_1.2_24337';
 
 /**---------------------------------------------**/
-const svgTech_1_2 = [
+export const svgTech_1_2: IndexFileOfSvgTechItemsType = [
   { model: '13631', Component: SVG_1_2_13631 },
   { model: '13634', Component: SVG_1_2_13634 },
   { model: '13377', Component: SVG_1_2_13377 },
@@ -26,5 +25,3 @@ const svgTech_1_2 = [
   { model: '24336', Component: SVG_1_2_24336 },
   { model: '24337', Component: SVG_1_2_24337 },
 ];
-
-export { svgTech_1_2 };

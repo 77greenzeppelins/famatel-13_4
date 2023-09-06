@@ -3,7 +3,7 @@
 // import { corpoColors } from '../../../../../data/_data';
 
 /**---------------------------------------------**/
-const SVG_1_8_39103: React.FC<{ basicSize: number }> = ({ basicSize }) => {
+const SVG_1_8_39103: React.FC<SvgTechComponent> = ({ basicSize }) => {
   /**JSX**/
   return (
     <svg

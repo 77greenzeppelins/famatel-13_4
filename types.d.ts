@@ -414,8 +414,9 @@ type AllTechSpecData = (
 )[]; //___TechTableEmptyType[] ???????????????
 
 /*
-___1. SvgTechComponent ==> for each svg component
-___2. SvgTechItemType ==> for "index.ts" files to specify type of array items;
+___used in: "indexFile" with data on each subCategory techSvgs; 
+___1. SvgTechComponent ==> for each techSvg component
+___2. SvgTechItemType ==> for "index.ts" files to specify type of svgTech items array;
 */
 type SvgTechComponent = {
   basicSize?: number;
