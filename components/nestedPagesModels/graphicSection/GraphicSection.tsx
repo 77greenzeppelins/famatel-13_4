@@ -5,7 +5,7 @@ const GraphicSection = (props: DynamicModelContent) => {
   /*
   ___ step 1 ==> select category using "props.mainCatIndex" ===> it gives access to data of choosen category; then destructure it
   */
-  const categoryAllData = catalogStructureData[props.mainCatIndex]; //__step
+  const categoryAllData = catalogStructureData[props.mainCatIndex];
   const { catAllProductsImages } = categoryAllData;
   /*
   ___ step 2 ==> select subCategory data

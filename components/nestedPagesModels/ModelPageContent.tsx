@@ -3,8 +3,6 @@ import { notFound, usePathname } from 'next/navigation';
 /**Components**/
 import TableSection from './tableSection/TableSection';
 import GraphicSection from './graphicSection/GraphicSection';
-// import Cat1Schemas from './cat1/Cat1Schemas';
-// import Cat2Schemas from './cat2/Cat2Schemas';
 /**Basic Data**/
 import { catalogStructureData } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
@@ -22,13 +20,13 @@ const ModelPageContent = () => {
   const subCatIndex: number = catalogStructureData[
     categoryIndex
   ].subCategoriesSegments.findIndex(item => item === relevantPathSegments[1]);
-  console.log('ModelPageContent / subCatIndex', subCatIndex);
+  // console.log('ModelPageContent / subCatIndex', subCatIndex);
   const modelIndex = catalogStructureData[categoryIndex].catAllModels[
     subCatIndex
   ].findIndex(
     ({ modelPathSegmant }) => modelPathSegmant === relevantPathSegments[2]
   );
-  console.log('ModelPageContent / modelIndex', modelIndex);
+  // console.log('ModelPageContent / modelIndex', modelIndex);
   // if (subCatIndex === -1) {
   //   notFound();
   // }
