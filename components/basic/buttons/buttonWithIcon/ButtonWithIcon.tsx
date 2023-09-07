@@ -1,25 +1,15 @@
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-
 /**Basic Data**/
-import { headerSpecButtons } from '@/data/textData';
 import { buttonsConfig } from '@/data/basicData';
 
 interface Props {
   children: React.ReactNode;
   onClickHandler: () => void;
-  //   setIsOverlay: React.Dispatch<React.SetStateAction<boolean | null>>;
-  //   setContentType: React.Dispatch<React.SetStateAction<string>>;
   buttonStyle?: string;
 }
 
-const ButtonWithIcon = ({
-  children,
-  onClickHandler,
-  //   setIsOverlay,
-  //   setContentType,
-  buttonStyle,
-}: Props) => {
+const ButtonWithIcon = ({ children, onClickHandler, buttonStyle }: Props) => {
   /**...**/
   const pathname = usePathname();
   //   const styleCondition = pathname.split('/').length > 2;
