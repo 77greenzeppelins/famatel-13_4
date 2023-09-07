@@ -44,7 +44,7 @@ const NavSection: React.FunctionComponent<Props> = ({
   JSX
   */
   return (
-    <div className="relative flex items-center justify-between w-full h-full ">
+    <div className="relative flex items-center justify-between w-full max-w-[600px] h-full m-auto">
       {showArrows ? (
         <ButtonWithIcon onClickHandler={prevCategory}>
           <ChevronLeftIcon
@@ -87,7 +87,7 @@ const NavSection: React.FunctionComponent<Props> = ({
             strokeColor={corpoColors.grey}
             scale={basicState !== min ? 1.2 : 1}
             strokeColorWhileHover={
-              basicState !== min ? corpoColors.orange : corpoColors.grey
+              basicState !== max ? corpoColors.orange : corpoColors.grey
             }
           />
         </ButtonWithIcon>

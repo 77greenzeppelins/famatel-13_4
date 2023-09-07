@@ -51,6 +51,7 @@ const SlidesSection: React.FunctionComponent<{
                 }
               >
                 <Image
+                  className="object-contain"
                   alt={'zdjęcie produktu'}
                   src={path}
                   width={600}

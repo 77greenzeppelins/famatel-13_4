@@ -81,12 +81,12 @@ const SvgImageSwitcher = ({ imageContent, subCatSvg }: Props) => {
               transition: { delay: 0, duration: 0.4 },
             }}
           >
-            <div className="w-full p-4 bg-light">{CreateSvg()}</div>
+            <div className="w-full p-4 rounded-md bg-light">{CreateSvg()}</div>
           </motion.div>
         ) : (
           <motion.div
             key={basicState}
-            className="w-full fc"
+            className="w-full origin-center fc"
             // className="absolute top-0 bottom-0 left-0 right-0 "
             initial={{ opacity: 0, scale: 0.99 }}
             animate={{
@@ -100,13 +100,18 @@ const SvgImageSwitcher = ({ imageContent, subCatSvg }: Props) => {
               transition: { delay: 0, duration: 0.4 },
             }}
           >
-            <Image
-              src={imageContent.path}
-              alt={imageContent.alt}
-              width={imageContent.width}
-              height={imageContent.height}
-              className="container max-w-[500px]"
-            />
+            <div className="p-4 rounded-md bg-light aspect-square">
+              <Image
+                src={imageContent.path}
+                alt={imageContent.alt}
+                width={500}
+                height={500}
+                // width={imageContent.width}
+                // height={imageContent.height}
+                className="object-contain object-center max-w-[500px]"
+                //___"object-contain "
+              />
+            </div>
           </motion.div>
         )}
         {/* </AnimatePresence> */}
