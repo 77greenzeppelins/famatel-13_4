@@ -1,6 +1,6 @@
+'use client';
 import React, { useState } from 'react';
 /**Components**/
-// import LinkWithSpanAndIcon from '../../../../links/linkWithSpanAndIcon/LinkWithSpanAndIcon';
 /**FramerMotion Staff*/
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
@@ -17,10 +17,11 @@ interface Props {
 const ProductPageDisplayer = ({ wantedModel }: Props) => {
   const [isHovered, SetIsHovered] = useState(false);
 
-  console.log(
-    'ProductPageDisplayer / wantedModel ==>',
-    wantedModel === '' ? 'empty' : wantedModel
-  );
+  // console.log('ProductPageDisplayer / wantedModel', wantedModel);
+  // console.log(
+  //   'ProductPageDisplayer / wantedModel ==>',
+  //   wantedModel === '' ? 'empty' : wantedModel
+  // );
 
   /**JSX**/
   return (
@@ -28,18 +29,20 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
       {wantedModel === null ? (
         <motion.div
           key={wantedModel}
-          className="min-h-[20px]"
+          // className="min-h-[20px] w-full flex just-center sm:justify-start"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
-          <p className="text-left p-regular text-corpo"></p>
+          <p className="text-center sm:text-left text-regular text-corpo">
+            {labels.noProduct}
+          </p>
         </motion.div>
       ) : (
         <motion.div
           key={wantedModel}
-          className="flex gap-2 "
+          // className="flex gap-2 bg-black"
           onHoverStart={e => {
             SetIsHovered(true);
           }}
@@ -49,21 +52,16 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           <Link
             href={wantedModel}
-            className="flex items-center py-1 group w-fit"
+            className="flex items-center justify-center px-2 sm:px-0 sm:justify-start group"
           >
-            {/* <span className="w-4 h-full shrink-0 fc">
-              <ArrowForLinkIcon
-                containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
-              />
-            </span> */}
             <p
               className={`text-grey text-regular group-hover:text-light ${styles.lazyAnimation} pr-3`}
             >
-              Zobacz kategorię
+              {labels.isProduct}
             </p>
             <span className="w-4 h-full shrink-0 fc">
               <ArrowForLinkIcon
@@ -71,7 +69,6 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
               />
             </span>
           </Link>
-          {/* <Link href={wantedModel}>{wantedModel}</Link> */}
         </motion.div>
       )}
     </AnimatePresence>
@@ -79,3 +76,11 @@ const ProductPageDisplayer = ({ wantedModel }: Props) => {
 };
 
 export default ProductPageDisplayer;
+
+{
+  /* <span className="w-4 h-full shrink-0 fc">
+              <ArrowForLinkIcon
+                containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
+              />
+            </span> */
+}

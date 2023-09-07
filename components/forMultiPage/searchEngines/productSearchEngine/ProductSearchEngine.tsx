@@ -16,6 +16,8 @@ import {
 import { productSearchEngineText as labels } from '@/data/textData';
 import { allProductsForSearchEngine } from './productSearchEngine_data';
 import { doPobraniaPageData } from '@/data/basicData';
+import { styles } from '@/styles';
+
 // import { allDeclarations } from '../../../pagesComponents/doPobrania/sectionDeclarations/declarations/declarationList_data';
 /**HardCoded Staff**/
 const numMinLength = 4;
@@ -78,6 +80,9 @@ const ProductSearchEngine = () => {
   // }, [wantedModel]);
   // console.log('ProductBrowser / wantedModel:', wantedModel);
 
+  const {
+    productsSearchEngine: { rowContainer, leftPart, rightPart },
+  } = styles;
   /**JSX**/
   return (
     <div
@@ -85,8 +90,8 @@ const ProductSearchEngine = () => {
       className={`fixed flex justify-center left-0 right-0 bottom-[1px] pointer-events-none top-[64px] lg:top-[78px]`}
     >
       <div className="w-screen h-screen pointer-events-auto ">
-        <div className="w-[100vw] h-[80vh] fc wrapper-1">
-          <div className="w-full h-full pt-10 sm:pt-20 inner-px-md-xl-xxl bg-gradient-to-b from-dark via-dark to-transparent">
+        <div className="w-screen h-screen fc bg-gradient-to-b from-dark via-dark to-transparent wrapper-1 ">
+          <div className="w-full h-full pt-10 sm:pt-20 ">
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -103,24 +108,24 @@ const ProductSearchEngine = () => {
               }) => (
                 <div
                   data-layout="AllSectionContainer"
-                  className="flex flex-col w-full h-full gap-y-10 "
+                  className="flex flex-col w-full h-full gap-y-10"
                 >
                   {/*
             --------------------------------------request section
-            */}
-
+                */}
                   <form
                     onSubmit={handleSubmit}
                     data-layou="pseudoHeader"
-                    className="flex flex-col items-center w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row "
+                    className={`${rowContainer} items-center`}
                   >
                     <label
                       htmlFor="model"
-                      className="flex justify-center w-full sm:w-[300px] md:w-[400px] lg:w-[500px] sm:justify-start"
+                      className={`${leftPart}`}
+                      //___md:w-[400px] lg:w-[500px]
                     >
                       <p className="p-medium text-grey">{labels.header1}</p>
                     </label>
-                    <div className="flex flex-col min-w-[200px]">
+                    <div className={rightPart}>
                       <div className="flex items-center gap-10 h-[50px] w-full">
                         <input
                           type="text"
@@ -138,7 +143,7 @@ const ProductSearchEngine = () => {
                         ></input>
                         <button
                           type="submit"
-                          className={`px-2 py-1 text-left border rounded-md fc  p-small ${
+                          className={`px-2 py-1 text-left border rounded-md fc  text-card ${
                             errors.model
                               ? 'text-grey border-grey pointer-events-none'
                               : 'text-light border-light pointer-events-auto'
@@ -149,21 +154,36 @@ const ProductSearchEngine = () => {
                       </div>
                     </div>
                   </form>
-
                   {/*
             --------------------------------------error section
-            */}
-                  <div className="flex flex-col items-center w-full h-[32px] gap-x-10 sm:flex-row overflow-hidden">
-                    <div className="flex justify-center w-full sm:w-[300px] md:w-[400px] lg:w-[500px] sm:justify-start" />
-                    <ErrorDisplayer
-                      mountingCondition={errors.model && touched.model}
-                      errorText={errors.model}
-                      submitCount={submitCount}
-                    />
+            //rowContainer; leftPart; rightPart;
+                */}
+
+                  <div className={`${rowContainer} items-center`}>
+                    <div className={`${leftPart}`} />
+                    <div
+                      className={`${rightPart} justify-center sm:justify-start `}
+                    >
+                      <ErrorDisplayer
+                        mountingCondition={errors.model && touched.model}
+                        errorText={errors.model}
+                        submitCount={submitCount}
+                      />
+                    </div>
                   </div>
                   {/*
-            --------------------------------------response section
-            */}
+              --------------------------------------response section
+                */}
+                  {/* <div className={`${rowContainer} `}>
+                    <div className={`${leftPart}`} />
+                    <div className={`${rightPart} flex-col min-h-[100px]`}>
+                      <ResponseDisplayer
+                        wantedModel={wantedModel} //__ null or url
+                        submitCount={submitCount}
+                        wantedModelDeclaration={wantedModelDeclaration} //__ null or url
+                      />
+                    </div>
+                  </div> */}
                   <div className="min-h-[100px]">
                     <ResponseDisplayer
                       wantedModel={wantedModel} //__ null or url

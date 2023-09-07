@@ -31,6 +31,15 @@ export const styles = {
     },
   },
   /*
+  used in: ProductsSearchEngine |  
+  */
+  productsSearchEngine: {
+    rowContainer:
+      'flex flex-col w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row',
+    leftPart: 'flex justify-center w-full sm:w-[300px] sm:justify-start ',
+    rightPart: 'flex min-w-[200px]',
+  },
+  /*
   used in: oFirmiePage | HeroSection ==> as concept of hero with image and text that starts as flex and ends as grid (to avoid absolute position)
   */
   mainHeroSection: {

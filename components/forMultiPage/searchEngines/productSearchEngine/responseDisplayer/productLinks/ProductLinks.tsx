@@ -21,8 +21,8 @@ const ProductLinks = ({ wantedModel, wantedModelDeclaration }: Props) => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col gap-y-4"
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="flex flex-col justify-center w-full sm:w-auto sm:justify-start gap-y-4"
         >
           <ProductPageDisplayer wantedModel={wantedModel} />
           <DeclarationDisplayer

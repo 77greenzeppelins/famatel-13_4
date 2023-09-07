@@ -18,11 +18,15 @@ const DeclarationDisplayer = ({ wantedModelDeclaration }: Props) => {
   return (
     <AnimatePresence mode="wait">
       {wantedModelDeclaration && (
-        <div key={wantedModelDeclaration}>
+        <div
+          key={wantedModelDeclaration}
+          // className="flex justify-center"
+        >
           <DownloadableLinkSimple
             label={labels.hasDeclaration}
             path={wantedModelDeclaration}
-            iconStyle=" sm:w-6 sm:h-6 stroke-corpo group-hover:stroke-light"
+            aStyle="relative flex items-center  lg:min-h-[64px] sm:min-h-[32px] group px-2 sm:px-0"
+            iconStyle="w-6 h-6 stroke-corpo group-hover:stroke-light"
           />
         </div>
       )}

@@ -29,7 +29,7 @@ const ErrorDisplayer = ({
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.2, delay: 0 }}
         >
-          <p className="text-left p-regular text-corpo">{errorText}</p>
+          <p className="text-left text-regular text-corpo">{errorText}</p>
         </motion.div>
       ) : submitCount > 0 ? (
         <motion.div
@@ -39,7 +39,7 @@ const ErrorDisplayer = ({
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.2, delay: 0 }}
         >
-          <p className="text-left p-regular text-corpo">{labels.noError}</p>
+          <p className="text-left text-regular text-corpo">{labels.noError}</p>
         </motion.div>
       ) : null}
     </AnimatePresence>

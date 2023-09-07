@@ -1,7 +1,5 @@
 export const energatabText = {
   overlay: {
-    // line1: 'Widzimy się',
-    // line2: 'na targach',
     line1: 'Famatel Polska',
     line2: 'zaprasza na targi',
   },
@@ -141,7 +139,8 @@ export const productSearchEngineText = {
   valRequired: 'Podaj kod szukanego produktu!',
   valMatch: 'Podany kod nie odnosi się do żadnego produktu',
   isProduct: 'Zobacz stronę produktu.',
-  noProduct: 'W naszej ofercie nie ma produktu o podanym kodzie.',
+  // noProduct: 'W naszej ofercie nie ma produktu o podanym kodzie.',
+  noProduct: 'Brak produktu o podanym kodzie.',
   hasCard: 'Podierz kartę produktu (PDF)',
   hasDeclaration: 'Podierz deklarację produktu (PDF)',
 };

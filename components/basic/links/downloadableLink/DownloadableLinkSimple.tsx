@@ -15,15 +15,27 @@ interface Props {
   path?: string;
   endText?: string;
   iconStyle?: string;
+  //___
+  aStyle?: string;
 }
 
 /**-------------------------------**/
-const DownloadableLinkSimple = ({ label, path, endText, iconStyle }: Props) => {
+const DownloadableLinkSimple = ({
+  label,
+  path,
+  endText,
+  iconStyle,
+  aStyle,
+}: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   /**JSX**/
   return (
     <motion.a
-      className="relative flex items-center w-full lg:min-h-[64px] sm:min-h-[32px] gap-x-6 py-1 group"
+      className={
+        aStyle
+          ? aStyle
+          : 'relative flex items-center w-full lg:min-h-[64px] sm:min-h-[32px] gap-x-6 py-1 group'
+      }
       href={path}
       target="_blank"
       rel="noopener noreferrer"

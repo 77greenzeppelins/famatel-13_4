@@ -5,6 +5,7 @@ import ProductLinks from './productLinks/ProductLinks';
 import { AnimatePresence, motion } from 'framer-motion';
 /**Basic Data**/
 import { productSearchEngineText as labels } from '@/data/textData';
+import { styles } from '@/styles';
 
 /**TS**/
 interface Props {
@@ -18,6 +19,10 @@ const ResponseDisplayer = ({
   wantedModelDeclaration,
   submitCount,
 }: Props) => {
+  /**Data destr...**/
+  const {
+    productsSearchEngine: { rowContainer, leftPart, rightPart },
+  } = styles;
   /**JSX**/
   return (
     <AnimatePresence mode="wait">
@@ -29,13 +34,19 @@ const ResponseDisplayer = ({
         submitCount > 0 && wantedModel !== '' ? (
           <motion.div
             key={`${submitCount}`}
-            // className="flex items-center w-full gap-x-10 sm:flex-row sm:items-start "
-            className="flex flex-col items-center w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row sm:items-start "
+            className={`${rowContainer} `}
+            // className="flex flex-col items-center w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row sm:items-start "
           >
-            <div className="flex justify-center w-full sm:w-[300px] md:w-[400px] lg:w-[500px] sm:justify-start">
+            <div
+              className={`${leftPart}`}
+              //  className="flex justify-center w-full sm:w-[300px] md:w-[400px] lg:w-[500px] sm:justify-start"
+            >
               <p className="p-medium text-grey">{`${labels.header2} `}</p>
             </div>
-            <div className="flex flex-col gap-6 pt-2 lg:pt-3">
+            <div
+              className={`${rightPart} overflow-hidden`}
+              //  className="flex flex-col gap-6 pt-2 lg:pt-3"
+            >
               <ProductLinks
                 wantedModel={wantedModel}
                 wantedModelDeclaration={wantedModelDeclaration}
