@@ -7,15 +7,21 @@ import { linksToInstantContactData } from '@/data/basicData';
 interface Props {
   aStyle: string;
   iconStyle: string;
-  labelStyle: string;
+  labelStyle?: string;
+  hasLabel?: boolean;
 }
 
 /**--------------------------------------------------------------------------------**/
-const DirectPhoneGK: React.FC<Props> = ({ aStyle, iconStyle, labelStyle }) => {
+const DirectPhoneGK: React.FC<Props> = ({
+  aStyle,
+  iconStyle,
+  labelStyle,
+  hasLabel = true,
+}) => {
   return (
-    <a href={linksToInstantContactData.mailGK} className={aStyle}>
+    <a href={linksToInstantContactData.mobileGK} className={aStyle}>
       <PhoneIcon className={iconStyle} />
-      <p className={labelStyle}>Telefon: +48 601 460 307</p>
+      {hasLabel ? <p className={labelStyle}>Telefon: +48 601 460 307</p> : null}
     </a>
   );
 };

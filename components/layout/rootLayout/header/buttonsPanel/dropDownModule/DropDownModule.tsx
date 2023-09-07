@@ -6,7 +6,12 @@ import SearchEngineButton from '@/components/basic/buttons/searchEngineButton/Se
 import DropDownMenuButton from '@/components/basic/buttons/dropDownMenuButton/DropDownMenuButton';
 import DropDownPanel from './dropDownPanel/DropDownPanel';
 
-const DropDownModule = () => {
+/**TS**/
+interface Props {
+  mobileMenuState: boolean;
+}
+
+const DropDownModule = ({ mobileMenuState }: Props) => {
   const [isOverlay, setIsOverlay] = useState<null | boolean>(false);
   const [contentType, setContentType] = useState<string>('');
 
@@ -21,7 +26,7 @@ const DropDownModule = () => {
   /**JSX**/
   return (
     <>
-      <div className="flex justify-between items-center w-[100px] h-[50px]">
+      <div className="relative flex justify-between items-center w-[100px] h-[50px]">
         <SearchEngineButton
           setIsOverlay={setIsOverlay}
           setContentType={setContentType}
@@ -33,6 +38,13 @@ const DropDownModule = () => {
           setContentType={setContentType}
           contentType={contentType}
           isOverlay={isOverlay}
+        />
+        <div
+          className={`absolute lg:hidden ${
+            mobileMenuState
+              ? 'scale-100 opacity-100 duration-300 ease-in origin-bottom'
+              : 'scale-0 opacity-0 duration-300 ease-in origin-top'
+          } inset-0 bg-dark`}
         />
       </div>
       <DropDownPanel isOverlay={isOverlay} contentType={contentType} />

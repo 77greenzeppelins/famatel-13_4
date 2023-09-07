@@ -7,15 +7,23 @@ import { linksToInstantContactData } from '@/data/basicData';
 interface Props {
   aStyle: string;
   iconStyle: string;
-  labelStyle: string;
+  labelStyle?: string;
+  hasLabel?: boolean;
 }
 
 /**--------------------------------------------------------------------------------**/
-const DirectMailGK: React.FC<Props> = ({ aStyle, iconStyle, labelStyle }) => {
+const DirectMailGK: React.FC<Props> = ({
+  hasLabel,
+  aStyle,
+  iconStyle,
+  labelStyle,
+}) => {
   return (
     <a href={linksToInstantContactData.mailGK} className={aStyle}>
       <EnvelopeIcon className={iconStyle} />
-      <p className={labelStyle}>grzegorz.kowcz@famatel.pl</p>
+      {hasLabel ? (
+        <p className={labelStyle}>grzegorz.kowcz@famatel.pl</p>
+      ) : null}
     </a>
   );
 };

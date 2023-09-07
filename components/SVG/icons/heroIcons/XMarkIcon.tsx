@@ -1,7 +1,10 @@
 'use client';
 import React from 'react';
 /**FramerMotion Staff*/
+import { svgTransition } from '@/lib/fmConfigs/framerMotionConfigs';
 import { motion } from 'framer-motion';
+/**Basic Data**/
+import { corpoColors } from '@/data/basicData';
 /*
 style:
 containerStyle={`fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`}
@@ -27,8 +30,10 @@ const XMarkIcon = ({
       // strokeWidth={strokeWidth ? strokeWidth : 1.5}
       // stroke={corpoColors.light}
       className={containerStyle ? containerStyle : 'w-6 h-6 flex-shrink-0'}
-      // onHoverStart={e => { fill:'#9b59b6'}}
-      // onHoverEnd={e => {}}
+      whileHover={{ scale: 1.1 }}
+      transition={{
+        ...svgTransition,
+      }}
     >
       <path
         className={pathStyle}
