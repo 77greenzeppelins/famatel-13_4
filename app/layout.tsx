@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   description: layoutText.description,
   generator: layoutText.generator,
   viewport: layoutText.viewport,
+  icons: {
+    icon: ['/favicon.ico'],
+    apple: ['/apple-touch-icon.png'],
+    shortcut: ['/apple-touch-icon.png'],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
