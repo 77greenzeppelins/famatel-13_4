@@ -16,8 +16,10 @@ const GraphicSection = (props: ImageType_C) => {
           className="object-contain "
           alt={props.alt}
           src={props.path}
-          width={props.width}
-          height={props.height}
+          width={320}
+          height={320}
+          // width={props.width}
+          // height={props.height}
         />
       </div>
       {/* <motion.div

@@ -23,8 +23,10 @@ const GraphicSection = (props: ImageType_C) => {
           className="object-contain w-full h-full aspect-square "
           alt={props.alt}
           src={props.path}
-          width={props.width}
-          height={props.height}
+          // width={props.width}
+          // height={props.height}
+          width={260}
+          height={260}
         />
       </div>
       <motion.div
