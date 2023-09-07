@@ -13,8 +13,8 @@ export const energatabText = {
       'Ponownie prezentujemy nasze rozwiązania na największych w Polsce miedzynarodowych targach urządzeń i technologii dla energetyki',
     // where: 'Znajdziesz nas w pawilonie XX na stoisku 66',
     where: 'Nasza lokalizacja na terenie targów:',
-    pawilon: ['P', 'pawilon'],
-    stoisko: ['66', 'stoisko'],
+    pawilon: ['M', 'pawilon'],
+    stoisko: ['10', 'stoisko'],
   },
 };
 export const layoutText = {
