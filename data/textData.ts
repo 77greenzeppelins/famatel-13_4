@@ -18,15 +18,24 @@ export const energatabText = {
   },
 };
 /*
-___used as metadata text i.e. 
+___used as metadata text in RootLayout----------------
 */
 export const layoutText = {
   title: 'Famatel Polska',
   description:
     'Famatel to międzynarodowy producent rozwiązań z zakresu  elektryki przemysłowej z ponad 30-letnim doświadczeniem. Oferujemy wysokiej jakości produkty, takie jak rozdzielnice, gniazda i wtyczki, które spełniają najwyższe standardy bezpieczeństwa i jakości. Dołącz do grona naszych zadowolonych klientów już dziś!',
   generator:
-    'elektryka przemysłowa, gniazda przemysłowe, wtyczki przemysłowe, rozdzielnice przemysłowe, rozdzielnice, ',
+    'elektryka przemysłowa, gniazda przemysłowe, wtyczki przemysłowe, rozdzielnice przemysłowe, rozdzielnice, inżynier, projektant',
   viewport: 'width=device-width, initial-scale=1',
+  twitter: {
+    desc: 'Famatel - profesjonalna elektryka przemysłowa',
+    imageAlt: 'Zdjęcie wtyczki w trudnych warunkach terenowych.',
+  },
+};
+export const metadataText = {
+  contactPage: {
+    desc: 'Skontaktuj się z nami już dziś! Jeśli szukasz rozwiązań z zakresu elektryki przemysłowej i masz jakiekolwiek pytania, podziel się nimi z nami telefonicznie lub mailowo. Jeśli planujesz nas odwiedzić, pamiętaj, że Famatel Polska mieści sie w Bielawie przy ulicy Willowej 5, ale lepszy dojazd jest od ulicy Strażackiej.',
+  },
 };
 
 export const HomePageText = {
@@ -160,5 +169,13 @@ export const allHeaders = {
   gniazdaPodwieszanePage: [
     'Karta katalogowa (warianty 28000)',
     'Karta katalogowa (warianty 27000)',
+  ],
+};
+
+export const notaPrawnaPageText = {
+  header: 'Nota Prawna',
+  text: [
+    'Wszelkie prawa do całej zawartości serwisu internetowego FAMATEL POLSKA, są zastrzeżone. Użytkownik ma prawo do pobrania oraz drukowania całych stron lub fragmentów serwisu internetowego FAMATEL POLSKA, pod warunkiem nienaruszania praw autorskich oraz praw wynikających z rejestracji znaków towarowych należących do FAMATEL Polska Sp. z o.o. Żadna część serwisu nie może być w celach komercyjnych kopiowana w całości lub części, transmitowana elektronicznie lub w inny sposób modyfikowana, linkowana lub wykorzystana bez uprzedniej pisemnej zgody FAMATEL Polska Sp. z o.o.',
+    'FAMATEL Polska Sp. z o.o. na bieżąco aktualizuje informacje zawarte w serwisie, jednak nie ponosi żadnej odpowiedzialności za dokładność, aktualność oraz kompletność informacji przedstawionych na stronach serwisu. Jednocześnie FAMATEL Polska Sp. z o.o. zastrzega sobie prawo do wprowadzania zmian w części lub całości serwisu bez uprzedzenia. Ryzyko związane z użytkowaniem i wykorzystaniem informacji przedstawionych w serwisie ponosi sam użytkownik. FAMATEL Polska Sp. z o.o. nie ponosi żadnej odpowiedzialności z tytułu wyrządzonych szkód będących rezultatem korzystania z serwisu FAMATEL POLSKA.',
   ],
 };
