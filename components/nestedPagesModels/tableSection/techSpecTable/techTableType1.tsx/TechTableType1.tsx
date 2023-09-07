@@ -31,6 +31,7 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                         key={i}
                         label={cellData}
                         colSpan={2}
+                        tailwindStyle="bg-dark w-[150px]"
                       />
                     );
                   }
@@ -39,7 +40,9 @@ const TechTableType1 = (data: WtyczkaGniazdoType1TechDataType) => {
                       key={i}
                       label={cellData}
                       colSpan={poles.length === 5 ? 2 : 3}
-                      tailwindStyle="bg-greyShade2"
+                      tailwindStyle={`${
+                        poles.length === 5 ? 'w-[240px]' : 'w-[360px]'
+                      }   bg-greyShade2`}
                     />
                   );
                 })}
