@@ -16,8 +16,8 @@ const GraphicSection = (props: ImageType_C) => {
           className="object-contain "
           alt={props.alt}
           src={props.path}
-          width={320}
-          height={320}
+          width={280}
+          height={280}
           // width={props.width}
           // height={props.height}
         />
