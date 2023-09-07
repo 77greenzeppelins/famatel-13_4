@@ -4,6 +4,7 @@ import ButtonWithIconAnimated from '@/components/basic/buttons/buttonWithIcon/Bu
 import HamburgerIcon from '@/components/SVG/icons/heroIcons/HamburgerIcon';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import MobileContactPanel from './mobileContactPanel/MobileContactPanel';
+import MobileMenuContent from './mobileMenuContent/MobileMenuContent';
 
 interface Props {
   mobileMenuState: boolean;
@@ -24,11 +25,7 @@ const MobileMenu = ({ mobileMenuState, mobileMenuSetter }: Props) => {
           {mobileMenuState ? <XMarkIcon /> : <HamburgerIcon />}
         </ButtonWithIconAnimated>
       </div>
-      <div
-        className={`top-[53px] bottom-0 right-0 left-0 fixed bg-dark lg:hidden ${
-          mobileMenuState ? 'flex' : 'hidden'
-        }`}
-      ></div>
+      <MobileMenuContent mobileMenuState={mobileMenuState} />
       <MobileContactPanel
         // promptState={promptState}
         // setPromptState={setPromptState}
