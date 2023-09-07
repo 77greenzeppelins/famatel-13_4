@@ -10,13 +10,16 @@ export const energatabText = {
     data: '12 - 14 września',
     city: 'Bielsko - Biała',
     text1:
-      'Ponownie prezentujemy nasze rozwiązania na największych w Polsce miedzynarodowych targach urządzeń i technologii dla energetyki',
+      'Ponownie prezentujemy nasze rozwiązania na największych w Polsce miedzynarodowych targach urządzeń i technologii dla energetyki.',
     // where: 'Znajdziesz nas w pawilonie XX na stoisku 66',
     where: 'Nasza lokalizacja na terenie targów:',
     pawilon: ['M', 'pawilon'],
     stoisko: ['10', 'stoisko'],
   },
 };
+/*
+___used as metadata text i.e. 
+*/
 export const layoutText = {
   title: 'Famatel Polska',
   description:
