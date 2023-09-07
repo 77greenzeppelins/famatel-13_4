@@ -26,8 +26,6 @@ const Cat8Schema = (data: ObudowaType1TechDataType) => {
     tablesData3col,
   } = data;
 
-  console.log('...opis', opis);
-
   /**JSX**/
   return (
     <MultiTablesWrapper>

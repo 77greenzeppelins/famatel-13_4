@@ -19,7 +19,7 @@ const TechTableType6 = (data: WtyczkaGniazdoType6TechDataType) => {
     tableBodySpecialRows,
     twoTables,
   } = data;
-  console.log('....TechTableType6 / data', data);
+  // console.log('....TechTableType6 / data', data);
   /**JSX**/
   return (
     <div className="flex flex-col w-full gap-y-16">

@@ -7,28 +7,26 @@ import { catalogStructureData } from '@/data/catalogStructureData';
 import { mainCategoriesPath } from '@/data/routingData';
 
 // export const dynamicParams = false;
-export async function generateStaticParams() {
-  return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
-    return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
-      subCatPath => ({
-        cat: mainCatPath,
-        subCat: subCatPath,
-      })
-    );
-  });
-}
+// export async function generateStaticParams() {
+//   return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
+//     return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
+//       subCatPath => ({
+//         cat: mainCatPath,
+//         subCat: subCatPath,
+//       })
+//     );
+//   });
+// }
 
-interface Props {
-  params: {
-    cat: string;
-    subCat: string;
-    model: string;
-  };
-}
+// interface Props {
+//   params: {
+//     cat: string;
+//     subCat: string;
+//     model: string;
+//   };
+// }
 
-export default function WtyczkiGniazdaJednofazoweTablicoweModelPage({
-  params,
-}: Props) {
+export default function WtyczkiGniazdaJednofazoweTablicoweModelPage() {
   /**JSX**/
   return (
     <ModelPageWrapper>

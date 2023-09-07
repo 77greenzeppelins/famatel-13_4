@@ -92,7 +92,7 @@ export const worldMapConfig = {
 };
 
 export const dropDownMenuConfig = {
-  minHeight: 500,
+  minHeight: 660,
   minWidth: 400,
 };
 

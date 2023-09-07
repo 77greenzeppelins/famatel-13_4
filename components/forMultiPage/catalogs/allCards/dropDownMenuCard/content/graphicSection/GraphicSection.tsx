@@ -14,7 +14,7 @@ const GraphicSection = (props: ImageType_C) => {
         /*
       ___1. why "max-h" ? because aspect-square depends on height and in some "proportions" image expands its space
       */
-        className="relative fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] xl:max-h-[150px] aspect-square bg-light p-2 overflow-hidden rounded-sm"
+        className="relative fc h-[80%] max-h-[100px] md:h-[90%] md:max-h-[120px] aspect-square bg-light p-2 overflow-hidden rounded-sm"
         // variants={cardVariants}
         // initial="initial"
         // animate="animate"

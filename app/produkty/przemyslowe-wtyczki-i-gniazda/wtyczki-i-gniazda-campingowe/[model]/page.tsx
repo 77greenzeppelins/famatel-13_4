@@ -3,30 +3,30 @@
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
-import { catalogStructureData } from '@/data/catalogStructureData';
-import { mainCategoriesPath } from '@/data/routingData';
+// import { catalogStructureData } from '@/data/catalogStructureData';
+// import { mainCategoriesPath } from '@/data/routingData';
 
 // export const dynamicParams = false;
-export async function generateStaticParams() {
-  return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
-    return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
-      subCatPath => ({
-        cat: mainCatPath,
-        subCat: subCatPath,
-      })
-    );
-  });
-}
+// export async function generateStaticParams() {
+//   return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
+//     return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
+//       subCatPath => ({
+//         cat: mainCatPath,
+//         subCat: subCatPath,
+//       })
+//     );
+//   });
+// }
 
-interface Props {
-  params: {
-    cat: string;
-    subCat: string;
-    model: string;
-  };
-}
+// interface Props {
+//   params: {
+//     cat: string;
+//     subCat: string;
+//     model: string;
+//   };
+// }
 
-export default function WtyczkiGniazdaCampingoweModelPage({ params }: Props) {
+export default function WtyczkiGniazdaCampingoweModelPage() {
   /**JSX**/
   return (
     <ModelPageWrapper>

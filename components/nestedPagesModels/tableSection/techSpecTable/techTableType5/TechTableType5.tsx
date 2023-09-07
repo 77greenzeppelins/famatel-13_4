@@ -22,11 +22,11 @@ const TechTableType5 = (data: WtyczkaGniazdoType5TechDataType) => {
     tableBody2,
     description,
   } = data;
-  console.log('....TechTableType5 / data', data);
-  console.log(
-    'header2a && header2b && tableBody2:',
-    header2a && header2b && tableBody2
-  );
+  // console.log('....TechTableType5 / data', data);
+  // console.log(
+  //   'header2a && header2b && tableBody2:',
+  //   header2a && header2b && tableBody2
+  // );
   /**JSX**/
   return (
     <div className="flex flex-col w-full gap-y-16">
