@@ -20,7 +20,7 @@ const GraphicSection = () => {
         // fill // intrinsic|fixed|responsive|fill allowed;  fill your parent
       />
       <div className="absolute hidden xs3xx:flex bottom-[10%] right-[25%] h-[70%] w-[70%]">
-        <Sniper groupForHover="group" />
+        <Sniper isHovered={true} />
         <PseudoTechPanel />
       </div>
       <ScrollPrompt />

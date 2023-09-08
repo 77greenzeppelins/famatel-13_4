@@ -1,11 +1,11 @@
 /**------------------------------------------------------------**/
 const Sniper: React.FunctionComponent<{
-  groupForHover?: string;
+  isHovered?: boolean;
   borderColor?: string;
-}> = ({ borderColor, groupForHover }) => {
+}> = ({ borderColor, isHovered }) => {
   /**JSX**/
   return (
-    <div className={`relative fc w-full h-full ${groupForHover}`}>
+    <div className={`relative fc w-full h-full ${isHovered ? 'group' : ''}`}>
       <div
         className={` absolute top-0 left-0 h-[20%] w-[20%] border-t border-l ${
           borderColor ? borderColor : 'border-light'

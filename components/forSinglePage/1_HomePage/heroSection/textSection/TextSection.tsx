@@ -1,24 +1,32 @@
-import React from 'react';
-import HeroText from './content/HeroText';
+/**Components**/
 import BasicHeader from '@/components/forMultiPage/headers/basicHeader.tsx/BasicHeader';
-import { styles } from '@/styles';
 import BasicLink from '@/components/basic/links/linksWithIcon/basicLink/BasicLink';
-
+// import HeroHeader from './content/heroHeader/HeroHeader';
+/**Tailwind*/
+import { styles } from '@/styles';
+import { HomePageText } from '@/data/textData';
 function TextSection() {
   /**JSX**/
   return (
     <div
       data-component="TextSection__container"
-      className="relative w-full xs:w-[70%] xl:w-full "
+      className="relative w-full xs:w-fit"
+      //___xs:w-[70%] xl:w-full
     >
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-8 xl:gap-y-14">
         <BasicHeader
           text="Bezpieczne rozwiązania"
           textStyle={`${styles.basicHeaderText} `}
           hasBox={true}
           hasVerticalOrnament={false}
         />
-        <HeroText />
+        <h1 className="flex flex-col">
+          {HomePageText.hero.header.split(' ').map(word => (
+            <span key={word} className="text-hero-h1 text-light">
+              {word}
+            </span>
+          ))}
+        </h1>
         <BasicLink />
       </div>
     </div>
