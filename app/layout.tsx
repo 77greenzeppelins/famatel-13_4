@@ -9,6 +9,7 @@ import Header from '@/components/layout/rootLayout/header/Header';
 import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
 /**Basic Data**/
 import { layoutText, metadataText } from '@/data/textData';
+import CookiesPopUp from '@/components/layout/cookies/CookiesPopUp';
 
 /**...**/
 export const metadata: Metadata = {
@@ -60,6 +61,7 @@ export default function RootLayout({
         <MainWrapper>{children}</MainWrapper>
         {/* </PageTransitionWrapper> */}
         {/* <Footer /> */}
+        <CookiesPopUp />
       </body>
     </html>
   );

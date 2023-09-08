@@ -197,3 +197,17 @@ export const notaPrawnaPageText = {
     'FAMATEL Polska Sp. z o.o. na bieżąco aktualizuje informacje zawarte w serwisie, jednak nie ponosi żadnej odpowiedzialności za dokładność, aktualność oraz kompletność informacji przedstawionych na stronach serwisu. Jednocześnie FAMATEL Polska Sp. z o.o. zastrzega sobie prawo do wprowadzania zmian w części lub całości serwisu bez uprzedzenia. Ryzyko związane z użytkowaniem i wykorzystaniem informacji przedstawionych w serwisie ponosi sam użytkownik. FAMATEL Polska Sp. z o.o. nie ponosi żadnej odpowiedzialności z tytułu wyrządzonych szkód będących rezultatem korzystania z serwisu FAMATEL POLSKA.',
   ],
 };
+
+export const cookiesText = {
+  popup:
+    'W celu świadczenia usług na najwyższym poziomie stosujemy pliki cookies, a korzystanie z naszej witryny oznacza ich akceptację. W każdym momencie mogą Państwo dokonać zmiany ustawień w przeglądarce.',
+  link: 'W każdym momencie mogą Państwo dokonać zmiany ustawień w przeglądarce.',
+  // popup:
+  //   'W celu świadczenia usług na najwyższym poziomie stosujemy pliki cookies. Korzystanie z naszej witryny oznacza, że będą one zamieszczane w Państwa urządzeniu. W każdym momencie można dokonać zmiany ustawień Państwa przeglądarki',
+  policy:
+    'W celu świadczenia usług na najwyższym poziomie stosujemy pliki cookies. Korzystanie z naszej witryny oznacza, że będą one zamieszczane w Państwa urządzeniu. W każdym momencie można dokonać zmiany ustawień Państwa przeglądarki.',
+  comment1:
+    'Dla Państwa wygody serwis Famatel.pl używa plików cookies po to, by dostosować serwis do potrzeb użytkowników, a także w celach statystycznych.',
+  comment2:
+    'Pliki cookies (tzw. ciasteczka) to niewielkie pliki tekstowe wysyłane przez odwiedzany serwis internetowy do urządzenia internauty (komputer, smartfon itp.). Nie zawierają one żadnych danych osobowych.',
+};
