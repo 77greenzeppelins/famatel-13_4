@@ -9,6 +9,7 @@ const ScrollPrompt: React.FC = () => {
   /**JSX**/
   return (
     <motion.div
+      data-component="ScrollPrompt"
       className="absolute -top-5 bottom-[50%] md:top-[50%] md:bottom-[5%] right-[3%]"
       initial={{ opacity: 0 }}
       animate={{

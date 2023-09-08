@@ -51,16 +51,18 @@ const ImageContnent: React.FunctionComponent<{
           transition: { delay: 0.1, duration: 0.8 },
         }}
         exit={{ opacity: 0 }}
-        className="relative w-full h-full p-5 overflow-hidden rounded-md pointer-events-none fc bg-light"
+        className="relative w-full h-full overflow-hidden rounded-md pointer-events-none fc bg-light"
       >
-        <Image
-          alt="produkt z kategorii"
-          src={categoryImages[slideIndex].path}
-          width={300}
-          height={300}
-          // fill
-          // sizes="400"
-        />
+        <div className="w-full h-full p-5">
+          <Image
+            alt="produkt z kategorii"
+            src={categoryImages[slideIndex].path}
+            width={300}
+            height={300}
+            // fill
+            // sizes="400"
+          />
+        </div>
       </motion.div>
     </AnimatePresence>
     // </div>

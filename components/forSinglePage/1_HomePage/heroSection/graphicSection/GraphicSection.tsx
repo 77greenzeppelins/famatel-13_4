@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { dirtyPlugImage } from '@/public/images/1_homePage/';
 import ScrollPrompt from '../scrollPrompt/ScrollPrompt';
+import Sniper from '@/components/forMultiPage/accents/sniper/Sniper';
+import PseudoTechPanel from './pseudoTechPanel/PseudoTechPanel';
 
 const GraphicSection = () => {
   /**JSX**/
@@ -17,6 +19,10 @@ const GraphicSection = () => {
         // sizes="1200"
         // fill // intrinsic|fixed|responsive|fill allowed;  fill your parent
       />
+      <div className="absolute hidden xs3xx:flex bottom-[10%] right-[25%] h-[70%] w-[70%]">
+        <Sniper groupForHover="group" />
+        <PseudoTechPanel />
+      </div>
       <ScrollPrompt />
     </div>
   );

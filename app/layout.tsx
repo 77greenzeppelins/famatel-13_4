@@ -7,9 +7,9 @@ import type { Metadata } from 'next';
 import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
 import Header from '@/components/layout/rootLayout/header/Header';
 import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
+import CookiesPopUp from '@/components/layout/cookies/CookiesPopUp';
 /**Basic Data**/
 import { layoutText, metadataText } from '@/data/textData';
-import CookiesPopUp from '@/components/layout/cookies/CookiesPopUp';
 
 /**...**/
 export const metadata: Metadata = {
