@@ -33,8 +33,14 @@ export const layoutText = {
   },
 };
 export const metadataText = {
+  twitter: { title: 'Famatel Polska - nowoczesna elektryka przemysłowa' },
   contactPage: {
+    title: 'Kontakt',
     desc: 'Skontaktuj się z nami już dziś! Jeśli szukasz rozwiązań z zakresu elektryki przemysłowej i masz jakiekolwiek pytania, podziel się nimi z nami telefonicznie lub mailowo. Jeśli planujesz nas odwiedzić, pamiętaj, że Famatel Polska mieści sie w Bielawie przy ulicy Willowej 5, ale lepszy dojazd jest od ulicy Strażackiej.',
+  },
+  notaPrawnaPage: {
+    title: 'Nota Prawna',
+    desc: 'Nota Prawna - Famatel Polska sp. z o.o.',
   },
 };
 

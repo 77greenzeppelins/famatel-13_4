@@ -4,7 +4,7 @@ import KontaktPageContent from '@/components/forSinglePage/5_KontaktPage/Kontakt
 import { metadataText } from '@/data/textData';
 
 export const metadata = {
-  title: 'Kontakt',
+  title: metadataText.contactPage.title,
   description: metadataText.contactPage.desc,
 };
 
