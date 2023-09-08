@@ -21,7 +21,7 @@ const HeaderLogoLink = ({ styleCondition }: { styleCondition: boolean }) => {
       className={`${
         styleCondition
           ? 'scale-75 duration-300 ease-linear'
-          : 'scale-100 duration-300 ease-linear '
+          : 'scale-75 xl:scale-100 duration-300 ease-linear '
       }  pointer-events-auto fc origin-left h-[52px]`}
     >
       <SvgLogo
