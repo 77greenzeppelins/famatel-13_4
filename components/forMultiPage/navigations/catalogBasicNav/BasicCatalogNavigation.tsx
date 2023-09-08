@@ -24,9 +24,18 @@ const BasicCatalogNavigation = () => {
         <NavigationRow
           label1="kategoria"
           label2="Przemysłowe wtyczki i gniazda"
+          path="/produkty/przemyslowe-wtyczki-i-gniazda"
         />
-        <NavigationRow label1="podkategoria" label2="Gniazda przenośne" />
-        <NavigationRow label1="model" label2="14307" />
+        <NavigationRow
+          label1="podkategoria"
+          label2="Wtyczki i gniazda przenośne"
+          path="/produkty/przemyslowe-wtyczki-i-gniazda/wtyczki-i-gniazda-przenosne"
+        />
+        <NavigationRow
+          label1="model"
+          label2="14307"
+          path="/produkty/przemyslowe-wtyczki-i-gniazda/wtyczki-i-gniazda-przenosne/wtyczki-ip67-125A"
+        />
       </nav>
     </div>
   );
