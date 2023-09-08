@@ -12,7 +12,7 @@ const CatalogHandler = () => {
 
   /**JSX**/
   return (
-    <div data-component="CatalogHandler" className="w-full h-full">
+    <div data-component="CatalogHandler" className="w-full h-full ">
       <InViewContainer
         topFactor={0.1}
         bottomFactor={0.1}

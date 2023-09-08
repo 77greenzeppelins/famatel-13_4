@@ -68,14 +68,14 @@ export const styles = {
   inViewContentContainer: {
     visible: 'translate-x-0  scale-100 opacity-1',
     invisible: 'translate-x-4  scale-50 opacity-0',
-    containerStyle: 'fc duration-[0.9s] delay-[0.6] disable',
+    containerStyle: 'fc duration-[0.9s] delay-[0.6] disable-soft',
   },
 
   inViewContentSubtleSide: {
     visible: 'translate-x-0 translate-y-0 opacity-1',
     invisibleFromRightBottom: 'translate-x-4 translate-y-4 opacity-0',
     invisibleFromLeftBottom: '-translate-x-4 translate-y-4 opacity-0',
-    containerStyle: 'duration-[0.9s] delay-[0.6] disable',
+    containerStyle: 'duration-[0.9s] delay-[0.6] disable-soft',
   },
 
   /*

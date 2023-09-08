@@ -24,7 +24,7 @@ const CardHeader = ({
 }: Props) => {
   /**JSX**/
   return (
-    <div className="flex w-full">
+    <div className="flex w-full ">
       <div
         onClick={() => setExpanded(isOpen ? false : i)}
         className={`flex w-11/12 items-end h-[80px] x3xx:h-[60px] py-1 cursor-pointer ${
