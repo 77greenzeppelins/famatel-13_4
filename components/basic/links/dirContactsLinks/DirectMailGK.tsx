@@ -13,7 +13,7 @@ interface Props {
 
 /**--------------------------------------------------------------------------------**/
 const DirectMailGK: React.FC<Props> = ({
-  hasLabel,
+  hasLabel = true,
   aStyle,
   iconStyle,
   labelStyle,
