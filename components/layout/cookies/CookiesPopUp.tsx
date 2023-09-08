@@ -32,19 +32,24 @@ const CookiesPopUp: React.FC = () => {
       {accepted ? null : (
         <motion.aside
           data-component="Header__container"
-          className={`fixed w-full bottom-0 left-0 right-0 fc min-h-[100px] z-[999] backdrop-blur-xl pb-[20px]`}
+          className={`fixed w-full bottom-0 left-0 right-0 fc min-h-[100px] z-[999]  p-2 `}
+          //___backdrop-blur-xl
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 4 } }}
           exit={{ opacity: 0, transition: { duration: 0.4, delay: 0.4 } }}
         >
-          <div className="flex-col gap-4 fc xs:flex-row wrapper-1">
-            <p className="font-bold rounded-sm text-small text-light">
-              {cookiesText.popup}
-            </p>
-            <button className="px-4 py-1 bg-corpo" onClick={onClickHandler}>
-              {' '}
-              <p className="font-bold text-small text-light">Akceptuję</p>{' '}
-            </button>
+          <div className="p-4 rounded-md bg-dark">
+            <div className="flex-col gap-4 border fc xs:flex-row wrapper-1 border-greyShade2">
+              <p className="font-bold rounded-sm text-small text-light">
+                {cookiesText.popup}
+              </p>
+              <button className="px-4 py-1 bg-corpo" onClick={onClickHandler}>
+                {' '}
+                <p className="font-bold text-small text-light">
+                  Akceptuję
+                </p>{' '}
+              </button>
+            </div>
           </div>
         </motion.aside>
       )}
