@@ -37,7 +37,7 @@ const CookiesPopUp: React.FC = () => {
           animate={{ opacity: 1, transition: { duration: 1, delay: 4 } }}
           exit={{ opacity: 0, transition: { duration: 0.4, delay: 0.4 } }}
         >
-          <div className="gap-4 fc wrapper-1">
+          <div className="flex-col gap-4 fc xs:flex-row wrapper-1">
             <p className="font-bold p-small text-light">
               {cookiesText.popup}
               {/* &nbsp; */}
