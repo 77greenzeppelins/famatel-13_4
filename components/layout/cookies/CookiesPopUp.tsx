@@ -38,21 +38,12 @@ const CookiesPopUp: React.FC = () => {
           exit={{ opacity: 0, transition: { duration: 0.4, delay: 0.4 } }}
         >
           <div className="flex-col gap-4 fc xs:flex-row wrapper-1">
-            <p className="font-bold p-small text-light">
+            <p className="font-bold rounded-sm text-small text-light">
               {cookiesText.popup}
-              {/* &nbsp; */}
-              {/* <LinkWithSpanAndIcon
-                linkHref="/"
-                uniqueKeyToAnimate={''}
-                linkLabel={story.cookies.link}
-                ariaLabel={'Link do strony: Cookies'}
-                linkStyle=" flex gap-1 w-full h-full"
-                iconStyle=" h-4 w-4 aspect-square stroke-light origin-center flex-shrink-0"
-              /> */}
             </p>
             <button className="px-4 py-1 bg-corpo" onClick={onClickHandler}>
               {' '}
-              <p className="font-bold p-small text-light">Akceptuję</p>{' '}
+              <p className="font-bold text-small text-light">Akceptuję</p>{' '}
             </button>
           </div>
         </motion.aside>
