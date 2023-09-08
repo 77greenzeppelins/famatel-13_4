@@ -27,17 +27,18 @@ export const metadata: Metadata = {
   description: layoutText.description,
   generator: layoutText.generator,
   viewport: layoutText.viewport,
-  // icons: {
-  //   icon: {
-  //     url: '/favicon-16x16.png',
-  //     type: 'image/png',
-  //   },
-  //   // icon: {
-  //   //   url: '/favicon.ico',
-  //   //   type: 'image/x-icon',
-  //   // },
-  //   shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-  // },
+  icons: {
+    icon: {
+      url: '/favicon-32x32.png',
+      type: 'image/png',
+    },
+    // icon: {
+    //   url: '/favicon.ico',
+    //   type: 'image/x-icon',
+    // },
+    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
+    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
+  },
   // icons: {
   //   icon: ['/favicon.ico?v=4'],
   //   apple: ['/apple-touch-icon.png?v=4'],
