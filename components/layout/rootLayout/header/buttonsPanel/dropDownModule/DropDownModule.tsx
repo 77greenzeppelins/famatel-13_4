@@ -15,13 +15,20 @@ const DropDownModule = ({ mobileMenuState }: Props) => {
   const [isOverlay, setIsOverlay] = useState<null | boolean>(false);
   const [contentType, setContentType] = useState<string>('');
 
-  /**It allows to close dropDownMenu when url changes**/
+  /*
+  ___1. It allows to close dropDownMenu when url changes
+  */
   const pathname = usePathname();
   useEffect(() => {
     return () => {
       setIsOverlay(false);
     };
   }, [pathname]);
+
+  /*
+  __1. this condition is crucial as we have "colorTheme" change when url reaches products categories; 
+  */
+  const styleCondition = pathname.split('/').length > 2;
 
   /**JSX**/
   return (
@@ -44,7 +51,7 @@ const DropDownModule = ({ mobileMenuState }: Props) => {
             mobileMenuState
               ? 'scale-100 opacity-100 duration-300 ease-in origin-bottom'
               : 'scale-0 opacity-0 duration-300 ease-in origin-top'
-          } inset-0 bg-dark`}
+          } inset-0 ${styleCondition ? 'bg-dark' : 'bg-grey'} `}
         />
       </div>
       <DropDownPanel isOverlay={isOverlay} contentType={contentType} />

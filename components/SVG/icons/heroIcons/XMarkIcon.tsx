@@ -15,9 +15,11 @@ const XMarkIcon = ({
   containerStyle,
   strokeWidth,
   pathStyle = '',
+  strokeColor,
 }: {
   strokeWidth?: number;
   containerStyle?: string;
+  strokeColor?: string;
   pathStyle?: string;
 }) => {
   return (
@@ -29,7 +31,10 @@ const XMarkIcon = ({
       viewBox="0 0 24 24"
       // strokeWidth={strokeWidth ? strokeWidth : 1.5}
       // stroke={corpoColors.light}
-      className={containerStyle ? containerStyle : 'w-6 h-6 flex-shrink-0'}
+      // className={containerStyle ? containerStyle : 'w-6 h-6 flex-shrink-0'}
+      strokeWidth={strokeWidth}
+      stroke={strokeColor ? strokeColor : corpoColors.light}
+      className={containerStyle ? containerStyle : 'origin-center'}
       whileHover={{ scale: 1.1 }}
       transition={{
         ...svgTransition,

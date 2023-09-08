@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 /**Components**/
 import ButtonWithIconAnimated from '@/components/basic/buttons/buttonWithIcon/ButtonWithIconAnimated';
 import HamburgerIcon from '@/components/SVG/icons/heroIcons/HamburgerIcon';
-import { XMarkIcon } from '@heroicons/react/24/solid';
 import MobileContactPanel from './mobileContactPanel/MobileContactPanel';
 import MobileMenuContent from './mobileMenuContent/MobileMenuContent';
+import XMarkIcon from '@/components/SVG/icons/heroIcons/XMarkIcon';
+import { usePathname } from 'next/navigation';
 
 interface Props {
   mobileMenuState: boolean;
@@ -12,7 +13,13 @@ interface Props {
 }
 
 const MobileMenu = ({ mobileMenuState, mobileMenuSetter }: Props) => {
-  const [promptState, setPromptState] = useState(false);
+  /*
+  __1. this condition is crucial as we have "colorTheme" change when url reaches products categories; 
+  */
+  const pathname = usePathname();
+  const styleCondition = pathname.split('/').length > 2;
+
+  // const [promptState, setPromptState] = useState(false);
 
   /**JSX**/
   return (
@@ -22,7 +29,23 @@ const MobileMenu = ({ mobileMenuState, mobileMenuSetter }: Props) => {
           stateSetter={mobileMenuSetter}
           containerStyle="w-10 h-10 lg:hidden flex items-center"
         >
-          {mobileMenuState ? <XMarkIcon /> : <HamburgerIcon />}
+          {mobileMenuState ? (
+            <XMarkIcon
+              pathStyle={
+                styleCondition
+                  ? 'stroke-grey duration-300 ease-linear'
+                  : 'stroke-dark duration-300 ease-linear'
+              }
+            />
+          ) : (
+            <HamburgerIcon
+              pathStyle={
+                styleCondition
+                  ? 'stroke-grey duration-300 ease-linear'
+                  : 'stroke-dark duration-300 ease-linear'
+              }
+            />
+          )}
         </ButtonWithIconAnimated>
       </div>
       <MobileMenuContent mobileMenuState={mobileMenuState} />
