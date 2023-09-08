@@ -1,7 +1,6 @@
 'use client';
 import React, { ReactNode } from 'react';
 /**FramerMotion Staff**/
-import { motion } from 'framer-motion';
 /**TS**/
 type Props = {
   children: ReactNode;
