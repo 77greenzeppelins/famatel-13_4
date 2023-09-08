@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   description: layoutText.description,
   generator: layoutText.generator,
   viewport: layoutText.viewport,
-  // icons: {
-  //   icon: {
-  //     url: '/favicon.ico',
-  //     type: 'image/x-icon',
-  //   },
-  //   shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-  //   apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  // },
+  icons: {
+    icon: {
+      url: '/favicon.ico',
+      type: 'image/x-icon',
+    },
+    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
+    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
+  },
   twitter: {
     title: metadataText.twitter.title,
     description: layoutText.twitter.desc,
