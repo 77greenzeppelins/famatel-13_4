@@ -20,40 +20,17 @@ export const metadata: Metadata = {
     default: layoutText.title,
     template: `%s | ${layoutText.title}`,
   },
-  // description: {
-  //   default: layoutText.description,
-  //   template: "%s",
-  // },
   description: layoutText.description,
   generator: layoutText.generator,
   viewport: layoutText.viewport,
-  icons: {
-    icon: {
-      url: '/favicon-32x32.png',
-      type: 'image/png',
-    },
-    // icon: {
-    //   url: '/favicon.ico',
-    //   type: 'image/x-icon',
-    // },
-    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  },
   // icons: {
-  //   icon: ['/favicon.ico?v=4'],
-  //   apple: ['/apple-touch-icon.png?v=4'],
-  //   shortcut: ['/apple-touch-icon.png'],
+  //   icon: {
+  //     url: '/favicon.ico',
+  //     type: 'image/x-icon',
+  //   },
+  //   shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
+  //   apple: { url: '/apple-touch-icon.png', type: 'image/png' },
   // },
-  // icons: {
-  //   // icon: ['/favicon.ico'],
-  //   // apple: ['/apple-touch-icon.png'],
-  //   // shortcut: ['/apple-touch-icon.png'],
-  //   icon: '/favicon-16x16.png',
-  //   apple: '/apple-touch-icon.png',
-  //   shortcut: '/apple-touch-icon.png',
-  // },
-  // manifest: '/site.webmanifest',
-  //manifest: 'https://nextjs.org/manifest.json
   twitter: {
     title: metadataText.twitter.title,
     description: layoutText.twitter.desc,
@@ -87,3 +64,35 @@ export default function RootLayout({
     </html>
   );
 }
+
+// icons: {
+//   icon: {
+//     url: '/favicon-32x32.png',
+//     type: 'image/png',
+//   },
+//   // icon: {
+//   //   url: '/favicon.ico',
+//   //   type: 'image/x-icon',
+//   // },
+//   shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
+//   apple: { url: '/apple-touch-icon.png', type: 'image/png' },
+// },
+// icons: {
+//   icon: ['/favicon.ico?v=4'],
+//   apple: ['/apple-touch-icon.png?v=4'],
+//   shortcut: ['/apple-touch-icon.png'],
+// },
+// icons: {
+//   // icon: ['/favicon.ico'],
+//   // apple: ['/apple-touch-icon.png'],
+//   // shortcut: ['/apple-touch-icon.png'],
+//   icon: '/favicon-16x16.png',
+//   apple: '/apple-touch-icon.png',
+//   shortcut: '/apple-touch-icon.png',
+// },
+// manifest: '/site.webmanifest',
+// icons: {
+//   icon: 'https://famatel.pl/public/favicon-32x32.png',
+//   apple: 'https://famatel.pl/public/apple-touch-icon',
+// },
+// manifest: 'https://nextjs.org/manifest.json',

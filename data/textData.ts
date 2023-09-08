@@ -38,6 +38,18 @@ export const metadataText = {
     title: 'Kontakt',
     desc: 'Skontaktuj się z nami już dziś! Jeśli szukasz rozwiązań z zakresu elektryki przemysłowej i masz jakiekolwiek pytania, podziel się nimi z nami telefonicznie lub mailowo. Jeśli planujesz nas odwiedzić, pamiętaj, że Famatel Polska mieści sie w Bielawie przy ulicy Willowej 5, ale lepszy dojazd jest od ulicy Strażackiej.',
   },
+  produktyPage: {
+    title: 'Produkty',
+    desc: 'W naszej ofercie znajdziesz profesjonalne rozwiązania z następujących grup poroduktowych: (1) Przemysłowe wtyczki i gniazda; (2) Gniazda z rozłącznikiem i blokadą; (3) Adaptery przemysłowe; (4) Gniazda podwieszane; (5) Przedłużacze bębnowe; (6) Rozłączniki bezpieczeństwa; (7) Ładowarki samochodowe; (8) Obudowy i rozdzielnice; (9) Rozdzielnice modułowe; (10) Puszki instalacyjne.',
+  },
+  aktualnosciPage: {
+    title: 'Aktualności',
+    desc: 'Bieżące informacje na temat naszej oferty.',
+  },
+  doPobraniaPage: {
+    title: 'Materiały do pobrania',
+    desc: 'Obszerna źródło materiałów w formacie PDF. Znajdziesz tutaj nasz aktualny katalog, deklaracje zgodności oraz karty produktów.',
+  },
   notaPrawnaPage: {
     title: 'Nota Prawna',
     desc: 'Nota Prawna - Famatel Polska sp. z o.o.',
