@@ -1,3 +1,5 @@
+import { mainCategoriesNames } from './routingData';
+
 export const energatabText = {
   overlay: {
     line1: 'Famatel Polska',

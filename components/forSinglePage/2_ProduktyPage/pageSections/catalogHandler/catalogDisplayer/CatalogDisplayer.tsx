@@ -1,23 +1,26 @@
 /**Components*/
 import InViewCSSAnimatedContent from '@/components/layout/containers/inView/InViewCSSAnimatedContent';
 import ProductsCategoryCard from './productsCategoryCard/ProductsCategoryCard';
+import GraphicSection from '../graphicSection/GraphicSection';
+/**Hooks Staff**/
+import useMeasure from 'react-use-measure';
 /**Tailwind Styles**/
 import { styles } from '@/styles';
 /**Basic Data*/
 import { mainCategoriesNames, mainPagesPaths } from '@/data/routingData';
-import GraphicSection from '../graphicSection/GraphicSection';
 import { createPath } from '@/lib/handlers/functions';
-import useMeasure from 'react-use-measure';
 
+/**TS**/
+interface Props {
+  componentIsInView?: boolean;
+  expanded: number | false;
+  setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
+}
 const CatalogDisplayer = ({
   componentIsInView,
   expanded,
   setExpanded,
-}: {
-  componentIsInView?: boolean;
-  expanded: number | false;
-  setExpanded: React.Dispatch<React.SetStateAction<number | false>>;
-}) => {
+}: Props) => {
   /**Data Destr...**/
   const {
     inViewContentSubtleSide: {
