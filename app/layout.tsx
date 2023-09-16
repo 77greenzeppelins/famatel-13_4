@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: `%s | ${layoutText.title}`,
   },
   description: layoutText.description,
-  generator: layoutText.generator,
+  keywords: layoutText.keywords,
   viewport: layoutText.viewport,
   icons: {
     icon: {

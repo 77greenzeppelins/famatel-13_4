@@ -1,16 +1,12 @@
 const { createServer } = require('http');
-
 const { parse } = require('url');
-
 const next = require('next');
 
 const dev = false;
 
-const hostname = 'famatel.pl';
+const port = 3000;
 
-const port = 8088;
-
-const app = next({ dev, hostname, port });
+const app = next({ dev });
 
 const handle = app.getRequestHandler();
 
@@ -19,23 +15,8 @@ app.prepare().then(() => {
     try {
       const parsedUrl = parse(req.url, true);
 
-      const { pathname, query } = parsedUrl;
+      await handle(req, res, parsedUrl);
 
-// Redirect www to non-www version
-    // if (req.headers.host.startsWith('www.')) {
-    //     res.writeHead(301, { Location: `https://${hostname}${pathname}` });
-    //     res.end();
-    //     return;
-    //   }
-
-
-      if (pathname === '/a') {
-        await app.render(req, res, '/a', query);
-      } else if (pathname === '/b') {
-        await app.render(req, res, '/b', query);
-      } else {
-        await handle(req, res, parsedUrl);
-      }
     } catch (err) {
       console.error('Error occurred handling', req.url, err);
 
@@ -46,6 +27,6 @@ app.prepare().then(() => {
   }).listen(port, err => {
     if (err) throw err;
 
-    console.log(`> Ready on http://${hostname}:${port}`);
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });

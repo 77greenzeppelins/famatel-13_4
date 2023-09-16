@@ -1,9 +1,17 @@
-// 'use client';
-import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 /**Components**/
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
 /**Basic Data**/
-import { mainCategoriesPath } from '@/data/routingData';
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat5.title,
+  description: metadataText.cat5.desc,
+  keywords: metadataText.cat5.keywords,
+};
 
 // export const dynamicParams = false;
 // export async function generateStaticParams() {

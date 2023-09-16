@@ -26,7 +26,7 @@ export const layoutText = {
   title: 'Famatel Polska',
   description:
     'Famatel to międzynarodowy producent rozwiązań z zakresu  elektryki przemysłowej z ponad 30-letnim doświadczeniem. Oferujemy wysokiej jakości produkty, takie jak rozdzielnice, gniazda i wtyczki, które spełniają najwyższe standardy bezpieczeństwa i jakości. Dołącz do grona naszych zadowolonych klientów już dziś!',
-  generator:
+  keywords:
     'elektryka przemysłowa, gniazda przemysłowe, wtyczki przemysłowe, rozdzielnice przemysłowe, rozdzielnice, inżynier, projektant',
   viewport: 'width=device-width, initial-scale=1',
   twitter: {
@@ -42,7 +42,7 @@ export const metadataText = {
   },
   produktyPage: {
     title: 'Produkty',
-    desc: 'W naszej ofercie znajdziesz profesjonalne rozwiązania z następujących grup poroduktowych: (1) Przemysłowe wtyczki i gniazda; (2) Gniazda z rozłącznikiem i blokadą; (3) Adaptery przemysłowe; (4) Gniazda podwieszane; (5) Przedłużacze bębnowe; (6) Rozłączniki bezpieczeństwa; (7) Ładowarki samochodowe; (8) Obudowy i rozdzielnice; (9) Rozdzielnice modułowe; (10) Puszki instalacyjne.',
+    desc: 'W naszej ofercie znajdziesz profesjonalne rozwiązania z następujących grup produktowych: (1) Przemysłowe wtyczki i gniazda; (2) Gniazda z rozłącznikiem i blokadą; (3) Adaptery przemysłowe; (4) Gniazda podwieszane; (5) Przedłużacze bębnowe; (6) Rozłączniki bezpieczeństwa; (7) Ładowarki samochodowe; (8) Obudowy i rozdzielnice; (9) Rozdzielnice modułowe; (10) Puszki instalacyjne.',
   },
   aktualnosciPage: {
     title: 'Aktualności',
@@ -55,6 +55,119 @@ export const metadataText = {
   notaPrawnaPage: {
     title: 'Nota Prawna',
     desc: 'Nota Prawna - Famatel Polska sp. z o.o.',
+  },
+  cat1: {
+    title: 'Przemysłowe wtyczki i gniazda',
+    desc: 'Szeroki wybór przemysłowych wtyczek i gniazd. Zapraszamy do wyboru spośród następujących podkategorii: (1) wtyczki i gniazda przenośne, (2) wtyczki i gniazda tablicowe, (3) wtyczki i gniazda ścienne, (4) wtyczki i gniazda tablicowe jednofazowe, (5) wtyczki i gniazda jednofazowe, (6) wtyczki i gniazda na bardzo niskie napięcia, (7) wtyczki i gniazda kontenerowe, (8) wtyczki i gniazda estradowe, (8)wtyczki i gniazda campingowe',
+    keywords: [
+      'wtyczki przemysłowe',
+      'gniazda przemysłowe',
+      'wtyczki i gniazda przenośne',
+      'wtyczki i gniazda tablicowe',
+      'wtyczki i gniazda ścienne',
+      'wtyczki i gniazda tablicowe jednofazowe',
+      'wtyczki i gniazda jednofazowe',
+      'wtyczki i gniazda na bardzo niskie napięcia',
+      'wtyczki i gniazda kontenerowe',
+      'wtyczki i gniazda estradowe',
+      'wtyczki i gniazda campingowe',
+    ],
+  },
+  cat2: {
+    title: 'Gniazda z rozłącznikiem i blokadą',
+    desc: 'Szeroki wybór gniazd z rozłącznikiem i blokadą. Zapraszamy do wyboru spośród następujących podkategorii: (1) Gniazda tablicowe z rozłącznikiem i blokadą, (2)Gniazda stałe z rozłącznikiem i blokadą, (3) Gniazda z opcjonalnymi komponentami',
+    keywords: [
+      'gniazda z rozłącznikiem i blokadą',
+      'Gniazda tablicowe z rozłącznikiem i blokadą',
+      'Gniazda stałe z rozłącznikiem i blokadą',
+      'Gniazda z opcjonalnymi komponentami',
+      'Akcesoria do gniazd z rozłącznikiem i blokadą',
+    ],
+  },
+  cat3: {
+    title: 'Adaptery przemysłowe',
+    desc: 'Szeroki wybór adapterów przemysłowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Adaptery przemysłowe Schuko (2) Adaptery wielokrotne przemysłowe, (3) Adaptery wielokrotne przemysłowe z przewodem',
+    keywords: [
+      'adaptery przemysłowe',
+      'przejściówki przemysłowe',
+      'Adaptery przemysłowe Schuko',
+      'Adaptery wielokrotne przemysłowe',
+      'Adaptery wielokrotne przemysłowe z przewodem',
+    ],
+  },
+  cat4: {
+    title: 'Gniazda podwieszane',
+    desc: 'Gniazda podwieszane to większa elastyczność w organizacji połączeń sieciowych na liniach produkcyjnych.',
+    keywords: [
+      'gniazda podwieszane',
+      'gniazda na linie produkcyjne',
+      'gniazda wielostronne',
+    ],
+  },
+  cat5: {
+    title: 'Przedłużacze bębnowe',
+    desc: 'Szeroki wybór przedłużaczy bębnowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Przedłużacze bębnowe IP55 z gniazdami Schuko IP67, (2) Przemysłowe przedłużacze bębnowe z gniazdami IP67, (2) Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
+    keywords: [
+      'przedłużacze bębnowe',
+      'Przedłużacze bębnowe IP55 z gniazdami Schuko IP67',
+      'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
+      'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
+    ],
+  },
+  cat6: {
+    title: 'Rozłączniki bezpieczeństwa',
+    desc: 'Rozłączniki bezpieczeństwa o wysokich standardach technicznych i estetycznych',
+    keywords: [
+      'rozłączniki bezpieczeństwa',
+      'Rozłączniki bezpieczeństwa dla gastronomii',
+    ],
+  },
+  cat7: {
+    title: 'Ładowarki samochodowe',
+    desc: 'Nowoczesne ładowarki samochodowe do ewszechstronnego zastosowania',
+    keywords: [
+      'ladowarki',
+      'Ładowarki samochodowe',
+      'Ekologiczne ładowarki samochodowe',
+    ],
+  },
+  cat8: {
+    title: 'Obudowy i rozdzielnice przemysłowe',
+    desc: 'Szeroki wybór obudów i rozdzielnic przemysłowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Obudowy puste, (2) Rozdzielnice przemysłowe, (3) Obudowy gumowe',
+    keywords: [
+      'obudowy',
+      'rozdzielnice',
+      'Obudowy puste',
+      'Rozdzielnice przemysłowe',
+      'Obudowy gumowe',
+      'Akcesoria do obudów i rozdzielnic',
+    ],
+  },
+  cat9: {
+    title: 'Rozdzielnice',
+    desc: 'Szeroki wybór rozdzielnic. Zapraszamy do wyboru spośród następujących podkategorii: (1) Rozdzielnice ścienne IP65, (2) Rozdzielnice modułowe IP65, (3) Rozdzielnice modułowe Nuova IP40, (4) Rozdzielnice modułowe Nuova + IP40, (5) Rozdzielnice modułowe Vita IP40, (6) Rozdzielnice modułowe ścienne ICP, (7) Rozdzielnice modułowe metalowe IP40, (8) Rozdzielnice modułowe metalowe ICT',
+    keywords: [
+      'rozdzielnice modułowe',
+      'Rozdzielnice ścienne IP65',
+      'Rozdzielnice modułowe IP65',
+      'Rozdzielnice modułowe Nuova IP40',
+      'Rozdzielnice modułowe Nuova + IP40',
+      'Rozdzielnice modułowe Vita IP40',
+      'Rozdzielnice modułowe ścienne ICP',
+      'Rozdzielnice modułowe metalowe IP40',
+      'Rozdzielnice modułowe metalowe ICT',
+      'Akcesoria do rozdzielnic modułowych',
+    ],
+  },
+  cat10: {
+    title: 'Puszki instalacyjne',
+    desc: 'Szeroki wybór rozdzielnic. Zapraszamy do wyboru spośród następujących podkategorii: (1) Puszki instalacyjne zamykane IP55 IP65, (2) Puszki instalacyjne drywall, (3) Puszki instalacyjne osadzone',
+    keywords: [
+      'puszki instalacyjne',
+      'Puszki instalacyjne zamykane IP55 IP65',
+      'Puszki instalacyjne drywall',
+      'Puszki instalacyjne osadzone',
+    ],
   },
 };
 

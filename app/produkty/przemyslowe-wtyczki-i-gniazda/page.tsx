@@ -1,10 +1,9 @@
-// 'use client';
-import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 /**Components**/
 import CatPageContent from '@/components/nestedPagesCat/CatPageContent';
 /**Basic Data**/
-import { mainCategoriesPath } from '@/data/routingData';
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { metadataText } from '@/data/textData';
 // export const dynamicParams = false;
 // export async function generateStaticParams() {
 //   return mainCategoriesPath.map((path, categoryIndex) => ({
@@ -16,6 +15,15 @@ import { catalogStructureData } from '@/data/catalogStructureData';
 // interface Props {
 //   params: { cat: string; categoryIndex: number };
 // }
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat1.title,
+  description: metadataText.cat1.desc,
+  keywords: metadataText.cat1.keywords,
+};
 
 export default function WtyczkiGniazdaPage() {
   /*
