@@ -2,7 +2,6 @@
 import '@/styles/globals.css';
 import { mySansSerif } from '@/nextFeatures/fonts/fonts';
 /**NextFeatures**/
-// import { headers } from 'next/headers';
 import type { Metadata } from 'next';
 /**Components**/
 import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
@@ -58,14 +57,10 @@ export default function RootLayout({
       <body className="font-sans">
         {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         <Header />
-        {/* <EnergetabOverlay /> */}
         <ProductsLayout />
-        {/* {children} */}
-        {/* <OverlayForResizing /> */}
         {/* <PageTransitionWrapper> */}
         <MainWrapper>{children}</MainWrapper>
         {/* </PageTransitionWrapper> */}
-        {/* <Footer /> */}
         <CookiesPopUp />
       </body>
     </html>
