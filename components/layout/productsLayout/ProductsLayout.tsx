@@ -1,32 +1,27 @@
 'use client';
-// import React, { useEffect, useState } from 'react';
-// import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useSelectedLayoutSegments } from 'next/navigation';
 /**Components**/
 import AdvancedCatalogNavigation from '@/components/forMultiPage/navigations/catalogAdvancedNav/AdvancedCatalogNavigation';
 /**Basic Data**/
 import { AdvancedCatalogNavigationData } from '@/data/basicData';
 import { mainCategoriesNames, mainCategoriesPath } from '@/data/routingData';
-import { catalogStructureData } from '@/data/catalogStructureData';
 import { createModelData, createSubCategoryData } from './handlers/handlers';
 
 const ProductsLayout = () => {
   /**Data destr...**/
   const { toBeMounted } = AdvancedCatalogNavigationData;
   /*
-  ___1. get current path
-  ___2. split path and count how many item the array has
-  ___3. value of of array.length allows to mount or dismount the whole component  
+  ___1. when segments.length === 0 ?  ==> when any segment is invalid ==> np: '/product' insted of '/produkty'; it works on each level of "catalog nesting" yet I don't know how? 
+  ___2. this hook actually returns array with all segments in actuall path ==> ['produkty', 'przemyslowe-wtyczki-i-gniazda', '...', 'model-17020']
   */
-  const pathname = usePathname();
-  const pathSegments = pathname.split('/'); // exemple: ['', 'produkty', 'przemyslowe-wtyczki-i-gniazda', 'some-subCategory' , 'some-model']
-  //   console.log('pathSegments', pathSegments);
-  const mountingCondition = pathSegments.length > toBeMounted;
-
+  const segments = useSelectedLayoutSegments();
+  const mountingCondition =
+    segments.length > toBeMounted && segments.length !== 0;
+  // console.log('segments', segments);
   /*
-  ___1. slice array after the secon items ==> first two items refers to empty string and "produkty" ==>they are irelavant and we can ommit them ==> we are actually interested in items with index 2 & 3 & 4 that are categoryName,  subCategoryName and model name respectivelly; 
+  ___1. slice array after the secon items ==> first two items are ['', '/', ...] ==> they are irelavant and we can ommit them ==> we are actually interested in items with index 2 & 3 & 4 that are categoryName, subCategoryName and model name respectivelly; 
    */
-  const catalogLevels = pathSegments.slice(toBeMounted); // starts from ['some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
+  const catalogLevels = segments.slice(toBeMounted); // starts from ['produkty','some-category', 'some-subCategory', 'some-model'] ==> min / max length  [1,3]
 
   const mainCategoryIndex: number = mainCategoriesPath.findIndex(
     item => item === catalogLevels[0]
@@ -54,8 +49,8 @@ const ProductsLayout = () => {
 };
 
 export default ProductsLayout;
-/*
 
+/*
   const categoryIndex: number = mainCategoriesPath.findIndex(
     item => item === relevantPathSegments[0]
   );
@@ -88,3 +83,12 @@ export default ProductsLayout;
         </Link>
       </div> */
 }
+
+/*
+  ___1. get current path
+  ___2. split path and count how many item the array has
+  ___3. value of of array.length allows to mount or unmount the whole component  
+  */
+// const pathname = usePathname();
+// const pathSegments = pathname.split('/'); // exemple: ['', 'produkty', 'przemyslowe-wtyczki-i-gniazda', 'some-subCategory' , 'some-model']
+//   console.log('pathSegments', pathSegments);

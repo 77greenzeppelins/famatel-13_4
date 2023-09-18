@@ -244,6 +244,6 @@ export const kontaktPageData = {
 };
 
 export const AdvancedCatalogNavigationData = {
-  toBeMounted: 2,
+  toBeMounted: 1, // to slice "produkty" segment in array returned by useSelectedLayoutSegments()
   navLevels: 3,
 };

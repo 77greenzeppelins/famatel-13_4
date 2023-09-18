@@ -2,6 +2,7 @@
 import '@/styles/globals.css';
 import { mySansSerif } from '@/nextFeatures/fonts/fonts';
 /**NextFeatures**/
+// import { headers } from 'next/headers';
 import type { Metadata } from 'next';
 /**Components**/
 import MainWrapper from '@/components/forMultiPage/pageWrappers/MainWrapper/MainWrapper';
@@ -48,6 +49,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // const headersList = headers();
+  // const headerAPI = headersList.get('server');
+  // console.log('headerAPI:', headerAPI);
+  /**JSX**/
   return (
     <html lang="en" className={`${mySansSerif.variable}`}>
       <body className="font-sans">
