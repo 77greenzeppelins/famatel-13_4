@@ -14,7 +14,7 @@ interface Props {
 }
 
 const Cat8Schema = (data: ObudowaType1TechDataType) => {
-  console.log('Cat8Schema / data:', data);
+  /**Data destr...**/
   const {
     description,
     header,
