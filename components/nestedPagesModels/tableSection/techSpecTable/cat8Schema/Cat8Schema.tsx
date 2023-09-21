@@ -19,7 +19,7 @@ const Cat8Schema = (data: ObudowaType1TechDataType) => {
     description,
     header,
     tablesData,
-    iconHolderData,
+    // iconHolderData,
     norma,
     opis,
     header3col,

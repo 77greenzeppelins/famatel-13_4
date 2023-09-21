@@ -31,18 +31,7 @@ const Cat8Schema = () => {
           hasBox={true}
           text={allHeaders.tableHeaders[1]}
         />
-        <div className="flex flex-col w-full gap-y-4">
-          {/* {header.map((header, i) => (
-            <BasicTable
-              key={i}
-              headerData={header}
-              // bodyData={tablesData[i].map(item => [item.label, item.value])}
-              bodyData={tablesDataMod(i)}
-              headerColSpan={2}
-              sideHeaderStyle="text-xs text-light"
-            />
-          ))} */}
-        </div>
+        <div className="flex flex-col w-full gap-y-4"></div>
       </div>
 
       <div className="flex flex-col w-full">
