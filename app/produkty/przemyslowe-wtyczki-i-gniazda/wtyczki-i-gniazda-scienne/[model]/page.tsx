@@ -1,8 +1,18 @@
-// import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat1.title,
+  description: metadataText.cat1.desc,
+  keywords: metadataText.cat1.keywords,
+};
 // import { catalogStructureData } from '@/data/catalogStructureData';
 // import { mainCategoriesPath } from '@/data/routingData';
 

@@ -1,10 +1,18 @@
+import { Metadata } from 'next';
 // import { notFound } from 'next/navigation';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
-import { catalogStructureData } from '@/data/catalogStructureData';
-import { mainCategoriesPath } from '@/data/routingData';
+import { metadataText } from '@/data/textData';
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat1.title,
+  description: metadataText.cat1.desc,
+  keywords: metadataText.cat1.keywords,
+};
 
 // export const dynamicParams = false;
 // export async function generateStaticParams() {

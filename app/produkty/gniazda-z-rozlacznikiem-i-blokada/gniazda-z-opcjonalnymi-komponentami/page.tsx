@@ -1,8 +1,19 @@
+import { Metadata } from 'next';
 /**Components**/
 import SubCatPageWrapper from '@/components/forMultiPage/pageWrappers/subCatPageWrapper/SubCatPageWrapper';
 import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**BasicData**/
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat2.title,
+  description: metadataText.cat2.desc,
+  keywords: metadataText.cat2.keywords,
+};
 
 const GniazdaZBlokadaIKomponentamiPage = () => {
   /**Specify SubCat Index**/

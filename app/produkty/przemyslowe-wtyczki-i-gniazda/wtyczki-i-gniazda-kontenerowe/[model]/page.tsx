@@ -1,29 +1,16 @@
-// import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
-/**Basic Data**/
-// import { catalogStructureData } from '@/data/catalogStructureData';
-// import { mainCategoriesPath } from '@/data/routingData';
+import { metadataText } from '@/data/textData';
 
-// export const dynamicParams = false;
-// export async function generateStaticParams() {
-//   return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
-//     return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
-//       subCatPath => ({
-//         cat: mainCatPath,
-//         subCat: subCatPath,
-//       })
-//     );
-//   });
-// }
-
-// interface Props {
-//   params: {
-//     cat: string;
-//     subCat: string;
-//     model: string;
-//   };
-// }
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat1.title,
+  description: metadataText.cat1.desc,
+  keywords: metadataText.cat1.keywords,
+};
 
 export default function WtyczkiGniazdaKonteneroweModelPage() {
   /**JSX**/

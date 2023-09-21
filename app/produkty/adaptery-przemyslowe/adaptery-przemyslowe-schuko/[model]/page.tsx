@@ -1,30 +1,18 @@
-// import { notFound } from 'next/navigation';
+import { Metadata } from 'next/types';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
-// import { catalogStructureData } from '@/data/catalogStructureData';
-// import { mainCategoriesPath } from '@/data/routingData';
+import { metadataText } from '@/data/textData';
 
-// export const dynamicParams = false;
-// export async function generateStaticParams() {
-//   return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
-//     return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
-//       subCatPath => ({
-//         cat: mainCatPath,
-//         subCat: subCatPath,
-//       })
-//     );
-//   });
-// }
-
-// interface Props {
-//   params: {
-//     cat: string;
-//     subCat: string;
-//     model: string;
-//   };
-// }
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat3.title,
+  description: metadataText.cat3.desc,
+  keywords: metadataText.cat3.keywords,
+};
 
 export default function AdapteryPrzemysloweSchukoModelPage() {
   /**JSX**/

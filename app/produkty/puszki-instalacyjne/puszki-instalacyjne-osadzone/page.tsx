@@ -1,7 +1,18 @@
+import { Metadata } from 'next';
 /**Components**/
 import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**BasicData**/
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat10.title,
+  description: metadataText.cat10.desc,
+  keywords: metadataText.cat10.keywords,
+};
 
 const PuszkiInstalacyjneOsadzonePage = () => {
   /**Specify SubCat Index**/

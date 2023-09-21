@@ -1,11 +1,18 @@
-/*
-catIndes = 0
-subCat = 0
-*/
+import { Metadata } from 'next';
 /**Components**/
 import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**BasicData**/
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat1.title,
+  description: metadataText.cat1.desc,
+  keywords: metadataText.cat1.keywords,
+};
 
 const WtyczkiIGniazdaściennePage = () => {
   /**Specify SubCat Index**/

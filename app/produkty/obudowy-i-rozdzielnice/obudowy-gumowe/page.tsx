@@ -1,7 +1,18 @@
+import { Metadata } from 'next';
 /**Components**/
 import SubCatPageContent from '@/components/nestedPagesSubCat/SubCatPageContent';
 /**BasicData**/
 import { catalogStructureData } from '@/data/catalogStructureData';
+import { metadataText } from '@/data/textData';
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat8.title,
+  description: metadataText.cat8.desc,
+  keywords: metadataText.cat8.keywords,
+};
 
 const RozdzielniceGumowePage = () => {
   /**Specify SubCat Index**/
