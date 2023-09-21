@@ -1,7 +1,9 @@
+import { Metadata } from 'next';
 // import { notFound } from 'next/navigation';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
+import { metadataText } from '@/data/textData';
 // import { catalogStructureData } from '@/data/catalogStructureData';
 // import { mainCategoriesPath } from '@/data/routingData';
 
@@ -24,6 +26,16 @@ import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 //     model: string;
 //   };
 // }
+
+/*
+___CEO section
+*/
+export const metadata: Metadata = {
+  title: metadataText.cat8.title,
+  description: metadataText.cat8.desc,
+  keywords: metadataText.cat8.keywords,
+};
+
 export default function ObudowyPrzemyslowePage() {
   /**JSX**/
   return (
