@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
-const connectMongoDB = () => {
+/*
+___1. why async / await ? ==> is called in route.js in async function
+*/
+const connectMongoDB = async () => {
   try {
-    mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log('Connected to mongoDB');
   } catch (error) {
     console.log(`connection to MongoDB failed: ${error}`);
+    //throw new Error("connection to MongoDB failed")
   }
 };
 

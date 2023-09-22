@@ -1,10 +1,18 @@
 import mongoose, { Schema } from 'mongoose';
 
+/*
+___1. Schema is a class so lets instantiate it via "new"
+*/
 const categorySchema = new Schema(
   {
     index: { type: Number, require: true, default: 0 },
-    name: { type: String, require: [true, 'please enter the product name'] },
     path: { type: String, require: true, default: '/' },
+    name: { type: String, require: [true, 'please enter the product name'] },
+    desc: {
+      type: String,
+      require: true,
+      default: 'advanced and profesional solutions for electric industry',
+    },
     image: {
       type: String,
       require: false,
@@ -14,4 +22,7 @@ const categorySchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Category', categorySchema);
+const Category =
+  mongoose.models.Category || mongoose.model('Category', categorySchema);
+
+module.exports = Category;
