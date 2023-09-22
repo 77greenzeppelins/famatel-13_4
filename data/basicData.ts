@@ -247,3 +247,12 @@ export const AdvancedCatalogNavigationData = {
   toBeMounted: 1, // to slice "produkty" segment in array returned by useSelectedLayoutSegments()
   navLevels: 3,
 };
+
+export const mongoTestData = {
+  addItemPage: {
+    labels: ['', ''],
+    placeholders: ['title', 'description'],
+    forId: ['topic-title', 'topic-desc'],
+    type: ['text', 'text'],
+  },
+};

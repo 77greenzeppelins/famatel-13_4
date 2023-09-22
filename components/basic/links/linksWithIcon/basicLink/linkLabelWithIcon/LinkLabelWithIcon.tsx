@@ -43,7 +43,9 @@ const LinkLabelWithIcon = ({
   return (
     <>
       <p className={textStyle ? textStyle : textDefaultStyle}>{label}</p>
-      <span className={iconWrapperStyle}>{children}</span>
+      <span className={`${iconWrapperStyle} ${label ? 'pl-2' : ''}`}>
+        {children}
+      </span>
       {hasIcon && (
         <span className={iconWrapperStyle}>
           <ArrowForLinkIcon

@@ -27,7 +27,7 @@ function TextSection() {
             </span>
           ))}
         </h1>
-        <BasicLink />
+        <BasicLink linkLabel="Poznaj produkty" />
       </div>
     </div>
   );

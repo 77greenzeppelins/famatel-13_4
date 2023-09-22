@@ -3,7 +3,7 @@ import FormRow from '@/components/basic/forms/basicForm/formRow/FormRow';
 /**Basic Data**/
 import { mongoTestData } from '@/data/basicData';
 
-const AddItemPageContent = () => {
+const EditItemPageContent = () => {
   const {
     addItemPage: { forId, type, placeholders },
   } = mongoTestData;
@@ -26,11 +26,11 @@ const AddItemPageContent = () => {
           className="text-card text-corpo uppercase bg-greyShade2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           //___ dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
         >
-          Submit
+          Update Item
         </button>
       </div>
     </div>
   );
 };
 
-export default AddItemPageContent;
+export default EditItemPageContent;
