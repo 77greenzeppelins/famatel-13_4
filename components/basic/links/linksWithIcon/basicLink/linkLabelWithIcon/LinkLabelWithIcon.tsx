@@ -1,3 +1,7 @@
+/*
+___1. <ArrowForLinkIcon> is defoult as it's most frequentlly used
+___2. take "iconStyle" and apply to each alternative icon
+*/
 /**Components**/
 import ArrowForLinkIcon from '@/components/SVG/icons/heroIcons/ArrowForLinkIcon';
 /**Basic Data**/
@@ -13,8 +17,7 @@ const textDefaultStyle =
 /**TS**/
 interface Props {
   children?: React.ReactNode;
-  uniqueKey: number | string;
-  label: string;
+  label?: string;
   customeVariants?: {};
   containerStyle?: string;
   textStyle?: string;
@@ -28,37 +31,29 @@ used in: various types of links
 */
 /**---------------------------**/
 const LinkLabelWithIcon = ({
+  //___icon
+  hasIcon = true,
   children,
-  uniqueKey,
-  label,
-  customeVariants,
-  containerStyle,
-  textStyle,
   iconWrapperStyle,
   iconStyle,
-  hasIcon = false,
+  //___label
+  label,
+  textStyle,
 }: Props) => {
   return (
     <>
       <p className={textStyle ? textStyle : textDefaultStyle}>{label}</p>
-      {children}
+      <span className={iconWrapperStyle}>{children}</span>
       {hasIcon && (
         <span className={iconWrapperStyle}>
           <ArrowForLinkIcon
             containerStyle={
               iconStyle
                 ? iconStyle
-                : `fc h-4 w-4 aspect-square stroke-2 stroke-corpo group-hover:stroke-light group-hover:rotate-45 origin-center flex-shrink-0 ${styles.lazyAnimation}`
+                : `fc h-6 w-6 min-w-6 min-h-6 aspect-square stroke-corpo group-hover/link:stroke-dark group-hover/link:rotate-45 group-hover/link:translate-x-1 ${styles.lazyAnimation} origin-center flex-shrink-0`
             }
           />
         </span>
-        // <ArrowLongRightIcon
-        //   containerStyle={
-        //     iconStyle
-        //       ? iconStyle
-        //       : 'fc h-6 w-6 min-w-6 min-h-6 aspect-square stroke-greyShade1 group-hover:stroke-light group-hover:translate-x-1 ease-in duration-[0.4s] delay-[0.1s] origin-center flex-shrink-0'
-        //   }
-        // />
       )}
     </>
   );

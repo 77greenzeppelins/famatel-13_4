@@ -16,7 +16,9 @@ const ProductsLayout = () => {
   */
   const segments = useSelectedLayoutSegments();
   const mountingCondition =
-    segments.length > toBeMounted && segments.length !== 0;
+    segments.length > toBeMounted &&
+    segments.length !== 0 &&
+    segments[0] === 'produkty';
   // console.log('segments', segments);
   /*
   ___1. slice array after the secon items ==> first two items are ['', '/', ...] ==> they are irelavant and we can ommit them ==> we are actually interested in items with index 2 & 3 & 4 that are categoryName, subCategoryName and model name respectivelly; 

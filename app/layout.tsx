@@ -10,6 +10,7 @@ import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
 import CookiesPopUp from '@/components/layout/cookies/CookiesPopUp';
 /**Basic Data**/
 import { layoutText, metadataText } from '@/data/textData';
+import MongoLayout from '@/components/layout/mongoLayout/MongoLayout';
 
 /**...**/
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function RootLayout({
         {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         <Header />
         <ProductsLayout />
+        <MongoLayout />
         {/* <PageTransitionWrapper> */}
         <MainWrapper>{children}</MainWrapper>
         {/* </PageTransitionWrapper> */}
