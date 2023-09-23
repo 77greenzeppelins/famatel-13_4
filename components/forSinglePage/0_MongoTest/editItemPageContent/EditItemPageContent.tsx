@@ -1,3 +1,4 @@
+import React from 'react';
 /**Components**/
 import FormRow from '@/components/basic/forms/basicForm/formRow/FormRow';
 /**Basic Data**/
@@ -13,13 +14,14 @@ const EditItemPageContent = () => {
       <h1>AddItemPageContent</h1>
       <div>
         {forId.map((item, i) => (
-          <FormRow
-            key={i}
-            labelFor={item}
-            inputType={type[i]}
-            inputId={item}
-            placeholder={placeholders[i]}
-          />
+          <React.Fragment key={i}>
+            <FormRow
+              labelFor={item}
+              inputType={type[i]}
+              inputId={item}
+              placeholder={placeholders[i]}
+            />
+          </React.Fragment>
         ))}
         <button
           type="submit"

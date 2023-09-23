@@ -6,6 +6,11 @@ ___1. why async / await ? ==> is called in route.js in async function
 const connectMongoDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI);
+    /*
+    {
+      useNewUrlParses: true,
+    useUnifiedTopology: true}
+    */
     console.log('Connected to mongoDB');
   } catch (error) {
     console.log(`connection to MongoDB failed: ${error}`);

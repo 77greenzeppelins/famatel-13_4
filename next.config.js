@@ -11,6 +11,17 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/produkty/wtyczki-gniazda/:slug*',
+        destination: '/produkty/przemyslowe-wtyczki-i-gniazda/:slug*',
+        // source: '/kategorie-produktow/*',
+        // destination: '/produkty/*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
