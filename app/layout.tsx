@@ -10,63 +10,61 @@ import ProductsLayout from '@/components/layout/productsLayout/ProductsLayout';
 import CookiesPopUp from '@/components/layout/cookies/CookiesPopUp';
 /**Basic Data**/
 import { layoutText, metadataText } from '@/data/textData';
+
+/**EXPERIMENTAL**/
 import MongoLayout from '@/components/layout/mongoLayout/MongoLayout';
 
 /**...**/
 export const metadata: Metadata = {
-  metadataBase: new URL('https://famatel.pl'),
-  alternates: {
-    canonical: '/',
-  },
-  title: {
-    default: layoutText.title,
-    template: `%s | ${layoutText.title}`,
-  },
-  description: layoutText.description,
-  keywords: layoutText.keywords,
-  viewport: layoutText.viewport,
-  icons: {
-    icon: {
-      url: '/favicon.ico',
-      type: 'image/x-icon',
+    metadataBase: new URL('https://famatel.pl'),
+    alternates: {
+        canonical: '/'
     },
-    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  },
-  twitter: {
-    title: metadataText.twitter.title,
-    description: layoutText.twitter.desc,
-    card: 'summary_large_image',
-    images: {
-      url: 'https://famatel.pl/images/1_homePage/dirtyPlug_1200_1200.webp',
-      alt: layoutText.twitter.imageAlt,
+    title: {
+        default: layoutText.title,
+        template: `%s | ${layoutText.title}`
     },
-  },
+    description: layoutText.description,
+    keywords: layoutText.keywords,
+    viewport: layoutText.viewport,
+    icons: {
+        icon: {
+            url: '/favicon.ico',
+            type: 'image/x-icon'
+        },
+        shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
+        apple: { url: '/apple-touch-icon.png', type: 'image/png' }
+    },
+    twitter: {
+        title: metadataText.twitter.title,
+        description: layoutText.twitter.desc,
+        card: 'summary_large_image',
+        images: {
+            url: 'https://famatel.pl/images/1_homePage/dirtyPlug_1200_1200.webp',
+            alt: layoutText.twitter.imageAlt
+        }
+    }
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  // const headersList = headers();
-  // const headerAPI = headersList.get('server');
-  // console.log('headerAPI:', headerAPI);
-  /**JSX**/
-  return (
-    <html lang="en" className={`${mySansSerif.variable}`}>
-      <body className="font-sans">
-        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
-        <Header />
-        <ProductsLayout />
-        <MongoLayout />
-        {/* <PageTransitionWrapper> */}
-        <MainWrapper>{children}</MainWrapper>
-        {/* </PageTransitionWrapper> */}
-        <CookiesPopUp />
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    // const headersList = headers();
+    // const headerAPI = headersList.get('server');
+    // console.log('headerAPI:', headerAPI);
+    /**JSX**/
+    return (
+        <html lang="en" className={`${mySansSerif.variable}`}>
+            <body className="font-sans">
+                {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
+                <Header />
+                <ProductsLayout />
+                <MongoLayout />
+                {/* <PageTransitionWrapper> */}
+                <MainWrapper>{children}</MainWrapper>
+                {/* </PageTransitionWrapper> */}
+                <CookiesPopUp />
+            </body>
+        </html>
+    );
 }
 
 // icons: {

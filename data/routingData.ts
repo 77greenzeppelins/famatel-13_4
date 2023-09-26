@@ -3,181 +3,120 @@
 import { createPath } from '@/lib/handlers/functions';
 
 /*
+___0...
+*/
+export const baseUrl = 'https://famatel.pl';
+
+/*
 ___1.
 */
 export const mainPagesPaths = {
-  home: '/',
-  produkty: '/produkty',
-  aktualnosci: '/aktualnosci',
-  doPobrania: '/do-pobrania',
-  kontakt: '/kontakt',
+    home: '/',
+    produkty: '/produkty',
+    aktualnosci: '/aktualnosci',
+    doPobrania: '/do-pobrania',
+    kontakt: '/kontakt'
 };
 
-export const mainPagesLabels: string[] = [
-  'O firmie',
-  'Produkty',
-  'Aktualności',
-  'Realizacje',
-  'Do pobrania',
-  'Kontakt',
-];
+export const mainPagesLabels: string[] = ['O firmie', 'Produkty', 'Aktualności', 'Realizacje', 'Do pobrania', 'Kontakt'];
 
 export const mainCategoriesNames: string[] = [
-  'Przemysłowe wtyczki i gniazda',
-  'Gniazda z rozłącznikiem i blokadą',
-  'Adaptery przemysłowe',
-  'Gniazda podwieszane',
-  'Przedłużacze bębnowe',
-  'Rozłączniki bezpieczeństwa',
-  'Ładowarki samochodowe',
-  'Obudowy i rozdzielnice',
-  'Rozdzielnice modułowe',
-  'Puszki instalacyjne',
+    'Przemysłowe wtyczki i gniazda',
+    'Gniazda z rozłącznikiem i blokadą',
+    'Adaptery przemysłowe',
+    'Gniazda podwieszane',
+    'Przedłużacze bębnowe',
+    'Rozłączniki bezpieczeństwa',
+    'Ładowarki samochodowe',
+    'Obudowy i rozdzielnice',
+    'Rozdzielnice modułowe',
+    'Puszki instalacyjne'
 ];
-export const mainCategoriesPath = mainCategoriesNames.map(mainCatName =>
-  createPath(mainCatName)
-);
+export const mainCategoriesPath = mainCategoriesNames.map((mainCatName) => createPath(mainCatName));
 
 /*
 ---------subcategories
 */
-//_____subcategories of category_1
+//--------------------------subcategories of category_1
 export const wtyczkiGniazdaSubCatNames: string[] = [
-  'Wtyczki i gniazda przenośne',
-  'Wtyczki i gniazda tablicowe',
-  'Wtyczki i gniazda ścienne',
-  'Wtyczki i gniazda tablicowe jednofazowe',
-  'Wtyczki i gniazda jednofazowe',
-  'Wtyczki i gniazda na bardzo niskie napięcia',
-  'Wtyczki i gniazda kontenerowe',
-  'Wtyczki i gniazda estradowe',
-  'Wtyczki i gniazda campingowe',
+    'Wtyczki i gniazda przenośne',
+    'Wtyczki i gniazda tablicowe',
+    'Wtyczki i gniazda ścienne',
+    'Wtyczki i gniazda tablicowe jednofazowe',
+    'Wtyczki i gniazda jednofazowe',
+    'Wtyczki i gniazda na bardzo niskie napięcia',
+    'Wtyczki i gniazda kontenerowe',
+    'Wtyczki i gniazda estradowe',
+    'Wtyczki i gniazda campingowe'
 ];
-export const wtyczkiGniazdaSubCatPaths = wtyczkiGniazdaSubCatNames.map(
-  subCatName => createPath(subCatName)
-);
+export const wtyczkiGniazdaSubCatPaths = wtyczkiGniazdaSubCatNames.map((subCatName) => createPath(subCatName));
 
-export const wtyczkiGniazdaSubCatFullPaths = wtyczkiGniazdaSubCatPaths.map(
-  path => `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}/${path}`
-);
+export const wtyczkiGniazdaSubCatFullPaths = wtyczkiGniazdaSubCatPaths.map((path) => `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}/${path}`);
 
-//_____subcategories of category_2
-export const gniazdaZBlokadaSubCatNames: string[] = [
-  'Gniazda tablicowe',
-  'Gniazda stałe',
-  'Gniazda z opcjonalnymi komponentami',
-  'Akcesoria do gniazd z rozłącznikiem i blokadą',
-];
-export const gniazdaZBlokadaSubCatPaths = gniazdaZBlokadaSubCatNames.map(
-  subCatName => createPath(subCatName)
-);
+//--------------------------subcategories of category_2
+export const gniazdaZBlokadaSubCatNames: string[] = ['Gniazda tablicowe', 'Gniazda stałe', 'Gniazda z opcjonalnymi komponentami', 'Akcesoria do gniazd z rozłącznikiem i blokadą'];
+export const gniazdaZBlokadaSubCatPaths = gniazdaZBlokadaSubCatNames.map((subCatName) => createPath(subCatName));
 
-export const gniazdaZBlokadaSubCatFullPaths = gniazdaZBlokadaSubCatPaths.map(
-  (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}/${path}`
-);
+export const gniazdaZBlokadaSubCatFullPaths = gniazdaZBlokadaSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}/${path}`);
 
-//_____subcategories of category_3
-export const adapteryPrzemysloweSubCatNames: string[] = [
-  'Adaptery przemysłowe Schuko',
-  'Adaptery wielokrotne przemysłowe',
-  'Adaptery wielokrotne przemysłowe z przewodem',
-];
-export const adapteryPrzemysloweSubCatPaths =
-  adapteryPrzemysloweSubCatNames.map(subCatName => createPath(subCatName));
+//--------------------------subcategories of category_3
+export const adapteryPrzemysloweSubCatNames: string[] = ['Adaptery przemysłowe Schuko', 'Adaptery wielokrotne przemysłowe', 'Adaptery wielokrotne przemysłowe z przewodem'];
+export const adapteryPrzemysloweSubCatPaths = adapteryPrzemysloweSubCatNames.map((subCatName) => createPath(subCatName));
 
-export const adapteryPrzemysloweSubCatFullPaths =
-  adapteryPrzemysloweSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}/${path}`
-  );
+export const adapteryPrzemysloweSubCatFullPaths = adapteryPrzemysloweSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}/${path}`);
 
-//_____subcategories of category_4
+//--------------------------subcategories of category_4
 export const gniazdaPodwieszaneSubCatNames: string[] = ['Gniazda podwieszane'];
 export const gniazdaPodwieszaneSubCatPaths: string[] = ['gniazda-podwieszane'];
-export const gniazdaPodwieszaneSubCatFullPaths =
-  gniazdaPodwieszaneSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}/${path}`
-  );
+export const gniazdaPodwieszaneSubCatFullPaths = gniazdaPodwieszaneSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}/${path}`);
 
-//_____category___5
+//--------------------------category___5
 export const przedluzaczeBebnoweSubCatNames: string[] = [
-  'Przedłużacze bębnowe IP55 z gniazdami Schuko IP67',
-  'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
-  'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
+    'Przedłużacze bębnowe IP55 z gniazdami Schuko IP67',
+    'Przemysłowe przedłużacze bębnowe z gniazdami IP67',
+    'Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67'
 ];
-export const przedluzaczeBebnoweSubCatPaths =
-  przedluzaczeBebnoweSubCatNames.map(subCatName => createPath(subCatName));
+export const przedluzaczeBebnoweSubCatPaths = przedluzaczeBebnoweSubCatNames.map((subCatName) => createPath(subCatName));
 
-export const przedluzaczeBebnoweSubCatFullPaths =
-  przedluzaczeBebnoweSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}/${path}`
-  );
+export const przedluzaczeBebnoweSubCatFullPaths = przedluzaczeBebnoweSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}/${path}`);
 
-//_____subcategories of category_6
-export const rozlacznikiBezpieczenstwaSubCatNames: string[] = [
-  'Rozłączniki bezpieczeństwa',
-];
-export const rozlacznikiBezpieczenstwaSubCatPaths: string[] = [
-  'rozlaczniki-bezpieczenstwa',
-];
-export const rozlacznikiBezpieczenstwaSubCatFullPaths =
-  rozlacznikiBezpieczenstwaSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}/${path}`
-  );
+//--------------------------subcategories of category_6
+export const rozlacznikiBezpieczenstwaSubCatNames: string[] = ['Rozłączniki bezpieczeństwa'];
+export const rozlacznikiBezpieczenstwaSubCatPaths: string[] = ['rozlaczniki-bezpieczenstwa'];
+export const rozlacznikiBezpieczenstwaSubCatFullPaths = rozlacznikiBezpieczenstwaSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}/${path}`);
 
-//_____subcategories of category_7
+//--------------------------subcategories of category_7
 export const ladowarkiPojazdowSubCatNames: string[] = ['Ładowarki samochodowe'];
 export const ladowarkiPojazdowSubCatPaths: string[] = ['ladowarki-samochodowe'];
-export const ladowarkiPojazdowSubCatFullPaths =
-  ladowarkiPojazdowSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}/${path}`
-  );
-//_____subcategories of category_8
-export const obudowyAndRozdzielniceSubCatNames: string[] = [
-  'Obudowy puste',
-  'Rozdzielnice przemysłowe',
-  'Obudowy gumowe',
-  'Akcesoria do obudów i rozdzielnic',
-];
-export const obudowyAndRozdzielniceSubCatPaths =
-  obudowyAndRozdzielniceSubCatNames.map(subCatName => createPath(subCatName));
+export const ladowarkiPojazdowSubCatFullPaths = ladowarkiPojazdowSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}/${path}`);
 
-export const obudowyAndRozdzielniceSubCatFullPaths =
-  obudowyAndRozdzielniceSubCatPaths.map(
-    (path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}/${path}`
-  );
-//_____subcategories of category_9
+//--------------------------subcategories of category_8
+export const obudowyAndRozdzielniceSubCatNames: string[] = ['Obudowy puste', 'Rozdzielnice przemysłowe', 'Obudowy gumowe', 'Akcesoria do obudów i rozdzielnic'];
+export const obudowyAndRozdzielniceSubCatPaths = obudowyAndRozdzielniceSubCatNames.map((subCatName) => createPath(subCatName));
+
+export const obudowyAndRozdzielniceSubCatFullPaths = obudowyAndRozdzielniceSubCatPaths.map((path, i) => `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}/${path}`);
+
+//--------------------------subcategories of category_9
 export const rozdzielniceModuloweSubCatNames: string[] = [
-  'Rozdzielnice ścienne IP65',
-  'Rozdzielnice modułowe IP65',
-  'Rozdzielnice modułowe Nuova IP40',
-  'Rozdzielnice modułowe Nuova + IP40',
-  'Rozdzielnice modułowe Vita IP40',
-  'Rozdzielnice modułowe ścienne ICP',
-  'Rozdzielnice modułowe metalowe IP40',
-  'Rozdzielnice modułowe metalowe ICT',
-  'Akcesoria do rozdzielnic modułowych',
+    'Rozdzielnice ścienne IP65',
+    'Rozdzielnice modułowe IP65',
+    'Rozdzielnice modułowe Nuova IP40',
+    'Rozdzielnice modułowe Nuova + IP40',
+    'Rozdzielnice modułowe Vita IP40',
+    'Rozdzielnice modułowe ścienne ICP',
+    'Rozdzielnice modułowe metalowe IP40',
+    'Rozdzielnice modułowe metalowe ICT',
+    'Akcesoria do rozdzielnic modułowych'
 ];
-export const rozdzielniceModuloweSubCatPaths =
-  rozdzielniceModuloweSubCatNames.map(subCatName => createPath(subCatName));
+export const rozdzielniceModuloweSubCatPaths = rozdzielniceModuloweSubCatNames.map((subCatName) => createPath(subCatName));
 
-export const rozdzielniceModuloweSubCatFullPaths =
-  rozdzielniceModuloweSubCatPaths.map(
-    path => `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}/${path}`
-  );
-//_____subcategories of category_10
-export const puszkiInstalacyjneSubCatNames: string[] = [
-  'Puszki instalacyjne zamykane IP55 IP65',
-  'Puszki instalacyjne drywall',
-  'Puszki instalacyjne osadzone',
-];
-export const puszkiInstalacyjneSubCatPaths = puszkiInstalacyjneSubCatNames.map(
-  subCatName => createPath(subCatName)
-);
+export const rozdzielniceModuloweSubCatFullPaths = rozdzielniceModuloweSubCatPaths.map((path) => `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}/${path}`);
 
-export const puszkiInstalacyjneSubCatFullPaths =
-  puszkiInstalacyjneSubCatPaths.map(
-    path => `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}/${path}`
-  );
+//--------------------------subcategories of category_10
+export const puszkiInstalacyjneSubCatNames: string[] = ['Puszki instalacyjne zamykane IP55 IP65', 'Puszki instalacyjne drywall', 'Puszki instalacyjne osadzone'];
+export const puszkiInstalacyjneSubCatPaths = puszkiInstalacyjneSubCatNames.map((subCatName) => createPath(subCatName));
+
+export const puszkiInstalacyjneSubCatFullPaths = puszkiInstalacyjneSubCatPaths.map((path) => `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}/${path}`);
 
 /*
 ---------------------------------------------------------------------M O D E L S
