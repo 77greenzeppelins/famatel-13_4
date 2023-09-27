@@ -5,30 +5,26 @@ import DraggableSlider from '@/components/forMultiPage/sliders/draggableSlider/D
 
 /*TS**/
 interface Props {
-  expanded: number | false;
-  height: number;
-  axis: 'x' | 'y';
+    expanded: number | false;
+    height: number;
+    axis: 'x' | 'y';
 }
 const GraphicSection = ({ expanded, height, axis }: Props) => {
-  /**JSX**/
-  return (
-    <CardFrame>
-      <div className="relative w-full h-full p-4 overflow-hidden fc">
-        {/* <div className="w-full h-full border border-greyShade2"> */}
-        <DraggableSlider
-          axis={axis}
-          axisSize={height}
-          currentCategory={expanded as number}
-        />
-        {/* </div> */}
-      </div>
-    </CardFrame>
-  );
+    /**JSX**/
+    return (
+        <CardFrame>
+            <div className="relative w-full h-full p-4 overflow-hidden fc">
+                {/* <div className="w-full h-full border border-greyShade2"> */}
+                <DraggableSlider axis={axis} axisSize={height} currentCategory={expanded as number} />
+                {/* </div> */}
+            </div>
+        </CardFrame>
+    );
 };
 
 export default GraphicSection;
 {
-  /* <p className="text-small">
+    /* <p className="text-small">
         {typeof expanded === 'number' ? expanded.toString() : 'all are close'}
       </p> */
 }

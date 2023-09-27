@@ -9,6 +9,7 @@ interface I_Category {
 }
 /*
 ___1. Schema is a class so lets instantiate it via "new"
+__2. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection 
 */
 const categorySchema: Schema = new Schema(
     {
@@ -29,5 +30,10 @@ const categorySchema: Schema = new Schema(
     { timestamps: true, versionKey: false }
 );
 
+/*
+___1. A model is a class with which we construct documents.
+___2. Some use case: 
+      const favCat = new Category({name: 'gniazda bocianie'})
+*/
 const Category = mongoose.models.Category || mongoose.model<I_Category>('Category', categorySchema);
 module.exports = Category;
