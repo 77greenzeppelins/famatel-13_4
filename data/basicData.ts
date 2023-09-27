@@ -242,8 +242,8 @@ export const AdvancedCatalogNavigationData = {
 export const mongoTestData = {
     addItemPage: {
         labels: ['', ''],
-        placeholders: ['title', 'description'],
-        forId: ['topic-title', 'topic-desc'],
+        placeholders: ['name', 'desc'],
+        forId: ['topic-name', 'topic-desc'],
         type: ['text', 'text']
     }
 };

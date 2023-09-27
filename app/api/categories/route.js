@@ -4,8 +4,10 @@ import connectMongoDB from '@/backend/libs/mongodb';
 import Category from '@/backend/models/categoryModel';
 // const Category = require('@/backend/models/categoryModel');
 
+//----------------------------------------------- C
 export async function POST(request) {
     try {
+        //___read request body - return promis - resolve to a JavaScript object.
         const { index, name, path, desc, image } = await request.json();
         await connectMongoDB();
         await Category.create({ name, desc });
@@ -15,6 +17,7 @@ export async function POST(request) {
     }
 }
 
+//----------------------------------------------- R (all)
 export async function GET() {
     try {
         await connectMongoDB();
@@ -25,6 +28,9 @@ export async function GET() {
     }
 }
 
+//----------------------------------------------- U
+
+//----------------------------------------------- D
 // export async function DELETE(request) {
 //   const id = request.nextUrl.searchParams.get('id');
 //   await connectMongoDB();
