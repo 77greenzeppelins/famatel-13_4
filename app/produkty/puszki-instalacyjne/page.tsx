@@ -8,12 +8,15 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat10.title,
-  description: metadataText.cat10.desc,
-  keywords: metadataText.cat10.keywords,
+    title: metadataText.cat10.title,
+    description: metadataText.cat10.desc,
+    keywords: metadataText.cat10.keywords,
+    alternates: {
+        canonical: metadataText.cat10.canonical
+    }
 };
 
 export default function PuszkiInstalacyjnePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={9} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={9} />;
 }

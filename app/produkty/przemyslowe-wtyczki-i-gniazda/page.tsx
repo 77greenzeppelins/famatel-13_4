@@ -9,16 +9,17 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat1.title,
-  description: metadataText.cat1.desc,
-  keywords: metadataText.cat1.keywords,
+    title: metadataText.cat1.title,
+    description: metadataText.cat1.desc,
+    keywords: metadataText.cat1.keywords,
+    alternates: {
+        canonical: metadataText.cat1.canonical
+    }
 };
 
 export default function WtyczkiGniazdaPage() {
-  /**JSX**/
-  return (
-    <CatPageContent categoryIndex={catalogStructureData[0].mainCategoryIndex} />
-  );
+    /**JSX**/
+    return <CatPageContent categoryIndex={catalogStructureData[0].mainCategoryIndex} />;
 }
 
 /*

@@ -8,12 +8,15 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat3.title,
-  description: metadataText.cat3.desc,
-  keywords: metadataText.cat3.keywords,
+    title: metadataText.cat3.title,
+    description: metadataText.cat3.desc,
+    keywords: metadataText.cat3.keywords,
+    alternates: {
+        canonical: metadataText.cat3.canonical
+    }
 };
 
 export default function AdapteryPrzemyslowePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={2} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={2} />;
 }

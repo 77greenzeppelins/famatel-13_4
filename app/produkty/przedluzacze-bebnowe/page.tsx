@@ -8,9 +8,12 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat5.title,
-  description: metadataText.cat5.desc,
-  keywords: metadataText.cat5.keywords,
+    title: metadataText.cat5.title,
+    description: metadataText.cat5.desc,
+    keywords: metadataText.cat5.keywords,
+    alternates: {
+        canonical: metadataText.cat5.canonical
+    }
 };
 
 // export const dynamicParams = false;
@@ -26,6 +29,6 @@ export const metadata: Metadata = {
 // }
 
 export default function PrzedluzaczeBebnowePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={4} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={4} />;
 }

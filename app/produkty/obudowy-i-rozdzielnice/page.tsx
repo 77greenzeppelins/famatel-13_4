@@ -8,12 +8,15 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat8.title,
-  description: metadataText.cat8.desc,
-  keywords: metadataText.cat8.keywords,
+    title: metadataText.cat8.title,
+    description: metadataText.cat8.desc,
+    keywords: metadataText.cat8.keywords,
+    alternates: {
+        canonical: metadataText.cat8.canonical
+    }
 };
 
 export default function ObudowyIRozdzielnicePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={7} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={7} />;
 }

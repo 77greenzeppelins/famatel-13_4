@@ -7,12 +7,15 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat4.title,
-  description: metadataText.cat4.desc,
-  keywords: metadataText.cat4.keywords,
+    title: metadataText.cat4.title,
+    description: metadataText.cat4.desc,
+    keywords: metadataText.cat4.keywords,
+    alternates: {
+        canonical: metadataText.cat4.canonical
+    }
 };
 
 export default function GniazdaPodwieszanePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={3} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={3} />;
 }

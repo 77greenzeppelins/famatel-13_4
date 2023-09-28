@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 import { metadataText } from '@/data/textData';
@@ -6,22 +6,37 @@ import { metadataText } from '@/data/textData';
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat1.title,
-  description: metadataText.cat1.desc,
-  keywords: metadataText.cat1.keywords,
+// export const metadata: Metadata = {
+//   title: metadataText.cat1.title,
+//   description: metadataText.cat1.desc,
+//   keywords: metadataText.cat1.keywords,
+// };
+
+type Props = {
+    params: { model: string };
+    // searchParams: { [key: string]: string | string[] | undefined };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+    // console.log('parent', await parent);
+    return {
+        title: model,
+        description: metadataText.cat1.subCat7.description,
+        keywords: metadataText.cat1.subCat7.keywords
+    };
+}
+
 export default function WtyczkiGniazdaKonteneroweModelPage() {
-  /**JSX**/
-  return (
-    <div className="flex flex-col w-full fc">
-      <ModelPageContent />
-      {/* <div className="h-[50vh] fc">
+    /**JSX**/
+    return (
+        <div className="flex flex-col w-full fc">
+            <ModelPageContent />
+            {/* <div className="h-[50vh] fc">
         <p>{params.model}</p>
       </div> */}
-    </div>
-  );
+        </div>
+    );
 }
 
 //_______________________________________________________________

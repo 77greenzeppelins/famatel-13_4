@@ -8,12 +8,15 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat9.title,
-  description: metadataText.cat9.desc,
-  keywords: metadataText.cat9.keywords,
+    title: metadataText.cat9.title,
+    description: metadataText.cat9.desc,
+    keywords: metadataText.cat9.keywords,
+    alternates: {
+        canonical: metadataText.cat9.canonical
+    }
 };
 
 export default function RozdzielniceModulowePage() {
-  /**JSX**/
-  return <CatPageContent categoryIndex={8} />;
+    /**JSX**/
+    return <CatPageContent categoryIndex={8} />;
 }
