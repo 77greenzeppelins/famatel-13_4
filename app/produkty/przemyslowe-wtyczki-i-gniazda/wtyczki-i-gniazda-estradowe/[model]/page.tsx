@@ -1,29 +1,41 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
+import { cat1_allModelsCard_data } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat1.title,
-  description: metadataText.cat1.desc,
-  keywords: metadataText.cat1.keywords,
+type Props = {
+    params: { model: string };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+    //---
+    return {
+        title: { absolute: model },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat1.subCat8.canonical}/${model}`
+        }
+    };
+}
+
 export default function WtyczkiGniazdaEstradoweModelPage() {
-  /**JSX**/
-  return (
-    <ModelPageWrapper>
-      <ModelPageContent />
-      {/* <div className="h-[50vh] fc">
+    /**JSX**/
+    return (
+        <ModelPageWrapper>
+            <ModelPageContent />
+            {/* <div className="h-[50vh] fc">
         <p>{params.model}</p>
       </div> */}
-    </ModelPageWrapper>
-  );
+        </ModelPageWrapper>
+    );
 }
 
 //_______________________________________________________________

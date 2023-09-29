@@ -14,16 +14,18 @@ ___CEO section
 
 type Props = {
     params: { model: string };
-    // searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
     const model = params.model;
     // console.log('parent', await parent);
     return {
-        title: model,
-        description: metadataText.cat1.subCat7.description,
-        keywords: metadataText.cat1.subCat7.keywords
+        title: { absolute: model },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat1.subCat7.canonical}/${model}`
+        }
     };
 }
 

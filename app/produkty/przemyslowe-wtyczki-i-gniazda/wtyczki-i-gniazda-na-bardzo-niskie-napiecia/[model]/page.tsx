@@ -1,29 +1,44 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
+import { cat1_allModelsCard_data } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat1.title,
-  description: metadataText.cat1.desc,
-  keywords: metadataText.cat1.keywords,
+type Props = {
+    params: { model: string };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+
+    const matchingObject = cat1_allModelsCard_data[5].find((item) => item.modelPathSegmant === model)?.altName;
+    // console.log('...matchingObject', matchingObject);
+    //---
+    return {
+        title: { absolute: matchingObject as string },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat1.subCat6.canonical}/${model}`
+        }
+    };
+}
+
 export default function WtyczkiGniazdaNiskieNapieciaModelPage() {
-  /**JSX**/
-  return (
-    <ModelPageWrapper>
-      <ModelPageContent />
-      {/* <div className="h-[50vh] fc">
+    /**JSX**/
+    return (
+        <ModelPageWrapper>
+            <ModelPageContent />
+            {/* <div className="h-[50vh] fc">
         <p>{params.model}</p>
       </div> */}
-    </ModelPageWrapper>
-  );
+        </ModelPageWrapper>
+    );
 }
 
 //_______________________________________________________________

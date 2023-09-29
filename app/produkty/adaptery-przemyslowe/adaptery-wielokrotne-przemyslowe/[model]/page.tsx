@@ -1,26 +1,41 @@
-import { Metadata } from 'next/types';
+import { Metadata, ResolvingMetadata } from 'next/types';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
+import { cat3_allModelsCard_data } from '@/data/modelsData/cat_3_adaptery-przemyslowe/cat3_allModelsCard_data';
 
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat3.title,
-  description: metadataText.cat3.desc,
-  keywords: metadataText.cat3.keywords,
+type Props = {
+    params: { model: string };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+
+    const matchingObject = cat3_allModelsCard_data[1].find((item) => item.modelPathSegmant === model)?.altName;
+    // console.log('...matchingObject', matchingObject);
+    //---
+    return {
+        title: { absolute: matchingObject as string },
+        description: matchingObject as string,
+        keywords: matchingObject as string,
+        alternates: {
+            canonical: `${metadataText.cat3.subCat2.canonical}/${model}`
+        }
+    };
+}
+
 export default function AdapteryPrzemysloweWielokrotneModelPage() {
-  /**JSX**/
-  return (
-    <ModelPageWrapper>
-      <ModelPageContent />
-    </ModelPageWrapper>
-  );
+    /**JSX**/
+    return (
+        <ModelPageWrapper>
+            <ModelPageContent />
+        </ModelPageWrapper>
+    );
 }
 
 //_______________________________________________________________

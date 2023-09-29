@@ -1,18 +1,30 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 // import { notFound } from 'next/navigation';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
+import { cat1_allModelsCard_data } from '@/data/modelsData/cat_1_wtyczki-gniazda/cat1_allModelsCard_data';
 
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat1.title,
-  description: metadataText.cat1.desc,
-  keywords: metadataText.cat1.keywords,
+type Props = {
+    params: { model: string };
 };
+
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+    const modelLabel = cat1_allModelsCard_data[1].find((item) => item.modelPathSegmant === model)?.altName;
+    return {
+        title: { absolute: modelLabel as string },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat1.subCat2.canonical}/${model}`
+        }
+    };
+}
 
 // import { catalogStructureData } from '@/data/catalogStructureData';
 // import { mainCategoriesPath } from '@/data/routingData';
@@ -39,12 +51,12 @@ export const metadata: Metadata = {
 
 //___{ params }: Props
 export default function WtyczkiGniazdaTablicoweModelPage() {
-  /**JSX**/
-  return (
-    <div className="flex flex-col w-full fc">
-      <ModelPageContent />
-    </div>
-  );
+    /**JSX**/
+    return (
+        <div className="flex flex-col w-full fc">
+            <ModelPageContent />
+        </div>
+    );
 }
 
 //_______________________________________________________________

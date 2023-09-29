@@ -1,26 +1,41 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 /**Comoponenst**/
 import ModelPageWrapper from '@/components/forMultiPage/pageWrappers/modelPageWrapper/ModelPageWrapper';
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
+import { cat2_allModelsCard_data } from '@/data/modelsData/cat_2_gniazda-z-blokada/cat2_allModelsCard_data';
 
 /*
 ___CEO section
 */
-export const metadata: Metadata = {
-  title: metadataText.cat2.title,
-  description: metadataText.cat2.desc,
-  keywords: metadataText.cat2.keywords,
+type Props = {
+    params: { model: string };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+
+    const matchingObject = cat2_allModelsCard_data[0].find((item) => item.modelPathSegmant === model)?.altName;
+    // console.log('...matchingObject', matchingObject);
+    //---
+    return {
+        title: { absolute: matchingObject as string },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat2.subCat1.canonical}/${model}`
+        }
+    };
+}
+
 export default function GniazdaZRozlacznikiemIBlokadaTablicoweModelPage() {
-  /**JSX**/
-  return (
-    <ModelPageWrapper>
-      <ModelPageContent />
-    </ModelPageWrapper>
-  );
+    /**JSX**/
+    return (
+        <ModelPageWrapper>
+            <ModelPageContent />
+        </ModelPageWrapper>
+    );
 }
 
 //_______________________________________________________________
