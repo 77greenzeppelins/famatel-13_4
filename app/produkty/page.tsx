@@ -9,13 +9,8 @@ import { metadataText } from '@/data/textData';
 export const metadata: Metadata = {
     title: { absolute: metadataText.produktyPage.title },
     description: metadataText.produktyPage.desc,
-    icons: {
-        icon: {
-            url: '/favicon.ico',
-            type: 'image/x-icon'
-        },
-        shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-        apple: { url: '/apple-touch-icon.png', type: 'image/png' }
+    alternates: {
+        canonical: metadataText.produktyPage.canonical
     }
 };
 export default function ProduktyPage() {

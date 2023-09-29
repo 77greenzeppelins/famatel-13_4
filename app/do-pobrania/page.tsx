@@ -7,23 +7,18 @@ import { metadataText } from '@/data/textData';
 
 /**...**/
 export const metadata: Metadata = {
-  title: { absolute: metadataText.doPobraniaPage.title },
-  description: metadataText.doPobraniaPage.desc,
-  icons: {
-    icon: {
-      url: '/favicon.ico',
-      type: 'image/x-icon',
-    },
-    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  },
+    title: { absolute: metadataText.doPobraniaPage.title },
+    description: metadataText.doPobraniaPage.desc,
+    alternates: {
+        canonical: metadataText.doPobraniaPage.canonical
+    }
 };
 
 export default function DoPobraniaPage() {
-  /**JSX**/
-  return (
-    // <MainWrapper>
-    <DoPobraniaPageContent />
-    // </MainWrapper>
-  );
+    /**JSX**/
+    return (
+        // <MainWrapper>
+        <DoPobraniaPageContent />
+        // </MainWrapper>
+    );
 }

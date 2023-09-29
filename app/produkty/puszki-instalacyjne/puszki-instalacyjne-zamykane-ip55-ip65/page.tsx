@@ -9,26 +9,24 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat10.title,
-  description: metadataText.cat10.desc,
-  keywords: metadataText.cat10.keywords,
+    title: { absolute: metadataText.cat10.subCat1.title },
+    description: metadataText.cat10.subCat1.description,
+    keywords: metadataText.cat10.subCat1.keywords,
+    alternates: {
+        canonical: metadataText.cat10.subCat1.canonical
+    }
 };
 
 const PuszkiInstalacyjnePage = () => {
-  /**Specify SubCat Index**/
-  const subCatPath = catalogStructureData[9].subCategoriesPaths[0];
-  const subCatIndex = catalogStructureData[9].subCategoriesPaths.findIndex(
-    el => el === subCatPath
-  );
-  /**JSX**/
-  return (
-    <div className="flex flex-col w-full fc">
-      <SubCatPageContent
-        mainCatIndex={catalogStructureData[9].mainCategoryIndex}
-        subCatIndex={subCatIndex}
-      />
-    </div>
-  );
+    /**Specify SubCat Index**/
+    const subCatPath = catalogStructureData[9].subCategoriesPaths[0];
+    const subCatIndex = catalogStructureData[9].subCategoriesPaths.findIndex((el) => el === subCatPath);
+    /**JSX**/
+    return (
+        <div className="flex flex-col w-full fc">
+            <SubCatPageContent mainCatIndex={catalogStructureData[9].mainCategoryIndex} subCatIndex={subCatIndex} />
+        </div>
+    );
 };
 
 export default PuszkiInstalacyjnePage;

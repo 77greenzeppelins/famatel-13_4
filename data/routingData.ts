@@ -18,6 +18,10 @@ export const mainPagesPaths = {
     kontakt: '/kontakt'
 };
 
+export const additionalPagesPath = {
+    notaPrawna: '/nota-prawna'
+};
+
 export const mainPagesLabels: string[] = ['O firmie', 'Produkty', 'Aktualności', 'Realizacje', 'Do pobrania', 'Kontakt'];
 
 export const mainCategoriesNames: string[] = [
@@ -36,6 +40,9 @@ export const mainCategoriesPath = mainCategoriesNames.map((mainCatName) => creat
 
 /*
 ---------subcategories
+___1. function "catnameSubCatNames" create segment for subcategory without "/": "wtyczki-i-gniazda-przenosne"
+___2. function "catnameSubCatNamesFullPaths" creates actually three segment: "produkty/categoria/subcategoria"
+___3. result of "catnameSubCatNamesFullPaths" is utilized in sitemat.ts &  
 */
 //--------------------------subcategories of category_1
 export const wtyczkiGniazdaSubCatNames: string[] = [

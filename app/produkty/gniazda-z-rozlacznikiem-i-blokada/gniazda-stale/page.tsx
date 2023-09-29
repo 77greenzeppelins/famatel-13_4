@@ -10,26 +10,24 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat2.title,
-  description: metadataText.cat2.desc,
-  keywords: metadataText.cat2.keywords,
+    title: { absolute: `${metadataText.cat2.subCat2.title} z rozłącznikiem i blokadą` },
+    description: metadataText.cat2.subCat2.description,
+    keywords: metadataText.cat2.subCat2.keywords,
+    alternates: {
+        canonical: metadataText.cat2.subCat2.canonical
+    }
 };
 
 const GniazdaZBlokadaStalePage = () => {
-  /**Specify SubCat Index**/
-  const subCatPath = catalogStructureData[1].subCategoriesPaths[1];
-  const subCatIndex = catalogStructureData[1].subCategoriesPaths.findIndex(
-    el => el === subCatPath
-  );
-  /**JSX**/
-  return (
-    <SubCatPageWrapper>
-      <SubCatPageContent
-        mainCatIndex={catalogStructureData[1].mainCategoryIndex}
-        subCatIndex={subCatIndex}
-      />
-    </SubCatPageWrapper>
-  );
+    /**Specify SubCat Index**/
+    const subCatPath = catalogStructureData[1].subCategoriesPaths[1];
+    const subCatIndex = catalogStructureData[1].subCategoriesPaths.findIndex((el) => el === subCatPath);
+    /**JSX**/
+    return (
+        <SubCatPageWrapper>
+            <SubCatPageContent mainCatIndex={catalogStructureData[1].mainCategoryIndex} subCatIndex={subCatIndex} />
+        </SubCatPageWrapper>
+    );
 };
 
 export default GniazdaZBlokadaStalePage;

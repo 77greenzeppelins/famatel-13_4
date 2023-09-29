@@ -1,4 +1,23 @@
-import { mainCategoriesNames, mainCategoriesPath } from './routingData';
+import {
+    mainPagesPaths,
+    additionalPagesPath,
+    mainCategoriesNames,
+    mainCategoriesPath,
+    wtyczkiGniazdaSubCatNames,
+    wtyczkiGniazdaSubCatFullPaths,
+    gniazdaZBlokadaSubCatNames,
+    gniazdaZBlokadaSubCatFullPaths,
+    adapteryPrzemysloweSubCatNames,
+    adapteryPrzemysloweSubCatFullPaths,
+    przedluzaczeBebnoweSubCatNames,
+    przedluzaczeBebnoweSubCatFullPaths,
+    obudowyAndRozdzielniceSubCatNames,
+    obudowyAndRozdzielniceSubCatFullPaths,
+    rozdzielniceModuloweSubCatNames,
+    rozdzielniceModuloweSubCatFullPaths,
+    puszkiInstalacyjneSubCatNames,
+    puszkiInstalacyjneSubCatFullPaths
+} from './routingData';
 
 export const energatabText = {
     overlay: {
@@ -22,7 +41,7 @@ export const energatabText = {
 --------------- used as metadata text in RootLayout or page.js ----------------
 */
 export const layoutText = {
-    title: 'Famatel Polska',
+    title: 'Famatel Polska - profesjonalna elektryka przemysłowa',
     description:
         'Famatel to międzynarodowy producent rozwiązań z zakresu  elektryki przemysłowej z ponad 30-letnim doświadczeniem. Oferujemy wysokiej jakości produkty, takie jak rozdzielnice, gniazda i wtyczki, które spełniają najwyższe standardy bezpieczeństwa i jakości. Dołącz do grona naszych zadowolonych klientów już dziś!',
     keywords: ['elektryka przemysłowa', 'gniazda przemysłowe', 'wtyczki przemysłowe', 'rozdzielnice przemysłowe', 'rozdzielnice', 'ip65', 'ip40'],
@@ -33,148 +52,315 @@ export const layoutText = {
     }
 };
 export const metadataText = {
-    twitter: { title: 'Famatel Polska - nowoczesna elektryka przemysłowa' },
+    //---- social media
+    twitter: { title: 'Famatel Polska - profesjonalna elektryka przemysłowa' },
+
+    //---- for individual pages --- contactPage
     contactPage: {
         title: 'Kontakt',
+        canonical: mainPagesPaths.kontakt,
         desc: 'Skontaktuj się z nami już dziś! Jeśli szukasz rozwiązań z zakresu elektryki przemysłowej i masz jakiekolwiek pytania, podziel się nimi z nami telefonicznie lub mailowo. Jeśli planujesz nas odwiedzić, pamiętaj, że Famatel Polska mieści sie w Bielawie przy ulicy Willowej 5, ale lepszy dojazd jest od ulicy Strażackiej.'
     },
+
+    //---- for individual pages --- produktyPage
     produktyPage: {
-        title: 'Produkty',
-        desc: 'W naszej ofercie znajdziesz profesjonalne rozwiązania z następujących grup produktowych: (1) Przemysłowe wtyczki i gniazda; (2) Gniazda z rozłącznikiem i blokadą; (3) Adaptery przemysłowe; (4) Gniazda podwieszane; (5) Przedłużacze bębnowe; (6) Rozłączniki bezpieczeństwa; (7) Ładowarki samochodowe; (8) Obudowy i rozdzielnice; (9) Rozdzielnice modułowe; (10) Puszki instalacyjne.'
+        canonical: mainPagesPaths.produkty,
+        title: 'Produkty | rozdzielnice | wtyczki | gniazda',
+        desc: 'W naszej ofercie znajdziesz profesjonalne rozwiązania w następujących grupach produktowych: (1) Przemysłowe wtyczki i gniazda; (2) Gniazda z rozłącznikiem i blokadą; (3) Adaptery przemysłowe; (4) Gniazda podwieszane; (5) Przedłużacze bębnowe; (6) Rozłączniki bezpieczeństwa; (7) Ładowarki samochodowe; (8) Obudowy i rozdzielnice; (9) Rozdzielnice modułowe; (10) Puszki instalacyjne.'
     },
+
+    //---- for individual pages --- aktualnosciPage
     aktualnosciPage: {
-        title: 'Aktualności',
+        canonical: mainPagesPaths.aktualnosci,
+        title: 'Aktualności | rozdzielnice | wtyczki | gniazda',
         desc: 'Bieżące informacje na temat naszej oferty.'
     },
+
+    //---- for individual pages --- doPobraniaPage
     doPobraniaPage: {
-        title: 'Materiały do pobrania',
+        canonical: mainPagesPaths.doPobrania,
+        title: 'Materiały do pobrania | rozdzielnice | wtyczki | gniazda',
         desc: 'Obszerna źródło materiałów w formacie PDF. Znajdziesz tutaj nasz aktualny katalog, deklaracje zgodności oraz karty produktów.'
     },
+
+    //---- for individual pages --- notaPrawnaPage
     notaPrawnaPage: {
+        canonical: additionalPagesPath.notaPrawna,
         title: 'Nota Prawna',
         desc: 'Nota Prawna - Famatel Polska sp. z o.o.'
     },
+
+    //---- for nested produktyPage ---
     cat1: {
         title: mainCategoriesNames[0],
-        canonical: mainCategoriesPath[0],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[0]}`,
         desc: 'Szeroki wybór przemysłowych wtyczek i gniazd. Zapraszamy do wyboru spośród następujących podkategorii: (1) wtyczki i gniazda przenośne, (2) wtyczki i gniazda tablicowe, (3) wtyczki i gniazda ścienne, (4) wtyczki i gniazda tablicowe jednofazowe, (5) wtyczki i gniazda jednofazowe, (6) wtyczki i gniazda na bardzo niskie napięcia, (7) wtyczki i gniazda kontenerowe, (8) wtyczki i gniazda estradowe, (8)wtyczki i gniazda campingowe',
-
-        keywords: [
-            'wtyczka',
-            'gniazdo',
-            //___
-            'wtyczki przemysłowe',
-            'gniazda przemysłowe'
-        ],
+        keywords: ['wtyczka', 'gniazdo', 'wtyczki przemysłowe', 'gniazda przemysłowe'],
         subCat1: {
+            title: wtyczkiGniazdaSubCatNames[0],
+            canonical: wtyczkiGniazdaSubCatFullPaths[0],
             description: 'Szeroki wybór przemysłowych wtyczek i gniazd przenośnych',
             keywords: ['przemysłowe wtyczki przenośne', 'przemysłowe gniazda przenośne', 'wtyczka przenośna', 'gniazdo przenośne']
         },
-        subCat7: { description: 'Szeroki wybór wtyczek i gniazd kontenerowych', keywords: ['wtyczki kontenerowe', 'gniazda kontenerowe'] }
+        subCat2: {
+            title: wtyczkiGniazdaSubCatNames[1],
+            canonical: wtyczkiGniazdaSubCatFullPaths[1],
+            description: 'Szeroki wybór wtyczek i gniazd tablicowych',
+            keywords: ['gniazda tablicowe', 'wtyczki tablicowe']
+        },
+        subCat3: {
+            title: wtyczkiGniazdaSubCatNames[2],
+            canonical: wtyczkiGniazdaSubCatFullPaths[2],
+            description: 'Szeroki wybór wtyczek i gniazd ściennych',
+            keywords: ['gniazda ścienne', 'wtyczki ścienne']
+        },
+        subCat4: {
+            title: wtyczkiGniazdaSubCatNames[3],
+            canonical: wtyczkiGniazdaSubCatFullPaths[3],
+            description: 'Szeroki wybór wtyczek i gniazd tablicowych jednofazowych',
+            keywords: ['gniazda tablicowe jednofazowe', 'wtyczki tablicowe jednofazowe']
+        },
+        subCat5: {
+            title: wtyczkiGniazdaSubCatNames[4],
+            canonical: wtyczkiGniazdaSubCatFullPaths[4],
+            description: 'Szeroki wybór wtyczek i gniazd jednofazowych',
+            keywords: ['gniazda jednofazowe', 'gniazda schuko', 'wtyczki jednofazowe', 'wtyczki schuko']
+        },
+        subCat6: {
+            title: wtyczkiGniazdaSubCatNames[5],
+            canonical: wtyczkiGniazdaSubCatFullPaths[5],
+            description: 'Szeroki wybór wtyczek i gniazd na bardzo niskie napięcia',
+            keywords: ['gniazda niskonapięciowe', 'gniazda niskie napięcia', 'wtyczki niskonapięciowe', 'wtyczki niskie napięcia']
+        },
+        subCat7: {
+            title: wtyczkiGniazdaSubCatNames[6],
+            canonical: wtyczkiGniazdaSubCatFullPaths[6],
+            description: 'Szeroki wybór wtyczek i gniazd kontenerowych',
+            keywords: ['gniazda kontenerowe', 'gniazda chłodnicze', 'wtyczki kontenerowe', 'wtyczki chłodnicze']
+        },
+        subCat8: {
+            title: wtyczkiGniazdaSubCatNames[7],
+            canonical: wtyczkiGniazdaSubCatFullPaths[7],
+            description: 'Szeroki wybór wtyczek i gniazd estradowych',
+            keywords: ['gniazda estradowe', 'wtyczki estradowe']
+        },
+        subCat9: {
+            title: wtyczkiGniazdaSubCatNames[8],
+            canonical: wtyczkiGniazdaSubCatFullPaths[8],
+            description: 'Szeroki wybór wtyczek i gniazd kontenerowych',
+            keywords: ['gniazda kontenerowe', 'wtyczki kontenerowe']
+        }
     },
     cat2: {
         title: mainCategoriesNames[1],
-        canonical: mainCategoriesPath[1],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[1]}`,
         desc: 'Szeroki wybór gniazd z rozłącznikiem i blokadą. Zapraszamy do wyboru spośród następujących podkategorii: (1) Gniazda tablicowe z rozłącznikiem i blokadą, (2)Gniazda stałe z rozłącznikiem i blokadą, (3) Gniazda z opcjonalnymi komponentami',
-        keywords: [
-            'gniazda z rozłącznikiem i blokadą',
-            'gniazdo z blokadą',
-            'gniazdo z rozłącznikiem'
-            //     'gniazda z rozłącznikiem',
-            //     'gniazda z blokadą',
-            //     'Gniazda tablicowe z rozłącznikiem i blokadą',
-            //     'Gniazda stałe z rozłącznikiem i blokadą',
-            //     'gniazda tablicowe',
-            //     'gniazda stałe'
-        ]
+        keywords: ['gniazda z rozłącznikiem i blokadą', 'gniazdo z blokadą', 'gniazdo z rozłącznikiem'],
+
+        subCat1: {
+            title: gniazdaZBlokadaSubCatNames[0],
+            canonical: gniazdaZBlokadaSubCatFullPaths[0],
+            description: 'Szeroki wybór gniazd tablicowych z rozłącznikiem i blokadą',
+            keywords: ['gniazdo tablicowe z rozłącznikiem i blokadą']
+        },
+        subCat2: {
+            title: gniazdaZBlokadaSubCatNames[1],
+            canonical: gniazdaZBlokadaSubCatFullPaths[1],
+            description: 'Szeroki wybór gniazd stałych z rozłącznikiem i blokadą',
+            keywords: ['gniazdo stałe z rozłącznikiem i blokadą']
+        },
+        subCat3: {
+            title: gniazdaZBlokadaSubCatNames[2],
+            canonical: gniazdaZBlokadaSubCatFullPaths[2],
+            description: 'Szeroki wybór gniazd komponentowych z rozłącznikiem i blokadą',
+            keywords: ['gniazdo komponentowe z rozłącznikiem i blokadą']
+        },
+        subCat4: {
+            title: gniazdaZBlokadaSubCatNames[3],
+            canonical: gniazdaZBlokadaSubCatFullPaths[3],
+            description: 'Akcesoria do gniazd tablicowych z rozłącznikiem i blokadą',
+            keywords: ['akcesoria']
+        }
     },
     cat3: {
         title: mainCategoriesNames[2],
-        canonical: mainCategoriesPath[2],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[2]}`,
         desc: 'Szeroki wybór adapterów przemysłowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Adaptery przemysłowe Schuko (2) Adaptery wielokrotne przemysłowe, (3) Adaptery wielokrotne przemysłowe z przewodem',
-        keywords: [
-            'adaptery przemysłowe',
-            'adaptery schuko',
-            'adaptery z przewodem'
-            // 'przejściówki przemysłowe',
-            // 'Adaptery przemysłowe Schuko',
-            // 'Adaptery wielokrotne przemysłowe',
-            // 'Adaptery wielokrotne przemysłowe z przewodem'
-        ]
+        keywords: ['adaptery przemysłowe'],
+        subCat1: {
+            title: adapteryPrzemysloweSubCatNames[0],
+            canonical: adapteryPrzemysloweSubCatFullPaths[0],
+            description: 'Szeroki wybór adapterów przemysłowych Schuko',
+            keywords: ['adaptery przemysłowe']
+        },
+        subCat2: {
+            title: adapteryPrzemysloweSubCatNames[1],
+            canonical: adapteryPrzemysloweSubCatFullPaths[1],
+            description: 'Szeroki wybór adapterów wielokrotnych przemysłowych',
+            keywords: ['adaptery wielokrotne przemysłowe']
+        },
+        subCat3: {
+            title: adapteryPrzemysloweSubCatNames[2],
+            canonical: adapteryPrzemysloweSubCatFullPaths[2],
+            description: 'Szeroki wybór adapterów wielokrotnych przemysłowych z przewodem',
+            keywords: ['adaptery wielokrotne przemysłowe z przewodem']
+        }
     },
     cat4: {
         title: mainCategoriesNames[3],
-        canonical: mainCategoriesPath[3],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[3]}`,
         desc: 'Gniazda podwieszane to większa elastyczność w organizacji połączeń sieciowych na liniach produkcyjnych.',
         keywords: ['gniazda podwieszane', 'gniazda na linie produkcyjne', 'gniazda wielostronne']
     },
     cat5: {
         title: mainCategoriesNames[4],
-        canonical: mainCategoriesPath[4],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[4]}`,
         desc: 'Szeroki wybór przedłużaczy bębnowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Przedłużacze bębnowe IP55 z gniazdami Schuko IP67, (2) Przemysłowe przedłużacze bębnowe z gniazdami IP67, (2) Metalowe przemysłowe przedłużacze bębnowe z gniazdami IP67',
-        keywords: ['przedłużacze bębnowe', 'przedłużacze bębnowe Schuko', 'przedłużacze bębnowe IP67', 'przedłużacze przemysłowe IP67', 'przedłużacze metalowe IP67']
+        keywords: ['przedłużacze bębnowe', 'przedłużacze bębnowe Schuko', 'przedłużacze bębnowe IP67', 'przedłużacze przemysłowe IP67', 'przedłużacze metalowe IP67'],
+        subCat1: {
+            title: przedluzaczeBebnoweSubCatNames[0],
+            canonical: przedluzaczeBebnoweSubCatFullPaths[0],
+            description: 'Szeroki wybór przedłużaczy bębnowych IP55 z gniazdami Schuko IP67',
+            keywords: ['przedłużacz bębnowy schuko']
+        },
+        subCat2: {
+            title: przedluzaczeBebnoweSubCatNames[1],
+            canonical: przedluzaczeBebnoweSubCatFullPaths[1],
+            description: 'Szeroki wybór przedłużaczy bębnowych gniazdami IP67',
+            keywords: ['przedłużacz bębnowy IP67']
+        },
+        subCat3: {
+            title: przedluzaczeBebnoweSubCatNames[2],
+            canonical: przedluzaczeBebnoweSubCatFullPaths[2],
+            description: 'Szeroki wybór metalowych przedłużaczy bębnowych z gniazdami IP67',
+            keywords: ['metalowy przedłużacz bębnowy']
+        }
     },
     cat6: {
         title: mainCategoriesNames[5],
-        canonical: mainCategoriesPath[5],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[5]}`,
         desc: 'Rozłączniki bezpieczeństwa o wysokich standardach technicznych i estetycznych',
         keywords: ['rozłączniki bezpieczeństwa', 'Rozłączniki bezpieczeństwa dla gastronomii']
     },
     cat7: {
         title: mainCategoriesNames[6],
-        canonical: mainCategoriesPath[6],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[6]}`,
         desc: 'Nowoczesne ładowarki samochodowe do ewszechstronnego zastosowania',
         keywords: ['ładowarki', 'Ładowarki samochodowe', 'Ekologiczne ładowarki samochodowe']
     },
     cat8: {
         title: mainCategoriesNames[7],
-        canonical: mainCategoriesPath[7],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[7]}`,
         desc: 'Szeroki wybór obudów i rozdzielnic przemysłowych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Obudowy puste, (2) Rozdzielnice przemysłowe, (3) Obudowy gumowe',
-        keywords: ['obudowa', 'rozdzielnice', 'Obudowy puste', 'Rozdzielnice przemysłowe', 'Obudowy gumowe']
+        keywords: ['obudowa', 'rozdzielnice'],
+        subCat1: {
+            title: obudowyAndRozdzielniceSubCatNames[0],
+            canonical: obudowyAndRozdzielniceSubCatFullPaths[0],
+            description: 'Szeroki wybór obudów pustych',
+            keywords: ['obudowy puste']
+        },
+        subCat2: {
+            title: obudowyAndRozdzielniceSubCatNames[1],
+            canonical: obudowyAndRozdzielniceSubCatFullPaths[1],
+            description: 'Szeroki wybór rozdzielnic przemysłowych',
+            keywords: ['rozdzielnice przemysłowe']
+        },
+        subCat3: {
+            title: obudowyAndRozdzielniceSubCatNames[2],
+            canonical: obudowyAndRozdzielniceSubCatFullPaths[2],
+            description: 'Szeroki wybór obudów gumowych',
+            keywords: ['obudowy gumowe, rozdzielnice przemysłowe gumowe']
+        },
+        subCat4: {
+            title: obudowyAndRozdzielniceSubCatNames[3],
+            canonical: obudowyAndRozdzielniceSubCatFullPaths[3],
+            description: 'Akcesoria do obudów i rozdzielnic',
+            keywords: ['akcesoria do obudów', 'akcesoria do rozdzielnic']
+        }
     },
     cat9: {
         title: mainCategoriesNames[8],
-        canonical: mainCategoriesPath[8],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[8]}`,
         desc: 'Szeroki wybór rozdzielnic. Zapraszamy do wyboru spośród następujących podkategorii: (1) Rozdzielnice ścienne IP65, (2) Rozdzielnice modułowe IP65, (3) Rozdzielnice modułowe Nuova IP40, (4) Rozdzielnice modułowe Nuova + IP40, (5) Rozdzielnice modułowe Vita IP40, (6) Rozdzielnice modułowe ścienne ICP, (7) Rozdzielnice modułowe metalowe IP40, (8) Rozdzielnice modułowe metalowe ICT',
-        keywords: [
-            'rozdzielnica',
-            'rozdzielnice',
-            'rozdzielnice modułowe',
-            'rozdzielnica ict',
-            'rozdzielnica ścienna'
-            // 'rozdzielnice modułowe',
-            // 'rozdzielnice IP65',
-            // 'rozdzielnice IP40',
-            // 'rozdzielnice icp',
-            // 'rozdzielnice metalowa',
-            // 'Rozdzielnice ścienne',
-            // 'Rozdzielnice modułowe IP65',
-            // 'Rozdzielnice modułowe Nuova IP40',
-            // 'Nuova IP40',
-            // 'Rozdzielnice modułowe Nuova + IP40',
-            // 'Nuova + IP40',
-            // 'Rozdzielnice modułowe Vita IP40',
-            // 'Vita IP40',
-            // 'Rozdzielnice modułowe ścienne ICP',
-            // 'Rozdzielnice modułowe metalowe IP40',
-            // 'Rozdzielnice modułowe metalowe ICT',
-            // 'Akcesoria do rozdzielnic'
-        ]
+        keywords: ['rozdzielnica modułowa', 'rozdzielnice modułowe'],
+        subCat1: {
+            title: rozdzielniceModuloweSubCatNames[0],
+            canonical: rozdzielniceModuloweSubCatFullPaths[0],
+            description: 'Szeroki wybór rozdzielnic ściennych IP65',
+            keywords: ['rozdzielnica ścienna ip65']
+        },
+        subCat2: {
+            title: rozdzielniceModuloweSubCatNames[1],
+            canonical: rozdzielniceModuloweSubCatFullPaths[1],
+            description: 'Szeroki wybór rozdzielnic modułowych IP65',
+            keywords: ['rozdzielnica modułowa ip65']
+        },
+        subCat3: {
+            title: rozdzielniceModuloweSubCatNames[2],
+            canonical: rozdzielniceModuloweSubCatFullPaths[2],
+            description: 'Szeroki wybór rozdzielnic modułowych IP40 z kolekcji Nuova',
+            keywords: ['rozdzielnica modułowa ip40', 'rozdzielnica Nuova']
+        },
+        subCat4: {
+            title: rozdzielniceModuloweSubCatNames[3],
+            canonical: rozdzielniceModuloweSubCatFullPaths[3],
+            description: 'Szeroki wybór rozdzielnic modułowych IP40 z kolekcji Nuova+',
+            keywords: ['rozdzielnica modułowa ip40', 'rozdzielnica Nuova+']
+        },
+        subCat5: {
+            title: rozdzielniceModuloweSubCatNames[4],
+            canonical: rozdzielniceModuloweSubCatFullPaths[4],
+            description: 'Szeroki wybór rozdzielnic modułowych IP40 z kolekcji Vita',
+            keywords: ['rozdzielnica modułowa ip40', 'rozdzielnica Vita']
+        },
+        subCat6: {
+            title: rozdzielniceModuloweSubCatNames[5],
+            canonical: rozdzielniceModuloweSubCatFullPaths[5],
+            description: 'Szeroki wybór rozdzielnic modułowych ściennych ICP',
+            keywords: ['rozdzielnica modułowa ścienna ICP', 'rozdzielnica ICP']
+        },
+        subCat7: {
+            title: rozdzielniceModuloweSubCatNames[6],
+            canonical: rozdzielniceModuloweSubCatFullPaths[6],
+            description: 'Szeroki wybór metalowych rozdzielnic modułowych ściennych ICP',
+            keywords: ['metalowa rozdzielnica modułowa ścienna ICP', 'metalowa rozdzielnica ICP']
+        },
+        subCat8: {
+            title: rozdzielniceModuloweSubCatNames[7],
+            canonical: rozdzielniceModuloweSubCatFullPaths[7],
+            description: 'Szeroki wybór rozdzielnic modułowych metalowych ICT',
+            keywords: ['rozdzielnica modułowa metalowych ICT', 'rozdzielnica metalowa ICT']
+        },
+        subCat9: {
+            title: rozdzielniceModuloweSubCatNames[8],
+            canonical: rozdzielniceModuloweSubCatFullPaths[8],
+            description: 'Akcesoria do rozdzielnic modułowych',
+            keywords: ['akcesoria do rozdzielnic modułowych']
+        }
     },
     cat10: {
         title: mainCategoriesNames[9],
-        canonical: mainCategoriesPath[9],
+        canonical: `${mainPagesPaths.produkty}/${mainCategoriesPath[9]}`,
         desc: 'Szeroki wybór puszek instalacyjnych. Zapraszamy do wyboru spośród następujących podkategorii: (1) Puszki instalacyjne zamykane IP55 IP65, (2) Puszki instalacyjne drywall, (3) Puszki instalacyjne osadzone',
-        keywords: [
-            'puszki instalacyjne',
-            'puszki ip65',
-            'puszki ip55',
-            'puszki zamykane',
-            'puszki osadzone'
-            // 'Puszki instalacyjne zamykane IP55 IP65',
-            // 'Puszki instalacyjne drywall',
-            // 'Puszki instalacyjne osadzone'
-        ]
+        keywords: ['puszki instalacyjne', 'puszki ip65', 'puszki ip55'],
+        subCat1: {
+            title: puszkiInstalacyjneSubCatNames[0],
+            canonical: puszkiInstalacyjneSubCatFullPaths[0],
+            description: 'Szeroki wybór puszek instalacyjnych zamykanych',
+            keywords: ['puszki instalacyjne zamykane']
+        },
+        subCat2: {
+            title: puszkiInstalacyjneSubCatNames[1],
+            canonical: puszkiInstalacyjneSubCatFullPaths[1],
+            description: 'Szeroki wybór puszek instalacyjnych zamykanych',
+            keywords: ['puszki instalacyjne zamykane']
+        },
+        subCat3: {
+            title: puszkiInstalacyjneSubCatNames[2],
+            canonical: puszkiInstalacyjneSubCatFullPaths[2],
+            description: 'Szeroki wybór puszek instalacyjnych zamykanych',
+            keywords: ['puszki instalacyjne zamykane']
+        }
     }
 };
 

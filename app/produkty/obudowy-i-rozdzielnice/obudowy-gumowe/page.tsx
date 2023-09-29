@@ -9,26 +9,24 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-  title: metadataText.cat8.title,
-  description: metadataText.cat8.desc,
-  keywords: metadataText.cat8.keywords,
+    title: { absolute: metadataText.cat8.subCat3.title },
+    description: metadataText.cat8.subCat3.description,
+    keywords: metadataText.cat8.subCat3.keywords,
+    alternates: {
+        canonical: metadataText.cat8.subCat3.canonical
+    }
 };
 
 const RozdzielniceGumowePage = () => {
-  /**Specify SubCat Index**/
-  const subCatPath = catalogStructureData[7].subCategoriesPaths[2];
-  const subCatIndex = catalogStructureData[7].subCategoriesPaths.findIndex(
-    el => el === subCatPath
-  );
-  /**JSX**/
-  return (
-    <div className="flex flex-col w-full fc">
-      <SubCatPageContent
-        mainCatIndex={catalogStructureData[7].mainCategoryIndex}
-        subCatIndex={subCatIndex}
-      />
-    </div>
-  );
+    /**Specify SubCat Index**/
+    const subCatPath = catalogStructureData[7].subCategoriesPaths[2];
+    const subCatIndex = catalogStructureData[7].subCategoriesPaths.findIndex((el) => el === subCatPath);
+    /**JSX**/
+    return (
+        <div className="flex flex-col w-full fc">
+            <SubCatPageContent mainCatIndex={catalogStructureData[7].mainCategoryIndex} subCatIndex={subCatIndex} />
+        </div>
+    );
 };
 
 export default RozdzielniceGumowePage;

@@ -7,23 +7,18 @@ import { metadataText } from '@/data/textData';
 
 /**...**/
 export const metadata: Metadata = {
-  title: { absolute: metadataText.aktualnosciPage.title },
-  description: metadataText.aktualnosciPage.desc,
-  icons: {
-    icon: {
-      url: '/favicon.ico',
-      type: 'image/x-icon',
-    },
-    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  },
+    title: { absolute: metadataText.aktualnosciPage.title },
+    description: metadataText.aktualnosciPage.desc,
+    alternates: {
+        canonical: metadataText.aktualnosciPage.canonical
+    }
 };
 
 export default function AktualnosciPage() {
-  /**JSX**/
-  return (
-    // <MainWrapper>
-    <AktualnosciPageContent />
-    // </MainWrapper>
-  );
+    /**JSX**/
+    return (
+        // <MainWrapper>
+        <AktualnosciPageContent />
+        // </MainWrapper>
+    );
 }

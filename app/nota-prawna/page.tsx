@@ -4,27 +4,18 @@ import NotaPrawnaContent from '@/components/forSinglePage/10_NotaPrawna/NotaPraw
 import { metadataText } from '@/data/textData';
 
 export const metadata = {
-  title: { absolute: metadataText.notaPrawnaPage.title },
-  description: metadataText.notaPrawnaPage.desc,
-  icons: {
-    // icon: {
-    //   url: '/favicon-32x32.png',
-    //   type: 'image/png',
-    // },
-    icon: {
-      url: '/favicon.ico',
-      type: 'image/x-icon',
-    },
-    shortcut: { url: '/apple-touch-icon.png', type: 'image/png' },
-    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
-  },
+    title: { absolute: metadataText.notaPrawnaPage.title },
+    description: metadataText.notaPrawnaPage.desc,
+    alternates: {
+        canonical: metadataText.notaPrawnaPage.canonical
+    }
 };
 
 export default function NotaPrawnaPage() {
-  /**JSX**/
-  return (
-    // <MainWrapper>
-    <NotaPrawnaContent />
-    // </MainWrapper>
-  );
+    /**JSX**/
+    return (
+        // <MainWrapper>
+        <NotaPrawnaContent />
+        // </MainWrapper>
+    );
 }

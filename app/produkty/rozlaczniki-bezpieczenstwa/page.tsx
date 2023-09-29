@@ -8,7 +8,7 @@ import { metadataText } from '@/data/textData';
 ___CEO section
 */
 export const metadata: Metadata = {
-    title: metadataText.cat6.title,
+    title: { absolute: metadataText.cat6.title },
     description: metadataText.cat6.desc,
     keywords: metadataText.cat6.keywords,
     alternates: {
