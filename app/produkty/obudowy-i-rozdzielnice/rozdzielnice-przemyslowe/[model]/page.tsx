@@ -1,51 +1,40 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 // import { notFound } from 'next/navigation';
 /**Comoponenst**/
 import ModelPageContent from '@/components/nestedPagesModels/ModelPageContent';
 /**Basic Data**/
 import { metadataText } from '@/data/textData';
-// import { catalogStructureData } from '@/data/catalogStructureData';
-// import { mainCategoriesPath } from '@/data/routingData';
-
-// export const dynamicParams = false;
-// export async function generateStaticParams() {
-//   return mainCategoriesPath.map((mainCatPath, mainCatIndex) => {
-//     return catalogStructureData[mainCatIndex].subCategoriesPaths.map(
-//       subCatPath => ({
-//         cat: mainCatPath,
-//         subCat: subCatPath,
-//       })
-//     );
-//   });
-// }
-
-// interface Props {
-//   params: {
-//     cat: string;
-//     subCat: string;
-//     model: string;
-//   };
-// }
-
-/*
-___CEO section
-*/
-export const metadata: Metadata = {
-  title: metadataText.cat8.title,
-  description: metadataText.cat8.desc,
-  keywords: metadataText.cat8.keywords,
+import { cat8_allModelsCard_data } from '@/data/modelsData/cat_8_obudowy-i-rozdzielnice/cat8_allModelsCard_data';
+type Props = {
+    params: { model: string };
 };
 
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+    const model = params.model;
+
+    const matchingObject = cat8_allModelsCard_data[1].find((item) => item.modelPathSegmant === model)?.model;
+    console.log('...matchingObject', matchingObject);
+    //---
+    return {
+        title: { absolute: matchingObject as string },
+        description: model,
+        keywords: model,
+        alternates: {
+            canonical: `${metadataText.cat8.subCat2.canonical}/${model}`
+        }
+    };
+}
+
 export default function ObudowyPrzemyslowePage() {
-  /**JSX**/
-  return (
-    <div className="flex flex-col w-full fc">
-      <ModelPageContent />
-      {/* <div className="h-[50vh] fc">
+    /**JSX**/
+    return (
+        <div className="flex flex-col w-full fc">
+            <ModelPageContent />
+            {/* <div className="h-[50vh] fc">
         <p>{params.model}</p>
       </div> */}
-    </div>
-  );
+        </div>
+    );
 }
 
 //_______________________________________________________________
