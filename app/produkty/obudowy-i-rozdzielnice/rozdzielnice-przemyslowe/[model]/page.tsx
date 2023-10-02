@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     //---
     return {
         title: { absolute: matchingObject as string },
-        description: model,
-        keywords: model,
+        description: `Rozdzielnica przemysłowa | ${model}`,
+        keywords: 'Rozdzielnica przemysłowa',
         alternates: {
             canonical: `${metadataText.cat8.subCat2.canonical}/${model}`
         }

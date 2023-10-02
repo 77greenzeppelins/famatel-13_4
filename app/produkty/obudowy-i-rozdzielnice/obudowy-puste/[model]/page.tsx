@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     return {
         title: { absolute: matchingObject as string },
         description: model,
-        keywords: model,
+        keywords: ['obudowy gumowe', 'rozdzielnice gumowe'],
         alternates: {
             canonical: `${metadataText.cat8.subCat1.canonical}/${model}`
         }
