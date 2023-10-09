@@ -17,7 +17,7 @@ const GraphicSection = () => {
                 // priority
                 fill={true}
                 sizes="(min-width: 1800px) 900px, (min-width: 1280px) 780px, (min-width: 1040px) 650px, (min-width: 780px) 550px, 100vw"
-                className="object-cover w-full h-full aspect-square"
+                className="object-cover w-full h-full "
             />
             <div className="absolute hidden xs3xx:flex bottom-[10%] right-[25%] h-[70%] w-[70%]">
                 <Sniper isHovered={true} />

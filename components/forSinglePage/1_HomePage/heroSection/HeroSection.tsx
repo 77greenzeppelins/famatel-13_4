@@ -14,7 +14,7 @@ const HeroSection = () => {
     /**JSX**/
     return (
         <div data-component="HeroSection" className={`relative w-full min-h-screen h-full ${containerAsFlex} ${containerAsGrid}  ${styles.heroSectionOffset}`}>
-            <div className={`relative oversize-hidden ${graphicAsFlex} ${graphicAsGrid} -z-1 bg-black`}>
+            <div className={`relative oversize-hidden aspect-square ${graphicAsFlex} ${graphicAsGrid} -z-1 bg-black`}>
                 <GraphicSection />
             </div>
             <div className={`${textAsFlex} ${textAsGrid} w-full z-1`}>
