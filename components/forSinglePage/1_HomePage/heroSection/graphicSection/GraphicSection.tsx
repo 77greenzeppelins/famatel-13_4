@@ -7,20 +7,17 @@ import PseudoTechPanel from './pseudoTechPanel/PseudoTechPanel';
 const GraphicSection = () => {
     /**JSX**/
     return (
-        <
-            // className="relative flex justify-end w-full h-full max-width-[1200px] max-height-[1200px] min-width-[260px] min-height-[260px] overflow-hidden bg-black"
-        >
+        <>
             <Image
-                // className="aspect-square"
                 alt={dirtyPlugImage.alt}
                 src={dirtyPlugImage.path}
+                // className="aspect-square"
                 // width={dirtyPlugImage.width}
                 // height={dirtyPlugImage.height}
                 // priority
                 fill={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(min-width: 1800px) 900px, (min-width: 1280px) 780px, (min-width: 1040px) 650px, (min-width: 780px) 550px, 100vw"
                 className="object-cover w-full h-full aspect-square"
-                // fill // intrinsic|fixed|responsive|fill allowed;  fill your parent
             />
             <div className="absolute hidden xs3xx:flex bottom-[10%] right-[25%] h-[70%] w-[70%]">
                 <Sniper isHovered={true} />
@@ -32,3 +29,5 @@ const GraphicSection = () => {
 };
 
 export default GraphicSection;
+
+// className="relative flex justify-end w-full h-full max-width-[1200px] max-height-[1200px] min-width-[260px] min-height-[260px] overflow-hidden bg-black"
