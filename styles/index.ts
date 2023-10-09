@@ -1,144 +1,132 @@
 export const styles = {
-  /*
+    /*
   ___some general settings
   */
-  headerHeight: 'h-[64px] lg:h-[78px]',
-  heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
-  heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
-  fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
-  basicHeaderText: 'label-regular text-grey', //___align-middle leading-none
-  largeHeaderText: 'text-large text-light',
-  largeHeaderOrnamentStyle: 'border-l-[2px] pl-6',
-  basicHeaderBoxStyle: 'w-[10px] h-[10px] aspect-square bg-corpo',
-  basicAnimation: 'duration-300 delay-100 ease-in',
-  lazyAnimation: 'duration-[0.6s] delay-100 ease-in',
-  nestedAnimation: 'duration-300 ease-linear', //__used when pathName is at least on products cat level
+    headerHeight: 'h-[64px] lg:h-[78px]',
+    heroSectionOffset: 'pb-[64px] lg:pb-[78px]',
+    heroSectionContainer: `relative flex items-center justify-center min-h-screen pb-[64px] lg:pb-[78px] before:absolute before:h-full before:left-0 before:w-[5%] before:max-w-[40px] before:bg-gradient-to-r before:from-dark before:to-transparent before:z-10 after:absolute after:h-full after:right-0 after:w-[5%] after:max-w-[40px] after:bg-gradient-to-l after:from-dark after:to-transparent`,
+    fixedOverlayOffset: 'top-[64px] lg:top-[78px]',
+    basicHeaderText: 'label-regular text-grey', //___align-middle leading-none
+    largeHeaderText: 'text-large text-light',
+    largeHeaderOrnamentStyle: 'border-l-[2px] pl-6',
+    basicHeaderBoxStyle: 'w-[10px] h-[10px] aspect-square bg-corpo',
+    basicAnimation: 'duration-300 delay-100 ease-in',
+    lazyAnimation: 'duration-[0.6s] delay-100 ease-in',
+    nestedAnimation: 'duration-300 ease-linear', //__used when pathName is at least on products cat level
 
-  /*
+    /*
   ___footer settings
   */
-  footer: {
-    dirContacts: {
-      linkContainer: 'flex items-center gap-6 group no-sparkling w-fit',
-      label:
-        'text-small text-left text-dark font-bold group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
-      iconTrans:
-        'h-4 w-4 text-light group-hover:text-dark group-hover:translate-x-1 ease-in duration-300  origin-center',
+    footer: {
+        dirContacts: {
+            linkContainer: 'flex items-center gap-6 group no-sparkling w-fit',
+            label: 'text-small text-left text-dark font-bold group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
+            iconTrans: 'h-4 w-4 text-light group-hover:text-dark group-hover:translate-x-1 ease-in duration-300  origin-center'
+        },
+        address: {
+            label: 'text-small text-left text-dark font-bold ',
+            icon: 'h-4 w-4 text-light' // animate-pulse glow
+        }
     },
-    address: {
-      label: 'text-small text-left text-dark font-bold ',
-      icon: 'h-4 w-4 text-light', // animate-pulse glow
-    },
-  },
-  /*
+    /*
   used in: ProductsSearchEngine |  
   */
-  productsSearchEngine: {
-    rowContainer:
-      'flex flex-col w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row',
-    leftPart: 'flex justify-center w-full sm:w-[300px] sm:justify-start ',
-    rightPart: 'flex min-w-[200px]',
-  },
-  /*
+    productsSearchEngine: {
+        rowContainer: 'flex flex-col w-full gap-y-6 sm:gap-y-0 sm:gap-x-10 sm:flex-row',
+        leftPart: 'flex justify-center w-full sm:w-[300px] sm:justify-start ',
+        rightPart: 'flex min-w-[200px]'
+    },
+    /*
   used in: oFirmiePage | HeroSection ==> as concept of hero with image and text that starts as flex and ends as grid (to avoid absolute position)
   */
-  mainHeroSection: {
-    containerAsFlex: 'flex flex-col-reverse',
-    containerAsGrid: 'md:grid',
-    graphicAsFlex: 'flex items-center w-full pl-2 xs:pl-8 min-h-[60vh]',
-    graphicAsGrid:
-      'md:col-span-full md:row-span-full md:justify-self-end md:self-end xl:self-center  md:max-w-[550px] lg:max-w-[650px] xl:max-w-[780px] xxxl:max-w-[900px]',
-    textAsFlex: 'flex justify-end items-end min-h-[40vh]',
-    textAsGrid:
-      'md:h-[50vh] min-h-[450px] xl:min-h-[550px] md:col-span-full md:row-span-full md:self-start   ',
-  },
-  /*
+    mainHeroSection: {
+        containerAsFlex: 'flex flex-col-reverse items-end',
+        containerAsGrid: 'lg:grid ',
+        // graphicAsFlex: ' w-full ',
+        // graphicAsFlex: 'flex items-center pl-2 xs:pl-8 max-w-[90vw]',
+
+        graphicAsGrid: 'w-[90%] md:w-full grid md:col-span-full md:row-span-full justify-self-end md:self-end xl:self-center  md:max-w-[700px] lg:max-w-[620px] xl:max-w-[720px] xxxl:max-w-[900px]',
+        textAsFlex: 'flex justify-end items-end min-h-[40vh]',
+        textAsGrid: 'md:h-[50vh] min-h-[450px] xl:min-h-[550px] md:col-span-full md:row-span-full md:self-start   '
+    },
+    /*
   ___used in: kontaktPage | mapModules
   */
-  mapModule: {
-    container: 'grid justify-items-center',
-    background:
-      'abs-cell aspect-square min-h-[300px] xs:min-h-[400px] max-h-[600px] special-gradient -z-1 scale-[0.99] rotate-180',
-    foreground:
-      'abs-cell w-full min-h-[300px] xs:min-h-[400px] max-h-[600px] z-1 scale-100',
-  },
-  /*
+    mapModule: {
+        container: 'grid justify-items-center',
+        background: 'abs-cell aspect-square min-h-[300px] xs:min-h-[400px] max-h-[600px] special-gradient -z-1 scale-[0.99] rotate-180',
+        foreground: 'abs-cell w-full min-h-[300px] xs:min-h-[400px] max-h-[600px] z-1 scale-100'
+    },
+    /*
   used as: default settings in each instance of InViewCSSAnimatedContent if not custom settings available
   */
-  inViewContentContainer: {
-    visible: 'translate-x-0  scale-100 opacity-1',
-    invisible: 'translate-x-4  scale-50 opacity-0',
-    containerStyle: 'fc duration-[0.9s] delay-[0.6] disable-soft',
-  },
+    inViewContentContainer: {
+        visible: 'translate-x-0  scale-100 opacity-1',
+        invisible: 'translate-x-4  scale-50 opacity-0',
+        containerStyle: 'fc duration-[0.9s] delay-[0.6] disable-soft'
+    },
 
-  inViewContentSubtleSide: {
-    visible: 'translate-x-0 translate-y-0 opacity-1',
-    invisibleFromRightBottom: 'translate-x-4 translate-y-4 opacity-0',
-    invisibleFromLeftBottom: '-translate-x-4 translate-y-4 opacity-0',
-    containerStyle: 'duration-[0.9s] delay-[0.6] disable-soft',
-  },
+    inViewContentSubtleSide: {
+        visible: 'translate-x-0 translate-y-0 opacity-1',
+        invisibleFromRightBottom: 'translate-x-4 translate-y-4 opacity-0',
+        invisibleFromLeftBottom: '-translate-x-4 translate-y-4 opacity-0',
+        containerStyle: 'duration-[0.9s] delay-[0.6] disable-soft'
+    },
 
-  /*
+    /*
   used as: params for <InVievCssAnimatedContent>
   used in: homePage | NumberTextModule 
   */
-  numberTextModule: {
-    visible: 'translate-x-0 rotate-0 scale-100 opacity-1',
-    invisible: 'translate-x-4 rotate-12 scale-50 opacity-0',
-    containerStyle:
-      'fc flex-col duration-[0.9s] delay-[0.6] p-2 disable-soft w-[80px] h-[80px] md:w-[120px] md:h-[120px] aspect-square origin-bottom-left',
-  },
-  /*
+    numberTextModule: {
+        visible: 'translate-x-0 rotate-0 scale-100 opacity-1',
+        invisible: 'translate-x-4 rotate-12 scale-50 opacity-0',
+        containerStyle: 'fc flex-col duration-[0.9s] delay-[0.6] p-2 disable-soft w-[80px] h-[80px] md:w-[120px] md:h-[120px] aspect-square origin-bottom-left'
+    },
+    /*
   ___used in: 
   */
-  cardFrameStyle: {
-    outerContainerStyle:
-      'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black  duration-300 delay-100 ease-in',
-    innerContainerStyle: 'relative fc w-full h-full rounded-md  bg-dark',
-    //___pointer-events-none
-  },
-  /*
+    cardFrameStyle: {
+        outerContainerStyle: 'absolute inset-0 bg-[#111110] blur-[4px] hover:bg-black  duration-300 delay-100 ease-in',
+        innerContainerStyle: 'relative fc w-full h-full rounded-md  bg-dark'
+        //___pointer-events-none
+    },
+    /*
   ___used in: CardFrameGrid; the idea is to use grid as general layout + give the frame its individual group name ==> this allows to nest groups...
   */
-  cardFrameGridStyle: {
-    outerContainerStyle:
-      'relative col-span-full row-span-full -z-1 bg-[#111110] blur-[4px] group-hover/frame:bg-black duration-300 delay-100 ease-in',
-    innerContainerStyle:
-      'relative col-span-full row-span-full fc w-full h-full rounded-md bg-dark z-1',
-  },
-  /*
+    cardFrameGridStyle: {
+        outerContainerStyle: 'relative col-span-full row-span-full -z-1 bg-[#111110] blur-[4px] group-hover/frame:bg-black duration-300 delay-100 ease-in',
+        innerContainerStyle: 'relative col-span-full row-span-full fc w-full h-full rounded-md bg-dark z-1'
+    },
+    /*
   ___Page ===> produkty
   */
-  produktyPageStyles: {
-    marqueeContainer: 'gap-8', // 8 = 32px
-    svgContainerSizes: 'w-[50px] h-[50px]', //value associated with: basicData / doPobraniaPageData
-  },
-  /*
+    produktyPageStyles: {
+        marqueeContainer: 'gap-8', // 8 = 32px
+        svgContainerSizes: 'w-[50px] h-[50px]' //value associated with: basicData / doPobraniaPageData
+    },
+    /*
   ___Page ===> doPobrania 
   */
-  doPobraniaPageStyles: {
-    svgMaxHeight: 'max-h-[540px]',
-    svgContainerSizes: 'w-[220px] h-[220px]', //value associated with: basicData / doPobraniaPageData
-  },
-  /*
+    doPobraniaPageStyles: {
+        svgMaxHeight: 'max-h-[540px]',
+        svgContainerSizes: 'w-[220px] h-[220px]' //value associated with: basicData / doPobraniaPageData
+    },
+    /*
   ___Page ===> kontak 
   */
-  kontaktPageStyles: {
-    svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
-    sectionContainerStyle:
-      'flex flex-col w-full gap-y-14 lg:gap-y-0 lg:items-center lg:justify-start lg:flex-row wrapper-2 ',
-    textBlock: 'flex flex-col w-full gap-y-10 lg:gap-y-16',
-    container: 'flex flex-col justify-center gap-y-4 no-sparkling w-fit',
-    label:
-      'text-basic text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
-    iconTrans:
-      'h-6 w-6 text-light group-hover:text-corpo group-hover:translate-x-1 ease-in duration-300  origin-center',
-  },
+    kontaktPageStyles: {
+        svgContainerSizes: 'w-[140px] h-[140px]', //value associated with: basicData / kontaktPageData
+        sectionContainerStyle: 'flex flex-col w-full gap-y-14 lg:gap-y-0 lg:items-center lg:justify-start lg:flex-row wrapper-2 ',
+        textBlock: 'flex flex-col w-full gap-y-10 lg:gap-y-16',
+        container: 'flex flex-col justify-center gap-y-4 no-sparkling w-fit',
+        label: 'text-basic text-left text-grey group-hover:text-light group-hover:font-light duration-[0.3s] delay-[0.1s] ease-in',
+        iconTrans: 'h-6 w-6 text-light group-hover:text-corpo group-hover:translate-x-1 ease-in duration-300  origin-center'
+    },
 
-  tableStyles: {
-    cellPaddings: 'px-6 py-3',
-    cellMinWidth1: 'w-[109px]',
-  },
+    tableStyles: {
+        cellPaddings: 'px-6 py-3',
+        cellMinWidth1: 'w-[109px]'
+    }
 };
 
 /*
