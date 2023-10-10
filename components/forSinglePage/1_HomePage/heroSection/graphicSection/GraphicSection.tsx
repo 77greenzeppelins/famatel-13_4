@@ -7,7 +7,9 @@ import PseudoTechPanel from './pseudoTechPanel/PseudoTechPanel';
 const GraphicSection = () => {
     /**JSX**/
     return (
-        <>
+        <div
+            className={`relative oversize-hidden aspect-square w-[90%] md:w-full grid md:col-span-full md:row-span-full justify-self-end md:self-end xl:self-center md:max-w-[700px] lg:max-w-[620px] xl:max-w-[720px] xxxl:max-w-[900px] -z-1`}
+        >
             <Image
                 alt={dirtyPlugImage.alt}
                 src={dirtyPlugImage.path}
@@ -24,7 +26,7 @@ const GraphicSection = () => {
                 <PseudoTechPanel />
             </div>
             <ScrollPrompt />
-        </>
+        </div>
     );
 };
 

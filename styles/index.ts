@@ -46,7 +46,7 @@ export const styles = {
         // graphicAsFlex: 'flex items-center pl-2 xs:pl-8 max-w-[90vw]',
 
         graphicAsGrid: 'w-[90%] md:w-full grid md:col-span-full md:row-span-full justify-self-end md:self-end xl:self-center  md:max-w-[700px] lg:max-w-[620px] xl:max-w-[720px] xxxl:max-w-[900px]',
-        textAsFlex: 'flex justify-end items-end min-h-[40vh]',
+        textAsFlex: 'flex justify-end items-end pt-[100px] min-h-[30vh]  sm:min-h-[40vh]',
         textAsGrid: 'md:h-[50vh] min-h-[450px] xl:min-h-[550px] md:col-span-full md:row-span-full md:self-start   '
     },
     /*

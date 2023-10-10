@@ -9,14 +9,12 @@ import { styles } from '@/styles';
 const HeroSection = () => {
     /**Data De...**/
     const {
-        mainHeroSection: { containerAsFlex, containerAsGrid, graphicAsGrid, textAsFlex, textAsGrid }
+        mainHeroSection: { containerAsFlex, containerAsGrid, textAsFlex, textAsGrid }
     } = styles;
     /**JSX**/
     return (
-        <div data-component="HeroSection" className={`relative w-full min-h-screen h-full ${containerAsFlex} ${containerAsGrid}  ${styles.heroSectionOffset}`}>
-            <div className={`relative oversize-hidden aspect-square  ${graphicAsGrid} -z-1`}>
-                <GraphicSection />
-            </div>
+        <div data-component="HeroSection" className={`relative w-full md:min-h-screen h-full ${containerAsFlex} ${containerAsGrid}  ${styles.heroSectionOffset}`}>
+            <GraphicSection />
             <div className={`${textAsFlex} ${textAsGrid} w-full z-1`}>
                 <div className="w-full wrapper-1-l">
                     <TextSection />
