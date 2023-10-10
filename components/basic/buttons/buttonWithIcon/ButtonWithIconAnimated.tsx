@@ -37,9 +37,6 @@ const ButtonWithIconAnimated = ({ children, stateSetter, containerStyle, ariaLab
                 // aria-expanded={condition ? 'true' : 'false'}
                 onClick={onClickHandler}
                 className={`w-6 h-6 origin-center focus:outline-none disable focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark focus-visible:ring-corpo  `}
-                //___${containerStyle}
-                //___focus-visible:ring-2 focus-visible:ring-blue-500
-                //___focus-visible:ring focus-visible:ring-offset-2 ring-offset-dark
             >
                 {children}
             </button>
