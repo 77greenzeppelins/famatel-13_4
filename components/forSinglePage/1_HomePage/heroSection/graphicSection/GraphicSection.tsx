@@ -10,7 +10,7 @@ const GraphicSection = () => {
         <div
             className={`relative oversize-hidden aspect-square w-[90%] md:w-full grid md:col-span-full md:row-span-full justify-self-end md:self-end xl:self-center md:max-w-[700px] lg:max-w-[620px] xl:max-w-[720px] xxxl:max-w-[900px] -z-1`}
         >
-            <Image
+            {/* <Image
                 alt={dirtyPlugImage.alt}
                 src={dirtyPlugImage.path}
                 // className="aspect-square"
@@ -20,7 +20,7 @@ const GraphicSection = () => {
                 fill={true}
                 sizes="(min-width: 1800px) 900px, (min-width: 1280px) 780px, (min-width: 1040px) 650px, (min-width: 780px) 550px, 100vw"
                 className="object-cover w-full h-full "
-            />
+            /> */}
             <div className="absolute hidden xs3xx:flex bottom-[10%] right-[25%] h-[70%] w-[70%]">
                 <Sniper isHovered={true} />
                 <PseudoTechPanel />
