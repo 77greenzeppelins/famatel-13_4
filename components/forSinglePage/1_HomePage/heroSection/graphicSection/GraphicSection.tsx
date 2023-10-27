@@ -16,7 +16,7 @@ const GraphicSection = () => {
                 // className="aspect-square"
                 // width={dirtyPlugImage.width}
                 // height={dirtyPlugImage.height}
-                // priority
+                priority
                 fill={true}
                 sizes="(min-width: 1800px) 900px, (min-width: 1280px) 780px, (min-width: 1040px) 650px, (min-width: 780px) 550px, 100vw"
                 className="object-cover w-full h-full "
